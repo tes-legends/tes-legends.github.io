@@ -1,0 +1,977 @@
+[
+  {
+    "id": "acolyte-of-boethiah",
+    "name": "Acolyte of Boethiah",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "aggressive-spider",
+    "name": "Aggressive Spider",
+    "type": "Creature",
+    "subtypes": [
+      "Spider"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "altar-of-meridia",
+    "name": "Altar of Meridia",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Destroy an Undead",
+    "keywords": [],
+    "uses": 2,
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "destroy",
+        "target": "creatureEnemy",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Mummy", "Skeleton", "Spirit", "Vampire" ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "altmer-protector",
+    "name": "Altmer Protector",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": ["Guard"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "apprentices-potion",
+    "name": "Apprentice's Potion",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Gain 5 health.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": -5,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "archein-guerrilla",
+    "name": "Archein Guerrilla",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Lethal",
+    "keywords": ["Lethal"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "baandari-outlaw",
+    "name": "Baandari Outlaw",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "bandit-ambush",
+    "name": "Bandit Ambush",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Summon two 1/1 Cruel Bandits in each lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "amount": 1,
+        "cardId": "cruel-bandit",
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "amount": 1,
+        "cardId": "cruel-bandit",
+        "target": "rightLane"
+      }
+    ]
+  },
+  {
+    "id": "boethiah-cultist",
+    "name": "Boethiah Cultist",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "broken-bottles",
+    "name": "Broken Bottles",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "At the start of your turn, deal 1 damage to a random enemy.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "damage",
+        "amount": 1,
+        "target": "enemyRandom"
+      }
+    ]
+  },
+  {
+    "id": "city-gates",
+    "name": "City Gates",
+    "type": "Creature",
+    "subtypes": [
+      "Defense"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 0,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Your opponent can't summon creatures to the other lane.",
+    "keywords": [],
+    "immunity": ["CreaturesInOtherLane"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "crowd-favorite",
+    "name": "Crowd Favorite",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "cruel-bandit",
+    "name": "Cruel Bandit",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "crystal-tower-acolyte",
+    "name": "Crystal Tower Acolyte",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Deal 2 damage to your opponent.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ]
+  },
+  {
+    "id": "daedra-worshiper",
+    "name": "Daedra Worshiper",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "daedric-weaponmaster",
+    "name": "Daedric Weaponmaster",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Daedric Weaponmaster equips the two highest cost items in your discard pile.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "equipDiscard",
+        "amount": 2,
+        "target": "self"
+      }
+    ]
+  },
+  {
+    "id": "dark-adherent",
+    "name": "Dark Adherent",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "defiant-prisoner",
+    "name": "Defiant Prisoner",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "desperate-captive",
+    "name": "Desperate Captive",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "detain",
+    "name": "Detain",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shackle a creature.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "shackle",
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "dominion-seneschal",
+    "name": "Dominion Seneschal",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": ["Guard"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "dune-rogue",
+    "name": "Dune Rogue",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Prophecy",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "prophecy": true
+  },
+  {
+    "id": "fearsome-dremora",
+    "name": "Fearsome Dremora",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "foraging-mudcrab",
+    "name": "Foraging Mudcrab",
+    "type": "Creature",
+    "subtypes": [
+      "Mudcrab"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "graceful-myrmidon",
+    "name": "Graceful Myrmidon",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "guild-recruit",
+    "name": "Guild Recruit",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Lethal",
+    "keywords": ["Lethal"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "high-elf-soldier",
+    "name": "High Elf Soldier",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "naarifins-elite",
+    "name": "Naarifin's Elite",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": ["Guard"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "night-patrol",
+    "name": "Night Patrol",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Breakthrough",
+    "keywords": ["Breakthrough"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "northpoint-lieutenant",
+    "name": "Northpoint Lieutenant",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "power-of-naarifin",
+    "name": "Power of Naarifin",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Destroy up to three random enemy creatures.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creatureEnemyRandom"
+      },
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creatureEnemyRandom"
+      },
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creatureEnemyRandom"
+      }
+    ]
+  },
+  {
+    "id": "prowling-hunger",
+    "name": "Prowling Hunger",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature +1/+1",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "rage-of-naarifin",
+    "name": "Rage of Naarifin",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Deal 10 damage to a creature.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 10,
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "reckless-combatant",
+    "name": "Reckless Combatant",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "redguard-pit-dog",
+    "name": "Redguard Pit Dog",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "rising-legate",
+    "name": "Rising Legate",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Breakthrough Summon: Summon a 1/1 Imperial Grunt",
+    "keywords": ["Breakthrough"],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "amount": 1,
+        "cardId": "imperial-grunt",
+        "target": "thisLane"
+      }
+    ]
+  },
+  {
+    "id": "skooma-smuggler",
+    "name": "Skooma Smuggler",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "south-road-brigand",
+    "name": "South Road Brigand",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "thalmor-agent",
+    "name": "Thalmor Agent",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "veteran-gladiator",
+    "name": "Veteran Gladiator",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "vile-imp",
+    "name": "Vile Imp",
+    "type": "Creature",
+    "subtypes": [
+      "Imp"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "volkihar-lord",
+    "name": "Volkihar Lord",
+    "type": "Creature",
+    "subtypes": [
+      "Vampire"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 9,
+    "attack": 7,
+    "health": 7,
+    "rarity": "1Common",
+    "text": "Drain",
+    "keywords": ["Drain"],
+    "set": "Story Set",
+    "deckCodeId": null
+  },
+  {
+    "id": "web",
+    "name": "Web",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shackle an enemy creature.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "shackle",
+        "target": "creatureEnemy"
+      }
+    ]
+  },
+  {
+    "id": "wicked-spiderling",
+    "name": "Wicked Spiderling",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: Draw a card.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "wild-spriggan",
+    "name": "Wild Spriggan",
+    "type": "Creature",
+    "subtypes": [
+      "Spriggan"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Summon a 2/3 Snow Fox.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "amount": 1,
+        "cardId": "snow-fox",
+        "target": "thisLane"
+      }
+    ]
+  }
+]

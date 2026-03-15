@@ -15,7 +15,6 @@
     "rarity": "2Rare",
     "text": "Summon : Deal 2 damage to each player.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ah",
     "effects": [
@@ -43,7 +42,6 @@
     "rarity": "3Epic",
     "text": "Summon : Put a Steel Dagger into your hand. When Alik'r Survivalist equips an item , he gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ar",
     "effects": [
@@ -71,16 +69,13 @@
       "R"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 0,
     "rarity": "2Rare",
     "text": "+3/+0 Summon : Give the wielder Cover at the end of turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "be",
-    "modAttack": 3,
-    "modHealth": 0,
     "tempKeywords": ["Cover"]
   },
   {
@@ -99,7 +94,6 @@
     "rarity": "1Common",
     "text": "Summon : +2/+2 if you have another Orc .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "by",
     "effects": [
@@ -133,7 +127,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bH"
   },
@@ -155,7 +148,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bK",
     "effects": [
@@ -198,7 +190,6 @@
     "rarity": "3Epic",
     "text": "At the start of your turn, Blighted Alit deals 2 damage to you.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ca",
     "effects": [
@@ -226,7 +217,6 @@
     "rarity": "4Legendary",
     "text": "Ignores Guards and may attack creatures in any lane .",
     "keywords": [],
-    "mechanics": [],
     "immunity": ["AttackRestrictions"],
     "set": "Core Set",
     "deckCodeId": "cc"
@@ -247,7 +237,6 @@
     "rarity": "2Rare",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cj"
   },
@@ -260,16 +249,13 @@
       "R"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 0,
     "rarity": "2Rare",
     "text": "+1/+0 Summon : Silence another creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cl",
-    "modAttack": 1,
-    "modHealth": 0,
     "effects": [
       {
         "trigger": "Summon",
@@ -292,7 +278,6 @@
     "rarity": "3Epic",
     "text": "Deal 1 damage to all enemy creatures in a lane for each destroyed enemy rune .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cA",
     "effects": [
@@ -319,7 +304,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Unsummon a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cP",
     "prophecy": true,
@@ -347,7 +331,6 @@
     "rarity": "3Epic",
     "text": "Slay : May attack again this turn.",
     "keywords": ["Slay"],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "db",
     "effects": [
@@ -375,7 +358,6 @@
     "rarity": "2Rare",
     "text": "+2/+0 while you have no cards in hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dD",
     "static": {
@@ -402,7 +384,6 @@
     "rarity": "3Epic",
     "text": "Summon : All enemy creatures lose Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eT",
     "effects": [
@@ -432,7 +413,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eU",
     "effects": [
@@ -459,7 +439,6 @@
     "rarity": "3Epic",
     "text": "Summon : Silence another creature, then deal 1 damage to it.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fv",
     "effects": [
@@ -494,7 +473,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gg",
     "effects": [
@@ -522,7 +500,6 @@
     "rarity": "2Rare",
     "text": "When Fiery Imp attacks, deal 2 damage to your opponent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "go",
     "effects": [
@@ -548,7 +525,6 @@
     "rarity": "2Rare",
     "text": "Deal 1 damage to all enemies.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gx",
     "effects": [
@@ -578,7 +554,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gI"
   },
@@ -596,7 +571,6 @@
     "rarity": "3Epic",
     "text": "Ongoing At the start of each player's turn, deal 2 damage to that player.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "he",
     "effects": [
@@ -624,7 +598,6 @@
     "rarity": "3Epic",
     "text": "Prophecy Summon : Deal 1 damage to all enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hr",
     "prophecy": true,
@@ -653,7 +626,6 @@
     "rarity": "1Common",
     "text": "Prophecy",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hw",
     "prophecy": true
@@ -667,16 +639,13 @@
       "R"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 4,
+    "health": 1,
     "rarity": "1Common",
     "text": "+4/+1",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "hX",
-    "modAttack": 4,
-    "modHealth": 1
+    "deckCodeId": "hX"
   },
   {
     "id": "improvised-weapon",
@@ -687,18 +656,15 @@
       "R"
     ],
     "cost": 0,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 1,
     "rarity": "2Rare",
     "text": "Breakthrough +1/+1",
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "iP",
-    "modAttack": 1,
-    "modHealth": 1
+    "deckCodeId": "iP"
   },
   {
     "id": "intimidate",
@@ -714,7 +680,6 @@
     "rarity": "2Rare",
     "text": "Enemy creatures lose Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iZ",
     "effects": [
@@ -742,7 +707,6 @@
     "rarity": "3Epic",
     "text": "Lumbering Ogrim can't gain Cover .",
     "keywords": [],
-    "mechanics": [],
     "immunity": ["Cover"],
     "set": "Core Set",
     "deckCodeId": "jR"
@@ -763,7 +727,6 @@
     "rarity": "3Epic",
     "text": "Mage Slayer can't be damaged by actions .",
     "keywords": [],
-    "mechanics": [],
     "immunity": ["ActionDamage"],
     "set": "Core Set",
     "deckCodeId": "ka"
@@ -784,7 +747,6 @@
     "rarity": "3Epic",
     "text": "When Markarth Bannerman attacks, put two 1/1 Nord Firebrands with Charge into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kj",
     "effects": [
@@ -813,7 +775,6 @@
     "rarity": "1Common",
     "text": "Summon : +3/+0 and Breakthrough if the top card of your deck is [R].",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kz",
     "effects": [
@@ -848,7 +809,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kN",
     "target": "creature",
@@ -880,7 +840,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lD"
   },
@@ -898,7 +857,6 @@
     "rarity": "2Rare",
     "text": "Ongoing Friendly [R] creatures have +1/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lG",
     "effects": [
@@ -931,7 +889,6 @@
     "rarity": "2Rare",
     "text": "Other friendly creatures in this lane have +1/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lL",
     "effects": [
@@ -962,7 +919,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lM",
     "effects": [
@@ -987,18 +943,15 @@
       "R"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 3,
     "rarity": "2Rare",
     "text": "Breakthrough +3/+3",
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "lO",
-    "modAttack": 3,
-    "modHealth": 3
+    "deckCodeId": "lO"
   },
   {
     "id": "plunder",
@@ -1014,7 +967,6 @@
     "rarity": "3Epic",
     "text": "Put two random items into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mg",
     "effects": [
@@ -1050,7 +1002,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mC",
     "effects": [
@@ -1082,7 +1033,6 @@
       "Breakthrough",
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mE"
   },
@@ -1100,7 +1050,6 @@
     "rarity": "1Common",
     "text": "Deal 1 damage to a creature. If it survives, draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mG",
     "damage": 1,
@@ -1138,7 +1087,6 @@
     "rarity": "4Legendary",
     "text": "When Reive attacks, deal 2 damage to your opponent, then increase the damage dealt by 2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mU",
     "unique": true,
@@ -1168,7 +1116,6 @@
     "rarity": "4Legendary",
     "text": "When an enemy rune is destroyed, deal 1 damage to your opponent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mV",
     "effects": [
@@ -1196,7 +1143,6 @@
     "rarity": "1Common",
     "text": "Summon : +1/+1 for each destroyed enemy rune .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nh",
     "effects": [
@@ -1225,7 +1171,6 @@
     "rarity": "1Common",
     "text": "+0/+3 and Guard while equipped with an item .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ni",
     "static": {
@@ -1253,7 +1198,6 @@
     "rarity": "1Common",
     "text": "+3/+0 and Breakthrough while equipped with an item .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nj",
     "static": {
@@ -1281,7 +1225,6 @@
     "rarity": "1Common",
     "text": "Summon : Give a creature +5/+0 this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nz",
     "target": "creature",
@@ -1310,7 +1253,6 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : Deal 1 damage.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nV",
     "target": "any",
@@ -1341,7 +1283,6 @@
     "rarity": "2Rare",
     "text": "Summon : Gains Charge if there is a Wounded enemy creature in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ol",
     "effects": [
@@ -1371,7 +1312,6 @@
     "rarity": "1Common",
     "text": "Summon : Deal 1 damage to all other creatures in this lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oo",
     "effects": [
@@ -1397,7 +1337,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a creature +2/+0 and Breakthrough .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "target": "creature",
@@ -1421,16 +1360,13 @@
       "R"
     ],
     "cost": 1,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 2,
     "rarity": "1Common",
     "text": "+2/+2",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "pr",
-    "modAttack": 2,
-    "modHealth": 2
+    "deckCodeId": "pr"
   },
   {
     "id": "stone-throw",
@@ -1446,7 +1382,6 @@
     "rarity": "1Common",
     "text": "Destroy an enemy creature if you have a creature with higher power.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pw",
     "effects": [
@@ -1476,7 +1411,6 @@
     "rarity": "3Epic",
     "text": "At the start of your turn, deal 4 damage to a random enemy.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qM",
     "effects": [
@@ -1504,7 +1438,6 @@
     "rarity": "2Rare",
     "text": "Summon : If you have more health than your opponent, draw two cards.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qR",
     "effects": [
@@ -1535,7 +1468,6 @@
     "rarity": "1Common",
     "text": "Summon : Deal 1 damage.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rl",
     "effects": [
@@ -1566,7 +1498,6 @@
       "Guard",
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rr",
     "effects": [
@@ -1592,7 +1523,6 @@
     "rarity": "4Legendary",
     "text": "Uses: 2 Activate : Give a creature +4/+4 and Breakthrough .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 2,
     "target": "creature",
@@ -1625,7 +1555,6 @@
     "rarity": "3Epic",
     "text": "When Whirling Duelist equips an item , deal 1 damage to all enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rH",
     "effects": [
@@ -1653,7 +1582,6 @@
     "rarity": "3Epic",
     "text": "All actions cost 2 more.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rW",
     "effects": [
@@ -1687,7 +1615,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rY",
     "effects": [
@@ -1716,7 +1643,6 @@
     "rarity": "3Epic",
     "text": "Ongoing The first time you summon a creature each turn, equip it with a random item .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "sg",
     "effects": [
@@ -1743,7 +1669,6 @@
     "rarity": "1Common",
     "text": "Summon : If the top card of your deck is an action , draw it. Otherwise, put it on the bottom.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ad",
     "effects": [
@@ -1785,7 +1710,6 @@
     "rarity": "2Rare",
     "text": "Summon : Deal 2 damage to a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aX",
     "target": "creature",
@@ -1817,7 +1741,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bw",
     "effects": [
@@ -1845,7 +1768,6 @@
     "rarity": "2Rare",
     "text": "Summon : Give other friendly [B] creatures +1/+0 and Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bC",
     "effects": [
@@ -1881,7 +1803,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cr",
     "effects": [
@@ -1907,7 +1828,6 @@
     "rarity": "3Epic",
     "text": "Draw a copy of a friendly creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cs",
     "effects": [
@@ -1937,7 +1857,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cy",
     "effects": [
@@ -1965,7 +1884,6 @@
     "rarity": "1Common",
     "text": "Summon : Deal 2 damage to your opponent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cI",
     "effects": [
@@ -1995,7 +1913,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cJ",
     "prophecy": true
@@ -2016,15 +1933,18 @@
     "rarity": "2Rare",
     "text": "When you play or activate a support , Craglorn Scavenger gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dF",
     "effects": [
       {
-        "trigger": "PlaySupport",
+        "trigger": "PlayCard",
         "type": "buffSelf",
         "modAttack": 1,
-        "modHealth": 1
+        "modHealth": 1,
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Support" ]
+        }
       },
       {
         "trigger": "ActivateSupport",
@@ -2050,7 +1970,6 @@
     "rarity": "1Common",
     "text": "Summon : Put a Steel Dagger into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dI",
     "effects": [
@@ -2077,7 +1996,6 @@
     "rarity": "2Rare",
     "text": "Sacrifice a creature to deal 5 damage to a random enemy creature",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dK",
     "effects": [
@@ -2110,15 +2028,18 @@
     "rarity": "1Common",
     "text": "After you play an action , Crystal Tower Crafter gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dO",
     "effects": [
       {
-        "trigger": "PlayAction",
+        "trigger": "PlayCard",
         "type": "buffSelf",
         "modAttack": 1,
-        "modHealth": 1
+        "modHealth": 1,
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Action" ]
+        }
       }
     ]
   },
@@ -2138,7 +2059,6 @@
     "rarity": "1Common",
     "text": "Summon : Put a Firebolt into your hand if the top card of your deck is [B].",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dP",
     "effects": [
@@ -2173,7 +2093,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dV",
     "effects": [
@@ -2200,7 +2119,6 @@
     "rarity": "3Epic",
     "text": "Uses: 5 Activate : Deal 1 damage to your opponent. If Dark Rift has dealt 5 damage, sacrifice it to summon a Storm Atronach .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 5,
     "deckCodeId": "eg",
@@ -2247,7 +2165,6 @@
     "rarity": "3Epic",
     "text": "Sacrifice a creature to summon a random creature that costs 2 more.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eu",
     "effects": [
@@ -2280,7 +2197,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 6 damage to a random enemy. At the start of your turn, Divayth Fyr summons a Daughter of Fyr .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eA",
     "unique": true,
@@ -2315,7 +2231,6 @@
     "rarity": "3Epic",
     "text": "When Dragonstar Rider equips an item , draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eP",
     "effects": [
@@ -2345,7 +2260,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eX",
     "effects": [
@@ -2373,7 +2287,6 @@
     "rarity": "2Rare",
     "text": "When an enemy creature becomes Shackled , deal 3 damage to it.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eZ",
     "effects": [
@@ -2403,7 +2316,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fk",
     "effects": [
@@ -2430,7 +2342,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a creature a Ward .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "target": "creature",
@@ -2462,7 +2373,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fL",
     "effects": [
@@ -2501,7 +2411,6 @@
       "Guard",
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fU"
   },
@@ -2521,7 +2430,6 @@
     "rarity": "1Common",
     "text": "Summon : Reveal the top card of your opponent's deck.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gd",
     "effects": [
@@ -2549,7 +2457,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Summon : Draw a card. If it's a Prophecy, you may play it for free.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ge",
     "prophecy": true,
@@ -2576,7 +2483,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Deal 2 damage to all creatures in a lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gw",
     "prophecy": true,
@@ -2603,7 +2509,6 @@
     "rarity": "1Common",
     "text": "Deal 2 damage to a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gy",
     "effects": [
@@ -2633,7 +2538,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hh"
   },
@@ -2646,18 +2550,15 @@
       "B"
     ],
     "cost": 6,
-    "attack": null,
-    "health": null,
+    "attack": 5,
+    "health": 0,
     "rarity": "3Epic",
     "text": "+5/+0 Last Gasp : Returns to your hand.",
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hY",
-    "modAttack": 5,
-    "modHealth": 0,
     "effects": [
       {
         "trigger": "LastGasp",
@@ -2689,7 +2590,6 @@
     "rarity": "2Rare",
     "text": "Summon : Put a random Atronach into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ih",
     "effects": [
@@ -2716,7 +2616,6 @@
     "rarity": "1Common",
     "text": "Deal 2 damage to your opponent. Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ix",
     "effects": [
@@ -2748,7 +2647,6 @@
     "rarity": "3Epic",
     "text": "Deal 3 damage to all creatures.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iy",
     "effects": [
@@ -2776,7 +2674,6 @@
     "rarity": "3Epic",
     "text": "At the start of your turn, put an Ice Spike into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iz",
     "effects": [
@@ -2808,7 +2705,6 @@
       "Guard",
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iR",
     "effects": [
@@ -2836,7 +2732,6 @@
     "rarity": "3Epic",
     "text": "Other friendly creatures are immune to Silence .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jl",
     "effects": [
@@ -2862,7 +2757,6 @@
     "rarity": "1Common",
     "text": "Give a creature a Ward .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jE",
     "effects": [
@@ -2888,7 +2782,6 @@
     "rarity": "1Common",
     "text": "Prophecy Deal 4 damage.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jH",
     "damage": 4,
@@ -2918,15 +2811,18 @@
     "rarity": "1Common",
     "text": "After you play an action , deal 1 damage to your opponent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jJ",
     "effects": [
       {
-        "trigger": "PlayAction",
+        "trigger": "PlayCard",
         "type": "damage",
         "amount": 1,
-        "target": "opponent"
+        "target": "opponent",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Action" ]
+        }
       }
     ]
   },
@@ -2939,16 +2835,13 @@
       "B"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 1,
     "rarity": "2Rare",
     "text": "+2/+1 Summon : Shackle an enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jX",
-    "modAttack": 2,
-    "modHealth": 1,
     "effects": [
       {
         "trigger": "Summon",
@@ -2971,7 +2864,6 @@
     "rarity": "3Epic",
     "text": "Ongoing At the end of each turn, if you played two actions , summon a random Atronach.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kd",
     "effects": [
@@ -2981,7 +2873,8 @@
         "subtypes": [ "Atronach" ],
         "target": "randomLane",
         "condition": {
-          "type": "playedTwoActions"
+          "type": "playedActions",
+          "min": 2
         }
       }
     ]
@@ -3002,7 +2895,6 @@
     "rarity": "3Epic",
     "text": "Summon : Master of Arms equips the two highest cost items from your discard pile.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kl",
     "effects": [
@@ -3023,16 +2915,13 @@
       "B"
     ],
     "cost": 5,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 3,
     "rarity": "4Legendary",
     "text": "+3/+3 Summon : Give this creature's Keywords to each other friendly creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ku",
-    "modAttack": 3,
-    "modHealth": 3,
     "effects": [
       {
         "trigger": "Summon",
@@ -3055,7 +2944,6 @@
     "rarity": "3Epic",
     "text": "Reveal three random cards, then choose one to draw.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kF",
     "effects": [
@@ -3083,7 +2971,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Draw a card and reduce its cost to 0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ll",
     "unique": true,
@@ -3118,7 +3005,6 @@
     "rarity": "1Common",
     "text": "+2/+0 while there are no enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lt",
     "static": {
@@ -3145,7 +3031,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mQ"
   },
@@ -3165,7 +3050,6 @@
     "rarity": "2Rare",
     "text": "Summon : If you have more health than your opponent, give each friendly creature a random Keyword .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nr",
     "effects": [
@@ -3195,7 +3079,6 @@
     "rarity": "3Epic",
     "text": "At the end of each turn, if you played two actions , draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nZ",
     "effects": [
@@ -3205,7 +3088,8 @@
         "amount": 1,
         "target": "player",
         "condition": {
-          "type": "playedTwoActions"
+          "type": "playedActions",
+          "min": 2
         }
       }
     ]
@@ -3226,7 +3110,6 @@
     "rarity": "1Common",
     "text": "Summon : Deal 4 damage to a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oc",
     "effects": [
@@ -3254,7 +3137,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Summon : Shackle an enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oe",
     "prophecy": true,
@@ -3282,7 +3164,6 @@
     "rarity": "2Rare",
     "text": "Your items cost 1 less.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ot",
     "effects": [
@@ -3312,7 +3193,6 @@
     "rarity": "1Common",
     "text": "Sacrifice a creature to summon a 3/2 Sundered Shade in each lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oO",
     "effects": [
@@ -3344,16 +3224,13 @@
       "B"
     ],
     "cost": 6,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 0,
     "rarity": "4Legendary",
     "text": "+3/+0 When the wielder attacks, it deals 1 damage to all enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pf",
-    "modAttack": 3,
-    "modHealth": 0,
     "effects": [
       {
         "trigger": "Attack",
@@ -3372,16 +3249,13 @@
       "B"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 0,
     "rarity": "1Common",
     "text": "+3/+0",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "ps",
-    "modAttack": 3,
-    "modHealth": 0
+    "deckCodeId": "ps"
   },
   {
     "id": "studium-headmaster",
@@ -3399,7 +3273,6 @@
     "rarity": "3Epic",
     "text": "Summon : Each player draws two cards.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pM",
     "effects": [
@@ -3425,7 +3298,6 @@
     "rarity": "3Epic",
     "text": "Uses: 3 Activate : Shuffle all Prophecy cards in your hand into your deck and draw that many cards.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "pN",
@@ -3453,7 +3325,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Summon a Flame Atronach in each lane . When you summon another creature, deal 2 damage to your opponent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pS",
     "effects": [
@@ -3497,7 +3368,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qe",
     "effects": [
@@ -3519,16 +3389,13 @@
       "B"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 2,
     "rarity": "1Common",
     "text": "+2/+2 Summon : Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qF",
-    "modAttack": 2,
-    "modHealth": 2,
     "effects": [
       {
         "trigger": "Summon",
@@ -3554,7 +3421,6 @@
     "rarity": "2Rare",
     "text": "Summon : Give a creature a Ward .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rC",
     "effects": [
@@ -3580,7 +3446,6 @@
     "rarity": "3Epic",
     "text": "Shackle all enemy creatures.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rR",
     "effects": [
@@ -3605,7 +3470,6 @@
     "rarity": "3Epic",
     "text": "Prophecy Give each friendly creature a random Keyword .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rU",
     "target": "creatureFriendlyAll",
@@ -3634,7 +3498,6 @@
     "rarity": "3Epic",
     "text": "When you summon a creature that costs 2 or less, summon a copy of that creature in the other lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rV",
     "effects": [
@@ -3665,7 +3528,6 @@
     "rarity": "2Rare",
     "text": "Summon : +1/+1 if you have an action in your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "am",
     "effects": [
@@ -3697,7 +3559,6 @@
     "rarity": "3Epic",
     "text": "Other friendly Wolves have +2/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "av",
     "effects": [
@@ -3728,7 +3589,6 @@
     "rarity": "2Rare",
     "text": "Destroy all enemy creatures with 2 power or less in a lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aR",
     "effects": [
@@ -3759,16 +3619,19 @@
     "rarity": "3Epic",
     "text": "After you play an action , give a random friendly creature +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aS",
     "effects": [
       {
-        "trigger": "PlayAction",
+        "trigger": "PlayCard",
         "type": "buffTarget",
         "target": "creatureFriendlyRandom",
         "modAttack": 1,
-        "modHealth": 1
+        "modHealth": 1,
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Action" ]
+        }
       }
     ]
   },
@@ -3788,14 +3651,17 @@
     "rarity": "1Common",
     "text": "When you play an action , Auridon Paladin gains Drain this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bm",
     "effects": [
       {
-        "trigger": "PlayAction",
+        "trigger": "PlayCard",
         "type": "buffSelf",
-        "tempKeywords": [ "Drain" ]
+        "tempKeywords": [ "Drain" ],
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Action" ]
+        }
       }
     ]
   },
@@ -3817,7 +3683,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bn",
     "effects": [
@@ -3842,7 +3707,6 @@
     "rarity": "3Epic",
     "text": "Draw a copy of a random creature from your opponent's deck.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bR",
     "effects": [
@@ -3870,7 +3734,6 @@
     "rarity": "2Rare",
     "text": "When you summon another creature, you gain 1 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cx",
     "effects": [
@@ -3896,7 +3759,6 @@
     "rarity": "1Common",
     "text": "Give a creature -4/-0 this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cG",
     "effects": [
@@ -3924,7 +3786,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cQ"
   },
@@ -3946,7 +3807,6 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cZ"
   },
@@ -3966,7 +3826,6 @@
     "rarity": "3Epic",
     "text": "Prophecy Summon : Give a creature -4/-0 this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dr",
     "prophecy": true,
@@ -3997,7 +3856,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dX",
     "effects": [
@@ -4024,7 +3882,6 @@
     "rarity": "4Legendary",
     "text": "Destroy all creatures in a lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ei",
     "effects": [
@@ -4044,16 +3901,13 @@
       "Y"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 4,
+    "health": 4,
     "rarity": "4Legendary",
     "text": "+4/+4 Slay : Banish the slain creature if it's Undead .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ej",
-    "modAttack": 4,
-    "modHealth": 4,
     "unique": true,
     "effects": [
       {
@@ -4083,7 +3937,6 @@
     "rarity": "3Epic",
     "text": "After an enemy rune is destroyed, you gain 3 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "el",
     "effects": [
@@ -4113,7 +3966,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "er",
     "effects": [
@@ -4144,7 +3996,6 @@
     "rarity": "3Epic",
     "text": "Ongoing Friendly creatures have +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eD",
     "effects": [
@@ -4173,7 +4024,6 @@
     "rarity": "2Rare",
     "text": "Summon : Draw a card if an enemy rune has been destroyed this game.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fx",
     "effects": [
@@ -4202,7 +4052,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a friendly creature Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fH",
@@ -4229,7 +4078,6 @@
     "rarity": "1Common",
     "text": "Destroy a creature with 2 power or less.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fW",
     "effects": [
@@ -4260,7 +4108,6 @@
     "rarity": "2Rare",
     "text": "When you summon another creature, give it +1/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gp",
     "effects": [
@@ -4291,7 +4138,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ho",
     "effects": [
@@ -4322,7 +4168,6 @@
     "rarity": "4Legendary",
     "text": "When a friendly creature destroys an enemy rune , equip it with a random item .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hL",
     "effects": [
@@ -4347,7 +4192,6 @@
     "rarity": "1Common",
     "text": "Prophecy Gain 5 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hW",
     "prophecy": true,
@@ -4376,7 +4220,6 @@
     "rarity": "3Epic",
     "text": "When another friendly creature attacks, Helgen Squad Leader gains +1/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hZ",
     "effects": [
@@ -4403,7 +4246,6 @@
     "rarity": "3Epic",
     "text": "Hero of Anvil costs 1 less for each creature summoned this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ic",
     "effects": [
@@ -4440,7 +4282,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "im"
   },
@@ -4462,7 +4303,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "io"
   },
@@ -4480,7 +4320,6 @@
     "rarity": "3Epic",
     "text": "Destroy all creatures except for one random creature on both sides of each lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iF",
     "effects": [
@@ -4508,7 +4347,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iI"
   },
@@ -4526,7 +4364,6 @@
     "rarity": "3Epic",
     "text": "Ongoing At the end of your turn, summon a 1/1 Imperial Grunt .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iJ",
     "effects": [
@@ -4553,7 +4390,6 @@
     "rarity": "2Rare",
     "text": "Fill a lane with 1/1 Imperial Grunts .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iK",
     "effects": [
@@ -4582,7 +4418,6 @@
     "rarity": "2Rare",
     "text": "Summon : +1/+1 for each other friendly creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iL",
     "effects": [
@@ -4609,7 +4444,6 @@
     "rarity": "2Rare",
     "text": "Shackle a creature. If you have four or more [Y] creatures, destroy it instead.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iN",
     "effects": [
@@ -4648,7 +4482,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jr"
   },
@@ -4668,7 +4501,6 @@
     "rarity": "1Common",
     "text": "Summon : Give other friendly creatures +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jC",
     "effects": [
@@ -4690,18 +4522,15 @@
       "Y"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 3,
     "rarity": "2Rare",
     "text": "Guard +1/+3",
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "jD",
-    "modAttack": 1,
-    "modHealth": 3
+    "deckCodeId": "jD"
   },
   {
     "id": "loyal-housecarl",
@@ -4719,7 +4548,6 @@
     "rarity": "3Epic",
     "text": "Prophecy Summon : Give a creature +2/+2 and Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jP",
     "target": "creature",
@@ -4755,7 +4583,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kh",
     "effects": [
@@ -4782,9 +4609,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Steal an enemy creature.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Core Set",
     "deckCodeId": "kC",
     "unique": true,
@@ -4812,7 +4636,6 @@
     "rarity": "2Rare",
     "text": "When an enemy rune is destroyed, Morthal Executioner gains +2/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kQ",
     "effects": [
@@ -4839,7 +4662,6 @@
     "rarity": "1Common",
     "text": "Summon : Summon a 1/1 Young Wolf in the other lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lT",
     "effects": [
@@ -4866,7 +4688,6 @@
     "rarity": "1Common",
     "text": "Prophecy Destroy a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lY",
     "prophecy": true,
@@ -4894,7 +4715,6 @@
     "rarity": "3Epic",
     "text": "Summon : Give a friendly creature Drain this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "md",
     "effects": [
@@ -4922,7 +4742,6 @@
     "rarity": "3Epic",
     "text": "Pit Lion can't be played unless there's a friendly creature in each lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "me",
     "playCondition": {
@@ -4945,7 +4764,6 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : You gain 2 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mp",
     "prophecy": true,
@@ -4976,7 +4794,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mD",
     "effects": [
@@ -5004,7 +4821,6 @@
     "rarity": "3Epic",
     "text": "Summon : Gains Drain if there is an enemy creature in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mJ",
     "effects": [
@@ -5036,7 +4852,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mX",
     "effects": [
@@ -5072,7 +4887,6 @@
     "rarity": "1Common",
     "text": "Summon : Give other friendly creatures in this lane +1/+1 if the top card of your deck is [Y].",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mY",
     "effects": [
@@ -5108,7 +4922,6 @@
       "Guard",
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "np",
     "effects": [
@@ -5133,7 +4946,6 @@
     "rarity": "1Common",
     "text": "Summon a 1/1 Imperial Grunt in each lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nB",
     "effects": [
@@ -5171,7 +4983,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nG"
   },
@@ -5193,7 +5004,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nI"
   },
@@ -5213,7 +5023,6 @@
     "rarity": "2Rare",
     "text": "+2/+0 while you have the most creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oI",
     "static": {
@@ -5240,7 +5049,6 @@
     "rarity": "3Epic",
     "text": "Summon : Destroy a creature with 2 power or less.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pc",
     "target": "creature",
@@ -5249,7 +5057,7 @@
         "trigger": "Summon",
         "type": "destroy",
         "target": "creature",
-        "condition": {
+        "targetCondition": {
           "type": "hasAttack",
           "max": 2
         }
@@ -5272,7 +5080,6 @@
     "rarity": "1Common",
     "text": "Other friendly creatures in this lane have +0/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pO",
     "effects": [
@@ -5300,7 +5107,6 @@
     "rarity": "1Common",
     "text": "Summon : Give a creature +0/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pQ",
     "target": "creature",
@@ -5330,7 +5136,6 @@
     "rarity": "3Epic",
     "text": "Your Activated supports have unlimited uses.",
     "keywords": [],
-    "mechanics": [],
     "immunity": [ "ActivationLimit" ],
     "set": "Core Set",
     "deckCodeId": "qI"
@@ -5351,7 +5156,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qU"
   },
@@ -5369,7 +5173,6 @@
     "rarity": "2Rare",
     "text": "Ongoing If your opponent doesn't damage you on their turn, sacrifice this and summon a Priest of the Moons in each lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qX",
     "effects": [
@@ -5415,7 +5218,6 @@
     "rarity": "2Rare",
     "text": "Give friendly creatures in a lane +2/+0 this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rA",
     "effects": [
@@ -5443,7 +5245,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "az"
   },
@@ -5463,7 +5264,6 @@
     "rarity": "3Epic",
     "text": "Summon : Steal all items from an enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aO",
     "target": "creatureEnemy",
@@ -5489,7 +5289,6 @@
     "rarity": "1Common",
     "text": "Shackle a creature and deal 1 damage to it.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aQ",
     "effects": [
@@ -5524,7 +5323,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "br",
     "effects": [
@@ -5553,7 +5351,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bU",
     "prophecy": true
@@ -5574,7 +5371,6 @@
     "rarity": "3Epic",
     "text": "Summon : Summon a 2/2 Wood Elf Scout with Charge in each lane with a Wounded enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cL",
     "effects": [
@@ -5614,7 +5410,6 @@
     "rarity": "1Common",
     "text": "Summon : Give all enemy creatures in this lane -1/-1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cX",
     "effects": [
@@ -5645,7 +5440,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dh"
   },
@@ -5663,7 +5457,6 @@
     "rarity": "2Rare",
     "text": "Give a creature -1/-1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dQ",
     "modAttack": -1,
@@ -5693,10 +5486,7 @@
     "health": 2,
     "rarity": "1Common",
     "text": "Prophecy Pilfer : +1/+1",
-    "keywords": [],
-    "mechanics": [
-      "Pilfer"
-    ],
+    "keywords": [ "Pilfer" ],
     "set": "Core Set",
     "deckCodeId": "eb",
     "prophecy": true,
@@ -5727,7 +5517,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "es",
     "effects": [
@@ -5755,7 +5544,6 @@
     "rarity": "2Rare",
     "text": "Summon : Move another friendly creature in this lane. When a friendly creature moves, give it +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fh",
     "effects": [
@@ -5789,7 +5577,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Summon : Move another friendly creature in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fi",
     "prophecy": true,
@@ -5817,7 +5604,6 @@
     "rarity": "3Epic",
     "text": "After Elder Centaur attacks, give him Cover .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fC",
     "effects": [
@@ -5842,7 +5628,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a creature Cover .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fG",
@@ -5871,7 +5656,6 @@
     "rarity": "2Rare",
     "text": "Summon : +2/+2 if a creature died this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gi",
     "effects": [
@@ -5905,7 +5689,6 @@
       "Guard",
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gs",
     "prophecy": true
@@ -5924,7 +5707,6 @@
     "rarity": "1Common",
     "text": "Destroy a Wounded enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gu",
     "effects": [
@@ -5954,7 +5736,6 @@
       "Charge",
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hb"
   },
@@ -5974,7 +5755,6 @@
     "rarity": "3Epic",
     "text": "Summon : Shackle all enemy creatures in this lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hd",
     "effects": [
@@ -6003,7 +5783,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hl",
     "effects": [
@@ -6034,7 +5813,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hz",
     "effects": [
@@ -6066,7 +5844,6 @@
     "rarity": "3Epic",
     "text": "When you gain health, Green-Touched Spriggan gains that much power.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hA",
     "effects": [
@@ -6096,7 +5873,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hB"
   },
@@ -6116,7 +5892,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ia"
   },
@@ -6134,7 +5909,6 @@
     "rarity": "3Epic",
     "text": "Ongoing Summon : All Field Lanes become Shadow Lanes . Friendly creatures have +1/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ie",
     "effects": [
@@ -6167,7 +5941,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ii"
   },
@@ -6189,7 +5962,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "it",
     "effects": [
@@ -6223,7 +5995,6 @@
     "rarity": "3Epic",
     "text": "Summon : Destroy a Wounded creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jy",
     "effects": [
@@ -6248,7 +6019,6 @@
     "rarity": "3Epic",
     "text": "Give a creature +1/+1. When you gain health, draw Leafwater Blessing from your discard pile.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jA",
     "effects": [
@@ -6280,7 +6050,6 @@
     "rarity": "2Rare",
     "text": "Give a creature -2/-2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ke",
     "effects": [
@@ -6311,7 +6080,6 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kI",
     "prophecy": true
@@ -6334,7 +6102,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kT"
   },
@@ -6357,7 +6124,6 @@
       "Guard",
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kV",
     "effects": [
@@ -6386,7 +6152,6 @@
     "rarity": "1Common",
     "text": "If Murkwater Butcher is in your hand during your first turn, reduce his cost to 1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lb",
     "effects": [
@@ -6417,7 +6182,6 @@
     "rarity": "1Common",
     "text": "Murkwater Goblin has +2/+0 on your turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lc",
     "static": {
@@ -6443,7 +6207,6 @@
     "rarity": "2Rare",
     "text": "When you summon another [G] creature, Murkwater Savage gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "le",
     "effects": [
@@ -6475,7 +6238,6 @@
     "rarity": "3Epic",
     "text": "At the start of your turn, put a Curse into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lf",
     "effects": [
@@ -6504,7 +6266,6 @@
     "rarity": "3Epic",
     "text": "Summon : Give all other friendly Goblins +2/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lg",
     "effects": [
@@ -6539,7 +6300,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lh",
     "effects": [
@@ -6568,7 +6328,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Trigger the Last Gasp of each friendly creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lo",
     "effects": [
@@ -6593,7 +6352,6 @@
     "rarity": "4Legendary",
     "text": "Fill a lane with Territorial Vipers .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ls",
     "effects": [
@@ -6622,7 +6380,6 @@
     "rarity": "1Common",
     "text": "Summon : +1/+1 and Lethal if the top card of your deck is [G].",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lz",
     "effects": [
@@ -6657,7 +6414,6 @@
     "keywords": [
       "Slay"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lU",
     "effects": [
@@ -6688,7 +6444,6 @@
       "Pilfer",
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mz",
     "effects": [
@@ -6714,7 +6469,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Deal 3 damage and gain 3 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mF",
     "prophecy": true,
@@ -6747,7 +6501,6 @@
     "rarity": "1Common",
     "text": "Move a friendly creature. Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nM",
     "effects": [
@@ -6780,7 +6533,6 @@
     "rarity": "2Rare",
     "text": "Summon : Give a creature Lethal .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ox",
     "effects": [
@@ -6801,16 +6553,13 @@
       "G"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 1,
     "rarity": "2Rare",
     "text": "+1/+1 Summon : Give the wielder Drain this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oG",
-    "modAttack": 1,
-    "modHealth": 1,
     "tempKeywords": ["Drain"]
   },
   {
@@ -6829,7 +6578,6 @@
     "rarity": "3Epic",
     "text": "May attack an extra time each turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oK",
     "attacksPerTurn": 2
@@ -6850,7 +6598,6 @@
     "rarity": "2Rare",
     "text": "Summon : If you have more health than your opponent, the next card you play this turn costs 6 less.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oQ",
     "effects": [
@@ -6883,7 +6630,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oX",
     "effects": [
@@ -6926,15 +6672,13 @@
     "rarity": "3Epic",
     "text": "Ongoing At the start of your turn, summon a random Spider.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oY",
     "effects": [
       {
         "trigger": "StartOfTurn",
         "type": "summon",
-        "subtypes": [ "Spider" ],
-        "amount": 1,
+        "names": [ "cavern-spider", "poisonous-spider", "protective-spider"],
         "target": "randomLane"
       }
     ]
@@ -6953,7 +6697,6 @@
     "rarity": "2Rare",
     "text": "Give a creature an extra attack this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pV",
     "effects": [
@@ -6985,7 +6728,6 @@
       "Charge",
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qc",
     "unique": true,
@@ -7017,7 +6759,6 @@
     "keywords": [
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qj",
     "attacksPerTurn": 2,
@@ -7049,7 +6790,6 @@
       "Charge",
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qk"
   },
@@ -7067,7 +6807,6 @@
     "rarity": "1Common",
     "text": "Deal 3 damage to your opponent and gain 3 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qw",
     "effects": [
@@ -7101,7 +6840,6 @@
     "rarity": "1Common",
     "text": "Summon : Draw a card. If it costs 7 or more, reduce its cost by 1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qy",
     "effects": [
@@ -7137,7 +6875,6 @@
     "rarity": "4Legendary",
     "text": "Ongoing Friendly creatures have \" Pilfer : +1/+1.\"",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qA",
     "effects": [
@@ -7175,7 +6912,6 @@
       "Charge",
       "Pilfer"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qG",
     "effects": [
@@ -7203,7 +6939,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Shuffle three Brotherhood Assassins into your deck.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rg",
     "unique": true,
@@ -7236,7 +6971,6 @@
       "Guard",
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rn",
     "effects": [
@@ -7266,7 +7000,6 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ry"
   },
@@ -7286,7 +7019,6 @@
     "rarity": "3Epic",
     "text": "Summon : Summon a random Animal .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rL",
     "effects": [
@@ -7327,7 +7059,6 @@
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aE",
     "effects": [
@@ -7360,7 +7091,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aK"
   },
@@ -7383,7 +7113,6 @@
       "Lethal",
       "Slay"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aM",
     "effects": [
@@ -7411,7 +7140,6 @@
     "rarity": "4Legendary",
     "text": "At the end of your turn, summon a 1/1 Argonian Recruit . If you have 7 or more max magicka , summon a 3/3 Argonian Veteran instead.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bP",
     "effects": [
@@ -7455,7 +7183,6 @@
     "rarity": "2Rare",
     "text": "Summon : If you have more health than your opponent, summon a random creature from your discard pile.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bQ",
     "effects": [
@@ -7486,9 +7213,6 @@
     "rarity": "3Epic",
     "text": "At the start of your turn, heal another random friendly creature.",
     "keywords": [],
-    "mechanics": [
-      "StartOfTurn"
-    ],
     "set": "Core Set",
     "deckCodeId": "bT",
     "effects": [
@@ -7517,7 +7241,6 @@
     "keywords": [
       "Slay"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cd",
     "effects": [
@@ -7553,7 +7276,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Fill this lane with 1/1 Skeletons . Other friendly Skeletons have +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cm",
     "effects": [
@@ -7593,7 +7315,6 @@
     "rarity": "2Rare",
     "text": "When you summon another creature, give it +0/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "cw",
     "effects": [
@@ -7620,7 +7341,6 @@
     "rarity": "2Rare",
     "text": "Ongoing Friendly Orcs have +0/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "da",
     "effects": [
@@ -7653,7 +7373,6 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : Silence another creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dR",
     "prophecy": true,
@@ -7674,18 +7393,15 @@
       "P"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 1,
     "rarity": "1Common",
     "text": "Lethal +1/+1",
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "dU",
-    "modAttack": 1,
-    "modHealth": 1
+    "deckCodeId": "dU"
   },
   {
     "id": "deadly-draugr",
@@ -7705,7 +7421,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "em"
   },
@@ -7727,7 +7442,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eo",
     "effects": [
@@ -7755,7 +7469,6 @@
     "rarity": "3Epic",
     "text": "At the end of each turn, draw a card for each friendly creature that died in Disciple of Namira's lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ey",
     "effects": [
@@ -7786,7 +7499,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eE",
     "effects": [
@@ -7814,7 +7526,6 @@
     "rarity": "1Common",
     "text": "Summon : +1/+0 for each enemy creature in this lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "eQ",
     "effects": [
@@ -7840,7 +7551,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a creature +0/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "target": "creature",
@@ -7863,16 +7573,13 @@
       "P"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 3,
     "rarity": "1Common",
     "text": "+0/+3 Summon : Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fR",
-    "modAttack": 0,
-    "modHealth": 3,
     "effects": [
       {
         "trigger": "Summon",
@@ -7900,7 +7607,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gn",
     "prophecy": true
@@ -7922,7 +7628,6 @@
     "rarity": "3Epic",
     "text": "Summon : +1/+1 for each creature in your discard pile.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gB",
     "effects": [
@@ -7953,7 +7658,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gM",
     "prophecy": true
@@ -7976,7 +7680,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hi",
     "effects": [
@@ -8005,7 +7708,6 @@
     "rarity": "3Epic",
     "text": "When a creature in this lane dies, Grim Champion gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hD",
     "effects": [
@@ -8026,18 +7728,15 @@
       "P"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 3,
     "rarity": "3Epic",
     "text": "Regenerate +1/+3",
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "hM",
-    "modAttack": 1,
-    "modHealth": 3
+    "deckCodeId": "hM"
   },
   {
     "id": "haunting-spirit",
@@ -8057,7 +7756,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hU",
     "effects": [
@@ -8084,7 +7782,6 @@
     "rarity": "1Common",
     "text": "Heal a creature, then give it +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hV",
     "damage": -99,
@@ -8121,7 +7818,6 @@
     "rarity": "1Common",
     "text": "While Hist Speaker is in play, your max magicka is increased by 1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ik",
     "effects": [
@@ -8151,7 +7847,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iC",
     "effects": [
@@ -8171,16 +7866,13 @@
       "P"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 6,
     "rarity": "1Common",
     "text": "+0/+6",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "iG",
-    "modAttack": 0,
-    "modHealth": 6
+    "deckCodeId": "iG"
   },
   {
     "id": "imprisoned-deathlord",
@@ -8198,7 +7890,6 @@
     "rarity": "3Epic",
     "text": "When an enemy creature is summoned, Shackle Imprisoned Deathlord.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "iO",
     "effects": [
@@ -8231,7 +7922,6 @@
       "Regenerate"
     ],
     "immunity": ["ActionTarget"],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ja"
   },
@@ -8251,7 +7941,6 @@
     "rarity": "3Epic",
     "text": "When you summon another creature in this lane, give it a Ward .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jK",
     "effects": [
@@ -8284,7 +7973,6 @@
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jO"
   },
@@ -8306,7 +7994,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jQ",
     "unique": true,
@@ -8338,7 +8025,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jT",
     "prophecy": true
@@ -8357,7 +8043,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Summon a 2/2 Colovian Trooper with Guard in each lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ky",
     "prophecy": true,
@@ -8396,7 +8081,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kS"
   },
@@ -8414,7 +8098,6 @@
     "rarity": "2Rare",
     "text": "Prophecy Transform a creature into a 2/2 Shriveled Mummy .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kZ",
     "prophecy": true,
@@ -8446,7 +8129,6 @@
       "Guard"
     ],
     "immunity": [ "ActionTarget" ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lk",
     "unique": true
@@ -8465,7 +8147,6 @@
     "rarity": "3Epic",
     "text": "Ongoing When a friendly creature dies, gain 1 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lp",
     "effects": [
@@ -8496,7 +8177,6 @@
       "Breakthrough",
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lv"
   },
@@ -8519,7 +8199,6 @@
       "Breakthrough",
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lw"
   },
@@ -8542,7 +8221,6 @@
       "Drain",
       "Slay"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lx",
     "effects": [
@@ -8570,7 +8248,6 @@
     "rarity": "2Rare",
     "text": "Summon : Summon a 0/4 Northpoint Herald with Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lE",
     "effects": [
@@ -8601,7 +8278,6 @@
       "Guard",
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lJ"
   },
@@ -8619,7 +8295,6 @@
     "rarity": "2Rare",
     "text": "Heal all friendly creatures in a lane , then give them all +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mf",
     "modAttack": 1,
@@ -8655,7 +8330,6 @@
     "rarity": "3Epic",
     "text": "+2/+2 and Guard while you have 7 or more max magicka .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mm",
     "static": {
@@ -8686,7 +8360,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mZ",
     "effects": [
@@ -8714,9 +8387,6 @@
     "rarity": "3Epic",
     "text": "Summon : Silence another creature, or destroy an enemy support .",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Core Set",
     "deckCodeId": "nN",
     "effects": [
@@ -8759,7 +8429,6 @@
     "rarity": "3Epic",
     "text": "Siege Catapult can't attack unless your side of its lane is full.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "og",
     "attackCondition": {
@@ -8782,7 +8451,6 @@
     "rarity": "1Common",
     "text": "Summon : +0/+2 and Guard if the top card of your deck is [P].",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pi",
     "effects": [
@@ -8817,7 +8485,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pk",
     "static": {
@@ -8843,7 +8510,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pz"
   },
@@ -8863,7 +8529,6 @@
     "rarity": "1Common",
     "text": "+2/+2 while you have 7 or more max magicka .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pE",
     "static": {
@@ -8889,7 +8554,6 @@
     "rarity": "2Rare",
     "text": "Silence a creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pR",
     "effects": [
@@ -8916,7 +8580,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pU"
   },
@@ -8938,7 +8601,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qN",
     "effects": [
@@ -8966,7 +8628,6 @@
     "rarity": "2Rare",
     "text": "Summon : Give all friendly Guards +1/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rE",
     "effects": [
@@ -9001,7 +8662,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rQ"
   },
@@ -9021,7 +8681,6 @@
     "rarity": "1Common",
     "text": "Summon : Give a creature +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "sf",
     "effects": [
@@ -9050,9 +8709,6 @@
     "rarity": "3Epic",
     "text": "When you summon another Orc , Wrothgar Kingpin gains +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Core Set",
     "deckCodeId": "sh",
     "effects": [
@@ -9062,7 +8718,7 @@
         "modAttack": 1,
         "modHealth": 1,
         "condition": {
-          "type": "summonType",
+          "type": "hasSubtype",
           "subtypes": [ "Orc" ]
         }
       }
@@ -9077,18 +8733,15 @@
       "P"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 0,
     "rarity": "2Rare",
     "text": "Guard Summon : +1/+1 for each enemy creature in this lane .",
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "sk",
-    "modAttack": 0,
-    "modHealth": 0,
     "effects": [
       {
         "trigger": "Summon",
@@ -9117,7 +8770,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "sm"
   },
@@ -9137,7 +8789,6 @@
     "rarity": "2Rare",
     "text": "When Ageless Automaton attacks a Guard , it gains +3/+0 and Breakthrough this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ai",
     "effects": [
@@ -9169,7 +8820,6 @@
     "rarity": "1Common",
     "text": "Summon : Give a creature Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bA",
     "effects": [
@@ -9195,7 +8845,6 @@
     "rarity": "1Common",
     "text": "Deal 3 damage.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "dM",
     "effects": [
@@ -9225,9 +8874,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Core Set",
     "deckCodeId": "ee",
     "prophecy": true,
@@ -9249,16 +8895,13 @@
       "N"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 3,
+    "health": 3,
     "rarity": "2Rare",
     "text": "+3/+3",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "fa",
-    "modAttack": 3,
-    "modHealth": 3
+    "deckCodeId": "fa"
   },
   {
     "id": "dwarven-armaments",
@@ -9269,16 +8912,13 @@
       "N"
     ],
     "cost": 6,
-    "attack": null,
-    "health": null,
+    "attack": 5,
+    "health": 5,
     "rarity": "3Epic",
     "text": "+5/+5",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "fm",
-    "modAttack": 5,
-    "modHealth": 5
+    "deckCodeId": "fm"
   },
   {
     "id": "dwarven-ballista",
@@ -9298,7 +8938,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fn"
   },
@@ -9320,7 +8959,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fo",
     "effects": [
@@ -9349,7 +8987,6 @@
     "rarity": "1Common",
     "text": "Summon : Shackle an enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fr",
     "effects": [
@@ -9378,7 +9015,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fs"
   },
@@ -9396,7 +9032,6 @@
     "rarity": "2Rare",
     "text": "Uses: 3 Activate : Give a creature +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fE",
@@ -9426,7 +9061,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fT"
   },
@@ -9446,7 +9080,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gl"
   },
@@ -9466,7 +9099,6 @@
     "rarity": "2Rare",
     "text": "Summon : Unsummon another friendly creature to give Forsworn Guide +2/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gF",
     "effects": [
@@ -9503,7 +9135,6 @@
     "rarity": "1Common",
     "text": "Summon : Give a creature +2/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gJ",
     "effects": [
@@ -9530,7 +9161,6 @@
     "rarity": "4Legendary",
     "text": "Uses: 3 Activate : Deal 2 damage to a creature, then increase the damage dealt by 2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "target": "creature",
@@ -9560,7 +9190,6 @@
     "rarity": "3Epic",
     "text": "Ongoing Summon : Put a 0/3 Dwarven Spider with Guard into your hand. Friendly Dwemer have +3/+0.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hO",
     "effects": [
@@ -9599,7 +9228,6 @@
     "rarity": "1Common",
     "text": "Prophecy",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "jS",
     "prophecy": true
@@ -9613,16 +9241,13 @@
       "N"
     ],
     "cost": 0,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 3,
     "rarity": "1Common",
     "text": "+0/+3",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "ki",
-    "modAttack": 0,
-    "modHealth": 3
+    "deckCodeId": "ki"
   },
   {
     "id": "mundus-stone",
@@ -9638,7 +9263,6 @@
     "rarity": "4Legendary",
     "text": "Ongoing When you summon a creature, give it a random Keyword .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "la",
     "unique": true,
@@ -9666,7 +9290,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 4 damage to all enemy creatures.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "lH",
     "unique": true,
@@ -9693,7 +9316,6 @@
     "rarity": "4Legendary",
     "text": "Uses: 3 Activate : Draw a copy of a random card from your opponent's deck.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "lK",
@@ -9725,7 +9347,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mj",
     "prophecy": true
@@ -9746,7 +9367,6 @@
     "rarity": "1Common",
     "text": "Summon : You must deal 2 damage to a friendly creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mI",
     "targetReq": true,
@@ -9775,7 +9395,6 @@
     "rarity": "1Common",
     "text": "At the start of your turn, give another random friendly creature +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mL",
     "effects": [
@@ -9802,7 +9421,6 @@
     "rarity": "2Rare",
     "text": "Summon a Slaughterfish in each lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oD",
     "effects": [
@@ -9838,7 +9456,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oS",
     "prophecy": true
@@ -9859,7 +9476,6 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "oZ",
     "prophecy": true,
@@ -9888,7 +9504,6 @@
     "rarity": "3Epic",
     "text": "Summon : Give all enemy creatures in this lane Guard .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pG",
     "effects": [
@@ -9918,7 +9533,6 @@
     "keywords": [
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "pH",
     "effects": [
@@ -9954,7 +9568,6 @@
     "rarity": "2Rare",
     "text": "Summon : Destroy an enemy support .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "rp",
     "effects": [
@@ -9979,7 +9592,6 @@
     "rarity": "4Legendary",
     "text": "Uses: 3 Activate : Transform a creature into a random creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "rz",
@@ -10011,7 +9623,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "as",
     "unique": true,
@@ -10040,7 +9651,6 @@
     "rarity": "3Epic",
     "text": "Summon : Destroy all Wounded enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fZ",
     "effects": [
@@ -10072,7 +9682,6 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mx",
     "unique": true,
@@ -10104,7 +9713,6 @@
       "Guard",
       "LastGasp"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "nu",
     "effects": [
@@ -10132,7 +9740,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Equip each friendly creature in this lane with a random item .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kw",
     "unique": true,
@@ -10153,18 +9760,15 @@
       "R", "B"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 4,
+    "health": 0,
     "rarity": "3Epic",
     "text": "Ward +4/+0",
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": "nH",
-    "modAttack": 4,
-    "modHealth": 0
+    "deckCodeId": "nH"
   },
   {
     "id": "rift-thane",
@@ -10182,7 +9786,6 @@
     "rarity": "3Epic",
     "text": "Summon : If you have less health than your opponent, +0/+2 and Guard . Otherwise, +2/+0 and Breakthrough .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ne",
     "effects": [
@@ -10225,7 +9828,6 @@
       "Guard",
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qY",
     "unique": true,
@@ -10247,7 +9849,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Draw a random action from your discard pile. Your actions cost 1 less.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "bq",
     "unique": true,
@@ -10287,9 +9888,6 @@
     "rarity": "3Epic",
     "text": "Summon : Deal 2 damage to an enemy creature or give a friendly creature +2/+2.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Core Set",
     "deckCodeId": "oB",
     "target": "creature",
@@ -10336,7 +9934,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Ahnassi steals all Keywords from enemy creatures.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "aj",
     "unique": true,
@@ -10364,7 +9961,6 @@
     "rarity": "3Epic",
     "text": "Friendly creatures with Pilfer may attack an extra time each turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kn",
     "effects": [
@@ -10395,7 +9991,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Silence and Shackle all enemy creatures in this lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "mO",
     "unique": true,
@@ -10430,7 +10025,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "qB",
     "effects": [
@@ -10466,7 +10060,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "ig",
     "unique": true,
@@ -10499,7 +10092,6 @@
       "Breakthrough",
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "od",
     "effects": [
@@ -10525,7 +10117,6 @@
     "rarity": "3Epic",
     "text": "Destroy an enemy creature or support .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "fB",
     "effects": [
@@ -10552,7 +10143,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Summon a 2/2 Colovian Trooper with Guard in each lane . When a friendly creature dies, General Tullius gains +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "gV",
     "unique": true,
@@ -10595,7 +10185,6 @@
     "rarity": "4Legendary",
     "text": "At the start of your turn, summon a random creature from your deck to a random lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "hq",
     "unique": true,
@@ -10624,7 +10213,6 @@
     "rarity": "3Epic",
     "text": "Summon : Draw a random Orc from your discard pile. Other friendly Orcs have +1/+1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": "kB",
     "effects": [
@@ -10664,7 +10252,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 6 damage to a random enemy.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "unique": true,
@@ -10693,7 +10280,6 @@
     "rarity": "4Legendary",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10713,7 +10299,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10733,7 +10318,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10753,7 +10337,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 6 damage to a random enemy.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "unique": true,
@@ -10784,7 +10367,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -10812,7 +10394,6 @@
     "rarity": "1Common",
     "text": "Summon : Shackle a random enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -10839,7 +10420,6 @@
     "rarity": "1Common",
     "text": "Your opponent had no creatures in their deck, so we gave you a Chicken instead.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10861,7 +10441,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10879,7 +10458,6 @@
     "rarity": "4Legendary",
     "text": "Shackle all enemy creatures in one lane.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -10906,7 +10484,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 6 damage to a random enemy.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "unique": true,
@@ -10935,7 +10512,6 @@
     "rarity": "2Rare",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -10953,7 +10529,6 @@
     "rarity": "4Legendary",
     "text": "Deal 5 damage to your opponent and gain 5 health.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -10987,7 +10562,6 @@
     "rarity": "2Rare",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11010,7 +10584,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11033,7 +10606,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11055,7 +10627,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11075,7 +10646,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11088,16 +10658,13 @@
       "B"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 0,
     "rarity": "1Common",
     "text": "+2/+0",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": null,
-    "modAttack": 2,
-    "modHealth": 0
+    "deckCodeId": null
   },
   {
     "id": "northpoint-herald",
@@ -11117,7 +10684,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11139,7 +10705,6 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11161,7 +10726,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11179,7 +10743,6 @@
     "rarity": "4Legendary",
     "text": "Summon a random creature from each discard pile.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -11213,7 +10776,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11233,7 +10795,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11253,7 +10814,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11273,7 +10833,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11293,7 +10852,6 @@
     "rarity": "2Rare",
     "text": "Slaughterfish gains +2/+0 at the start of your turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "effects": [
@@ -11321,7 +10879,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11341,7 +10898,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11354,16 +10910,13 @@
       "N"
     ],
     "cost": 1,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 0,
     "rarity": "1Common",
     "text": "+1/+0",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": null,
-    "modAttack": 1,
-    "modHealth": 0
+    "deckCodeId": null
   },
   {
     "id": "storm-atronach",
@@ -11384,7 +10937,6 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11404,7 +10956,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11424,9 +10975,15 @@
     "rarity": "4Legendary",
     "text": "( Regular ) If a creature eats Sweet Roll, heal them. ( Fetched ) There were no creatures to fetch, so we gave you this Sweet Roll. If a creature eats it, heal them.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "effects": [
+      { 
+        "trigger": "LastGasp",
+        "type": "heal",
+        "target": "slayer"
+      }
+    ]
   },
   {
     "id": "uupse-fyr",
@@ -11444,7 +11001,6 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 6 damage to a random enemy.",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null,
     "unique": true,
@@ -11475,7 +11031,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11495,7 +11050,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Core Set",
     "deckCodeId": null
   },
@@ -11515,7 +11069,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "deckCodeId": "je"
   },
@@ -11535,7 +11088,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "deckCodeId": "kR"
   },
@@ -11555,7 +11107,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "deckCodeId": "nD"
   },
@@ -11575,7 +11126,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "deckCodeId": "rK"
   },
@@ -11595,7 +11145,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "deckCodeId": "ou"
   },
@@ -11613,7 +11162,6 @@
     "rarity": "1Common",
     "text": "Uses: 3 Activate : Gain 1 magicka .",
     "keywords": [],
-    "mechanics": [],
     "set": "Basic Set",
     "uses": 3,
     "deckCodeId": null,

@@ -7,7 +7,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 7,
     "attack": 3,
@@ -15,13 +15,30 @@
     "rarity": "4Legendary",
     "text": "Summon : Deal 1 damage. Beast Form : +2/+2 and destroy a Wounded creature.",
     "keywords": [
-    ],
-    "mechanics": [
-      "Summon",
       "BeastForm"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "af"
+    "deckCodeId": "af",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "any"
+      },
+      {
+        "trigger": "DestroyRune",
+        "type": "destroy",
+        "target": "creatureEnemyWounded"
+      },
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "aela-the-huntress-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "aelas-huntmate",
@@ -31,19 +48,32 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 3,
     "health": 3,
     "rarity": "2Rare",
     "text": "Beast Form : +1/+1 and draw a card.",
-    "keywords": [],
-    "mechanics": [
+    "keywords": [
       "BeastForm"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ag"
+    "deckCodeId": "ag",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "aelas-huntmate-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "ancestors-battleaxe",
@@ -51,19 +81,25 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 7,
-    "attack": null,
-    "health": null,
+    "attack": 4,
+    "health": 4,
     "rarity": "3Epic",
     "text": "+4/+4 Summon : Give the top creature of your deck +4/+4.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aB"
+    "deckCodeId": "aB",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 4,
+        "modHealth": 4,
+        "target": "creatureTopDeck"
+      }
+    ]
   },
   {
     "id": "battlefield-scrounger",
@@ -73,7 +109,7 @@
       "Redguard"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 5,
     "attack": 3,
@@ -81,13 +117,19 @@
     "rarity": "2Rare",
     "text": "Charge Slay : Put a random item into your hand.",
     "keywords": [
-      "Charge"
-    ],
-    "mechanics": [
-      "Slay"
+      "Charge", "Slay"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bF"
+    "deckCodeId": "bF",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "addToHand",
+        "amount": 1,
+        "subtypes": [ "Item" ],
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "berserker-of-the-pale",
@@ -97,7 +139,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": 4,
@@ -105,11 +147,22 @@
     "rarity": "1Common",
     "text": "When you summon another creature with 5 power or more, give it +1/+1 and Breakthrough .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bM"
+    "deckCodeId": "bM",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [ "Breakthrough" ],
+        "target": "summon",
+        "condition": {
+          "type": "lastSummonAttack",
+          "min": 5
+        }
+      }
+    ]
   },
   {
     "id": "blades-lookout",
@@ -119,7 +172,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": 3,
@@ -127,11 +180,20 @@
     "rarity": "1Common",
     "text": "When you summon a Dragon , draw a card.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bX"
+    "deckCodeId": "bX",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "candlehearth-brawler",
@@ -141,7 +203,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 2,
@@ -152,7 +214,6 @@
       "Guard",
       "Charge"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cM"
   },
@@ -164,20 +225,25 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 2,
     "attack": 2,
     "health": 2,
     "rarity": "1Common",
     "text": "Prophecy Beast Form : +2/+1",
-    "keywords": [],
-    "mechanics": [
-      "Prophecy",
-      "BeastForm"
-    ],
+    "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "de"
+    "deckCodeId": "de",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "circle-initiate-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "duel-atop-the-world",
@@ -185,7 +251,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 7,
     "attack": null,
@@ -193,11 +259,22 @@
     "rarity": "3Epic",
     "text": "Give a friendly creature +3/+3. It Battles your opponent's most powerful creature.",
     "keywords": [],
-    "mechanics": [
-      "Battle"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fd"
+    "deckCodeId": "fd",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 3,
+        "modHealth": 3,
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "battle",
+        "target": "creatureFriendly"
+      }
+    ]
   },
   {
     "id": "hit-and-run",
@@ -205,7 +282,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": null,
@@ -213,9 +290,21 @@
     "rarity": "3Epic",
     "text": "Draw five cards. Discard your hand at the end of the turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "il"
+    "deckCodeId": "il",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 5,
+        "target": "player"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "discardHand",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "inspiring-stormcloak",
@@ -225,19 +314,30 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 2,
     "health": 2,
     "rarity": "1Common",
     "text": "Last Gasp : Summon a 2/2 Rallying Stormcloak in each lane.",
-    "keywords": [],
-    "mechanics": [
-      "LastGasp"
-    ],
+    "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "iY"
+    "deckCodeId": "iY",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "summon",
+        "cardId": "rallying-stormcloak",
+        "target": "leftLane"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "summon",
+        "cardId": "rallying-stormcloak",
+        "target": "rightLane"
+      }
+    ]
   },
   {
     "id": "shield-breaker",
@@ -245,19 +345,24 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 2,
     "rarity": "1Common",
     "text": "+2/+2 Summon : An enemy creature loses Guard .",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nY"
+    "deckCodeId": "nY",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "removeKeywords": [ "Guard" ],
+        "target": "creatureEnemy"
+      }
+    ]
   },
   {
     "id": "skyborn-dragon",
@@ -267,7 +372,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 6,
     "attack": 7,
@@ -275,12 +380,15 @@
     "rarity": "2Rare",
     "text": "Summon : Battle an enemy creature.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Battle"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oz"
+    "deckCodeId": "oz",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemy"
+      }
+    ]
   },
   {
     "id": "skyforge",
@@ -288,23 +396,36 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "4Legendary",
     "text": "Uses: 3 Activate : Equip a friendly creature with a Steel Dagger . If Skyforge has equipped 3 daggers, it changes into Underforge .",
-    "keywords": [
-      "Activate"
-    ],
-    "mechanics": [
-      "Change",
-      "Equip"
-    ],
+    "keywords": [],
     "set": "Heroes of Skyrim",
     "uses": 3,
-    "deckCodeId": "oA"
+    "deckCodeId": "oA",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "equip",
+        "cardId": "steel-dagger",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Activation",
+        "type": "change",
+        "cardId": "underforge",
+        "target": "player",
+        "condition": {
+          "type": "numActivations",
+          "min": 3
+        }
+      }
+    ]
   },
   {
     "id": "stormcloak-avenger",
@@ -314,7 +435,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 4,
@@ -322,11 +443,20 @@
     "rarity": "3Epic",
     "text": "At the end of your turn, if three or more friendly creatures died this turn, summon a 2/2 Rallying Stormcloak .",
     "keywords": [],
-    "mechanics": [
-      "EndOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pB"
+    "deckCodeId": "pB",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "summon",
+        "cardId": "rallying-stormcloak",
+        "condition": {
+          "type": "creatureFriendlyDied",
+          "min": 3
+        },
+        "target": "randomLane"
+      }
+    ]
   },
   {
     "id": "stormcloak-camp",
@@ -334,7 +464,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": null,
@@ -342,11 +472,20 @@
     "rarity": "2Rare",
     "text": "Ongoing At the end of your turn, if a creature died this turn, deal 2 damage to your opponent.",
     "keywords": [],
-    "mechanics": [
-      "EndOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pC"
+    "deckCodeId": "pC",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "damage",
+        "amount": 2,
+        "target": "opponent",
+        "condition": {
+          "type": "creatureDied",
+          "min": 1
+        }
+      }
+    ]
   },
   {
     "id": "stormcloak-vanguard",
@@ -356,7 +495,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 2,
     "attack": 1,
@@ -364,13 +503,20 @@
     "rarity": "1Common",
     "text": "Charge Last Gasp : Put a 5/5 Stormcloak Battalion in your hand.",
     "keywords": [
-      "Charge"
-    ],
-    "mechanics": [
+      "Charge",
       "LastGasp"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pD"
+    "deckCodeId": "pD",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "amount": 1,
+        "cardId": "stormcloak-battalion",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "stoutheart-giant",
@@ -380,7 +526,7 @@
       "Giant"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 5,
     "attack": 6,
@@ -388,7 +534,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pF"
   },
@@ -400,19 +545,29 @@
       "Orc"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": 3,
     "health": 2,
     "rarity": "1Common",
-    "text": "Summon : Draw a card if you have two other creatures.",
+    "text": "Summon : Draw a card if you have two other [R] creatures.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pI"
+    "deckCodeId": "pI",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "numCreatures",
+          "min": 3,
+          "attribute": "R"
+        }
+      }
+    ]
   },
   {
     "id": "swiftwing-dragon",
@@ -422,7 +577,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 8,
     "attack": 5,
@@ -432,7 +587,6 @@
     "keywords": [
       "Charge"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pW"
   },
@@ -444,7 +598,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 5,
     "attack": 6,
@@ -454,11 +608,22 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "qZ"
+    "deckCodeId": "qZ",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "drawFiltered",
+        "subtypes": [ "Nord" ],
+        "target": "player",
+        "amount": 1,
+        "conditon": {
+          "type": "hasSubtype",
+          "subtypes": [ "Shout" ]
+        }
+      }
+    ]
   },
   {
     "id": "ulfrics-zealot",
@@ -468,40 +633,113 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 5,
     "health": 2,
     "rarity": "1Common",
     "text": "Last Gasp : Put a Heavy Battleaxe into your hand.",
-    "keywords": [],
-    "mechanics": [
-      "LastGasp"
-    ],
+    "keywords": [ "LastGasp" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rc"
+    "deckCodeId": "rc",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "amount": 1,
+        "target": "player",
+        "cardId": "heavy-battleaxe"
+      }
+    ]
   },
   {
-    "id": "unrelenting-force",
+    "id": "unrelenting-force-level-1",
     "name": "Unrelenting Force",
     "type": "Action",
-    "subtypes": [],
+    "subtypes": [ "Shout" ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "1Common",
-    "text": "Shout Level 1 : Unsummon an enemy creature with power 3 or less. Level 2 : Unsummon an enemy creature. Level 3 : Unsummon all enemy creatures in a lane.",
+    "text": "Shout Level 1 : Unsummon an enemy creature with power 3 or less.",
     "keywords": [],
-    "mechanics": [
-      "Shout",
-      "Unsummon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ri"
+    "deckCodeId": "ri",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "unsummon",
+        "target": "creatureEnemy",
+        "targetCondition": {
+          "type": "hasAttack",
+          "max": 3
+        }
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "unrelenting-force-level-2",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "unrelenting-force-level-2",
+    "name": "Unrelenting Force Level 2",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 2 : Unsummon an enemy creature.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "unsummon",
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "unrelenting-force-level-3",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "unrelenting-force-level-3",
+    "name": "Unrelenting Force Level 3",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 3 : Unsummon all enemy creatures in a lane.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "unsummon",
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ]
   },
   {
     "id": "wildfire-dragon",
@@ -511,7 +749,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 7,
     "attack": 6,
@@ -519,14 +757,24 @@
     "rarity": "4Legendary",
     "text": "Breakthrough Summon : Deal 1 damage to all other creatures. Slay : +1/+1.",
     "keywords": [
-      "Breakthrough"
-    ],
-    "mechanics": [
-      "Summon",
-      "Slay"
+      "Breakthrough", "Slay"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rO"
+    "deckCodeId": "rO",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureOtherAll"
+      },
+      {
+        "trigger": "Slay",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ]
   },
   {
     "id": "world-eaters-eyrie",
@@ -534,7 +782,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 6,
     "attack": null,
@@ -542,11 +790,19 @@
     "rarity": "4Legendary",
     "text": "Ongoing When you summon a creature that costs 7 or more, double its power and health.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "sb"
+    "deckCodeId": "sb",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "doubleStats",
+        "target": "summon",
+        "condition": {
+          "type": "lastSummonCost",
+          "min": 7
+        }
+      }
+    ]
   },
   {
     "id": "ancano",
@@ -556,7 +812,7 @@
       "High Elf"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 8,
     "attack": 5,
@@ -566,11 +822,23 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aA"
+    "deckCodeId": "aA",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 5,
+        "target": "any"
+      },
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "addKeywords": [ "Breakthrough" ],
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "arcane-enchanter",
@@ -578,7 +846,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": null,
@@ -586,11 +854,19 @@
     "rarity": "3Epic",
     "text": "Ongoing When you draw an item , give it a random Keyword .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aH"
+    "deckCodeId": "aH",
+    "effects": [
+      {
+        "trigger": "DrawCard",
+        "type": "grantRandomKeyword",
+        "target": "drawnCard",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Item" ]
+        }
+      }
+    ]
   },
   {
     "id": "bringer-of-nightmares",
@@ -600,7 +876,7 @@
       "Daedra"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 7,
     "attack": 4,
@@ -608,12 +884,25 @@
     "rarity": "4Legendary",
     "text": "Summon : See a vision of a random creature, then you must choose a creature to transform into it.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Transform"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ct"
+    "deckCodeId": "ct",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "revealAndTransform",
+        "choices": [
+          {
+            "text": "Transform a creature into revealed creature",
+            "effect": {
+              "type": "transform",
+              "cardId": "revealedCreature",
+              "target": "creature"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "college-of-winterhold",
@@ -621,20 +910,29 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 5,
     "attack": null,
     "health": null,
     "rarity": "4Legendary",
     "text": "Uses: 3 Activate : Look at three random 1-cost actions and choose one to draw. Then, increase the cost of cards this reveals by 1.",
-    "keywords": [
-      "Activate"
-    ],
-    "mechanics": [],
+    "keywords": [],
     "set": "Heroes of Skyrim",
     "uses": 3,
-    "deckCodeId": "dt"
+    "deckCodeId": "dt",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "revealAndChooseCost",
+        "subtypes": [ "Action" ],
+        "cost": 1,
+        "target": "player",
+        "amount": 3,
+        "increment": 1
+      }
+    ]
   },
   {
     "id": "conjuration-scholar",
@@ -644,7 +942,7 @@
       "Redguard"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 6,
     "attack": 1,
@@ -652,11 +950,16 @@
     "rarity": "1Common",
     "text": "Summon : Summon a 5/5 Frost Atronach with Guard .",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "dv"
+    "deckCodeId": "dv",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "cardId": "frost-atronach",
+        "target": "thisLane"
+      }
+    ]
   },
   {
     "id": "court-wizard",
@@ -666,19 +969,29 @@
       "Breton"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 5,
     "attack": 3,
     "health": 5,
     "rarity": "1Common",
-    "text": "Summon : Draw a card if you have two other creatures.",
+    "text": "Summon : Draw a card if you have two other [B] creatures.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "dC"
+    "deckCodeId": "dC",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "numCreatures",
+          "min": 3,
+          "attribute": "B"
+        }
+      }
+    ]
   },
   {
     "id": "dark-rebirth",
@@ -686,7 +999,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": null,
@@ -694,11 +1007,21 @@
     "rarity": "1Common",
     "text": "Sacrifice a creature to summon a copy of it.",
     "keywords": [],
-    "mechanics": [
-      "Copy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ef"
+    "deckCodeId": "ef",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "targetedCreature",
+        "target": "randomLane"
+      }
+    ]
   },
   {
     "id": "dragon-priest-mask",
@@ -706,19 +1029,23 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 6,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 2,
     "rarity": "3Epic",
     "text": "+2/+2 Summon : Trigger the wielder's summon ability.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eM"
+    "deckCodeId": "eM",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "triggerSummon",
+        "target": "wielder"
+      }
+    ]
   },
   {
     "id": "dragons-fury",
@@ -726,7 +1053,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": null,
@@ -734,9 +1061,23 @@
     "rarity": "1Common",
     "text": "Deal 3 damage to a creature, and 3 extra damage for each friendly Dragon .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eN"
+    "deckCodeId": "eN",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "target": "creature",
+        "amountPer": "creatureFriendlyDragon"
+      }
+    ]
   },
   {
     "id": "echo-of-akatosh",
@@ -746,7 +1087,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 6,
     "attack": 5,
@@ -754,11 +1095,19 @@
     "rarity": "4Legendary",
     "text": "When you draw a creature, give it a random Keyword .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fz"
+    "deckCodeId": "fz",
+    "effects": [
+      {
+        "trigger": "DrawCard",
+        "type": "grantRandomKeyword",
+        "target": "drawnCard",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Creature" ]
+        }
+      }
+    ]
   },
   {
     "id": "embassy-guard",
@@ -768,7 +1117,7 @@
       "High Elf"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 2,
     "attack": 0,
@@ -776,34 +1125,99 @@
     "rarity": "1Common",
     "text": "Prophecy , Guard , Ward",
     "keywords": [
-      "Guard"
+      "Guard",
       "Ward"
     ],
-    "mechanics": [,
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fN"
+    "deckCodeId": "fN",
+    "prophecy": true
   },
   {
-    "id": "fire-breath",
+    "id": "fire-breath-level-1",
     "name": "Fire Breath",
     "type": "Action",
-    "subtypes": [],
+    "subtypes": [ "Shout" ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "1Common",
-    "text": "Shout Level 1 : Deal 2 damage to a creature. Level 2 : Deal 4 damage to a creature. Level 3 : Deal 10 damage to a creature.",
+    "text": "Shout Level 1 : Deal 2 damage to a creature.",
     "keywords": [],
-    "mechanics": [
-      "Shout"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "gv"
+    "deckCodeId": "gv",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 2,
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "fire-breath-level-2",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "fire-breath-level-2",
+    "name": "Fire Breath Level 2",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 2 : Deal 4 damage to a creature.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 4,
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "fire-breath-level-3",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "fire-breath-level-3",
+    "name": "Fire Breath Level 3",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 3 : Deal 10 damage to a creature.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 10,
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "ghost-sea-lookout",
@@ -813,7 +1227,7 @@
       "Breton"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": 4,
@@ -821,11 +1235,19 @@
     "rarity": "1Common",
     "text": "When you summon a Dragon , Ghost Sea Lookout gains a Ward .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "gZ"
+    "deckCodeId": "gZ",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffSelf",
+        "addKeywords": [ "Ward" ],
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "icewing-dragon",
@@ -835,7 +1257,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 6,
     "attack": 6,
@@ -843,11 +1265,15 @@
     "rarity": "2Rare",
     "text": "Summon : Shackle an enemy creature.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "iA"
+    "deckCodeId": "iA",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "shackle",
+        "target": "creatureEnemy"
+      }
+    ]
   },
   {
     "id": "insightful-scholar",
@@ -857,7 +1283,7 @@
       "High Elf"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 5,
     "attack": 2,
@@ -865,12 +1291,18 @@
     "rarity": "2Rare",
     "text": "Prophecy Summon : Draw a card for each card your opponent drew this turn.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "iW"
+    "deckCodeId": "iW",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "amountPer": "cardsDrawnOpponentThisTurn",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "jzargo",
@@ -880,7 +1312,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": 3,
@@ -888,11 +1320,18 @@
     "rarity": "4Legendary",
     "text": "Summon : Put an Experimental Scroll into your hand.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jc"
+    "deckCodeId": "jc",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "amount": 1,
+        "cardId": "experimental-scroll",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "master-swordsmith",
@@ -902,7 +1341,7 @@
       "Redguard"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": 2,
@@ -910,11 +1349,18 @@
     "rarity": "2Rare",
     "text": "At the start of your turn, give each item in your deck +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "StartOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ko"
+    "deckCodeId": "ko",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "buffDeck",
+        "subtypes": [ "Item" ],
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "mistveil-enchanter",
@@ -924,7 +1370,7 @@
       "Breton"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": 2,
@@ -934,11 +1380,20 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kD"
+    "deckCodeId": "kD",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "condition": {
+          "type": "numCreatures",
+          "min": 2,
+          "keyword": "Ward"
+        }
+      }
+    ]
   },
   {
     "id": "mystic-dragon",
@@ -948,7 +1403,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": 4,
@@ -956,11 +1411,9 @@
     "rarity": "1Common",
     "text": "Prophecy",
     "keywords": [],
-    "mechanics": [
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "lj"
+    "deckCodeId": "lj",
+    "prophecy": true
   },
   {
     "id": "revealing-the-unseen",
@@ -968,7 +1421,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": null,
@@ -976,9 +1429,24 @@
     "rarity": "2Rare",
     "text": "Put two random actions into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nb"
+    "deckCodeId": "nb",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "amount": 1,
+        "subtypes": [ "Action" ],
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "amount": 1,
+        "subtypes": [ "Action" ],
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "riften-pickpocket",
@@ -988,7 +1456,7 @@
       "Dark Elf"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": 2,
@@ -996,12 +1464,16 @@
     "rarity": "2Rare",
     "text": "Summon : Reveal three random cards in your opponent's deck. Choose one and draw a copy of it.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Copy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ng"
+    "deckCodeId": "ng",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "revealAndChooseOpp",
+        "amount": 3,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "studious-greybeard",
@@ -1011,7 +1483,7 @@
       "Nord"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 1,
     "attack": 0,
@@ -1019,11 +1491,34 @@
     "rarity": "2Rare",
     "text": "At the start of your turn, look at the top card of your deck. You may discard it.",
     "keywords": [],
-    "mechanics": [
-      "StartOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pL"
+    "deckCodeId": "pL",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "scry",
+        "amount": 1,
+        "target": "player",
+        "choices": [
+          {
+            "text": "Keep the card",
+            "effect": {
+              "type": "drawCards",
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Discard the card",
+            "effect": {
+              "type": "discardTopDeck",
+              "amount": 1,
+              "target": "player"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "thalmor-embassy",
@@ -1031,7 +1526,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": null,
@@ -1039,9 +1534,26 @@
     "rarity": "3Epic",
     "text": "Ongoing Your High Elves cost 1 less. You can't be damaged by actions .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ql"
+    "deckCodeId": "ql",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "target": "playerHand",
+        "amount": -1,
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [ "High Elf" ]
+        }
+      },
+      {
+        "trigger": "Aura",
+        "type": "grantImmunity",
+        "immunity": "ActionDamage",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "thief-of-dreams",
@@ -1051,7 +1563,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 5,
     "attack": 4,
@@ -1059,12 +1571,16 @@
     "rarity": "3Epic",
     "text": "Summon : See a vision of two of your opponent's cards. Guess which one is in their hand. If you're right, draw a copy of it.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Copy"    
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "qv"
+    "deckCodeId": "qv",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "revealAndGuess",
+        "amount": 2,
+        "target": "opponent"
+      }
+    ]
   },
   {
     "id": "vigilant-of-stendarr",
@@ -1074,7 +1590,7 @@
       "Breton"
     ],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 3,
     "attack": 5,
@@ -1082,7 +1598,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rs"
   },
@@ -1092,7 +1607,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 8,
     "attack": null,
@@ -1100,9 +1615,35 @@
     "rarity": "4Legendary",
     "text": "Fill the left lane with Stormcloak Skirmishers or the right lane with Colovian Troopers .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aa"
+    "deckCodeId": "aa",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "choice",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Fill the left lane with Stormcloak Skirmishers.",
+            "effect": {
+              "type": "summon",
+              "cardId": "stormcloak-skirmisher",
+              "target": "leftLane",
+              "amount": 4
+            }
+          },
+          {
+            "text": "Fill the right lane with Colovian Troopers.",
+            "effect" : {
+              "type": "summon",
+              "cardId": "colovian-trooper",
+              "target": "rightLane",
+              "amount": 4
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "arrest",
@@ -1110,7 +1651,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 7,
     "attack": null,
@@ -1118,11 +1659,26 @@
     "rarity": "2Rare",
     "text": "Steal an enemy creature. It loses Guard , and is permanently Shackled .",
     "keywords": [],
-    "mechanics": [
-      "Steal"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aP"
+    "deckCodeId": "aP",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "removeKeywords": [ "Guard" ],
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "freeze",
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "steal",
+        "target": "creatureEnemy"
+      }
+    ]
   },
   {
     "id": "bandit-ringleader",
@@ -1132,7 +1688,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 6,
     "attack": 3,
@@ -1140,31 +1696,111 @@
     "rarity": "3Epic",
     "text": "Summon : Other friendly creatures in this lane gain \" Pilfer : Draw a card\" this turn.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bx"
+    "deckCodeId": "bx",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "grantEffect",
+        "target": "creatureFriendlyOtherThisLaneAll",
+        "grantedEffect": {
+          "trigger": "Pilfer",
+          "type": "drawCards",
+          "temporary": true,
+          "amount": 1,
+          "target": "player"
+        }
+      }
+    ]
   },
   {
-    "id": "call-of-valor",
+    "id": "call-of-valor-level-1",
     "name": "Call of Valor",
     "type": "Action",
-    "subtypes": [],
+    "subtypes": [ "Shout" ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "1Common",
-    "text": "Shout Level 1 : Summon a 3/3 Sovngarde Hero . Level 2 : Summon two 3/3 Sovngarde Heroes . Level 3 : Fill a lane with 3/3 Sovngarde Heroes .",
+    "text": "Shout Level 1 : Summon a 3/3 Sovngarde Hero.",
     "keywords": [],
-    "mechanics": [
-      "Shout"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "cF"
+    "deckCodeId": "cF",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "sovngarde-hero",
+        "target": "lane"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "call-of-valor-level-2",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "call-of-valor-level-2",
+    "name": "Call of Valor Level 2",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 2 : Summon two 3/3 Sovngarde Heroes.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "sovngarde-hero",
+        "target": "lane",
+        "amount": 2
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "call-of-valor-level-3",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "call-of-valor-level-3",
+    "name": "Call of Valor Level 3",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 3 : Fill a lane with 3/3 Sovngarde Heroes.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "sovngarde-hero",
+        "target": "lane",
+        "amount": 4
+      }
+    ]
   },
   {
     "id": "cauldron-keeper",
@@ -1174,7 +1810,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 5,
     "attack": 3,
@@ -1184,11 +1820,21 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "cR"
+    "deckCodeId": "cR",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "extraUse",
+        "amount": 1,
+        "target": "supportFriendlyAll"
+      },
+      {
+        "trigger": "Aura",
+        "type": "extraAttack",
+        "target": "supportFriendlyAll"
+      }
+    ]
   },
   {
     "id": "cleric-of-kyne",
@@ -1198,7 +1844,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 2,
     "attack": 2,
@@ -1206,12 +1852,17 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : Give a creature +0/+2.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Prophecy"    
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "df"
+    "deckCodeId": "df",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modHealth": 2,
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "cliffside-lookout",
@@ -1221,7 +1872,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 2,
@@ -1229,11 +1880,20 @@
     "rarity": "1Common",
     "text": "When you summon a Dragon , Cliffside Lookout gains +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "dk"
+    "deckCodeId": "dk",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "devour",
@@ -1241,7 +1901,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 4,
     "attack": null,
@@ -1249,9 +1909,30 @@
     "rarity": "2Rare",
     "text": "Destroy a creature with 4 power or less and give its Keywords to a random Dragon in your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ex"
+    "deckCodeId": "ex",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "giveKeywordsToHandRandom",
+        "subtypes": [ "Dragon" ],
+        "target": "creature",
+        "targetCondition": {
+          "type": "hasAttack",
+          "max": 4
+        }
+      },
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creature",
+        "targetCondition": {
+          "type": "hasAttack",
+          "max": 4
+        }
+      }
+      
+    ]
   },
   {
     "id": "elixir-of-vitality",
@@ -1259,20 +1940,25 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 1,
     "attack": null,
     "health": null,
     "rarity": "1Common",
     "text": "Uses: 3 Activate : Gain 2 health.",
-    "keywords": [
-      "Activate"
-    ],
-    "mechanics": [],
+    "keywords": [],
     "set": "Heroes of Skyrim",
     "uses": 3,
-    "deckCodeId": "fJ"
+    "deckCodeId": "fJ",
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "damage",
+        "amount": -2,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "grisly-gourmet",
@@ -1282,7 +1968,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 2,
@@ -1290,12 +1976,20 @@
     "rarity": "2Rare",
     "text": "Summon : Transform an enemy creature with 2 power or less into a Sweet Roll .",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Transform"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "hF"
+    "deckCodeId": "hF",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "transform",
+        "target": "creatureEnemy",
+        "cardId": "sweet-roll",
+        "targetCondition": {
+          "type": "hasAttack",
+          "max": 2
+        }
+      }
+    ]
   },
   {
     "id": "imperial-camp",
@@ -1303,7 +1997,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 4,
     "attack": null,
@@ -1311,11 +2005,27 @@
     "rarity": "2Rare",
     "text": "Ongoing Summon : Put a 1/2 Septim Guardsman with Guard into your hand. Friendly Guards have +1/+0.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "iH"
+    "deckCodeId": "iH",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "amount": 1,
+        "cardId": "septim-guardsman",
+        "target": "player"
+      },
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasKeyword",
+          "keyword": "Guard"
+        }
+      }
+    ]
   },
   {
     "id": "jarl-balgruuf",
@@ -1325,7 +2035,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 7,
     "attack": 3,
@@ -1333,12 +2043,30 @@
     "rarity": "4Legendary",
     "text": "Summon : Summon a Stormcloak Skirmisher in the left lane and a Kvatch Soldier in the right lane. At the start of your turn, if your lanes are full, you win the game.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "StartOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jd"
+    "deckCodeId": "jd",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "cardId": "stormcloak-skirmisher",
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "cardId": "kvatch-soldier",
+        "target": "rightLane"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "winGame",
+        "condition": {
+          "type": "lanesFull"
+        }
+      }
+    ]
   },
   {
     "id": "karthspire-scourge",
@@ -1348,7 +2076,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 5,
     "attack": 4,
@@ -1356,11 +2084,16 @@
     "rarity": "2Rare",
     "text": "Summon : Give all enemy creatures in this lane -1/-0.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jj"
+    "deckCodeId": "jj",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ]
   },
   {
     "id": "legate-rikke",
@@ -1371,7 +2104,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 4,
     "attack": 3,
@@ -1379,11 +2112,21 @@
     "rarity": "4Legendary",
     "text": "When you summon an Imperial , summon a 1/1 Imperial Grunt in the other lane.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jB"
+    "deckCodeId": "jB",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "summon",
+        "cardId": "imperial-grunt",
+        "target": "otherLane",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Imperial" ]
+        }
+      }
+    ]
   },
   {
     "id": "lydia",
@@ -1393,7 +2136,7 @@
       "Nord"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 5,
     "attack": 3,
@@ -1402,10 +2145,11 @@
     "text": "Guard Lydia guards both lanes.",
     "keywords": [
       "Guard"
-    ],
-    "mechanics": [],
+    ],    
+    "immunity": ["DefenseRestrictions"],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jW"
+    "deckCodeId": "jW",
+    "unique": true
   },
   {
     "id": "praetorian-commander",
@@ -1415,7 +2159,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 6,
     "attack": 3,
@@ -1423,11 +2167,18 @@
     "rarity": "3Epic",
     "text": "Summon : Give creatures in your deck +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ml"
+    "deckCodeId": "ml",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffDeck",
+        "subtypes": [ "Creature" ],
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "priest-of-the-eight",
@@ -1437,19 +2188,29 @@
       "Imperial"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 2,
     "attack": 2,
     "health": 1,
     "rarity": "1Common",
-    "text": "Summon : Draw a card if you have two other creatures.",
+    "text": "Summon : Draw a card if you have two other [Y] creatures.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "mo"
+    "deckCodeId": "mo",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "numCreatures",
+          "min": 3,
+          "attribute": "Y"
+        }
+      }
+    ]
   },
   {
     "id": "revered-guardian",
@@ -1459,7 +2220,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 4,
     "attack": 4,
@@ -1469,7 +2230,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nd"
   },
@@ -1481,7 +2241,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 5,
     "attack": 3,
@@ -1491,11 +2251,21 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oJ"
+    "deckCodeId": "oJ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "numCreatures",
+          "min": 2,
+          "keyword": "Guard"
+        }
+      }
+    ]
   },
   {
     "id": "solitude-stalwart",
@@ -1505,7 +2275,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 1,
     "attack": 2,
@@ -1513,7 +2283,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oL"
   },
@@ -1525,7 +2294,7 @@
       "High Elf"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 1,
@@ -1533,11 +2302,20 @@
     "rarity": "1Common",
     "text": "After you play an action , summon a 1/1 Thalmor Soldier .",
     "keywords": [],
-    "mechanics": [
-      "After"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "qm"
+    "deckCodeId": "qm",
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "summon",
+        "cardId": "thalmor-soldier",
+        "target": "randomLane",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Action" ]
+        }
+      }
+    ]
   },
   {
     "id": "thieves-guild-shadowfoot",
@@ -1547,7 +2325,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 2,
@@ -1555,12 +2333,16 @@
     "rarity": "2Rare",
     "text": "Summon : Steal the top card of the opponent's deck and replace it with a Counterfeit Trinket .",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Steal"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "qz"
+    "deckCodeId": "qz",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "stealAndReplace",
+        "cardId": "counterfeit-trinket",
+        "target": "opponent"
+      }
+    ]
   },
   {
     "id": "undying-dragon",
@@ -1570,7 +2352,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 6,
     "attack": 5,
@@ -1580,9 +2362,16 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rf"
+    "deckCodeId": "rf",
+    "static": {
+      "condition": {
+        "type": "hasHealth",
+        "min": 30
+      },
+      "modAttack": 5,
+      "modHealth": 5
+    }
   },
   {
     "id": "winterhold-illusionist",
@@ -1592,7 +2381,7 @@
       "Dark Elf"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 5,
     "attack": 3,
@@ -1600,11 +2389,15 @@
     "rarity": "1Common",
     "text": "Summon : Another creature disappears, then returns at the end of the turn.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rT"
+    "deckCodeId": "rT",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "blink",
+        "target": "creatureOther"
+      }
+    ]
   },
   {
     "id": "wolf-cage",
@@ -1612,20 +2405,25 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 6,
     "attack": null,
     "health": null,
     "rarity": "3Epic",
     "text": "Uses: 3 Activate : Summon an Uncaged Wolf .",
-    "keywords": [
-      "Activate"
-    ],
-    "mechanics": [],
+    "keywords": [],
     "set": "Heroes of Skyrim",
     "uses": 3,
-    "deckCodeId": "rX"
+    "deckCodeId": "rX",
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "summon",
+        "cardId": "uncaged-wolf",
+        "target": "randomLane"
+      }
+    ]
   },
   {
     "id": "barter",
@@ -1633,7 +2431,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 2,
     "attack": null,
@@ -1641,9 +2439,15 @@
     "rarity": "3Epic",
     "text": "Trade a card in your hand for a random card in your opponent's hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bE"
+    "deckCodeId": "bE",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "tradeHand",
+        "target": "cardPlayerHand"
+      }
+    ]
   },
   {
     "id": "brynjolf",
@@ -1653,19 +2457,31 @@
       "Nord"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 5,
     "attack": 4,
     "health": 5,
     "rarity": "4Legendary",
     "text": "Drain When a friendly creature Pilfers or Drains, gain 1 magicka this turn.",
-    "keywords": [],
-    "mechanics": [
-      "When"
-    ],
+    "keywords": [ "Drain" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "cz"
+    "deckCodeId": "cz",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "FriendlyPilfer",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "FriendlyDrain",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "caravan-enforcer",
@@ -1675,7 +2491,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 2,
     "attack": 2,
@@ -1683,11 +2499,16 @@
     "rarity": "1Common",
     "text": "When Caravan Enforcer moves , he gains +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "cN"
+    "deckCodeId": "cN",
+    "effects": [
+      {
+        "trigger": "Move",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ]
   },
   {
     "id": "chaurus",
@@ -1697,7 +2518,7 @@
       "Chaurus"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 4,
     "attack": 4,
@@ -1705,7 +2526,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cV"
   },
@@ -1717,7 +2537,7 @@
       "Dark Elf"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 1,
     "attack": 1,
@@ -1727,11 +2547,15 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ep"
+    "deckCodeId": "ep",
+    "effects": [
+      {
+        "trigger": "DamageDealt",
+        "type": "shackle",
+        "target": "creatureDamaged"
+      }
+    ]
   },
   {
     "id": "dovah-of-the-voice",
@@ -1741,39 +2565,115 @@
       "Dragon"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 7,
     "attack": 6,
     "health": 4,
     "rarity": "1Common",
     "text": "Last Gasp : Put a random Shout into your hand.",
-    "keywords": [],
-    "mechanics": [
-      "LastGasp"
-    ],
+    "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eI"
+    "deckCodeId": "eI",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "amount": 1,
+        "subtypes": [ "Shout" ],
+        "target": "player"
+      }
+    ]
   },
   {
-    "id": "drain-vitality",
+    "id": "drain-vitality-level-1",
     "name": "Drain Vitality",
     "type": "Action",
-    "subtypes": [],
+    "subtypes": [ "Shout" ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 1,
     "attack": null,
     "health": null,
     "rarity": "1Common",
-    "text": "Shout Level 1 : Give an enemy creature -1/-1. Level 2 : Give an enemy creature -2/-2. Level 3 : Give all enemy creatures in a lane -2/-2.",
+    "text": "Shout Level 1 : Give an enemy creature -1/-1.",
     "keywords": [],
-    "mechanics": [
-      "Shout"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eS"
+    "deckCodeId": "eS",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "modHealth": -1,
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "drain-vitality-level-2",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "drain-vitality-level-2",
+    "name": "Drain Vitality Level 2",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 2 : Give an enemy creature -2/-2.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": -2,
+        "modHealth": -2,
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "drain-vitality-level-3",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "drain-vitality-level-3",
+    "name": "Drain Vitality Level 3",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 3 : Give all enemy creatures in a lane -2/-2.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": -2,
+        "modHealth": -2,
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ]
   },
   {
     "id": "eldergleam-matron",
@@ -1783,7 +2683,7 @@
       "Spriggan"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 3,
     "attack": 4,
@@ -1791,11 +2691,27 @@
     "rarity": "2Rare",
     "text": "Summon : Put a random Animal into your hand.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fD"
+    "deckCodeId": "fD",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "amount": 1,
+        "subtypes": [
+          "Beast",
+          "Fish",
+          "Mammoth",
+          "Mudcrab",
+          "Netch",
+          "Reptile",
+          "Spider",
+          "Skeever",
+          "Wolf"
+        ],
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "embassy-disguise",
@@ -1803,20 +2719,24 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 2,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 1,
     "rarity": "2Rare",
     "text": "+0/+1 Summon : Draw a card. The wielder has Cover until it attacks.",
-    "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Cover"
-    ],
+    "keywords": [ "Stealth" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fM"
+    "deckCodeId": "fM",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "gloomlurker",
@@ -1826,7 +2746,7 @@
       "Falmer"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 2,
     "attack": 3,
@@ -1834,12 +2754,17 @@
     "rarity": "1Common",
     "text": "Prophecy Summon : Give a creature Cover .",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "hj"
+    "deckCodeId": "hj",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "addKeywords": [ "Cover" ],
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "lockpick",
@@ -1847,7 +2772,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 2,
     "attack": null,
@@ -1855,9 +2780,35 @@
     "rarity": "2Rare",
     "text": "Either put another Lockpick into your hand or draw a card and reduce its cost by 2, chosen randomly.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jM"
+    "deckCodeId": "jM",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "choiceRandom",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Put another Lockpick into your hand",
+            "effect": {
+              "type": "addToHand",
+              "amount": 1,
+              "cardId": "lockpick",
+              "target": "player"
+            }
+          },
+          {
+            "text": "Draw a card and reduce its cost by 2",
+            "effect" : {
+              "type": "drawAndReduceCost",
+              "amount": 1,
+              "modCost": -2,
+              "target": "player"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "move-in-shadows",
@@ -1865,7 +2816,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 0,
     "attack": null,
@@ -1873,11 +2824,20 @@
     "rarity": "2Rare",
     "text": "Move a friendly creature. It moves again at the end of the turn.",
     "keywords": [],
-    "mechanics": [
-      "Move"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kW"
+    "deckCodeId": "kW",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "move",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "move",
+        "target": "moved"
+      }
+    ]
   },
   {
     "id": "nightprowler",
@@ -1887,7 +2847,7 @@
       "Falmer"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 6,
     "attack": 5,
@@ -1895,11 +2855,16 @@
     "rarity": "2Rare",
     "text": "When Nightprowler gains Cover , draw a card.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ly"
+    "deckCodeId": "ly",
+    "effects": [
+      {
+        "trigger": "GainCover",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "palace-prowler",
@@ -1909,7 +2874,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 1,
     "attack": 1,
@@ -1917,13 +2882,18 @@
     "rarity": "1Common",
     "text": "Drain Pilfer : Gain 1 magicka this turn.",
     "keywords": [
-      "Drain"
-    ],
-    "mechanics": [
-      "Pilfer"
+      "Drain", "Pilfer"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "lW"
+    "deckCodeId": "lW",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "paralyze",
@@ -1931,7 +2901,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 0,
     "attack": null,
@@ -1939,9 +2909,15 @@
     "rarity": "1Common",
     "text": "Shackle an enemy creature.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "lX"
+    "deckCodeId": "lX",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "shackle",
+        "target": "creatureEnemy"
+      }
+    ]
   },
   {
     "id": "ring-of-namira",
@@ -1949,7 +2925,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 7,
     "attack": null,
@@ -1957,11 +2933,18 @@
     "rarity": "4Legendary",
     "text": "Ongoing When you gain health, deal that much damage to your opponent.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nm"
+    "deckCodeId": "nm",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "HealPlayer",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "healthGained",
+        "target": "opponent"
+      }
+    ]
   },
   {
     "id": "serpentine-stalker",
@@ -1971,19 +2954,25 @@
       "Dragon"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 4,
     "attack": 4,
     "health": 4,
     "rarity": "4Legendary",
     "text": "Slay : +2/+0 May move to attack creatures in the other lane.",
-    "keywords": [],
-    "mechanics": [
-      "Slay"
-    ],
+    "keywords": [ "Slay" ],
+    "immunity": ["LaneRestrictions"],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nJ"
+    "deckCodeId": "nJ",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "target": "self"
+      }
+    ]
   },
   {
     "id": "shadowgreen-elder",
@@ -1993,7 +2982,7 @@
       "Spriggan"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 7,
     "attack": 5,
@@ -2001,11 +2990,32 @@
     "rarity": "3Epic",
     "text": "Summon : Give other friendly Spriggans and Animals +2/+2.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nO"
+    "deckCodeId": "nO",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "creatureFriendlyOtherAll",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Beast",
+            "Fish",
+            "Mammoth",
+            "Mudcrab",
+            "Netch",
+            "Reptile",
+            "Spider",
+            "Skeever",
+            "Wolf",
+            "Spriggan"
+          ]
+        }
+      }
+    ]
   },
   {
     "id": "shadowmaster",
@@ -2015,7 +3025,7 @@
       "Falmer"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 3,
     "attack": 3,
@@ -2023,11 +3033,16 @@
     "rarity": "3Epic",
     "text": "Summon : Give a friendly creature Cover . Your opponent can't target it with actions until your next turn.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nQ"
+    "deckCodeId": "nQ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "addKeywords": [ "Cover", "Camouflage" ],
+        "target": "creatureFriendly"
+      }
+    ]
   },
   {
     "id": "shadowscale-partisan",
@@ -2037,7 +3052,7 @@
       "Argonian"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 3,
     "attack": 2,
@@ -2047,11 +3062,20 @@
     "keywords": [
       "Lethal"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nS"
+    "deckCodeId": "nS",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modHealth": 2,
+        "condition": {
+          "type": "numCreatures",
+          "min": 2,
+          "keyword": "Lethal"
+        }
+      }
+    ]
   },
   {
     "id": "shearpoint-dragon",
@@ -2061,7 +3085,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 6,
     "attack": 4,
@@ -2069,12 +3093,23 @@
     "rarity": "2Rare",
     "text": "Summon : Give a creature -2/-2. When you reduce a creature's power or health with another effect, reduce it by an extra 1.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nX"
+    "deckCodeId": "nX",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "modHealth": -1,
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "None",
+        "type": "modifyDebuff",
+        "amount": -1,
+        "target": "buffModified"
+      }
+    ]
   },
   {
     "id": "sightless-skulk",
@@ -2084,19 +3119,29 @@
       "Falmer"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 4,
     "attack": 4,
     "health": 3,
     "rarity": "1Common",
-    "text": "Summon : Draw a card if you have two other creatures.",
+    "text": "Summon : Draw a card if you have two other [G] creatures.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oi"
+    "deckCodeId": "oi",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "numCreatures",
+          "min": 3,
+          "attribute": "G"
+        }
+      }
+    ]
   },
   {
     "id": "swims-at-night",
@@ -2106,7 +3151,7 @@
       "Argonian"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 4,
     "attack": 2,
@@ -2114,12 +3159,29 @@
     "rarity": "4Legendary",
     "text": "Summon : Put a random 0-cost card into your hand. After you play a 0-cost card, Swims-at-Night gains +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "After"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pX"
+    "deckCodeId": "pX",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "randomCost",
+        "amount": 1,
+        "cost": 0,
+        "target": "player"
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "lastPlayedCost",
+          "max": 0
+        }
+      }
+    ]
   },
   {
     "id": "thieves-guild-fence",
@@ -2129,7 +3191,7 @@
       "Khajiit"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 3,
     "attack": 3,
@@ -2137,11 +3199,16 @@
     "rarity": "4Legendary",
     "text": "When you draw a card on your turn, reduce its cost by 1.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "qx"
+    "deckCodeId": "qx",
+    "effects": [
+      {
+        "trigger": "DrawCard",
+        "type": "modCost",
+        "amount": -1,
+        "target": "drawnCard"
+      }
+    ]
   },
   {
     "id": "woodland-lookout",
@@ -2151,7 +3218,7 @@
       "Wood Elf"
     ],
     "attributes": [
-      "Agility"
+      "G"
     ],
     "cost": 3,
     "attack": 3,
@@ -2159,11 +3226,20 @@
     "rarity": "1Common",
     "text": "When you summon a Dragon , gain 4 health.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rZ"
+    "deckCodeId": "rZ",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "damage",
+        "amount": -4,
+        "target": "player",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "ancient-lookout",
@@ -2173,7 +3249,7 @@
       "Skeleton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 2,
     "attack": 2,
@@ -2181,11 +3257,20 @@
     "rarity": "1Common",
     "text": "When you summon a Dragon , summon a 1/1 Draugr Sentry with Guard .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aD"
+    "deckCodeId": "aD",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "summon",
+        "cardId": "draugr-sentry",
+        "target": "randomLane",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "cave-bear",
@@ -2195,7 +3280,7 @@
       "Beast"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 5,
     "attack": 5,
@@ -2203,7 +3288,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cS"
   },
@@ -2215,19 +3299,41 @@
       "Nord"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 3,
     "health": 3,
     "rarity": "2Rare",
     "text": "Beast Form : Give friendly Werewolves +1/+1.",
-    "keywords": [],
-    "mechanics": [
-      "BeastForm"
-    ],
+    "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "du"
+    "deckCodeId": "du",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      },
+      {
+        "trigger": "DestroyRune",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Werewolf" ]
+        }
+      },
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "companion-harbinger-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "corrupted-shade",
@@ -2237,7 +3343,7 @@
       "Spirit"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": 5,
@@ -2247,11 +3353,19 @@
     "keywords": [
       "Ward"
     ],
-    "mechanics": [
-      "EndOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "dA"
+    "deckCodeId": "dA",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "destroy",
+        "target": "self",
+        "condition": {
+          "type": "hasNotKeyword",
+          "keyword": "Ward"
+        }
+      }
+    ]
   },
   {
     "id": "dragon-cult-ghost",
@@ -2261,7 +3375,7 @@
       "Spirit"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 1,
     "attack": 1,
@@ -2269,9 +3383,15 @@
     "rarity": "3Epic",
     "text": "Spend all your available magicka to play Dragon Cult Ghost. Its power and health are equal to the magicka spent.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eK"
+    "deckCodeId": "eK",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "spendAllForStats",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "dragonplate-armor",
@@ -2279,19 +3399,28 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 2,
     "rarity": "1Common",
     "text": "+2/+2 Summon : +2/+2 if you have a Dragon in your discard pile.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eO"
+    "deckCodeId": "eO",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2,
+        "condition": {
+          "type": "discardHasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "east-empire-crafter",
@@ -2301,7 +3430,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 2,
@@ -2309,11 +3438,22 @@
     "rarity": "1Common",
     "text": "When you summon another creature with 5 health or more, give it +1/+1 and Guard .",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fw"
+    "deckCodeId": "fw",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [ "Guard" ],
+        "target": "summon",
+        "condition": {
+          "type": "lastSummonHealth",
+          "min": 5
+        }
+      }
+    ]
   },
   {
     "id": "emperor-titus-mede-ii",
@@ -2323,7 +3463,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": 1,
@@ -2331,11 +3471,19 @@
     "rarity": "4Legendary",
     "text": "At the end of your turn, give the top creature of your deck +1/+1 and Guard .",
     "keywords": [],
-    "mechanics": [
-      "EndOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fO"
+    "deckCodeId": "fO",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [ "Guard" ],
+        "target": "creatureTopDeck"
+      }
+    ]
   },
   {
     "id": "encumbered-explorer",
@@ -2345,7 +3493,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 1,
     "attack": 2,
@@ -2353,9 +3501,15 @@
     "rarity": "2Rare",
     "text": "Shackle Encumbered Explorer after he attacks.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fS"
+    "deckCodeId": "fS",
+    "effects": [
+      {
+        "trigger": "Attack",
+        "type": "shackle",
+        "target": "self"
+      }
+    ]
   },
   {
     "id": "frost-giant",
@@ -2365,7 +3519,7 @@
       "Giant"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 8,
     "attack": 10,
@@ -2375,11 +3529,17 @@
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "gK"
+    "deckCodeId": "gK",
+    "effects": [
+      {
+        "trigger": "HealCreature",
+        "type": "damage",
+        "amount": -1,
+        "amountPer": "creatureHealAmount",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "frost-troll",
@@ -2389,7 +3549,7 @@
       "Troll"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": 1,
@@ -2399,11 +3559,16 @@
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "gL"
+    "deckCodeId": "gL",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "amountPer": "damageJustTaken"
+      }
+    ]
   },
   {
     "id": "grim-shield-brother",
@@ -2413,19 +3578,24 @@
       "Nord"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 2,
     "health": 3,
     "rarity": "1Common",
     "text": "Beast Form : +1/+1 and Drain .",
-    "keywords": [],
-    "mechanics": [
-      "BeastForm"
-    ],
+    "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "hE"
+    "deckCodeId": "hE",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "grim-shield-brother-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "high-hrothgar",
@@ -2433,7 +3603,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": null,
@@ -2441,11 +3611,16 @@
     "rarity": "4Legendary",
     "text": "Ongoing When you summon a creature, its power becomes equal to its health.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "if"
+    "deckCodeId": "if",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "setPowerToHealth",
+        "target": "summon"
+      }
+    ]
   },
   {
     "id": "innkeeper-delphine",
@@ -2455,7 +3630,7 @@
       "Breton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 2,
@@ -2463,12 +3638,21 @@
     "rarity": "4Legendary",
     "text": "After you play a Dragon or Shout , Innkeeper Delphine changes into Grandmaster Delphine .",
     "keywords": [],
-    "mechanics": [
-      "After",
-      "Change"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "iV"
+    "deckCodeId": "iV",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "change",
+        "cardId": "grandmaster-delphine",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon", "Shout" ]
+        },
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "ironscale-dragon",
@@ -2478,7 +3662,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 7,
     "attack": 7,
@@ -2488,7 +3672,6 @@
     "keywords": [
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jb"
   },
@@ -2498,7 +3681,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": null,
@@ -2506,9 +3689,17 @@
     "rarity": "2Rare",
     "text": "Set a creature's power and health to 1.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jx"
+    "deckCodeId": "jx",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "setStats",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "mentor-of-the-watch",
@@ -2518,7 +3709,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 2,
@@ -2528,12 +3719,17 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon",
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kt"
+    "deckCodeId": "kt",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "addKeywords": [ "Guard" ],
+        "target": "creaturePlayerHand"
+      }
+    ]
   },
   {
     "id": "restoration-tutor",
@@ -2543,7 +3739,7 @@
       "Imperial"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 4,
     "attack": 3,
@@ -2551,12 +3747,15 @@
     "rarity": "1Common",
     "text": "Summon : Heal a creature.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Heal"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "na"
+    "deckCodeId": "na",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "heal",
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "skeletal-dragon",
@@ -2567,7 +3766,7 @@
       "Skeleton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 8,
     "attack": 5,
@@ -2575,34 +3774,130 @@
     "rarity": "4Legendary",
     "text": "Guard Summon : Give all creatures in your discard pile +2/+2. Last Gasp : Draw another random creature from your discard pile.",
     "keywords": [
-      "Guard"
-    ],
-    "mechanics": [
-      "Summon",
-      "LastGasp"
+      "Guard", "LastGasp"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "or"
+    "deckCodeId": "or",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "creatureDiscardAll"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "drawDiscard",
+        "subtypes": [ "Creature" ],
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
-    "id": "soul-tear",
+    "id": "soul-tear-level-1",
     "name": "Soul Tear",
     "type": "Action",
-    "subtypes": [],
+    "subtypes": [ "Shout" ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "1Common",
-    "text": "Shout Level 1 : Draw a creature from your discard pile. Level 2 : Draw a creature from your discard pile and give it +2/+2. Level 3 : Draw a creature from your discard pile and give it +5/+5.",
+    "text": "Shout Level 1 : Draw a creature from your discard pile.",
     "keywords": [],
-    "mechanics": [
-      "Shout"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oP"
+    "deckCodeId": "oP",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawDiscard",
+        "subtypes": [ "Creature" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "soul-tear-level-2",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "soul-tear-level-2",
+    "name": "Soul Tear Level 2",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 2 : Draw a creature from your discard pile and give it +2/+2.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawDiscard",
+        "subtypes": [ "Creature" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "drawnCard"
+      },
+      {
+        "trigger": "Play",
+        "type": "upgrade",
+        "cardId": "soul-tear-level-3",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "soul-tear-level-3",
+    "name": "Soul Tear Level 3",
+    "type": "Action",
+    "subtypes": [ "Shout" ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Shout Level 3 : Draw a creature from your discard pile and give it +5/+5.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawDiscard",
+        "subtypes": [ "Creature" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 5,
+        "modHealth": 5,
+        "target": "drawnCard"
+      }
+    ]
   },
   {
     "id": "spine-of-eldersblood",
@@ -2612,7 +3907,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 6,
     "attack": 6,
@@ -2620,11 +3915,16 @@
     "rarity": "2Rare",
     "text": "Summon : Gain +1 max magicka.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pa"
+    "deckCodeId": "pa",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "maxMagicka",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "steelheart-vanquisher",
@@ -2634,19 +3934,29 @@
       "Orc"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 2,
     "attack": 2,
     "health": 2,
     "rarity": "2Rare",
     "text": "Slay : Give friendly Orcs +1/+1.",
-    "keywords": [],
-    "mechanics": [
-      "Slay"
-    ],
+    "keywords": [ "Slay" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "pt"
+    "deckCodeId": "pt",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Orc" ]
+        }
+      }
+    ]
   },
   {
     "id": "stonehill-mammoth",
@@ -2656,19 +3966,29 @@
       "Mammoth"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 6,
     "attack": 5,
     "health": 7,
     "rarity": "1Common",
-    "text": "Summon : Draw a card if you have two other creatures.",
+    "text": "Summon : Draw a card if you have two other [P] creatures.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "px"
+    "deckCodeId": "px",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "numCreatures",
+          "min": 3,
+          "attribute": "P"
+        }
+      }
+    ]
   },
   {
     "id": "waves-of-the-fallen",
@@ -2676,7 +3996,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 8,
     "attack": null,
@@ -2684,11 +4004,33 @@
     "rarity": "3Epic",
     "text": "Transform all enemy creatures in a lane into 2/2 Stricken Draugrs , or transform all friendly creatures in a lane into 5/5 Hulking Draugrs .",
     "keywords": [],
-    "mechanics": [
-      "Transform"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rF"
+    "deckCodeId": "rF",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "choice",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Transform all enemy creatures in a lane into 2/2 Stricken Draugrs",
+            "effect": {
+              "type": "transform",
+              "cardId": "stricken-draugr",
+              "target": "creatureEnemyThisLaneAll"
+            }
+          },
+          {
+            "text": "Transform all friendly creatures in a lane into 5/5 Hulking Draugrs",
+            "effect" : {
+              "type": "transform",
+              "cardId": "hulking-draugr",
+              "target": "creatureFriendlyThisLaneAll"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "whiterun-protector",
@@ -2698,19 +4040,26 @@
       "Nord"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 5,
     "attack": 4,
     "health": 4,
     "rarity": "2Rare",
     "text": "Beast Form : +2/+2, Guard , and Regenerate .",
-    "keywords": [],
-    "mechanics": [
+    "keywords": [
       "BeastForm"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rI"
+    "deckCodeId": "rI",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "change",
+        "cardId": "whiterun-protector-wolf",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "a-night-to-remember",
@@ -2718,7 +4067,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 2,
     "attack": null,
@@ -2726,9 +4075,20 @@
     "rarity": "2Rare",
     "text": "A friendly creature disappears to who knows where, then returns in the other lane Shackled .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ab"
+    "deckCodeId": "ab",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "transpose",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "shackle",
+        "target": "creatureFriendly"
+      }
+    ]
   },
   {
     "id": "alduin",
@@ -2738,7 +4098,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 20,
     "attack": 12,
@@ -2746,12 +4106,30 @@
     "rarity": "4Legendary",
     "text": "Cost 2 less for each Dragon in your discard pile. Summon : Destroy all other creatures. At the start of your turn, summon a random dragon from your discard pile.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "StartOfTurn"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "ao"
+    "deckCodeId": "ao",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostDiscard",
+        "modCost": -2,
+        "amountPer": "numSubtypeDiscard",
+        "subtypes": [ "Dragon" ]
+      },
+      {
+        "trigger": "Summon",
+        "type": "destroy",
+        "target": "creatureOtherAll"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "summonDiscard",
+        "amount": 1,
+        "target": "randomLane",
+        "subtypes": [ "Dragon" ]
+      }
+    ]
   },
   {
     "id": "barbas",
@@ -2762,7 +4140,7 @@
       "Beast"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 5,
     "attack": 3,
@@ -2770,11 +4148,43 @@
     "rarity": "4Legendary",
     "text": "Summon : Choose one: Stay: Gains +1/+1 and Guard . Fetch: Put a random Daedra into your hand. Roll Over: Gains Charge",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bz"
+    "deckCodeId": "bz",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "choice",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Stay: Gains +1/+1 and Guard",
+            "effect": {
+              "type": "buffSelf",
+              "modAttack": 1,
+              "modHealth": 1,
+              "addKeywords": [ "Guard" ]
+            }
+          },
+          {
+            "text": "Fetch: Put a random Daedra into your hand.",
+            "effect": {
+              "type": "addToHand",
+              "subtypes": [ "Daedra" ],
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Roll Over: Gains Charge",
+            "effect" : {
+              "type": "buffSelf",
+              "addKeywords": [ "Charge" ]
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "blackreach-rebuilder",
@@ -2784,7 +4194,7 @@
       "Dwemer"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 1,
     "attack": 0,
@@ -2794,12 +4204,17 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon",
-      "Prophecy"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bS"
+    "deckCodeId": "bS",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": -2,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "dragon-mound",
@@ -2807,7 +4222,7 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 6,
     "attack": null,
@@ -2815,12 +4230,27 @@
     "rarity": "4Legendary",
     "text": "Ongoing Summon : Transform all cards in your deck into random Dragons . Your Dragons cost 1 less.",
     "keywords": [],
-    "mechanics": [
-      "Summon",
-      "Transform"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "eL"
+    "deckCodeId": "eL",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "transform",
+        "target": "deck",
+        "subtypes": [ "Dragon" ]
+      },
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "target": "playerHand",
+        "amount": -1,
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      }
+    ]
   },
   {
     "id": "dwarven-dynamo",
@@ -2830,19 +4260,30 @@
       "Dwemer"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 4,
     "attack": 2,
     "health": 1,
     "rarity": "2Rare",
-    "text": "Summon : Give another creature +3/+3 and Guard .",
+    "text": "Summon : Give another [N] creature +3/+3 and Guard .",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "fq"
+    "deckCodeId": "fq",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 3,
+        "modHealth": 3,
+        "addKeywords": [ "Guard" ],
+        "target": "creatureOther",
+        "targetCondition": {
+          "type": "hasAttribute",
+          "attribute": "N"
+        }    
+      }
+    ]
   },
   {
     "id": "forsworn-looter",
@@ -2852,19 +4293,27 @@
       "Reachman"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 2,
     "attack": 1,
     "health": 1,
     "rarity": "3Epic",
     "text": "Pilfer : Draw a random item from your deck with cost equal to Forsworn Looter's power.",
-    "keywords": [],
-    "mechanics": [
+    "keywords": [
       "Pilfer"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "gG"
+    "deckCodeId": "gG",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "drawFilteredPower",
+        "subtypes": [ "Item" ],
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "glass-helm-of-remedy",
@@ -2872,19 +4321,24 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 4,
-    "attack": null,
-    "health": null,
+    "attack": 0,
+    "health": 4,
     "rarity": "1Common",
     "text": "+0/+4 Summon : You gain 4 health.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "hg"
+    "deckCodeId": "hg",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": -4,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "greybeard-mentor",
@@ -2894,7 +4348,7 @@
       "Nord"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 4,
     "attack": 2,
@@ -2902,11 +4356,17 @@
     "rarity": "1Common",
     "text": "Summon : Draw a random Shout from your deck.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "hC"
+    "deckCodeId": "hC",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawFiltered",
+        "subtypes": [ "Shout" ],
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "horned-helm",
@@ -2914,15 +4374,14 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 3,
-    "attack": null,
-    "health": null,
+    "attack": 2,
+    "health": 3,
     "rarity": "1Common",
     "text": "+2/+3",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "is"
   },
@@ -2932,7 +4391,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 7,
     "attack": null,
@@ -2940,9 +4399,23 @@
     "rarity": "4Legendary",
     "text": "Shuffle all creatures from your discard pile into your deck, and give them +5/+5.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "jg"
+    "deckCodeId": "jg",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 5,
+        "modHealth": 5,
+        "target": "creatureDiscardAll"
+      },
+      {
+        "trigger": "Play",
+        "type": "shuffleCreaturesDiscard",
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "lute",
@@ -2950,15 +4423,15 @@
     "type": "Item",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 1,
-    "attack": null,
-    "health": null,
+    "attack": 1,
+    "health": 2,
     "rarity": "2Rare",
     "text": "+1/+2 The wielder is immune to Silence .",
     "keywords": [],
-    "mechanics": [],
+    "immunity": ["Silence"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jU"
   },
@@ -2970,7 +4443,7 @@
       "Nord"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 2,
     "attack": 2,
@@ -2978,14 +4451,20 @@
     "rarity": "1Common",
     "text": "Prophecy , Guard Last Gasp : Reduce the cost of a random Dragon in your hand by 1.",
     "keywords": [
-      "Guard"
-    ],
-    "mechanics": [
-      "Prophecy",
-      "LastGasp"
+      "Guard", "LastGasp"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kx"
+    "deckCodeId": "kx",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "modCost",
+        "amount": -1,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [ "Dragon" ]
+       }
+    ]
   },
   {
     "id": "mudcrab-anklesnapper",
@@ -2995,7 +4474,7 @@
       "Mudcrab"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 2,
     "attack": 3,
@@ -3003,11 +4482,16 @@
     "rarity": "1Common",
     "text": "Summon : Deal 1 damage to your opponent.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kX"
+    "deckCodeId": "kX",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ]
   },
   {
     "id": "paarthurnax",
@@ -3017,7 +4501,7 @@
       "Dragon"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 12,
     "attack": 9,
@@ -3025,11 +4509,50 @@
     "rarity": "4Legendary",
     "text": "Summon : Put three random Shouts into your hand and reduce their costs to 0.",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "lR"
+    "deckCodeId": "lR",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "subtypes": [ "Shout" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "modCost",
+        "amount": -10,
+        "target": "drawnCard"
+      },
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "subtypes": [ "Shout" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "modCost",
+        "amount": -10,
+        "target": "drawnCard"
+      },
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "subtypes": [ "Shout" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "modCost",
+        "amount": -10,
+        "target": "drawnCard"
+      }
+    ]
   },
   {
     "id": "prized-chicken",
@@ -3039,19 +4562,25 @@
       "Beast"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 5,
     "attack": 0,
     "health": 1,
     "rarity": "3Epic",
     "text": "Last Gasp : Fill this lane with 1/1 Angry Villagers .",
-    "keywords": [],
-    "mechanics": [
-      "LastGasp"
-    ],
+    "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "mr"
+    "deckCodeId": "mr",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "summon",
+        "amount": 4,
+        "target": "thisLane",
+        "cardId": "angry-villager"
+      }
+    ]
   },
   {
     "id": "raging-horker",
@@ -3061,7 +4590,7 @@
       "Beast"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 2,
     "attack": 1,
@@ -3069,11 +4598,16 @@
     "rarity": "2Rare",
     "text": "When Raging Horker takes damage, it gains +1/+1.",
     "keywords": [],
-    "mechanics": [
-      "When"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "mB"
+    "deckCodeId": "mB",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ]
   },
   {
     "id": "word-wall",
@@ -3083,7 +4617,7 @@
       "Defense"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 1,
     "attack": 0,
@@ -3093,11 +4627,16 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "sa"
+    "deckCodeId": "sa",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "upgrade",
+        "target": "cardPlayerHandRandom",
+        "subtypes": [ "Shout" ]
+      }
+    ]
   },
   {
     "id": "young-dragonborn",
@@ -3107,21 +4646,39 @@
       "Nord"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 3,
     "attack": 3,
     "health": 3,
     "rarity": "2Rare",
     "text": "When Young Dragonborn Slays a Dragon , put a random Shout into your hand. After you play a Shout, Young Dragonborn gains +1/+1.",
-    "keywords": [],
-    "mechanics": [
-      "When",
-      "After",
-      "Slay"
-    ],
+    "keywords": [ "Slay" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "sl"
+    "deckCodeId": "sl",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "addToHand",
+        "subtypes": [ "Shout" ],
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Dragon" ]
+        }
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [ "Shout" ]
+        }
+      }
+    ]
   },
   {
     "id": "archers-gambit",
@@ -3129,7 +4686,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Archer"
+      "R", "G"
     ],
     "cost": 3,
     "attack": null,
@@ -3137,11 +4694,21 @@
     "rarity": "2Rare",
     "text": "Move a friendly creature. Then, it deals 1 damage.",
     "keywords": [],
-    "mechanics": [
-      "Move"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "aN"
+    "deckCodeId": "aN",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "move",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureEnemyRandom"
+      }
+    ]
   },
   {
     "id": "assassins-ritual",
@@ -3149,7 +4716,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Assassin"
+      "B", "G"
     ],
     "cost": 3,
     "attack": null,
@@ -3157,9 +4724,16 @@
     "rarity": "2Rare",
     "text": "Give a creature Lethal and Ward .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bf"
+    "deckCodeId": "bf",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "addKeywords": [ "Lethal", "Ward" ],
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "battlemages-onslaught",
@@ -3167,7 +4741,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Battlemage"
+      "R", "B"
     ],
     "cost": 4,
     "attack": null,
@@ -3175,9 +4749,31 @@
     "rarity": "2Rare",
     "text": "Put a random action , item , and creature into your hand.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "bG"
+    "deckCodeId": "bG",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "subtypes": [ "Action" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "subtypes": [ "Item" ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "subtypes": [ "Creature" ],
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "crusaders-assault",
@@ -3185,7 +4781,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Crusader"
+      "R", "Y"
     ],
     "cost": 3,
     "attack": null,
@@ -3193,9 +4789,41 @@
     "rarity": "2Rare",
     "text": "Give a creature +2/+0, Breakthrough and \" Slay and Pilfer : Draw a card\" this turn.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "dL"
+    "deckCodeId": "dL",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "tempAttack": 2,
+        "tempKeywords": [ "Breakthrough" ],
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "grantEffect",
+        "target": "creature",
+        "grantedEffect": {
+          "trigger": "Pilfer",
+          "type": "drawCards",
+          "temporary": true,
+          "amount": 1,
+          "target": "player"
+        }
+      },
+      {
+        "trigger": "Play",
+        "type": "grantEffect",
+        "target": "creature",
+        "grantedEffect": {
+          "trigger": "Slay",
+          "type": "drawCards",
+          "temporary": true,
+          "amount": 1,
+          "target": "player"
+        }
+      }
+    ]
   },
   {
     "id": "mages-trick",
@@ -3203,7 +4831,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Mage"
+      "B", "Y"
     ],
     "cost": 3,
     "attack": null,
@@ -3211,9 +4839,28 @@
     "rarity": "2Rare",
     "text": "Deal 1 damage, gain 1 health, and draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kb"
+    "deckCodeId": "kb",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "any"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": -1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "monks-strike",
@@ -3221,7 +4868,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Monk"
+      "Y", "G"
     ],
     "cost": 4,
     "attack": null,
@@ -3229,11 +4876,22 @@
     "rarity": "2Rare",
     "text": "Move a friendly creature and give it +3/+0 and Drain this turn.",
     "keywords": [],
-    "mechanics": [
-      "Move"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "kG"
+    "deckCodeId": "kG",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "move",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "tempAttack": 3,
+        "tempKeywords": [ "Drain" ],
+        "target": "creatureFriendly"
+      }
+    ]
   },
   {
     "id": "scouts-report",
@@ -3241,7 +4899,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Scout"
+      "G", "P"
     ],
     "cost": 1,
     "attack": null,
@@ -3249,9 +4907,33 @@
     "rarity": "2Rare",
     "text": "Look at the top card of your deck. You may discard it. Draw a card.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "nA"
+    "deckCodeId": "nA",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "scry",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Keep the card",
+            "effect": {
+              "type": "drawCards",
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Discard the card",
+            "effect": {
+              "type": "discardTopDeck",
+              "amount": 1,
+              "target": "player"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sorcerers-negation",
@@ -3259,7 +4941,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Sorcerer"
+      "B", "P"
     ],
     "cost": 2,
     "attack": null,
@@ -3267,9 +4949,21 @@
     "rarity": "2Rare",
     "text": "Silence a creature, then deal 2 damage to it.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oM"
+    "deckCodeId": "oM",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "silence",
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 2,
+        "target": "creature"
+      }
+    ]
   },
   {
     "id": "spellswords-summoning",
@@ -3277,7 +4971,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Spellsword"
+      "Y", "P"
     ],
     "cost": 3,
     "attack": null,
@@ -3285,9 +4979,24 @@
     "rarity": "2Rare",
     "text": "Summon a random 1-cost creature in each lane .",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "oW"
+    "deckCodeId": "oW",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRandomCost",
+        "amount": 1,
+        "cost": 1,
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Play",
+        "type": "summonRandomCost",
+        "amount": 1,
+        "cost": 1,
+        "target": "rightLane"
+      }
+    ]
   },
   {
     "id": "warriors-fury",
@@ -3295,7 +5004,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Warrior"
+      "R", "P"
     ],
     "cost": 3,
     "attack": null,
@@ -3303,19 +5012,36 @@
     "rarity": "2Rare",
     "text": "Give a random creature and item in your hand +2/+2.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": "rD"
+    "deckCodeId": "rD",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [ "Creature" ]
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [ "Item" ]
+      }
+    ]
   },
   {
     "id": "aela-the-huntress-wolf",
-    "name": "Aela the Huntress",
+    "name": "Aela the Huntress (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 7,
     "attack": 5,
@@ -3323,19 +5049,19 @@
     "rarity": "4Legendary",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "unique": true
   },
   {
     "id": "aelas-huntmate-wolf",
-    "name": "Aela's Huntmate",
+    "name": "Aela's Huntmate (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 4,
@@ -3343,7 +5069,6 @@
     "rarity": "2Rare",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3355,7 +5080,7 @@
       "Nord"
     ],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 1,
     "attack": 1,
@@ -3363,19 +5088,18 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
   {
     "id": "circle-initiate-wolf",
-    "name": "Circle Initiate",
+    "name": "Circle Initiate (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 2,
     "attack": 4,
@@ -3383,19 +5107,18 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
   {
     "id": "companion-harbinger-wolf",
-    "name": "Companion Harbinger",
+    "name": "Companion Harbinger (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 3,
@@ -3403,7 +5126,6 @@
     "rarity": "2Rare",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3413,7 +5135,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Neutral"
+      "N"
     ],
     "cost": 0,
     "attack": null,
@@ -3421,9 +5143,22 @@
     "rarity": "1Common",
     "text": "Draw a card and Counterfeit Trinket deals 1 damage to you.",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "draugr-sentry",
@@ -3433,7 +5168,7 @@
       "Skeleton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 1,
     "attack": 1,
@@ -3443,7 +5178,6 @@
     "keywords": [
       "Guard"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3453,7 +5187,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 4,
     "attack": null,
@@ -3461,9 +5195,116 @@
     "rarity": "4Legendary",
     "text": "Experimental Scroll is either Enlightenment, Flame Blast , or Flame Cloak. Don't worry which one it is, just give it a try!",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "choiceRandom",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Enlightenment",
+            "effect": {
+              "type": "grantRandomKeyword",
+              "amount": 2,
+              "target": "creatureFriendlyAll"
+            }
+          },
+          {
+            "text": "Flame Blast",
+            "effect" : {
+              "type": "damage",
+              "amount": 2,
+              "target": "creatureEnemyAll"
+            }
+          },
+          {
+            "text": "Flame Cloak",
+            "effect" : {
+              "type": "damage",
+              "amount": 5,
+              "target": "players"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enlightenment",
+    "name": "Enlightenment",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Give each friendly creature two random Keywords.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "grantRandomKeyword",
+        "amount": 2,
+        "target": "creatureFriendlyAll"
+      }
+    ]
+  },
+  {
+    "id": "flame-cloak",
+    "name": "Flame Cloak",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Deal 5 damage to each player.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 5,
+        "target": "players"
+      }
+    ]
+  },
+  {
+    "id": "flame-blast",
+    "name": "Flame Blast",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Deal 2 damage to each enemy creature.",
+    "keywords": [],
+    "set": "Heroes of Skyrim",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 2,
+        "target": "creatureEnemyAll"
+      }
+    ]
   },
   {
     "id": "grandmaster-delphine",
@@ -3473,7 +5314,7 @@
       "Breton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 5,
@@ -3481,19 +5322,20 @@
     "rarity": "4Legendary",
     "text": "Can't be damaged or targeted by enemy Dragons .",
     "keywords": [],
-    "mechanics": [],
+    "immunity": [ "Dragons" ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "unique": true
   },
   {
     "id": "grim-shield-brother-wolf",
-    "name": "Grim Shield-Brother",
+    "name": "Grim Shield-Brother (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 3,
     "attack": 3,
@@ -3503,7 +5345,6 @@
     "keywords": [
       "Drain"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3515,7 +5356,7 @@
       "Skeleton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 5,
     "attack": 5,
@@ -3523,7 +5364,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3535,7 +5375,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 2,
     "attack": 2,
@@ -3543,7 +5383,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3556,7 +5395,7 @@
       "Spirit"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 3,
@@ -3564,7 +5403,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3576,7 +5414,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 4,
     "attack": 5,
@@ -3584,7 +5422,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3596,7 +5433,7 @@
       "Nord"
     ],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 2,
     "attack": 3,
@@ -3606,7 +5443,6 @@
     "keywords": [
       "Breakthrough"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3618,7 +5454,7 @@
       "Skeleton"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 2,
     "attack": 2,
@@ -3626,7 +5462,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3638,7 +5473,7 @@
       "High Elf"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 1,
     "attack": 1,
@@ -3646,7 +5481,6 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   },
@@ -3658,7 +5492,7 @@
       "Wolf"
     ],
     "attributes": [
-      "Willpower"
+      "Y"
     ],
     "cost": 3,
     "attack": 2,
@@ -3666,11 +5500,17 @@
     "rarity": "1Common",
     "text": "Summon : +1/+1 for each other friendly Wolf .",
     "keywords": [],
-    "mechanics": [
-      "Summon"
-    ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "amountPer": "creatureFriendlyOtherWolf"
+      }
+    ]
   },
   {
     "id": "underforge",
@@ -3678,20 +5518,37 @@
     "type": "Support",
     "subtypes": [],
     "attributes": [
-      "Strength"
+      "R"
     ],
     "cost": 3,
     "attack": null,
     "health": null,
     "rarity": "4Legendary",
     "text": "Uses: Unlimited Activate : A friendly creature becomes a Werewolf . Friendly Werewolves have +1/+1.",
-    "keywords": [
-      "Activate"
-    ],
-    "mechanics": [],
+    "keywords": [],
     "set": "Heroes of Skyrim",
     "uses": 99,
-    "deckCodeId": null
+    "deckCodeId": null,
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "addSubtype",
+        "subtypes": [ "Werewolf" ],
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": ["Werewolf"]
+        }
+      }
+    ]
   },
   {
     "id": "vision-of-the-tenth-eye",
@@ -3699,7 +5556,7 @@
     "type": "Action",
     "subtypes": [],
     "attributes": [
-      "Intelligence"
+      "B"
     ],
     "cost": 0,
     "attack": null,
@@ -3707,19 +5564,27 @@
     "rarity": "4Legendary",
     "text": "Put a random action into your hand. (There were no actions to fetch, so we gave you this.)",
     "keywords": [],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "subtypes": [ "Action" ],
+        "amount": 1,
+        "target": "player"
+      }
+    ]
   },
   {
     "id": "whiterun-protector-wolf",
-    "name": "Whiterun Protector",
+    "name": "Whiterun Protector (Werewolf)",
     "type": "Creature",
     "subtypes": [
       "Werewolf"
     ],
     "attributes": [
-      "Endurance"
+      "P"
     ],
     "cost": 5,
     "attack": 6,
@@ -3730,7 +5595,6 @@
       "Guard",
       "Regenerate"
     ],
-    "mechanics": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": null
   }
