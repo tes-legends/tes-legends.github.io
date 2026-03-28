@@ -35,7 +35,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Cl"
   },
   {
     "id": "altar-of-meridia",
@@ -83,7 +83,7 @@
     "text": "Guard",
     "keywords": ["Guard"],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Cr"
   },
   {
     "id": "apprentices-potion",
@@ -100,7 +100,7 @@
     "text": "Gain 5 health.",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "aG",
     "effects": [
       {
         "trigger": "Play",
@@ -127,7 +127,7 @@
     "text": "Lethal",
     "keywords": ["Lethal"],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "aL"
   },
   {
     "id": "baandari-outlaw",
@@ -198,7 +198,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Cs"
   },
   {
     "id": "broken-bottles",
@@ -224,6 +224,25 @@
         "target": "enemyRandom"
       }
     ]
+  },
+  {
+    "id": "camlorn-adventurer",
+    "name": "Camlorn Adventurer",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": ["Guard"],
+    "set": "Story Set",
+    "deckCodeId": "cH"
   },
   {
     "id": "city-gates",
@@ -327,7 +346,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Ct"
   },
   {
     "id": "daedric-weaponmaster",
@@ -428,7 +447,7 @@
     "text": "Shackle a creature.",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "ew",
     "effects": [
       {
         "trigger": "Play",
@@ -473,7 +492,7 @@
     "text": "Prophecy",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "fg",
     "prophecy": true
   },
   {
@@ -512,7 +531,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Ck"
   },
   {
     "id": "graceful-myrmidon",
@@ -550,7 +569,7 @@
     "text": "Lethal",
     "keywords": ["Lethal"],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "hK"
   },
   {
     "id": "high-elf-soldier",
@@ -607,7 +626,7 @@
     "text": "Breakthrough",
     "keywords": ["Breakthrough"],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "lu"
   },
   {
     "id": "northpoint-lieutenant",
@@ -626,7 +645,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "lF"
   },
   {
     "id": "power-of-naarifin",
@@ -770,7 +789,7 @@
     "text": "Breakthrough Summon: Summon a 1/1 Imperial Grunt",
     "keywords": ["Breakthrough"],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "nn",
     "effects": [
       {
         "trigger": "Summon",
@@ -817,7 +836,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Cy"
   },
   {
     "id": "thalmor-agent",
@@ -874,7 +893,7 @@
     "text": "",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "Cb"
   },
   {
     "id": "volkihar-lord",
@@ -893,7 +912,7 @@
     "text": "Drain",
     "keywords": ["Drain"],
     "set": "Story Set",
-    "deckCodeId": null
+    "deckCodeId": "rx"
   },
   {
     "id": "web",
@@ -910,7 +929,7 @@
     "text": "Shackle an enemy creature.",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "Cm",
     "effects": [
       {
         "trigger": "Play",
@@ -963,7 +982,7 @@
     "text": "Summon: Summon a 2/3 Snow Fox.",
     "keywords": [],
     "set": "Story Set",
-    "deckCodeId": null,
+    "deckCodeId": "rN",
     "effects": [
       {
         "trigger": "Summon",
@@ -971,6 +990,631 @@
         "amount": 1,
         "cardId": "snow-fox",
         "target": "thisLane"
+      }
+    ]
+  },
+  {
+    "id": "ring-of-chaos",
+    "name": "Ring of Chaos",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing When you draw a card, transform it into a random card with cost equal to your max magicka.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "DrawCard",
+        "type": "transform",
+        "cardId": "maxMagicka",
+        "target": "drawnCard"
+      }
+    ]
+  },
+  {
+    "id": "dres-guard",
+    "name": "Dres Guard",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Guard",
+    "keywords": ["Guard"],
+    "set": "Story Set",
+    "deckCodeId": "eW"
+  },
+  {
+    "id": "stalking-crocodile",
+    "name": "Stalking Crocodile",
+    "type": "Creature",
+    "subtypes": [
+      "Reptile"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "pg"
+  },
+  {
+    "id": "stronghold-prototype",
+    "name": "Stronghold Prototype",
+    "type": "Creature",
+    "subtypes": [
+      "Dwemer"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Last Gasp: Put a random Dwemer into your hand.",
+    "keywords": ["LastGasp"],
+    "set": "Story Set",
+    "deckCodeId": "pJ",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "amount": 1,
+        "target": "player",
+        "subtypes": [ "Dwemer" ]
+      }
+    ]
+  },
+  {
+    "id": "snapping-dreugh",
+    "name": "Snapping Dreugh",
+    "type": "Creature",
+    "subtypes": [
+      "Dreugh"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "oH"
+  },
+  {
+    "id": "hive-worker",
+    "name": "Hive Worker",
+    "type": "Creature",
+    "subtypes": [
+      "Kwama"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "ip"
+  },
+  {
+    "id": "starved-hunger",
+    "name": "Starved Hunger",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 4,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "pn"
+  },
+  {
+    "id": "whiterun-recruit",
+    "name": "Whiterun Recruit",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "rJ"
+  },
+  {
+    "id": "crushing-grasp",
+    "name": "Crushing Grasp",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Deal 5 damage to your opponent. Draw a card.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "Cg",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 5,
+        "target": "opponent"
+      },
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "mighty-stomp",
+    "name": "Mighty Stomp",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Deal 6 damage to a creature and 3 damage to all other enemy creatures in its lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "Ch",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ]
+  },
+  {
+    "id": "initiate-of-hircine",
+    "name": "Initiate of Hircine",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Slay: May attack again this turn.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "iU",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "extraAttack",
+        "target": "self",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "orc-clansman",
+    "name": "Orc Clansman",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Summon: Give a creature +1/+0.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "lN",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "beastcaller-ring",
+    "name": "Beastcaller Ring",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing All creatures cost 1 less.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "target": "allHands",
+        "amount": -1,
+        "targetCondition": {
+          "type": "hasType",
+          "subtypes": [ "Creature" ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "wispmothers-ring",
+    "name": "Wispmother's Ring",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing When you summon a creature that costs 2 or less, summon a copy of that creature in the other lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "summonCopy",
+        "target": "otherLane",
+        "condition" : {
+          "type": "lastSummonCost",
+          "max": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "rihad-nomad",
+    "name": "Rihad Nomad",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "nk"
+  },
+  {
+    "id": "quinrawl-skulker",
+    "name": "Quin'rawl Skulker",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Pilfer: +4/+4",
+    "keywords": ["Pilfer"],
+    "set": "Story Set",
+    "deckCodeId": "mA",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "buffSelf",
+        "modAttack": 4,
+        "modHealth": 4
+      }
+    ]
+  },
+  {
+    "id": "cathay-novice",
+    "name": "Cathay Novice",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "Db"
+  },
+  {
+    "id": "divine-conviction",
+    "name": "Divine Conviction",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing Friendly creatures have +0/+1.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "eC",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modHealth": 1,
+        "target": "creatureFriendlyAll"
+      }
+    ]
+  },
+  {
+    "id": "reclusive-giant",
+    "name": "Reclusive Giant",
+    "type": "Creature",
+    "subtypes": ["Giant"],
+    "attributes": [
+      "R"
+    ],
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "rarity": "4Legendary",
+    "text": "Breakthrough",
+    "keywords": ["Breakthrough"],
+    "set": "Story Set",
+    "deckCodeId": "mM"
+  },
+  {
+    "id": "cheydinhal-conscript",
+    "name": "Cheydinhal Conscript",
+    "type": "Creature",
+    "subtypes": ["Imperial"],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": "Dg"
+  },
+  {
+    "id": "moonstone-relic",
+    "name": "Moonstone Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing When your opponent loses a rune, put a random 0-cost card in your hand.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "addToHand",
+        "cardId": "randomCost",
+        "amount": 1,
+        "cost": 0,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "ebony-relic",
+    "name": "Ebony Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "You start the game with a City Gates.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "StartOfGame",
+        "type": "summon",
+        "cardId": "city-gates",
+        "amount": 1,
+        "target": "leftLane"
+      }
+    ]
+  },
+  {
+    "id": "malachite-relic",
+    "name": "Malachite Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "You start the game with a 0/4 Altmer Protector with Guard in each lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "StartOfGame",
+        "type": "summon",
+        "cardId": "altmer-protector",
+        "amount": 1,
+        "target": "leftLane"
+      },
+      {
+        "trigger": "StartOfGame",
+        "type": "summon",
+        "cardId": "altmer-protector",
+        "amount": 1,
+        "target": "rightLane"
+      }
+    ]
+  },
+  {
+    "id": "iron-relic",
+    "name": "Iron Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "You start the game with 50 health.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "StartOfGame",
+        "type": "damage",
+        "amount": -20,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "quicksilver-relic",
+    "name": "Quicksilver Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing At the start of your turn, deal 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ]
+  },
+  {
+    "id": "corundum-relic",
+    "name": "Corundum Relic",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing Your creatures have +1/+0.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creatureFriendlyAll"
       }
     ]
   }

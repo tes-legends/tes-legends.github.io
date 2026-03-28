@@ -27,6 +27,17 @@
     "LG-audio-camlorn_adventurer_attack_03.ogg",
     "LG-audio-camlorn_adventurer_enter_play_01.ogg",
     "LG-audio-camlorn_adventurer_enter_play_02.ogg",
+    "LG-audio-cathay_novice_attack_01.ogg",
+    "LG-audio-cathay_novice_attack_02.ogg",
+    "LG-audio-cathay_novice_attack_03.ogg",
+    "LG-audio-cathay_novice_enter_play_01.ogg",
+    "LG-audio-cathay_novice_enter_play_02.ogg",
+    "LG-audio-cathay_novice_enter_play_03.ogg",
+    "LG-audio-cheydinhal_conscript_attack_01.ogg",
+    "LG-audio-cheydinhal_conscript_attack_02.ogg",
+    "LG-audio-cheydinhal_conscript_attack_03.ogg",
+    "LG-audio-cheydinhal_conscript_enter_play_01.ogg",
+    "LG-audio-cheydinhal_conscript_enter_play_02.ogg",
     "LG-audio-crowd_favorite_attack_01.ogg",
     "LG-audio-crowd_favorite_attack_02.ogg",
     "LG-audio-crowd_favorite_attack_03.ogg",
@@ -65,11 +76,17 @@
     "LG-audio-desperate_captive_attack_01.ogg",
     "LG-audio-desperate_captive_enter_play_01.ogg",
     "LG-audio-desperate_captive_enter_play_02.ogg",
+    "LG-audio-divine_conviction_01.ogg",
     "LG-audio-dominion_seneschal_attack_01.ogg",
     "LG-audio-dominion_seneschal_attack_02.ogg",
     "LG-audio-dominion_seneschal_attack_03.ogg",
     "LG-audio-dominion_seneschal_enter_play_01.ogg",
     "LG-audio-dominion_seneschal_enter_play_02.ogg",
+    "LG-audio-dres_guard_enter_play_01.ogg",
+    "LG-audio-dres_guard_enter_play_02.ogg",
+    "LG-audio-dres_guard_attack_01.ogg",
+    "LG-audio-dres_guard_attack_02.ogg",
+    "LG-audio-dres_guard_attack_03.ogg",
     "LG-audio-dune_rogue_attack_01.ogg",
     "LG-audio-dune_rogue_attack_02.ogg",
     "LG-audio-dune_rogue_attack_03.ogg",
@@ -95,6 +112,11 @@
     "LG-audio-high_elf_soldier_attack_03.ogg",
     "LG-audio-high_elf_soldier_enter_play_01.ogg",
     "LG-audio-high_elf_soldier_enter_play_02.ogg",
+    "LG-audio-initiate_of_hircine_enter_play_01.ogg",
+    "LG-audio-initiate_of_hircine_enter_play_02.ogg",
+    "LG-audio-initiate_of_hircine_attack_01.ogg",
+    "LG-audio-initiate_of_hircine_attack_02.ogg",
+    "LG-audio-initiate_of_hircine_attack_03.ogg",
     "LG-audio-naarifins_elite_attack_01.ogg",
     "LG-audio-naarifins_elite_attack_02.ogg",
     "LG-audio-naarifins_elite_attack_03.ogg",
@@ -110,7 +132,17 @@
     "LG-audio-northpoint_lieutenant_attack_03.ogg",
     "LG-audio-northpoint_lieutenant_enter_play_01.ogg",
     "LG-audio-northpoint_lieutenant_enter_play_02.ogg",
+    "LG-audio-orc_clansman_enter_play_01.ogg",
+    "LG-audio-orc_clansman_enter_play_02.ogg",
+    "LG-audio-orc_clansman_attack_01.ogg",
+    "LG-audio-orc_clansman_attack_02.ogg",
+    "LG-audio-orc_clansman_attack_03.ogg",
     "LG-audio-power_of_naarifin.ogg",
+    "LG-audio-quin_rawl_skulker_attack_01.ogg",
+    "LG-audio-quin_rawl_skulker_attack_02.ogg",
+    "LG-audio-quin_rawl_skulker_attack_03.ogg",
+    "LG-audio-quin_rawl_skulker_enter_play_01.ogg",
+    "LG-audio-quin_rawl_skulker_enter_play_02.ogg",
     "LG-audio-reckless_combatant_attack_01.ogg",
     "LG-audio-reckless_combatant_attack_02.ogg",
     "LG-audio-reckless_combatant_attack_03.ogg",
@@ -121,6 +153,11 @@
     "LG-audio-redguard_pit_dog_attack_03.ogg",
     "LG-audio-redguard_pit_dog_enter_play_01.ogg",
     "LG-audio-redguard_pit_dog_enter_play_02.ogg",
+    "LG-audio-rihad_nomad_attack_01.ogg",
+    "LG-audio-rihad_nomad_attack_02.ogg",
+    "LG-audio-rihad_nomad_attack_03.ogg",
+    "LG-audio-rihad_nomad_enter_play_01.ogg",
+    "LG-audio-rihad_nomad_enter_play_02.ogg",
     "LG-audio-rising_legate_attack_01.ogg",
     "LG-audio-rising_legate_attack_02.ogg",
     "LG-audio-rising_legate_attack_03.ogg",
@@ -151,7 +188,12 @@
     "LG-audio-volkihar_lord_attack_02.ogg",
     "LG-audio-volkihar_lord_attack_03.ogg",
     "LG-audio-volkihar_lord_enter_play_01.ogg",
-    "LG-audio-volkihar_lord_enter_play_02.ogg"
+    "LG-audio-volkihar_lord_enter_play_02.ogg",
+    "LG-audio-whiterun_recruit_enter_play_01.ogg",
+    "LG-audio-whiterun_recruit_enter_play_02.ogg",
+    "LG-audio-whiterun_recruit_attack_01.ogg",
+    "LG-audio-whiterun_recruit_attack_02.ogg",
+    "LG-audio-whiterun_recruit_attack_03.ogg"
   ],
   "cardToFiles": {
     "defiant-prisoner": [
@@ -355,6 +397,9 @@
       "LG-audio-desperate_captive_enter_play_01.ogg",
       "LG-audio-desperate_captive_enter_play_02.ogg"
     ],
+    "divine-conviction": [
+      "LG-audio-divine_conviction_01.ogg"
+    ],
     "dune-rogue": [
       "LG-audio-dune_rogue_attack_01.ogg",
       "LG-audio-dune_rogue_attack_02.ogg",
@@ -365,6 +410,63 @@
     "altmer-protector": [
       "LG-audio-altmer_protector_enter_play_01.ogg",
       "LG-audio-altmer_protector_enter_play_02.ogg"
+    ],
+    "initiate-of-hircine": [
+      "LG-audio-initiate_of_hircine_enter_play_01.ogg",
+      "LG-audio-initiate_of_hircine_enter_play_02.ogg",
+      "LG-audio-initiate_of_hircine_attack_01.ogg",
+      "LG-audio-initiate_of_hircine_attack_02.ogg",
+      "LG-audio-initiate_of_hircine_attack_03.ogg"
+    ],
+    "orc-clansman": [
+      "LG-audio-orc_clansman_enter_play_01.ogg",
+      "LG-audio-orc_clansman_enter_play_02.ogg",
+      "LG-audio-orc_clansman_attack_01.ogg",
+      "LG-audio-orc_clansman_attack_02.ogg",
+      "LG-audio-orc_clansman_attack_03.ogg"
+    ],
+    "whiterun-recruit": [
+      "LG-audio-whiterun_recruit_enter_play_01.ogg",
+      "LG-audio-whiterun_recruit_enter_play_02.ogg",
+      "LG-audio-whiterun_recruit_attack_01.ogg",
+      "LG-audio-whiterun_recruit_attack_02.ogg",
+      "LG-audio-whiterun_recruit_attack_03.ogg"
+    ],
+    "dres-guard": [
+      "LG-audio-dres_guard_enter_play_01.ogg",
+      "LG-audio-dres_guard_enter_play_02.ogg",
+      "LG-audio-dres_guard_attack_01.ogg",
+      "LG-audio-dres_guard_attack_02.ogg",
+      "LG-audio-dres_guard_attack_03.ogg"
+    ],
+    "quinrawl-skulker": [
+      "LG-audio-quin_rawl_skulker_attack_01.ogg",
+      "LG-audio-quin_rawl_skulker_attack_02.ogg",
+      "LG-audio-quin_rawl_skulker_attack_03.ogg",
+      "LG-audio-quin_rawl_skulker_enter_play_01.ogg",
+      "LG-audio-quin_rawl_skulker_enter_play_02.ogg"
+    ],
+    "rihad-nomad": [
+      "LG-audio-rihad_nomad_attack_01.ogg",
+      "LG-audio-rihad_nomad_attack_02.ogg",
+      "LG-audio-rihad_nomad_attack_03.ogg",
+      "LG-audio-rihad_nomad_enter_play_01.ogg",
+      "LG-audio-rihad_nomad_enter_play_02.ogg"
+    ],
+    "cathay-novice": [
+      "LG-audio-cathay_novice_attack_01.ogg",
+      "LG-audio-cathay_novice_attack_02.ogg",
+      "LG-audio-cathay_novice_attack_03.ogg",
+      "LG-audio-cathay_novice_enter_play_01.ogg",
+      "LG-audio-cathay_novice_enter_play_02.ogg",
+      "LG-audio-cathay_novice_enter_play_03.ogg"
+    ],
+    "cheydinhal-conscript": [
+      "LG-audio-cheydinhal_conscript_attack_01.ogg",
+      "LG-audio-cheydinhal_conscript_attack_02.ogg",
+      "LG-audio-cheydinhal_conscript_attack_03.ogg",
+      "LG-audio-cheydinhal_conscript_enter_play_01.ogg",
+      "LG-audio-cheydinhal_conscript_enter_play_02.ogg"
     ],
     "power-of-naarifin": [
       "LG-audio-power_of_naarifin.ogg"

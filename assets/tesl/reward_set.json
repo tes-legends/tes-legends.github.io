@@ -46,6 +46,7 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "oF",
+    	"tier": "C",
 		"effects": [
       {
         "trigger": "Play",
@@ -87,7 +88,7 @@
 		"type": "Support",
 		"subtypes": [],
 		"attributes": [
-				"P"
+			"P"
 		],
 		"cost": 4,
 		"attack": null,
@@ -97,44 +98,45 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "ij",
+    	"tier": "D",
 		"effects": [
-      {
-        "trigger": "Summon",
-        "type": "maxMagicka",
-        "amount": 1,
-        "target": "player"
-      },
 			{
-        "trigger": "StartOfTurn",
-        "type": "summon",
-        "cardId": "swamp-leviathan",
-        "amount": 1,
-        "target": "leftLane",
-				"condition": {
-          "type": "maxMagicka",
-          "min": 15
-        }
-      },
+				"trigger": "Summon",
+				"type": "maxMagicka",
+				"amount": 1,
+				"target": "player"
+			},
 			{
-        "trigger": "StartOfTurn",
-        "type": "summon",
-        "cardId": "swamp-leviathan",
-        "amount": 1,
-        "target": "rightLane",
+				"trigger": "StartOfTurn",
+				"type": "summon",
+				"cardId": "swamp-leviathan",
+				"amount": 1,
+				"target": "leftLane",
 				"condition": {
-          "type": "maxMagicka",
-          "min": 15
-        }
-      },
+					"type": "maxMagicka",
+					"min": 15
+				}
+			},
 			{
-        "trigger": "StartOfTurn",
-        "type": "destroy",
-        "target": "self",
-				"condition": {
-          "type": "maxMagicka",
-          "min": 15
-        }
-      }
+				"trigger": "StartOfTurn",
+				"type": "summon",
+				"cardId": "swamp-leviathan",
+				"amount": 1,
+				"target": "rightLane",
+						"condition": {
+				"type": "maxMagicka",
+				"min": 15
+				}
+			},
+			{
+				"trigger": "StartOfTurn",
+				"type": "destroy",
+				"target": "self",
+						"condition": {
+				"type": "maxMagicka",
+				"min": 15
+				}
+			}
 		]
 	},
 	{
@@ -145,7 +147,7 @@
 			"Dwemer"
 		],
 		"attributes": [
-				"N"
+			"N"
 		],
 		"cost": 3,
 		"attack": 3,
@@ -155,18 +157,19 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "kp",
+    	"tier": "U",
 		"effects": [
-      {
-        "trigger": "Summon",
-        "type": "summon",
-				"cardId": "spider-worker",
-        "amount": 1,
-        "target": "thisLane",
-				"condition": {
-          "type": "topDeckAttribute",
-          "attribute": "N"
-        }
-      }
+			{
+				"trigger": "Summon",
+				"type": "summon",
+						"cardId": "spider-worker",
+				"amount": 1,
+				"target": "thisLane",
+						"condition": {
+				"type": "topDeckAttribute",
+				"attribute": "N"
+				}
+			}
 		]
 	},
 	{
@@ -187,15 +190,16 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "bI",
+    	"tier": "D",
 		"effects": [
-      {
-        "trigger": "Summon",
-        "type": "buffTarget",
-        "modAttack": 1,
+			{
+				"trigger": "Summon",
+				"type": "buffTarget",
+				"modAttack": 1,
 				"modHealth": 1,
 				"amountPer": "numberKeywords",
-        "target": "creatureFriendlyAll"
-      }
+				"target": "creatureFriendlyAll"
+			}
 		]
 	},
 	{
@@ -206,7 +210,7 @@
 			"Khajiit"
 		],
 		"attributes": [
-				"Y"
+			"Y"
 		],
 		"cost": 3,
 		"attack": 1,
@@ -216,12 +220,13 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "fK",
+    	"tier": "D",
 		"effects": [
-      {
-        "trigger": "Pilfer",
-        "type": "doubleStats",
-        "target": "self"
-      }
+			{
+				"trigger": "Pilfer",
+				"type": "doubleStats",
+				"target": "self"
+			}
 		]
 	},
 	{
@@ -232,7 +237,7 @@
 			"Giant"
 		],
 		"attributes": [
-				"R"
+			"R"
 		],
 		"cost": 6,
 		"attack": 7,
@@ -240,23 +245,24 @@
 		"rarity": "3Epic",
 		"text": "Breakthrough You can't be damaged by actions or supports.",
 		"keywords": [
-      "Breakthrough"
-    ],
+			"Breakthrough"
+		],
 		"set": "Monthly Reward",
 		"deckCodeId": "pj",
+    	"tier": "A",
 		"effects": [
-      {
-        "trigger": "Aura",
-        "type": "grantImmunity",
-        "immunity": "ActionDamage",
-        "target": "player"
-      },
 			{
-        "trigger": "Aura",
-        "type": "grantImmunity",
-        "immunity": "SupportDamage",
-        "target": "player"
-      }
+				"trigger": "Aura",
+				"type": "grantImmunity",
+				"immunity": "ActionDamage",
+				"target": "player"
+			},
+					{
+				"trigger": "Aura",
+				"type": "grantImmunity",
+				"immunity": "SupportDamage",
+				"target": "player"
+			}
 		]
 	},
 	{
@@ -265,7 +271,7 @@
 		"type": "Support",
 		"subtypes": [],
 		"attributes": [
-				"N"
+			"N"
 		],
 		"cost": 3,
 		"attack": null,
@@ -276,13 +282,14 @@
 		"uses": 3,
 		"set": "Monthly Reward",
 		"deckCodeId": "pj",
+    	"tier": "B",
 		"effects": [
-      {
-        "trigger": "Activation",
-        "type": "transform",
-        "cardId": "legendary",
-        "target": "creaturePlayerHand"
-      }
+			{
+				"trigger": "Activation",
+				"type": "transform",
+				"cardId": "legendary",
+				"target": "creaturePlayerHand"
+			}
 		]
 	},
 	{
@@ -293,7 +300,7 @@
 			"Daedra"
 		],
 		"attributes": [
-				"R", "P"
+			"R", "P"
 		],
 		"cost": 5,
 		"attack": 5,
@@ -305,13 +312,14 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "oR",
+    	"tier": "S",
 		"effects": [
-      {
-        "trigger": "LastGasp",
-        "type": "damage",
-        "amount": 5,
-        "target": "opponent"
-      }
+			{
+				"trigger": "LastGasp",
+				"type": "damage",
+				"amount": 5,
+				"target": "opponent"
+			}
 		]
 	},
 	{
@@ -320,7 +328,7 @@
 		"type": "Action",
 		"subtypes": [],
 		"attributes": [
-				"G"
+			"G"
 		],
 		"cost": 10,
 		"attack": null,
@@ -330,21 +338,22 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "cW",
+    	"tier": "C",
 		"effects": [
-      {
-        "trigger": "Play",
-        "type": "summon",
-				"cardId": "chaurus-reaper",
-        "amount": 1,
-        "target": "leftLane"
-      },
 			{
-        "trigger": "Play",
-        "type": "summon",
+				"trigger": "Play",
+				"type": "summon",
 				"cardId": "chaurus-reaper",
-        "amount": 1,
-        "target": "rightLane"
-      }
+				"amount": 1,
+				"target": "leftLane"
+			},
+			{
+				"trigger": "Play",
+				"type": "summon",
+				"cardId": "chaurus-reaper",
+				"amount": 1,
+				"target": "rightLane"
+			}
 		]
 	},
 	{
@@ -355,7 +364,7 @@
 			"Khajiit"
 		],
 		"attributes": [
-				"Y", "G"
+			"Y", "G"
 		],
 		"cost": 5,
 		"attack": 4,
@@ -367,13 +376,14 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "mu",
+    	"tier": "B",
 		"effects": [
-      {
-        "trigger": "HealPlayer",
-        "type": "buffSelf",
-        "modAttack": 1,
-        "modHealth": 1
-      }
+			{
+				"trigger": "HealPlayer",
+				"type": "buffSelf",
+				"modAttack": 1,
+				"modHealth": 1
+			}
 		]
 	},
 	{
@@ -384,7 +394,7 @@
 			"Breton"
 		],
 		"attributes": [
-				"B"
+			"B"
 		],
 		"cost": 6,
 		"attack": 3,
@@ -394,23 +404,24 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "dw",
+    	"tier": "A",
 		"effects": [
-      {
-        "trigger": "Summon",
-        "type": "shuffleIntoDeck",
-        "cardId": "lava-atronach",
-        "target": "player",
-        "amount": 3
-      },
 			{
-        "trigger": "SummonCreature",
-        "type": "summonCopy",
-        "target": "otherLane",
-        "condition": {
-          "type": "hasSubtype",
-          "subtypes": [ "Atronach" ]
-        }
-      }
+				"trigger": "Summon",
+				"type": "shuffleIntoDeck",
+				"cardId": "lava-atronach",
+				"target": "player",
+				"amount": 3
+			},
+			{
+				"trigger": "SummonCreature",
+				"type": "summonCopy",
+				"target": "otherLane",
+				"condition": {
+				"type": "hasSubtype",
+				"subtypes": [ "Atronach" ]
+				}
+			}
 		]
 	},
 	{
@@ -421,7 +432,7 @@
 			"Nord"
 		],
 		"attributes": [
-				"R", "Y"
+			"R", "Y"
 		],
 		"cost": 4,
 		"attack": 3,
@@ -431,13 +442,14 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "ra",
+    	"tier": "A",
 		"effects": [      
 			{
-        "trigger": "DestroyRune",
-        "type": "drawCards",
+				"trigger": "DestroyRune",
+				"type": "drawCards",
 				"amount": 1,
-        "target": "player"
-      }
+				"target": "player"
+			}
 		]
 	},
 	{
@@ -448,7 +460,7 @@
 			"Vampire"
 		],
 		"attributes": [
-				"P"
+			"P"
 		],
 		"cost": 7,
 		"attack": 8,
@@ -458,23 +470,24 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "mv",
+    	"tier": "A",
 		"effects": [      
 			{
-        "trigger": "Aura",
-        "type": "buffTarget",
-        "addKeywords": [ "DoubleMagicka" ],
-        "target": "player"
-      }
+				"trigger": "Aura",
+				"type": "buffTarget",
+				"addKeywords": [ "DoubleMagicka" ],
+				"target": "player"
+			}
 		],
 		"static": {
-      "condition": {
-        "type": "maxMagicka",
-        "min": 18
-      },
-      "modAttack": 8,
-      "modHealth": 8,
-      "addKeywords": ["Breakthrough"]
-    }
+			"condition": {
+				"type": "maxMagicka",
+				"min": 18
+			},
+			"modAttack": 8,
+			"modHealth": 8,
+			"addKeywords": ["Breakthrough"]
+		}
 	},
 	{
 		"id": "emperors-blade",
@@ -496,13 +509,14 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "fP",
+    	"tier": "A",
 		"effects": [      
 			{
-        "trigger": "Slay",
-        "type": "damage",
-        "amount": -3,
-        "target": "player"
-      }
+				"trigger": "Slay",
+				"type": "damage",
+				"amount": -3,
+				"target": "player"
+			}
 		]
 	},
 	{
@@ -525,30 +539,31 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "fl",
+    	"tier": "B",
 		"effects": [
-      {
-        "trigger": "Summon",
-        "type": "choice",
-        "target": "player",
-        "choices": [
-          {
-            "text": "Deal 1 damage",
-            "effect": {
-              "type": "damage",
-			  "amount": 1,
-              "target": "any"
-            }
-          },
-          {
-            "text": "Destroy an enemy support",
-            "effect" : {
-              "type": "destroy",
-              "target": "supportEnemy"
-            }
-          }
-        ]
-      }
-    ]
+			{
+				"trigger": "Summon",
+				"type": "choice",
+				"target": "player",
+				"choices": [
+					{
+						"text": "Deal 1 damage",
+						"effect": {
+							"type": "damage",
+							"amount": 1,
+							"target": "any"
+						}
+					},
+					{
+						"text": "Destroy an enemy support",
+						"effect" : {
+							"type": "destroy",
+							"target": "supportEnemy"
+						}
+					}
+				]
+			}
+		]
 	},
   {
 		"id": "worm-kings-agent",
@@ -570,6 +585,7 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "sc",
+    	"tier": "B",
 		"effects": [
       {
         "trigger": "Summon",
@@ -606,6 +622,7 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "bO",
+    	"tier": "C",
 		"effects": [
       {
         "trigger": "Summon",
@@ -641,6 +658,7 @@
 		],
 		"set": "Monthly Reward",
 		"deckCodeId": "lS",
+    	"tier": "B",
 		"effects": [
       {
         "trigger": "Pilfer",
@@ -680,6 +698,7 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "pq",
+    	"tier": "U",
 		"effects": [
       {
         "trigger": "Summon",
@@ -712,6 +731,7 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "gN",
+    	"tier": "A",
 		"effects": [
       {
         "trigger": "Summon",
@@ -745,6 +765,7 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "bW",
+    	"tier": "B",
 		"effects": [
       {
         "trigger": "Pilfer",
@@ -778,18 +799,19 @@
 		"keywords": [],
 		"set": "Monthly Reward",
 		"deckCodeId": "ax",
+    	"tier": "C",
 		"effects": [
-      {
-        "trigger": "EndOfTurn",
-        "type": "buffSelf",
-        "modAttack": 2,
-        "modHealth": 2,
-        "condition": {
-          "type": "playedActions",
-          "min": 1
-        }
-      }
-    ]
+			{
+				"trigger": "EndOfTurn",
+				"type": "buffSelf",
+				"modAttack": 2,
+				"modHealth": 2,
+				"condition": {
+				"type": "playedActions",
+				"min": 1
+				}
+			}
+		]
 	},
   {
 		"id": "ashlander-punisher",
@@ -807,22 +829,23 @@
 		"rarity": "3Epic",
 		"text": "Breakthrough Pilfer and Slay: +1/+0",
 		"keywords": [
-      "Breakthrough", "Pilfer", "Slay"
-    ],
+			"Breakthrough", "Pilfer", "Slay"
+		],
 		"set": "Monthly Reward",
 		"deckCodeId": "aZ",
+    	"tier": "C",
 		"effects": [
-      {
-        "trigger": "Pilfer",
-        "type": "buffSelf",
-        "modAttack": 1
-      },
-      {
-        "trigger": "Slay",
-        "type": "buffSelf",
-        "modAttack": 1
-      }
-    ]
+			{
+				"trigger": "Pilfer",
+				"type": "buffSelf",
+				"modAttack": 1
+			},
+			{
+				"trigger": "Slay",
+				"type": "buffSelf",
+				"modAttack": 1
+			}
+    	]
 	},
 	{
 		"id": "lava-atronach",
@@ -832,7 +855,7 @@
 			"Daedra", "Atronach"
 		],
 		"attributes": [
-				"B"
+			"B"
 		],
 		"cost": 7,
 		"attack": 8,
@@ -853,7 +876,7 @@
 			"Skeleton"
 		],
 		"attributes": [
-				"P"
+			"P"
 		],
 		"cost": 2,
 		"attack": 2,
@@ -874,7 +897,7 @@
 			"Dwemer"
 		],
 		"attributes": [
-				"N"
+			"N"
 		],
 		"cost": 1,
 		"attack": 1,

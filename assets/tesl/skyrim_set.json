@@ -19,6 +19,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "af",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -60,6 +61,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ag",
+    "tier": "A",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -91,6 +93,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aB",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -121,6 +124,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bF",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Slay",
@@ -149,6 +153,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bM",
+    "tier": "B",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -182,6 +187,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bX",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -235,6 +241,7 @@
     "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "de",
+    "tier": "A",
     "prophecy": true,
     "effects": [
       {
@@ -261,6 +268,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fd",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -292,6 +300,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "il",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -324,6 +333,7 @@
     "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "iY",
+    "tier": "C",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -355,6 +365,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nY",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -382,6 +393,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oz",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -407,6 +419,7 @@
     "set": "Heroes of Skyrim",
     "uses": 3,
     "deckCodeId": "oA",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -445,6 +458,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pB",
+    "tier": "C",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -474,6 +488,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pC",
+    "tier": "E",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -508,6 +523,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pD",
+    "tier": "A",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -535,6 +551,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "D",
     "deckCodeId": "pF"
   },
   {
@@ -555,6 +572,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pI",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -588,6 +606,7 @@
       "Charge"
     ],
     "set": "Heroes of Skyrim",
+    "tier": "B",
     "deckCodeId": "pW"
   },
   {
@@ -610,6 +629,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "qZ",
+    "tier": "U",
     "unique": true,
     "effects": [
       {
@@ -643,6 +663,7 @@
     "keywords": [ "LastGasp" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rc",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -669,6 +690,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ri",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -761,6 +783,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rO",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -792,6 +815,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "sb",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -824,6 +848,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aA",
+    "tier": "S",
     "unique": true,
     "effects": [
       {
@@ -856,6 +881,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aH",
+    "tier": "E",
     "effects": [
       {
         "trigger": "DrawCard",
@@ -886,6 +912,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ct",
+    "tier": "B",
     "targetReq": true,
     "effects": [
       {
@@ -921,6 +948,7 @@
     "set": "Heroes of Skyrim",
     "uses": 3,
     "deckCodeId": "dt",
+    "tier": "D",
     "unique": true,
     "effects": [
       {
@@ -952,6 +980,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "dv",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -979,6 +1008,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "dC",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -1009,6 +1039,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ef",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -1039,6 +1070,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eM",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -1063,6 +1095,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eN",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -1097,6 +1130,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fz",
+    "tier": "D",
     "effects": [
       {
         "trigger": "DrawCard",
@@ -1130,6 +1164,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fN",
+    "tier": "E",
     "prophecy": true
   },
   {
@@ -1148,6 +1183,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "gv",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -1237,6 +1273,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "gZ",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -1267,6 +1304,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "iA",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -1293,6 +1331,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "iW",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -1322,6 +1361,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jc",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -1351,6 +1391,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ko",
+    "tier": "D",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -1382,6 +1423,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kD",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -1413,6 +1455,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "lj",
+    "tier": "S",
     "prophecy": true
   },
   {
@@ -1431,6 +1474,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nb",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -1466,6 +1510,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ng",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -1493,6 +1538,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pL",
+    "tier": "E",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -1536,6 +1582,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ql",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Aura",
@@ -1573,6 +1620,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "qv",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -1599,6 +1647,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "C",
     "deckCodeId": "rs"
   },
   {
@@ -1617,6 +1666,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aa",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -1661,6 +1711,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aP",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -1698,6 +1749,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bx",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -1729,6 +1781,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cF",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -1822,6 +1875,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cR",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -1854,6 +1908,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "df",
+    "tier": "A",
     "prophecy": true,
     "effects": [
       {
@@ -1882,6 +1937,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "dk",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -1911,6 +1967,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ex",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -1951,6 +2008,7 @@
     "set": "Heroes of Skyrim",
     "uses": 3,
     "deckCodeId": "fJ",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Activation",
@@ -1978,6 +2036,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "hF",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -2007,6 +2066,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "iH",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -2045,6 +2105,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jd",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -2086,6 +2147,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jj",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -2114,6 +2176,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jB",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -2149,6 +2212,7 @@
     "immunity": ["DefenseRestrictions"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jW",
+    "tier": "B",
     "unique": true
   },
   {
@@ -2169,6 +2233,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ml",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2198,6 +2263,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "mo",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2231,6 +2297,7 @@
       "Guard"
     ],
     "set": "Heroes of Skyrim",
+    "tier": "C",
     "deckCodeId": "nd"
   },
   {
@@ -2253,6 +2320,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oJ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2284,6 +2352,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "B",
     "deckCodeId": "oL"
   },
   {
@@ -2304,6 +2373,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "qm",
+    "tier": "D",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -2335,6 +2405,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "qz",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -2364,6 +2435,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rf",
+    "tier": "A",
     "static": {
       "condition": {
         "type": "hasHealth",
@@ -2391,6 +2463,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rT",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -2416,6 +2489,7 @@
     "set": "Heroes of Skyrim",
     "uses": 3,
     "deckCodeId": "rX",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Activation",
@@ -2441,6 +2515,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bE",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -2467,6 +2542,7 @@
     "keywords": [ "Drain" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cz",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -2501,6 +2577,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "cN",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Move",
@@ -2527,6 +2604,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "C",
     "deckCodeId": "cV"
   },
   {
@@ -2549,6 +2627,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ep",
+    "tier": "B",
     "effects": [
       {
         "trigger": "DamageDealt",
@@ -2575,6 +2654,7 @@
     "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eI",
+    "tier": "U",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -2601,6 +2681,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eS",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -2693,6 +2774,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fD",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -2729,6 +2811,7 @@
     "keywords": [ "Stealth" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fM",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2756,6 +2839,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "hj",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -2782,6 +2866,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jM",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -2826,6 +2911,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kW",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -2857,6 +2943,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ly",
+    "tier": "C",
     "effects": [
       {
         "trigger": "GainCover",
@@ -2886,6 +2973,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "lW",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -2911,6 +2999,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "lX",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -2935,6 +3024,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nm",
+    "tier": "E",
     "unique": true,
     "effects": [
       {
@@ -2965,6 +3055,7 @@
     "immunity": ["LaneRestrictions"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nJ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Slay",
@@ -2992,6 +3083,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nO",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -3035,6 +3127,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nQ",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -3064,6 +3157,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nS",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -3095,6 +3189,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nX",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -3129,6 +3224,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oi",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -3161,6 +3257,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pX",
+    "tier": "U",
     "unique": true,
     "effects": [
       {
@@ -3201,6 +3298,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "qx",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DrawCard",
@@ -3228,6 +3326,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rZ",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -3259,6 +3358,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aD",
+    "tier": "U",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -3289,6 +3389,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "A",
     "deckCodeId": "cS"
   },
   {
@@ -3309,6 +3410,7 @@
     "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "du",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -3355,6 +3457,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "dA",
+    "tier": "B",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -3385,6 +3488,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eK",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -3409,6 +3513,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eO",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -3440,6 +3545,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fw",
+    "tier": "A",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -3473,6 +3579,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fO",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -3503,6 +3610,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fS",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Attack",
@@ -3531,6 +3639,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "gK",
+    "tier": "A",
     "effects": [
       {
         "trigger": "HealCreature",
@@ -3561,6 +3670,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "gL",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DamageTaken",
@@ -3588,6 +3698,7 @@
     "keywords": [ "BeastForm" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "hE",
+    "tier": "B",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -3613,6 +3724,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "if",
+    "tier": "U",
     "unique": true,
     "effects": [
       {
@@ -3640,6 +3752,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "iV",
+    "tier": "U",
     "unique": true,
     "effects": [
       {
@@ -3673,6 +3786,7 @@
       "Regenerate"
     ],
     "set": "Heroes of Skyrim",
+    "tier": "B",
     "deckCodeId": "jb"
   },
   {
@@ -3691,6 +3805,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jx",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -3721,6 +3836,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kt",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -3749,6 +3865,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "na",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -3778,6 +3895,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "or",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -3811,6 +3929,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oP",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -3917,6 +4036,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pa",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -3944,6 +4064,7 @@
     "keywords": [ "Slay" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "pt",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Slay",
@@ -3976,6 +4097,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "px",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -4006,6 +4128,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rF",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -4052,6 +4175,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rI",
+    "tier": "A",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -4077,6 +4201,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "ab",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Play",
@@ -4109,6 +4234,7 @@
     "set": "Heroes of Skyrim",
     "deckCodeId": "ao",
     "unique": true,
+    "tier": "U",
     "effects": [
       {
         "trigger": "None",
@@ -4150,6 +4276,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bz",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -4206,6 +4333,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bS",
+    "tier": "E",
     "prophecy": true,
     "effects": [
       {
@@ -4232,6 +4360,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "eL",
+    "tier": "D",
     "unique": true,
     "effects": [
       {
@@ -4270,6 +4399,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "fq",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -4305,6 +4435,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "gG",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -4331,6 +4462,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "hg",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -4358,6 +4490,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "hC",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -4383,6 +4516,7 @@
     "text": "+2/+3",
     "keywords": [],
     "set": "Heroes of Skyrim",
+    "tier": "C",
     "deckCodeId": "is"
   },
   {
@@ -4401,6 +4535,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "jg",
+    "tier": "D",
     "unique": true,
     "effects": [
       {
@@ -4433,6 +4568,7 @@
     "keywords": [],
     "immunity": ["Silence"],
     "set": "Heroes of Skyrim",
+    "tier": "B",
     "deckCodeId": "jU"
   },
   {
@@ -4455,6 +4591,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kx",
+    "tier": "U",
     "prophecy": true,
     "effects": [
       {
@@ -4484,6 +4621,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kX",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -4511,6 +4649,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "lR",
+    "tier": "U",
     "unique": true,
     "effects": [
       {
@@ -4572,6 +4711,7 @@
     "keywords": [ "LastGasp"],
     "set": "Heroes of Skyrim",
     "deckCodeId": "mr",
+    "tier": "E",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -4600,6 +4740,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "mB",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DamageTaken",
@@ -4629,6 +4770,7 @@
     ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "sa",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -4656,6 +4798,7 @@
     "keywords": [ "Slay" ],
     "set": "Heroes of Skyrim",
     "deckCodeId": "sl",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Slay",
@@ -4696,6 +4839,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "aN",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4726,6 +4870,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bf",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4751,6 +4896,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "bG",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4791,6 +4937,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "dL",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -4841,6 +4988,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kb",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -4878,6 +5026,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "kG",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -4909,6 +5058,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "nA",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4951,6 +5101,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oM",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Play",
@@ -4981,6 +5132,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "oW",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -5014,6 +5166,7 @@
     "keywords": [],
     "set": "Heroes of Skyrim",
     "deckCodeId": "rD",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -5179,7 +5332,7 @@
       "Guard"
     ],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": "De"
   },
   {
     "id": "experimental-scroll",
@@ -5365,7 +5518,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": "Dd"
   },
   {
     "id": "rallying-stormcloak",
@@ -5463,7 +5616,7 @@
     "text": "",
     "keywords": [],
     "set": "Heroes of Skyrim",
-    "deckCodeId": null
+    "deckCodeId": "Df"
   },
   {
     "id": "thalmor-soldier",

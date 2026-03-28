@@ -1,0 +1,112 @@
+[
+    {
+      "source": "starter",
+      "name": "Band of Survivors",
+      "isRandom": false,
+      "attributes": ["R","Y"],
+      "class": "Cruader",
+      "deckCode": "SPAMmJeDmYhrlYbHnGjPgohokzqRAHimkRqUnDlLrpjeAIrliIpQhXjrrKoudM",
+      "description": "Aggro",
+      "locked": true,
+      "unlockAfterChapter": 3
+    },
+    {
+      "source": "starter",
+      "name": "Black Marsh Smugglers",
+      "isRandom": false,
+      "attributes": ["G","P"],
+      "class": "Scout",
+      "deckCode": "SPAJpVqkdhoQrLiGmmbQqBANfiiabUoxqwazcXdUpiaKlEpUoDAFqyiklJpEqN",
+      "description": "Argonians",
+      "locked": true,
+      "unlockAfterChapter": 8
+    },
+    {
+      "source": "starter",
+      "name": "Dunmer Avengers",
+      "isRandom": false,
+      "attributes": ["B","G"],
+      "class": "Assassin",
+      "deckCode": "SPAMpsbCfLnrgehbitkImzoQnugJANdKfkoOdPeXocaQgulzrnmFjSesAEcygymQcJ",
+      "description": "Dunmer",
+      "locked": true,
+      "unlockAfterChapter": 11
+    },
+    {
+      "source": "starter",
+      "name": "Imperial Might",
+      "isRandom": false,
+      "attributes": ["Y","P"],
+      "class": "Spellsword",
+      "deckCode": "SPAPjrouiIqXlYhomXpRdReyrEbQlwlxfBAKcxgpiNiKrAiLjCcwkybAAFcZnBhWemgn",
+      "description": "Imperials",
+      "locked": true,
+      "unlockAfterChapter": 14
+    },
+    {
+      "source": "starter",
+      "name": "Warriors of Hammerfell",
+      "isRandom": false,
+      "attributes": ["R","B"],
+      "class": "Battlemage",
+      "deckCode": "SPAPmgardbqRrHrrfkaXnrePrRklpSnHpHANlDgoprclbeoomEfUihotjXkiglADnidIqF",
+      "description": "Items",
+      "locked": true,
+      "unlockAfterChapter": 21
+    },
+    {
+      "source": "starter",
+      "name": "Aela's Companions",
+      "isRandom": false,
+      "attributes": ["R","P"],
+      "class": "Warrior",
+      "deckCode": "SPAHgolLdbafaBnNlvAFahpDrcqRfRALmGdekNagrQduhErIjSkXdM",
+      "description": "Werewolves",
+      "locked": true,
+      "unlockAfterChapter": 33
+    },
+    {
+      "source": "starter",
+      "name": "Alduin's Apocalypse",
+      "isRandom": false,
+      "attributes": ["Y","P"],
+      "class": "Spellsword",
+      "deckCode": "SPAHeKfSeQmmkhfBaoAFeOkyeximiHALaDktqNpajbdkndjjlYoJkx",
+      "description": "Dragons - Control",
+      "locked": true,
+      "unlockAfterChapter": 38
+    },
+    {
+      "source": "starter",
+      "name": "Ancano's Cunning",
+      "isRandom": false,
+      "attributes": ["B","Y"],
+      "class": "Mage",
+      "deckCode": "SPAGiymlihdraAkdAKcGrCcxaboedOfWiWhFkbAIgyrTdvlYjHdPljef",
+      "description": "Combo",
+      "locked": true,
+      "unlockAfterChapter": 41
+    },
+    {
+      "source": "starter",
+      "name": "Brynjolf's Heist",
+      "isRandom": false,
+      "attributes": ["B","G"],
+      "class": "Assassin",
+      "deckCode": "SPAJdKnZqvkWlXkIqGczcXAHfLngjMfhhboibfAJgyjHjJlWnMcNhjhlqy",
+      "description": "Pilfer",
+      "locked": true,
+      "unlockAfterChapter": 44
+    },
+    {
+      "source": "starter",
+      "name": "Paarthurnax's Roar",
+      "isRandom": false,
+      "attributes": ["R","G"],
+      "class": "Archer",
+      "deckCode": "SPAGfvfdlfoijylRAEgulhoxaNAMmGrieSgsqylznSnXeIsaslhC",
+      "description": "Shouts - Midrange",
+      "locked": true,
+      "unlockAfterChapter": 51
+    }
+  ]

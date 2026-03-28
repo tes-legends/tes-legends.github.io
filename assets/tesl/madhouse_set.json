@@ -16,6 +16,7 @@
 		"set": "Madhouse Collection",
 		"uses": 12,
 		"deckCodeId": "aw",
+    	"tier": "U",
 		"effects": [
 			{
 			"trigger": "Activation",
@@ -49,6 +50,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "dq",
+    	"tier": "D",
 		"effects": [
 			{
 			"trigger": "Play",
@@ -75,6 +77,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "gE",
+    	"tier": "U",
 		"effects": [
 			{
 			"trigger": "Summon",
@@ -93,7 +96,7 @@
 			"Redguard"
 		],
 		"attributes": [
-				"B"
+			"B"
 		],
 		"cost": 3,
 		"attack": 1,
@@ -103,6 +106,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "gP",
+    	"tier": "D",
 		"effects": [
 			{
 			"trigger": "EquipFriendly",
@@ -119,7 +123,7 @@
 			"Spirit"
 		],
 		"attributes": [
-				"N"
+			"N"
 		],
 		"cost": 6,
 		"attack": 5,
@@ -129,6 +133,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "iE",
+    	"tier": "C",
 		"effects": [
 			{
 			"trigger": "Summon",
@@ -146,7 +151,7 @@
 			"Beast"
 		],
 		"attributes": [
-				"N"
+			"N"
 		],
 		"cost": 4,
 		"attack": 1,
@@ -156,6 +161,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "kv",
+    	"tier": "C",
 		"effects": [
 			{
 			"trigger": "Summon",
@@ -171,7 +177,7 @@
 		"type": "Item",
 		"subtypes": [],
 		"attributes": [
-				"P"
+			"P"
 		],
 		"cost": 4,
 		"attack": 0,
@@ -181,6 +187,7 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "nl",
+    	"tier": "D",
 		"effects": [
 			{
 			"trigger": "Summon",
@@ -197,7 +204,7 @@
 			"Imperial"
 		],
 		"attributes": [
-				"Y"
+			"Y"
 		],
 		"cost": 4,
 		"attack": 2,
@@ -207,11 +214,12 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "ob",
+    	"tier": "C",
 		"effects": [
 			{
-        "trigger": "Summon",
-        "type": "playSupport",
-        "names": [ 
+				"trigger": "Summon",
+				"type": "playSupport",
+				"names": [ 
 					"elixir-of-conflict", 
 					"elixir-of-deflection", 
 					"elixir-of-light-feet", 
@@ -220,8 +228,8 @@
 					"elixir-of-vitality",
 					"skirmishers elixir" 
 				],
-        "target": "player"
-      }
+				"target": "player"
+			}
 		]
 	},
 	{
@@ -232,7 +240,7 @@
 			"Orc"
 		],
 		"attributes": [
-				"R"
+			"R"
 		],
 		"cost": 3,
 		"attack": 2,
@@ -242,14 +250,15 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "py",
+    	"tier": "C",
 		"effects": [
 			{
-        "trigger": "Summon",
-        "type": "damage",
+				"trigger": "Summon",
+				"type": "damage",
 				"amount": 1,
-        "target": "creatureEnemy",
+				"target": "creatureEnemy",
 				"amountPer": "creatureFriendlyOrc"
-      }
+			}
 		]
 	},
 	{
@@ -268,27 +277,28 @@
 		"keywords": [],
 		"set": "Madhouse Collection",
 		"deckCodeId": "pZ",
+    	"tier": "U",
 		"effects": [
-      {
-        "trigger": "PlayCard",
-        "type": "damage",
-        "amount": 1,
-        "target": "opponent",
-        "condition": {
-          "type": "lastPlayedCost",
-          "max": 0
-        }
-      },
 			{
-        "trigger": "PlayCard",
-        "type": "damage",
-        "amount": -1,
-        "target": "player",
-        "condition": {
-          "type": "lastPlayedCost",
-          "max": 0
-        }
-      }
+				"trigger": "PlayCard",
+				"type": "damage",
+				"amount": 1,
+				"target": "opponent",
+				"condition": {
+				"type": "lastPlayedCost",
+				"max": 0
+				}
+			},
+					{
+				"trigger": "PlayCard",
+				"type": "damage",
+				"amount": -1,
+				"target": "player",
+				"condition": {
+				"type": "lastPlayedCost",
+				"max": 0
+				}
+			}
 		]
 	}
 ]

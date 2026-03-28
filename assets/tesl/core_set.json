@@ -17,6 +17,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ah",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -44,6 +45,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ar",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -76,6 +78,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "be",
+    "tier": "C",
     "tempKeywords": ["Cover"]
   },
   {
@@ -96,6 +99,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "by",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -128,7 +132,8 @@
       "Charge"
     ],
     "set": "Core Set",
-    "deckCodeId": "bH"
+    "deckCodeId": "bH",
+    "tier": "A"
   },
   {
     "id": "belligerent-giant",
@@ -150,6 +155,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "bK",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -192,6 +198,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ca",
+    "tier": "C",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -219,7 +226,8 @@
     "keywords": [],
     "immunity": ["AttackRestrictions"],
     "set": "Core Set",
-    "deckCodeId": "cc"
+    "deckCodeId": "cc",
+    "tier": "S"
   },
   {
     "id": "bog-lurcher",
@@ -238,6 +246,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "cj"
   },
   {
@@ -256,11 +265,12 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cl",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
         "type": "silence",
-        "target": "creature"
+        "target": "creatureOther"
       }
     ]
   },
@@ -280,6 +290,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cA",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -306,6 +317,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cP",
+    "tier": "A",
     "prophecy": true,
     "effects": [
       {
@@ -333,6 +345,7 @@
     "keywords": ["Slay"],
     "set": "Core Set",
     "deckCodeId": "db",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Slay",
@@ -360,6 +373,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dD",
+    "tier": "C",
     "static": {
       "condition": {
         "type": "handEmpty"
@@ -386,6 +400,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eT",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -415,6 +430,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "eU",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -441,17 +457,18 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fv",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
         "type": "silence",
-        "target": "creature"
+        "target": "creatureOther"
       },
       {
         "trigger": "Summon",
         "type": "damage",
         "amount": 1,
-        "target": "creature"
+        "target": "creatureOther"
       }
     ]
   },
@@ -475,6 +492,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "gg",
+    "tier": "B",
     "effects": [
       {
         "trigger": "DamageTaken",
@@ -502,6 +520,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "go",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Attack",
@@ -527,6 +546,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gx",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -555,7 +575,8 @@
       "Guard"
     ],
     "set": "Core Set",
-    "deckCodeId": "gI"
+    "deckCodeId": "gI",
+    "tier": "D"
   },
   {
     "id": "gladiator-arena",
@@ -573,6 +594,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "he",
+    "tier": "D",
     "effects": [
       {
         "trigger": "StartOfEachTurn",
@@ -600,6 +622,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hr",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -628,6 +651,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hw",
+    "tier": "B",
     "prophecy": true
   },
   {
@@ -645,6 +669,7 @@
     "text": "+4/+1",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "hX"
   },
   {
@@ -664,6 +689,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "iP"
   },
   {
@@ -682,6 +708,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iZ",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -709,6 +736,7 @@
     "keywords": [],
     "immunity": ["Cover"],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "jR"
   },
   {
@@ -729,6 +757,7 @@
     "keywords": [],
     "immunity": ["ActionDamage"],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "ka"
   },
   {
@@ -749,6 +778,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kj",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Attack",
@@ -777,6 +807,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kz",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -812,6 +843,7 @@
     "set": "Core Set",
     "deckCodeId": "kN",
     "target": "creature",
+    "tier": "S",
     "prophecy": true,
     "effects": [
       {
@@ -841,6 +873,7 @@
       "Charge"
     ],
     "set": "Core Set",
+    "tier": "E",
     "deckCodeId": "lD"
   },
   {
@@ -859,6 +892,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lG",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Aura",
@@ -891,6 +925,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lL",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -921,6 +956,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "lM",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -951,6 +987,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "lO"
   },
   {
@@ -969,6 +1006,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mg",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -1004,6 +1042,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mC",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -1034,6 +1073,7 @@
       "Charge"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "mE"
   },
   {
@@ -1052,6 +1092,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mG",
+    "tier": "B",
     "damage": 1,
     "effects": [
       {
@@ -1089,6 +1130,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mU",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -1118,6 +1160,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mV",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -1145,6 +1188,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nh",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1173,6 +1217,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ni",
+    "tier": "C",
     "static": {
       "condition": {
         "type": "hasItem"
@@ -1200,6 +1245,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nj",
+    "tier": "C",
     "static": {
       "condition": {
         "type": "hasItem"
@@ -1227,6 +1273,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nz",
+    "tier": "S",
     "target": "creature",
     "effects": [
       {
@@ -1255,6 +1302,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nV",
+    "tier": "B",
     "target": "any",
     "damage": 1,
     "prophecy": true,
@@ -1285,6 +1333,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ol",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1314,6 +1363,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oo",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -1341,6 +1391,7 @@
     "uses": 3,
     "target": "creature",
     "deckCodeId": "ow",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Activation",
@@ -1366,6 +1417,7 @@
     "text": "+2/+2",
     "keywords": [],
     "set": "Core Set",
+    "tier": "A",
     "deckCodeId": "pr"
   },
   {
@@ -1384,6 +1436,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pw",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -1413,6 +1466,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qM",
+    "tier": "D",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -1440,6 +1494,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qR",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -1470,6 +1525,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rl",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1500,6 +1556,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "rr",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -1527,6 +1584,7 @@
     "uses": 2,
     "target": "creature",
     "deckCodeId": "rw",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -1557,6 +1615,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rH",
+    "tier": "D",
     "effects": [
       {
         "trigger": "EquipItem",
@@ -1584,6 +1643,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rW",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -1617,6 +1677,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "rY",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1645,6 +1706,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "sg",
+    "tier": "C",
     "effects": [
       {
         "trigger": "SummonFirst",
@@ -1671,6 +1733,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ad",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1712,6 +1775,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aX",
+    "tier": "B",
     "target": "creature",
     "damage": 2,
     "effects": [
@@ -1743,6 +1807,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "bw",
+    "tier": "C",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -1770,6 +1835,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bC",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -1805,6 +1871,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "cr",
+    "tier": "A",
     "effects": [
       {
         "trigger": "WardBroken",
@@ -1830,6 +1897,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cs",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -1859,6 +1927,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "cy",
+    "tier": "C",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -1886,6 +1955,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cI",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -1915,6 +1985,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "cJ",
+    "tier": "B",
     "prophecy": true
   },
   {
@@ -1935,6 +2006,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dF",
+    "tier": "U",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -1972,6 +2044,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dI",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -1998,6 +2071,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dK",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -2030,6 +2104,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dO",
+    "tier": "D",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -2061,6 +2136,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dP",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -2095,6 +2171,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "dV",
+    "tier": "A",
     "effects": [
       {
         "trigger": "WardBroken",
@@ -2122,6 +2199,7 @@
     "set": "Core Set",
     "uses": 5,
     "deckCodeId": "eg",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Activation",
@@ -2167,6 +2245,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eu",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -2199,6 +2278,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eA",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -2233,6 +2313,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eP",
+    "tier": "D",
     "effects": [
       {
         "trigger": "EquipItem",
@@ -2262,6 +2343,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "eX",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -2289,6 +2371,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eZ",
+    "tier": "U",
     "effects": [
       {
         "trigger": "EnemyShackle",
@@ -2318,6 +2401,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "fk",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -2346,6 +2430,7 @@
     "uses": 3,
     "target": "creature",
     "deckCodeId": "fF",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Activation",
@@ -2375,6 +2460,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "fL",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -2412,6 +2498,7 @@
       "Ward"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "fU"
   },
   {
@@ -2432,6 +2519,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gd",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2459,6 +2547,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ge",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -2485,6 +2574,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gw",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -2511,6 +2601,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gy",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -2539,6 +2630,7 @@
       "Ward"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "hh"
   },
   {
@@ -2559,6 +2651,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "hY",
+    "tier": "A",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -2592,6 +2685,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ih",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -2618,6 +2712,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ix",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -2649,6 +2744,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iy",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -2676,6 +2772,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iz",
+    "tier": "D",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -2707,6 +2804,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "iR",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -2734,6 +2832,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jl",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -2759,6 +2858,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jE",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -2784,6 +2884,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jH",
+    "tier": "S",
     "damage": 4,
     "prophecy": true,
     "effects": [
@@ -2813,6 +2914,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jJ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -2842,6 +2944,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jX",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -2866,6 +2969,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kd",
+    "tier": "E",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -2897,6 +3001,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kl",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -2922,6 +3027,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ku",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -2946,6 +3052,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kF",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -2973,6 +3080,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ll",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -3007,6 +3115,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lt",
+    "tier": "E",
     "static": {
       "condition": {
         "type": "noEnemyCreaturesThisLane"
@@ -3032,6 +3141,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "mQ"
   },
   {
@@ -3052,6 +3162,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nr",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -3081,6 +3192,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nZ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -3112,6 +3224,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oc",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -3139,6 +3252,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oe",
+    "tier": "S",
     "prophecy": true,
     "effects": [
       {
@@ -3166,6 +3280,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ot",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -3195,6 +3310,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oO",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -3231,6 +3347,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pf",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Attack",
@@ -3255,6 +3372,7 @@
     "text": "+3/+0",
     "keywords": [],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "ps"
   },
   {
@@ -3275,6 +3393,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pM",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Summon",
@@ -3301,6 +3420,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "pN",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Activation",
@@ -3327,6 +3447,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pS",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -3370,6 +3491,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qe",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -3396,6 +3518,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qF",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -3423,6 +3546,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rC",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -3448,6 +3572,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rR",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -3472,6 +3597,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rU",
+    "tier": "D",
     "target": "creatureFriendlyAll",
     "prophecy": true,
     "effects": [
@@ -3500,6 +3626,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rV",
+    "tier": "B",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -3530,6 +3657,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "am",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -3561,6 +3689,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "av",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Aura",
@@ -3591,6 +3720,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aR",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -3621,6 +3751,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aS",
+    "tier": "D",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -3653,6 +3784,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bm",
+    "tier": "B",
     "effects": [
       {
         "trigger": "PlayCard",
@@ -3685,6 +3817,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "bn",
+    "tier": "C",
     "effects": [
       {
         "trigger": "DamageTaken",
@@ -3709,6 +3842,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bR",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -3736,6 +3870,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cx",
+    "tier": "A",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -3761,6 +3896,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cG",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -3787,7 +3923,8 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": "cQ"
+    "deckCodeId": "cQ",
+    "tier": "D"
   },
   {
     "id": "cheydinhal-sapper",
@@ -3808,6 +3945,7 @@
       "Drain"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "cZ"
   },
   {
@@ -3828,6 +3966,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dr",
+    "tier": "S",
     "prophecy": true,
     "effects": [
       {
@@ -3858,6 +3997,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "dX",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -3884,6 +4024,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ei",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -3908,6 +4049,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ej",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -3939,6 +4081,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "el",
+    "tier": "A",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -3968,6 +4111,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "er",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -3998,6 +4142,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eD",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Aura",
@@ -4026,6 +4171,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fx",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -4055,6 +4201,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fH",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Activation",
@@ -4080,6 +4227,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fW",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -4110,6 +4258,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gp",
+    "tier": "B",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -4140,6 +4289,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "ho",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -4170,6 +4320,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hL",
+    "tier": "B",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -4194,6 +4345,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hW",
+    "tier": "E",
     "prophecy": true,
     "effects": [
       {
@@ -4222,6 +4374,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hZ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "FriendlyAttack",
@@ -4248,6 +4401,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ic",
+    "tier": "D",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -4283,6 +4437,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "S",
     "deckCodeId": "im"
   },
   {
@@ -4304,6 +4459,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "io"
   },
   {
@@ -4322,6 +4478,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iF",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -4348,6 +4505,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "iI"
   },
   {
@@ -4366,6 +4524,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iJ",
+    "tier": "D",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -4392,6 +4551,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iK",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4420,6 +4580,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iL",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -4446,6 +4607,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iN",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -4483,6 +4645,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "jr"
   },
   {
@@ -4503,6 +4666,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jC",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -4530,6 +4694,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "jD"
   },
   {
@@ -4550,9 +4715,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jP",
-    "target": "creature",
-    "modAttack": 2,
-    "modHealth": 2,
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -4585,6 +4748,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "kh",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -4611,6 +4775,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kC",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -4638,6 +4803,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kQ",
+    "tier": "A",
     "effects": [
       {
         "trigger": "DestroyRune",
@@ -4664,6 +4830,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lT",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -4690,6 +4857,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lY",
+    "tier": "S",
     "prophecy": true,
     "effects": [
       {
@@ -4717,6 +4885,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "md",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -4744,6 +4913,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "me",
+    "tier": "B",
     "playCondition": {
       "type": "friendlyCreatureInEachLane"
     }
@@ -4766,6 +4936,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mp",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -4796,6 +4967,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mD",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -4823,6 +4995,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mJ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -4854,6 +5027,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mX",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -4889,6 +5063,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mY",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -4924,6 +5099,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "np",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -4948,6 +5124,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nB",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -4984,6 +5161,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "A",
     "deckCodeId": "nG"
   },
   {
@@ -5005,6 +5183,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "E",
     "deckCodeId": "nI"
   },
   {
@@ -5025,6 +5204,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oI",
+    "tier": "C",
     "static": {
       "condition": {
         "type": "hasMoreCreaturesThisLane"
@@ -5051,6 +5231,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pc",
+    "tier": "B",
     "target": "creature",
     "effects": [
       {
@@ -5082,6 +5263,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pO",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Aura",
@@ -5109,6 +5291,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pQ",
+    "tier": "D",
     "target": "creature",
     "modHealth": 2,
     "effects": [
@@ -5138,7 +5321,8 @@
     "keywords": [],
     "immunity": [ "ActivationLimit" ],
     "set": "Core Set",
-    "deckCodeId": "qI"
+    "deckCodeId": "qI",
+    "tier": "U"
   },
   {
     "id": "tusked-bristleback",
@@ -5157,6 +5341,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "qU"
   },
   {
@@ -5175,6 +5360,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qX",
+    "tier": "D",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -5220,6 +5406,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rA",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -5246,6 +5433,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "az"
   },
   {
@@ -5266,6 +5454,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aO",
+    "tier": "D",
     "target": "creatureEnemy",
     "effects": [
       {
@@ -5291,6 +5480,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aQ",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -5325,6 +5515,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "br",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -5353,6 +5544,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "bU",
+    "tier": "A",
     "prophecy": true
   },
   {
@@ -5373,6 +5565,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cL",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -5412,6 +5605,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cX",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -5441,6 +5635,7 @@
       "Charge"
     ],
     "set": "Core Set",
+    "tier": "S",
     "deckCodeId": "dh"
   },
   {
@@ -5459,8 +5654,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dQ",
-    "modAttack": -1,
-    "modHealth": -1,
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -5489,6 +5683,7 @@
     "keywords": [ "Pilfer" ],
     "set": "Core Set",
     "deckCodeId": "eb",
+    "tier": "A",
     "prophecy": true,
     "effects": [
       {
@@ -5519,6 +5714,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "es",
+    "tier": "A",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -5546,6 +5742,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fh",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -5579,6 +5776,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fi",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -5606,6 +5804,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fC",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Attack",
@@ -5631,6 +5830,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fG",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Activation",
@@ -5658,6 +5858,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gi",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -5691,6 +5892,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "gs",
+    "tier": "S",
     "prophecy": true
   },
   {
@@ -5709,6 +5911,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gu",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -5737,6 +5940,7 @@
       "Drain"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "hb"
   },
   {
@@ -5757,6 +5961,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hd",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -5785,6 +5990,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "hl",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -5815,6 +6021,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "hz",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -5846,6 +6053,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hA",
+    "tier": "D",
     "effects": [
       {
         "trigger": "HealPlayer",
@@ -5874,6 +6082,7 @@
       "Charge"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "hB"
   },
   {
@@ -5893,6 +6102,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "ia"
   },
   {
@@ -5911,6 +6121,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ie",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Aura",
@@ -5942,6 +6153,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "ii"
   },
   {
@@ -5964,6 +6176,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "it",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -5997,6 +6210,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jy",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -6021,6 +6235,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jA",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Play",
@@ -6052,6 +6267,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ke",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -6082,6 +6298,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "kI",
+    "tier": "A",
     "prophecy": true
   },
   {
@@ -6103,6 +6320,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "kT"
   },
   {
@@ -6126,6 +6344,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "kV",
+    "tier": "A",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -6154,6 +6373,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lb",
+    "tier": "C",
     "effects": [
       {
         "trigger": "AddToHand",
@@ -6184,6 +6404,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lc",
+    "tier": "D",
     "static": {
       "condition": {
         "type": "isYourTurn"
@@ -6209,6 +6430,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "le",
+    "tier": "C",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -6240,6 +6462,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lf",
+    "tier": "A",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -6268,6 +6491,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lg",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -6302,6 +6526,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "lh",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -6330,6 +6555,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lo",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -6354,6 +6580,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ls",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -6382,6 +6609,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lz",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -6416,6 +6644,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "lU",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Slay",
@@ -6446,6 +6675,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mz",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -6471,6 +6701,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mF",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -6503,6 +6734,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nM",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -6535,6 +6767,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ox",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -6560,6 +6793,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oG",
+    "tier": "D",
     "tempKeywords": ["Drain"]
   },
   {
@@ -6580,6 +6814,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oK",
+    "tier": "A",
     "attacksPerTurn": 2
   },
   {
@@ -6600,6 +6835,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oQ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -6632,6 +6868,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "oX",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -6674,11 +6911,12 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oY",
+    "tier": "E",
     "effects": [
       {
         "trigger": "StartOfTurn",
         "type": "summon",
-        "names": [ "cavern-spider", "poisonous-spider", "protective-spider"],
+        "names": [ "cavern-spinner", "poisonous-spider", "protective-spider"],
         "target": "randomLane"
       }
     ]
@@ -6699,6 +6937,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pV",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -6730,6 +6969,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qc",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -6761,6 +7001,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qj",
+    "tier": "C",
     "attacksPerTurn": 2,
     "effects": [
       {
@@ -6791,6 +7032,7 @@
       "Lethal"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "qk"
   },
   {
@@ -6809,6 +7051,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qw",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -6842,6 +7085,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qy",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -6877,6 +7121,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "qA",
+    "tier": "C",
     "effects": [
       {
         "trigger": "FriendlyPilfer",
@@ -6914,6 +7159,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qG",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Pilfer",
@@ -6941,6 +7187,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rg",
+    "tier": "S",
     "unique": true,
     "effects": [
       {
@@ -6973,6 +7220,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "rn",
+    "tier": "C",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -7001,6 +7249,7 @@
       "Drain"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "ry"
   },
   {
@@ -7021,6 +7270,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rL",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -7061,6 +7311,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "aE",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -7092,6 +7343,7 @@
       "Lethal"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "aK"
   },
   {
@@ -7115,6 +7367,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "aM",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Slay",
@@ -7142,6 +7395,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bP",
+    "tier": "C",
     "effects": [
       {
         "trigger": "EndOfTurn",
@@ -7185,6 +7439,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bQ",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -7215,6 +7470,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bT",
+    "tier": "C",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -7243,6 +7499,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "cd",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -7278,6 +7535,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cm",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -7317,6 +7575,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "cw",
+    "tier": "C",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -7343,6 +7602,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "da",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Aura",
@@ -7375,6 +7635,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dR",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -7401,6 +7662,7 @@
       "Lethal"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "dU"
   },
   {
@@ -7422,6 +7684,7 @@
       "Lethal"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "em"
   },
   {
@@ -7444,6 +7707,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "eo",
+    "tier": "D",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -7471,6 +7735,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ey",
+    "tier": "C",
     "effects": [
       {
         "trigger": "EndOfEachTurn",
@@ -7501,6 +7766,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "eE",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Aura",
@@ -7528,6 +7794,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "eQ",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -7555,6 +7822,7 @@
     "uses": 3,
     "target": "creature",
     "deckCodeId": "fI",
+    "tier": "E",
     "effects": [
       {
         "trigger": "Activation",
@@ -7580,6 +7848,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fR",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -7609,6 +7878,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "gn",
+    "tier": "C",
     "prophecy": true
   },
   {
@@ -7630,6 +7900,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gB",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -7660,6 +7931,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "gM",
+    "tier": "B",
     "prophecy": true
   },
   {
@@ -7682,6 +7954,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "hi",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -7710,6 +7983,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hD",
+    "tier": "D",
     "effects": [
       {
         "trigger": "CreatureDeathThisLane",
@@ -7736,6 +8010,7 @@
       "Regenerate"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "hM"
   },
   {
@@ -7758,6 +8033,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "hU",
+    "tier": "S",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -7784,9 +8060,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hV",
-    "damage": -99,
-    "modAttack": 1,
-    "modHealth": 1,
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -7820,6 +8094,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ik",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -7849,6 +8124,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "iC",
+    "tier": "C",
     "effects": [
       {
         "trigger": "WardBroken",
@@ -7872,6 +8148,7 @@
     "text": "+0/+6",
     "keywords": [],
     "set": "Core Set",
+    "tier": "E",
     "deckCodeId": "iG"
   },
   {
@@ -7892,6 +8169,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "iO",
+    "tier": "E",
     "effects": [
       {
         "trigger": "SummonCreatureEnemy",
@@ -7923,6 +8201,7 @@
     ],
     "immunity": ["ActionTarget"],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "ja"
   },
   {
@@ -7943,6 +8222,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jK",
+    "tier": "B",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -7974,6 +8254,7 @@
       "Regenerate"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "jO"
   },
   {
@@ -7996,6 +8277,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "jQ",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -8027,6 +8309,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "jT",
+    "tier": "B",
     "prophecy": true
   },
   {
@@ -8045,6 +8328,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ky",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -8082,6 +8366,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "kS"
   },
   {
@@ -8100,6 +8385,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kZ",
+    "tier": "B",
     "prophecy": true,
     "effects": [
       {
@@ -8131,6 +8417,7 @@
     "immunity": [ "ActionTarget" ],
     "set": "Core Set",
     "deckCodeId": "lk",
+    "tier": "S",
     "unique": true
   },
   {
@@ -8149,6 +8436,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lp",
+    "tier": "E",
     "effects": [
       {
         "trigger": "CreatureFriendlyDeath",
@@ -8178,6 +8466,7 @@
       "Regenerate"
     ],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "lv"
   },
   {
@@ -8200,6 +8489,7 @@
       "Drain"
     ],
     "set": "Core Set",
+    "tier": "A",
     "deckCodeId": "lw"
   },
   {
@@ -8223,6 +8513,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "lx",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Slay",
@@ -8250,6 +8541,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lE",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -8279,6 +8571,7 @@
       "Regenerate"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "lJ"
   },
   {
@@ -8297,8 +8590,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mf",
-    "modAttack": 1,
-    "modHealth": 1,
+    "tier": "C",
     "effects": [
       {
         "trigger": "Play",
@@ -8332,6 +8624,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mm",
+    "tier": "A",
     "static": {
       "condition": {
         "type": "maxMagicka",
@@ -8362,6 +8655,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mZ",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -8389,6 +8683,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "nN",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -8399,7 +8694,7 @@
             "text": "Silence another creature",
             "effect": {
               "type": "silence",
-              "target": "creature"
+              "target": "creatureOther"
             }
           },
           {
@@ -8431,6 +8726,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "og",
+    "tier": "D",
     "attackCondition": {
       "type": "thisLaneFull"
     }
@@ -8453,6 +8749,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pi",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -8487,6 +8784,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "pk",
+    "tier": "U",
     "static": {
       "condition": {
         "type": "creatureFriendlyOtherBreakthrough"
@@ -8511,6 +8809,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "pz"
   },
   {
@@ -8531,6 +8830,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pE",
+    "tier": "C",
     "static": {
       "condition": {
         "type": "maxMagicka",
@@ -8556,6 +8856,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pR",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Play",
@@ -8581,6 +8882,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "A",
     "deckCodeId": "pU"
   },
   {
@@ -8603,6 +8905,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qN",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -8630,6 +8933,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rE",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -8663,6 +8967,7 @@
       "Ward"
     ],
     "set": "Core Set",
+    "tier": "S",
     "deckCodeId": "rQ"
   },
   {
@@ -8683,6 +8988,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "sf",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -8711,6 +9017,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "sh",
+    "tier": "D",
     "effects": [
       {
         "trigger": "SummonCreature",
@@ -8742,6 +9049,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "sk",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -8771,6 +9079,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
+    "tier": "S",
     "deckCodeId": "sm"
   },
   {
@@ -8791,6 +9100,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ai",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Attack",
@@ -8822,6 +9132,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bA",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -8847,6 +9158,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "dM",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Play",
@@ -8876,6 +9188,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "ee",
+    "tier": "C",
     "prophecy": true,
     "effects": [
       {
@@ -8901,6 +9214,7 @@
     "text": "+3/+3",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "fa"
   },
   {
@@ -8918,6 +9232,7 @@
     "text": "+5/+5",
     "keywords": [],
     "set": "Core Set",
+    "tier": "B",
     "deckCodeId": "fm"
   },
   {
@@ -8939,6 +9254,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "fn"
   },
   {
@@ -8961,6 +9277,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "fo",
+    "tier": "A",
     "effects": [
       {
         "trigger": "DamageTaken",
@@ -8989,6 +9306,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fr",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -9016,6 +9334,7 @@
       "Guard"
     ],
     "set": "Core Set",
+    "tier": "E",
     "deckCodeId": "fs"
   },
   {
@@ -9035,6 +9354,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "fE",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Activation",
@@ -9062,6 +9382,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "D",
     "deckCodeId": "fT"
   },
   {
@@ -9081,6 +9402,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
+    "tier": "C",
     "deckCodeId": "gl"
   },
   {
@@ -9101,6 +9423,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gF",
+    "tier": "D",
     "effects": [
       {
         "trigger": "Summon",
@@ -9137,6 +9460,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gJ",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -9165,6 +9489,7 @@
     "uses": 3,
     "target": "creature",
     "deckCodeId": "hm",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -9192,6 +9517,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hO",
+    "tier": "U",
     "effects": [
       {
         "trigger": "Summon",
@@ -9230,6 +9556,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "jS",
+    "tier": "A",
     "prophecy": true
   },
   {
@@ -9265,6 +9592,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "la",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9292,6 +9620,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "lH",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9319,6 +9648,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "lK",
+    "tier": "D",
     "unique": true,
     "effects": [
       {
@@ -9349,6 +9679,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mj",
+    "tier": "D",
     "prophecy": true
   },
   {
@@ -9369,6 +9700,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mI",
+    "tier": "B",
     "targetReq": true,
     "effects": [
       {
@@ -9397,6 +9729,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mL",
+    "tier": "C",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -9423,6 +9756,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oD",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Play",
@@ -9458,6 +9792,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "oS",
+    "tier": "C",
     "prophecy": true
   },
   {
@@ -9478,6 +9813,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oZ",
+    "tier": "E",
     "prophecy": true,
     "effects": [
       {
@@ -9506,6 +9842,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "pG",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -9535,6 +9872,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "pH",
+    "tier": "C",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -9570,6 +9908,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "rp",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -9595,6 +9934,7 @@
     "set": "Core Set",
     "uses": 3,
     "deckCodeId": "rz",
+    "tier": "C",
     "unique": true,
     "effects": [
       {
@@ -9625,6 +9965,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "as",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9653,6 +9994,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fZ",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -9684,6 +10026,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "mx",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9715,6 +10058,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "nu",
+    "tier": "B",
     "effects": [
       {
         "trigger": "LastGasp",
@@ -9742,6 +10086,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kw",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -9768,6 +10113,7 @@
       "Ward"
     ],
     "set": "Core Set",
+    "tier": "A",
     "deckCodeId": "nH"
   },
   {
@@ -9788,6 +10134,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "ne",
+    "tier": "A",
     "effects": [
       {
         "trigger": "Summon",
@@ -9830,6 +10177,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qY",
+    "tier": "B",
     "unique": true,
     "prophecy": true
   },
@@ -9851,6 +10199,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "bq",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9890,7 +10239,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "oB",
-    "target": "creature",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Summon",
@@ -9936,6 +10285,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "aj",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -9963,6 +10313,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kn",
+    "tier": "B",
     "effects": [
       {
         "trigger": "Aura",
@@ -9993,6 +10344,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "mO",
+    "tier": "A",
     "unique": true,
     "effects": [
       {
@@ -10027,6 +10379,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "qB",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Summon",
@@ -10062,6 +10415,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "ig",
+    "tier": "S",
     "unique": true,
     "effects": [
       {
@@ -10094,6 +10448,7 @@
     ],
     "set": "Core Set",
     "deckCodeId": "od",
+    "tier": "A",
     "effects": [
       {
         "trigger": "WardBroken",
@@ -10119,6 +10474,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "fB",
+    "tier": "S",
     "effects": [
       {
         "trigger": "Play",
@@ -10145,6 +10501,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "gV",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -10187,6 +10544,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "hq",
+    "tier": "B",
     "unique": true,
     "effects": [
       {
@@ -10215,6 +10573,7 @@
     "keywords": [],
     "set": "Core Set",
     "deckCodeId": "kB",
+    "tier": "C",
     "effects": [
       {
         "trigger": "Summon",
@@ -10395,7 +10754,7 @@
     "text": "Summon : Shackle a random enemy creature.",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null,
+    "deckCodeId": "Cn",
     "effects": [
       {
         "trigger": "Summon",
@@ -10442,7 +10801,7 @@
       "Guard"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cc"
   },
   {
     "id": "corpse-curse",
@@ -10513,7 +10872,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "et"
   },
   {
     "id": "drain-life",
@@ -10585,7 +10944,7 @@
       "Breakthrough"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Ca"
   },
   {
     "id": "frost-atronach",
@@ -10607,7 +10966,7 @@
       "Guard"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Ci"
   },
   {
     "id": "gargoyle",
@@ -10647,7 +11006,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cu"
   },
   {
     "id": "iron-sword",
@@ -10664,7 +11023,7 @@
     "text": "+2/+0",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Dc"
   },
   {
     "id": "northpoint-herald",
@@ -10685,7 +11044,7 @@
       "Guard"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Da"
   },
   {
     "id": "poisonous-spider",
@@ -10706,7 +11065,7 @@
       "Lethal"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Co"
   },
   {
     "id": "protective-spider",
@@ -10727,7 +11086,7 @@
       "Guard"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cp"
   },
   {
     "id": "raise-dead",
@@ -10777,7 +11136,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "nq"
   },
   {
     "id": "scamp",
@@ -10796,7 +11155,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cv"
   },
   {
     "id": "shriveled-mummy",
@@ -10815,7 +11174,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cd"
   },
   {
     "id": "skeleton",
@@ -10834,7 +11193,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Ce"
   },
   {
     "id": "slaughterfish",
@@ -10853,7 +11212,7 @@
     "text": "Slaughterfish gains +2/+0 at the start of your turn.",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null,
+    "deckCodeId": "oC",
     "effects": [
       {
         "trigger": "StartOfTurn",
@@ -10880,7 +11239,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cq"
   },
   {
     "id": "spiderling",
@@ -10899,7 +11258,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cz"
   },
   {
     "id": "steel-dagger",
@@ -10916,7 +11275,7 @@
     "text": "+1/+0",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cf"
   },
   {
     "id": "storm-atronach",
@@ -10938,7 +11297,7 @@
       "Ward"
     ],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cj"
   },
   {
     "id": "sundered-shade",
@@ -10957,7 +11316,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cx"
   },
   {
     "id": "sweet-roll",
@@ -11051,7 +11410,7 @@
     "text": "",
     "keywords": [],
     "set": "Core Set",
-    "deckCodeId": null
+    "deckCodeId": "Cw"
   },
   {
     "id": "jerall-forager",
@@ -11069,7 +11428,7 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "deckCodeId": "je"
   },
   {
@@ -11088,7 +11447,7 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "deckCodeId": "kR"
   },
   {
@@ -11107,7 +11466,7 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "deckCodeId": "nD"
   },
   {
@@ -11126,7 +11485,7 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "deckCodeId": "rK"
   },
   {
@@ -11145,7 +11504,7 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "deckCodeId": "ou"
   },
   {
@@ -11162,7 +11521,7 @@
     "rarity": "1Common",
     "text": "Uses: 3 Activate : Gain 1 magicka .",
     "keywords": [],
-    "set": "Basic Set",
+    "set": "Core Set",
     "uses": 3,
     "deckCodeId": null,
     "effects": [
