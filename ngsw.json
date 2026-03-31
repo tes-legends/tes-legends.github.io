@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774995301418,
+  "timestamp": 1774999792192,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.bc3a1693e7a62ca1.js",
+        "/main.7a6c9405af11cba5.js",
         "/manifest.webmanifest",
         "/polyfills.ef623fc80e2e2eb2.js",
         "/runtime.04f21ae71121ee06.js",
@@ -2647,7 +2647,7 @@
     "/assets/icons/icon-512x512.png": "c5ce72f16898352f11f8eaac8ba112520e71a43e",
     "/assets/icons/icon-72x72.png": "5cb64122747cc868d3301a9eab673f0a5763ca6b",
     "/assets/icons/icon-96x96.png": "944f7139ed0f2281bcea9208b8764dd2b93354ed",
-    "/assets/tesl/arena_opponents.json": "c095a424c73e54819b9e134cf368eaa57a5fb35e",
+    "/assets/tesl/arena_opponents.json": "e657ae699bda5fece28ede9c9b35b32a656532ce",
     "/assets/tesl/arena_scenarios.json": "a2be4c08e0dcdef847668fae34153a63ad94e607",
     "/assets/tesl/audio/brotherhood/LG-audio-ageless_vampire_attack.ogg": "3398624b2da5f6aaec552b11980be9e24f236637",
     "/assets/tesl/audio/brotherhood/LG-audio-ageless_vampire_enter_play.ogg": "72f23da3f99654dfd599322535a5e86b2d97ae1e",
@@ -5243,8 +5243,8 @@
     "/fa-v4compatibility.59487ca3d8487240.woff2": "4fd82f39237a3e52cb4e311d1961bbb47353a147",
     "/fa-v4compatibility.c63df8a6c67912d1.ttf": "ad415f99aab4d9bf17e523f484a377f839ca8c3c",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "d69571764993a65ead4d6077f956da03d3d984df",
-    "/main.bc3a1693e7a62ca1.js": "6b64b79d5dadff2a1fdab3a9c1742e176d4ad384",
+    "/index.html": "c85c653c5ffd69b39457cacc8f6ed013ef2392c1",
+    "/main.7a6c9405af11cba5.js": "c9352ce485d1f586215e67b2a88d30a1f805a4f9",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
     "/polyfills.ef623fc80e2e2eb2.js": "d9120f9dbb73040fec87577dd4db520f7ab3a627",
     "/runtime.04f21ae71121ee06.js": "e5c9b3e66d6c93194558da5a02686113e29f0e60",
