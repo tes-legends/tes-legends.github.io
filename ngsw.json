@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774999792192,
+  "timestamp": 1775072815506,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.7a6c9405af11cba5.js",
+        "/main.c8ecde96b04be127.js",
         "/manifest.webmanifest",
         "/polyfills.ef623fc80e2e2eb2.js",
         "/runtime.04f21ae71121ee06.js",
@@ -4154,7 +4154,7 @@
     "/assets/tesl/audio/story_set/LG-audio-whiterun_recruit_enter_play_02.ogg": "e9605024876b58dc8832789f646499a85eb19138",
     "/assets/tesl/audio/story_set/audio-manifest.json": "356ff58f5d0708e6861555c3c916f68f5e8148ef",
     "/assets/tesl/brotherhood_set.json": "d04a01636e415d9ebff19c9645544d3fde3a641f",
-    "/assets/tesl/core_set.json": "6d163d8b528e5627fc51d569105743f4814eb66f",
+    "/assets/tesl/core_set.json": "9f50ae714617310ba8f6288d059dfc7224a26c21",
     "/assets/tesl/custom_set.json": "ba75c56998134eb901921775d2b01e09b5acf4cf",
     "/assets/tesl/forgotten_hero.json": "0be657376ae7ca903cc88d6b02f92b1f544cf8bd",
     "/assets/tesl/images/avatars/LG-arena-Argonian_1.png": "497f2e1b19e7ab10dd3cedc586a36f84e98eceb5",
@@ -5243,8 +5243,8 @@
     "/fa-v4compatibility.59487ca3d8487240.woff2": "4fd82f39237a3e52cb4e311d1961bbb47353a147",
     "/fa-v4compatibility.c63df8a6c67912d1.ttf": "ad415f99aab4d9bf17e523f484a377f839ca8c3c",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "c85c653c5ffd69b39457cacc8f6ed013ef2392c1",
-    "/main.7a6c9405af11cba5.js": "c9352ce485d1f586215e67b2a88d30a1f805a4f9",
+    "/index.html": "a1f4feedf688af526679df168af4b0b8c97bdf40",
+    "/main.c8ecde96b04be127.js": "3dccda62ee4f9cf6182b4e0d08db5530815c70f3",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
     "/polyfills.ef623fc80e2e2eb2.js": "d9120f9dbb73040fec87577dd4db520f7ab3a627",
     "/runtime.04f21ae71121ee06.js": "e5c9b3e66d6c93194558da5a02686113e29f0e60",

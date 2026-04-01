@@ -2810,7 +2810,7 @@
         "trigger": "LastGasp",
         "type": "damage",
         "amount": 6,
-        "target": "creatureThisLaneAll"
+        "target": "creatureEnemyThisLaneAll"
       }
     ]
   },
