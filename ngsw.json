@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1775159514105,
+  "timestamp": 1775272370791,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.a46258bf84c218e7.js",
+        "/main.62d8d20b0ab1335a.js",
         "/manifest.webmanifest",
         "/polyfills.ef623fc80e2e2eb2.js",
         "/runtime.04f21ae71121ee06.js",
@@ -5144,11 +5144,11 @@
     "/assets/tesl/images/story_set/cards/Wispmother's_Ring.png": "1214f6e0f799abae195597a60fb4dd4e1bba48e6",
     "/assets/tesl/jsongroup.py": "a6beecdeb2812ec496d2f6d1bdbf9c059b86a2b9",
     "/assets/tesl/madhouse_set.json": "ffc36fb0c4f677b43b9776857bf5054051eb353b",
-    "/assets/tesl/npc_decks.json": "8b1116fbac29034edeceac447f7a5c02a2167478",
+    "/assets/tesl/npc_decks.json": "1c8291c54f13e572258260d8f7ee6c0104936cc2",
     "/assets/tesl/output.json": "5b0f483049831453b4857eeaa96c59aa5ba9b9e3",
     "/assets/tesl/reward_set.json": "5108967ab487d473771b269e494795b9731cdcbe",
     "/assets/tesl/skyrim_set.json": "01c0b40842c33b96021af512b012488e5dc1c2f7",
-    "/assets/tesl/starter_decks.json": "7e74046c394614cad73cb423de6c4271416f85c7",
+    "/assets/tesl/starter_decks.json": "8060e47c3d010f8ac4e53d87c00eccb4c93d5741",
     "/assets/tesl/story/forgotten_hero/audio/tutorialGame1.AITurn3.VO1.mp3": "9b514fb3c9e1399a01b4a1881f8c60c1b6072445",
     "/assets/tesl/story/forgotten_hero/audio/tutorialGame1.EndTurnWithAttacks.mp3": "e17ec5f3a302d74b8ca8f4c2117e3fa4b4edce5c",
     "/assets/tesl/story/forgotten_hero/audio/tutorialGame1.EndTurnWithPlays.mp3": "b790ea93b87d3f46fcb1462377ba6685a05ba358",
@@ -5243,8 +5243,8 @@
     "/fa-v4compatibility.59487ca3d8487240.woff2": "4fd82f39237a3e52cb4e311d1961bbb47353a147",
     "/fa-v4compatibility.c63df8a6c67912d1.ttf": "ad415f99aab4d9bf17e523f484a377f839ca8c3c",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "04bc0c1c00b5fdf082eaff803acc817654ccc94b",
-    "/main.a46258bf84c218e7.js": "df99b03c0181d66d0ff6c4af4a1494dc22099ef3",
+    "/index.html": "f92d0c0280b3192bb6d2e4fc7ddc35def48a75c5",
+    "/main.62d8d20b0ab1335a.js": "19cae7a581cb377a9e859a12b317c80bbd57e94b",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
     "/polyfills.ef623fc80e2e2eb2.js": "d9120f9dbb73040fec87577dd4db520f7ab3a627",
     "/runtime.04f21ae71121ee06.js": "e5c9b3e66d6c93194558da5a02686113e29f0e60",
