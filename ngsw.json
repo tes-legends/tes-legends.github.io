@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1775761009731,
+  "timestamp": 1775762337221,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-RB4QK4BE.js",
+        "/main-VGQZ2CQ5.js",
         "/manifest.webmanifest",
         "/polyfills-5FDKUQTZ.js",
         "/scripts-3LU7Q63F.js",
@@ -5236,8 +5236,8 @@
     "/assets/tesl/story/forgotten_hero/video/tfh_prologue2.mp4": "d66a8963a66e00b9c41ab7f5c71807d1f3906e69",
     "/assets/tesl/story_set.json": "ebe532fd45c49ad445437aa4fdd5f612db999f5d",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "dd1c1f6be8778d09f3851ddac7ec1e7f5963ada0",
-    "/main-RB4QK4BE.js": "f56cdc73a7e33c124151cc0b4e652e33aef57183",
+    "/index.html": "2d9b9db26c4196e3f698c9b2a4eb142afc03eeae",
+    "/main-VGQZ2CQ5.js": "781e822456ba51b389543847a3e2ed841d285825",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
     "/polyfills-5FDKUQTZ.js": "aae1dda5ce0dc87ff4ccd4a96bfca1ae11e45f67",
     "/scripts-3LU7Q63F.js": "a4f72efc447dfae59e4f864b6a9506736e8f49ef",
