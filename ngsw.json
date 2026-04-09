@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1775696445602,
+  "timestamp": 1775761009731,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,11 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.e8b680fe0ff2985a.js",
+        "/main-RB4QK4BE.js",
         "/manifest.webmanifest",
-        "/polyfills.ef623fc80e2e2eb2.js",
-        "/runtime.04f21ae71121ee06.js",
-        "/scripts.cb6d4a7c72d773eb.js",
-        "/styles.03471405c5d8cc41.css"
+        "/polyfills-5FDKUQTZ.js",
+        "/scripts-3LU7Q63F.js",
+        "/styles-2RARO6MI.css"
       ],
       "patterns": []
     },
@@ -2629,15 +2628,7 @@
         "/assets/tesl/story/forgotten_hero/video/tfh_finale.mp4",
         "/assets/tesl/story/forgotten_hero/video/tfh_intro.mp4",
         "/assets/tesl/story/forgotten_hero/video/tfh_prologue2.mp4",
-        "/assets/tesl/story_set.json",
-        "/fa-brands-400.86ee2658f0f3b5a5.woff2",
-        "/fa-brands-400.8eaf0c8893de015e.ttf",
-        "/fa-regular-400.849b82e233cfe2f9.woff2",
-        "/fa-regular-400.bd1cf947e4932a4d.ttf",
-        "/fa-solid-900.7a5aa5abd625137f.ttf",
-        "/fa-solid-900.ee6983981ffcbb41.woff2",
-        "/fa-v4compatibility.59487ca3d8487240.woff2",
-        "/fa-v4compatibility.c63df8a6c67912d1.ttf"
+        "/assets/tesl/story_set.json"
       ],
       "patterns": []
     }
@@ -4158,8 +4149,8 @@
     "/assets/tesl/audio/story_set/LG-audio-whiterun_recruit_enter_play_01.ogg": "4e8869b535697a226a3409fa573b3946a3712d40",
     "/assets/tesl/audio/story_set/LG-audio-whiterun_recruit_enter_play_02.ogg": "e9605024876b58dc8832789f646499a85eb19138",
     "/assets/tesl/audio/story_set/audio-manifest.json": "356ff58f5d0708e6861555c3c916f68f5e8148ef",
-    "/assets/tesl/brotherhood_set.json": "d04a01636e415d9ebff19c9645544d3fde3a641f",
-    "/assets/tesl/core_set.json": "9f50ae714617310ba8f6288d059dfc7224a26c21",
+    "/assets/tesl/brotherhood_set.json": "0d4bd17ad2c6f99324fd6d7e954168e47efffc26",
+    "/assets/tesl/core_set.json": "55c1340bf06efb6612d90834dd7e47ac1aa73503",
     "/assets/tesl/custom_set.json": "ba75c56998134eb901921775d2b01e09b5acf4cf",
     "/assets/tesl/forgotten_hero.json": "0be657376ae7ca903cc88d6b02f92b1f544cf8bd",
     "/assets/tesl/images/avatars/LG-arena-Argonian_1.png": "497f2e1b19e7ab10dd3cedc586a36f84e98eceb5",
@@ -5244,22 +5235,13 @@
     "/assets/tesl/story/forgotten_hero/video/tfh_intro.mp4": "2a00a9ab45cb4fdcc5acafff8478bad1d4755794",
     "/assets/tesl/story/forgotten_hero/video/tfh_prologue2.mp4": "d66a8963a66e00b9c41ab7f5c71807d1f3906e69",
     "/assets/tesl/story_set.json": "ebe532fd45c49ad445437aa4fdd5f612db999f5d",
-    "/fa-brands-400.86ee2658f0f3b5a5.woff2": "31c30351084e2670bbe5c47bd342e11540a68717",
-    "/fa-brands-400.8eaf0c8893de015e.ttf": "da6f537cd597b76d264970f1c95e4beebc82fde9",
-    "/fa-regular-400.849b82e233cfe2f9.woff2": "e9b6f5b842be227e2423733feb961dd6cb804066",
-    "/fa-regular-400.bd1cf947e4932a4d.ttf": "6e7f0651059eea9783ea8b28892b2c979c2f7f30",
-    "/fa-solid-900.7a5aa5abd625137f.ttf": "780a8ff16ebb681f85d5d30fac94ebe845a12b5e",
-    "/fa-solid-900.ee6983981ffcbb41.woff2": "7cd8afd6501962fda35d66f0e4c3b8815ac471d8",
-    "/fa-v4compatibility.59487ca3d8487240.woff2": "4fd82f39237a3e52cb4e311d1961bbb47353a147",
-    "/fa-v4compatibility.c63df8a6c67912d1.ttf": "ad415f99aab4d9bf17e523f484a377f839ca8c3c",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "2fefd6757b02c222140fae4ac0c6232bc80ccb07",
-    "/main.e8b680fe0ff2985a.js": "3789d728d1fd597d3fb6b228866460f38fda43f0",
+    "/index.html": "dd1c1f6be8778d09f3851ddac7ec1e7f5963ada0",
+    "/main-RB4QK4BE.js": "f56cdc73a7e33c124151cc0b4e652e33aef57183",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
-    "/polyfills.ef623fc80e2e2eb2.js": "d9120f9dbb73040fec87577dd4db520f7ab3a627",
-    "/runtime.04f21ae71121ee06.js": "e5c9b3e66d6c93194558da5a02686113e29f0e60",
-    "/scripts.cb6d4a7c72d773eb.js": "b20d397d4a530c33db85ce817520da85030b0923",
-    "/styles.03471405c5d8cc41.css": "1d8c1720192ea4334a94b9bd85f5e716cc4e6c5c"
+    "/polyfills-5FDKUQTZ.js": "aae1dda5ce0dc87ff4ccd4a96bfca1ae11e45f67",
+    "/scripts-3LU7Q63F.js": "a4f72efc447dfae59e4f864b6a9506736e8f49ef",
+    "/styles-2RARO6MI.css": "c0fe9cc14e9c415e9904653605c2137cb3edcbce"
   },
   "navigationUrls": [
     {
