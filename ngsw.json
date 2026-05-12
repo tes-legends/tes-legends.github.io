@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1776873248844,
+  "timestamp": 1778625878902,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-DWMITLLN.js",
+        "/main-IQW3DSGO.js",
         "/manifest.webmanifest",
         "/polyfills-5FDKUQTZ.js",
         "/scripts-3LU7Q63F.js",
@@ -4962,8 +4962,8 @@
     "/assets/tesl/brotherhood_set.json": "249a04fe40a41b235214073af5dddc5e17474479",
     "/assets/tesl/clockwork_set.json": "180299596adae4b349b501daa2292d39cc37d4e7",
     "/assets/tesl/core_set.json": "3c0f5ebfc9a5b983454028c9a3effc5afd46d81a",
-    "/assets/tesl/custom_set.json": "1bbe6e8979822ea60769e17a533f7af747834256",
-    "/assets/tesl/forgotten_hero.json": "0be657376ae7ca903cc88d6b02f92b1f544cf8bd",
+    "/assets/tesl/custom_set.json": "7d1af3774cdb2ad6a55c86a594e07e535c5e2e53",
+    "/assets/tesl/forgotten_hero.json": "f87100c8f29403c7bafd49e44bebec51ca04a832",
     "/assets/tesl/forgotten_set.json": "c6ffe7162ef4436e29f05eae4ed7a28ff6928cdb",
     "/assets/tesl/images/avatars/LG-arena-Argonian_1.webp": "f3df40ebd9093952cb333b099e212d977685d413",
     "/assets/tesl/images/avatars/LG-arena-Argonian_2.webp": "1ef5c3dfb70e95c10c8c5695f1342933232d0435",
@@ -6336,8 +6336,8 @@
     "/assets/tesl/story/forgotten_hero/video/tfh_prologue2.mp4": "d66a8963a66e00b9c41ab7f5c71807d1f3906e69",
     "/assets/tesl/story_set.json": "ebe532fd45c49ad445437aa4fdd5f612db999f5d",
     "/favicon.ico": "fb613a8d767470db88d57c518484c0f24e88a7bf",
-    "/index.html": "1523b67603439f7596f8a19164c260e15dd9203a",
-    "/main-DWMITLLN.js": "03afa7e5dd760549caf822ef7f557dd609928ea9",
+    "/index.html": "e9781ae85fe2ba511a24f97131fdcbaa2056ac45",
+    "/main-IQW3DSGO.js": "8e6e2f99377cedfed027f7441a8d256b62d212de",
     "/manifest.webmanifest": "192679942cd7c083b070ad59eab901d8ab9b9115",
     "/polyfills-5FDKUQTZ.js": "aae1dda5ce0dc87ff4ccd4a96bfca1ae11e45f67",
     "/scripts-3LU7Q63F.js": "a4f72efc447dfae59e4f864b6a9506736e8f49ef",
