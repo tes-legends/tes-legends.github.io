@@ -324,7 +324,7 @@
       {
         "trigger": "Summon",
         "type": "damage",
-        "amount": 1,
+        "amount": 2,
         "target": "opponent"
       }
     ]

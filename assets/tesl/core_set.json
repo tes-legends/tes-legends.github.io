@@ -10565,7 +10565,7 @@
         "modHealth": 1,
         "target": "creatureFriendlyOtherAll",
         "targetCondition": {
-          "types": "hasSubtype",
+          "type": "hasSubtype",
           "subtypes": ["Orc"]
         }
       }

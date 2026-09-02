@@ -18,7 +18,7 @@
 			"Guard"
 		],
 		"set": "Monthly Reward",
-		"deckCodeId": "pZ",
+		"deckCodeId": "ae",
 		"immunity": [ "Silence" ],
 		"prophecy": true,
 		"unique": true,
@@ -281,7 +281,7 @@
 		"keywords": [],
 		"uses": 3,
 		"set": "Monthly Reward",
-		"deckCodeId": "pj",
+		"deckCodeId": "id",
     	"tier": "B",
 		"effects": [
 			{

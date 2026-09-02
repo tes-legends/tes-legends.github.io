@@ -280,7 +280,7 @@
     "attack": null,
     "health": null,
     "rarity": "3Epic",
-    "text": "Summon one of each creature from your deck that costs 2 or less.",
+    "text": "Summon one of each creature from your deck that costs 2 or less, up to 6 times.",
     "keywords": [],
     "set": "Forgotten Hero Collection",
     "tier": "U",
@@ -290,6 +290,7 @@
         "trigger": "Play",
         "type": "oneOfEach",
         "cost": 2,
+        "amount": 6,
         "target": "player"
       }
     ]
