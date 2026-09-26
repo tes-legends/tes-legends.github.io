@@ -1,0 +1,2794 @@
+[
+  {
+    "id": "blastbones",
+    "name": "Blastbones",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Charge Last Gasp: Deal 1 damage to all creatures in this lane.",
+    "keywords": [
+      "Charge",
+      "LastGasp"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vR",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureOtherThisLaneAll"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "devouring-flame",
+    "name": "Devouring Flame",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Deal 2 damage to a creature. If this would kill it, instead Banish it.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wS",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "elsweyrDamageBanish",
+        "amount": 2,
+        "target": "creature",
+        "aiAs": "damage"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "enraged-dragonknight",
+    "name": "Enraged Dragonknight",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Summon: Consume a creature to deal 2 damage to each player.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wT",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "damage",
+            "amount": 2,
+            "target": "players"
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "euraxian-berserker",
+    "name": "Euraxian Berserker",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Summon: Consume a creature to gain +2/+0.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "we",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffSelf",
+            "modAttack": 2,
+            "modHealth": 0
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "fear-totem",
+    "name": "Fear Totem",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Unsummon a creature and reduce its cost by 3.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "ws",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "elsweyrUnsummonDiscount",
+        "amount": -3,
+        "target": "creature",
+        "aiAs": "unsummon"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "flamespear-dragon",
+    "name": "Flamespear Dragon",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "When your opponent summons a creature, Flamespear Dragon aims at it. At the start of your turn, Flamespear Dragon deals 1 damage to the creature it's aiming at.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vS",
+    "effects": [
+      {
+        "trigger": "SummonCreatureEnemy",
+        "type": "elsweyrAim",
+        "target": "summon"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "damage",
+        "amount": 1,
+        "target": "elsweyrAimed"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "imbued-minotaur",
+    "name": "Imbued Minotaur",
+    "type": "Creature",
+    "subtypes": [
+      "Minotaur"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 5,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Breakthrough When Imbued Minotaur is Consumed, give the consuming creature +1/+1 and Breakthrough.",
+    "keywords": [
+      "Breakthrough"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vE",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Breakthrough"
+        ],
+        "target": "elsweyrConsumer"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "mulaamnir",
+    "name": "Mulaamnir",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 9,
+    "attack": 9,
+    "health": 8,
+    "rarity": "4Legendary",
+    "text": "Summon and Slay: Battle an enemy creature with less power than Mulaamnir's health.",
+    "keywords": [
+      "Slay"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wJ",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemy",
+        "targetCondition": {
+          "type": "elsweyrPowerLessThanSourceHealth"
+        },
+        "aiAs": "damage",
+        "amount": 9
+      },
+      {
+        "trigger": "Slay",
+        "type": "battle",
+        "target": "creatureEnemy",
+        "targetCondition": {
+          "type": "elsweyrPowerLessThanSourceHealth"
+        },
+        "aiAs": "damage",
+        "amount": 9
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "pouncing-senche",
+    "name": "Pouncing Senche",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 7,
+    "attack": 4,
+    "health": 7,
+    "rarity": "2Rare",
+    "text": "Guard Wax: +3/+0 Wane: Charge",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wn",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 3,
+        "modHealth": 0
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 0,
+        "modHealth": 0,
+        "addKeywords": [
+          "Charge"
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "prowl-smuggler",
+    "name": "Prowl Smuggler",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Pilfer: Equip a Steel Dagger to a friendly creature.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vB",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrChooseThen",
+        "pool": "friendlyCreatures",
+        "pick": "best",
+        "prompt": "Choose a creature to equip with a Steel Dagger",
+        "then": [
+          {
+            "trigger": "Pilfer",
+            "type": "equip",
+            "cardId": "steel-dagger",
+            "target": "creatureFriendly"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "rimmen-siege-weapons",
+    "name": "Rimmen Siege Weapons",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "At the start of your turn, each friendly creature deals 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wi",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "elsweyrEachCreatureHitsFace",
+        "amount": 1
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "senche-noble",
+    "name": "Senche Noble",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 7,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wk",
+    "tier": "D"
+  },
+  {
+    "id": "senche-raht-graveprowler",
+    "name": "Senche-raht Graveprowler",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Pilfer: Consume a creature to gain power and health equal to the consumed creature's.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wh",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Pilfer",
+            "type": "buffSelf",
+            "modAttack": 1,
+            "modHealth": 0,
+            "amountPer": "consumedPower"
+          },
+          {
+            "trigger": "Pilfer",
+            "type": "buffSelf",
+            "modAttack": 0,
+            "modHealth": 1,
+            "amountPer": "consumedHealth"
+          }
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "war-hardened-senche",
+    "name": "War-Hardened Senche",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Wax: +1/+1 Wane: Battle an enemy creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wl",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      },
+      {
+        "trigger": "Wane",
+        "type": "battle",
+        "target": "creatureEnemy",
+        "aiAs": "damage",
+        "amount": 4
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "alfiq-conjurer",
+    "name": "Alfiq Conjurer",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Guard Summon: Consume a creature to summon a Flame Atronach. If you consumed an Atronach, instead summon a Storm Atronach.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vD",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "preferSubtypes": [
+          "Atronach"
+        ],
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "summon",
+            "cardId": "storm-atronach",
+            "amount": 1,
+            "target": "thisLane",
+            "condition": {
+              "type": "consumedHasSubtype",
+              "subtypes": [
+                "Atronach"
+              ]
+            }
+          },
+          {
+            "trigger": "Summon",
+            "type": "summon",
+            "cardId": "flame-atronach",
+            "amount": 1,
+            "target": "thisLane",
+            "condition": {
+              "type": "elsweyrConsumedLacksSubtype",
+              "subtypes": [
+                "Atronach"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "black-worm-neophyte",
+    "name": "Black Worm Neophyte",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Summon: Consume a creature. Summon a 1/1 Skeleton with its Keywords.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vP",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "elsweyrSummonWithConsumedKeywords",
+            "cardId": "skeleton"
+          }
+        ],
+        "else": [
+          {
+            "trigger": "Summon",
+            "type": "summon",
+            "cardId": "skeleton",
+            "amount": 1,
+            "target": "thisLane"
+          }
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "cartel-arcanist",
+    "name": "Cartel Arcanist",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Wax: +2/+0 Wane: Shackle an enemy creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wI",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 0
+      },
+      {
+        "trigger": "Wane",
+        "type": "shackle",
+        "target": "creatureEnemy"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "discerning-thief",
+    "name": "Discerning Thief",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Pilfer: Draw a card, then discard a card.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vK",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrChooseThen",
+        "pool": "hand",
+        "pick": "worst",
+        "prompt": "Choose a card to discard",
+        "then": [
+          {
+            "trigger": "Pilfer",
+            "type": "discard",
+            "target": "cardPlayerHand"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "frazzled-alfiq",
+    "name": "Frazzled Alfiq",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "rarity": "3Epic",
+    "text": "Wax: Deal 1 damage. Wane: +1/+1 After you play another card Waxed, deal 1 damage. After you play another card Waned, +1/+1.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wF",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "damage",
+        "amount": 1,
+        "target": "any"
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "damage",
+        "amount": 1,
+        "target": "any",
+        "condition": {
+          "type": "elsweyrPlayedWaxed"
+        }
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "elsweyrPlayedWaned"
+        }
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "glacial-dragon",
+    "name": "Glacial Dragon",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Shackle enemy creatures damaged by friendly Dragons. Summon: Deal 2 damage to a creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wx",
+    "effects": [
+      {
+        "trigger": "ElsweyrDragonDamageShackle",
+        "type": "shackle"
+      },
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 2,
+        "target": "creature"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "goutfang-adept",
+    "name": "Goutfang Adept",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Wax: Draw a card. Wane: +1/+1 and Guard.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wq",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Guard"
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "grave-grasp",
+    "name": "Grave Grasp",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Shackle an enemy creature. Summon a 1/1 Skeleton for each enemy creature in its lane.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wr",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "elsweyrShackleSummonPerLane",
+        "cardId": "skeleton",
+        "target": "creatureEnemy",
+        "aiAs": "shackle"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "imbued-breton",
+    "name": "Imbued Breton",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Ward When Imbued Breton is Consumed, give the consuming creature +1/+1 and Ward.",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vI",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Ward"
+        ],
+        "target": "elsweyrConsumer"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "khajiiti-warhelm",
+    "name": "Khajiiti Warhelm",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "+1/+3 Summon: The wielder deals 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wu",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrWielderHitsFace",
+        "amount": 1
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "midnight-trespasser",
+    "name": "Midnight Trespasser",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: Consume a creature to gain +1/+1.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wf",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffSelf",
+            "modAttack": 1,
+            "modHealth": 1
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "skeletal-mage",
+    "name": "Skeletal Mage",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 7,
+    "attack": 3,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Summon: Consume a creature. Deal damage equal to its power to a creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vL",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "target": "creature",
+        "aiAs": "damage",
+        "condition": {
+          "type": "elsweyrCanConsume"
+        },
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "damage",
+            "amount": 1,
+            "amountPer": "consumedPower",
+            "target": "creature"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "vastarie",
+    "name": "Vastarie",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 1,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Summon: Fill this lane with 1/1 Skeletons. Vastarie has +1/+0 for each friendly Spirit and Skeleton.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wQ",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summon",
+        "cardId": "skeleton",
+        "amount": 3,
+        "target": "thisLane"
+      }
+    ],
+    "static": {
+      "condition": {
+        "type": "elsweyrPerFriendlySubtype",
+        "subtypes": [
+          "Spirit",
+          "Skeleton"
+        ]
+      },
+      "modAttack": 1
+    },
+    "tier": "D"
+  },
+  {
+    "id": "wandering-skeleton",
+    "name": "Wandering Skeleton",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Last Gasp: Summon a 1/1 Skeleton.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vJ",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "summon",
+        "cardId": "skeleton",
+        "amount": 1,
+        "target": "thisLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "alfiq-illusionist",
+    "name": "Alfiq Illusionist",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Wax: Summon an Alfiq Illusionist in the other lane. Wane: +1/+2 and Guard.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wR",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "summon",
+        "cardId": "alfiq-illusionist",
+        "amount": 1,
+        "target": "otherLane"
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 2,
+        "addKeywords": [
+          "Guard"
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "be-at-peace",
+    "name": "Be At Peace",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Set a creature's power to 1.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wt",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "setStats",
+        "modAttack": 1,
+        "target": "creature",
+        "aiAs": "shackle"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "cygnus-standard-bearer",
+    "name": "Cygnus Standard Bearer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "Summon: Summon a 2/2 Imperial Soldier for each friendly support. When you summon a support, summon a 2/2 Imperial Soldier.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wZ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrSummonPer",
+        "cardId": "imperial-soldier",
+        "amount": 1,
+        "amountPer": "elsweyrFriendlySupports",
+        "target": "thisLane"
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "summon",
+        "cardId": "imperial-soldier",
+        "amount": 1,
+        "target": "thisLane",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Support"
+          ]
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "imbued-khajiit",
+    "name": "Imbued Khajiit",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Drain When Imbued Khajiit is Consumed, give the consuming creature +1/+1 and Drain.",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vF",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Drain"
+        ],
+        "target": "elsweyrConsumer"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "kaalgrontiid",
+    "name": "Kaalgrontiid",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 12,
+    "attack": 8,
+    "health": 9,
+    "rarity": "4Legendary",
+    "text": "Guard Summon: Summon the Halls of Colossus.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vY",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "playSupport",
+        "cardId": "halls-of-colossus",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "mercenary-captain",
+    "name": "Mercenary Captain",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Summon: Consume a creature to give other friendly creatures +1/+1.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wG",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffTarget",
+            "modAttack": 1,
+            "modHealth": 1,
+            "target": "creatureFriendlyOtherAll"
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "monastic-champion",
+    "name": "Monastic Champion",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 6,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Breakthrough Pilfer: Summon a 3/3 Cathay-raht.",
+    "keywords": [
+      "Breakthrough",
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wC",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "summon",
+        "cardId": "cathay-raht",
+        "amount": 1,
+        "target": "thisLane"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "moon-bishop",
+    "name": "Moon Bishop",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Wax: +0/+4 Wane: You gain 4 health.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wU",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 0,
+        "modHealth": 4
+      },
+      {
+        "trigger": "Wane",
+        "type": "damage",
+        "amount": -4,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "queens-captain",
+    "name": "Queen's Captain",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 8,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Wax: Draw two cards. Wane: Destroy a creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wO",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "drawCards",
+        "amount": 2,
+        "target": "player"
+      },
+      {
+        "trigger": "Wane",
+        "type": "destroy",
+        "target": "creature"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "rebel-warden",
+    "name": "Rebel Warden",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Pilfer: Summon a 1/1 Recruit.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vM",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrSummonRecruit",
+        "race": "Khajiit"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "shrewd-strategist",
+    "name": "Shrewd Strategist",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Summon: Consume a creature. Give all creatures in your hand and deck with the same name +2/+2.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vT",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "elsweyrBuffSameName",
+            "modAttack": 2,
+            "modHealth": 2
+          }
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "smash-and-grab",
+    "name": "Smash and Grab",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Give friendly creatures with Pilfer +2/+0 and Breakthrough this turn.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wv",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "tempAttack": 2,
+        "tempKeywords": [
+          "Breakthrough"
+        ],
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasKeyword",
+          "keyword": "Pilfer"
+        }
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "tenarr-zalviit-lurker",
+    "name": "Tenarr Zalviit Lurker",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit",
+      "Vampire"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Summon: Consume a creature. You gain health equal to its health.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vN",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "damage",
+            "amount": -1,
+            "amountPer": "consumedHealth",
+            "target": "player"
+          }
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "wily-keeva",
+    "name": "Wily Kee'va",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wc",
+    "tier": "A"
+  },
+  {
+    "id": "apex-predator",
+    "name": "Apex Predator",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "When Apex Predator moves, deal 2 damage to your opponent and you gain 2 health. At the end of your turn, if there are no enemy creatures in this lane, move Apex Predator.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wz",
+    "effects": [
+      {
+        "trigger": "Move",
+        "type": "damage",
+        "amount": 2,
+        "target": "opponent"
+      },
+      {
+        "trigger": "Move",
+        "type": "damage",
+        "amount": -2,
+        "target": "player"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "move",
+        "target": "self",
+        "condition": {
+          "type": "noEnemyCreaturesThisLane"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "cartel-bruiser",
+    "name": "Cartel Bruiser",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Pilfer: +2/+2",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vC",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "corinthe-brawler",
+    "name": "Corinthe Brawler",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Wax: +1/+1 and your opponent can't target Corinthe Brawler with actions. Wane: Gain 1 magicka this turn for each enemy creature in this lane.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wX",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      },
+      {
+        "trigger": "Wax",
+        "type": "grantImmunity",
+        "immunity": "ActionTarget",
+        "target": "self"
+      },
+      {
+        "trigger": "Wane",
+        "type": "elsweyrMagicka",
+        "amount": 1,
+        "amountPer": "creatureEnemyThisLaneAll"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "devious-bandit",
+    "name": "Devious Bandit",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Summon: Deal 3 damage to your opponent and you gain 3 health. Devious Bandit has the Pilfer abilities of all your creatures.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wj",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 3,
+        "target": "opponent"
+      },
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": -3,
+        "target": "player"
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrTriggerPilfer"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "illicit-butcher",
+    "name": "Illicit Butcher",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Consume a creature to Shackle an enemy creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wN",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "target": "creatureEnemy",
+        "aiAs": "shackle",
+        "condition": {
+          "type": "elsweyrCanConsume"
+        },
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "shackle",
+            "target": "creatureEnemy"
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "imbued-bosmer",
+    "name": "Imbued Bosmer",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Lethal When Imbued Bosmer is Consumed, give the consuming creature +1/+1 and Lethal.",
+    "keywords": [
+      "Lethal"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vH",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Lethal"
+        ],
+        "target": "elsweyrConsumer"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "mausoleum-delver",
+    "name": "Mausoleum Delver",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Charge Pilfer: Steal a card from your opponent's discard pile to yours.",
+    "keywords": [
+      "Charge",
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wL",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrStealDiscard",
+        "amount": 1
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "moonphase-suthay",
+    "name": "Moonphase Suthay",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Wax: +1/+1 and Drain. Wane: Draw a card.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wH",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Drain"
+        ]
+      },
+      {
+        "trigger": "Wane",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "razum-dar",
+    "name": "Razum-Dar",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 7,
+    "attack": 4,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Charge Draw a copy of the first card your opponent draws each turn.",
+    "keywords": [
+      "Charge"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wA",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "ElsweyrOpponentFirstDraw",
+        "type": "elsweyrCopyDrawn"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "rebellion-general",
+    "name": "Rebellion General",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Wax: +1/+0 and trigger the Wax of each non-Rebellion General friendly creature. Wane: +0/+1 and trigger the Wane of each non-Rebellion General friendly creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wM",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 0
+      },
+      {
+        "trigger": "Wax",
+        "type": "elsweyrTriggerMoon",
+        "phase": "Wax"
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 0,
+        "modHealth": 1
+      },
+      {
+        "trigger": "Wane",
+        "type": "elsweyrTriggerMoon",
+        "phase": "Wane"
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "slinking-jackal",
+    "name": "Slinking Jackal",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 4,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wd",
+    "tier": "C"
+  },
+  {
+    "id": "suthay-bootlegger",
+    "name": "Suthay Bootlegger",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Guard Summon: Another friendly creature ignores Guards this turn.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wV",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "tempKeywords": [
+          "IgnoreGuard"
+        ],
+        "target": "creatureFriendlyOther"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "tenarr-zalviit-nightstalker",
+    "name": "Tenarr Zalviit Nightstalker",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit",
+      "Vampire"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "At the start of your turn, Consume a creature. If you can't, sacrifice Tenarr Zalviit Nightstalker.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vX",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "consume",
+        "else": [
+          {
+            "trigger": "StartOfTurn",
+            "type": "destroy",
+            "target": "self"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "whispering-claw-strike",
+    "name": "Whispering Claw Strike",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Give an enemy creature -2/-2 and a friendly creature +2/+2.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wm",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": -2,
+        "modHealth": -2,
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Play",
+        "type": "elsweyrChooseThen",
+        "pool": "friendlyCreatures",
+        "pick": "best",
+        "prompt": "Choose a friendly creature to get +2/+2",
+        "then": [
+          {
+            "trigger": "Play",
+            "type": "buffTarget",
+            "modAttack": 2,
+            "modHealth": 2,
+            "target": "creatureFriendly"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "arise",
+    "name": "Arise",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Summon a 1/1 Risen Dead with Guard in each lane.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wP",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "risen-dead",
+        "amount": 1,
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "risen-dead",
+        "amount": 1,
+        "target": "rightLane"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "bone-armor",
+    "name": "Bone Armor",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 0,
+    "rarity": "2Rare",
+    "text": "Summon: The wielder Consumes a creature and gains its health.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vQ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrWielderConsume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffSelf",
+            "modAttack": 0,
+            "modHealth": 1,
+            "amountPer": "consumedHealth"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "boneweaver",
+    "name": "Boneweaver",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Guard Summon: Consume a creature. Draw a creature with the same name from your discard pile.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vV",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "elsweyrDrawSameNameFromDiscard"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "dro-mathra-reaper",
+    "name": "Dro-m'Athra Reaper",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit",
+      "Spirit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "Summon: Consume a creature. When a creature leaves your discard pile, Dro-m'Athra Reaper gains +0/+1 and you gain 1 health.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wy",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrWatchDiscard"
+      },
+      {
+        "trigger": "Summon",
+        "type": "consume"
+      },
+      {
+        "trigger": "ElsweyrCreatureLeftDiscard",
+        "type": "buffSelf",
+        "modAttack": 0,
+        "modHealth": 1
+      },
+      {
+        "trigger": "ElsweyrCreatureLeftDiscard",
+        "type": "damage",
+        "amount": -1,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "expunge",
+    "name": "Expunge",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Heal a creature and give it immune to Shackle this turn. Draw a card.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wD",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "elsweyrHealShackleImmune",
+        "target": "creature",
+        "aiAs": "buffTarget"
+      },
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "fallen-dragon",
+    "name": "Fallen Dragon",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 10,
+    "rarity": "1Common",
+    "text": "Summon: Fallen Dragon deals 5 damage to itself.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wK",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 5,
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "imbued-argonian",
+    "name": "Imbued Argonian",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Guard When Imbued Argonian is Consumed, give the consuming creature +1/+1 and Guard.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vG",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "elsweyrConsumer"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "moontouched-guardian",
+    "name": "Moontouched Guardian",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Wax: Give a creature in your hand +2/+2. Wane: Guard and Ward.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wE",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "cardPlayerHand",
+        "subtypes": [
+          "Creature"
+        ]
+      },
+      {
+        "trigger": "Wane",
+        "type": "buffSelf",
+        "modAttack": 0,
+        "modHealth": 0,
+        "addKeywords": [
+          "Guard",
+          "Ward"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "nibenese-mercenary",
+    "name": "Nibenese Mercenary",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Consume a creature to gain +0/+2.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wg",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffSelf",
+            "modAttack": 0,
+            "modHealth": 2
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "reanimate",
+    "name": "Reanimate",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 9,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Summon a creature from your discard pile.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vU",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "elsweyrReanimate",
+        "target": "lane"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "ruin-shambler",
+    "name": "Ruin Shambler",
+    "type": "Creature",
+    "subtypes": [
+      "Mummy"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Summon: Discard the top three cards of your deck, then Consume all creatures that entered your discard pile this turn. Ruin Shambler gains +1/+1 for each creature consumed.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wB",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrMillTop",
+        "amount": 3
+      },
+      {
+        "trigger": "Summon",
+        "type": "elsweyrConsumeEnteredThisTurn",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "buffSelf",
+            "modAttack": 1,
+            "modHealth": 1
+          }
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "seeker-of-the-black-arts",
+    "name": "Seeker of the Black Arts",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Pilfer: Discard the top three cards of your deck.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vO",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrMillTop",
+        "amount": 3
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "servant-of-ja-khajay",
+    "name": "Servant of Ja-Kha'jay",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Wax: +2/+2 Wane: Silence a creature.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "ww",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      },
+      {
+        "trigger": "Wane",
+        "type": "silence",
+        "target": "creature"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "zumog-phoom",
+    "name": "Zumog Phoom",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Summon: Choose another creature. When the chosen creature dies, summon it as a 1/1.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vZ",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrResummonOnDeath",
+        "target": "creatureOther",
+        "aiAs": "buffTarget"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "cadwell-the-betrayer",
+    "name": "Cadwell the Betrayer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Cadwell the Betrayer can attack you.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wY",
+    "unique": true,
+    "doubleCard": "Cadwell the Soul Shriven",
+    "canAttackOwner": true,
+    "tier": "B"
+  },
+  {
+    "id": "cadwell-the-soul-shriven",
+    "name": "Cadwell the Soul Shriven",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 1,
+    "rarity": "4Legendary",
+    "text": "Immune to Shackle. When a rune is destroyed, Cadwell the Soul Shriven gains +1/+0.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wY",
+    "unique": true,
+    "doubleCard": "Cadwell the Betrayer",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 0
+      },
+      {
+        "trigger": "LostRune",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 0
+      },
+      {
+        "trigger": "RuneBroken",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 0
+      }
+    ],
+    "immunity": [
+      "Shackle"
+    ],
+    "doubleSecondary": true,
+    "tier": "B"
+  },
+  {
+    "id": "crocodile-brute",
+    "name": "Crocodile Brute",
+    "type": "Creature",
+    "subtypes": [
+      "Reptile"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Prophecy When Crocodile Brute is Consumed, draw a card.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "vW",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "ill-fated-scholar",
+    "name": "Ill-Fated Scholar",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "When Ill-Fated Scholar is Consumed, summon a 3/2 Insidious Spirit.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wa",
+    "effects": [
+      {
+        "trigger": "Consumed",
+        "type": "elsweyrSummonNearConsumer",
+        "cardId": "insidious-spirit"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "lunar-sway",
+    "name": "Lunar Sway",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Wax: Put a 3/3 Cathay-raht into your hand. Wane: Put a 4/4 Dagi-raht with Guard into your hand.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wp",
+    "effects": [
+      {
+        "trigger": "Wax",
+        "type": "addToHand",
+        "cardId": "cathay-raht",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Wane",
+        "type": "addToHand",
+        "cardId": "dagi-raht",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "moon-gate",
+    "name": "Moon Gate",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Get both Wax and Wane effects this turn.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wo",
+    "uses": 2,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "waxAndWane",
+        "target": "player"
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "khamira",
+    "name": "Khamira",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y",
+      "G"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Pilfer: Give Khajiit in your deck +1/+1.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wW",
+    "unique": true,
+    "class": "Monk",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "elsweyrBuffDeck",
+        "modAttack": 1,
+        "modHealth": 1,
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Khajiit"
+          ]
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "euraxia-tharn",
+    "name": "Euraxia Tharn",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y",
+      "P"
+    ],
+    "cost": 9,
+    "attack": 6,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Summon: Steal an enemy creature or support. Last Gasp: Your opponent steals it back.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": "wb",
+    "unique": true,
+    "class": "Spellsword",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "elsweyrStealCreatureOrSupport",
+        "target": "creatureSupportEnemy",
+        "aiAs": "destroy"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "elsweyrReturnStolen"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "cathay-raht",
+    "name": "Cathay-raht",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": null,
+    "created": true
+  },
+  {
+    "id": "dagi-raht",
+    "name": "Dagi-raht",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": null,
+    "created": true
+  },
+  {
+    "id": "halls-of-colossus",
+    "name": "Halls of Colossus",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 12,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Activate: Summon a non-Unique Dragon of your choice from your deck.",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": null,
+    "unique": true,
+    "uses": 3,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "elsweyrSummonDragonFromDeck"
+      }
+    ]
+  },
+  {
+    "id": "imperial-soldier",
+    "name": "Imperial Soldier",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": null,
+    "created": true
+  },
+  {
+    "id": "insidious-spirit",
+    "name": "Insidious Spirit",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "",
+    "keywords": [],
+    "set": "Moons of Elsweyr",
+    "deckCodeId": null,
+    "created": true
+  }
+]

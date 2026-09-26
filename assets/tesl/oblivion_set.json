@@ -1,0 +1,2705 @@
+[
+  {
+    "id": "agent-of-mehrunes-dagon",
+    "name": "Agent of Mehrunes Dagon",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "At the end of each turn, if you Invaded, Agent of Mehrunes Dagon gains +1/+1.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "zB",
+    "effects": [
+      {
+        "trigger": "EndOfEachTurn",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "invadedThisTurn"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "blood-crazed-daedroth",
+    "name": "Blood-Crazed Daedroth",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Summon: Draw a card if there is a Wounded creature in this lane.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xP",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "oblivionWoundedInLane"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "daedric-incursion",
+    "name": "Daedric Incursion",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Draw a random Daedra from your deck. Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xr",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawFiltered",
+        "subtypes": [
+          "Daedra"
+        ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "dremora-archer",
+    "name": "Dremora Archer",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Prophecy Summon: Deal damage to a creature equal to Dremora Archer's power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xw",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "oblivionSelfPower",
+        "target": "creature"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "flaming-breath",
+    "name": "Flaming Breath",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Deal 1 damage to everything.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yr",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureAll"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "players"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "invasion-scout",
+    "name": "Invasion Scout",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xm",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "keeper-of-the-gates",
+    "name": "Keeper of the Gates",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 6,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "When you Invade, Invade again.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xL",
+    "effects": [
+      {
+        "trigger": "Invade",
+        "type": "oblivionInvadeAgain",
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "kynreeve-champion",
+    "name": "Kynreeve Champion",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "When Kynreeve Champion takes damage, it deals that much damage to your opponent.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yA",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "damageJustTaken",
+        "target": "opponent"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "lord-of-the-arena",
+    "name": "Lord of the Arena",
+    "type": "Creature",
+    "subtypes": [
+      "Minotaur"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 11,
+    "attack": 8,
+    "health": 8,
+    "rarity": "4Legendary",
+    "text": "Summon: Choose two creatures to Battle each other.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yp",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionBattlePair",
+        "target": "creature"
+      }
+    ],
+    "tier": "C",
+    "targetReq": true
+  },
+  {
+    "id": "marauder-chieftain",
+    "name": "Marauder Chieftain",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 1,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Summon: Give a creature +1/+0. When another friendly creature gains power, Marauder Chieftain also gains that much power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xW",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creature"
+      },
+      {
+        "trigger": "FriendlyGainPower",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "amountPer": "oblivionPowerGained"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "mehrunes-dagons-flayer",
+    "name": "Mehrunes Dagon's Flayer",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "At the start of your turn, deal 1 damage to another friendly creature and give it +2/+0.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xZ",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "oblivionDamageThenBuff",
+        "amount": 1,
+        "modAttack": 2,
+        "target": "creatureFriendlyOther"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "modryn-oreyn",
+    "name": "Modryn Oreyn",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Breakthrough Summon: Your opponent summons a Blackwood Hoodlum in each lane.",
+    "keywords": [
+      "Breakthrough"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yc",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summonOpponent",
+        "cardId": "blackwood-hoodlum",
+        "amount": 1,
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Summon",
+        "type": "summonOpponent",
+        "cardId": "blackwood-hoodlum",
+        "amount": 1,
+        "target": "rightLane"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "unfinished-business",
+    "name": "Unfinished Business",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 3 less for each friendly Wounded creature. Unsummon a creature. Then you may unsummon a friendly creature.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xA",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -3,
+        "amountPer": "oblivionFriendlyWounded"
+      },
+      {
+        "trigger": "Play",
+        "type": "unsummon",
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionThenChoose",
+        "target": "self",
+        "steps": [
+          {
+            "trigger": "Play",
+            "type": "unsummon",
+            "target": "creatureFriendly",
+            "optional": true,
+            "prompt": "You may unsummon a friendly creature"
+          }
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "widow-daedra",
+    "name": "Widow Daedra",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 5,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "When an enemy rune is destroyed, Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xt",
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "xivilai-warlord",
+    "name": "Xivilai Warlord",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Charge, Guard",
+    "keywords": [
+      "Charge",
+      "Guard"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xv",
+    "tier": "B"
+  },
+  {
+    "id": "attuned-dremora",
+    "name": "Attuned Dremora",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Summon: Gain all Keywords friendly creatures have.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yD",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionGainFriendlyKeywords",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "blast-from-oblivion",
+    "name": "Blast from Oblivion",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Invade, then deal damage equal to your Oblivion Gate's level to a creature.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xp",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "gateLevel",
+        "target": "creature"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "dremora-adept",
+    "name": "Dremora Adept",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "When Dremora Adept gains a Keyword, Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xF",
+    "effects": [
+      {
+        "trigger": "GainKeyword",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "elixir-of-potency",
+    "name": "Elixir of Potency",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Activate: Give a creature a random Keyword.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xV",
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "grantRandomKeyword",
+        "amount": 1,
+        "target": "creature"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "fingers-of-the-mountain",
+    "name": "Fingers of the Mountain",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 1 less for each action you've played this turn. Deal 1 damage to a creature. Deal 2 damage to a creature. Deal 3 damage to a creature.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xS",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -1,
+        "amountPer": "oblivionActionsPlayedThisTurn"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionThenChoose",
+        "target": "self",
+        "steps": [
+          {
+            "trigger": "Play",
+            "type": "damage",
+            "amount": 2,
+            "target": "creature",
+            "prompt": "Deal 2 damage to a creature"
+          },
+          {
+            "trigger": "Play",
+            "type": "damage",
+            "amount": 3,
+            "target": "creature",
+            "prompt": "Deal 3 damage to a creature"
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "forces-of-destruction",
+    "name": "Forces of Destruction",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 10,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Invade, then summon random Daedra with total cost 10.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yI",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionSummonRandomTotalCost",
+        "subtypes": [
+          "Daedra"
+        ],
+        "cost": 10,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "hannibal-traven",
+    "name": "Hannibal Traven",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "After you play an action, Hannibal Traven learns it. Last Gasp: Play all learned actions from your discard pile.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xD",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "oblivionLearnAction",
+        "target": "self",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Action"
+          ]
+        }
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "oblivionPlayLearned",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "invasion-vanguard",
+    "name": "Invasion Vanguard",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Summon: Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xl",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "mythic-dawn-acolyte",
+    "name": "Mythic Dawn Acolyte",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "At the end of each turn, if you Invaded, deal 2 damage.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "zC",
+    "effects": [
+      {
+        "trigger": "EndOfEachTurn",
+        "type": "damage",
+        "amount": 2,
+        "target": "opponent",
+        "condition": {
+          "type": "invadedThisTurn"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "mythic-dawn-informer",
+    "name": "Mythic Dawn Informer",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Last Gasp: Put a random Daedra into your hand.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xi",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "subtypes": [
+          "Daedra"
+        ],
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "occult-ritemaster",
+    "name": "Occult Ritemaster",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Summon: Put a Steel Dagger into your hand. When Occult Ritemaster equips an item, Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yv",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "steel-dagger",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "EquipItem",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "sigil-keeper",
+    "name": "Sigil Keeper",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Summon: Invade, then give Ward to all friendly Oblivion Gates.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xN",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "invade",
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Ward"
+        ],
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasName",
+          "names": [
+            "oblivion-gate"
+          ]
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "sunken-one",
+    "name": "Sunken One",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra",
+      "Atronach"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 7,
+    "rarity": "1Common",
+    "text": "Ward",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xT",
+    "tier": "C"
+  },
+  {
+    "id": "trusty-sword",
+    "name": "Trusty Sword",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 0,
+    "attack": 2,
+    "health": 0,
+    "rarity": "1Common",
+    "text": "+2/+0",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xM",
+    "tier": "C"
+  },
+  {
+    "id": "valkynaz-mage",
+    "name": "Valkynaz Mage",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Ward When Valkynaz Mage's Ward is broken, Invade.",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yb",
+    "effects": [
+      {
+        "trigger": "WardBroken",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "bedlam",
+    "name": "Bedlam",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Put two 1/1 Scamps into your hand.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xx",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "addToHand",
+        "cardId": "scamp",
+        "amount": 2,
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "blades-guardian",
+    "name": "Blades Guardian",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Guard Summon: Give a creature in the other lane +1/+1 and Guard.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yh",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "oblivionCreatureOtherLane"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "blind-moth-priest",
+    "name": "Blind Moth Priest",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "On your turn, Blind Moth Priest glows while your opponent has a Prophecy on top of their deck.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xU",
+    "tier": "B"
+  },
+  {
+    "id": "clannfear-runt",
+    "name": "Clannfear Runt",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 0,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xQ",
+    "tier": "D"
+  },
+  {
+    "id": "defense-of-bruma",
+    "name": "Defense of Bruma",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 2 less for each friendly creature with 5 or more health. Give friendly creatures +1/+1 and Guard.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yj",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -2,
+        "amountPer": "oblivionFriendlyHealth5"
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "creatureFriendlyAll"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "dive-rock-fall",
+    "name": "Dive Rock Fall",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Banish a creature with 0 power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xH",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "banish",
+        "target": "oblivionZeroPowerCreature"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "invasion-marauder",
+    "name": "Invasion Marauder",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xn",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "invasion-party",
+    "name": "Invasion Party",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Choose three times: Invade or summon a 1/1 Scamp.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yE",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "oblivionChooseRepeat",
+        "times": 3,
+        "target": "thisLane",
+        "choices": [
+          {
+            "text": "Invade",
+            "effect": {
+              "trigger": "Play",
+              "type": "invade",
+              "target": "player"
+            }
+          },
+          {
+            "text": "Summon a 1/1 Scamp",
+            "effect": {
+              "trigger": "Play",
+              "type": "summon",
+              "cardId": "scamp",
+              "amount": 1,
+              "target": "thisLane"
+            }
+          }
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "jauffre",
+    "name": "Jauffre",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 9,
+    "rarity": "4Legendary",
+    "text": "Summon: Choose another friendly creature. Damage that would be dealt to the chosen creature is dealt to Jauffre instead.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xC",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionGuardCreature",
+        "target": "creatureFriendlyOther"
+      },
+      {
+        "trigger": "None",
+        "type": "oblivionRedirectMarker",
+        "target": "self"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "mehrunes-dagons-seducer",
+    "name": "Mehrunes Dagon's Seducer",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 6,
+    "rarity": "2Rare",
+    "text": "Breakthrough, Drain",
+    "keywords": [
+      "Breakthrough",
+      "Drain"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yd",
+    "tier": "S"
+  },
+  {
+    "id": "mythic-dawn-zealot",
+    "name": "Mythic Dawn Zealot",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "At the end of each turn, if you Invaded, put a 1/1 Scamp into your hand.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "zA",
+    "effects": [
+      {
+        "trigger": "EndOfEachTurn",
+        "type": "addToHand",
+        "cardId": "scamp",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "invadedThisTurn"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "the-crisis-begins",
+    "name": "The Crisis Begins",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Destroy a creature. Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xo",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "unexpected-arrival",
+    "name": "Unexpected Arrival",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Invade, then summon a random Daedra with cost equal to your Oblivion Gate's level.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xs",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionSummonRandomByCost",
+        "subtypes": [
+          "Daedra"
+        ],
+        "amountPer": "gateLevel",
+        "target": "thisLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "worldly-wanderer",
+    "name": "Worldly Wanderer",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Summon: Summon a support of your choice from your deck with cost less then Worldly Wanderer's power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yX",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionSupportFromDeck",
+        "amountPer": "oblivionSelfPower",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "xivkyn-channeler",
+    "name": "Xivkyn Channeler",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Prophecy Summon: You gain health equal to Xivkyn Channeler's power plus health.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xE",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": -1,
+        "amountPer": "oblivionSelfPowerPlusHealth",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "arenthia-guerrilla",
+    "name": "Arenthia Guerrilla",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Lethal on your opponent's turn.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xk",
+    "static": {
+      "condition": {
+        "type": "oblivionOpponentTurn"
+      },
+      "addKeywords": [
+        "Lethal"
+      ]
+    },
+    "tier": "B"
+  },
+  {
+    "id": "bitterfish-witch",
+    "name": "Bitterfish Witch",
+    "type": "Creature",
+    "subtypes": [
+      "Goblin"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Prophecy Summon: Give a creature -1/-1.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xI",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "modHealth": -1,
+        "target": "creature"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "blades-flanker",
+    "name": "Blades Flanker",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature in the other lane +2/+0.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yg",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "target": "oblivionCreatureOtherLane"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "blades-stalwart",
+    "name": "Blades Stalwart",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Slay: Blades Stalwart gains power equal to her health.",
+    "keywords": [
+      "Slay"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "ya",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "amountPer": "oblivionSelfHealth"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "bloody-hand-chef",
+    "name": "Bloody Hand Chef",
+    "type": "Creature",
+    "subtypes": [
+      "Goblin"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "When you reduce an enemy creature's power or health with an effect, Bloody Hand Chef gains that much power or health.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yl",
+    "effects": [
+      {
+        "trigger": "EnemyStatsReduced",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "amountPer": "oblivionPowerReduced"
+      },
+      {
+        "trigger": "EnemyStatsReduced",
+        "type": "buffSelf",
+        "modHealth": 1,
+        "amountPer": "oblivionHealthReduced"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "brotherhood-suspect",
+    "name": "Brotherhood Suspect",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Last Gasp: Your opponent draws a Completed Contract.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xy",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "cardId": "completed-contract",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "dead-drop",
+    "name": "Dead Drop",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Give a friendly creature \"Slay: Put a Completed Contract into your hand\" this turn. It may move to attack creatures in the other lane this turn.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yw",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "grantEffect",
+        "target": "creatureFriendly",
+        "grantedEffect": {
+          "trigger": "Slay",
+          "type": "addToHand",
+          "cardId": "completed-contract",
+          "temporary": true,
+          "amount": 1,
+          "target": "player"
+        }
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "tempKeywords": [
+          "LaneRestrictions"
+        ],
+        "target": "creatureFriendly"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "dust-eater-skirmisher",
+    "name": "Dust Eater Skirmisher",
+    "type": "Creature",
+    "subtypes": [
+      "Goblin"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "When Dust Eater Skirmisher takes damage from a creature, give that creature -1/-1.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xz",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "modHealth": -1,
+        "target": "oblivionDamageSource"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "fresh-start",
+    "name": "Fresh Start",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Draw three cards.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yx",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 3,
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "mountain-lion",
+    "name": "Mountain Lion",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Gain 1 magicka this turn.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "ym",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "the-gray-fox",
+    "name": "The Gray Fox",
+    "type": "Creature",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Summon: Draw a card from you opponent's discard pile. Pilfer: Reveal a random unrevealed card from your opponent's hand.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yB",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionDrawOppDiscard",
+        "amount": 1,
+        "target": "self"
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "oblivionRevealOppHand",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "the-ultimate-heist",
+    "name": "The Ultimate Heist",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 12,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 3 less for each time you've Pilfered or Drained this turn. Deal damage to your opponent destroying their front rune. Steal the card drawn from the rune. If it's a Prophecy, you may play it for free.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yn",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -3,
+        "amountPer": "oblivionPilferDrainThisTurn"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionHeist",
+        "target": "opponent"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Friendly creatures in this lane with less power than Unicorn have Charge.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xX",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Charge"
+        ],
+        "target": "creatureFriendlyOtherThisLaneAll",
+        "targetCondition": {
+          "type": "hasLessAttack"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "wild-boar",
+    "name": "Wild Boar",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Wild Boar can't gain Cover. At the start of your turn, Wild Boar moves and gains +1/+0.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yo",
+    "immunity": [
+      "GainCover"
+    ],
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "move",
+        "target": "self"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "buffSelf",
+        "modAttack": 1
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "will-o-the-wisp",
+    "name": "Will-o-the-Wisp",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Drain",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xj",
+    "tier": "C"
+  },
+  {
+    "id": "black-soul-gem",
+    "name": "Black Soul Gem",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "When a friendly creature dies, give a random creature in your hand +1/+1.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yk",
+    "uses": "Ongoing",
+    "effects": [
+      {
+        "trigger": "CreatureFriendlyDeath",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [
+          "Creature"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "blackwood-alchemist",
+    "name": "Blackwood Alchemist",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Gains +2/+0 when your max magicka increases.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yu",
+    "effects": [
+      {
+        "trigger": "MaxMagickaIncreased",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 0
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "blades-defender",
+    "name": "Blades Defender",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature in the other lane +0/+2.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yf",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modHealth": 2,
+        "target": "oblivionCreatureOtherLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "brotherhood-vampire",
+    "name": "Brotherhood Vampire",
+    "type": "Creature",
+    "subtypes": [
+      "Breton",
+      "Vampire"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "rarity": "3Epic",
+    "text": "Summon: +1/+1 for each creature that died this turn.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yG",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "amountPer": "oblivionCreaturesDiedThisTurn"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "city-guard",
+    "name": "City Guard",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Prophecy, Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xu",
+    "prophecy": true,
+    "tier": "A"
+  },
+  {
+    "id": "determined-supplier",
+    "name": "Determined Supplier",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 1,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard Last Gasp: Gain max magicka equal to Determined Supplier's power.",
+    "keywords": [
+      "Guard",
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yt",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "maxMagicka",
+        "amount": 1,
+        "amountPer": "oblivionSelfPower",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "doomed-adventurer",
+    "name": "Doomed Adventurer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Last Gasp: Give a random creature in your hand +2/+2.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "ys",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [
+          "Creature"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "emperors-attendant",
+    "name": "Emperor's Attendant",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Summon: Give a creature in your hand power and health equal to Emperor's Attendant's power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yF",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "amountPer": "oblivionSelfPower",
+        "target": "cardPlayerHand",
+        "subtypes": [
+          "Creature"
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "faded-wraith",
+    "name": "Faded Wraith",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 1,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Summon: Draw cards equal to Faded Wraith's power.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yz",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "amountPer": "oblivionSelfPower",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "miscarcand-lich",
+    "name": "Miscarcand Lich",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Summon: Choose an enemy creature. At the start of your turn, if the chosen creature is alive, summon a 1/1 Risen Dead with Guard in its lane.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xO",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionMarkHunted",
+        "cardId": "risen-dead",
+        "target": "creatureEnemy"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "mute",
+    "name": "Mute",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Silence two creatures.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yq",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "silence",
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "oblivionThenChoose",
+        "target": "self",
+        "distinct": true,
+        "steps": [
+          {
+            "trigger": "Play",
+            "type": "silence",
+            "target": "creature",
+            "prompt": "Silence another creature"
+          }
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "outland-patrol",
+    "name": "Outland Patrol",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Last Gasp: Give a random creature in your hand +1/+1.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yi",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [
+          "Creature"
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "three-feather-warchief",
+    "name": "Three Feather Warchief",
+    "type": "Creature",
+    "subtypes": [
+      "Goblin"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Summon: Set a creature's health to 1.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yy",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "setStats",
+        "modHealth": 1,
+        "target": "creature"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "umaril-the-unfeathered",
+    "name": "Umaril the Unfeathered",
+    "type": "Creature",
+    "subtypes": [
+      "Ayleid"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 6,
+    "attack": 6,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Guard When Umaril the Unfeathered leaves play, summon him in the other lane Silenced.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yH",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "LeavePlay",
+        "type": "oblivionResummonSilenced",
+        "target": "self"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "whodunit",
+    "name": "Whodunit?",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 8,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 1 less for each creature in your discard pile. Gain +2 max magicka.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xR",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -1,
+        "amountPer": "creaturePlayerDiscardAll"
+      },
+      {
+        "trigger": "Play",
+        "type": "maxMagicka",
+        "amount": 2,
+        "target": "player"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "giant-slaughterfish",
+    "name": "Giant Slaughterfish",
+    "type": "Creature",
+    "subtypes": [
+      "Fish"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Give friendly Animals +2/+0 at the start of your turn.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xY",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Beast",
+            "Fish",
+            "Mammoth",
+            "Mudcrab",
+            "Netch",
+            "Reptile",
+            "Spider",
+            "Skeever",
+            "Wolf"
+          ]
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "great-sigil-stone",
+    "name": "Great Sigil Stone",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Activate: Invade. Last Gasp: Draw a random Daedra from your deck and give it +2/+2.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xG",
+    "unique": true,
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "invade",
+        "target": "player"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "drawFiltered",
+        "subtypes": [
+          "Daedra"
+        ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "drawnCard"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "oblivion-invasion",
+    "name": "Oblivion Invasion",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Invade.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xq",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "invade",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "painted-world",
+    "name": "Painted World",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 12,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Costs 2 less for each attribute you have in play. Costs 2 less if you have a Neutral card in play. Summon a Painted Troll in each lane.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xB",
+    "effects": [
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -2,
+        "amountPer": "oblivionAttributesInPlay"
+      },
+      {
+        "trigger": "None",
+        "type": "modCostPer",
+        "modCost": -2,
+        "amountPer": "oblivionNeutralInPlay"
+      },
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "painted-troll",
+        "amount": 1,
+        "target": "leftLane"
+      },
+      {
+        "trigger": "Play",
+        "type": "summon",
+        "cardId": "painted-troll",
+        "amount": 1,
+        "target": "rightLane"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "siege-crawler",
+    "name": "Siege Crawler",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 11,
+    "attack": 15,
+    "health": 15,
+    "rarity": "3Epic",
+    "text": "Breakthrough",
+    "keywords": [
+      "Breakthrough"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "yC",
+    "tier": "C"
+  },
+  {
+    "id": "mankar-camoran",
+    "name": "Mankar Camoran",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf",
+      "Wood Elf"
+    ],
+    "attributes": [
+      "R",
+      "B"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "After you play an action, Invade. Friendly Oblivion Gates have +4/+0.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xg",
+    "unique": true,
+    "class": "Battlemage",
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "invade",
+        "target": "player",
+        "condition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Action"
+          ]
+        }
+      },
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modAttack": 4,
+        "modHealth": 0,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasName",
+          "names": [
+            "oblivion-gate"
+          ]
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "martin-septim",
+    "name": "Martin Septim",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "G",
+      "P"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 7,
+    "rarity": "4Legendary",
+    "text": "At the start of your turn, gain all unspent magicka from your last turn. When you have 30 or more magicka, Martin Septim changes into a 30/30 Avatar of Akatosh.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": "xh",
+    "unique": true,
+    "class": "Scout",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "oblivionStoreUnspentMagicka",
+        "target": "self"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "oblivionGainUnspentMagicka",
+        "target": "self"
+      },
+      {
+        "trigger": "Summon",
+        "type": "oblivionMartinCheck",
+        "target": "self"
+      },
+      {
+        "trigger": "SummonCreature",
+        "type": "oblivionMartinCheck",
+        "target": "self"
+      },
+      {
+        "trigger": "ActivateSupport",
+        "type": "oblivionMartinCheck",
+        "target": "self"
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "avatar-of-akatosh",
+    "name": "Avatar of Akatosh",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "G",
+      "P"
+    ],
+    "cost": 4,
+    "attack": 30,
+    "health": 30,
+    "rarity": "4Legendary",
+    "text": "",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": null,
+    "unique": true,
+    "created": true,
+    "class": "Scout"
+  },
+  {
+    "id": "blackwood-hoodlum",
+    "name": "Blackwood Hoodlum",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "4Legendary",
+    "text": "Last Gasp: Give Modryn Oreyn +2/+2.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": null,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "creatureAll",
+        "targetCondition": {
+          "type": "hasName",
+          "names": [
+            "modryn-oreyn"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "oblivion-gate",
+    "name": "Oblivion Gate",
+    "type": "Creature",
+    "subtypes": [
+      "Portal"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 0,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Level 1: Immune to Silence. Permanently Shackled. When you summon a Daedra, give it +0/+1. Level 2: ... +1/+1. Level 3: ... Daedra you summon cost 1 less. Level 4: ... give it a random keyword. Level 5: ... two random keywords.",
+    "keywords": [],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": null,
+    "created": true,
+    "immunity": [
+      "Silence"
+    ],
+    "counter": 1
+  },
+  {
+    "id": "painted-troll",
+    "name": "Painted Troll",
+    "type": "Creature",
+    "subtypes": [
+      "Troll"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Regenerate Summon: Painted Troll becomes a random attribute.",
+    "keywords": [
+      "Regenerate"
+    ],
+    "set": "Jaws of Oblivion",
+    "deckCodeId": null,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "oblivionRandomAttribute",
+        "target": "self"
+      }
+    ]
+  }
+]

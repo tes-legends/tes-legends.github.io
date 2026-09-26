@@ -468,7 +468,7 @@
           "type": "creatureFriendlyDied",
           "min": 3
         },
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -2379,10 +2379,12 @@
         "trigger": "PlayCard",
         "type": "summon",
         "cardId": "thalmor-soldier",
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "hasSubtype",
-          "subtypes": [ "Action" ]
+          "subtypes": [
+            "Action"
+          ]
         }
       }
     ]
@@ -3364,10 +3366,12 @@
         "trigger": "SummonCreature",
         "type": "summon",
         "cardId": "draugr-sentry",
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "hasSubtype",
-          "subtypes": [ "Dragon" ]
+          "subtypes": [
+            "Dragon"
+          ]
         }
       }
     ]
@@ -3918,7 +3922,9 @@
     "id": "soul-tear-level-1",
     "name": "Soul Tear",
     "type": "Action",
-    "subtypes": [ "Shout" ],
+    "subtypes": [
+      "Shout"
+    ],
     "attributes": [
       "P"
     ],
@@ -3935,9 +3941,12 @@
       {
         "trigger": "Play",
         "type": "drawDiscard",
-        "subtypes": [ "Creature" ],
+        "subtypes": [
+          "Creature"
+        ],
         "amount": 1,
-        "target": "player"
+        "target": "player",
+        "choose": true
       },
       {
         "trigger": "Play",
@@ -3951,7 +3960,9 @@
     "id": "soul-tear-level-2",
     "name": "Soul Tear Level 2",
     "type": "Action",
-    "subtypes": [ "Shout" ],
+    "subtypes": [
+      "Shout"
+    ],
     "attributes": [
       "P"
     ],
@@ -3967,16 +3978,14 @@
       {
         "trigger": "Play",
         "type": "drawDiscard",
-        "subtypes": [ "Creature" ],
+        "subtypes": [
+          "Creature"
+        ],
         "amount": 1,
-        "target": "player"
-      },
-      {
-        "trigger": "Play",
-        "type": "buffTarget",
+        "target": "player",
+        "choose": true,
         "modAttack": 2,
-        "modHealth": 2,
-        "target": "drawnCard"
+        "modHealth": 2
       },
       {
         "trigger": "Play",
@@ -3990,7 +3999,9 @@
     "id": "soul-tear-level-3",
     "name": "Soul Tear Level 3",
     "type": "Action",
-    "subtypes": [ "Shout" ],
+    "subtypes": [
+      "Shout"
+    ],
     "attributes": [
       "P"
     ],
@@ -4006,16 +4017,14 @@
       {
         "trigger": "Play",
         "type": "drawDiscard",
-        "subtypes": [ "Creature" ],
+        "subtypes": [
+          "Creature"
+        ],
         "amount": 1,
-        "target": "player"
-      },
-      {
-        "trigger": "Play",
-        "type": "buffTarget",
+        "target": "player",
+        "choose": true,
         "modAttack": 5,
-        "modHealth": 5,
-        "target": "drawnCard"
+        "modHealth": 5
       }
     ]
   },
@@ -4242,7 +4251,9 @@
         "type": "modCostDiscard",
         "modCost": -2,
         "amountPer": "numSubtypeDiscard",
-        "subtypes": [ "Dragon" ]
+        "subtypes": [
+          "Dragon"
+        ]
       },
       {
         "trigger": "Summon",
@@ -4253,8 +4264,10 @@
         "trigger": "StartOfTurn",
         "type": "summonDiscard",
         "amount": 1,
-        "target": "randomLane",
-        "subtypes": [ "Dragon" ]
+        "target": "thisLaneOrOther",
+        "subtypes": [
+          "Dragon"
+        ]
       }
     ]
   },
@@ -4849,9 +4862,9 @@
       },
       {
         "trigger": "Play",
-        "type": "damage",
+        "type": "movedDealsDamage",
         "amount": 1,
-        "target": "creatureEnemyRandom"
+        "target": "self"
       }
     ]
   },

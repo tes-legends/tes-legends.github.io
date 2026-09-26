@@ -1,0 +1,3458 @@
+[
+  {
+    "id": "cauterize",
+    "name": "Cauterize",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Deal 2 damage to a Wounded creature.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sG",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 2,
+        "target": "creatureWounded"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "covenant-plate",
+    "name": "Covenant Plate",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Prophecy, Mobilize, Guard +3/+1",
+    "keywords": [
+      "Mobilize",
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tE",
+    "prophecy": true,
+    "recruitRace": "Breton",
+    "tier": "B"
+  },
+  {
+    "id": "craven-conscript",
+    "name": "Craven Conscript",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 5,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Craven Conscript is permanently Shackled unless equipped with an item.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sO",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "conscriptShackleCheck",
+        "target": "self"
+      },
+      {
+        "trigger": "EquipItem",
+        "type": "conscriptShackleCheck",
+        "target": "self"
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "conscriptShackleCheck",
+        "target": "self"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "ebonthread-cloak",
+    "name": "Ebonthread Cloak",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Mobilize +1/+2 Summon: Your opponent can't target the wielder with actions until your next turn.",
+    "keywords": [
+      "Mobilize"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sK",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Camouflage"
+        ],
+        "target": "wielder"
+      }
+    ],
+    "recruitRace": "Breton",
+    "tier": "A"
+  },
+  {
+    "id": "fighters-guild-berserker",
+    "name": "Fighters Guild Berserker",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Expertise: Deal 2 damage to your opponent.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tn",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "damage",
+        "amount": 2,
+        "target": "opponent"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "fighters-guild-elite",
+    "name": "Fighters Guild Elite",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": 2,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "Expertise: Double Fighters Guild Elite's power and health.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tf",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "doubleStats",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "guildsworn-bloodluster",
+    "name": "Guildsworn Bloodluster",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 7,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Expertise: +2/+2 and Battle an enemy creature in this lane.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "te",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      },
+      {
+        "trigger": "Expertise",
+        "type": "battle",
+        "target": "creatureEnemyThisLaneToBattle"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "guildsworn-incendiary",
+    "name": "Guildsworn Incendiary",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "rarity": "2Rare",
+    "text": "Expertise: Deal 1 damage to all creatures in this lane.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tR",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureThisLaneAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "high-rock-stalwart",
+    "name": "High Rock Stalwart",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Summon: +2/+2 if you have an item in play.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "to",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2,
+        "condition": {
+          "type": "itemInPlay"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "jorunns-vanguard",
+    "name": "Jorunn's Vanguard",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Veteran: +2/+2 and give the top creature of your deck +2/+2.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tx",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      },
+      {
+        "trigger": "Veteran",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "creatureTopDeck"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "lyris-titanborn",
+    "name": "Lyris Titanborn",
+    "type": "Creature",
+    "subtypes": [
+      "Nord",
+      "Giant"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "At the start of your turn, deal damage to your opponent destroying their front rune.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tB",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "breakFrontRune",
+        "target": "opponent"
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "ornamented-sword",
+    "name": "Ornamented Sword",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Mobilize, Breakthrough +2/+1",
+    "keywords": [
+      "Mobilize",
+      "Breakthrough"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tI",
+    "recruitRace": "Redguard",
+    "tier": "B"
+  },
+  {
+    "id": "orsinium-forge",
+    "name": "Orsinium Forge",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Activate: Equip a creature with a +1/+1 Orsinium Plate. Then increase the power and health of Orsinium Plates this equips by 1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tK",
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "equipGrowingPlate",
+        "cardId": "orsinium-plate",
+        "increment": 1,
+        "target": "creatureFriendlyFirst"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "pact-oathman",
+    "name": "Pact Oathman",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: If you have a... Agility card in play, +2/+0. Endurance card in play, Battle an enemy creature.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tM",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "G",
+          "min": 1
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemyToBattle",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "P",
+          "min": 1
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "pact-shieldbearer",
+    "name": "Pact Shieldbearer",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "Veteran: Your opponent's actions cost 4 more next turn.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tO",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "actionTaxNextTurn",
+        "amount": 4,
+        "target": "opponent"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "salvage",
+    "name": "Salvage",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Choose an item in your discard pile. Draw it and all items with the same name from your discard pile.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ug",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "salvageItems",
+        "target": "player"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "windhelm-gatekeeper",
+    "name": "Windhelm Gatekeeper",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard Veteran: +3/+0",
+    "keywords": [
+      "Guard",
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uB",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "modAttack": 3
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "abnur-tharn",
+    "name": "Abnur Tharn",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Summon: Abnur Tharn uses the summon ability of a creature.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uG",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "useSummonAbility",
+        "target": "creatureWithSummon"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "altmer-flameslinger",
+    "name": "Altmer Flameslinger",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Ward At the start of your turn, Altmer Flameslinger deals 1 damage to your opponent.",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sw",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "channeled-storm",
+    "name": "Channeled Storm",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Deal 3 damage to a creature. Empower: +1 damage.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sH",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "empower": 1,
+        "target": "creature"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "covenant-oathman",
+    "name": "Covenant Oathman",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Summon: If you have a... Strength card in play, draw a random item from your deck. Endurance card in play, give an item in your hand +2/+2.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sN",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawFiltered",
+        "subtypes": [
+          "Item"
+        ],
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "R",
+          "min": 1
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffCardInHand",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "cardPlayerHand",
+        "subtypes": [
+          "Item"
+        ],
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "P",
+          "min": 1
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "emerics-warlord",
+    "name": "Emeric's Warlord",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Your items have Mobilize. When a friendly Recruit equips an item, Emeric's Warlord gains +1/+0.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tz",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Mobilize"
+        ],
+        "target": "player"
+      },
+      {
+        "trigger": "EquipFriendly",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "condition": {
+          "type": "recruitEquipped"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "forked-bolt",
+    "name": "Forked Bolt",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Deal 1 damage to a creature and your opponent.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tg",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "guildsworn-wayfarer",
+    "name": "Guildsworn Wayfarer",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Expertise: +1/+1",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tk",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "lion-guard-armaments",
+    "name": "Lion Guard Armaments",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Mobilize +3/+4",
+    "keywords": [
+      "Mobilize"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tF",
+    "recruitRace": "Redguard",
+    "tier": "C"
+  },
+  {
+    "id": "mages-guild-conjurer",
+    "name": "Mages Guild Conjurer",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Expertise: Summon a Flame Atronach, then upgrade the Atronach Mages Guild Conjurer summons.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uE",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "summon",
+        "cardId": "flame-atronach",
+        "amount": 1,
+        "target": "thisLane",
+        "condition": {
+          "type": "counter",
+          "max": 0
+        }
+      },
+      {
+        "trigger": "Expertise",
+        "type": "summon",
+        "cardId": "frost-atronach",
+        "amount": 1,
+        "target": "thisLane",
+        "condition": {
+          "type": "counter",
+          "min": 1,
+          "max": 1
+        }
+      },
+      {
+        "trigger": "Expertise",
+        "type": "summon",
+        "cardId": "storm-atronach",
+        "amount": 1,
+        "target": "thisLane",
+        "condition": {
+          "type": "counter",
+          "min": 2,
+          "max": 2
+        }
+      },
+      {
+        "trigger": "Expertise",
+        "type": "summon",
+        "cardId": "lava-atronach",
+        "amount": 1,
+        "target": "thisLane",
+        "condition": {
+          "type": "counter",
+          "min": 3
+        }
+      },
+      {
+        "trigger": "Expertise",
+        "type": "addCounter",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "nereid-sister",
+    "name": "Nereid Sister",
+    "type": "Creature",
+    "subtypes": [
+      "Nereid"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Summon: Gain a random Keyword. When Nereid Sister gains a Keyword, give all friendly Nereid Sisters in play, hand, and deck that keyword.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tC",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "grantRandomKeyword",
+        "target": "self"
+      },
+      {
+        "trigger": "GainKeyword",
+        "type": "shareGainedKeyword",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "ravaging-elixir",
+    "name": "Ravaging Elixir",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Activate: Deal 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tS",
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "soul-shred",
+    "name": "Soul Shred",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "For each attribute your opponent is playing, Banish the top 2 cards of your opponent's deck. Empower: +1 card per attribute.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tP",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "banishTopPerAttribute",
+        "amount": 2,
+        "empower": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "soul-wraith",
+    "name": "Soul Wraith",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Prophecy, Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uh",
+    "prophecy": true,
+    "tier": "D"
+  },
+  {
+    "id": "sparksmith",
+    "name": "Sparksmith",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "When a friendly creature equips an item, deal 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uj",
+    "effects": [
+      {
+        "trigger": "EquipItem",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      },
+      {
+        "trigger": "EquipFriendly",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "staff-of-ice",
+    "name": "Staff of Ice",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Prophecy, Mobilize +1/+1 Summon: The wielder deals 2 damage.",
+    "keywords": [
+      "Mobilize"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uo",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "wielderDealsDamage",
+        "amount": 2,
+        "target": "damageTargetEnemyFirst"
+      }
+    ],
+    "recruitRace": "Breton",
+    "tier": "B"
+  },
+  {
+    "id": "telekinesis",
+    "name": "Telekinesis",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Equip all your items in play to a friendly creature.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "us",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "equipAllItemsTo",
+        "target": "creatureFriendlyBest"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "vanuss-scribe",
+    "name": "Vanus's Scribe",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Expertise: Reduce the cost of a random action in your hand by 1.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uF",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "modCost",
+        "amount": -1,
+        "target": "cardPlayerHandRandom",
+        "subtypes": [
+          "Action"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "alchemy",
+    "name": "Alchemy",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Give your Activated supports 1 extra use. Empower: +1 use.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sv",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "addSupportUses",
+        "amount": 1,
+        "empower": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "bruma-oppressor",
+    "name": "Bruma Oppressor",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Summon: If you have another creature in each lane, set a creature's power to 1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tt",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "setStats",
+        "modAttack": 1,
+        "target": "creatureEnemyFirst",
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "forward-camp",
+    "name": "Forward Camp",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Your supports cost 1 less. When you have 4 supports, sacrifice Forward Camp and summon an Eastmarch Crusader in each lane.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "th",
+    "uses": "Ongoing",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -1,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "hasType",
+          "subtypes": [
+            "Support"
+          ]
+        }
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "forwardCampCheck",
+        "cardId": "eastmarch-crusader",
+        "minSupports": 4,
+        "target": "self"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "gray-viper-brigand",
+    "name": "Gray Viper Brigand",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Draw a card for each Gray Viper Brigand in your discard pile.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uA",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "amountPer": "sameNameInDiscard",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "guildsworn-cavalier",
+    "name": "Guildsworn Cavalier",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Expertise: Give friendly creatures +1/+1.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tj",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "guildsworn-honeytongue",
+    "name": "Guildsworn Honeytongue",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 7,
+    "attack": 0,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Expertise: You may trade Guildsworn Honeytongue for an enemy creature.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "up",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "tradeControl",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "guildsworn-oathman",
+    "name": "Guildsworn Oathman",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Summon: If you have a... Strength card in play, put an Improvised Weapon into your hand. Intelligence card in play, put a Forked Bolt into your hand.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tl",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "improvised-weapon",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "R",
+          "min": 1
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "forked-bolt",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "B",
+          "min": 1
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "guildsworn-revitalizer",
+    "name": "Guildsworn Revitalizer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Expertise: You gain 2 health.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tm",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "damage",
+        "amount": -2,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "legion-zero-templar",
+    "name": "Legion Zero Templar",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Guard Summon: If you have another creature in each lane, +0/+3.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tA",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modHealth": 3,
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "luminous-shards",
+    "name": "Luminous Shards",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Destroy a creature with 1 power or less. Empower: +1 power.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sT",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "destroy",
+        "maxPower": 1,
+        "empowerPower": 1,
+        "target": "creatureMaxPowerEmpowered"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "mystic-of-ancient-rites",
+    "name": "Mystic of Ancient Rites",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "When Mystic of Ancient Rites Empowers an action in your hand, the Empower bonus does not expire at the end of turn.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ty",
+    "effects": [
+      {
+        "trigger": "DamageDealt",
+        "type": "persistEmpowerInHand",
+        "target": "self",
+        "condition": {
+          "type": "dealtFaceDamage"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "outflank",
+    "name": "Outflank",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Prophecy Give a friendly creature in each lane +0/+2 and Guard.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tL",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "eachLaneFriendlyPick",
+        "modHealth": 2,
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "creatureFriendly"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "renowned-instructor",
+    "name": "Renowned Instructor",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Expertise: Summon a 1/1 Recruit.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "ud",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "summonRecruits",
+        "race": "Nord",
+        "lanes": "this",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "sound-the-alarm",
+    "name": "Sound the Alarm",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Enemy creatures lose Cover.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ue",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "removeKeywords": [
+          "Cover",
+          "Stealth"
+        ],
+        "target": "creatureEnemyAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "strategists-map",
+    "name": "Strategist's Map",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Activate: Summon a 0/1 Target with Guard for you or your opponent.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sY",
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "strategistsMapChoice",
+        "cardId": "target",
+        "target": "player"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "varen-aquilarios",
+    "name": "Varen Aquilarios",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "When one of your runes breaks, you gain 5 health instead of drawing a card.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ux",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "LostRune",
+        "type": "damage",
+        "amount": -5,
+        "target": "player"
+      }
+    ],
+    "immunity": [
+      "RuneDraw"
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "wish",
+    "name": "Wish",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Summon a random 2-cost creature. Empower: +1 cost creature.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sP",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRandomCostEmpowered",
+        "cost": 2,
+        "costPerEmpower": 1,
+        "target": "pickThisLane"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "assassin-beetle",
+    "name": "Assassin Beetle",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Prophecy Summon: Play a Prophecy from your hand.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tv",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "playProphecyFromHand",
+        "target": "cardPlayerHand",
+        "targetCondition": {
+          "type": "isProphecyCard"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "baandari-opportunist",
+    "name": "Baandari Opportunist",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Charge Pilfer: Shuffle a Baandari Opportunist with \"Summon: Draw a card\" into your deck.",
+    "keywords": [
+      "Charge",
+      "Pilfer"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sA",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "shuffleCopyWithDraw",
+        "cardId": "baandari-opportunist",
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "hasCardFlag",
+          "flag": "grantedDraw"
+        }
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "back-alley-footpad",
+    "name": "Back-Alley Footpad",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 0,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature Cover.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ta",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "tempKeywords": [
+          "Cover"
+        ],
+        "target": "creature"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "bewildering-speed",
+    "name": "Bewildering Speed",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Move a friendly creature in each lane and give them +1/+1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sJ",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "eachLaneFriendlyPick",
+        "move": true,
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendly"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "daedric-titan",
+    "name": "Daedric Titan",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 6,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "While you have another creature in each line, Daedric Titan has Drain and your opponent can't target it with actions.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sR",
+    "static": {
+      "condition": {
+        "type": "anotherCreatureInEachLane",
+        "immunity": "ActionTarget"
+      },
+      "addKeywords": [
+        "Drain"
+      ]
+    },
+    "tier": "C"
+  },
+  {
+    "id": "debilitate",
+    "name": "Debilitate",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 7,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Give all creatures -2/-2. Empower: Costs 1 less.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uz",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "modAttack": -2,
+        "modHealth": -2,
+        "target": "creatureAll"
+      }
+    ],
+    "empowerCost": -1,
+    "tier": "B"
+  },
+  {
+    "id": "dominion-oathman",
+    "name": "Dominion Oathman",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: If you have a... Willpower card in play, Drain. Intelligence card in play, deal 2 damage to your opponent.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sU",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Drain"
+        ],
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "Y",
+          "min": 1
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 2,
+        "target": "opponent",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "B",
+          "min": 1
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "dragonguard-outcast",
+    "name": "Dragonguard Outcast",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Lethal Summon: Dragonguard Outcast has Cover until she attacks.",
+    "keywords": [
+      "Lethal"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sV",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Stealth"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "dunmer-tyro",
+    "name": "Dunmer Tyro",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Charge Veteran: +2/+0",
+    "keywords": [
+      "Charge",
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sW",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "modAttack": 2
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "empire-dreadmage",
+    "name": "Empire Dreadmage",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 7,
+    "attack": 7,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Summon: If you have another creature in each lane, give a creature -2/-2.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tr",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": -2,
+        "modHealth": -2,
+        "target": "creature",
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "inspiring-soldier",
+    "name": "Inspiring Soldier",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Veteran: Summon a 1/1 Recruit.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tu",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "summonRecruits",
+        "race": "Dark Elf",
+        "lanes": "this",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "invoker-of-the-hist",
+    "name": "Invoker of the Hist",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Veteran: Restore your magicka.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uy",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "refillMagicka",
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "sai-sahan",
+    "name": "Sai Sahan",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 7,
+    "attack": 6,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Immune to Wounded enemy creatures. Summon: Give all enemy creatures -1/-1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uf",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": -1,
+        "modHealth": -1,
+        "target": "creatureEnemyAll"
+      }
+    ],
+    "immunity": [
+      "WoundedEnemy"
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "shadowscale-hunter",
+    "name": "Shadowscale Hunter",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Veteran: Move.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tN",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "move",
+        "target": "self"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "spoils-of-war",
+    "name": "Spoils of War",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Draw two cards. Empower: Costs 1 less.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "um",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "drawCards",
+        "amount": 2,
+        "target": "player"
+      }
+    ],
+    "empowerCost": -1,
+    "tier": "A"
+  },
+  {
+    "id": "unrelenting-siege",
+    "name": "Unrelenting Siege",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Friendly creatures with 1 power may attack an extra time each turn.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "td",
+    "uses": "Ongoing",
+    "effects": [
+      {
+        "trigger": "FriendlyAttack",
+        "type": "siegeExtraAttack",
+        "target": "self"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "valenwood-sentry",
+    "name": "Valenwood Sentry",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Prophecy, Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uv",
+    "prophecy": true,
+    "tier": "B"
+  },
+  {
+    "id": "bishop-of-the-hour",
+    "name": "Bishop of the Hour",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Summon: If you have another creature in each lane, give the top creature of your deck +5/+5.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sD",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 5,
+        "modHealth": 5,
+        "target": "creatureTopDeck",
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "black-marsh-centurion",
+    "name": "Black Marsh Centurion",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 8,
+    "rarity": "1Common",
+    "text": "Veteran: Guard",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sE",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Guard"
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "black-marsh-prodigy",
+    "name": "Black Marsh Prodigy",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Veteran: +4/+4",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sF",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "modAttack": 4,
+        "modHealth": 4
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "covenant-mail",
+    "name": "Covenant Mail",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Prophecy, Mobilize, Guard +1/+3",
+    "keywords": [
+      "Mobilize",
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sL",
+    "prophecy": true,
+    "recruitRace": "Orc",
+    "tier": "A"
+  },
+  {
+    "id": "cruel-axe",
+    "name": "Cruel Axe",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 0,
+    "rarity": "2Rare",
+    "text": "Mobilize Summon: +1/+1 for each enemy creature in this lane.",
+    "keywords": [
+      "Mobilize"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tH",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "amountPer": "enemiesInWielderLane",
+        "target": "wielder"
+      }
+    ],
+    "recruitRace": "Orc",
+    "tier": "D"
+  },
+  {
+    "id": "dark-anchor",
+    "name": "Dark Anchor",
+    "type": "Creature",
+    "subtypes": [
+      "Portal"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 0,
+    "health": 8,
+    "rarity": "3Epic",
+    "text": "Your Daedra cost 1 less. When you draw a creature, transform it into a random Daedra.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sS",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -1,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "hasSubtype",
+          "subtypes": [
+            "Daedra"
+          ]
+        }
+      },
+      {
+        "trigger": "DrawCard",
+        "type": "transformDrawnIntoRandom",
+        "subtypes": [
+          "Daedra"
+        ],
+        "target": "self",
+        "condition": {
+          "type": "lastDrawnType",
+          "subtypes": [
+            "Creature"
+          ]
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "empire-oathman",
+    "name": "Empire Oathman",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Summon: If you have a... Agility card in play, give other friendly creatures +1/+0. Willpower card in play, give other friendly creatures +0/+1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sQ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creatureFriendlyOtherAll",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "G",
+          "min": 1
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modHealth": 1,
+        "target": "creatureFriendlyOtherAll",
+        "condition": {
+          "type": "attributeCardInPlay",
+          "attribute": "Y",
+          "min": 1
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "great-moot-squire",
+    "name": "Great Moot Squire",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Veteran: +1/+1",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "un",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "hush",
+    "name": "Hush",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Prophecy Silence a creature.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tq",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "silence",
+        "target": "creature"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "imperial-lackey",
+    "name": "Imperial Lackey",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Last Gasp: If you have another creature on each lane, summon a 1/1 Recruit in each lane.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sC",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "summonRecruits",
+        "race": "Imperial",
+        "lanes": "each",
+        "amount": 1,
+        "target": "self",
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "mannimarco",
+    "name": "Mannimarco",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 10,
+    "attack": 6,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Summon: Summon a creature from your opponent's discard pile.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tD",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "summonOppDiscard",
+        "amount": 1,
+        "target": "thisLane",
+        "choose": true
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "poisoned-dagger",
+    "name": "Poisoned Dagger",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 0,
+    "rarity": "1Common",
+    "text": "Mobilize, Lethal +1/+0",
+    "keywords": [
+      "Mobilize",
+      "Lethal"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tQ",
+    "recruitRace": "Breton",
+    "tier": "C"
+  },
+  {
+    "id": "spiny-haj-mota",
+    "name": "Spiny Haj Mota",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: +4/+4 for each Spiny Haj Mota in your discard pile.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uk",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 4,
+        "modHealth": 4,
+        "amountPer": "sameNameInDiscard"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "steel-eyed-visionary",
+    "name": "Steel-Eyed Visionary",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Veteran: Set each friendly creature's power equal to its health.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tp",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "setPowerToHealth",
+        "target": "creatureFriendlyAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "strategic-deployment",
+    "name": "Strategic Deployment",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Summon two 1/1 Recruits in each lane.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uq",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRecruits",
+        "race": "Imperial",
+        "lanes": "each",
+        "amount": 2,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "supply-runner",
+    "name": "Supply Runner",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: If you have another creature in each lane, gain +1 max magicka.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ur",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "maxMagicka",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "anotherCreatureInEachLane"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "xivkyn-banelord",
+    "name": "Xivkyn Banelord",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 7,
+    "attack": 1,
+    "health": 7,
+    "rarity": "4Legendary",
+    "text": "Guard Summon: Set the health of each enemy creature in this lane to 1.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uC",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "setStats",
+        "modHealth": 1,
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "ayrenns-chosen",
+    "name": "Ayrenn's Chosen",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B",
+      "Y",
+      "G"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Summon a random 1/1 Recruit in each lane and give them Guard. Empower: +1/+1.",
+    "keywords": [
+      "Empower"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "tb",
+    "class": "Aldmeri Dominion",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRecruits",
+        "race": "High Elf",
+        "lanes": "each",
+        "amount": 1,
+        "addKeywords": [
+          "Guard"
+        ],
+        "empowerAttack": 1,
+        "empowerHealth": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "ayrenn-dominion-queen",
+    "name": "Ayrenn, Dominion Queen",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B",
+      "Y",
+      "G"
+    ],
+    "cost": 8,
+    "attack": 6,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Drain Summon: Draw a random action from your discard pile. When you draw an action on your turn, deal 1 damage to your opponent.",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sx",
+    "unique": true,
+    "class": "Aldmeri Dominion",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawDiscard",
+        "subtypes": [
+          "Action"
+        ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "DrawCard",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent",
+        "condition": {
+          "type": "drewTypeOnOwnTurn",
+          "subtypes": [
+            "Action"
+          ]
+        }
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "dominion-battlereeve",
+    "name": "Dominion Battlereeve",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B",
+      "Y",
+      "G"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Drain Summon, Last Gasp, and Slay: Deal 1 damage to your opponent.",
+    "keywords": [
+      "Drain",
+      "LastGasp",
+      "Slay"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sy",
+    "class": "Aldmeri Dominion",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      },
+      {
+        "trigger": "Slay",
+        "type": "damage",
+        "amount": 1,
+        "target": "opponent"
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "covenant-masterpiece",
+    "name": "Covenant Masterpiece",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R",
+      "B",
+      "P"
+    ],
+    "cost": 7,
+    "attack": 3,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Mobilize, Breakthrough, Regenerate, Guard, Ward +3/+3",
+    "keywords": [
+      "Mobilize",
+      "Breakthrough",
+      "Regenerate",
+      "Guard",
+      "Ward"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sM",
+    "class": "Daggerfall Covenant",
+    "recruitRace": "Redguard",
+    "tier": "A"
+  },
+  {
+    "id": "daggerfall-phantom",
+    "name": "Daggerfall Phantom",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "R",
+      "B",
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Last Gasp: Return all items equipped to Daggerfall Phantom to your hand.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "ul",
+    "class": "Daggerfall Covenant",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "returnEquippedItems",
+        "target": "self"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "emeric-covenant-king",
+    "name": "Emeric, Covenant King",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "R",
+      "B",
+      "P"
+    ],
+    "cost": 9,
+    "attack": 7,
+    "health": 7,
+    "rarity": "4Legendary",
+    "text": "Summon: Battle an enemy creature. At the end of your turn, Emeric gains a Ward.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sZ",
+    "unique": true,
+    "class": "Daggerfall Covenant",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemyToBattle"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Ward"
+        ]
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "forerunner-of-the-pact",
+    "name": "Forerunner of the Pact",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "R",
+      "G",
+      "P"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Veteran: Draw a Forerunner of the Pact from your deck.",
+    "keywords": [
+      "Veteran"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "sX",
+    "class": "Ebonheart Pact",
+    "effects": [
+      {
+        "trigger": "Veteran",
+        "type": "drawCopyFromDeck",
+        "cardId": "forerunner-of-the-pact",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "jorunn-the-skald-king",
+    "name": "Jorunn the Skald-King",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R",
+      "G",
+      "P"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Immune to Silence. Friendly creatures cost 1 less. Enemy non-creatures cost 1 more.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tw",
+    "unique": true,
+    "class": "Ebonheart Pact",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -1,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "hasType",
+          "subtypes": [
+            "Creature"
+          ]
+        }
+      },
+      {
+        "trigger": "Passive",
+        "type": "enemyCardTax",
+        "amount": 1,
+        "targetCondition": {
+          "type": "hasType",
+          "subtypes": [
+            "Action",
+            "Item",
+            "Support"
+          ]
+        }
+      }
+    ],
+    "immunity": [
+      "Silence"
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "mournhold-taskmaster",
+    "name": "Mournhold Taskmaster",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "R",
+      "G",
+      "P"
+    ],
+    "cost": 4,
+    "attack": 5,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Friendly creatures with Veteran have Charge.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tG",
+    "class": "Ebonheart Pact",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Charge"
+        ],
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasKeyword",
+          "keyword": "Veteran"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "clivia-tharn",
+    "name": "Clivia Tharn",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y",
+      "G",
+      "P"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "Other friendly creatures in this lane have Guard. At the end of your turn, summon a 1/1 Recruit in each lane.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sI",
+    "unique": true,
+    "class": "The Empire of Cyrodiil",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "creatureFriendlyOtherThisLaneAll"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "summonRecruits",
+        "race": "Imperial",
+        "lanes": "each",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "empire-recruiter",
+    "name": "Empire Recruiter",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y",
+      "G",
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Pilfer: Summon a 1/1 Recruit in the other lane.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "ts",
+    "class": "The Empire of Cyrodiil",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "summonRecruits",
+        "race": "Imperial",
+        "lanes": "other",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "transitus-shrine",
+    "name": "Transitus Shrine",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y",
+      "G",
+      "P"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "While you have a creature in each lane, your creatures and actions cost 1 less.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uu",
+    "uses": "Ongoing",
+    "class": "The Empire of Cyrodiil",
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "handDiscountWhile",
+        "amount": -1,
+        "targetCondition": {
+          "type": "hasType",
+          "subtypes": [
+            "Creature",
+            "Action"
+          ]
+        },
+        "condition": {
+          "type": "creatureInEachLaneAny"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "guildsworn-apprentice",
+    "name": "Guildsworn Apprentice",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "R",
+      "B",
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Prophecy, Guard Summon: Draw a card.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "ti",
+    "prophecy": true,
+    "class": "The Guildsworn",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "master-of-incunabula",
+    "name": "Master of Incunabula",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "R",
+      "B",
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "Master of Incunabula has the Expertise abilities of all your creatures.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "uD",
+    "class": "The Guildsworn",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "masterExpertise",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "vanus-galerion",
+    "name": "Vanus Galerion",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "R",
+      "B",
+      "Y"
+    ],
+    "cost": 11,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Expertise: Deal 3 damage, you gain 3 health, and draw 3 cards.",
+    "keywords": [
+      "Expertise"
+    ],
+    "set": "Alliance War",
+    "deckCodeId": "uw",
+    "unique": true,
+    "class": "The Guildsworn",
+    "effects": [
+      {
+        "trigger": "Expertise",
+        "type": "damage",
+        "amount": 3,
+        "target": "damageTargetEnemyFirst"
+      },
+      {
+        "trigger": "Expertise",
+        "type": "damage",
+        "amount": -3,
+        "target": "player"
+      },
+      {
+        "trigger": "Expertise",
+        "type": "drawCards",
+        "amount": 3,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "battle-of-chalman-keep",
+    "name": "Battle of Chalman Keep",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Each player fills each lane with 1/1 Recruits. Give all creatures Guard.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "sB",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRecruits",
+        "lanes": "fill",
+        "bothPlayers": true,
+        "target": "player"
+      },
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "creatureAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "enlistment-officer",
+    "name": "Enlistment Officer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: Give friendly Recruits +1/+1.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "tc",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "hasName",
+          "names": [
+            "recruit"
+          ]
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "soulburst",
+    "name": "Soulburst",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 13,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Costs 1 less for each Unique creature in your discard pile. Banish a creature. Deal 3 damage to all enemies.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ui",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "costPerUniqueDiscard",
+        "amount": -1
+      },
+      {
+        "trigger": "Play",
+        "type": "banish",
+        "target": "creatureEnemyFirst"
+      },
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 3,
+        "target": "enemyAll"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "the-ruby-throne",
+    "name": "The Ruby Throne",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Summon: Crown a creature. At the end of each player's turn, give crowned creatures +1/+1. If there is no crowned creature in play, when either player summons a Unique creature, crown it.",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": "ut",
+    "unique": true,
+    "uses": "Ongoing",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "crownCreature",
+        "target": "creatureFriendlyFirst"
+      },
+      {
+        "trigger": "EndOfEachTurn",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "crownedCreatures"
+      },
+      {
+        "trigger": "SummonCreature",
+        "type": "crownCreature",
+        "target": "summon",
+        "condition": {
+          "type": "noCrownedCreature"
+        },
+        "targetCondition": {
+          "type": "isUnique"
+        }
+      },
+      {
+        "trigger": "SummonCreatureEnemy",
+        "type": "crownCreature",
+        "target": "summon",
+        "condition": {
+          "type": "noCrownedCreature"
+        },
+        "targetCondition": {
+          "type": "isUnique"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "orsinium-plate",
+    "name": "Orsinium Plate",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "4Legendary",
+    "text": "+1/+1",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": null,
+    "created": true
+  },
+  {
+    "id": "recruit",
+    "name": "Recruit",
+    "type": "Creature",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Alliance War",
+    "deckCodeId": null,
+    "created": true
+  }
+]

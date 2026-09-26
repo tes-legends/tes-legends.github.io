@@ -107,33 +107,42 @@
 		]
 	},
   {
-		"id": "hunter-killers",
-		"name": "Hunter-Killers",
-		"type": "Creature",
-		"subtypes": [ "Fabricant"],
-		"attributes": [ "R" ],
-		"cost": 6,
-		"attack": 3,
-		"health": 4,
-		"rarity": "3Epic",
-		"text": "Summon: Battle an enemy creature, then Battle another enemy creature.",
-		"keywords": [],
-		"set": "Clockwork City",
+    "id": "hunter-killers",
+    "name": "Hunter-Killers",
+    "type": "Creature",
+    "subtypes": [
+      "Fabricant"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Battle an enemy creature, then Battle another enemy creature.",
+    "keywords": [],
+    "set": "Clockwork City",
     "tier": "C",
-		"deckCodeId": "iw",
-		"effects": [
-			{
+    "deckCodeId": "iw",
+    "effects": [
+      {
         "trigger": "Summon",
         "type": "battle",
         "target": "creatureEnemy"
       },
       {
         "trigger": "Summon",
-        "type": "battle",
-        "target": "creatureEnemyRandom"
+        "type": "separateTarget",
+        "excludeFirst": true,
+        "inner": {
+          "trigger": "Summon",
+          "type": "battle",
+          "target": "creatureEnemyExcept"
+        }
       }
-		]
-	},
+    ]
+  },
   {
 		"id": "arcanaeum-librarian",
 		"name": "Arcanaeum Librarian",
@@ -161,30 +170,36 @@
 		]
 	},
   {
-		"id": "excavate",
-		"name": "Excavate",
-		"type": "Action",
-		"subtypes": [],
-		"attributes": [ "B" ],
-		"cost": 3,
-		"attack": null,
-		"health": null,
-		"rarity": "2Rare",
-		"text": "Draw an item or support from your discard pile.",
-		"keywords": [],
-		"set": "Clockwork City",
+    "id": "excavate",
+    "name": "Excavate",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Draw an item or support from your discard pile.",
+    "keywords": [],
+    "set": "Clockwork City",
     "tier": "E",
-		"deckCodeId": "fV",
-		"effects": [
-			{
+    "deckCodeId": "fV",
+    "effects": [
+      {
         "trigger": "Play",
         "type": "drawDiscard",
-        "subtypes": [ "Item", "Support" ],
+        "subtypes": [
+          "Item",
+          "Support"
+        ],
         "amount": 1,
-        "target": "player"
-			}
-		]
-	},
+        "target": "player",
+        "choose": true
+      }
+    ]
+  },
   {
 		"id": "laaneth",
 		"name": "Laaneth",
@@ -656,29 +671,35 @@
 		]
 	},
   {
-		"id": "sails-through-storms",
-		"name": "Sails-Through-Storms",
-		"type": "Creature",
-		"subtypes": [ "Argonian"],
-		"attributes": [ "G" ],
-		"cost": 6,
-		"attack": 5,
-		"health": 5,
-		"rarity": "4Legendary",
-		"text": "Pilfer: Summon the top creature of your deck.",
-		"keywords": ["Pilfer"],
-		"set": "Clockwork City",
+    "id": "sails-through-storms",
+    "name": "Sails-Through-Storms",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Pilfer: Summon the top creature of your deck.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Clockwork City",
     "tier": "A",
-		"deckCodeId": "nv",
+    "deckCodeId": "nv",
     "unique": true,
-		"effects": [
-			{
+    "effects": [
+      {
         "trigger": "Pilfer",
         "type": "summonTopDeck",
-        "target": "randomLane"
-			}
-		]
-	},
+        "target": "thisLaneOrOther"
+      }
+    ]
+  },
   {
 		"id": "barrow-stalker",
 		"name": "Barrow Stalker",
@@ -1366,14 +1387,20 @@
     "id": "gearwork-spider",
     "name": "Gearwork Spider",
     "type": "Creature",
-    "subtypes": ["Dwemer"],
-    "attributes": ["N"],
+    "subtypes": [
+      "Dwemer"
+    ],
+    "attributes": [
+      "N"
+    ],
     "cost": 1,
     "attack": 1,
     "health": 1,
     "rarity": "1Common",
     "text": "Prophecy, Guard Summon: Summon all Gearwork Spiders in your discard pile.",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Clockwork City",
     "tier": "U",
     "prophecy": true,
@@ -1383,9 +1410,9 @@
         "trigger": "Summon",
         "type": "summonDiscard",
         "cardId": "gearwork-spider",
-        "amount": 1,
-        "target": "randomLane"
-       }
+        "target": "thisLaneOrOther",
+        "all": true
+      }
     ]
   },
   {
@@ -1523,32 +1550,54 @@
 		]
 	},
   {
-		"id": "aldora-the-daring",
-		"name": "Aldora the Daring",
-		"type": "Creature",
-		"subtypes": ["Nord"],
-		"attributes": [ "R" ],
-		"cost": 3,
-		"attack": 3,
-		"health": 3,
-		"rarity": "4Legendary",
-		"text": "Treasure Hunt – Action, Creature, Item, Support: +6/+6 When a friendly treasure hunter finds something, summon Skywag or give Skywag +1/+1.",
-		"keywords": ["TreasureHunt"],
-		"set": "Clockwork City",
+    "id": "aldora-the-daring",
+    "name": "Aldora the Daring",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Treasure Hunt – Action, Creature, Item, Support: +6/+6 When a friendly treasure hunter finds something, summon Skywag or give Skywag +1/+1.",
+    "keywords": [
+      "TreasureHunt"
+    ],
+    "set": "Clockwork City",
     "tier": "U",
-		"deckCodeId": "an",
+    "deckCodeId": "an",
     "unique": true,
     "treasureHunt": {
       "requirements": [
-        { "type": "Action", "required": 1, "found": 0 },
-        { "type": "Creature", "required": 1, "found": 0 },
-        { "type": "Item", "required": 1, "found": 0 },
-        { "type": "Support", "required": 1, "found": 0 }
+        {
+          "type": "Action",
+          "required": 1,
+          "found": 0
+        },
+        {
+          "type": "Creature",
+          "required": 1,
+          "found": 0
+        },
+        {
+          "type": "Item",
+          "required": 1,
+          "found": 0
+        },
+        {
+          "type": "Support",
+          "required": 1,
+          "found": 0
+        }
       ],
       "completed": false
     },
-		"effects": [
-			{
+    "effects": [
+      {
         "trigger": "FriendlyTreasure",
         "type": "buffTarget",
         "modAttack": 1,
@@ -1556,24 +1605,26 @@
         "target": "creatureFriendlyAll",
         "targetCondition": {
           "type": "hasName",
-          "names": ["skywag"]
+          "names": [
+            "skywag"
+          ]
         }
-			},
+      },
       {
         "trigger": "FriendlyTreasure",
         "type": "summonUnique",
         "cardId": "skywag",
         "amount": 1,
-        "target": "randomLane"
-			},
+        "target": "thisLaneOrOther"
+      },
       {
         "trigger": "TreasureHunt",
         "type": "buffSelf",
         "modAttack": 6,
         "modHealth": 6
       }
-		]
-	},
+    ]
+  },
   {
 		"id": "skywag",
 		"name": "Skywag",

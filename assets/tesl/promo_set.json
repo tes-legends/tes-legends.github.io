@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "yokudan-nightblade",
+    "name": "Yokudan Nightblade",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Friendly equipped creatures are Immune to Silence.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "zD",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "grantImmunity",
+        "immunity": "Silence",
+        "target": "creatureFriendlyAll",
+        "targetCondition": {
+          "type": "collectionsIsEquipped"
+        }
+      },
+      {
+        "trigger": "EquipFriendly",
+        "type": "collectionsRefreshAuras",
+        "target": "self"
+      },
+      {
+        "trigger": "EquipItem",
+        "type": "collectionsRefreshAuras",
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "giants-camp",
+    "name": "Giant's Camp",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "At the start of your turn, set each friendly creature's power equal to the power of your most powerful creature.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yU",
+    "uses": "Ongoing",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "collectionsSetPowerToHighest",
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "yagrums-workshop",
+    "name": "Yagrum's Workshop",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Activate: Your Neutral Summon and Assemble abilities trigger an additional time this turn.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yM",
+    "uses": 3,
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "collectionsNeutralSummonRepeat",
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "U"
+  },
+  {
+    "id": "dark-mane",
+    "name": "Dark Mane",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "Y",
+      "G"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "When you summon a creature in this lane, if it's full, Dark Mane moves. When Dark Mane moves, it gains +2/+0 and Drain this turn.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yY",
+    "class": "Monk",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "move",
+        "target": "self",
+        "condition": {
+          "type": "collectionsSummonedInFullLane"
+        }
+      },
+      {
+        "trigger": "Move",
+        "type": "buffSelf",
+        "tempAttack": 2,
+        "tempKeywords": [
+          "Drain"
+        ]
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "B"
+  },
+  {
+    "id": "skooma-cats-whimsy",
+    "name": "Skooma Cat's Whimsy",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Your cards that didn't start in your deck cost 1 less.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yN",
+    "uses": "Ongoing",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -1,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "collectionsNotStartingDeck"
+        }
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "U"
+  },
+  {
+    "id": "monster-perfection-lab",
+    "name": "Monster Perfection Lab",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R",
+      "B"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "At the end of your turn, you may choose a friendly creature wielding three or more items. If you do, sacrifice Monster Perfection Lab and choose an item from your deck to equip to the creature.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yQ",
+    "uses": "Ongoing",
+    "class": "Battlemage",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "collectionsMonsterLab",
+        "min": 3,
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "U"
+  },
+  {
+    "id": "dragonfire-wizard",
+    "name": "Dragonfire Wizard",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "B",
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "At the end of your turn, add a flame to Dragonfire Wizard. Last Gasp: Put a Flame Lash into your hand that deals damage and gains health equal to the number of flames on Dagonfire Wizard.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "yR",
+    "class": "Mage",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "addCounter",
+        "target": "self"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "collectionsAddFlameLash",
+        "cardId": "flame-lash",
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "B"
+  },
+  {
+    "id": "priest-of-mara",
+    "name": "Priest of Mara",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Summon: Equip an Amulet of Mara to an enemy creature and another friendly creature without Guard.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yL",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "equip",
+        "cardId": "amulet-of-mara",
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "Summon",
+        "type": "collectionsEquipCreatedFriendlyNoGuard",
+        "cardId": "amulet-of-mara"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "duneripper",
+    "name": "Duneripper",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "R",
+      "G"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "When Duneripper enters a lane, it deals 2 damage to an enemy creature in the lane. Pilfer: Move.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "yK",
+    "class": "Archer",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 2,
+        "target": "creatureEnemyThisLane"
+      },
+      {
+        "trigger": "Move",
+        "type": "collectionsDamageEnemyInLane",
+        "amount": 2
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "move",
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "B"
+  },
+  {
+    "id": "supreme-dragon",
+    "name": "Supreme Dragon",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "R",
+      "Y"
+    ],
+    "cost": 6,
+    "attack": 7,
+    "health": 7,
+    "rarity": "3Epic",
+    "text": "At the start of each turn, for each enemy creature in this lane with power greater than 3, set its power to 3.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yO",
+    "class": "Crusader",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "StartOfEachTurn",
+        "type": "setStats",
+        "modAttack": 3,
+        "target": "creatureEnemyThisLaneAll",
+        "targetCondition": {
+          "type": "hasAttack",
+          "min": 4
+        }
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "A"
+  },
+  {
+    "id": "skyshard",
+    "name": "Skyshard",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Summon: Draw a random creature from your deck. When you draw a creature on your turn, increase its cost by 2 and give it +2/+2.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yT",
+    "uses": "Ongoing",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawFiltered",
+        "subtypes": [
+          "Creature"
+        ],
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "DrawCard",
+        "type": "modCost",
+        "amount": 2,
+        "target": "drawnCard",
+        "condition": {
+          "type": "collectionsDrewCreatureOnOwnTurn"
+        }
+      },
+      {
+        "trigger": "DrawCard",
+        "type": "buffTarget",
+        "modAttack": 2,
+        "modHealth": 2,
+        "target": "drawnCard",
+        "condition": {
+          "type": "collectionsDrewCreatureOnOwnTurn"
+        }
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "headless-zombie",
+    "name": "Headless Zombie",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "B",
+      "P"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Consume a card. Last Gasp: Draw a copy of the consumed card.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "yP",
+    "class": "Sorcerer",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsConsumeAnyCard"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "collectionsDrawConsumedCopy",
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "ayleid-guardian",
+    "name": "Ayleid Guardian",
+    "type": "Creature",
+    "subtypes": [
+      "Defense"
+    ],
+    "attributes": [
+      "G",
+      "P"
+    ],
+    "cost": 11,
+    "attack": 8,
+    "health": 8,
+    "rarity": "3Epic",
+    "text": "Guard Immune to Lethal. Summon: Summon an Ayleid Guardian in the other lane.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "yW",
+    "class": "Scout",
+    "promoSource": "Monthly Card",
+    "immunity": [
+      "LethalDamage"
+    ],
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsSummonSelfOtherLane",
+        "cardId": "ayleid-guardian"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "B"
+  },
+  {
+    "id": "rimmen-purveyor",
+    "name": "Rimmen Purveyor",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Summon: Consume a creature. Reduce the cost of each creature in your deck that shares a type with that creature by 1.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yS",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "collectionsReduceDeckSharedType",
+            "amount": -1
+          }
+        ]
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "C"
+  },
+  {
+    "id": "champion-of-the-arena",
+    "name": "Champion of the Arena",
+    "type": "Creature",
+    "subtypes": [
+      "Orc",
+      "Vampire"
+    ],
+    "attributes": [
+      "R",
+      "P"
+    ],
+    "cost": 7,
+    "attack": 4,
+    "health": 8,
+    "rarity": "3Epic",
+    "text": "Breakthrough Summon: Battle an enemy creature.",
+    "keywords": [
+      "Breakthrough"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "yJ",
+    "class": "Warrior",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemy"
+      }
+    ],
+    "releaseGroup": "oblivion",
+    "tier": "B"
+  },
+  {
+    "id": "prankster-mage",
+    "name": "Prankster Mage",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "B",
+      "G"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Ward While Prankster Mage has a Ward, he has Guard. When Prankster Mage's Ward is broken, he gains Cover.",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "xd",
+    "class": "Assassin",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "WardBroken",
+        "type": "collectionsPranksterCover",
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "elsweyr",
+    "tier": "A",
+    "static": {
+      "condition": {
+        "type": "collectionsHasWard"
+      },
+      "addKeywords": [
+        "Guard"
+      ]
+    }
+  },
+  {
+    "id": "old-saltys-assault",
+    "name": "Old Salty's Assault",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Summon one of each Mudcrab from your deck.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "xe",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsSummonEachSubtypeFromDeck",
+        "subtypes": [
+          "Mudcrab"
+        ],
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "elsweyr",
+    "tier": "U"
+  },
+  {
+    "id": "sentinel-reclaimer",
+    "name": "Sentinel Reclaimer",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Summon: Put a Steel Dagger and Steel Sword into your hand.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "xc",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "steel-dagger",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "steel-sword",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "elsweyr",
+    "tier": "A"
+  },
+  {
+    "id": "apprentice-necromancer",
+    "name": "Apprentice Necromancer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y",
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Summon: Summon a 1-cost creature from your discard pile.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "xb",
+    "class": "Spellsword",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsSummonDiscardByCost",
+        "cost": 1
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "B"
+  },
+  {
+    "id": "hulking-mummy",
+    "name": "Hulking Mummy",
+    "type": "Creature",
+    "subtypes": [
+      "Mummy"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 6,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "Summon: Shackle Hulking Mummy.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "vA",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "shackle",
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "C"
+  },
+  {
+    "id": "seasoned-captain",
+    "name": "Seasoned Captain",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Rally When you Rally, also give a random item in your hand +1/+1.",
+    "keywords": [
+      "Rally"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "uH",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "FriendlyRally",
+        "type": "collectionsBuffRandomHandItem",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "FailRally",
+        "type": "collectionsBuffRandomHandItem",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "C"
+  },
+  {
+    "id": "murkwater-scourge",
+    "name": "Murkwater Scourge",
+    "type": "Creature",
+    "subtypes": [
+      "Goblin"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Summon and Last Gasp: Put a Curse into your hand.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Promotional Set",
+    "deckCodeId": "sp",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "addToHand",
+        "cardId": "curse",
+        "amount": 1,
+        "target": "player"
+      },
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "cardId": "curse",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "B"
+  },
+  {
+    "id": "training-grounds",
+    "name": "Training Grounds",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "When you summon a creature, give it +1/+1 if it shares a type with the top creature in your deck.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "so",
+    "uses": "Ongoing",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "summon",
+        "condition": {
+          "type": "collectionsSummonSharesTopCreatureType"
+        }
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "U"
+  },
+  {
+    "id": "renegade-magister",
+    "name": "Renegade Magister",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "After a friendly action damages an enemy creature, Renegade Magister deals that much damage to that creature.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "sn",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "FriendlyActionDamage",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "damageJustTaken",
+        "target": "creatureDamaged"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "C"
+  },
+  {
+    "id": "frenzied-alit",
+    "name": "Frenzied Alit",
+    "type": "Creature",
+    "subtypes": [
+      "Reptile"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "When Frenzied Alit takes damage, it gains +1/+0.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "iT",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "buffSelf",
+        "modAttack": 1
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "B"
+  },
+  {
+    "id": "prophet-of-bones",
+    "name": "Prophet of Bones",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Exalt 5: Fill this lane with 1/1 Risen Dead with Guard.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "ms",
+    "promoSource": "Monthly Card",
+    "exalted": false,
+    "exaltCost": 5,
+    "effects": [
+      {
+        "trigger": "Exalt",
+        "type": "summon",
+        "cardId": "risen-dead",
+        "amount": 4,
+        "target": "thisLane"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "D"
+  },
+  {
+    "id": "conjurers-spirit",
+    "name": "Conjurer's Spirit",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "At the end of your turn, if you gained health, summon a 2/2 Familiar.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "dx",
+    "uses": "Ongoing",
+    "promoSource": "Monthly Card",
+    "effects": [
+      {
+        "trigger": "HealPlayer",
+        "type": "collectionsNoteHealthGained",
+        "target": "self"
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "summon",
+        "cardId": "familiar",
+        "amount": 1,
+        "target": "randomLane",
+        "condition": {
+          "type": "collectionsGainedHealthThisTurn"
+        }
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "D"
+  },
+  {
+    "id": "amulet-of-mara",
+    "name": "Amulet of Mara",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 0,
+    "attack": 0,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "+0/+1 The wielder can't attack other creatures equipped with an Amulet of Mara.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": null,
+    "created": true,
+    "promoSource": "Monthly Card",
+    "releaseGroup": "oblivion",
+    "collectionsNoAttackSameItem": true
+  },
+  {
+    "id": "familiar",
+    "name": "Familiar",
+    "type": "Creature",
+    "subtypes": [
+      "Wolf",
+      "Spirit"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": null,
+    "created": true,
+    "promoSource": "Monthly Card",
+    "releaseGroup": "allianceWar"
+  },
+  {
+    "id": "flame-lash",
+    "name": "Flame Lash",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B",
+      "Y"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Deal 0 damage and gain 0 health.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": null,
+    "created": true,
+    "class": "Mage",
+    "promoSource": "Monthly Card",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 0,
+        "target": "any"
+      },
+      {
+        "trigger": "Play",
+        "type": "collectionsGainHealthScaled",
+        "amount": 0,
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "oblivion"
+  },
+  {
+    "id": "horse-armor",
+    "name": "Horse Armor",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": 0,
+    "health": 1,
+    "rarity": "4Legendary",
+    "text": "+0/+1 Summon: The wielder becomes premium.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "yV",
+    "promoSource": "Exclusive",
+    "releaseGroup": "oblivion",
+    "tier": "U",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsMakeWielderPremium",
+        "target": "self"
+      }
+    ]
+  },
+  {
+    "id": "cheesemancer",
+    "name": "Cheesemancer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "At the start of the game, Cheesemancer gains the ability of a random creature from Isle of Madness.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "cY",
+    "promoSource": "Festival of Madness",
+    "effects": [
+      {
+        "trigger": "StartOfGame",
+        "type": "collectionsGainRandomAbility",
+        "abilityFrom": [
+          "cyriel",
+          "crucible-blacksmith",
+          "trouble-seeker",
+          "hulking-scalon",
+          "the-gatekeeper"
+        ],
+        "target": "self"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "U"
+  },
+  {
+    "id": "madness-beckons",
+    "name": "Madness Beckons",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Put a random Isle of Madness card into your hand.",
+    "keywords": [],
+    "set": "Promotional Set",
+    "deckCodeId": "jZ",
+    "promoSource": "Festival of Madness",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsAddRandomFromSet",
+        "fromSet": "Isle of Madness",
+        "target": "player"
+      }
+    ],
+    "releaseGroup": "allianceWar",
+    "tier": "U"
+  }
+]

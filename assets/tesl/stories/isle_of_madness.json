@@ -1,0 +1,6625 @@
+{
+ "id": "isle_of_madness",
+ "name": "Isle of Madness",
+ "folder": "isle_of_madness",
+ "requires": {
+  "group": "allianceWar"
+ },
+ "rewardSets": [
+  "Isle of Madness"
+ ],
+ "episodes": [
+  {
+   "id": "ep1",
+   "name": "The Shivering Isles",
+   "map": "LG-menu-The Shivering Isles.jpg",
+   "nodes": [
+    "the-fringe",
+    "garden-of-swords",
+    "gates-of-madness",
+    "new-sheoth-palace",
+    "no-rat-camp",
+    "notehollow",
+    "a-man-divided",
+    "the-other-half",
+    "the-bargain"
+   ]
+  },
+  {
+   "id": "ep2",
+   "name": "A Haunted Man",
+   "map": "LG-menu-A Haunted Man.jpg",
+   "nodes": [
+    "episode-2-intro",
+    "fortress-catacombs",
+    "trophy-room",
+    "fortress-ramparts",
+    "fortress-hallway",
+    "necrom-graveyard",
+    "fortress-personal-chambers",
+    "the-haunted-man"
+   ]
+  },
+  {
+   "id": "ep3",
+   "name": "The Baron",
+   "map": "LG-menu-The Baron.jpg",
+   "nodes": [
+    "episode-3-intro",
+    "barons-palace",
+    "kwama-mine",
+    "meliels-farm",
+    "mushroom-tower",
+    "return-to-baron-navir",
+    "meliels-garrison",
+    "the-baron"
+   ]
+  },
+  {
+   "id": "ep4",
+   "name": "The Betrayal",
+   "map": "LG-menu-The Betrayal.jpg",
+   "nodes": [
+    "episode-4-intro",
+    "druadach-pass",
+    "bthardamz",
+    "bthardamz-dungeon",
+    "grove-of-mara",
+    "bthardamz-secret-passage",
+    "the-betrayal"
+   ]
+  },
+  {
+   "id": "ep5",
+   "name": "The Descent",
+   "map": "LG-menu-The Descent.jpg",
+   "nodes": [
+    "the-return",
+    "episode-5-intro",
+    "new-sheoth-palace-the-descent",
+    "flooded-camp",
+    "darkened-grove",
+    "circus-of-cheerful-slaughter",
+    "the-trance",
+    "knifepoint-hollow",
+    "the-warrior"
+   ]
+  },
+  {
+   "id": "ep6",
+   "name": "Memories",
+   "map": "LG-menu-Memories.jpg",
+   "nodes": [
+    "obelisk-of-order",
+    "the-final-battle",
+    "imperial-training",
+    "the-final-battle-pt-2",
+    "worm-cult-initiation",
+    "the-final-battle-pt-3",
+    "the-tragedy",
+    "the-final-battle-pt-4",
+    "a-reckoning"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "id": "the-fringe",
+   "name": "The Fringe",
+   "uesp": "The Fringe",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Hear a desperate father's tale.",
+   "gallery": [
+    {
+     "file": "LG-quest-The Fringe 01.jpg"
+    },
+    {
+     "file": "LG-quest-The_Fringe_02.jpg"
+    },
+    {
+     "file": "LG-quest-The Fringe 03.jpg"
+    },
+    {
+     "file": "LG-quest-The Fringe 04.jpg"
+    },
+    {
+     "file": "LG-quest-The Fringe 05.jpg"
+    }
+   ],
+   "video": {
+    "start": "iom_prologue"
+   },
+   "intro": [
+    {
+     "speaker": "Nagh",
+     "text": "Apologies, Kellen. Nagh was sure he saw water this way."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "(sigh) Not to worry. We should have enough to last until we reach the city."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "A long ride, that promises to be. Nagh would have a story to forget the heat."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But of course. Indeed, you have just reminded me of one. I saw it not in the scrolls, but in a journal, many years ago. I shall try my best to recall it in the writer's own words."
+    },
+    {
+     "speaker": "Talym",
+     "text": "My name is Talym Rend. This is my confession... and my warning."
+    },
+    {
+     "speaker": "Talym",
+     "text": "Once I was one of the Empire's most cunning spies."
+    },
+    {
+     "speaker": "Talym",
+     "text": "But I left that life behind when my son, Novos, was stricken with a terrible madness. I sought help from the Temple, from outlander healers, and even Ashland mystics. None could help him."
+    },
+    {
+     "speaker": "Talym",
+     "text": "So I set out to make a bargain."
+    },
+    {
+     "speaker": "Talym",
+     "text": "In Morrowind it is death to commune with Sheogorath, the Daedric Prince of madness. They say he is a corner of the House of Troubles. But to save my boy, I would commune with any devil you could name."
+    },
+    {
+     "speaker": "Talym",
+     "text": "And so it was that I sought the fabled land of madness - - a place they call the Shivering Isles. And, gods help me, I found it."
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "A stranger! What brings you to the Fringe?",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I'm looking for Sheogorath.",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Ooh, that's not a good idea. See, you'd have to get to New Sheoth Palace, which is on the other side of the gate, which is guarded by the Gatekeeper, who you'd have to be a madman to try to fight.",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_BosmerFEMALE_CYRIEL_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Perhaps I am a madman.",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Ha ha, lot of those around here. If you're determined to try, check the Garden of Swords. Maybe there's a weapon there that can fight that thing. Right over there.",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_BosmerFEMALE_CYRIEL_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I think I see it.",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Welp, gotta run! Been real nice talking to you, don't follow me!",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_BosmerFEMALE_CYRIEL_004"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Thanks for your - - hey, where's my purse?!",
+     "audio": "IOM_UIDialogue_Episode1_Episode1IntroModal_DunmerMALE_TALYM_004"
+    }
+   ]
+  },
+  {
+   "id": "garden-of-swords",
+   "name": "Garden of Swords",
+   "uesp": "Garden of Swords",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Challenge the Gardener.",
+   "optional": true,
+   "requires": [
+    "the-fringe"
+   ],
+   "image": "LG-loc-Garden of Swords.png",
+   "hints": [
+    "Slay the Gardener's items to equip them",
+    "Slay your opponent's Animated Items to empower your creatures."
+   ],
+   "intro": [
+    {
+     "speaker": "Gardener",
+     "text": "Away you! This is my garden, you hear me? Mine!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_GardenofSwords_RedguardMALE_GARDENER_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Gardener",
+     "text": "Stop it, stop it! You're wrecking the garden!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_GardenofSwords_RedguardMALE_GARDENER_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I need a weapon that can kill the Gatekeeper. Give it to me, and I'll leave."
+    },
+    {
+     "speaker": "Gardener",
+     "text": "It pains me to harvest it but... here. I used the body of the last Gatekeeper to fertilize the ground where this axe grew. Now get out of here! And stay on the path!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_GardenofSwords_RedguardMALE_GARDENER_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Gardener of Swords",
+    "avatar": "LG-npc-Gardener of Swords.png",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal:\nAi starts with a Legion Shield (creature) in left lane.\nAi starts with a Steel Scimitar (creature) in right lane.\nPlayer starts with a Weeding the Garden on board.\nMaster:\nAi starts with a Gateslayer Axe (creature), a Legion Shield (creature) in left lane.\nAi starts with an Orcish Warhammer (creature) in right lane.\nPlayer starts with a Weeding the Garden on board.",
+    "normal": {
+     "deck": [
+      "steel-scimitar",
+      "steel-scimitar",
+      "steel-scimitar",
+      "steel-scimitar",
+      "legion-shield",
+      "legion-shield",
+      "legion-shield",
+      "legion-shield",
+      "burning-touch",
+      "burning-touch",
+      "burning-touch",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "lightning-bolt",
+      "lightning-bolt",
+      "lightning-bolt",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "piercing-javelin",
+      "piercing-javelin",
+      "dwarven-armaments",
+      "dwarven-armaments",
+      "dwarven-armaments",
+      "dwarven-armaments"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "legion-shield"
+      ],
+      [
+       "steel-scimitar"
+      ]
+     ],
+     "playerSupport": [
+      "weeding-the-garden"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "gardenAnimatedItems",
+       "text": "Slay your opponent's Animated Items to empower your creatures."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "steel-scimitar",
+      "steel-scimitar",
+      "steel-scimitar",
+      "steel-scimitar",
+      "legion-shield",
+      "legion-shield",
+      "legion-shield",
+      "legion-shield",
+      "burning-touch",
+      "burning-touch",
+      "burning-touch",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "lightning-bolt",
+      "lightning-bolt",
+      "lightning-bolt",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "orcish-warhammer",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "piercing-javelin",
+      "piercing-javelin",
+      "dwarven-armaments",
+      "dwarven-armaments",
+      "dwarven-armaments",
+      "dwarven-armaments"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "gateslayer-axe",
+       "legion-shield"
+      ],
+      [
+       "orcish-warhammer"
+      ]
+     ],
+     "playerSupport": [
+      "weeding-the-garden"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "gardenAnimatedItems",
+       "text": "Slay your opponent's Animated Items to empower your creatures."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "gates-of-madness",
+   "name": "Gates of Madness",
+   "uesp": "Gates of Madness (quest)",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Challenge the Gatekeeper.",
+   "requires": [
+    "the-fringe"
+   ],
+   "image": "LG-loc-Gates of Madness.png",
+   "intro": [
+    {
+     "speaker": "Gatekeeper",
+     "text": "(Challenging roar of the Gatekeeper.)",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_GatesofMadness_FleshAtronachMALE_GATEKEEPER_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "That thing looks tough. Not sure I'm prepared for this fight, but here goes nothing...",
+     "if": {
+      "notDone": "garden-of-swords"
+     }
+    },
+    {
+     "speaker": "Talym",
+     "text": "That thing's huge! Hope the Gardener was right about this axe.",
+     "if": {
+      "done": "garden-of-swords"
+     }
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Cyriel",
+     "text": "You killed it! Fantastic! I've always wanted to see the other side of the gates! Good luck, pal. See you around!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_GatesofMadness_BosmerFEMALE_CYRIEL_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Gatekeeper",
+    "avatar": "LG-npc-Gatekeeper.png",
+    "attributes": [
+     "B",
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Opponent starts with Protector of the Fringe in play; Opponent starts with one Skeleton in each lane. Draw Gateslayer Axe and Deadly Draugr on first turn if Garden of Swords is complete.\nIf Garden of Swords Is Completed:\nPut a Gateslayer Axe in player hand after game start.\nPut a Deadly Draugr in player deck top after mulligan.\nNormal:\nAi starts with a Protector of the Fringe on board.\nAi starts with a Skeleton in each lane.\nMaster:\nAi starts with a Protector of the Fringe on board.\nAi starts with a Skeleton in left lane.\nAi starts with a Skeleton, a Grim Champion in right lane.",
+    "normal": {
+     "deck": [
+      "deadly-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "manic-jack",
+      "daedric-dagger",
+      "pointy-wall-of-spikes",
+      "pointy-wall-of-spikes",
+      "skinned-hound",
+      "skinned-hound",
+      "soul-split",
+      "soul-split",
+      "squish-the-wimpy",
+      "wake-the-dead",
+      "ancestral-dead",
+      "ancestral-dead",
+      "frostbite-spider",
+      "soul-tear-level-1",
+      "xavara-atronach",
+      "bonewalker",
+      "bonewalker",
+      "fortress-guard",
+      "grim-champion",
+      "icy-shambles",
+      "restless-templar",
+      "restless-templar",
+      "rising-of-bones",
+      "skeleton-champion",
+      "ash-piercer",
+      "lurking-mummy",
+      "the-gatekeeper",
+      "black-worm-necromancer",
+      "flesh-atronach",
+      "lame-corprus",
+      "lame-corprus",
+      "odirniran-necromancer"
+     ],
+     "health": 30,
+     "support": [
+      "protector-of-the-fringe"
+     ],
+     "board": [
+      [
+       "skeleton"
+      ],
+      [
+       "skeleton"
+      ]
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "gardenOfSwordsBonus",
+       "if": {
+        "done": "garden-of-swords"
+       },
+       "text": "If Garden of Swords is completed: Put a Gateslayer Axe in player hand after game start. Put a Deadly Draugr in player deck top after mulligan.",
+       "hand": [
+        "gateslayer-axe"
+       ],
+       "deckTop": [
+        "deadly-draugr"
+       ]
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "deadly-draugr",
+      "deadly-draugr",
+      "deathless-draugr",
+      "daedric-dagger",
+      "pointy-wall-of-spikes",
+      "skinned-hound",
+      "skinned-hound",
+      "skinned-hound",
+      "soul-split",
+      "soul-split",
+      "squish-the-wimpy",
+      "ancestral-dead",
+      "ancestral-dead",
+      "dark-guardian",
+      "dark-guardian",
+      "frostbite-spider",
+      "soul-tear-level-1",
+      "xavara-atronach",
+      "bonewalker",
+      "bonewalker",
+      "grim-champion",
+      "icy-shambles",
+      "icy-shambles",
+      "lightning-bolt",
+      "lightning-bolt",
+      "rising-of-bones",
+      "skeleton-champion",
+      "skeleton-champion",
+      "lurking-mummy",
+      "the-gatekeeper",
+      "flesh-atronach",
+      "flesh-atronach",
+      "odirniran-necromancer",
+      "bone-colossus",
+      "bone-colossus"
+     ],
+     "health": 30,
+     "support": [
+      "protector-of-the-fringe"
+     ],
+     "board": [
+      [
+       "skeleton"
+      ],
+      [
+       "skeleton",
+       "grim-champion"
+      ]
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "gardenOfSwordsBonus",
+       "if": {
+        "done": "garden-of-swords"
+       },
+       "text": "If Garden of Swords is completed: Put a Gateslayer Axe in player hand after game start. Put a Deadly Draugr in player deck top after mulligan.",
+       "hand": [
+        "gateslayer-axe"
+       ],
+       "deckTop": [
+        "deadly-draugr"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "new-sheoth-palace",
+   "name": "New Sheoth Palace",
+   "uesp": "New Sheoth Palace",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Attempt to meet Sheogorath.",
+   "requires": [
+    "gates-of-madness"
+   ],
+   "image": "LG-loc-New Sheoth Palace.png",
+   "intro": [
+    {
+     "speaker": "Haskill",
+     "text": "I must beg your pardon, but the Lord Sheogorath will not see you. He said you were, and I quote, 'Boring, boring, boring, boo hoo, my poor son, get over yourself. No wait, get under yourself, that would be funny.'",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_NewSheothPalace_BretonMALE_HASKILL_001"
+    },
+    {
+     "speaker": "Haskill",
+     "text": "I suggest you try to be more entertaining. Perhaps someone needs your heroic services? The Isles are full of exciting ways for a foolhardy adventurer to amuse my lord.",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_NewSheothPalace_BretonMALE_HASKILL_002"
+    }
+   ]
+  },
+  {
+   "id": "no-rat-camp",
+   "name": "No-Rat Camp",
+   "uesp": "No-Rat Camp",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Help Cyriel escape from a giant camp.",
+   "requires": [
+    "new-sheoth-palace"
+   ],
+   "image": "LG-loc-No-Rat Camp.png",
+   "hints": [
+    "The Giant takes extra damage from skeevers."
+   ],
+   "intro": [
+    {
+     "speaker": "Cyriel",
+     "text": "Help! Help! Hey, mister, please, I need to get out of here!",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_No-RatCamp_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Well, look who it is. Still have my purse, thief?",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_NoRatCamp_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "You're not still mad about that are you? Of course you're not. Look, I'll give it back if you just help me okay? I was robbing this giant camp when these boulders fell and trapped my leg. Please, the giant could be back any minute!",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_No-RatCamp_BosmerFEMALE_CYRIEL_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "What kind of giant?",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_NoRatCamp_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "The big kind! Weird one, too. They say he's afraid of rats. Probably why he calls this 'No-Rat Camp' come to think of it.",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_No-RatCamp_BosmerFEMALE_CYRIEL_003"
+    },
+    {
+     "speaker": "Nervous Giant",
+     "text": "(Roars.) I smell elves in my camp! Prepare to die, elves!",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_NoRatCamp_GiantMALE_NERVOUS GIANT_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "All right, he's running off. You're safe now, thief. Thief? Oh for the love of Vehk, she's run off! Great...",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_NoRatCamp_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "(Sigh.) Well, on the bright side, I'm sure Sheogorath found this highly amusing.",
+     "audio": "IOM_UIDialogue_Episode1_Branch3_NoRatCamp_DunmerMALE_TALYM_004"
+    }
+   ],
+   "battle": {
+    "opponent": "Nervous Giant",
+    "avatar": "LG-npc-Nervous Giant.png",
+    "attributes": [
+     "R",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Opponent starts with 60 health; Opponent starts with Skeever Phobia in play; Start with 1/1 Skeever in each lane; Start with Skeever Infestation in hand.\nNormal:\nAi starts with 60 health.\nAi starts with a Skeever Phobia on board.\nPlayer starts with a Skeever in each lane.\nPut a Nervous Giant in ai hand after game start.\nPut a Skeever Infestation in player hand after game start.\nMaster:\nIn addition to Normal settings, ai starts with 3 Max Magicka and 80 health.",
+    "normal": {
+     "deck": [
+      "covenant-marauder",
+      "covenant-marauder",
+      "intimidate",
+      "scuttler",
+      "fharun-defender",
+      "ornery-kagouti",
+      "squish-the-wimpy",
+      "cast-out",
+      "cast-out",
+      "stone-throw",
+      "stone-throw",
+      "tree-minder",
+      "tree-minder",
+      "unrelenting-force-level-1",
+      "unrelenting-force-level-1",
+      "unrelenting-force-level-1",
+      "nervous-giant",
+      "nervous-giant",
+      "nervous-giant",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stoutheart-giant",
+      "stoutheart-giant",
+      "cradlecrush-giant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "stonehill-mammoth",
+      "stonehill-mammoth",
+      "frost-giant",
+      "reclusive-giant"
+     ],
+     "health": 60,
+     "rules": [
+      {
+       "type": "custom",
+       "id": "opponentStartingHand",
+       "text": "Put a Nervous Giant in ai hand after game start.",
+       "cards": [
+        "nervous-giant"
+       ]
+      }
+     ],
+     "support": [
+      "skeever-phobia"
+     ],
+     "playerBoard": [
+      [
+       "skeever"
+      ],
+      [
+       "skeever"
+      ]
+     ],
+     "playerHand": [
+      "skeever-infestation"
+     ]
+    },
+    "master": {
+     "deck": [
+      "scuttler",
+      "fharun-defender",
+      "ornery-kagouti",
+      "ornery-kagouti",
+      "ornery-kagouti",
+      "squish-the-wimpy",
+      "squish-the-wimpy",
+      "berserker-of-the-pale",
+      "cast-out",
+      "cast-out",
+      "morkul-gatekeeper",
+      "morkul-gatekeeper",
+      "stone-throw",
+      "stone-throw",
+      "tree-minder",
+      "tree-minder",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "drive-mad",
+      "nervous-giant",
+      "nervous-giant",
+      "nervous-giant",
+      "stampeding-mammoth",
+      "stoutheart-giant",
+      "stoutheart-giant",
+      "cradlecrush-giant",
+      "cradlecrush-giant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "belligerent-giant",
+      "frost-giant",
+      "unstoppable-rage",
+      "vigilant-giant",
+      "vigilant-giant"
+     ],
+     "health": 80,
+     "maxMagicka": 3,
+     "rules": [
+      {
+       "type": "custom",
+       "id": "opponentStartingHand",
+       "text": "Put a Nervous Giant in ai hand after game start.",
+       "cards": [
+        "nervous-giant"
+       ]
+      }
+     ],
+     "support": [
+      "skeever-phobia"
+     ],
+     "playerBoard": [
+      [
+       "skeever"
+      ],
+      [
+       "skeever"
+      ]
+     ],
+     "playerHand": [
+      "skeever-infestation"
+     ]
+    }
+   }
+  },
+  {
+   "id": "notehollow",
+   "name": "Notehollow",
+   "uesp": "Notehollow",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Help Luzrah investigate a musical root tunnel.",
+   "requires": [
+    "new-sheoth-palace"
+   ],
+   "image": "LG-loc-Notehollow.png",
+   "hints": [
+    "Recreate the song"
+   ],
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "LA dah dee dah DAH! No, no, no. Maybe it's La dee dee DAH! GAAAAH, that's not it either! Why?!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "What's wrong?",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Can't you hear it? The song ... playing in my head. I can't recreate it!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_002"
+    },
+    {
+     "speaker": "Notehollow",
+     "text": "(A tune plays. It is five notes long, with the five notes being comprised of just three distinct notes.)"
+    },
+    {
+     "speaker": "Talym",
+     "text": "By the gods, I think I can hear it! It's coming out of that cave.",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Yes, I've ventured inside. There are strange Grummites there that I can tell hold the notes... but I can't make them play the song! It's driving me mad not being able to hear it out loud. Please stranger, please: Make them play the song!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_003"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Talym",
+     "text": "It's uncanny. It's as though something in this cave is creating the song in my mind.",
+     "audio": "IOM_PlaymatDialogue_Episode1_Branch1_Notehollow_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "That's it! You've done it! Let's get out of here.",
+     "audio": "IOM_PlaymatDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "It's like a fog is clearing from my mind. This cave must be some kind of cruel joke of Sheogorath's, designed to draw in musical souls like us. I'm in your debt, stranger.",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_004"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Call me Talym.",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Luzrah gro-Shar, bard extraordinaire, at your service. I've been wandering the isles trying to learn their lore and songs. If you ever need knowledge, companionship, or a jaunty tune, never hesistate to call on me!",
+     "audio": "IOM_UIDialogue_Episode1_Branch1_Notehollow_OrsimerFEMALE_LUZRAH GRO-SHAR_005"
+    }
+   ],
+   "battle": {
+    "opponent": "Grummite Savage",
+    "avatar": "LG-npc-Grummite Savage.png",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Opponent starts with Notehollow in play.\nAi starts with a Notehollow on board.",
+    "normal": {
+     "deck": [
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite"
+     ],
+     "health": 30,
+     "support": [
+      "notehollow"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "notehollowSong",
+       "sequence": [
+        "red-grummite",
+        "blue-grummite",
+        "yellow-grummite"
+       ],
+       "text": "Recreate the song: destroy a Red Grummite, a Blue Grummite and a Yellow Grummite in this order to win. The Grummite Savage cannot be targeted (Notehollow)."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite",
+      "red-grummite",
+      "blue-grummite",
+      "yellow-grummite"
+     ],
+     "health": 30,
+     "support": [
+      "notehollow"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "notehollowSong",
+       "sequence": [
+        "red-grummite",
+        "blue-grummite",
+        "yellow-grummite",
+        "yellow-grummite",
+        "red-grummite"
+       ],
+       "text": "Recreate the song: destroy a Red, Blue, Yellow, Yellow and Red Grummite in this order to win (can be split over multiple turns). The Grummite Savage cannot be targeted (Notehollow)."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "a-man-divided",
+   "name": "A Man Divided",
+   "uesp": "A Man Divided",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Meet an odd mage.",
+   "requires": [
+    "new-sheoth-palace"
+   ],
+   "image": "LG-loc-A Man Divided.png",
+   "intro": [
+    {
+     "speaker": "Rayvat",
+     "text": "You there! You look like a formidable fellow. I need your help. There's a pesky knight, who's been following me around constantly! Every waking hour, it seems! I can't see him, can't ever find him -- but just I know he's there. Find him and beat him bloody for me, will you?",
+     "audio": "IOM_UIDialogue_Episode1_Branch2_Rayvat_HighElfMALE_RAYVAT_001"
+    }
+   ]
+  },
+  {
+   "id": "the-other-half",
+   "name": "The Other Half",
+   "uesp": "The Other Half",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Talym is seeing double.",
+   "requires": [
+    "a-man-divided"
+   ],
+   "choice": {
+    "prompt": "Fight the knight, fight the mage, or tell them the truth?",
+    "options": [
+     {
+      "id": "knight",
+      "label": "Fight Knight"
+     },
+     {
+      "id": "mage",
+      "label": "Fight Mage"
+     },
+     {
+      "id": "truth",
+      "label": "You know..."
+     }
+    ]
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "You... you wouldn't happen to be following around a mage named Rayvat, are you?",
+     "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Tavyar",
+     "text": "What?! That worm? No, he's the one who's constantly following ME around! If only I could find him, I'd run him through!",
+     "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "You, uh... You look a lot like him, you know that? A whole lot.",
+     "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Tavyar",
+     "text": "Nonsense! That weakling and I are nothing alike. Say, you wouldn't be willing to sort him out for me, would you? Believe me, he deserves it.",
+     "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "Something tells me I'm not going to get paid for this job. (Sigh.) Well, hopefully Sheogorath at least enjoyed the show."
+    }
+   ],
+   "battle": {
+    "opponent": "Tavyar the Knight",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Flanking",
+     "Shadow"
+    ],
+    "rulesText": "Fight The Knight:Normal:\nLane: Flanking/Shadow\nFight The Knight:Master:\nLane: Flanking/Shadow\nAi starts with 4 Imperial Grunt in right lane.\nFight The Mage:\nLane: Mage Tower/Shadow\nTell The Truth:\nLane: Flanking/Mage Tower",
+    "normal": {
+     "deck": [
+      "septim-guardsman",
+      "cheydinhal-sapper",
+      "execute",
+      "scouting-patrol",
+      "scouting-patrol",
+      "crassius-favor",
+      "fifth-legion-trainer",
+      "shining-saint",
+      "skingrad-patroller",
+      "skingrad-patroller",
+      "yew-shield",
+      "golden-initiate",
+      "golden-initiate",
+      "plea-to-kynareth",
+      "prison-ship",
+      "spellswords-summoning",
+      "spellswords-summoning",
+      "blessing-of-the-grove",
+      "blessing-of-the-grove",
+      "edict-of-azura",
+      "midnight-sweep",
+      "midnight-sweep",
+      "northpoint-captain",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "pillaging-tribune",
+      "baliwog",
+      "baliwog",
+      "legion-praefect",
+      "sanctuary-raid",
+      "brellach-commander"
+     ],
+     "health": 30
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "scouting-patrol",
+      "scouting-patrol",
+      "scouting-patrol",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "crassius-favor",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "shining-saint",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "golden-initiate",
+      "spellswords-summoning",
+      "spellswords-summoning",
+      "baliwog-tidecrawlers",
+      "edict-of-azura",
+      "emperors-blade",
+      "emperors-blade",
+      "midnight-sweep",
+      "midnight-sweep",
+      "midnight-sweep",
+      "divine-fervor",
+      "divine-fervor",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "general-tullius",
+      "baliwog",
+      "baliwog",
+      "sanctuary-raid",
+      "brellach-commander",
+      "dark-seducer"
+     ],
+     "health": 30,
+     "board": [
+      [],
+      [
+       "imperial-grunt",
+       "imperial-grunt",
+       "imperial-grunt",
+       "imperial-grunt"
+      ]
+     ]
+    }
+   },
+   "variants": {
+    "knight": {
+     "intro": [
+      {
+       "speaker": "Talym",
+       "text": "You... you wouldn't happen to be following around a mage named Rayvat, are you?",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_001"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "What?! That worm? No, he's the one who's constantly following ME around! If only I could find him, I'd run him through!",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_001"
+      },
+      {
+       "speaker": "Talym",
+       "text": "You, uh... You look a lot like him, you know that? A whole lot.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_002"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "Nonsense! That weakling and I are nothing alike. Say, you wouldn't be willing to sort him out for me, would you? Believe me, he deserves it.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_002"
+      },
+      {
+       "speaker": "Talym",
+       "text": "No, I promised Rayvat I'd sort you out. And a deal's a deal I suppose."
+      }
+     ],
+     "battle": {
+      "opponent": "Tavyar the Knight",
+      "attributes": [
+       "Y",
+       "P"
+      ],
+      "lanes": [
+       "Flanking",
+       "Shadow"
+      ],
+      "normal": {
+       "deck": [
+        "septim-guardsman",
+        "cheydinhal-sapper",
+        "execute",
+        "scouting-patrol",
+        "scouting-patrol",
+        "crassius-favor",
+        "fifth-legion-trainer",
+        "shining-saint",
+        "skingrad-patroller",
+        "skingrad-patroller",
+        "yew-shield",
+        "golden-initiate",
+        "golden-initiate",
+        "plea-to-kynareth",
+        "prison-ship",
+        "spellswords-summoning",
+        "spellswords-summoning",
+        "blessing-of-the-grove",
+        "blessing-of-the-grove",
+        "edict-of-azura",
+        "midnight-sweep",
+        "midnight-sweep",
+        "northpoint-captain",
+        "knight-of-the-hour",
+        "knight-of-the-hour",
+        "knight-of-the-hour",
+        "piercing-javelin",
+        "pillaging-tribune",
+        "baliwog",
+        "baliwog",
+        "legion-praefect",
+        "sanctuary-raid",
+        "brellach-commander"
+       ],
+       "health": 30
+      },
+      "master": {
+       "deck": [
+        "execute",
+        "scouting-patrol",
+        "scouting-patrol",
+        "scouting-patrol",
+        "bruma-profiteer",
+        "bruma-profiteer",
+        "crassius-favor",
+        "fifth-legion-trainer",
+        "fifth-legion-trainer",
+        "shining-saint",
+        "wind-keep-spellsword",
+        "wind-keep-spellsword",
+        "golden-initiate",
+        "spellswords-summoning",
+        "spellswords-summoning",
+        "baliwog-tidecrawlers",
+        "edict-of-azura",
+        "emperors-blade",
+        "emperors-blade",
+        "midnight-sweep",
+        "midnight-sweep",
+        "midnight-sweep",
+        "divine-fervor",
+        "divine-fervor",
+        "knight-of-the-hour",
+        "knight-of-the-hour",
+        "piercing-javelin",
+        "general-tullius",
+        "baliwog",
+        "baliwog",
+        "sanctuary-raid",
+        "brellach-commander",
+        "dark-seducer"
+       ],
+       "health": 30,
+       "board": [
+        [],
+        [
+         "imperial-grunt",
+         "imperial-grunt",
+         "imperial-grunt",
+         "imperial-grunt"
+        ]
+       ]
+      }
+     }
+    },
+    "mage": {
+     "intro": [
+      {
+       "speaker": "Talym",
+       "text": "You... you wouldn't happen to be following around a mage named Rayvat, are you?",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_001"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "What?! That worm? No, he's the one who's constantly following ME around! If only I could find him, I'd run him through!",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_001"
+      },
+      {
+       "speaker": "Talym",
+       "text": "You, uh... You look a lot like him, you know that? A whole lot.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_002"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "Nonsense! That weakling and I are nothing alike. Say, you wouldn't be willing to sort him out for me, would you? Believe me, he deserves it.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_002"
+      },
+      {
+       "speaker": "Talym",
+       "text": "(Sigh.) Sure. I'll sort out 'Rayvat.' Tell you what, why don't you go around the corner and I'm sure he'll turn up."
+      }
+     ],
+     "battle": {
+      "opponent": "Rayvat the Mage",
+      "attributes": [
+       "B",
+       "Y"
+      ],
+      "lanes": [
+       "Mage Tower",
+       "Shadow"
+      ],
+      "normal": {
+       "deck": [
+        "lesser-ward",
+        "aldmeri-patriot",
+        "crystal-tower-crafter",
+        "healing-potion",
+        "healing-potion",
+        "ice-spike",
+        "ice-spike",
+        "mages-guild-recruit",
+        "mages-guild-recruit",
+        "stand-watch",
+        "wisdom-of-ancients",
+        "arrow-storm",
+        "artaeum-savant",
+        "burning-touch",
+        "burning-touch",
+        "reverberating-strike",
+        "reverberating-strike",
+        "vigilant-of-stendarr",
+        "auridon-paladin",
+        "auridon-paladin",
+        "blessing-of-the-grove",
+        "fire-storm",
+        "icy-shambles",
+        "lightning-bolt",
+        "manic-jack",
+        "manic-jack",
+        "court-wizard",
+        "court-wizard",
+        "glenumbra-sorceress",
+        "insightful-scholar",
+        "piercing-javelin",
+        "winters-grasp",
+        "stealer-of-secrets",
+        "studium-headmaster",
+        "spirit-knife"
+       ],
+       "health": 30
+      },
+      "master": {
+       "deck": [
+        "lesser-ward",
+        "aldmeri-patriot",
+        "firebolt",
+        "firebolt",
+        "crystal-tower-crafter",
+        "crystal-tower-crafter",
+        "healing-potion",
+        "healing-potion",
+        "ice-spike",
+        "ice-spike",
+        "mages-guild-recruit",
+        "mages-guild-recruit",
+        "shimmerene-peddler",
+        "wisdom-of-ancients",
+        "arrow-storm",
+        "artaeum-savant",
+        "burning-touch",
+        "crushing-blow",
+        "reverberating-strike",
+        "reverberating-strike",
+        "auridon-paladin",
+        "blessing-of-the-grove",
+        "fire-storm",
+        "lightning-bolt",
+        "manic-jack",
+        "manic-jack",
+        "piercing-javelin",
+        "winters-grasp",
+        "ice-storm",
+        "stealer-of-secrets",
+        "mighty-conjuring",
+        "spirit-knife",
+        "transmogrify",
+        "dawns-wrath",
+        "chodalas-treachery"
+       ],
+       "health": 30
+      }
+     }
+    },
+    "truth": {
+     "intro": [
+      {
+       "speaker": "Talym",
+       "text": "You... you wouldn't happen to be following around a mage named Rayvat, are you?",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_001"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "What?! That worm? No, he's the one who's constantly following ME around! If only I could find him, I'd run him through!",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_001"
+      },
+      {
+       "speaker": "Talym",
+       "text": "You, uh... You look a lot like him, you know that? A whole lot.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_DunmerMALE_TALYM_002"
+      },
+      {
+       "speaker": "Tavyar",
+       "text": "Nonsense! That weakling and I are nothing alike. Say, you wouldn't be willing to sort him out for me, would you? Believe me, he deserves it.",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR_002"
+      },
+      {
+       "speaker": "Talym",
+       "text": "You do realize you're the same person, right?"
+      },
+      {
+       "speaker": "Tavyar/Rayvat",
+       "text": "What? No, that's ridiculous! Although... it would explain... Oh. Oh god. No. No, it can't be true! How dare you, you insolent, you... you pathetic coward? I'll blast you to pieces!",
+       "audio": "IOM_UIDialogue_Episode1_Branch2_Tayvar_HighElfMALE_TAYVAR RAYVAT_001"
+      }
+     ],
+     "battle": {
+      "opponent": "Crazed Knight",
+      "attributes": [
+       "B",
+       "Y",
+       "P"
+      ],
+      "lanes": [
+       "Flanking",
+       "Mage Tower"
+      ],
+      "normal": {
+       "deck": [
+        "daggers-in-the-dark",
+        "vvardvark-experiment",
+        "vvardvark-experiment",
+        "aldmeri-patriot",
+        "aldmeri-patriot",
+        "scouting-patrol",
+        "cathay-raht-veteran",
+        "crystal-tower-crafter",
+        "healing-potion",
+        "shimmerene-peddler",
+        "skingrad-patroller",
+        "skingrad-patroller",
+        "stand-watch",
+        "wisdom-of-ancients",
+        "burning-touch",
+        "imperial-legionnaire",
+        "plea-to-kynareth",
+        "spellswords-summoning",
+        "auridon-paladin",
+        "auridon-paladin",
+        "baliwog-tidecrawlers",
+        "blessing-of-the-grove",
+        "manic-jack",
+        "manic-jack",
+        "midnight-sweep",
+        "northpoint-captain",
+        "knight-of-the-hour",
+        "knight-of-the-hour",
+        "baliwog",
+        "baliwog",
+        "legion-praefect",
+        "sanctuary-raid",
+        "brellach-commander"
+       ],
+       "health": 30
+      },
+      "master": {
+       "deck": [
+        "daggers-in-the-dark",
+        "vvardvark-experiment",
+        "vvardvark-experiment",
+        "execute",
+        "firebolt",
+        "scouting-patrol",
+        "scouting-patrol",
+        "crystal-tower-crafter",
+        "fifth-legion-trainer",
+        "healing-potion",
+        "siege-catapult",
+        "sorcerers-negation",
+        "stand-watch",
+        "wisdom-of-ancients",
+        "burning-touch",
+        "khuul-lawkeeper",
+        "plea-to-kynareth",
+        "plea-to-kynareth",
+        "spellswords-summoning",
+        "spellswords-summoning",
+        "edict-of-azura",
+        "imperial-reinforcements",
+        "imperial-reinforcements",
+        "lightning-bolt",
+        "lightning-bolt",
+        "manic-jack",
+        "manic-jack",
+        "midnight-sweep",
+        "midnight-sweep",
+        "knight-of-the-hour",
+        "piercing-javelin",
+        "sanctuary-raid",
+        "sanctuary-raid"
+       ],
+       "health": 30
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "the-bargain",
+   "name": "The Bargain",
+   "uesp": "The Bargain",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Talym Rend bargains with Sheogorath.",
+   "requires": [
+    "no-rat-camp",
+    "notehollow",
+    "the-other-half"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The Bargain 01.jpg"
+    },
+    {
+     "file": "LG-quest-The Bargain 02.jpg"
+    },
+    {
+     "file": "LG-quest-The Bargain 03.jpg"
+    }
+   ],
+   "video": {
+    "end": "iom_act1_ep1_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Haskill",
+     "text": "Well done, sir, My lord has been much diverted by your violent and musical antics. I myself had a most raucous chuckle. Sheogorath will see you now.",
+     "audio": "IOM_UIDialogue_Episode1_EndofEpisode1Modal_BretonMALE_HASKILL_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Ya want me to do WHAT?! I'm the Daedric Prince of Madness! I don't make people sane! I'd have to be crazy to do that! And I am crazy. So I'll do it!"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "But here's the bargain, mortal..."
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "You want me to make one person sane? You've got to bring three people around to my side of the coin. Y'understand?"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Three lovely broken minds for one boring whole one. That's fair isn't it? Given that you're desperate and I'm mean."
+    },
+    {
+     "speaker": "Talym",
+     "text": "You have a deal."
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Wonderful! I promise, It'll be the most fun you've ever had. Scratch that: It'll be the most fun I ever had, heh! But I'll have enough for both of us!."
+    }
+   ]
+  },
+  {
+   "id": "episode-2-intro",
+   "name": "Episode 2 Intro",
+   "uesp": "Episode 2 Intro (Isle of Madness)",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Journey to Morrowind, near the city of Necrom.",
+   "intro": [
+    {
+     "speaker": "Sheogorath",
+     "text": "Your first victim is a crusty old assassin named Zhanar. This cat has killed enough people to buy a fortress, and would ye believe, he doesn't so much as lose sleep over it? Never hears the phantom whispers of his victims? Hasn't once huddled in the darkness to escape the staring eyes of the dead? Terribly rude if ye ask me.",
+     "audio": "IOM_UIDialogue_Episode2_Episode2IntroModal_DaedricPrinceMALE_SHEOGORATH_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "There's got to be a hint of mind shattering terror in there -- and you're going to find it! Give him a good and proper haunting for me. Oh, and I brought you some friends to help! I promised them riches, cheese, and that I wouldn't dismember them.",
+     "audio": "IOM_UIDialogue_Episode2_Episode2IntroModal_DaedricPrinceMALE_SHEOGORATH_002"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Suur-prise! Luzrah's here to heeeeelp!",
+     "audio": "IOM_UIDialogue_Episode2_Episode2IntroModal_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Uh...Hi. No hard feelings about that purse thing right? Of course not, you're not the type for hard feelings, right? Right.",
+     "audio": "IOM_UIDialogue_Episode2_Episode2IntroModal_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "I told you this would be fun!",
+     "audio": "IOM_UIDialogue_Episode2_Episode2IntroModal_DaedricPrinceMALE_SHEOGORATH_003"
+    }
+   ]
+  },
+  {
+   "id": "fortress-catacombs",
+   "name": "Fortress Catacombs",
+   "uesp": "Fortress Catacombs",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Infiltrate the catacombs at Zhanar's fortress.",
+   "requires": [
+    "episode-2-intro"
+   ],
+   "image": "LG-loc-Fortress Catacombs.png",
+   "intro": [
+    {
+     "speaker": "Cyriel",
+     "text": "Look, I found a way into the fortress catacombs.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressCatacombs_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Hmm. Sheogorath wants a \"proper haunting.\" Maybe we can start by making a little noise.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressCatacombs_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "Zhanar, did... did you hear that racket last night? It was as if the walls of the fortress were shaking, but we couldn't find anyone inside.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressCatacombs_BretonMALE_FORTRESS GUARD_001"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "It is surely nothing. But make sure you lock the doors tonight, if it makes you feel better.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressCatacombs_KhajiitMALE_ZHANAR TABAV_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Catacomb Creatures",
+    "attributes": [
+     "R",
+     "Y",
+     "G"
+    ],
+    "rulesText": "Normal:\nPlayer starts with a Reverberating Echoes on board.\nMaster:\nAi starts with a Spider Lair on board.\nAi starts with a Spider Worker in each lane.\nPlayer starts with a Reverberating Echoes on board.",
+    "normal": {
+     "deck": [
+      "afflicted-alit",
+      "afflicted-alit",
+      "crazed-hunger",
+      "crazed-hunger",
+      "crazed-hunger",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "ornery-kagouti",
+      "barded-guar",
+      "barded-guar",
+      "blighted-alit",
+      "blighted-alit",
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "giant-bat",
+      "guar-stablemaster",
+      "guar-stablemaster",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "nix-hound",
+      "preying-elytra",
+      "territorial-viper",
+      "territorial-viper",
+      "barbas",
+      "fleeting-apparition",
+      "fleeting-apparition",
+      "snowy-sabre-cat",
+      "highland-lurcher",
+      "demented-grummite",
+      "thadon-duke-of-mania",
+      "wild-beastcaller",
+      "nix-ox",
+      "shadowgreen-elder"
+     ],
+     "playerSupport": [
+      "reverberating-echoes"
+     ]
+    },
+    "master": {
+     "deck": [
+      "afflicted-alit",
+      "afflicted-alit",
+      "crazed-hunger",
+      "crazed-hunger",
+      "crazed-hunger",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "ornery-kagouti",
+      "barded-guar",
+      "barded-guar",
+      "blighted-alit",
+      "blighted-alit",
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "giant-bat",
+      "guar-stablemaster",
+      "guar-stablemaster",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "nix-hound",
+      "preying-elytra",
+      "territorial-viper",
+      "territorial-viper",
+      "barbas",
+      "fleeting-apparition",
+      "fleeting-apparition",
+      "snowy-sabre-cat",
+      "highland-lurcher",
+      "demented-grummite",
+      "thadon-duke-of-mania",
+      "wild-beastcaller",
+      "nix-ox",
+      "shadowgreen-elder"
+     ],
+     "support": [
+      "spider-lair"
+     ],
+     "board": [
+      [
+       "spider-worker"
+      ],
+      [
+       "spider-worker"
+      ]
+     ],
+     "playerSupport": [
+      "reverberating-echoes"
+     ]
+    }
+   }
+  },
+  {
+   "id": "trophy-room",
+   "name": "Trophy Room",
+   "uesp": "Trophy Room",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Strike fear with \"phantom weapons\".",
+   "requires": [
+    "fortress-catacombs"
+   ],
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "I've heard tales of this Zhanar -- he's killed some pretty renowned heroes. The Red Avenger, the Hero of Dawn, the list goes on. He's said to keep their weapons in his trophy room.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Is that so? Cyriel, if you can get me past the locks, I have an idea.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "Zhanar! Some of the guards were found dead in the trophy room... and there was blood on the blade of the trophies! It's ... it's almost as if the ghosts of your enemies took up their weapons against us.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_BretonMALE_FORTRESS GUARD_001"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "After all these years, you think these spirits would suddenly bother Zhanar? No, we have some unseen enemy. Double the guard.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_KhajiitMALE_ZHANAR TABAV_001"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Those guards might be a problem.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Or an opportunity. Luzrah, tell me more about these heroes Zhanar killed.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_TrophyRoom_DunmerMALE_TALYM_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Fortress Guard",
+    "attributes": [
+     "R",
+     "P"
+    ],
+    "rulesText": "Normal:\nAi starts with a Trophy Case in each lane.\nMaster:\nAi starts with a Chieftain's Banner on board.\nAi starts with a Trophy Case in each lane.",
+    "normal": {
+     "deck": [
+      "dragontail-savior",
+      "dragontail-savior",
+      "fharun-defender",
+      "fharun-defender",
+      "graystone-ravager",
+      "steelheart-vanquisher",
+      "steelheart-vanquisher",
+      "battlerage-orc",
+      "chieftains-banner",
+      "stronghold-patrol",
+      "stronghold-patrol",
+      "baliwog-tidecrawlers",
+      "baliwog-tidecrawlers",
+      "bangkorai-butcher",
+      "bangkorai-butcher",
+      "midnight-sweep",
+      "midnight-sweep",
+      "stonetooth-scrapper",
+      "stonetooth-scrapper",
+      "fortress-watchman",
+      "militant-chieftain",
+      "militant-chieftain",
+      "portcullis",
+      "trouble-seeker",
+      "trouble-seeker",
+      "watch-commander",
+      "watch-commander",
+      "bloodline-outcast",
+      "dark-harvester"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "trophy-case"
+      ],
+      [
+       "trophy-case"
+      ]
+     ]
+    },
+    "master": {
+     "deck": [
+      "dragontail-savior",
+      "dragontail-savior",
+      "fharun-defender",
+      "fharun-defender",
+      "graystone-ravager",
+      "steelheart-vanquisher",
+      "steelheart-vanquisher",
+      "battlerage-orc",
+      "chieftains-banner",
+      "stronghold-patrol",
+      "stronghold-patrol",
+      "baliwog-tidecrawlers",
+      "baliwog-tidecrawlers",
+      "bangkorai-butcher",
+      "bangkorai-butcher",
+      "midnight-sweep",
+      "midnight-sweep",
+      "stonetooth-scrapper",
+      "stonetooth-scrapper",
+      "fortress-watchman",
+      "militant-chieftain",
+      "militant-chieftain",
+      "portcullis",
+      "trouble-seeker",
+      "trouble-seeker",
+      "watch-commander",
+      "watch-commander",
+      "bloodline-outcast",
+      "dark-harvester"
+     ],
+     "health": 30,
+     "support": [
+      "chieftains-banner"
+     ],
+     "board": [
+      [
+       "trophy-case"
+      ],
+      [
+       "trophy-case"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "fortress-ramparts",
+   "name": "Fortress Ramparts",
+   "uesp": "Fortress Ramparts",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Strike fear under the guise of the Hero of Dawn.",
+   "requires": [
+    "trophy-room"
+   ],
+   "intro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "Halt! Who goes there?",
+     "audio": "IOM_UIDialogue_Episode2_Branch2_FortressRamparts_BretonMALE_FORTRESS GUARD_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I am the fire in the darkness, the blade of the morning, the protector of the weak.",
+     "audio": "IOM_UIDialogue_Episode2_Branch2_FortressRamparts_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Fortress Guard",
+     "text": "It can't be. But that helm, that axe -- It must be! It's the hero of dawn, Benor Redoran",
+     "audio": "IOM_UIDialogue_Episode2_Branch2_FortressRamparts_BretonMALE_FORTRESS GUARD_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "I swear lord Zhanar, there's no question. It was the hero of dawn! Benor Redoran is reborn, and out for vengeance!",
+     "audio": "IOM_UIDialogue_Episode2_Branch2_FortressRamparts_BretonMALE_FORTRESS GUARD_003"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "I will hear no more of this nonsense! This \"hero\" was only a man, and Zhanar killed him long ago! Zhanar fears no spirits, you hear? None!",
+     "audio": "IOM_UIDialogue_Episode2_Branch2_FortressRamparts_KhajiitMALE_ZHANAR TABAV_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Fortress Guard",
+    "attributes": [
+     "G",
+     "P"
+    ],
+    "rulesText": "Normal:\nPlayer starts with a Hero's Axe on board.\nMaster:\nAi starts with a Divine Fervor on board.\nPlayer starts with a Hero's Axe on board.",
+    "normal": {
+     "deck": [
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "enchanted-plate",
+      "finish-off",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "wind-keep-spellsword",
+      "blacksap-protector",
+      "blacksap-protector",
+      "indoril-mastermind",
+      "murkwater-butcher",
+      "archein-venomtongue",
+      "baliwog-tidecrawlers",
+      "baliwog-tidecrawlers",
+      "knife-to-the-throat",
+      "knight-of-order",
+      "lay-down-arms",
+      "midnight-sweep",
+      "midnight-sweep",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "territorial-viper",
+      "fleeting-apparition",
+      "greatwood-elder",
+      "indomitable-ordinator",
+      "leaflurker",
+      "shadowfen-priest",
+      "quinrawl-burglar",
+      "dark-seducer",
+      "elytra-noble",
+      "elytra-noble"
+     ],
+     "health": 30,
+     "playerSupport": [
+      "heros-axe"
+     ],
+     "playerDeck": [
+      "ashlander-zealot",
+      "iliac-sorcerer",
+      "lute",
+      "sarethi-scion",
+      "ald-velothi-assassin",
+      "ambitious-hireling",
+      "bone-bow",
+      "enchanted-plate",
+      "fifth-legion-trainer",
+      "gavel-of-the-ordinator",
+      "orc-clan-captain",
+      "quarra-clan-bloodkin",
+      "reachman-shaman",
+      "redoran-forerunner",
+      "redoran-forerunner",
+      "summerset-shieldmage",
+      "warclaw-mercenary",
+      "wind-keep-spellsword",
+      "bolvyn-venim",
+      "cast-out",
+      "crusaders-assault",
+      "elixir-of-conflict",
+      "haunting-spirit",
+      "khuul-lawkeeper",
+      "knight-of-gnisis",
+      "redoran-battlespear",
+      "warriors-fury",
+      "wrothgar-artisan",
+      "aldruhn-arms-master",
+      "ash-berserker",
+      "ash-berserker",
+      "bleakcoast-troll",
+      "grand-inquisitor",
+      "inspiring-kinsman",
+      "inspiring-kinsman",
+      "redoran-oathman",
+      "redoran-oathman",
+      "bal-isra-warrider",
+      "balmora-captain",
+      "battlefield-scrounger",
+      "divine-fervor",
+      "haafingar-marauder",
+      "piercing-javelin",
+      "shadowfen-priest",
+      "cliff-hunter",
+      "odirniran-necromancer",
+      "praetorian-commander",
+      "skar-drillmaster",
+      "legion-praefect",
+      "sanctuary-raid"
+     ]
+    },
+    "master": {
+     "deck": [
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "enchanted-plate",
+      "finish-off",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "wind-keep-spellsword",
+      "blacksap-protector",
+      "blacksap-protector",
+      "indoril-mastermind",
+      "murkwater-butcher",
+      "archein-venomtongue",
+      "baliwog-tidecrawlers",
+      "baliwog-tidecrawlers",
+      "knife-to-the-throat",
+      "knight-of-order",
+      "lay-down-arms",
+      "midnight-sweep",
+      "midnight-sweep",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "territorial-viper",
+      "fleeting-apparition",
+      "greatwood-elder",
+      "indomitable-ordinator",
+      "leaflurker",
+      "shadowfen-priest",
+      "quinrawl-burglar",
+      "dark-seducer",
+      "elytra-noble",
+      "elytra-noble"
+     ],
+     "health": 30,
+     "support": [
+      "divine-fervor"
+     ],
+     "playerSupport": [
+      "heros-axe"
+     ],
+     "playerDeck": [
+      "ashlander-zealot",
+      "iliac-sorcerer",
+      "lute",
+      "sarethi-scion",
+      "ald-velothi-assassin",
+      "ambitious-hireling",
+      "bone-bow",
+      "enchanted-plate",
+      "fifth-legion-trainer",
+      "gavel-of-the-ordinator",
+      "orc-clan-captain",
+      "quarra-clan-bloodkin",
+      "reachman-shaman",
+      "redoran-forerunner",
+      "redoran-forerunner",
+      "summerset-shieldmage",
+      "warclaw-mercenary",
+      "wind-keep-spellsword",
+      "bolvyn-venim",
+      "cast-out",
+      "crusaders-assault",
+      "elixir-of-conflict",
+      "haunting-spirit",
+      "khuul-lawkeeper",
+      "knight-of-gnisis",
+      "redoran-battlespear",
+      "warriors-fury",
+      "wrothgar-artisan",
+      "aldruhn-arms-master",
+      "ash-berserker",
+      "ash-berserker",
+      "bleakcoast-troll",
+      "grand-inquisitor",
+      "inspiring-kinsman",
+      "inspiring-kinsman",
+      "redoran-oathman",
+      "redoran-oathman",
+      "bal-isra-warrider",
+      "balmora-captain",
+      "battlefield-scrounger",
+      "divine-fervor",
+      "haafingar-marauder",
+      "piercing-javelin",
+      "shadowfen-priest",
+      "cliff-hunter",
+      "odirniran-necromancer",
+      "praetorian-commander",
+      "skar-drillmaster",
+      "legion-praefect",
+      "sanctuary-raid"
+     ]
+    }
+   }
+  },
+  {
+   "id": "fortress-hallway",
+   "name": "Fortress Hallway",
+   "uesp": "Fortress Hallway",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Strike fear under the guise of the Red Avenger.",
+   "requires": [
+    "trophy-room"
+   ],
+   "image": "LG-loc-Fortress Hallway.png",
+   "intro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "What's that noise? By... by the gods. That mask -- it looks just like the one worn by the Red Avenger, Renthos Hlaalu!",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortessHallway_BretonMALE_FORTRESS GUARD_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Fortress Guard",
+     "text": "Zhanar, Zhanar, I saw it with my own eyes -- I was attacked by the Red Avenger!",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortessHallway_BretonMALE_FORTRESS GUARD_002"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "Rhenthos Hlaalu is dead. This one killed him, remember? And when Zhanar kills someone, they stay dead!",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressHallway_KhajiitMALE_ZHANAR TABAV_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Fortress Guard",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "rulesText": "Normal:\nPlayer starts with a Red Avenger's Standard on board.\nMaster:\nAi starts with a Seht's Masterwork on board.\nPlayer starts with a Red Avenger's Standard on board.",
+    "normal": {
+     "deck": [
+      "crown-quartermaster",
+      "ald-velothi-assassin",
+      "ald-velothi-assassin",
+      "crucible-blacksmith",
+      "daedric-dagger",
+      "dunmer-nightblade",
+      "embassy-guard",
+      "embassy-guard",
+      "enchanted-plate",
+      "enchanted-plate",
+      "evermore-steward",
+      "evermore-steward",
+      "sorcerers-negation",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "yew-shield",
+      "camlorn-sentinel",
+      "daedric-crescent",
+      "daggerfall-mage",
+      "knight-of-gnisis",
+      "knight-of-gnisis",
+      "mace-of-encumbrance",
+      "baliwog-tidecrawlers",
+      "baliwog-tidecrawlers",
+      "breton-conjurer",
+      "dres-guard",
+      "midnight-sweep",
+      "tome-of-alteration",
+      "glenumbra-sorceress",
+      "insightful-scholar",
+      "stronghold-eradicator",
+      "heirloom-greatsword"
+     ],
+     "health": 30,
+     "playerSupport": [
+      "red-avengers-standard"
+     ],
+     "playerDeck": [
+      "curse",
+      "dres-spy",
+      "nord-firebrand",
+      "glass-greaves",
+      "marked-man",
+      "moon-sugar-smuggler",
+      "mudcrab-merchant",
+      "rapid-shot",
+      "shadow-shift",
+      "ungolim-the-listener",
+      "balmora-puppeteer",
+      "balmora-puppeteer",
+      "crassius-favor",
+      "lockpick",
+      "rift-thane",
+      "stand-watch",
+      "suran-pawnbroker",
+      "thieves-guild-recruit",
+      "cornerclub-gambler",
+      "crusaders-assault",
+      "goblin-skulk",
+      "goblin-skulk",
+      "hlaalu-oathman",
+      "hlaalu-oathman",
+      "hlaalu-sharpshooter",
+      "lower-canton-smith",
+      "thieves-guild-shadowfoot",
+      "twin-lamps-consul",
+      "alikr-survivalist",
+      "haunted-manor",
+      "haunted-manor",
+      "moonmoth-castellan",
+      "murkwater-shaman",
+      "namiras-shrine",
+      "torval-crook",
+      "ulfrics-housecarl",
+      "writ-of-execution",
+      "camonna-tong-heavy",
+      "divine-fervor",
+      "duke-vedam-dren",
+      "hero-of-anvil",
+      "kwama-queen",
+      "bandit-ringleader",
+      "sharp-eyed-ashkhan",
+      "smugglers-haul",
+      "triumphant-jarl",
+      "nix-ox",
+      "nix-ox",
+      "eclipse-baroness",
+      "chodalas-treachery"
+     ]
+    },
+    "master": {
+     "deck": [
+      "crown-quartermaster",
+      "ald-velothi-assassin",
+      "daedric-dagger",
+      "dunmer-nightblade",
+      "enchanted-plate",
+      "pointy-wall-of-spikes",
+      "sorcerers-negation",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "yew-shield",
+      "camlorn-sentinel",
+      "daedric-crescent",
+      "daggerfall-mage",
+      "enamors-keeper",
+      "knight-of-gnisis",
+      "mace-of-encumbrance",
+      "baliwog-tidecrawlers",
+      "breton-conjurer",
+      "dres-renegade",
+      "elusive-schemer",
+      "lightning-bolt",
+      "midnight-sweep",
+      "tome-of-alteration",
+      "indomitable-ordinator",
+      "stronghold-eradicator",
+      "heirloom-greatsword",
+      "master-of-arms",
+      "tel-vos-magister",
+      "spirit-knife",
+      "worm-kings-agent"
+     ],
+     "health": 30,
+     "support": [
+      "sehts-masterwork"
+     ],
+     "playerSupport": [
+      "red-avengers-standard"
+     ],
+     "playerDeck": [
+      "curse",
+      "dres-spy",
+      "nord-firebrand",
+      "glass-greaves",
+      "marked-man",
+      "moon-sugar-smuggler",
+      "mudcrab-merchant",
+      "rapid-shot",
+      "shadow-shift",
+      "ungolim-the-listener",
+      "balmora-puppeteer",
+      "balmora-puppeteer",
+      "crassius-favor",
+      "lockpick",
+      "rift-thane",
+      "stand-watch",
+      "suran-pawnbroker",
+      "thieves-guild-recruit",
+      "cornerclub-gambler",
+      "crusaders-assault",
+      "goblin-skulk",
+      "goblin-skulk",
+      "hlaalu-oathman",
+      "hlaalu-oathman",
+      "hlaalu-sharpshooter",
+      "lower-canton-smith",
+      "thieves-guild-shadowfoot",
+      "twin-lamps-consul",
+      "alikr-survivalist",
+      "haunted-manor",
+      "haunted-manor",
+      "moonmoth-castellan",
+      "murkwater-shaman",
+      "namiras-shrine",
+      "torval-crook",
+      "ulfrics-housecarl",
+      "writ-of-execution",
+      "camonna-tong-heavy",
+      "divine-fervor",
+      "duke-vedam-dren",
+      "hero-of-anvil",
+      "kwama-queen",
+      "bandit-ringleader",
+      "sharp-eyed-ashkhan",
+      "smugglers-haul",
+      "triumphant-jarl",
+      "nix-ox",
+      "nix-ox",
+      "eclipse-baroness",
+      "chodalas-treachery"
+     ]
+    }
+   }
+  },
+  {
+   "id": "necrom-graveyard",
+   "name": "Necrom Graveyard",
+   "uesp": "Necrom Graveyard",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Trap spirits from Necrom's graveyard.",
+   "requires": [
+    "fortress-ramparts",
+    "fortress-hallway"
+   ],
+   "image": "LG-loc-Necrom Graveyard.png",
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "We've done all we can short of showing Zhanar an actual ghost.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_NecromGraveyard_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Haskill",
+     "text": "Then might I suggest showing him some? My lord sent me to bring you this. It's a special soul gem able to trap and release restless spirits. Its existence is also quite offensive to them, so I dare say some should be along any minute.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_NecromGraveyard_BretonMALE_HASKILL_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "The gem is full. Let's give Zhanar a taste of what's inside.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_NecromGraveyard_DunmerMALE_TALYM_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Graveyard Spirits",
+    "avatar": "LG-npc-Graveyard Spirits.png",
+    "attributes": [
+     "P"
+    ],
+    "rulesText": "Normal:\nAI starts with 2 Max Magicka.\nPlayer starts with a Spirit Amulet on board.\nMaster:\nAI starts with 3 Max Magicka.\nPlayer starts with a Spirit Amulet on board.",
+    "normal": {
+     "deck": [
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost"
+     ],
+     "health": 100,
+     "maxMagicka": 2,
+     "playerSupport": [
+      "spirit-amulet"
+     ]
+    },
+    "master": {
+     "deck": [
+      "healing-hands",
+      "healing-hands",
+      "healing-hands",
+      "maple-shield",
+      "maple-shield",
+      "maple-shield",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost"
+     ],
+     "health": 100,
+     "maxMagicka": 3,
+     "playerSupport": [
+      "spirit-amulet"
+     ]
+    }
+   }
+  },
+  {
+   "id": "fortress-personal-chambers",
+   "name": "Fortress Personal Chambers",
+   "uesp": "Fortress Personal Chambers",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Unleash Necrom's graveyard spirits on Zhanar.",
+   "requires": [
+    "necrom-graveyard"
+   ],
+   "image": "LG-loc-Fortress Personal Chambers.png",
+   "intro": [
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "These cowardly simpletons. Ghosts. Pfah. Perhaps spirits roam this world, but if they were vengeful, would they not have haunted Zhanar long ago? Or the tyrants and monsters of history far worse than Zhanar?",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_001"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "No. Death frees one of mortal concerns. Of vengeance, anger, and guilt. Zhanar has freed many, and someday... He will be freed in turn.",
+     "audio": "IOM_UIDialogue_Episode2_Branch1_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_002"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "(A creaking floorboard, the moan of a ghost.) What is that? Who's there? No. No, it can't be! It cannot be!",
+     "audio": "IOM_PlaymatDialogue_Episode2_Branch1_Sfx_Added_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_001"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "Come back here you cowards! That's not a real ghost! It... it can't be!",
+     "audio": "IOM_PlaymatDialogue_Episode2_Branch1_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_001"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "Cravens, all of you! Zhanar fears no mindless spirits!",
+     "audio": "IOM_PlaymatDialogue_Episode2_Branch1_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_002"
+    },
+    {
+     "speaker": "Zhanar Tabav",
+     "text": "It is true. After all these years, they have come for Zhanar! They wish to torment this one for all eternity! I must flee!",
+     "audio": "IOM_PlaymatDialogue_Episode2_Branch1_FortressPersonalChambers_KhajiitMALE_ZHANAR TABAV_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Zhanar Tabav",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "rulesText": "Normal:\nAi starts with 4 Max Magicka.\nAi starts with a Thieves Guild Recruit in each lane.\nPlayer starts with a Haunted Amulet on board.\nMaster:\nAi starts with 4 Max Magicka.\nAi starts with a Elusive Schemer in each lane.\nPlayer starts with a Haunted Amulet on board.",
+    "normal": {
+     "deck": [
+      "brutal-ashlander",
+      "morag-tong-aspirant",
+      "finish-off",
+      "thieves-guild-recruit",
+      "assassins-ritual",
+      "assassins-ritual",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "eager-torturer",
+      "eager-torturer",
+      "house-kinsman",
+      "reverberating-strike",
+      "deshaan-avenger",
+      "drain-blood",
+      "drain-blood",
+      "elusive-schemer",
+      "elusive-schemer",
+      "knife-to-the-throat",
+      "sadras-agent",
+      "sadras-agent",
+      "berne-clan-nightstalker",
+      "fleeting-apparition",
+      "fleeting-apparition",
+      "leaflurker",
+      "pahmar-raht-renegade",
+      "quinrawl-burglar",
+      "tel-vos-magister",
+      "spirit-knife",
+      "traitors-flames",
+      "elytra-noble",
+      "shocking-wamasu"
+     ],
+     "health": 30,
+     "maxMagicka": 4,
+     "board": [
+      [
+       "thieves-guild-recruit"
+      ],
+      [
+       "thieves-guild-recruit"
+      ]
+     ],
+     "playerSupport": [
+      "haunted-amulet"
+     ]
+    },
+    "master": {
+     "deck": [
+      "shadow-shift",
+      "finish-off",
+      "thieves-guild-recruit",
+      "assassins-ritual",
+      "assassins-ritual",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "reverberating-strike",
+      "elusive-schemer",
+      "elusive-schemer",
+      "lightning-bolt",
+      "sadras-agent",
+      "sadras-agent",
+      "berne-clan-nightstalker",
+      "leaflurker",
+      "pahmar-raht-renegade",
+      "thief-of-dreams",
+      "quinrawl-burglar",
+      "tel-vos-magister",
+      "tel-vos-magister",
+      "spirit-knife",
+      "spirit-knife",
+      "traitors-flames",
+      "eclipse-baroness",
+      "eclipse-baroness",
+      "elytra-noble",
+      "cliff-racer-onslaught",
+      "supreme-atromancer",
+      "supreme-atromancer"
+     ],
+     "health": 30,
+     "maxMagicka": 4,
+     "board": [
+      [
+       "elusive-schemer"
+      ],
+      [
+       "elusive-schemer"
+      ]
+     ],
+     "playerSupport": [
+      "haunted-amulet"
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-haunted-man",
+   "name": "The Haunted Man",
+   "uesp": "The Haunted Man",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Zhanar Tabav, driven to madness.",
+   "requires": [
+    "fortress-personal-chambers"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The Haunted Man.jpg"
+    }
+   ],
+   "video": {
+    "end": "iom_act1_ep2_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "Zhanar Fled into the night, but there was no escape. Seeing our ghosts had broken the assassin, who would live out his days in fear of his long-dead victims. I almost pitied the old killer, but I was one step closer to curing Novos."
+    }
+   ]
+  },
+  {
+   "id": "episode-3-intro",
+   "name": "Episode 3 Intro",
+   "uesp": "Episode 3 Intro (Isle of Madness)",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Journey to Morrowind near Telvanni territory.",
+   "intro": [
+    {
+     "speaker": "Sheogorath",
+     "text": "Good work, mortal! I haven't laughed that hard since I made king Euryl marry a cabbage! Don't worry, it was a really pretty cabbage.",
+     "audio": "IOM_UIDialogue_Episode3_IntroStoryModal_DaedricPrinceMALE_SHEOGORATH_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Your next nut to crack is one Baron Navir. Spoiled, arrogant little mortal, who's had everything handed to him -- money, power, fishsticks, several large rocks, you name it. But I think he craves even more.",
+     "audio": "IOM_UIDialogue_Episode3_IntroStoryModal_DaedricPrinceMALE_SHEOGORATH_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Play on his ego. Play on his imagination. Play on his drums, I hear he hates that. Scramble his brains up good, and you'll be one step closer to curing your pathetic kid.",
+     "audio": "IOM_UIDialogue_Episode3_IntroStoryModal_DaedricPrinceMALE_SHEOGORATH_003"
+    }
+   ]
+  },
+  {
+   "id": "barons-palace",
+   "name": "Baron's Palace",
+   "uesp": "Baron's Palace",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Visit Baron Navir's palace.",
+   "requires": [
+    "episode-3-intro"
+   ],
+   "image": "LG-loc-Baron's Palace.png",
+   "intro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "What do you want, peasant? I've a busy day of lounging about ahead of me.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_BARON NAVIR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "My lord, I have made pilgrimage to bear witness to your mystical powers. For lo, I have seen the stars that you are the prince of prophecy.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Baron Navir",
+     "text": "What nonsence is this? I have land, title, and wealth, but mystic powers? I'm no mage. Go bother the Telvanni.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_BARON NAVIR_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "The Telvanni's might comes from books my lord. Yours is far greater. See for yourself. Make three decrees and watch as they come true.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Baron Navir",
+     "text": "Ha! What foolishness! Very well. I decree that the Kwama in my mines shall begin laying eggs of gold. That my rival Meliel's lands shall be ravaged by his own peaceful netches. And that... oh, let's say that there is a terrible blizzard in this summer heat. There, is that enough nonsense for you, peasant?",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_BARON NAVIR_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "We shall see, my lord. We shall see.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_TheBaronsPalace_DunmerMALE_TALYM_003"
+    }
+   ]
+  },
+  {
+   "id": "kwama-mine",
+   "name": "Kwama Mine",
+   "uesp": "Kwama Mine",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Paint Kwama eggs golden to trick Baron Navir.",
+   "requires": [
+    "barons-palace"
+   ],
+   "image": "LG-loc-Kwama Mine.png",
+   "intro": [
+    {
+     "speaker": "Cyriel",
+     "text": "How are we supposed to make these Kwama lay golden eggs?",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_KwamaMine_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Oh, that's easy. Did I ever tell you I used to be a painter?",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_KwamaMine_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "My lord, see what was found at your egg mine this morning.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_KwamaMine_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Baron Navir",
+     "text": "What? Golden eggs? That's impossible, but... if Meliel found out, he might raid my lands. Tell no one about this, you understand?",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_KwamaMine_DunmerMALE_BARON NAVIR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Of course, my lord.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_KwamaMine_DunmerMALE_TALYM_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Kwama Queen",
+    "avatar": "LG-npc-Kwama Queen.png",
+    "attributes": [
+     "Y"
+    ],
+    "rulesText": "Put a Paint Bucket in Player hand after game start.\nIn Normal mode, the Giant Kwama that hatch from a Kwama Egg are 4/4. In Master mode their power and defense are increased to 8/8.",
+    "normal": {
+     "deck": [
+      "illusory-defenses",
+      "illusory-defenses",
+      "illusory-defenses",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "feasting-hunger",
+      "feasting-hunger",
+      "feasting-hunger",
+      "hive-defender",
+      "hive-defender",
+      "hive-defender",
+      "hive-warrior",
+      "hive-warrior",
+      "hive-warrior",
+      "kwama-queen",
+      "kwama-queen",
+      "kwama-queen"
+     ],
+     "playerHand": [
+      "paint-bucket"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "giantKwamaStats",
+       "card": "giant-kwama",
+       "attack": 4,
+       "health": 4,
+       "text": "The Giant Kwama that hatch from a Kwama Egg are 4/4."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "illusory-defenses",
+      "illusory-defenses",
+      "illusory-defenses",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kwama-egg",
+      "kvatch-soldier",
+      "kvatch-soldier",
+      "kvatch-soldier",
+      "feasting-hunger",
+      "feasting-hunger",
+      "feasting-hunger",
+      "hive-defender",
+      "hive-defender",
+      "hive-defender"
+     ],
+     "playerHand": [
+      "paint-bucket"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "giantKwamaStats",
+       "card": "giant-kwama",
+       "attack": 8,
+       "health": 8,
+       "text": "The Giant Kwama that hatch from a Kwama Egg are 8/8."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "meliels-farm",
+   "name": "Meliel's Farm",
+   "uesp": "Meliel's Farm",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Drive Meliel's Netches mad.",
+   "requires": [
+    "barons-palace"
+   ],
+   "image": "LG-loc-Meliel's Farm.png",
+   "intro": [
+    {
+     "speaker": "Cyriel",
+     "text": "Those giant things are tame? They look like monsters.",
+     "audio": "IOM_UIDialogue_Episode3_Branch3_MelielsFarm_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Oh, netches are the gentlest creatures you'll ever meet.",
+     "audio": "IOM_UIDialogue_Episode3_Branch3_MelielsFarm_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Usually. My neighbor is a netch farmer. Said that when a Betty is afraid, she'll secrete an oil that drives the bulls mad. So we just need to spread some of the oil around Meliel's lands.",
+     "audio": "IOM_UIDialogue_Episode3_Branch3_MelielsFarm_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "What's this? Meliel's netches are attacking his farmers? It's just as I decreed!",
+     "audio": "IOM_UIDialogue_Episode3_Branch3_MelielsFarm_DunmerMALE_BARON NAVIR_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Meliel's Netch Herder",
+    "attributes": [
+     "G",
+     "P"
+    ],
+    "rulesText": "Ai starts with a Betty Netch in each lane.\nPlayer starts with a Pheromone Collector on board.",
+    "normal": {
+     "deck": [
+      "dragon-cult-ghost",
+      "crazed-hunger",
+      "crazed-hunger",
+      "mudcrab-anklesnapper",
+      "silt-strider",
+      "silt-strider",
+      "feasting-vulture",
+      "frostbite-spider",
+      "frostbite-spider",
+      "giant-bat",
+      "giant-bat",
+      "guar-stablemaster",
+      "guar-stablemaster",
+      "sanctuary-pet",
+      "sanctuary-pet",
+      "young-mammoth",
+      "cliff-strider",
+      "moonlight-werebat",
+      "territorial-viper",
+      "betty-netch",
+      "betty-netch",
+      "betty-netch",
+      "cave-bear",
+      "cave-bear",
+      "cliff-racer",
+      "giant-snake",
+      "greatwood-elder",
+      "stampeding-mammoth",
+      "stonehill-mammoth",
+      "wild-beastcaller",
+      "nix-ox",
+      "swamp-leviathan",
+      "elytra-noble",
+      "cliff-racer-onslaught"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "betty-netch"
+      ],
+      [
+       "betty-netch"
+      ]
+     ],
+     "playerSupport": [
+      "pheromone-collector"
+     ]
+    },
+    "master": {
+     "deck": [
+      "dragon-cult-ghost",
+      "crazed-hunger",
+      "crazed-hunger",
+      "feasting-vulture",
+      "frostbite-spider",
+      "frostbite-spider",
+      "giant-bat",
+      "giant-bat",
+      "guar-stablemaster",
+      "guar-stablemaster",
+      "sanctuary-pet",
+      "sanctuary-pet",
+      "young-mammoth",
+      "young-mammoth",
+      "cliff-strider",
+      "cliff-strider",
+      "moonlight-werebat",
+      "territorial-viper",
+      "territorial-viper",
+      "betty-netch",
+      "betty-netch",
+      "betty-netch",
+      "cave-bear",
+      "cave-bear",
+      "cliff-racer",
+      "cliff-racer",
+      "giant-snake",
+      "greatwood-elder",
+      "greatwood-elder",
+      "stampeding-mammoth",
+      "stonehill-mammoth",
+      "wild-beastcaller",
+      "nix-ox",
+      "swamp-leviathan"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "betty-netch"
+      ],
+      [
+       "betty-netch"
+      ]
+     ],
+     "playerSupport": [
+      "pheromone-collector"
+     ]
+    }
+   }
+  },
+  {
+   "id": "mushroom-tower",
+   "name": "Mushroom Tower",
+   "uesp": "Mushroom Tower (quest)",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Use a magical amplifier to manipulate the weather.",
+   "requires": [
+    "barons-palace"
+   ],
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "What are we doing at this Telvanni mushroom tower?",
+     "audio": "IOM_UIDialogue_Episode3_Branch2_MushroomTower_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Hopefully making it snow. Word is the mages here have a magical amplifier high in this tower. With it, we should be able to cast a blizzard spell over the Baron's lands.",
+     "audio": "IOM_UIDialogue_Episode3_Branch2_MushroomTower_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "And you think they'll just let us waltz in and use it?",
+     "audio": "IOM_UIDialogue_Episode3_Branch2_MushroomTower_BosmerFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "No... that's going to be the hard part.",
+     "audio": "IOM_UIDialogue_Episode3_Branch2_MushroomTower_DunmerMALE_TALYM_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "By... by the g-g-gods! Snow! It's actually snow! I-i-in hottest summer! Perhaps this was not my w-w-wisest wish. But still! Snow!",
+     "audio": "IOM_UIDialogue_Episode3_Branch2_MushroomTower_DunmerMALE_BARON NAVIR_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Telvanni Mage",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "rulesText": "Normal:\nAi starts with a Mushroom Tower on board.\nPlayer starts with a Mushroom Tower on board.\nMaster:\nAi starts with a Mushroom Tower, a Mages Guild Retreat on board.\nPlayer starts with a Mushroom Tower on board.",
+    "normal": {
+     "deck": [
+      "cruel-firebloom",
+      "healing-hands",
+      "vvardvark-experiment",
+      "vvardvark-experiment",
+      "brutal-ashlander",
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "firebolt",
+      "balmora-spymaster",
+      "dunmer-nightblade",
+      "ice-spike",
+      "mages-guild-recruit",
+      "mages-guild-recruit",
+      "sorcerers-negation",
+      "weakness",
+      "crushing-blow",
+      "dark-rebirth",
+      "haunting-spirit",
+      "indoril-mastermind",
+      "reverberating-strike",
+      "soul-tear-level-1",
+      "soul-tear-level-1",
+      "ash-servant",
+      "elusive-schemer",
+      "ice-wraith",
+      "lay-down-arms",
+      "lightning-bolt",
+      "midnight-sweep",
+      "restless-templar",
+      "slaughterfish-spawning",
+      "lillandril-hexmage",
+      "ice-storm",
+      "stealer-of-secrets",
+      "mages-guild-retreat"
+     ],
+     "health": 30,
+     "support": [
+      "mushroom-tower"
+     ],
+     "playerSupport": [
+      "mushroom-tower"
+     ]
+    },
+    "master": {
+     "deck": [
+      "cruel-firebloom",
+      "healing-hands",
+      "vvardvark-experiment",
+      "vvardvark-experiment",
+      "brutal-ashlander",
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "firebolt",
+      "balmora-spymaster",
+      "mages-guild-recruit",
+      "trespassers-bane",
+      "weakness",
+      "dark-rebirth",
+      "dark-rebirth",
+      "desperate-conjuring",
+      "haunting-spirit",
+      "indoril-mastermind",
+      "reverberating-strike",
+      "soul-tear-level-1",
+      "soul-tear-level-1",
+      "telvanni-arcanist",
+      "elusive-schemer",
+      "fire-storm",
+      "lightning-bolt",
+      "midnight-sweep",
+      "restless-templar",
+      "ice-storm",
+      "spirit-knife",
+      "spirit-knife"
+     ],
+     "health": 30,
+     "support": [
+      "mushroom-tower",
+      "mages-guild-retreat"
+     ],
+     "playerSupport": [
+      "mushroom-tower"
+     ]
+    }
+   }
+  },
+  {
+   "id": "return-to-baron-navir",
+   "name": "Return to Baron Navir",
+   "uesp": "Return to Baron Navir",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Return to Baron Navir's palace.",
+   "requires": [
+    "kwama-mine",
+    "meliels-farm",
+    "mushroom-tower"
+   ],
+   "intro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "Can it be? The blizzard, the eggs, the netches -- all just as I decreed! How is this possible?! Perhaps I do indeed have powers! Perhaps I am indeed the Prince of Prophecy!",
+     "audio": "IOM_UIDialogue_Episode3_MidEpisodeStoryModal_DunmerMALE_BARON NAVIR_001"
+    },
+    {
+     "speaker": "Baron Navir",
+     "text": "I shall go demonstrate these powers in Meliel's lands!",
+     "audio": "IOM_UIDialogue_Episode3_MidEpisodeStoryModal_DunmerMALE_BARON NAVIR_002"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Uh Oh. We better go follow him.",
+     "audio": "IOM_UIDialogue_Episode3_MidEpisodeStoryModal_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    }
+   ]
+  },
+  {
+   "id": "meliels-garrison",
+   "name": "Meliel's Garrison",
+   "uesp": "Meliel's Garrison",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Help Baron Navir defeat his rival, Meliel.",
+   "requires": [
+    "return-to-baron-navir"
+   ],
+   "image": "LG-loc-Meliel's Garrison.png",
+   "intro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "I hearby declare these lands mine by right of conquest. Let any who would oppose me taste my mystical might!",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_MelielsGarrison_DunmerMALE_BARON NAVIR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I guess I'm providing the mystical might...",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_MelielsGarrison_DunmerMALE_TALYM_001"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Baron Navir",
+     "text": "None may hurt the prince of prophecy!",
+     "audio": "IOM_PlaymatDialogue_Episode3_Branch1_MelielsGarrison_DunmerMALE_BARON NAVIR_001"
+    },
+    {
+     "speaker": "Baron Navir",
+     "text": "Hahahaha! Behold my power.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_MelielsGarrison_DunmerMALE_BARON NAVIR_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Baron Navir",
+     "text": "BWAHAHA! YOU SEE! That peasant spoke true! I AM the prince of prophecy! I can do ANYTHING! I know -- next I shall fly! I've always wanted to fly.",
+     "audio": "IOM_UIDialogue_Episode3_Branch1_MelielsGarrison_DunmerMALE_BARON NAVIR_003"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Wait, NO!",
+     "audio": "IOM_Movie_Episode3_Branch1_MelielsGarrison_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Meliel",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "rulesText": "Player starts with a Baron Navir in left lane.",
+    "normal": {
+     "deck": [
+      "dres-spy",
+      "dres-spy",
+      "lesser-ward",
+      "lesser-ward",
+      "deepwood-trapper",
+      "deepwood-trapper",
+      "moon-sugar-smuggler",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "ice-spike",
+      "palace-conspirator",
+      "palace-conspirator",
+      "poetic-armiger",
+      "poetic-armiger",
+      "redoran-enforcer",
+      "redoran-enforcer",
+      "temple-conjurer",
+      "temple-conjurer",
+      "blood-sacrament",
+      "blood-sacrament",
+      "house-kinsman",
+      "house-kinsman",
+      "varanis-courier",
+      "varanis-courier",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "dres-renegade",
+      "dres-renegade",
+      "elusive-schemer",
+      "elusive-schemer"
+     ],
+     "health": 30,
+     "playerBoard": [
+      [
+       "baron-navir"
+      ],
+      []
+     ]
+    },
+    "master": {
+     "deck": [
+      "lesser-ward",
+      "lesser-ward",
+      "deepwood-trapper",
+      "deepwood-trapper",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "mournhold-traitor",
+      "palace-conspirator",
+      "palace-conspirator",
+      "poetic-armiger",
+      "poetic-armiger",
+      "temple-conjurer",
+      "temple-conjurer",
+      "wardcrafter",
+      "wardcrafter",
+      "camlorn-hero",
+      "camlorn-hero",
+      "house-kinsman",
+      "house-kinsman",
+      "nimble-ally",
+      "shadowscale-partisan",
+      "shadowscale-partisan",
+      "back-alley-rogue",
+      "back-alley-rogue",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "dres-renegade",
+      "dres-renegade"
+     ],
+     "health": 30,
+     "playerBoard": [
+      [
+       "baron-navir"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-baron",
+   "name": "The Baron",
+   "uesp": "The Baron (quest)",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Baron Navir, driven to madness.",
+   "requires": [
+    "meliels-garrison"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The_Baron.jpg"
+    }
+   ],
+   "video": {
+    "end": "iom_act2_ep3_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "It had been almost fun deceiving the Baron, inflating his already massive ego, until he hurled himself from a cliff, believing he could fly. Luzrah was horrified, and said she would no longer do Sheogorath's bidding. But I couldn't stop. I was only one mind away from curing Novos."
+    }
+   ]
+  },
+  {
+   "id": "episode-4-intro",
+   "name": "Episode 4 Intro",
+   "uesp": "Episode 4 Intro (Isle of Madness)",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Journey to Skyrim.",
+   "intro": [
+    {
+     "speaker": "Sheogorath",
+     "text": "I've saved your best victim for last! It's the Imperial spymaster Porcia Loran -- oh your old boss, if I'm not mistaken. And I'm usually taken correctly. She's currently attached to an Imperial phalanx that's preparing for battle against a pesky clan of Reachmen invaders.",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DaedricPrinceMALE_SHEOGORATH_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "No. Porcia is a good person. She doesn't deserve --",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Deserve what? A little insanity? Take it from me, insanity's more fun than popping pimples with a hammer! You really ought to try it some time.",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DaedricPrinceMALE_SHEOGORATH_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "But the choice is yours! You can go back to your poor, crazy son and forget all of this ever happened. Little Novos will never know you could have saved him.",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DaedricPrinceMALE_SHEOGORATH_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "You know I won't do that. Just... just tell me what you want me to do.",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Only what you do best, Tally-boy! Get snuggled up nice and close to your target, and then ruin them. The Reachmen are holed up in that Dwemer ruin there. I'm sure you can figure it out from here.",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DaedricPrinceMALE_SHEOGORATH_004"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Oh, and I've just decided: You've got three days to do the job, or the deal's off. Chop chop!",
+     "audio": "IOM_UIDialogue_Episode4_Episode4IntroModal_DaedricPrinceMALE_SHEOGORATH_005"
+    }
+   ]
+  },
+  {
+   "id": "druadach-pass",
+   "name": "Druadach Pass",
+   "uesp": "Druadach Pass",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Intercept the Reachmen Courier's intelligence.",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "intro": [
+    {
+     "speaker": "Cyriel",
+     "text": "So what's the plan?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_BOSMERFEMALE_CYRIEL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Porcia's whole life is her work. So if she's trying to get intelligence from the Reachmen, so are we. And as luck would have it, I see one of their couriers coming now.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_DUNMERMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Cyriel",
+     "text": "This letter -- if I'm reading this right, the Reachmen have created a deadly poison gas! They're going to send it into battle on the back of some of those Dwemer machines. Talym, we've got to tell the Imperials about this.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_BOSMERFEMALE_CYRIEL_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "No, our target is Porcia. We've got to make sure she fails. We'll plant false intelligence, maybe something about a false antidote. I believe I once heard about a sacred flower growing nearby...",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_DUNMERMALE_TALYM_002"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "You can't be serious! That entire army could die!",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_BOSMERFEMALE_CYRIEL_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "And? We don't have time to find the perfect plan -- Sheogorath saw to that with his little 24-hour whim. And I would sacrifice a hundred armies -- a thousand! -- to save my son. Do you understand me?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_DUNMERMALE_TALYM_003"
+    },
+    {
+     "speaker": "Cyriel",
+     "text": "Yeah. I understand. But I won't be a part of it, no matter what Sheogorath promised or threatened. Goodbye, Talym. Here's your stupid coin purse back.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_DruadachPass_BOSMERFEMALE_CYRIEL_004"
+    }
+   ],
+   "battle": {
+    "opponent": "Doomfang Courier",
+    "attributes": [
+     "R",
+     "B"
+    ],
+    "rulesText": "Player starts with a Kill the Messenger on board.",
+    "normal": {
+     "deck": [
+      "blackreach-rebuilder",
+      "blackreach-rebuilder",
+      "firebolt",
+      "firepot-spider",
+      "firepot-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "steel-scimitar",
+      "steel-scimitar",
+      "forsworn-looter",
+      "forsworn-looter",
+      "forsworn-looter",
+      "ice-spike",
+      "ice-spike",
+      "reachman-shaman",
+      "reachman-shaman",
+      "reachman-shaman",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "spider-worker",
+      "spider-worker",
+      "steel-sword",
+      "assassins-bow",
+      "assassins-bow",
+      "burning-touch",
+      "burning-touch",
+      "cast-out",
+      "cast-out",
+      "cast-out",
+      "forsworn-guide",
+      "forsworn-guide",
+      "forsworn-guide",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "stone-throw",
+      "fireball",
+      "orcish-warhammer",
+      "sparking-spider",
+      "sparking-spider",
+      "winters-grasp",
+      "brass-arquebus",
+      "brass-arquebus",
+      "dwarven-ballista",
+      "dwarven-ballista",
+      "dwarven-centurion",
+      "dwarven-centurion",
+      "mighty-conjuring",
+      "awakened-imperfect",
+      "dwarven-colossus",
+      "dwarven-colossus",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence"
+     ],
+     "health": 100,
+     "playerSupport": [
+      "kill-the-messenger"
+     ]
+    },
+    "master": {
+     "deck": [
+      "crown-quartermaster",
+      "firebolt",
+      "firebolt",
+      "ghostgate-defender",
+      "ald-velothi-assassin",
+      "ald-velothi-assassin",
+      "sorcerers-negation",
+      "wardcrafter",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "dark-guardian",
+      "haunting-spirit",
+      "haunting-spirit",
+      "bleakcoast-troll",
+      "icy-shambles",
+      "icy-shambles",
+      "lightning-bolt",
+      "lightning-bolt",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "royal-sage",
+      "royal-sage",
+      "gnarl-rootbender",
+      "gnarl-rootbender",
+      "hallowed-deathpriest",
+      "shadowfen-priest",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "spine-of-eldersblood",
+      "tel-vos-magister",
+      "bone-colossus",
+      "bone-colossus",
+      "blood-magic-lord",
+      "night-talon-lord",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence",
+      "reachman-intelligence"
+     ],
+     "health": 100,
+     "playerSupport": [
+      "kill-the-messenger"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bthardamz",
+   "name": "Bthardamz",
+   "uesp": "Bthardamz",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Plant false intel.",
+   "requires": [
+    "druadach-pass"
+   ],
+   "image": "LG-loc-Bthardamz.png",
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "If I know Porcia, she could be here any minute. I need to get in, plant the false intel, and get out before she arrives.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_Bthardzam_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "Made it just in time. There goes Porcia...",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_Bthardzam_DunmerMALE_TALYM_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Bthardamz Defenses",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "rulesText": "Normal:\nAi starts with a Trip Wire in each lane.\nMaster:\nAi starts with a Pressure Plate in each lane.",
+    "normal": {
+     "deck": [
+      "firepot-spider",
+      "firepot-spider",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "reachman-shaman",
+      "reachman-shaman",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "verminous-fabricant",
+      "verminous-fabricant",
+      "barded-guar",
+      "cast-out",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "forsworn-guide",
+      "forsworn-guide",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "pack-wolf",
+      "pack-wolf",
+      "ageless-automaton",
+      "ageless-automaton",
+      "alpha-wolf",
+      "alpha-wolf",
+      "fireball",
+      "piercing-twilight",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "skirmishers-elixir",
+      "sparking-spider",
+      "tusked-bristleback",
+      "tusked-bristleback",
+      "immolating-blast"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "trip-wire"
+      ],
+      [
+       "trip-wire"
+      ]
+     ]
+    },
+    "master": {
+     "deck": [
+      "firepot-spider",
+      "firepot-spider",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "reachman-shaman",
+      "reachman-shaman",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "verminous-fabricant",
+      "verminous-fabricant",
+      "barded-guar",
+      "cast-out",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "forsworn-guide",
+      "forsworn-guide",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "pack-wolf",
+      "pack-wolf",
+      "ageless-automaton",
+      "ageless-automaton",
+      "alpha-wolf",
+      "alpha-wolf",
+      "fireball",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "skirmishers-elixir",
+      "sparking-spider",
+      "piercing-javelin",
+      "tusked-bristleback",
+      "tusked-bristleback",
+      "immolating-blast"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "pressure-plate"
+      ],
+      [
+       "pressure-plate"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "bthardamz-dungeon",
+   "name": "Bthardamz Dungeon",
+   "uesp": "Bthardamz Dungeon",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Rescue Porcia Loran.",
+   "requires": [
+    "bthardamz"
+   ],
+   "image": "LG-loc-Bthardamz Dungeon.png",
+   "intro": [
+    {
+     "speaker": "Reachman",
+     "text": "I know I heard some traps going off over here... Look, there, an intruder.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_ReachmanMALE_REACHMAN_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "Too many of them to fight. Why were they on such high alert?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_BretonFEMALE_PORCIA_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Nchow, they've captured her! Time to play hero, for once.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_DunmerMALE_TALYM_001"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Porcia",
+     "text": "Talym Rend! What are you doing here?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_BretonFEMALE_PORCIA_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Heard you might be in trouble. Hang on, I'll get you out of here.",
+     "audio": "IOM_PlaymatDialogue_Episode4_Branch1_BthardzamDungeon_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Porcia",
+     "text": "I didn't think I'd ever see you again after... what happened. I'm so sorry about Novos.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_BretonFEMALE_PORCIA_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "It's... it's not your fault. Now what do we know about the Reachman threat?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "I found this message inside. It says they plan to attack the Shrine of Mara, because the sacred flowers growing there represent the only cure for a poison gas their warleader has devised.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_BretonFEMALE_PORCIA_004"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Sound like we better get there first.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamDungeon_DunmerMALE_TALYM_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Doomfang Jailer",
+    "attributes": [
+     "R"
+    ],
+    "rulesText": "Ai starts with 2 Sparking Spider, a Porcia, Imprisoned Blademaster in left lane.",
+    "normal": {
+     "deck": [
+      "dwarven-spider",
+      "dwarven-spider",
+      "blackreach-rebuilder",
+      "blackreach-rebuilder",
+      "gearwork-spider",
+      "gearwork-spider",
+      "cloak",
+      "cloak",
+      "spider-worker",
+      "spider-worker",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "dwarven-sphere",
+      "forsworn-guide",
+      "forsworn-guide",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "ageless-automaton",
+      "ageless-automaton",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "fireball",
+      "grappling-hook",
+      "slaughterfish",
+      "sparking-spider",
+      "stronghold-incubator",
+      "stronghold-incubator",
+      "dwarven-ballista",
+      "halls-of-the-dwemer"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "sparking-spider",
+       "sparking-spider",
+       "porcia-imprisoned-blademaster"
+      ],
+      []
+     ]
+    },
+    "master": {
+     "deck": [
+      "dwarven-spider",
+      "dwarven-spider",
+      "blackreach-rebuilder",
+      "blackreach-rebuilder",
+      "gearwork-spider",
+      "gearwork-spider",
+      "cloak",
+      "cloak",
+      "spider-worker",
+      "spider-worker",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "dwarven-sphere",
+      "forsworn-guide",
+      "forsworn-guide",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "ageless-automaton",
+      "ageless-automaton",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "fireball",
+      "grappling-hook",
+      "slaughterfish",
+      "sparking-spider",
+      "stronghold-incubator",
+      "stronghold-incubator",
+      "dwarven-ballista",
+      "halls-of-the-dwemer"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "sparking-spider",
+       "sparking-spider",
+       "porcia-imprisoned-blademaster"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "grove-of-mara",
+   "name": "Grove of Mara",
+   "uesp": "Grove of Mara",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Take the flowers by force.",
+   "requires": [
+    "bthardamz-dungeon"
+   ],
+   "intro": [
+    {
+     "speaker": "Priestess of Mara",
+     "text": "Absolutely not. Our order has guarded this grove for generations. We will not allow its sacred flowers to be used for war.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_NordFEMALE_PRIESTESS OF MARA_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "The Doomfang clan is coming here to kill you and burn the grove!",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_BretonFEMALE_PORCIA_001"
+    },
+    {
+     "speaker": "Priestess of Mara",
+     "text": "Then we will die. Better that than to surrender the flowers.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_NordFEMALE_PRIESTESS OF MARA_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "We'll have to find another way then.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "No, these people are dead either way -- and those flowers mean life for our troops.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_BretonFEMALE_PORCIA_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Porcia, you don't want this on your conscience.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "For the Empire, I will bear the guilt. We attack. And may the gods forgive us.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_BretonFEMALE_PORCIA_003"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Porcia",
+     "text": "Divine mother, forgive me.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_BretonFEMALE_PORCIA_004"
+    },
+    {
+     "speaker": "Talym",
+     "text": "You did what you have to do. Let's collect the flowers and go.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_GroveofMara_DunmerMALE_TALYM_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Priests of Mara",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Monastery",
+     "Shadow"
+    ],
+    "rulesText": "Normal:\nLane: Monastery/Shadow\nPlayer starts with a Blademaster Porcia on board.\nMaster:\nLane: Monastery/Shadow\nAi starts with an Elixir of Vitality on board.\nAi starts with a Makeshift Defenses in left lane.\nPlayer starts with a Blademaster Porcia on board.",
+    "normal": {
+     "deck": [
+      "healing-hands",
+      "healing-hands",
+      "sunhold-medic",
+      "cleric-of-kyne",
+      "cleric-of-kyne",
+      "healing-potion",
+      "healing-potion",
+      "priest-of-the-eight",
+      "priest-of-the-eight",
+      "priest-of-the-moons",
+      "priest-of-the-moons",
+      "stand-watch",
+      "vivec-city-pilgrim",
+      "dawnstar-healer",
+      "plea-to-kynareth",
+      "plea-to-kynareth",
+      "two-moons-contemplation",
+      "auridon-paladin",
+      "blessing-of-the-grove",
+      "riften-lawkeeper",
+      "cauldron-keeper",
+      "ebonheart-oracle",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "snowhawk-detachment",
+      "watch-commander",
+      "immolating-blast",
+      "dawns-wrath"
+     ],
+     "health": 30,
+     "playerSupport": [
+      "blademaster-porcia"
+     ]
+    },
+    "master": {
+     "deck": [
+      "healing-hands",
+      "healing-hands",
+      "sunhold-medic",
+      "cleric-of-kyne",
+      "cleric-of-kyne",
+      "healing-potion",
+      "healing-potion",
+      "priest-of-the-eight",
+      "priest-of-the-eight",
+      "priest-of-the-moons",
+      "priest-of-the-moons",
+      "stand-watch",
+      "vivec-city-pilgrim",
+      "dawnstar-healer",
+      "plea-to-kynareth",
+      "plea-to-kynareth",
+      "two-moons-contemplation",
+      "auridon-paladin",
+      "blessing-of-the-grove",
+      "riften-lawkeeper",
+      "cauldron-keeper",
+      "ebonheart-oracle",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "snowhawk-detachment",
+      "watch-commander",
+      "immolating-blast",
+      "dawns-wrath"
+     ],
+     "health": 30,
+     "support": [
+      "elixir-of-vitality"
+     ],
+     "board": [
+      [
+       "makeshift-defenses"
+      ],
+      []
+     ],
+     "playerSupport": [
+      "blademaster-porcia"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bthardamz-secret-passage",
+   "name": "Bthardamz Secret Passage",
+   "uesp": "Bthardamz Secret Passage",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Attack the Reachmen.",
+   "requires": [
+    "grove-of-mara"
+   ],
+   "image": "LG-loc-Bthardamz Secret Passage.png",
+   "intro": [
+    {
+     "speaker": "Porcia",
+     "text": "Our alchemists have managed to refine the flowers into a gas that, if our intelligence is accurate, should negate the poison. But we don't have much of it. We have to contain the situation.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamSecretPassage_BretonFEMALE_PORCIA_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "There's a secret passageway that will allow us to attack the ruin. I think it's the only way to move our troops in, but I'd bet they know about it.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamSecretPassage_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "Then it's settled. You and I will guide the troops into the passage. My guess is that they'll wait until we've committed the bulk of our forces to release the poison. and that's when we'll deploy the antidote.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamSecretPassage_BretonFEMALE_PORCIA_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "And if the antidote doesn't work?",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamSecretPassage_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "My intelligence was sound. It will work. It has to.",
+     "audio": "IOM_UIDialogue_Episode4_Branch1_BthardzamSecretPassage_BretonFEMALE_PORCIA_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Let's go then."
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Porcia",
+     "text": "They've released the poison. Quickly, use the antidote!",
+     "audio": "IOM_PlaymatDialogue_Episode4_Branch1_BthardzamSecretPassage_BretonFEMALE_PORCIA_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "They're reacting but... Something's wrong. No! Get down!",
+     "audio": "IOM_Movie_Episode4_Branch1_BthardzamSecretPassage_BretonFEMALE_PORCIA_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Doomfang Chieftain",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "rulesText": "Normal:\nAi starts with a Dwarven Sphere in each lane.\nPlayer starts with a Flood the Pass, a Blademaster Porcia on board.\nMaster:\nAi starts with a Dwarven Sphere in each lane.\nPlayer starts with a Flood the Pass on board.",
+    "normal": {
+     "deck": [
+      "execute",
+      "firebolt",
+      "firebolt",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "reachman-shaman",
+      "reachman-shaman",
+      "reflective-automaton",
+      "reflective-automaton",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "mages-trick",
+      "mages-trick",
+      "ageless-automaton",
+      "ageless-automaton",
+      "fire-storm",
+      "piercing-javelin",
+      "brass-arquebus",
+      "dwarven-ballista",
+      "dwarven-centurion",
+      "spirit-knife"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "dwarven-sphere"
+      ],
+      [
+       "dwarven-sphere"
+      ]
+     ],
+     "playerSupport": [
+      "flood-the-pass",
+      "blademaster-porcia"
+     ]
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "firebolt",
+      "firebolt",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "reachman-shaman",
+      "reachman-shaman",
+      "reflective-automaton",
+      "reflective-automaton",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "crushing-blow",
+      "doomfang-ally",
+      "doomfang-ally",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "mages-trick",
+      "mages-trick",
+      "ageless-automaton",
+      "ageless-automaton",
+      "fire-storm",
+      "piercing-javelin",
+      "brass-arquebus",
+      "dwarven-ballista",
+      "dwarven-centurion",
+      "spirit-knife"
+     ],
+     "health": 30,
+     "board": [
+      [
+       "dwarven-sphere"
+      ],
+      [
+       "dwarven-sphere"
+      ]
+     ],
+     "playerSupport": [
+      "flood-the-pass"
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-betrayal",
+   "name": "The Betrayal",
+   "uesp": "The Betrayal (Isle of Madness)",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Porcia Loran driven to insanity, and a grim discovery.",
+   "requires": [
+    "bthardamz-secret-passage"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The Betrayal 01.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 02.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 03.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 04.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 05.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 06.jpg"
+    },
+    {
+     "file": "LG-quest-The Betrayal 07.jpg"
+    }
+   ],
+   "video": {
+    "end": "iom_act2_ep4_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "The explosion and the gas conspired to kill most of the Reachmen, along with the Imperials. Technically, her mission was a success."
+    },
+    {
+     "speaker": "Talym",
+     "text": "But witnessing such a massacre, with the murder of the priests weighing so heavily on her soul, was too much for Porcia to bear."
+    },
+    {
+     "speaker": "Talym",
+     "text": "I hear she did not speak after that day, afraid to utter another command, or to share another secret, that might hurt someone."
+    },
+    {
+     "speaker": "Talym",
+     "text": "She was, in other words, a better person than I. After all, I was the true architect of the atrocity."
+    },
+    {
+     "speaker": "Talym",
+     "text": "I hadn't been sure the flowers would react violently with the poison... but had known they would not cure it."
+    },
+    {
+     "speaker": "Talym",
+     "text": "Yet as I journeyed home, my guilt was a whisper, next to the expectant joy of seeing my son whole again."
+    },
+    {
+     "speaker": "Talym",
+     "text": "Imagine then my horror, when I found my house empty. I ran to a neighbor, desperate for anyone who could tell me about my son."
+    },
+    {
+     "speaker": "Talym",
+     "text": "My boy, Novos. Where is he? Did he run off? Did someone take him!?"
+    },
+    {
+     "speaker": "Neighbor",
+     "text": "Talym, what are you saying? Novos is dead. He's been dead for more than a year. Don't you remember?"
+    },
+    {
+     "speaker": "Neighbor",
+     "text": "We buried him... together."
+    }
+   ]
+  },
+  {
+   "id": "the-return",
+   "name": "The Return",
+   "uesp": "The Return",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Unanswered questions.",
+   "intro": [
+    {
+     "speaker": "Nagh",
+     "text": "Wait, Nagh is confused. So the boy Talym was trying to save... was dead the whole time? And Talym didn't know? But he buried him -- so he must have known! And if he knew... why do these things he did?"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "These are exactly the questions Talym wanted answers to. He returned to the Shivering Isles to seek them."
+    }
+   ]
+  },
+  {
+   "id": "episode-5-intro",
+   "name": "Episode 5 Intro",
+   "uesp": "Episode 5 Intro (Isle of Madness)",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Talym returns to the Shivering Isles.",
+   "requires": [
+    "the-return"
+   ],
+   "video": {
+    "start": "iom_act3_ep5_intro"
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "I don't know what trick the mad god played on me. But he will answer for it.",
+     "audio": "IOM_UIDialogue_Episode5_EpisodeIntroDialogue_DunmerMALE_TALYM_001"
+    }
+   ]
+  },
+  {
+   "id": "new-sheoth-palace-the-descent",
+   "name": "New Sheoth Palace",
+   "uesp": "New Sheoth Palace (The Descent)",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Talym denied another audience with Sheogorath.",
+   "requires": [
+    "episode-5-intro"
+   ],
+   "intro": [
+    {
+     "speaker": "Golden Saint",
+     "text": "Halt! our lord does not wish to see you, Talym Rend. You are not welcome in New Sheoth.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_NewSheothPalace_DaedraFEMALE_GOLDEN SAINT_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "You think you can stop me?!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_NewSheothPalace_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Dark Seducer",
+     "text": "Be careful -- the madness is coming over him!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_NewSheothPalace_DaedraFEMALE_DARK SEDUCER_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "SHEOGORATH! I'm coming for you! I'm... no. No the doors... the doors have turned to walls. There's no way in. NO. I need answers. You OWE me answers! SHEOGORATH!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_NewSheothPalace_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "It was at that point, wracked by despair, that Talym Rend truly began to fall into madness.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_NewSheothPalace_BretonMALE_KELLEN_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Golden Saint",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "rulesText": "Player draws a Vvardvark Experiment instead of a card in player deck on turn 3.\nPlayer draws a random Playing Card instead of a card in player deck on even turns between turn 3 and turn 31.",
+    "normal": {
+     "deck": [
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "deathless-draugr",
+      "deathless-draugr",
+      "execute",
+      "elixir-of-vigor",
+      "enchanted-plate",
+      "fharun-defender",
+      "fharun-defender",
+      "healing-potion",
+      "oldgate-warden",
+      "shining-saint",
+      "shining-saint",
+      "skinned-hound",
+      "bruma-armorer",
+      "golden-initiate",
+      "golden-initiate",
+      "imperial-armor",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "mentor-of-the-watch",
+      "penitus-oculatus-agent",
+      "baliwog-tidecrawlers",
+      "divine-conviction",
+      "grand-inquisitor",
+      "lion-guard-strategist",
+      "golden-saint",
+      "golden-saint",
+      "dark-seducer"
+     ],
+     "health": 30,
+     "rules": [
+      {
+       "type": "custom",
+       "id": "madDraws",
+       "text": "Player draws a Vvardvark Experiment instead of a card in player deck on turn 3. Player draws a random Playing Card instead of a card in player deck on even turns between turn 3 and turn 31.",
+       "turn3": "vvardvark-experiment",
+       "evenTurns": "playing-card"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "execute",
+      "ald-velothi-assassin",
+      "ald-velothi-assassin",
+      "barrow-stalker",
+      "barrow-stalker",
+      "enchanted-plate",
+      "enchanted-plate",
+      "fharun-defender",
+      "gavel-of-the-ordinator",
+      "shining-saint",
+      "shining-saint",
+      "golden-initiate",
+      "golden-initiate",
+      "khuul-lawkeeper",
+      "penitus-oculatus-agent",
+      "penitus-oculatus-agent",
+      "plea-to-kynareth",
+      "plea-to-kynareth",
+      "grand-inquisitor",
+      "hive-defender",
+      "midnight-sweep",
+      "divine-fervor",
+      "divine-fervor",
+      "dren-bodyguard",
+      "dren-bodyguard",
+      "shadowfen-priest",
+      "golden-saint",
+      "golden-saint",
+      "dark-seducer"
+     ],
+     "health": 30,
+     "rules": [
+      {
+       "type": "custom",
+       "id": "madDraws",
+       "text": "Player draws a Vvardvark Experiment instead of a card in player deck on turn 3. Player draws a random Playing Card instead of a card in player deck on even turns between turn 3 and turn 31.",
+       "turn3": "vvardvark-experiment",
+       "evenTurns": "playing-card"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "flooded-camp",
+   "name": "Flooded Camp",
+   "uesp": "Flooded Camp",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Slay the Mudcrab Merchant.",
+   "requires": [
+    "new-sheoth-palace-the-descent"
+   ],
+   "image": "LG-loc-Flooded Camp.png",
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "When... when did I get here? Here's as good as anywhere, isn't it? This is his plane! He must be everywhere! And probably nowhere too! Let's check under this rock. SHEOGORATH! YOU IN THERE?!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_FloodedCamp_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Mudcrab Merchant",
+     "text": "Why... why don't ya keep it down pal? Shome of ush are tryn' ta sleep.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_FloodedCamp_MudcrabMALE_MUDCRAB MERCHANT_KEITH SZARABAJKA_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "A ha! One of your foul creations, eh? Die, abomination!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_FloodedCamp_DunmerMALE_TALYM_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "Haha! your monsters are no match for me, Mad God! You hear me!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_FloodedCamp_DunmerMALE_TALYM_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Mudcrab Merchant",
+    "avatar": "LG-npc-Mudcrab Merchant.png",
+    "attributes": [
+     "R"
+    ],
+    "rulesText": "Normal:\nAi starts with 3 Runes.\nPlayer starts with a Catch of the Day on board.\nMaster:\nAi starts with a Spawning Pool on board.\nPlayer starts with a Catch of the Day on board.",
+    "normal": {
+     "deck": [
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper"
+     ],
+     "health": 20,
+     "runes": 3,
+     "playerSupport": [
+      "catch-of-the-day"
+     ],
+     "playerDeck": [
+      "cruel-firebloom",
+      "improvised-weapon",
+      "lesser-ward",
+      "brutal-ashlander",
+      "corprus-disease",
+      "crown-quartermaster",
+      "dagoth-dagger",
+      "firebolt",
+      "scuttler",
+      "afflicted-alit",
+      "balmora-spymaster",
+      "evermore-steward",
+      "high-rock-summoner",
+      "imprison",
+      "priest-of-the-moons",
+      "shrieking-harpy",
+      "stormcloak-vanguard",
+      "verminous-fabricant",
+      "warclaw-mercenary",
+      "wardcrafter",
+      "assassins-bow",
+      "camlorn-hero",
+      "daggerfall-mage",
+      "dark-rebirth",
+      "dawnstar-healer",
+      "khuul-lawkeeper",
+      "lower-canton-smith",
+      "stone-throw",
+      "valenwood-huntsman",
+      "wild-clumsiness",
+      "cloudrest-illusionist",
+      "dres-renegade",
+      "elusive-schemer",
+      "fire-storm",
+      "gladiator-arena",
+      "hive-defender",
+      "riften-lawkeeper",
+      "divine-fervor",
+      "glenumbra-sorceress",
+      "karthspire-scourge",
+      "piercing-javelin",
+      "winters-grasp",
+      "ice-storm",
+      "senche-tiger",
+      "arrest"
+     ]
+    },
+    "master": {
+     "deck": [
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "foraging-mudcrab",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper"
+     ],
+     "health": 20,
+     "support": [
+      "spawning-pool"
+     ],
+     "playerSupport": [
+      "catch-of-the-day"
+     ],
+     "playerDeck": [
+      "cruel-firebloom",
+      "improvised-weapon",
+      "lesser-ward",
+      "brutal-ashlander",
+      "corprus-disease",
+      "crown-quartermaster",
+      "dagoth-dagger",
+      "firebolt",
+      "scuttler",
+      "afflicted-alit",
+      "balmora-spymaster",
+      "evermore-steward",
+      "high-rock-summoner",
+      "imprison",
+      "priest-of-the-moons",
+      "shrieking-harpy",
+      "stormcloak-vanguard",
+      "verminous-fabricant",
+      "warclaw-mercenary",
+      "wardcrafter",
+      "assassins-bow",
+      "camlorn-hero",
+      "daggerfall-mage",
+      "dark-rebirth",
+      "dawnstar-healer",
+      "khuul-lawkeeper",
+      "lower-canton-smith",
+      "stone-throw",
+      "valenwood-huntsman",
+      "wild-clumsiness",
+      "cloudrest-illusionist",
+      "dres-renegade",
+      "elusive-schemer",
+      "fire-storm",
+      "gladiator-arena",
+      "hive-defender",
+      "riften-lawkeeper",
+      "divine-fervor",
+      "glenumbra-sorceress",
+      "karthspire-scourge",
+      "piercing-javelin",
+      "winters-grasp",
+      "ice-storm",
+      "senche-tiger",
+      "arrest"
+     ]
+    }
+   }
+  },
+  {
+   "id": "darkened-grove",
+   "name": "Darkened Grove",
+   "uesp": "Darkened Grove",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Slay the gnarl in a fit of madness.",
+   "requires": [
+    "new-sheoth-palace-the-descent"
+   ],
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "Got to... got to remember why I', here. Where here is. Whoever I am. I'm... Vivec! No that's not right. Maybe I'm a Baron? No, I know! I'm--",
+     "audio": "IOM_UIDialogue_Episode5_Branch2_DarkenedGrove_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Gnarl",
+     "text": "Novos Rend?",
+     "audio": "IOM_UIDialogue_Episode5_Branch2_DarkenedGrove_GnarlMALE_GNARL_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "A talking tree! Another of Sheogorath's tricks! Die, tree!",
+     "audio": "IOM_UIDialogue_Episode5_Branch2_DarkenedGrove_DunmerMALE_TALYM_002"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "That'll teach trees to mess with... whoever I am.",
+     "audio": "IOM_UIDialogue_Episode5_Branch2_DarkenedGrove_DunmerMALE_TALYM_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Gnarl Elder",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "normal": {
+     "deck": [
+      "curse",
+      "dres-spy",
+      "deepwood-trapper",
+      "shadow-shift",
+      "voracious-spriggan",
+      "voracious-spriggan",
+      "voracious-spriggan",
+      "crazed-hunger",
+      "crazed-hunger",
+      "gloomlurker",
+      "leafwater-blessing",
+      "leafwater-blessing",
+      "snake-tooth-necklace",
+      "snake-tooth-necklace",
+      "blacksap-protector",
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "giant-bat",
+      "giant-bat",
+      "nimble-ally",
+      "fleeting-apparition",
+      "gnarl-rootbender",
+      "gnarl-rootbender",
+      "greatwood-elder",
+      "greatwood-elder",
+      "green-touched-spriggan",
+      "green-touched-spriggan",
+      "ransack",
+      "ransack",
+      "wild-beastcaller",
+      "giant-chicken",
+      "giant-chicken",
+      "shadowgreen-elder",
+      "elytra-noble",
+      "elytra-noble"
+     ],
+     "health": 30
+    },
+    "master": {
+     "deck": [
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "blighted-werebat",
+      "blighted-werebat",
+      "giant-snake",
+      "giant-snake",
+      "gnarl-rootbender",
+      "gnarl-rootbender",
+      "greatwood-elder",
+      "greatwood-elder",
+      "green-touched-spriggan",
+      "green-touched-spriggan",
+      "snowy-sabre-cat",
+      "snowy-sabre-cat",
+      "wild-beastcaller",
+      "wild-beastcaller",
+      "nix-ox",
+      "nix-ox",
+      "shadowgreen-elder",
+      "elytra-noble",
+      "elytra-noble",
+      "shocking-wamasu",
+      "spider-daedra",
+      "cliff-racer-onslaught",
+      "chaurus-breeding-pit",
+      "chaurus-breeding-pit",
+      "nest-of-vipers",
+      "nest-of-vipers"
+     ],
+     "health": 30
+    }
+   }
+  },
+  {
+   "id": "circus-of-cheerful-slaughter",
+   "name": "Circus of Cheerful Slaughter",
+   "uesp": "Circus of Cheerful Slaughter",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Attack the Grummite in a fit of madness.",
+   "requires": [
+    "flooded-camp",
+    "darkened-grove"
+   ],
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "Why am I alive, anyway? I suppose it's easier than being dead, seeing as I'm already doing it.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Grummite",
+     "text": "You could try the alternative.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_GrummiteMALE_GRUMMITE LUZRAH_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "No, I don't think so. Not today. Not today Sheogorath!",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_DunmerMALE_TALYM_002"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Grummite Savage",
+     "text": "(Weakly sings the song from the Notehollow mission)",
+     "audio": "IOM_PlaymatDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Luzrah?! Luzrah, are you okay?!",
+     "audio": "IOM_PlaymatDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "I'll be all right. I... saw you down by the river, fighting a crab, attacking a tree. I approached, and it was like you didn't recognize me at all. What happened to you?",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I... didn't mean to hurt you I... my mind is so jumbled. I can't keep anything straight. Maybe I don't want to.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Well if you do, I think I know a way to help.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_CircusofCheerfulSlaughter_OrsimerFEMALE_LUZRAH GRO-SHAR_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Grummite Savage",
+    "attributes": [
+     "G"
+    ],
+    "lanes": [
+     "Madness",
+     "Shadow"
+    ],
+    "rulesText": "Lane: Madness/Shadow",
+    "normal": {
+     "deck": [
+      "murkwater-goblin",
+      "murkwater-goblin",
+      "deepwood-trapper",
+      "crazed-hunger",
+      "crazed-hunger",
+      "guild-recruit",
+      "guild-recruit",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "murkwater-witch",
+      "murkwater-witch",
+      "thieves-guild-recruit",
+      "giant-bat",
+      "goblin-skulk",
+      "greenheart-knight",
+      "murkwater-butcher",
+      "murkwater-butcher",
+      "varanis-courier",
+      "chaurus",
+      "cliff-strider",
+      "moonlight-werebat",
+      "slaughterfish-spawning",
+      "snapping-dreugh",
+      "torval-crook",
+      "torval-crook",
+      "fleeting-apparition",
+      "giant-snake",
+      "snowy-sabre-cat",
+      "clockwork-scorpion",
+      "demented-grummite",
+      "demented-grummite",
+      "blueclaw-matron"
+     ],
+     "health": 30
+    },
+    "master": {
+     "deck": [
+      "nord-firebrand",
+      "nord-firebrand",
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "fighters-guild-recruit",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "murkwater-witch",
+      "murkwater-witch",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "battlerage-orc",
+      "battlerage-orc",
+      "cast-out",
+      "giant-bat",
+      "giant-bat",
+      "goblin-skulk",
+      "goblin-skulk",
+      "torval-crook",
+      "torval-crook",
+      "torval-crook",
+      "cliff-racer",
+      "giant-snake",
+      "giant-snake",
+      "cliff-hunter",
+      "demented-grummite",
+      "demented-grummite",
+      "dark-harvester"
+     ],
+     "health": 30
+    }
+   }
+  },
+  {
+   "id": "the-trance",
+   "name": "The Trance",
+   "uesp": "The Trance",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Face your darkest fears.",
+   "requires": [
+    "circus-of-cheerful-slaughter"
+   ],
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "This won't be pleasant. I'm going to play you an ancient song of great power. It will send you inside yourself, to face your darkest fears. If you're not strong enough, you may never come out.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_TheTrance_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Do it. All I have to lose is my mind.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_TheTrance_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "You're awake! You shook horribly there for a while. But I kept playing.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_TheTrance_OrsimerFEMALE_LUZRAH GRO-SHAR_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Thank you. My mind is still... clouded. But I know what I have to do; Force Sheogorath to see me, to tell me the truth about whatever he did to my mind. There must be someone or something that can compel him.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_TheTrance_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "I've heard a legend that Sheogorath keeps a powerful warrior trapped in a cave in Knifepoint Hollow. Maybe he's just torturing him, but some believe that he fears him.",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_TheTrance_OrsimerFEMALE_LUZRAH GRO-SHAR_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Worm Cult, Talym",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "normal": {
+     "deck": [
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "lute",
+      "lute",
+      "lute",
+      "word-wall",
+      "word-wall",
+      "word-wall",
+      "a-night-to-remember",
+      "a-night-to-remember",
+      "apprentices-potion",
+      "cleric-of-kyne",
+      "healing-potion",
+      "healing-potion",
+      "call-of-valor-level-1",
+      "call-of-valor-level-1",
+      "call-of-valor-level-1",
+      "cornerclub-gambler",
+      "cornerclub-gambler",
+      "grisly-gourmet",
+      "thalmor-justiciar",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "hive-defender",
+      "ebonheart-oracle"
+     ],
+     "health": 30
+    },
+    "master": {
+     "deck": [
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "lute",
+      "lute",
+      "lute",
+      "word-wall",
+      "word-wall",
+      "word-wall",
+      "a-night-to-remember",
+      "a-night-to-remember",
+      "cleric-of-kyne",
+      "cleric-of-kyne",
+      "healing-potion",
+      "healing-potion",
+      "call-of-valor-level-1",
+      "call-of-valor-level-1",
+      "call-of-valor-level-1",
+      "cornerclub-gambler",
+      "cornerclub-gambler",
+      "grisly-gourmet",
+      "grisly-gourmet",
+      "cloudrest-illusionist",
+      "cloudrest-illusionist",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "hive-defender",
+      "hive-defender",
+      "ebonheart-oracle",
+      "ebonheart-oracle"
+     ],
+     "health": 30
+    }
+   }
+  },
+  {
+   "id": "knifepoint-hollow",
+   "name": "Knifepoint Hollow",
+   "uesp": "Knifepoint Hollow",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Meet with Sheogorath's prisoner.",
+   "requires": [
+    "the-trance"
+   ],
+   "image": "LG-loc-Knifepoint Hollow.png",
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Monsters! They must be guarding Sheogorath's prisoner. Be careful in there!?",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_KnifepointHollow_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Dyus",
+     "text": "Ah. You're here. Yes. I knew you'd show up. Dyus of Mytheria knows most things."
+    },
+    {
+     "speaker": "Talym",
+     "text": "You're... not what I was expecting. I was looking for a warrior?",
+     "audio": "IOM_UIDialogue_Episode5_Branch1_KnifepointHollow_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Dyus",
+     "text": "No. You were looking for leverage over Sheogorath. And this old librarian can provide."
+    }
+   ],
+   "battle": {
+    "opponent": "Mazken Turnkey",
+    "attributes": [
+     "P"
+    ],
+    "rulesText": "Ai starts with a Ancient Prison on board.",
+    "normal": {
+     "deck": [
+      "encumbered-explorer",
+      "encumbered-explorer",
+      "enchanted-plate",
+      "enchanted-plate",
+      "squish-the-wimpy",
+      "squish-the-wimpy",
+      "stormhold-henchman",
+      "stormhold-henchman",
+      "ancestral-dead",
+      "ancestral-dead",
+      "brassilisk",
+      "brassilisk",
+      "tree-minder",
+      "tree-minder",
+      "wrothgar-artisan",
+      "wrothgar-artisan",
+      "archein-elite",
+      "archein-elite",
+      "ferocious-dreugh",
+      "ferocious-dreugh",
+      "grim-champion",
+      "grim-champion",
+      "restless-templar",
+      "restless-templar",
+      "snapping-dreugh",
+      "snapping-dreugh",
+      "bal-isra-warrider",
+      "bal-isra-warrider",
+      "cave-bear",
+      "cave-bear",
+      "night-predator",
+      "night-predator",
+      "blueclaw-matron"
+     ],
+     "support": [
+      "ancient-prison"
+     ]
+    },
+    "master": {
+     "deck": [
+      "healing-hands",
+      "healing-hands",
+      "vvardvark-experiment",
+      "vvardvark-experiment",
+      "deathless-draugr",
+      "deathless-draugr",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "encumbered-explorer",
+      "encumbered-explorer",
+      "iliac-sorcerer",
+      "iliac-sorcerer",
+      "dragontail-savior",
+      "dragontail-savior",
+      "quarra-clan-bloodkin",
+      "quarra-clan-bloodkin",
+      "squish-the-wimpy",
+      "squish-the-wimpy",
+      "ancestral-dead",
+      "ancestral-dead",
+      "brassilisk",
+      "brassilisk",
+      "bruma-armorer",
+      "bruma-armorer",
+      "tree-minder",
+      "tree-minder",
+      "frost-troll",
+      "frost-troll",
+      "grim-champion",
+      "grim-champion",
+      "hallowed-deathpriest",
+      "hallowed-deathpriest",
+      "night-shadow",
+      "night-shadow",
+      "lowland-troll"
+     ],
+     "support": [
+      "ancient-prison"
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-warrior",
+   "name": "The Warrior",
+   "uesp": "The Warrior",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Hear Dyus' story.",
+   "requires": [
+    "knifepoint-hollow"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The_Warrior_01.jpg"
+    },
+    {
+     "file": "LG-quest-The_Warrior_02.jpg"
+    },
+    {
+     "file": "LG-quest-The_Warrior_03.jpg"
+    }
+   ],
+   "video": {
+    "end": "iom_act3_ep5_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Dyus",
+     "text": "Once, long ago, the one you know as Sheogorath walked the earth as Jyggalag, the Daedric Prince of Order. I was his librarian, the keeper of his endless records."
+    },
+    {
+     "speaker": "Dyus",
+     "text": "The other daedric princes feared his power, so they conspired to transform him into that which he hated most: The essence of chaos itself."
+    },
+    {
+     "speaker": "Dyus",
+     "text": "Sheogorath has suppressed his memories of Jyggalag, and destroyed almost all trace of him, save for two: Myself, and the Sword of Jyggalag, which is... lost to him."
+    },
+    {
+     "speaker": "Dyus",
+     "text": "I suspect I know where the sword is. Find it, and Sheogorath will see you, Though whether to thank you or kill you, even I cannot predict."
+    }
+   ]
+  },
+  {
+   "id": "obelisk-of-order",
+   "name": "Obelisk of Order",
+   "uesp": "Obelisk of Order",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Last signs of Jyggalag.",
+   "image": "LG-loc-Obelisk of Order.png",
+   "intro": [
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "This is the place Dyus sent told us about. What is that thing?",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_OrsimerFEMALE_LUZRAH GRO-SHAR_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Maybe some last remnant of Jyggalag? Whatever it is, it's in my way.",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_DunmerMALE_TALYM_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Talym",
+     "text": "There it is -- the sword! Now I can face Sheogorath.",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "I get the feeling this is the sort of thing you have to do alone.",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_OrsimerFEMALE_LUZRAH GRO-SHAR_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Considering I'll probably die anyway? Seems best. Thank you again Luzrah. I didn't deserve you help after...",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Luzrah gro-Shar",
+     "text": "Forget it. I owed you one. Good luck Talym.",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_ObeliskofOrder_OrsimerFEMALE_LUZRAH GRO-SHAR_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Knight of Order",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Order",
+     "Shadow"
+    ],
+    "rulesText": "Normal:\nLane: Order/Shadow\nMaster:\nLane: Order/Order",
+    "normal": {
+     "deck": [
+      "execute",
+      "execute",
+      "ambitious-hireling",
+      "ambitious-hireling",
+      "fharun-defender",
+      "fharun-defender",
+      "helgen-squad-leader",
+      "helgen-squad-leader",
+      "artaeum-savant",
+      "artaeum-savant",
+      "crushing-blow",
+      "crushing-blow",
+      "elsweyr-lookout",
+      "rajhini-highwayman",
+      "rajhini-highwayman",
+      "riverhold-escort",
+      "riverhold-escort",
+      "alpha-wolf",
+      "alpha-wolf",
+      "grand-inquisitor",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "restless-templar",
+      "restless-templar",
+      "chanter-of-akatosh",
+      "piercing-javelin",
+      "piercing-javelin",
+      "bandit-ringleader",
+      "odirniran-necromancer",
+      "legion-praefect",
+      "legion-praefect",
+      "lowland-troll",
+      "sanctuary-raid",
+      "dark-seducer"
+     ]
+    },
+    "master": {
+     "deck": [
+      "ambitious-hireling",
+      "ambitious-hireling",
+      "artaeum-savant",
+      "artaeum-savant",
+      "crushing-blow",
+      "crushing-blow",
+      "elsweyr-lookout",
+      "elsweyr-lookout",
+      "khuul-lawkeeper",
+      "khuul-lawkeeper",
+      "rajhini-highwayman",
+      "rajhini-highwayman",
+      "tree-minder",
+      "tree-minder",
+      "edict-of-azura",
+      "edict-of-azura",
+      "grand-inquisitor",
+      "grand-inquisitor",
+      "restless-templar",
+      "restless-templar",
+      "war-cry",
+      "war-cry",
+      "chanter-of-akatosh",
+      "heretic-conjurer",
+      "heretic-conjurer",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "flesh-atronach",
+      "general-tullius",
+      "odirniran-necromancer",
+      "legion-praefect",
+      "auroran-sentry",
+      "mantikora"
+     ],
+     "lanes": [
+      "Order",
+      "Order"
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-final-battle",
+   "name": "The Final Battle",
+   "uesp": "The Final Battle",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Confront Sheogorath and obtain your First memory.",
+   "requires": [
+    "obelisk-of-order"
+   ],
+   "intro": [
+    {
+     "speaker": "Sheogorath",
+     "text": "So! You're back! You've got some old sword and you think that entitles you to... what? A back rub? Some cheese?",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "To a reckoning! You tricked me! Manipulated my mind! Made me think my son was alive!",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "And you're welcome! You're the one who came to me. All boo hoo, and out of yer wee mortal mind. You couldn't live with your memories then, but now, oh now y'want 'em back?",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "The things you made me do.",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "That was the price, Taly-boy. The price for making you forget. So I put a wee little fib in your mind about what's-his-name to motivate ya. So what?!",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Novos. His name was Novos!",
+     "audio": "IOM_UIDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Yeah, him! Look, you want your memories back so bad? I'm all too happy to give 'em to ya! But I don't think you'll survive it.",
+     "audio": "IOM_Movie_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Sheogorath",
+     "text": "Here, a trip down memory lane!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
+    }
+   ],
+   "battle": {
+    "opponent": "Sheogorath",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "rulesText": "Ai starts with a Memory Wand on board.",
+    "normal": {
+     "deck": [
+      "brutal-ashlander",
+      "brutal-ashlander",
+      "enraged-mudcrab",
+      "fiery-imp",
+      "fiery-imp",
+      "firebolt",
+      "firebolt",
+      "scuttler",
+      "scuttler",
+      "ornery-kagouti",
+      "ravenous-hunger",
+      "ravenous-hunger",
+      "stolen-pants",
+      "stolen-pants",
+      "crusaders-assault",
+      "feasting-hunger",
+      "feasting-hunger",
+      "wild-clumsiness",
+      "haskill",
+      "icy-shambles",
+      "manic-jack",
+      "nervous-giant",
+      "heretic-conjurer",
+      "prized-chicken",
+      "tusked-bristleback",
+      "lame-corprus",
+      "demented-grummite",
+      "demented-grummite",
+      "baliwog",
+      "blueclaw-matron",
+      "blueclaw-matron"
+     ],
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "brutal-ashlander",
+      "brutal-ashlander",
+      "fiery-imp",
+      "fiery-imp",
+      "firebolt",
+      "firebolt",
+      "relentless-raider",
+      "relentless-raider",
+      "solitude-stalwart",
+      "solitude-stalwart",
+      "cloak",
+      "cloak",
+      "orc-clan-captain",
+      "orc-clan-captain",
+      "ravenous-hunger",
+      "ravenous-hunger",
+      "seyda-neen-courier",
+      "wardcrafter",
+      "wardcrafter",
+      "crusaders-assault",
+      "crushing-blow",
+      "gladiator-arena",
+      "haskill",
+      "hive-defender",
+      "hive-defender",
+      "lumbering-ogrim",
+      "nervous-giant",
+      "demented-grummite",
+      "demented-grummite"
+     ],
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "imperial-training",
+   "name": "Imperial Training",
+   "uesp": "Imperial Training",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Prove your worth.",
+   "requires": [
+    "the-final-battle"
+   ],
+   "intro": [
+    {
+     "speaker": null,
+     "text": "The fabric of reality tied in knots, time crumbling to pieces. A day... a fateful day... from long ago..."
+    },
+    {
+     "speaker": "Porcia",
+     "text": "Talym, you're our best spy, but you're not ready to go back into the field. Go home, see your son.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory1_BretonFEMALE_PORCIA_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "The Worm Cult killed my partner. I'm ready to take them down. Set up the training exercise, I'll prove it.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory1_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Porcia",
+     "text": "Okay. You Win. I'll find someone to watch Novos while you're gone.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory1_BretonFEMALE_PORCIA_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Porcia Loran",
+    "attributes": [
+     "N"
+    ],
+    "rulesText": "Normal:\nAi starts with 0 Runes.\nAi starts with 9 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 8 Max Magicka.\nAi starts with 3 Septim Guardsman in left lane.\nAi starts with a Phalanx Exemplar, a Watch Commander in right lane.\nAi starts with no cards in deck.\nPlayer starts with 2 Mournhold Traitor, an Indoril Archmage in left lane.\nPlayer starts with an Iron Sword, a Bushwhack in hand.\nPlayer starts with a Mournhold Traitor in right lane.\nPlayer starts with no cards in deck.\nMaster:\nAi starts with 0 Runes.\nAi starts with 8 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 8 Max Magicka.\nAi starts with 4 Emperor's Blade in right lane.\nAi starts with a Divine Fervor on board.\nAi starts with an Emperor's Blade in left lane.\nAi starts with no cards in deck.\nPlayer starts with 2 Mournhold Traitor in left lane.\nPlayer starts with 4 Mournhold Traitor in right lane.\nPlayer starts with a Mad Dash, a Steel Sword, a Grappling Hook, an Orcish Warhammer in hand.\nPlayer starts with no cards in deck.\n{{Nav Footer\n|Prev=The Final Battle\n|Next=The Final Battle Pt. 2\n|Up=Isle of Madness\n}}\n",
+    "puzzle": {
+     "goal": "win",
+     "text": "Win this turn.",
+     "player": {
+      "health": 30,
+      "magicka": 8,
+      "runes": 0,
+      "hand": [
+       "iron-sword",
+       "bushwhack"
+      ],
+      "board": [
+       [
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "indoril-archmage"
+       ],
+       [
+        "mournhold-traitor"
+       ]
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 8,
+      "magicka": 9,
+      "runes": 0,
+      "board": [
+       [
+        "septim-guardsman",
+        "septim-guardsman",
+        "septim-guardsman"
+       ],
+       [
+        "phalanx-exemplar",
+        "watch-commander"
+       ]
+      ],
+      "deck": []
+     },
+     "notes": "UESP gives no health totals or goal text; goal \"Win this turn\" and both health values are guesses (8 = Indoril Archmage + Iron Sword + Bushwhack to face)."
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Win this turn.",
+     "player": {
+      "health": 30,
+      "magicka": 8,
+      "runes": 0,
+      "hand": [
+       "mad-dash",
+       "steel-sword",
+       "grappling-hook",
+       "orcish-warhammer"
+      ],
+      "board": [
+       [
+        "mournhold-traitor",
+        "mournhold-traitor"
+       ],
+       [
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "mournhold-traitor"
+       ]
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 13,
+      "magicka": 8,
+      "runes": 0,
+      "support": [
+       "divine-fervor"
+      ],
+      "board": [
+       [
+        "emperors-blade"
+       ],
+       [
+        "emperors-blade",
+        "emperors-blade",
+        "emperors-blade",
+        "emperors-blade"
+       ]
+      ],
+      "deck": []
+     },
+     "notes": "UESP gives no health totals or goal text; goal and health values are guesses (13 = best line found: Mad Dash a right Traitor left, Warhammer Traitor breaks through the Blade, Steel Sword Traitor + moved Traitor to face)."
+    }
+   }
+  },
+  {
+   "id": "the-final-battle-pt-2",
+   "name": "The Final Battle Pt. 2",
+   "uesp": "The Final Battle Pt. 2",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Obtain your second memory.",
+   "requires": [
+    "imperial-training"
+   ],
+   "during": [
+    {
+     "speaker": "Talym",
+     "text": "I left him alone. I didn't realize how precious that time was.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Oh, I'm sure ya had good reasons! You've always got good reasons!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "How rude of me -- I forgot! I promised you more memories, didn't I? Well, here you go!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_003"
+    }
+   ],
+   "battle": {
+    "opponent": "Sheogorath",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "rulesText": "Ai starts with 3 Max Magicka.\nPlayer starts with 3 Max Magicka.\nPlayer starts with 4 Runes.\nAi starts with a Memory Wand on board.",
+    "normal": {
+     "deck": [
+      "fiery-imp",
+      "fiery-imp",
+      "scuttler",
+      "steel-scimitar",
+      "ravenous-hunger",
+      "ravenous-hunger",
+      "tiny-dragon",
+      "feasting-hunger",
+      "ghost-fanatic",
+      "drive-mad",
+      "drive-mad",
+      "haskill",
+      "hive-defender",
+      "hive-defender",
+      "icy-shambles",
+      "icy-shambles",
+      "knife-to-the-throat",
+      "mundus-stone",
+      "nervous-giant",
+      "nervous-giant",
+      "divine-fervor",
+      "doppelganger",
+      "fetcherfly-golem",
+      "gnarl-rootbender",
+      "gnarl-rootbender",
+      "prized-chicken",
+      "wabbajack",
+      "cliff-hunter",
+      "dread-clannfear",
+      "lame-corprus",
+      "demented-grummite",
+      "demented-grummite",
+      "blueclaw-matron"
+     ],
+     "maxMagicka": 3,
+     "playerMaxMagicka": 3,
+     "playerRunes": 4,
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "firebolt",
+      "afflicted-alit",
+      "afflicted-alit",
+      "cloak",
+      "cloak",
+      "ravenous-hunger",
+      "ravenous-hunger",
+      "wardcrafter",
+      "wardcrafter",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "drive-mad",
+      "drive-mad",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "hive-defender",
+      "hive-defender",
+      "icy-shambles",
+      "icy-shambles",
+      "nervous-giant",
+      "nervous-giant",
+      "divine-fervor",
+      "divine-fervor",
+      "doppelganger",
+      "gnarl-rootbender",
+      "wabbajack",
+      "cradlecrush-giant",
+      "tel-vos-magister",
+      "tel-vos-magister"
+     ],
+     "maxMagicka": 3,
+     "playerMaxMagicka": 3,
+     "playerRunes": 4,
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "worm-cult-initiation",
+   "name": "Worm Cult Initiation",
+   "uesp": "Worm Cult Initiation",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Prove yourself to the Worm Cult.",
+   "requires": [
+    "the-final-battle-pt-2"
+   ],
+   "intro": [
+    {
+     "speaker": null,
+     "text": "Space rips itself apart, light and darkness and both at once. Another time... another moment... from long ago..."
+    },
+    {
+     "speaker": "Worm Cult",
+     "text": "You seek to join the Worm Cult, to worship our dread lord? Very well. Here is your first test, a trial of cunning.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory2_BretonMALE_WORM CULTIST_001"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Worm Cult",
+     "text": "Well done. But another trial yet awaits.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory2_BretonMALE_WORM CULTIST_002"
+    }
+   ],
+   "battle": {
+    "opponent": "Worm Cult",
+    "attributes": [
+     "N"
+    ],
+    "rulesText": "Normal:\nAi starts with 0 Runes.\nAi starts with 9 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 9 Max Magicka.\nAi starts with a Worm Thrall in each lane.\nAi starts with no cards in deck.\nPlayer starts with 3 Firebolt, a Black Worm Necromancer in hand.\nPlayer starts with a House Kinsman in left lane.\nPlayer starts with no cards in deck.\nMaster:\nAi starts with 0 Runes.\nAi starts with 10 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 10 Max Magicka.\nAi starts with an Indoril Archmage in right lane.\nAi starts with no cards in deck.\nPlayer starts with 2 Grim Champion in right lane.\nPlayer starts with an Eager Torturer in left lane.\nPlayer starts with a Finish Off, 2 Prophet of Bones, 2 Rising of Bones, 2 House Kinsman in hand.\nPlayer starts with no cards in deck.\n{{Nav Footer\n|Prev=The Final Battle Pt. 2\n|Next=The Final Battle Pt. 3\n|Up=Isle of Madness\n}}\n",
+    "puzzle": {
+     "goal": "win",
+     "text": "Win this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 9,
+      "runes": 0,
+      "hand": [
+       "firebolt",
+       "firebolt",
+       "firebolt",
+       "black-worm-necromancer"
+      ],
+      "board": [
+       [
+        "house-kinsman"
+       ],
+       []
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 9,
+      "magicka": 9,
+      "runes": 0,
+      "board": [
+       [
+        "worm-thrall"
+       ],
+       [
+        "worm-thrall"
+       ]
+      ],
+      "deck": []
+     },
+     "solution": [
+      "Firebolt the Worm Thrall in the left lane.",
+      "Attack your opponent with House Kinsman (3 damage).",
+      "Firebolt your House Kinsman: its Last Gasp deals 3 damage and you gain 3 health.",
+      "Now that you have more health than your opponent, play Black Worm Necromancer to summon House Kinsman from your discard pile.",
+      "Firebolt House Kinsman again for the last 3 damage."
+     ],
+     "notes": "UESP gives no health totals, goal text or walkthrough. Opponent health 9 is inferred from the line above (uses all 9 magicka); player health 1 is a guess that makes the order matter."
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Win this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 10,
+      "runes": 0,
+      "hand": [
+       "finish-off",
+       "prophet-of-bones",
+       "prophet-of-bones",
+       "rising-of-bones",
+       "rising-of-bones",
+       "house-kinsman",
+       "house-kinsman"
+      ],
+      "board": [
+       [
+        "eager-torturer"
+       ],
+       [
+        "grim-champion",
+        "grim-champion"
+       ]
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 12,
+      "magicka": 10,
+      "runes": 0,
+      "board": [
+       [],
+       [
+        "indoril-archmage"
+       ]
+      ],
+      "deck": []
+     },
+     "notes": "UESP gives no health totals, goal text or walkthrough; both health values are guesses."
+    }
+   }
+  },
+  {
+   "id": "the-final-battle-pt-3",
+   "name": "The Final Battle Pt. 3",
+   "uesp": "The Final Battle Pt. 3",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Obtain your third memory.",
+   "requires": [
+    "worm-cult-initiation"
+   ],
+   "intro": [
+    {
+     "speaker": null,
+     "text": "What was and what has been. A haze, a dream... only a memory."
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Sheogorath",
+     "text": "I've one more memory for you -- and it's a doozy!.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_004"
+    }
+   ],
+   "battle": {
+    "opponent": "Sheogorath",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "rulesText": "Ai starts with 4 Max Magicka.\nPlayer starts with 3 Runes.\nPlayer starts with 4 Max Magicka.\nAi starts with a Memory Wand on board.",
+    "normal": {
+     "deck": [
+      "corprus-disease",
+      "enraged-mudcrab",
+      "fiery-imp",
+      "firebolt",
+      "scuttler",
+      "elixir-of-the-defender",
+      "shrieking-harpy",
+      "tiny-dragon",
+      "tiny-dragon",
+      "bedeviling-scamp",
+      "dismantle",
+      "mages-trick",
+      "drive-mad",
+      "drive-mad",
+      "ferocious-dreugh",
+      "hive-defender",
+      "icy-shambles",
+      "icy-shambles",
+      "mundus-stone",
+      "nervous-giant",
+      "nervous-giant",
+      "divine-fervor",
+      "doppelganger",
+      "doppelganger",
+      "prized-chicken",
+      "wabbajack",
+      "lame-corprus",
+      "demented-grummite",
+      "demented-grummite",
+      "blueclaw-matron",
+      "spirit-knife",
+      "shocking-wamasu",
+      "shrine-guardian"
+     ],
+     "maxMagicka": 4,
+     "playerMaxMagicka": 4,
+     "playerRunes": 3,
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "ravenous-hunger",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "drive-mad",
+      "drive-mad",
+      "gladiator-arena",
+      "haskill",
+      "hive-defender",
+      "hive-defender",
+      "icy-shambles",
+      "icy-shambles",
+      "nervous-giant",
+      "cast-into-time",
+      "divine-fervor",
+      "doppelganger",
+      "piercing-javelin",
+      "piercing-javelin",
+      "wabbajack",
+      "golden-saint",
+      "golden-saint",
+      "demented-grummite",
+      "demented-grummite",
+      "tel-vos-magister",
+      "tel-vos-magister",
+      "thadon-duke-of-mania",
+      "genius-pathmage",
+      "brellach-commander",
+      "shrine-guardian"
+     ],
+     "maxMagicka": 4,
+     "playerMaxMagicka": 4,
+     "playerRunes": 3,
+     "support": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandTransition",
+       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-tragedy",
+   "name": "The Tragedy",
+   "uesp": "The Tragedy",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Discover your son's fate.",
+   "requires": [
+    "the-final-battle-pt-3"
+   ],
+   "intro": [
+    {
+     "speaker": null,
+     "text": "Truth."
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Worm Cult",
+     "text": "There is one last test, Initiate. The trial of ruthlessness.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_BretonMALE_WORM CULTIST_001"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Novos?!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_DunmerMALE_TALYM_001"
+    },
+    {
+     "speaker": "Novos",
+     "text": "Dad?",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_DunmerMALECHILD_NOVOS_001"
+    },
+    {
+     "speaker": "Worm Cult",
+     "text": "Death is our home and our strength. Slay him. Prove you are one of us.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_BretonMALE_WORM CULTIST_002"
+    },
+    {
+     "speaker": "Talym",
+     "text": "I'm sorry son. I am so, so sorry.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_DunmerMALE_TALYM_002",
+     "if": {
+      "choice": {
+       "node": "the-tragedy",
+       "option": "kill"
+      }
+     }
+    },
+    {
+     "speaker": "Worm Cult",
+     "text": "The king of worms be praised! Welcome to the Worm Cult, brother!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_BretonMALE_WORM CULTIST_003",
+     "if": {
+      "choice": {
+       "node": "the-tragedy",
+       "option": "kill"
+      }
+     }
+    },
+    {
+     "speaker": "Talym",
+     "text": "No! I refuse!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_DunmerMALE_TALYM_003",
+     "if": {
+      "choice": {
+       "node": "the-tragedy",
+       "option": "refuse"
+      }
+     }
+    },
+    {
+     "speaker": "Worm Cult",
+     "text": "How disappointing.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_BretonMALE_WORM CULTIST_004",
+     "if": {
+      "choice": {
+       "node": "the-tragedy",
+       "option": "refuse"
+      }
+     }
+    },
+    {
+     "speaker": "Talym",
+     "text": "NOOOOO!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_Memory3_DunmerMALE_TALYM_004",
+     "if": {
+      "choice": {
+       "node": "the-tragedy",
+       "option": "refuse"
+      }
+     }
+    }
+   ],
+   "choice": {
+    "prompt": "Slay him. Prove you are one of us.",
+    "inMatch": true,
+    "options": [
+     {
+      "id": "kill",
+      "label": "Kill your son"
+     },
+     {
+      "id": "refuse",
+      "label": "Refuse (end turn)"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Worm Cult",
+    "attributes": [
+     "N"
+    ],
+    "rulesText": "Ai starts with 0 Runes.\nAi starts with 3 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 3 Max Magicka.\nAi starts with no cards in deck.\nPlayer starts with a Blood Sacrament in hand.\nPlayer starts with a Worm Cultist in each lane.\nPlayer starts with no cards in deck.\n{{Nav Footer\n|Prev=The Final Battle Pt. 3\n|Next=The Final Battle Pt. 4\n|Up=Isle of Madness\n}}\n\nIf you refuse to kill your son by clicking end turn, they will kill him instead.",
+    "puzzle": {
+     "goal": "survive",
+     "text": "The trial of ruthlessness.",
+     "player": {
+      "health": 30,
+      "magicka": 3,
+      "runes": 0,
+      "hand": [
+       "blood-sacrament"
+      ],
+      "board": [
+       [
+        "worm-cultist"
+       ],
+       [
+        "worm-cultist"
+       ]
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 30,
+      "magicka": 3,
+      "runes": 0,
+      "deck": []
+     },
+     "notes": "Either outcome completes the memory: killing Novos (Blood Sacrament Betray sacrifice) or refusing by clicking end turn (the Worm Cult kills him). UESP does not say where Novos is on the board (not listed in Game Settings) or give health totals; values are placeholders."
+    }
+   }
+  },
+  {
+   "id": "the-final-battle-pt-4",
+   "name": "The Final Battle Pt. 4",
+   "uesp": "The Final Battle Pt. 4",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Defeat Sheogorath at his own game.",
+   "requires": [
+    "the-tragedy"
+   ],
+   "final": true,
+   "intro": [
+    {
+     "speaker": null,
+     "text": "What was and what has been. A shadow, a nightmare... only a memory."
+    },
+    {
+     "speaker": "Talym",
+     "text": "Novos. My son",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_002"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Oh. Very sad isn't it. So very, very sad. You know, I think it's even more fun watching your mind break the second time around. Or is it the third now?",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_005"
+    },
+    {
+     "speaker": "Talym",
+     "text": "No. I took that easy path once. Chose to forget, to run from what I'd done. And you used me.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_003"
+    },
+    {
+     "speaker": "Talym",
+     "text": "Not this time. This time I live with the pain. Let's see if you can do the same!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DunmerMALE_TALYM_004"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Sheogorath",
+     "text": "What is this? Who's this \"Prince of Order\" loser? That's not... that's not me is it?",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_006"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "I can't ever have been that boring! This is making me skin crawl.",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_007"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "That's not me! Stop it! Cut it out! You lose!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_008"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Give up, go home!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_009"
+    },
+    {
+     "speaker": "Sheogorath",
+     "text": "Uncle! Uncle! Father, Brother, Second Cousin! Just stop making me remember!",
+     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_010"
+    }
+   ],
+   "battle": {
+    "opponent": "Sheogorath",
+    "attributes": [
+     "R",
+     "B",
+     "Y"
+    ],
+    "rulesText": "Player starts with a Memory Wand in hand.\nAi starts with 5 Max Magicka.\nPlayer starts with 2 Runes.\nPlayer starts with 5 Max Magicka.",
+    "normal": {
+     "deck": [
+      "corprus-disease",
+      "fiery-imp",
+      "fiery-imp",
+      "firebolt",
+      "a-night-to-remember",
+      "stolen-pants",
+      "stolen-pants",
+      "wisdom-of-ancients",
+      "bedeviling-scamp",
+      "excavate",
+      "excavate",
+      "ghost-fanatic",
+      "two-moons-contemplation",
+      "two-moons-contemplation",
+      "two-moons-contemplation",
+      "drive-mad",
+      "drive-mad",
+      "haskill",
+      "knife-to-the-throat",
+      "knife-to-the-throat",
+      "mundus-stone",
+      "divine-fervor",
+      "doppelganger",
+      "prized-chicken",
+      "prized-chicken",
+      "trial-of-flame",
+      "wabbajack",
+      "demented-grummite",
+      "demented-grummite",
+      "blueclaw-matron",
+      "spirit-knife",
+      "brellach-commander",
+      "shocking-wamasu",
+      "shrine-guardian"
+     ],
+     "maxMagicka": 5,
+     "playerMaxMagicka": 5,
+     "playerRunes": 2,
+     "playerHand": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandVictory",
+       "text": "Use the Memory Wand on Sheogorath three times to win. After the second use the defeat screen is shown, but the match continues; after the third use the match ends."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "crusaders-assault",
+      "crusaders-assault",
+      "daggerfall-mage",
+      "drive-mad",
+      "drive-mad",
+      "haskill",
+      "hive-defender",
+      "hive-defender",
+      "nervous-giant",
+      "nervous-giant",
+      "divine-fervor",
+      "doppelganger",
+      "doppelganger",
+      "cradlecrush-giant",
+      "cradlecrush-giant",
+      "tel-vos-magister",
+      "tel-vos-magister",
+      "belligerent-giant",
+      "belligerent-giant",
+      "giant-chicken",
+      "giant-chicken",
+      "mighty-conjuring",
+      "mighty-conjuring",
+      "brellach-commander",
+      "brellach-commander",
+      "shrine-guardian",
+      "shrine-guardian",
+      "nahkriin-dragon-priest",
+      "dremora-markynaz",
+      "mantikora",
+      "supreme-atromancer",
+      "supreme-atromancer",
+      "dwarven-colossus",
+      "dwarven-colossus",
+      "odahviing"
+     ],
+     "maxMagicka": 5,
+     "playerMaxMagicka": 5,
+     "playerRunes": 2,
+     "playerHand": [
+      "memory-wand"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "memoryWandVictory",
+       "text": "Use the Memory Wand on Sheogorath three times to win. After the second use the defeat screen is shown, but the match continues; after the third use the match ends."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "a-reckoning",
+   "name": "A Reckoning",
+   "uesp": "A Reckoning",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Hear a father's warning.",
+   "requires": [
+    "the-final-battle-pt-4"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-A Reckoning 01.jpg"
+    },
+    {
+     "file": "LG-quest-A Reckoning 02.jpg"
+    },
+    {
+     "file": "LG-quest-A Reckoning 03.jpg"
+    },
+    {
+     "file": "LG-quest-A Reckoning 04.jpg"
+    }
+   ],
+   "video": {
+    "start": "iom_epilogue"
+   },
+   "intro": [
+    {
+     "speaker": "Talym",
+     "text": "Unable to withstand his own terrible memories, Sheogorath relented. He restored my memories, and lifted the cloud of madness from my mind. I also made him promise to leave Luzrah and Cyriel in peace."
+    },
+    {
+     "speaker": "Talym",
+     "text": "In exchange, I promised to leave the Isles forever. I returned home now to nurse my grief, and perhaps, in time, to plot my revenge on the Cult of the Worm. My warning to you, then, is this:"
+    },
+    {
+     "speaker": "Talym",
+     "text": "There will always be a devil seeking a bargain, promising to take away your pains. Do not trust them. The past may be the heaviest burden, but it is our burden to bear."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Does Kellen not have any happy tales?"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "A few. But as the story reminds us, we must remember the darkest tales as well."
+    }
+   ]
+  }
+ ]
+}

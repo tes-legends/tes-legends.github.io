@@ -61,7 +61,12 @@
         "target": "creatureEnemy",
         "targetCondition": {
           "type": "hasSubtype",
-          "subtypes": [ "Mummy", "Skeleton", "Spirit", "Vampire" ]
+          "subtypes": [
+            "Mummy",
+            "Skeleton",
+            "Spirit",
+            "Vampire"
+          ]
         }
       }
     ]
@@ -81,7 +86,9 @@
     "health": 4,
     "rarity": "1Common",
     "text": "Guard",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Story Set",
     "deckCodeId": "Cr"
   },
@@ -125,7 +132,9 @@
     "health": 4,
     "rarity": "1Common",
     "text": "Lethal",
-    "keywords": ["Lethal"],
+    "keywords": [
+      "Lethal"
+    ],
     "set": "Story Set",
     "deckCodeId": "aL"
   },
@@ -240,7 +249,9 @@
     "health": 4,
     "rarity": "1Common",
     "text": "Guard",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Story Set",
     "deckCodeId": "cH"
   },
@@ -260,7 +271,9 @@
     "rarity": "1Common",
     "text": "Your opponent can't summon creatures to the other lane.",
     "keywords": [],
-    "immunity": ["CreaturesInOtherLane"],
+    "immunity": [
+      "CreaturesInOtherLane"
+    ],
     "set": "Story Set",
     "deckCodeId": null
   },
@@ -471,7 +484,9 @@
     "health": 1,
     "rarity": "1Common",
     "text": "Guard",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Story Set",
     "deckCodeId": null
   },
@@ -567,7 +582,9 @@
     "health": 2,
     "rarity": "1Common",
     "text": "Lethal",
-    "keywords": ["Lethal"],
+    "keywords": [
+      "Lethal"
+    ],
     "set": "Story Set",
     "deckCodeId": "hK"
   },
@@ -605,7 +622,9 @@
     "health": 5,
     "rarity": "1Common",
     "text": "Guard",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Story Set",
     "deckCodeId": null
   },
@@ -624,7 +643,9 @@
     "health": 5,
     "rarity": "3Epic",
     "text": "Breakthrough",
-    "keywords": ["Breakthrough"],
+    "keywords": [
+      "Breakthrough"
+    ],
     "set": "Story Set",
     "deckCodeId": "lu"
   },
@@ -787,7 +808,9 @@
     "health": 5,
     "rarity": "4Legendary",
     "text": "Breakthrough Summon: Summon a 1/1 Imperial Grunt",
-    "keywords": ["Breakthrough"],
+    "keywords": [
+      "Breakthrough"
+    ],
     "set": "Story Set",
     "deckCodeId": "nn",
     "effects": [
@@ -910,7 +933,9 @@
     "health": 7,
     "rarity": "1Common",
     "text": "Drain",
-    "keywords": ["Drain"],
+    "keywords": [
+      "Drain"
+    ],
     "set": "Story Set",
     "deckCodeId": "rx"
   },
@@ -1033,7 +1058,9 @@
     "health": 4,
     "rarity": "2Rare",
     "text": "Guard",
-    "keywords": ["Guard"],
+    "keywords": [
+      "Guard"
+    ],
     "set": "Story Set",
     "deckCodeId": "eW"
   },
@@ -1071,7 +1098,9 @@
     "health": 3,
     "rarity": "3Epic",
     "text": "Last Gasp: Put a random Dwemer into your hand.",
-    "keywords": ["LastGasp"],
+    "keywords": [
+      "LastGasp"
+    ],
     "set": "Story Set",
     "deckCodeId": "pJ",
     "effects": [
@@ -1080,7 +1109,9 @@
         "type": "addToHand",
         "amount": 1,
         "target": "player",
-        "subtypes": [ "Dwemer" ]
+        "subtypes": [
+          "Dwemer"
+        ]
       }
     ]
   },
@@ -1300,7 +1331,9 @@
         "amount": -1,
         "targetCondition": {
           "type": "hasType",
-          "subtypes": [ "Creature" ]
+          "subtypes": [
+            "Creature"
+          ]
         }
       }
     ]
@@ -1326,7 +1359,7 @@
         "trigger": "SummonCreature",
         "type": "summonCopy",
         "target": "otherLane",
-        "condition" : {
+        "condition": {
           "type": "lastSummonCost",
           "max": 2
         }
@@ -1367,7 +1400,9 @@
     "health": 4,
     "rarity": "4Legendary",
     "text": "Pilfer: +4/+4",
-    "keywords": ["Pilfer"],
+    "keywords": [
+      "Pilfer"
+    ],
     "set": "Story Set",
     "deckCodeId": "mA",
     "effects": [
@@ -1427,7 +1462,9 @@
     "id": "reclusive-giant",
     "name": "Reclusive Giant",
     "type": "Creature",
-    "subtypes": ["Giant"],
+    "subtypes": [
+      "Giant"
+    ],
     "attributes": [
       "R"
     ],
@@ -1436,7 +1473,9 @@
     "health": 8,
     "rarity": "4Legendary",
     "text": "Breakthrough",
-    "keywords": ["Breakthrough"],
+    "keywords": [
+      "Breakthrough"
+    ],
     "set": "Story Set",
     "deckCodeId": "mM"
   },
@@ -1444,7 +1483,9 @@
     "id": "cheydinhal-conscript",
     "name": "Cheydinhal Conscript",
     "type": "Creature",
-    "subtypes": ["Imperial"],
+    "subtypes": [
+      "Imperial"
+    ],
     "attributes": [
       "Y"
     ],
@@ -1617,5 +1658,2207 @@
         "target": "creatureFriendlyAll"
       }
     ]
+  },
+  {
+    "id": "alikr-bandit",
+    "name": "Alik'r Bandit",
+    "type": "Creature",
+    "subtypes": [
+      "Redguard"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "When Alik'r Bandit equips an item, he gains +1/+1.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "EquipItem",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "self"
+      }
+    ]
+  },
+  {
+    "id": "alisanne-dupre",
+    "name": "Alisanne Dupre",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing You have +1 max magicka for each enemy killed by your creatures on your turn during this game.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "archers-perch",
+    "name": "Archer's Perch",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Ongoing When a friendly creature attacks, it deals 1 damage to your opponent.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "beloved-squealer",
+    "name": "Beloved Squealer",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Immune to Silence. May run off at the start of your turn. Last Gasp: You lose.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "immunity": [
+      "Silence"
+    ]
+  },
+  {
+    "id": "cave-grahl",
+    "name": "Cave Grahl",
+    "type": "Creature",
+    "subtypes": [
+      "Troll"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Regenerate",
+    "keywords": [
+      "Regenerate"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "close-the-gates",
+    "name": "Close the Gates!",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing At the end of your opponent's turn, if you took no damage, win the game.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "corpselight-farmer",
+    "name": "Corpselight Farmer",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "At the start of your turn, if you have 7 or more max magicka, this Changes into a 5/5 Corpselight Beast.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "corpselight-beast",
+    "name": "Corpselight Beast",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 5,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "dance-partner",
+    "name": "Dance Partner",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "At the start of your turn, move a random friendly creature to this lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "elite-treasury-guard",
+    "name": "Elite Treasury Guard",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 8,
+    "health": 8,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "expected-demise",
+    "name": "Expected Demise",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 10,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Prophecy Kill Alisanne Dupre. (Your opponent loses all bonus max magicka.)",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "storyKillAlisanne",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "fates-witness",
+    "name": "Fate's Witness",
+    "type": "Creature",
+    "subtypes": [
+      "Nereid"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 6,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Prophecy Summon: Draw a card.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "gust-of-wind",
+    "name": "Gust of Wind",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Move a creature.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "move",
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "imprisoned-crime-boss",
+    "name": "Imprisoned Crime Boss",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 0,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Your opponent can't win. Imprisoned Crime Boss can't be targeted by actions.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "immunity": [
+      "ActionTarget"
+    ]
+  },
+  {
+    "id": "imprisoned-criminal",
+    "name": "Imprisoned Criminal",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 0,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Your opponent can't win. Imprisoned Criminal can't be targeted by actions.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "immunity": [
+      "ActionTarget"
+    ]
+  },
+  {
+    "id": "mine-cart",
+    "name": "Mine Cart",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Move a friendly creature and give this card to your opponent.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "move",
+        "target": "creatureFriendly"
+      },
+      {
+        "trigger": "Play",
+        "type": "storyGiveToOpponent",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "obnoxious-guest",
+    "name": "Obnoxious Guest",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "At the start of your turn, you take 2 damage. When Obnoxious Guest moves, give him to your opponent.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "power-of-the-throne",
+    "name": "Power of the Throne",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 10,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing Indestructible All your cards have Prophecy.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "shantytown-defenses",
+    "name": "Shantytown Defenses",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Friendly creatures have +1/+1.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "creatureFriendlyAll"
+      }
+    ]
+  },
+  {
+    "id": "skooma-frenzy",
+    "name": "Skooma Frenzy",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Uses: 5 Activate: Give a friendly creature Charge and reduce its health to 1.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 5,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storySkoomaFrenzy",
+        "target": "creatureFriendly"
+      }
+    ]
+  },
+  {
+    "id": "sparring",
+    "name": "Sparring",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible All damage dealt to players is halved, rounded up.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "spawning-pool",
+    "name": "Spawning Pool",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing At the start of your turn, summon a 1/1 Foraging Mudcrab.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "summon",
+        "cardId": "foraging-mudcrab",
+        "amount": 1,
+        "target": "randomLane"
+      }
+    ]
+  },
+  {
+    "id": "stealth-mission",
+    "name": "Stealth Mission",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible If any of your creatures die, you lose the game.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "temples-blessing",
+    "name": "Temple's Blessing",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing While you have 40 or more health, your creatures have +5/+5.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "test-the-poison",
+    "name": "Test the Poison",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible When you have killed 6 creatures with Lethal, win the game.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "time-is-running-out",
+    "name": "Time is Running Out!",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Indestructible Time is Running Out! counts down at the start of your turn. When it reaches zero, you win the game.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "to-the-death",
+    "name": "To the Death",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible Double all damage dealt to players.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "treasury-guard",
+    "name": "Treasury Guard",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "unexpected-demise",
+    "name": "Unexpected Demise",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 12,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Prophecy Kill Alisanne Dupre. (Your opponent loses all bonus max magicka.)",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "storyKillAlisanne",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "uther-nere",
+    "name": "Uther Nere",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing When your opponent loses a rune, Uther gives you a trinket.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "storyTrinket",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "winters-touch",
+    "name": "Winter's Touch",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Shackle all enemy creatures in a lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "shackle",
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ]
+  },
+  {
+    "id": "zarias-poison",
+    "name": "Zaria's Poison",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Give all friendly creatures Lethal. Return Zaria's Poison to your hand and increase its cost by 1.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Lethal"
+        ],
+        "target": "creatureFriendlyAll"
+      },
+      {
+        "trigger": "Play",
+        "type": "storyReturnCostlier",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "harvest",
+    "name": "Harvest",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing At the end of each player's turn, if they have no cards in hand, they draw three cards.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "hircine-healing",
+    "name": "Hircine Healing",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible At the start of your turn, heal back to 15 health. (Master: 30 health.)",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "crime-spree",
+    "name": "Crime Spree",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible Complete these tasks to \"win.\" Vandalism: Destroy a support or rune. Burglary: Steal a card. Assault: Wound a creature. Murder: Kill a chicken.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "dungeon-cell",
+    "name": "Dungeon Cell",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Once you've picked all the locks, sacrifice Dungeon Cell and summon Sails-Through-Storms in the Shadow Lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "forelhost-poison",
+    "name": "Forelhost Poison",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing At the start of your turn, take one damage. The poison intensifies by 1 while you have 15 or less health. (Master: by 1 for each of your broken runes.)",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "very-experimental-scroll",
+    "name": "Very Experimental Scroll",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Don't worry what this is, just give it a try! You can't win the game until you've used all the scrolls in your hand.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "storyExperimentalScroll",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "powerful-presence",
+    "name": "Powerful Presence",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing The first action a player plays each turn is free.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "sightless-pit",
+    "name": "Sightless Pit",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing When a creature gains Cover, it gains +2/+0.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "harsh-conditions",
+    "name": "Harsh Conditions",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Every fifth turn, there will be an Ice Storm.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 5
+  },
+  {
+    "id": "trip-wire",
+    "name": "Trip Wire",
+    "type": "Creature",
+    "subtypes": [
+      "Trap"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Prophecy, Guard Last Gasp: It's a trap!",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "storyTrap",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "pressure-plate",
+    "name": "Pressure Plate",
+    "type": "Creature",
+    "subtypes": [
+      "Trap"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 0,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "Guard Last Gasp: It's a trap!",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "storyTrap",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "brass-fortress",
+    "name": "Brass Fortress",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Neutral cards have Prophecy.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "captive-swims-at-night",
+    "name": "Captive Swims-at-Night",
+    "type": "Creature",
+    "subtypes": [
+      "Argonian"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Guard Immune to Silence Permanently Shackled. Move at the end of your turn. Last Gasp: The Treasure Hunters Win.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "immunity": [
+      "Silence"
+    ]
+  },
+  {
+    "id": "call",
+    "name": "Call",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Summon a 1/1 Reconstructed Spider. You can only use one Lever per turn.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyLever",
+        "target": "player",
+        "then": [
+          {
+            "type": "summon",
+            "cardId": "reconstructed-spider",
+            "amount": 1,
+            "target": "randomLane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enhance",
+    "name": "Enhance",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Give a creature +3/+0. You can only use one Lever per turn.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyLever",
+        "target": "creature",
+        "then": [
+          {
+            "type": "buffTarget",
+            "modAttack": 3,
+            "target": "creature"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "melt",
+    "name": "Melt",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Sacrifice a creature to destroy a random enemy support and gain 3 health. You can only use one Lever per turn.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyLever",
+        "target": "creatureFriendly",
+        "then": [
+          {
+            "type": "storyMelt",
+            "target": "creatureFriendly"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curious-fabricant",
+    "name": "Curious Fabricant",
+    "type": "Creature",
+    "subtypes": [
+      "Fabricant"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Ward",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "waiting-generator",
+    "name": "Waiting Generator",
+    "type": "Creature",
+    "subtypes": [
+      "Automaton"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 0,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "When an enemy creature in this lane dies on your turn, gain +1 max magicka.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "break-the-enchantment",
+    "name": "Break the Enchantment",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 15,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "You win the game.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "storyWin",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "collapsing-tunnel",
+    "name": "Collapsing Tunnel",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Boulders are falling from above, dealing 3 damage to a random creature or player when any rune is broken.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "DestroyRune",
+        "type": "storyBoulder",
+        "target": "player"
+      },
+      {
+        "trigger": "LostRune",
+        "type": "storyBoulder",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "rising-waters",
+    "name": "Rising Waters",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "At the start of your turn, give friendly creatures +1/+0.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "StartOfTurn",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "target": "creatureFriendlyAll"
+      }
+    ]
+  },
+  {
+    "id": "piston-cavum",
+    "name": "Piston Cavum",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Friendly creatures can't attack unless you've played an action this turn.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "sunder-ii",
+    "name": "Sunder II",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Activate: Move a friendly or enemy creature.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "move",
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "wraithguard-ii",
+    "name": "Wraithguard II",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Activate: Give a creature a Ward.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "buffTarget",
+        "addKeywords": [
+          "Ward"
+        ],
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "keening-ii",
+    "name": "Keening II",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Activate: Deal 1 damage to all creatures in a lane.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureThisLaneAll"
+      }
+    ]
+  },
+  {
+    "id": "thuum-mastery",
+    "name": "Thu'um Mastery",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing All Shouts are level 3.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "gravesong",
+    "name": "Gravesong",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Indestructible Activate: Summon a creature from your discard pile and give it Charge. At the end of the turn, put it on the bottom of your deck.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyGravesong",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "skirmish",
+    "name": "Skirmish",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Activate: Choose an enemy creature to Battle a random enemy creature in the other lane.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storySkirmish",
+        "target": "creatureEnemy"
+      }
+    ]
+  },
+  {
+    "id": "risen-fabricant",
+    "name": "Risen Fabricant",
+    "type": "Creature",
+    "subtypes": [
+      "Fabricant"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "Drain",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "risen-abomination",
+    "name": "Risen Abomination",
+    "type": "Creature",
+    "subtypes": [
+      "Fabricant"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 7,
+    "attack": 9,
+    "health": 9,
+    "rarity": "1Common",
+    "text": "Guard, Ward",
+    "keywords": [
+      "Guard",
+      "Ward"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "mere-mortals",
+    "name": "Mere Mortals",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing Creatures in each player's hand and deck start the game as 1-cost 1/1's.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "battle-of-the-gods",
+    "name": "Battle of the Gods",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing At the start of each player's turn, they refill their hand to four cards.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "gateslayer-axe",
+    "name": "Gateslayer Axe",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Drain +3/+3 Last Gasp: Return Gateslayer Axe to your hand.",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "addToHand",
+        "cardId": "gateslayer-axe",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "protector-of-the-fringe",
+    "name": "Protector of the Fringe",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing Indestructible At the end of your turn do one of the following at random. Smash -- Deal 3 damage to your opponent. Raise -- Summon a Risen Dead in each lane. Strong -- Give a random friendly creature +2/+2.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "skeever-phobia",
+    "name": "Skeever Phobia",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Nervous Giant takes double damage from Skeevers.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "red-grummite",
+    "name": "Red Grummite",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Draw a card.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "blue-grummite",
+    "name": "Blue Grummite",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: Draw a card.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "yellow-grummite",
+    "name": "Yellow Grummite",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "notehollow",
+    "name": "Notehollow",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Ongoing Indestructible A strange song comes from Notehollow.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "kwama-egg",
+    "name": "Kwama Egg",
+    "type": "Creature",
+    "subtypes": [
+      "Egg"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Hatches into Giant Kwama in 2 turns.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "golden-kwama-egg",
+    "name": "Golden Kwama Egg",
+    "type": "Creature",
+    "subtypes": [
+      "Egg"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Hatches into Giant Kwama in 2 turns. Last Gasp: The painter gains 5 health.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "giant-kwama",
+    "name": "Giant Kwama",
+    "type": "Creature",
+    "subtypes": [
+      "Kwama"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "paint-bucket",
+    "name": "Paint Bucket",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Paint a Kwama Egg gold. It gains, \"Last Gasp: The painter gains 5 health.\" Return Paint Bucket to your hand.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "storyPaintEgg",
+        "target": "creature"
+      },
+      {
+        "trigger": "Play",
+        "type": "storyReturnToHand",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "reachman-intelligence",
+    "name": "Reachman Intelligence",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 20,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Reachman Intelligence deals 20 damage to you. When you discard Reachman Intelligence, play it.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": 20,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "weeding-the-garden",
+    "name": "Weeding the Garden",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing When a friendly creature slays an Animated Item and survives, it equips that item.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "reverberating-echoes",
+    "name": "Reverberating Echoes",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Uses: 5 Activate: Trigger the Summon of each friendly creature.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 5,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyEchoes",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "trophy-case",
+    "name": "Trophy Case",
+    "type": "Creature",
+    "subtypes": [
+      "Defense"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": 0,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Last Gasp: Your opponent puts a random Enchanted item into their hand.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "storyTrophy",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "heros-axe",
+    "name": "Hero's Axe",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible When a creature's power or health increases anywhere, give it an additional +1.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "red-avengers-standard",
+    "name": "Red Avenger's Standard",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible Your cards cost 1 less if you have played a card this turn.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "spirit-amulet",
+    "name": "Spirit Amulet",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Uses: 5 Activate: Capture an enemy creature with 1 health. When you capture 5 creatures, you win the game.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 5,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storySpiritCapture",
+        "target": "creatureEnemy"
+      }
+    ]
+  },
+  {
+    "id": "haunted-amulet",
+    "name": "Haunted Amulet",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Uses: 5 Activate: Banish all creatures in a lane and summon a 3/3 Ghost.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 5,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyHaunt",
+        "target": "creature"
+      }
+    ]
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "pheromone-collector",
+    "name": "Pheromone Collector",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Indestructible Activate: Summon a 5/5 Bull Netch. When you kill a Betty Netch, +1 Use.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 0,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storySummonAndHeal",
+        "cardId": "bull-netch",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "bull-netch",
+    "name": "Bull Netch",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "baron-navir",
+    "name": "Baron Navir",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "4Legendary",
+    "text": "At the end of your turn, Baron Navir battles a random enemy creature in this lane. If there are none, he moves.",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "kill-the-messenger",
+    "name": "Kill the Messenger",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible Friendly creatures have \"Pilfer: Discard the top 3 cards of the enemy deck.\" (Master: 2.)",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "porcia-imprisoned-blademaster",
+    "name": "Porcia, Imprisoned Blademaster",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Permanently Shackled. The first time Porcia has no other friendly creatures in its lane, she is unshackled and joins Talym. (Master: Last Gasp: Talym Loses.)",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "blademaster-porcia",
+    "name": "Blademaster Porcia",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Activate: Summon an Imperial Grunt and gain 1 health. Can only be activated if an enemy creature died this turn.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 99,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storySummonAndHeal",
+        "cardId": "imperial-grunt",
+        "heal": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "flood-the-pass",
+    "name": "Flood the Pass",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible At the end of your turn, if both your lanes are full, you win the game.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "catch-of-the-day",
+    "name": "Catch of the Day",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible Instead of drawing a card at the start of your turn, the crab offers you a choice of his wares.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "ancient-prison",
+    "name": "Ancient Prison",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Ongoing Indestructible When a friendly creature is summoned, Shackle it and give it +2/+2.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "memory-wand",
+    "name": "Memory Wand",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Indestructible Activate: Torment your opponent with visions of their past. Use this only if your opponent has no creatures.",
+    "keywords": [
+      "Indestructible"
+    ],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true,
+    "uses": 3,
+    "effects": [
+      {
+        "trigger": "Activation",
+        "type": "storyMemoryWand",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "worm-cultist",
+    "name": "Worm Cultist",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 4,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
   }
 ]

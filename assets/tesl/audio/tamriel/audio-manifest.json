@@ -1,0 +1,24 @@
+{
+  "files": [
+    "LG-audio-aldmeri_spellwright_attack.ogg",
+    "LG-audio-aldmeri_spellwright_enter_play.ogg",
+    "LG-audio-pact_outcast_attack.ogg",
+    "LG-audio-pact_outcast_enter_play.ogg",
+    "LG-audio-ratway_underboss_attack.ogg",
+    "LG-audio-ratway_underboss_enter_play.ogg"
+  ],
+  "cardToFiles": {
+    "aldmeri-spellwright": [
+      "LG-audio-aldmeri_spellwright_attack.ogg",
+      "LG-audio-aldmeri_spellwright_enter_play.ogg"
+    ],
+    "pact-outcast": [
+      "LG-audio-pact_outcast_attack.ogg",
+      "LG-audio-pact_outcast_enter_play.ogg"
+    ],
+    "smuggler-underboss": [
+      "LG-audio-ratway_underboss_attack.ogg",
+      "LG-audio-ratway_underboss_enter_play.ogg"
+    ]
+  }
+}

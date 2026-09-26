@@ -640,47 +640,49 @@
     ]
 	},
   {
-		"id": "pack-leader",
-		"name": "Pack Leader",
-		"type": "Creature",
-		"subtypes": [
-			"Wolf"
-		],
-		"attributes": [
-			"Y"
-		],
-		"cost": 4,
-		"attack": 4,
-		"health": 4,
-		"rarity": "3Epic",
-		"text": "Pilfer: Summon a 1/1 Young Wolf. Other friendly wolves have +1/+1.",
-		"keywords": [
-			"Pilfer"
-		],
-		"set": "Monthly Reward",
-		"deckCodeId": "lS",
-    	"tier": "B",
-		"effects": [
-      {
-        "trigger": "Pilfer",
-        "type": "summon",
-        "cardId": "young-wolf",
-        "amount": 1,
-        "target": "randomLane"
-      }, 
-      {
-        "trigger": "Aura",
-        "type": "buffTarget",
-        "modAttack": 1,
-        "modHealth": 1,
-        "target": "creatureFriendlyOtherAll",
-        "targetCondition": {
-          "type": "hasSubtype",
-          "subtypes": [ "Wolf" ]
-        }
-      }
-    ]
-	},
+  	"id": "pack-leader",
+  	"name": "Pack Leader",
+  	"type": "Creature",
+  	"subtypes": [
+  		"Wolf"
+  	],
+  	"attributes": [
+  		"Y"
+  	],
+  	"cost": 4,
+  	"attack": 4,
+  	"health": 4,
+  	"rarity": "3Epic",
+  	"text": "Pilfer: Summon a 1/1 Young Wolf. Other friendly wolves have +1/+1.",
+  	"keywords": [
+  		"Pilfer"
+  	],
+  	"set": "Monthly Reward",
+  	"deckCodeId": "lS",
+  	"tier": "B",
+  	"effects": [
+  		{
+  			"trigger": "Pilfer",
+  			"type": "summon",
+  			"cardId": "young-wolf",
+  			"amount": 1,
+  			"target": "thisLaneOrOther"
+  		},
+  		{
+  			"trigger": "Aura",
+  			"type": "buffTarget",
+  			"modAttack": 1,
+  			"modHealth": 1,
+  			"target": "creatureFriendlyOtherAll",
+  			"targetCondition": {
+  				"type": "hasSubtype",
+  				"subtypes": [
+  					"Wolf"
+  				]
+  			}
+  		}
+  	]
+  },
   {
 		"id": "steam-constructor",
 		"name": "Steam Constructor",

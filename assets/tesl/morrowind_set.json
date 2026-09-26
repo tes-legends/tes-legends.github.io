@@ -348,7 +348,7 @@
         "type": "summon",
         "amount": 1,
         "cardId": "fetcherfly-swarm",
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "isAlive"
         }
@@ -920,7 +920,7 @@
         "trigger": "Summon",
         "type": "summonRandomMagicka",
         "amount": 1,
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -1171,14 +1171,14 @@
         "trigger": "Exalt",
         "type": "buffSelf",
         "modAttack": 4,
-        "modHealth": 4     
+        "modHealth": 4
       },
       {
         "trigger": "EndOfTurn",
         "type": "summon",
         "cardId": "awakened-imperfect",
         "amount": 1,
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "hasExaltedCreature"
         }
@@ -1999,14 +1999,18 @@
       {
         "trigger": "Play",
         "type": "buffTarget",
-        "modAttack": -1,
-        "target": "creatureEnemy"
+        "target": "creatureEnemy",
+        "tempAttack": -1
       },
       {
         "trigger": "Play",
-        "type": "buffTarget",
-        "modAttack": 1,
-        "target": "creatureFriendlyRandom"
+        "type": "separateTarget",
+        "inner": {
+          "trigger": "Play",
+          "type": "buffTarget",
+          "tempAttack": 1,
+          "target": "creatureFriendly"
+        }
       }
     ]
   },
@@ -2065,7 +2069,7 @@
       {
         "trigger": "SummonCreatureEnemy",
         "type": "buffTarget",
-        "tempAttack": -20,
+        "tempAttackToZero": true,
         "target": "summon"
       }
     ]
@@ -2792,7 +2796,9 @@
     "health": 1,
     "rarity": "4Legendary",
     "text": "Slay : Summon a Morag Tong Aspirant.",
-    "keywords": ["Slay"],
+    "keywords": [
+      "Slay"
+    ],
     "set": "Houses of Morrowind",
     "tier": "B",
     "deckCodeId": "kK",
@@ -2802,7 +2808,7 @@
         "type": "summon",
         "cardId": "morag-tong-aspirant",
         "amount": 1,
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -3199,7 +3205,9 @@
     "health": 4,
     "rarity": "1Common",
     "text": "Slay : Summon a Risen Dead .",
-    "keywords": ["Slay"],
+    "keywords": [
+      "Slay"
+    ],
     "set": "Houses of Morrowind",
     "tier": "C",
     "deckCodeId": "aC",
@@ -3209,7 +3217,7 @@
         "type": "summon",
         "cardId": "risen-dead",
         "amount": 1,
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -3637,7 +3645,7 @@
       {
         "trigger": "Summon",
         "type": "summonDiscardAttack",
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -4516,6 +4524,22 @@
         "condition": {
           "type": "haveAllAttributes"
         }
+      },
+      {
+        "trigger": "Summon",
+        "type": "winGame",
+        "target": "player",
+        "condition": {
+          "type": "haveAllAttributes"
+        }
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "winGame",
+        "target": "player",
+        "condition": {
+          "type": "haveAllAttributes"
+        }
       }
     ]
   },
@@ -4543,16 +4567,14 @@
       {
         "trigger": "Summon",
         "type": "drawDiscard",
-        "subtypes": [ "Dwemer" ],
+        "subtypes": [
+          "Dwemer"
+        ],
         "amount": 1,
-        "target": "player"
-      },
-      {
-        "trigger": "Summon",
-        "type": "buffTarget",
+        "target": "player",
+        "choose": true,
         "modAttack": 2,
-        "modHealth": 2,
-        "target": "drawnCard"
+        "modHealth": 2
       }
     ]
   },
@@ -4795,7 +4817,9 @@
     "name": "Sotha Sil's Blessing",
     "type": "Action",
     "subtypes": [],
-    "attributes": ["B"],
+    "attributes": [
+      "B"
+    ],
     "cost": 0,
     "attack": null,
     "health": null,
@@ -4810,7 +4834,7 @@
         "type": "summon",
         "cardId": "spider-worker",
         "amount": 1,
-        "target": "randomLane"
+        "target": "lane"
       }
     ]
   }

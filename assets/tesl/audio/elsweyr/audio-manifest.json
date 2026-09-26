@@ -1,0 +1,342 @@
+{
+  "files": [
+    "LG-audio-akumjhargo_attack.ogg",
+    "LG-audio-akumjhargo_enter_play.ogg",
+    "LG-audio-alfiq_destruction_mage_attack.ogg",
+    "LG-audio-alfiq_destruction_mage_enter_play.ogg",
+    "LG-audio-alfiq_illusion_mage_attack.ogg",
+    "LG-audio-alfiq_illusion_mage_enter_play.ogg",
+    "LG-audio-apex_predator_attack.ogg",
+    "LG-audio-apex_predator_enter_play.ogg",
+    "LG-audio-apprentice_necro_attack.ogg",
+    "LG-audio-apprentice_necro_enter_play.ogg",
+    "LG-audio-argonian_traveler_attack.ogg",
+    "LG-audio-argonian_traveler_enter_play.ogg",
+    "LG-audio-ayrenns_assassin_attack.ogg",
+    "LG-audio-ayrenns_assassin_enter_play.ogg",
+    "LG-audio-breton_mage_attack.ogg",
+    "LG-audio-breton_mage_enter_play.ogg",
+    "LG-audio-cadwell_attack.ogg",
+    "LG-audio-cadwell_enter_play.ogg",
+    "LG-audio-corinthe_brawler_attack.ogg",
+    "LG-audio-corinthe_brawler_enter_play.ogg",
+    "LG-audio-cygnus_irregular_attack.ogg",
+    "LG-audio-cygnus_irregular_enter_play.ogg",
+    "LG-audio-dagi_alteration_mage_attack.ogg",
+    "LG-audio-dagi_alteration_mage_enter_play.ogg",
+    "LG-audio-dagi_restoration_mage_attack.ogg",
+    "LG-audio-dagi_restoration_mage_enter_play.ogg",
+    "LG-audio-dagi_silencer_attack.ogg",
+    "LG-audio-dagi_silencer_enter_play.ogg",
+    "LG-audio-dark_elf_sorcerer_attack.ogg",
+    "LG-audio-dark_elf_sorcerer_enter_play.ogg",
+    "LG-audio-discerning_thief_attack_01.ogg",
+    "LG-audio-discerning_thief_enter_play_01.ogg",
+    "LG-audio-drakeclad_cataphract_attack.ogg",
+    "LG-audio-drakeclad_cataphract_enter_play.ogg",
+    "LG-audio-elden_root_attack.ogg",
+    "LG-audio-elden_root_enter_play.ogg",
+    "LG-audio-euraxia_tharn_attack.ogg",
+    "LG-audio-euraxia_tharn_enter_play.ogg",
+    "LG-audio-euraxian_berserker_attack.ogg",
+    "LG-audio-euraxian_berserker_enter_play.ogg",
+    "LG-audio-evil_cadwell_attack.ogg",
+    "LG-audio-evil_cadwell_enter_play.ogg",
+    "LG-audio-gharesh-ri_attack.ogg",
+    "LG-audio-gharesh-ri_enter_play.ogg",
+    "LG-audio-guild_hall_warden_attack.ogg",
+    "LG-audio-guild_hall_warden_enter_play.ogg",
+    "LG-audio-kaalgrontiid_attack.ogg",
+    "LG-audio-kaalgrontiid_enter_play.ogg",
+    "LG-audio-khajiit_infiltrator_attack.ogg",
+    "LG-audio-khajiit_infiltrator_enter_play.ogg",
+    "LG-audio-khajiit_thief_attack.ogg",
+    "LG-audio-khajiit_thief_enter_play.ogg",
+    "LG-audio-khamira_attack.ogg",
+    "LG-audio-khamira_enter_play.ogg",
+    "LG-audio-life_from_death_attack.ogg",
+    "LG-audio-life_from_death_enter_play.ogg",
+    "LG-audio-moon_bishop_attack.ogg",
+    "LG-audio-moon_bishop_enter_play.ogg",
+    "LG-audio-mulaamnir_attack.ogg",
+    "LG-audio-mulaamnir_enter_play.ogg",
+    "LG-audio-na'ruzz_attack.ogg",
+    "LG-audio-na'ruzz_enter_play.ogg",
+    "LG-audio-nala-do_attack.ogg",
+    "LG-audio-nala-do_enter_play.ogg",
+    "LG-audio-nibenese_mercenary_attack.ogg",
+    "LG-audio-nibenese_mercenary_enter_play.ogg",
+    "LG-audio-nibenese_vanguard_attack.ogg",
+    "LG-audio-nibenese_vanguard_enter_play.ogg",
+    "LG-audio-nord_mercenary_attack.ogg",
+    "LG-audio-nord_mercenary_enter_play.ogg",
+    "LG-audio-prefect_calo_attack.ogg",
+    "LG-audio-prefect_calo_enter_play.ogg",
+    "LG-audio-prowl_poacher_attack.ogg",
+    "LG-audio-prowl_poacher_enter_play.ogg",
+    "LG-audio-rawlith_khaj_master_attack.ogg",
+    "LG-audio-rawlith_khaj_master_enter_play.ogg",
+    "LG-audio-razum-dar_attack.ogg",
+    "LG-audio-razum-dar_enter_play.ogg",
+    "LG-audio-senche_charger_attack.ogg",
+    "LG-audio-senche_charger_enter_play.ogg",
+    "LG-audio-senche_mount_attack.ogg",
+    "LG-audio-senche_mount_enter_play.ogg",
+    "LG-audio-senche_warcat_attack.ogg",
+    "LG-audio-senche_warcat_enter_play.ogg",
+    "LG-audio-suthay_bootlegger_attack.ogg",
+    "LG-audio-suthay_bootlegger_enter_play.ogg",
+    "LG-audio-tasnasi_attack.ogg",
+    "LG-audio-tasnasi_enter_play.ogg",
+    "LG-audio-tenarr_zalviit_attack.ogg",
+    "LG-audio-tenarr_zalviit_enter_play.ogg",
+    "LG-audio-thanarr_attack.ogg",
+    "LG-audio-thanarr_enter_play.ogg",
+    "LG-audio-vastarie_attack.ogg",
+    "LG-audio-vastarie_enter_play.ogg",
+    "LG-audio-vrin-thak_master_attack.ogg",
+    "LG-audio-vrin-thak_master_enter_play.ogg",
+    "LG-audio-winterhold_student_attack.ogg",
+    "LG-audio-winterhold_student_enter_play.ogg",
+    "LG-audio-wood_torturer_attack.ogg",
+    "LG-audio-wood_torturer_enter_play.ogg",
+    "LG-audio-yushiha_attack.ogg",
+    "LG-audio-yushiha_enter_play.ogg",
+    "LG-audio-zalsheem_attack.ogg",
+    "LG-audio-zalsheem_enter_play.ogg",
+    "LG-audio-zamarak_attack.ogg",
+    "LG-audio-zamarak_enter_play.ogg",
+    "LG-audio-zav'i_attack.ogg",
+    "LG-audio-zav'i_enter_play.ogg",
+    "LG-audio-ziz_kurah_master_attack.ogg",
+    "LG-audio-ziz_kurah_master_enter_play.ogg",
+    "LG-audio-zumog_phoom_attack.ogg",
+    "LG-audio-zumog_phoom_enter_play.ogg"
+  ],
+  "cardToFiles": {
+    "enraged-dragonknight": [
+      "LG-audio-drakeclad_cataphract_attack.ogg",
+      "LG-audio-drakeclad_cataphract_enter_play.ogg"
+    ],
+    "euraxian-berserker": [
+      "LG-audio-euraxian_berserker_attack.ogg",
+      "LG-audio-euraxian_berserker_enter_play.ogg"
+    ],
+    "mulaamnir": [
+      "LG-audio-mulaamnir_attack.ogg",
+      "LG-audio-mulaamnir_enter_play.ogg"
+    ],
+    "pouncing-senche": [
+      "LG-audio-senche_charger_attack.ogg",
+      "LG-audio-senche_charger_enter_play.ogg"
+    ],
+    "prowl-smuggler": [
+      "LG-audio-prowl_poacher_attack.ogg",
+      "LG-audio-prowl_poacher_enter_play.ogg"
+    ],
+    "senche-noble": [
+      "LG-audio-senche_warcat_attack.ogg",
+      "LG-audio-senche_warcat_enter_play.ogg"
+    ],
+    "senche-raht-graveprowler": [
+      "LG-audio-thanarr_attack.ogg",
+      "LG-audio-thanarr_enter_play.ogg"
+    ],
+    "war-hardened-senche": [
+      "LG-audio-senche_mount_attack.ogg",
+      "LG-audio-senche_mount_enter_play.ogg"
+    ],
+    "alfiq-conjurer": [
+      "LG-audio-elden_root_attack.ogg",
+      "LG-audio-elden_root_enter_play.ogg"
+    ],
+    "black-worm-neophyte": [
+      "LG-audio-apprentice_necro_attack.ogg",
+      "LG-audio-apprentice_necro_enter_play.ogg"
+    ],
+    "cartel-arcanist": [
+      "LG-audio-zav'i_attack.ogg",
+      "LG-audio-zav'i_enter_play.ogg"
+    ],
+    "discerning-thief": [
+      "LG-audio-discerning_thief_attack_01.ogg",
+      "LG-audio-discerning_thief_enter_play_01.ogg"
+    ],
+    "frazzled-alfiq": [
+      "LG-audio-alfiq_destruction_mage_attack.ogg",
+      "LG-audio-alfiq_destruction_mage_enter_play.ogg"
+    ],
+    "goutfang-adept": [
+      "LG-audio-vrin-thak_master_attack.ogg",
+      "LG-audio-vrin-thak_master_enter_play.ogg"
+    ],
+    "imbued-breton": [
+      "LG-audio-breton_mage_attack.ogg",
+      "LG-audio-breton_mage_enter_play.ogg"
+    ],
+    "midnight-trespasser": [
+      "LG-audio-dark_elf_sorcerer_attack.ogg",
+      "LG-audio-dark_elf_sorcerer_enter_play.ogg"
+    ],
+    "vastarie": [
+      "LG-audio-vastarie_attack.ogg",
+      "LG-audio-vastarie_enter_play.ogg"
+    ],
+    "alfiq-illusionist": [
+      "LG-audio-alfiq_illusion_mage_attack.ogg",
+      "LG-audio-alfiq_illusion_mage_enter_play.ogg"
+    ],
+    "cygnus-standard-bearer": [
+      "LG-audio-cygnus_irregular_attack.ogg",
+      "LG-audio-cygnus_irregular_enter_play.ogg"
+    ],
+    "imbued-khajiit": [
+      "LG-audio-rawlith_khaj_master_attack.ogg",
+      "LG-audio-rawlith_khaj_master_enter_play.ogg"
+    ],
+    "kaalgrontiid": [
+      "LG-audio-kaalgrontiid_attack.ogg",
+      "LG-audio-kaalgrontiid_enter_play.ogg"
+    ],
+    "mercenary-captain": [
+      "LG-audio-nord_mercenary_attack.ogg",
+      "LG-audio-nord_mercenary_enter_play.ogg"
+    ],
+    "monastic-champion": [
+      "LG-audio-zamarak_attack.ogg",
+      "LG-audio-zamarak_enter_play.ogg"
+    ],
+    "moon-bishop": [
+      "LG-audio-moon_bishop_attack.ogg",
+      "LG-audio-moon_bishop_enter_play.ogg"
+    ],
+    "queens-captain": [
+      "LG-audio-nala-do_attack.ogg",
+      "LG-audio-nala-do_enter_play.ogg"
+    ],
+    "rebel-warden": [
+      "LG-audio-guild_hall_warden_attack.ogg",
+      "LG-audio-guild_hall_warden_enter_play.ogg"
+    ],
+    "shrewd-strategist": [
+      "LG-audio-prefect_calo_attack.ogg",
+      "LG-audio-prefect_calo_enter_play.ogg"
+    ],
+    "tenarr-zalviit-lurker": [
+      "LG-audio-yushiha_attack.ogg",
+      "LG-audio-yushiha_enter_play.ogg"
+    ],
+    "apex-predator": [
+      "LG-audio-apex_predator_attack.ogg",
+      "LG-audio-apex_predator_enter_play.ogg"
+    ],
+    "cartel-bruiser": [
+      "LG-audio-akumjhargo_attack.ogg",
+      "LG-audio-akumjhargo_enter_play.ogg"
+    ],
+    "corinthe-brawler": [
+      "LG-audio-corinthe_brawler_attack.ogg",
+      "LG-audio-corinthe_brawler_enter_play.ogg"
+    ],
+    "devious-bandit": [
+      "LG-audio-tasnasi_attack.ogg",
+      "LG-audio-tasnasi_enter_play.ogg"
+    ],
+    "illicit-butcher": [
+      "LG-audio-wood_torturer_attack.ogg",
+      "LG-audio-wood_torturer_enter_play.ogg"
+    ],
+    "imbued-bosmer": [
+      "LG-audio-ayrenns_assassin_attack.ogg",
+      "LG-audio-ayrenns_assassin_enter_play.ogg"
+    ],
+    "mausoleum-delver": [
+      "LG-audio-khajiit_infiltrator_attack.ogg",
+      "LG-audio-khajiit_infiltrator_enter_play.ogg"
+    ],
+    "moonphase-suthay": [
+      "LG-audio-khajiit_thief_attack.ogg",
+      "LG-audio-khajiit_thief_enter_play.ogg"
+    ],
+    "razum-dar": [
+      "LG-audio-razum-dar_attack.ogg",
+      "LG-audio-razum-dar_enter_play.ogg"
+    ],
+    "rebellion-general": [
+      "LG-audio-gharesh-ri_attack.ogg",
+      "LG-audio-gharesh-ri_enter_play.ogg"
+    ],
+    "suthay-bootlegger": [
+      "LG-audio-suthay_bootlegger_attack.ogg",
+      "LG-audio-suthay_bootlegger_enter_play.ogg"
+    ],
+    "tenarr-zalviit-nightstalker": [
+      "LG-audio-tenarr_zalviit_attack.ogg",
+      "LG-audio-tenarr_zalviit_enter_play.ogg"
+    ],
+    "boneweaver": [
+      "LG-audio-na'ruzz_attack.ogg",
+      "LG-audio-na'ruzz_enter_play.ogg"
+    ],
+    "dro-mathra-reaper": [
+      "LG-audio-zalsheem_attack.ogg",
+      "LG-audio-zalsheem_enter_play.ogg"
+    ],
+    "imbued-argonian": [
+      "LG-audio-argonian_traveler_attack.ogg",
+      "LG-audio-argonian_traveler_enter_play.ogg"
+    ],
+    "moontouched-guardian": [
+      "LG-audio-dagi_alteration_mage_attack.ogg",
+      "LG-audio-dagi_alteration_mage_enter_play.ogg"
+    ],
+    "nibenese-mercenary": [
+      "LG-audio-nibenese_mercenary_attack.ogg",
+      "LG-audio-nibenese_mercenary_enter_play.ogg"
+    ],
+    "seeker-of-the-black-arts": [
+      "LG-audio-life_from_death_attack.ogg",
+      "LG-audio-life_from_death_enter_play.ogg"
+    ],
+    "servant-of-ja-khajay": [
+      "LG-audio-dagi_silencer_attack.ogg",
+      "LG-audio-dagi_silencer_enter_play.ogg"
+    ],
+    "zumog-phoom": [
+      "LG-audio-zumog_phoom_attack.ogg",
+      "LG-audio-zumog_phoom_enter_play.ogg"
+    ],
+    "cadwell-the-betrayer": [
+      "LG-audio-evil_cadwell_attack.ogg",
+      "LG-audio-evil_cadwell_enter_play.ogg"
+    ],
+    "cadwell-the-soul-shriven": [
+      "LG-audio-cadwell_attack.ogg",
+      "LG-audio-cadwell_enter_play.ogg"
+    ],
+    "ill-fated-scholar": [
+      "LG-audio-winterhold_student_attack.ogg",
+      "LG-audio-winterhold_student_enter_play.ogg"
+    ],
+    "khamira": [
+      "LG-audio-khamira_attack.ogg",
+      "LG-audio-khamira_enter_play.ogg"
+    ],
+    "euraxia-tharn": [
+      "LG-audio-euraxia_tharn_attack.ogg",
+      "LG-audio-euraxia_tharn_enter_play.ogg"
+    ],
+    "cathay-raht": [
+      "LG-audio-ziz_kurah_master_attack.ogg",
+      "LG-audio-ziz_kurah_master_enter_play.ogg"
+    ],
+    "dagi-raht": [
+      "LG-audio-dagi_restoration_mage_attack.ogg",
+      "LG-audio-dagi_restoration_mage_enter_play.ogg"
+    ],
+    "imperial-soldier": [
+      "LG-audio-nibenese_vanguard_attack.ogg",
+      "LG-audio-nibenese_vanguard_enter_play.ogg"
+    ]
+  }
+}

@@ -2281,8 +2281,13 @@
       {
         "trigger": "StartOfTurn",
         "type": "summon",
-        "names": [ "alfe-fyr", "beyte-fyr", "delte-fyr", "uupse-fyr" ],
-        "target": "randomLane"
+        "names": [
+          "alfe-fyr",
+          "beyte-fyr",
+          "delte-fyr",
+          "uupse-fyr"
+        ],
+        "target": "thisLaneOrOther"
       }
     ]
   },
@@ -7380,7 +7385,7 @@
         "type": "summon",
         "cardId": "argonian-recruit",
         "amount": 1,
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "maxMagicka",
           "max": 6
@@ -7391,7 +7396,7 @@
         "type": "summon",
         "cardId": "argonian-veteran",
         "amount": 1,
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "maxMagicka",
           "min": 7
@@ -11085,13 +11090,13 @@
         "trigger": "Play",
         "type": "summonDiscard",
         "amount": 1,
-        "target": "randomLane"
+        "target": "lane"
       },
       {
         "trigger": "Play",
         "type": "summonOppDiscard",
         "amount": 1,
-        "target": "randomLane"
+        "target": "lane"
       }
     ]
   },

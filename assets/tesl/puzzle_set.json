@@ -1,0 +1,3 @@
+[
+  {"id": "lichs-ring", "name": "Lich's Ring", "type": "Support", "subtypes": [], "attributes": ["N"], "cost": 0, "attack": null, "health": null, "rarity": "3Epic", "text": "Ongoing When you draw a card on your turn, reduce its cost to 0.", "keywords": [], "set": "Puzzle Set", "deckCodeId": null, "effects": [{"trigger": "DrawCard", "type": "modCost", "amount": -99, "target": "drawnCard", "condition": {"type": "isPlayerTurn"}}]}
+]

@@ -1,0 +1,669 @@
+[
+  {
+    "id": "a-new-era",
+    "name": "A New Era",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y",
+      "G",
+      "P"
+    ],
+    "cost": 11,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Shuffle all creatures into your deck",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Be",
+    "class": "The Empire of Cyrodiil",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsShuffleAllCreaturesToDeck",
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "aldmeri-spellwright",
+    "name": "Aldmeri Spellwright",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B",
+      "Y",
+      "G"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "When your opponent takes damage, you gain 1 magicka this turn.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bm",
+    "class": "Aldmeri Dominion",
+    "effects": [
+      {
+        "trigger": "OpponentDamaged",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "altar-of-spellmaking",
+    "name": "Altar of Spellmaking",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R",
+      "B",
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "At the end of each turn, if you played a creature, action, item, and support, play the top card of your deck.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "AY",
+    "uses": "Ongoing",
+    "class": "The Guildsworn",
+    "effects": [
+      {
+        "trigger": "PlayCard",
+        "type": "collectionsNoteCardTypePlayed",
+        "target": "player"
+      },
+      {
+        "trigger": "EndOfEachTurn",
+        "type": "collectionsPlayTopOfDeck",
+        "target": "player",
+        "condition": {
+          "type": "collectionsPlayedAllTypes"
+        }
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "call-dragon",
+    "name": "Call Dragon",
+    "type": "Action",
+    "subtypes": [
+      "Shout"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 8,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Upgrade all your Shouts. Level 1: Summon a random 6-8 cost Dragon.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bj",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsSummonRandomDragon",
+        "minCost": 6,
+        "maxCost": 8,
+        "target": "lane"
+      },
+      {
+        "trigger": "Play",
+        "type": "collectionsUpgradeAllShouts",
+        "target": "player"
+      }
+    ],
+    "tier": "U",
+    "shoutUpgrade": "call-dragon-level-2"
+  },
+  {
+    "id": "call-dragon-level-2",
+    "name": "Call Dragon Level 2",
+    "type": "Action",
+    "subtypes": [
+      "Shout"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 8,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Upgrade all your Shouts. Level 2: Summon a random 8-10 cost Dragon.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": null,
+    "created": true,
+    "shoutUpgrade": "call-dragon-level-3",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsSummonRandomDragon",
+        "minCost": 8,
+        "maxCost": 10,
+        "target": "lane"
+      },
+      {
+        "trigger": "Play",
+        "type": "collectionsUpgradeAllShouts",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "call-dragon-level-3",
+    "name": "Call Dragon Level 3",
+    "type": "Action",
+    "subtypes": [
+      "Shout"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 8,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Upgrade all your Shouts. Level 3: Summon a random 12 cost Dragon.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": null,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsSummonRandomDragon",
+        "minCost": 12,
+        "maxCost": 12,
+        "target": "lane"
+      },
+      {
+        "trigger": "Play",
+        "type": "collectionsUpgradeAllShouts",
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "death-scythe",
+    "name": "Death Scythe",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B",
+      "G",
+      "P"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Drain Deal damage to a creature equal to the number of creatures that died this turn.",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bk",
+    "class": "House Telvanni",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsDrainDamageDeaths",
+        "amount": 1,
+        "target": "collectionsCreatureAi"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "enchanted-ring",
+    "name": "Enchanted Ring",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R",
+      "B",
+      "P"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Mobilize +1/+1 Summon: Equip the wielder with all copies of Enchanted Ring from your discard pile. Then if the wielder has three or more items, draw a card.",
+    "keywords": [
+      "Mobilize"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bc",
+    "class": "Daggerfall Covenant",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsEquipCopiesFromDiscard",
+        "cardId": "enchanted-ring",
+        "target": "self"
+      },
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "collectionsWielderItems",
+          "min": 3
+        }
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "explore",
+    "name": "Explore",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Choose creature, item, action, or support. Put a random card of that type into your hand.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bf",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "choice",
+        "target": "player",
+        "choices": [
+          {
+            "text": "Creature",
+            "effect": {
+              "type": "addToHand",
+              "subtypes": [
+                "Creature"
+              ],
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Item",
+            "effect": {
+              "type": "addToHand",
+              "subtypes": [
+                "Item"
+              ],
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Action",
+            "effect": {
+              "type": "addToHand",
+              "subtypes": [
+                "Action"
+              ],
+              "amount": 1,
+              "target": "player"
+            }
+          },
+          {
+            "text": "Support",
+            "effect": {
+              "type": "addToHand",
+              "subtypes": [
+                "Support"
+              ],
+              "amount": 1,
+              "target": "player"
+            }
+          }
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "feed",
+    "name": "Feed",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Destroy a creature and give its Keywords to a friendly creature.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bi",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsFeed",
+        "target": "collectionsCreatureAi"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "midnight-burial",
+    "name": "Midnight Burial",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Betray Choose a creature in your deck. Create a copy of that creature in your discard pile and give it +1/+1.",
+    "keywords": [
+      "Betray"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bn",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsCopyDeckCreatureToDiscard",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "U"
+  },
+  {
+    "id": "obstinate-goat",
+    "name": "Obstinate Goat",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Summon: If the top card of your deck is an Animal, draw it. Otherwise, put it on the bottom.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bg",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsGoatTopDeck",
+        "target": "player",
+        "subtypes": [
+          "Beast",
+          "Fish",
+          "Mammoth",
+          "Mudcrab",
+          "Netch",
+          "Reptile",
+          "Skeever",
+          "Spider",
+          "Wolf"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "ordinator-of-the-almsivi",
+    "name": "Ordinator of the Almsivi",
+    "type": "Creature",
+    "subtypes": [
+      "Dark Elf"
+    ],
+    "attributes": [
+      "B",
+      "Y",
+      "P"
+    ],
+    "cost": 2,
+    "attack": 3,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Guard Exalt 3: +2/+2 Ordinator of the Almsivi is permanently Shackled unless you have an Exalted creature in play.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bb",
+    "class": "Tribunal Temple",
+    "exalted": false,
+    "exaltCost": 3,
+    "effects": [
+      {
+        "trigger": "Exalt",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      }
+    ],
+    "tier": "C",
+    "static": {
+      "condition": {
+        "type": "collectionsAlmsiviShackle"
+      }
+    }
+  },
+  {
+    "id": "pact-outcast",
+    "name": "Pact Outcast",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R",
+      "G",
+      "P"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Guard Summon and Veteran: Consume a creature. Pact Outcast uses the consumed creature's veteran ability.",
+    "keywords": [
+      "Guard",
+      "Veteran"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "AX",
+    "class": "Ebonheart Pact",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Summon",
+            "type": "collectionsUseConsumedVeteran"
+          }
+        ]
+      },
+      {
+        "trigger": "Veteran",
+        "type": "consume",
+        "then": [
+          {
+            "trigger": "Veteran",
+            "type": "collectionsUseConsumedVeteran"
+          }
+        ]
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "red-mountain",
+    "name": "Red Mountain",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "R",
+      "B",
+      "G"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Your creatures with 5 power or more cost 2 less.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Ba",
+    "uses": "Ongoing",
+    "class": "House Dagoth",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -2,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "collectionsCreaturePowerMin",
+          "min": 5
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "smuggler-underboss",
+    "name": "Smuggler Underboss",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "R",
+      "Y",
+      "G"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 3,
+    "rarity": "3Epic",
+    "text": "Drain At the end of your turn, if you played three cards this turn, Smuggler Underboss is immune to damage until your next turn.",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bo",
+    "class": "House Hlaalu",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "collectionsImmuneUntilYourTurn",
+        "immunity": "AllDamage",
+        "target": "self",
+        "condition": {
+          "type": "playedCards",
+          "min": 3,
+          "max": 99
+        }
+      },
+      {
+        "trigger": "StartOfTurn",
+        "type": "collectionsEndTurnImmunity",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "strange-brew",
+    "name": "Strange Brew",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Transform a creature in your hand into a random creature that costs 2 more. Reduce its cost by 2.",
+    "keywords": [],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bl",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsTransformHandCostUp",
+        "increment": 2,
+        "modCost": -2,
+        "target": "cardPlayerHand",
+        "subtypes": [
+          "Creature"
+        ]
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "wild-echatere",
+    "name": "Wild Echatere",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "R",
+      "Y",
+      "P"
+    ],
+    "cost": 3,
+    "attack": 1,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Charge Summon: Friendly creatures gain Rally this turn.",
+    "keywords": [
+      "Charge"
+    ],
+    "set": "Tamriel Collection",
+    "deckCodeId": "Bh",
+    "class": "House Redoran",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "tempKeywords": [
+          "Rally"
+        ],
+        "target": "creatureFriendlyAll"
+      }
+    ],
+    "tier": "C"
+  }
+]

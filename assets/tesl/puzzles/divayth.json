@@ -1,0 +1,630 @@
+{
+ "id": "divayth",
+ "name": "Divayth Fyr's Trials",
+ "opponent": "Divayth Fyr",
+ "opponentCard": "divayth-fyr",
+ "intro": "Ah, a visitor! Come to match wits, have you? Or perhaps to plunder the dungeon? Tell you what: entertain me enough, and you can plunder all you want.",
+ "outro": "You're not the least bit boring, are you? We must match wits again sometime. Here, I pulled this out of my treasure vaults especially for you.",
+ "puzzles": [
+  {
+   "id": "arcanaeum-librarian",
+   "name": "Arcanaeum Librarian",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Gather some knowledge",
+   "flavor": "Simpletons say knowledge is power. But what is the price of knowledge, eh? That's a more interesting question.",
+   "difficulty": "Adept",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "player": {
+    "health": 1,
+    "magicka": 6,
+    "hand": [
+     "morag-tong-assassin",
+     "iron-sword",
+     "lightning-bolt",
+     "bushwhack"
+    ],
+    "board": [
+     [
+      "nord-firebrand",
+      "arcanaeum-librarian"
+     ],
+     [
+      "cicero-the-betrayer"
+     ]
+    ],
+    "deck": [
+     "lurking-mummy*2"
+    ]
+   },
+   "opponent": {
+    "health": 9
+   },
+   "solution": [
+    "Attack with Nord Firebrand.",
+    "Play Bushwhack on Cicero.",
+    "Attack Nord Firebrand with Cicero.",
+    "Play Lightning Bolt on Divayth.",
+    "Play Iron Sword on Arcanaeum Librarian.",
+    "Attack with Arcanaeum Librarian."
+   ],
+   "notes": "UESP lists Divayth at 13 health but no deck; the documented line deals exactly 9 (Firebrand 1 + Lightning Bolt 4 + Librarian 0+2 Iron Sword+2 from Cicero's Slay draws). Health set to 9. Your deck holds two Lurking Mummies (too expensive to matter) so the Slay draws succeed."
+  },
+  {
+   "id": "fighters-guild-hall",
+   "name": "Fighters Guild Hall",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Get your troops into shape",
+   "flavor": "Pain is a fascinating subject, don't you agree?",
+   "difficulty": "Adept",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "player": {
+    "health": 1,
+    "magicka": 7,
+    "hand": [
+     "move-in-shadows",
+     "sharpshooter-scout*2",
+     "dune-smuggler",
+     "skaven-pyromancer",
+     "firebolt",
+     "ice-storm",
+     "fire-storm"
+    ],
+    "board": [
+     [
+      "frost-troll*2"
+     ],
+     [
+      "fearless-northlander*2"
+     ]
+    ],
+    "support": [
+     "fighters-guild-hall"
+    ]
+   },
+   "opponent": {
+    "health": 30
+   },
+   "solution": [
+    "Play Move in Shadows on a Frost Troll or a Fearless Northlander.",
+    "Play Fire Storm on the lane you moved the creature to.",
+    "Play both Sharpshooter Scouts, targeting either Fearless Northlander.",
+    "Play Firebolt on a Frost Troll or a Fearless Northlander.",
+    "Attack with all creatures."
+   ]
+  },
+  {
+   "id": "leafwater-blessing",
+   "name": "Leafwater Blessing",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Master some Argonian magic",
+   "flavor": "My friend Sotha Sil spent a great deal of time studying life. I often muse over his riddles. This is one of my favorites.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "player": {
+    "health": 1,
+    "magicka": 26,
+    "hand": [
+     "leafwater-blessing*2",
+     "soul-tear-level-1",
+     "thieves-guild-fence",
+     "brilliant-experiment",
+     "lightning-bolt"
+    ],
+    "board": [
+     [
+      "rampaging-minotaur"
+     ],
+     []
+    ],
+    "support": [
+     "swindlers-market",
+     "the-mechanical-heart"
+    ]
+   },
+   "opponent": {
+    "health": 16
+   },
+   "solution": [
+    "Play Thieves Guild Fence in the Field Lane.",
+    "Play Brilliant Experiment on Thieves Guild Fence.",
+    "Play the new Thieves Guild Fence in the Field Lane.",
+    "Play both Leafwater Blessings on Rampaging Minotaur.",
+    "Play Lightning Bolt on yourself, activating The Mechanical Heart.",
+    "Repeatedly play Leafwater Blessing on Rampaging Minotaur until it has 11 attack, then attack with it."
+   ]
+  },
+  {
+   "id": "stolen-pants",
+   "name": "Stolen Pants",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Recover some missing articles of clothing",
+   "flavor": "This puzzle is a bit crass, but my daughters find it quite amusing.",
+   "difficulty": "Adept",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "player": {
+    "health": 1,
+    "magicka": 13,
+    "hand": [
+     "fifth-legion-trainer*2",
+     "stone-throw",
+     "stolen-pants*3",
+     "soul-split"
+    ],
+    "board": [
+     [
+      "vvardvark*3",
+      "deshaan-sneak"
+     ],
+     [
+      "niben-bay-cutthroat"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 6,
+    "board": [
+     [
+      "mournhold-guardian*3"
+     ],
+     [
+      "dres-renegade"
+     ]
+    ]
+   },
+   "solution": [
+    "Play both Fifth Legion Trainers in the Shadow Lane.",
+    "Play one Stolen Pants on each Vvardvark.",
+    "Attack each Mournhold Guardian with a Vvardvark.",
+    "Play Stone Throw on Dres Renegade.",
+    "Attack with Niben Bay Cutthroat and Deshaan Sneak."
+   ]
+  },
+  {
+   "id": "shadowmere",
+   "name": "Shadowmere",
+   "goal": "win",
+   "text": "Both players have empty decks, and drawing cards can be deadly when a player has no runes or cards left in their deck. Win this turn.",
+   "description": "Master the legendary Dark Brotherhood steed.",
+   "flavor": "A battle is like a dance. Back and forth, give and take. I detest dancing.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "rules": {
+    "emptyDeckPenalty": true
+   },
+   "player": {
+    "health": 1,
+    "magicka": 14,
+    "hand": [
+     "back-alley-rogue",
+     "mentors-ring",
+     "shadowmere"
+    ],
+    "support": [
+     "orb-of-vaermina"
+    ]
+   },
+   "opponent": {
+    "health": 16,
+    "board": [
+     [
+      "elusive-schemer",
+      "watch-commander*3"
+     ],
+     [
+      "summerset-shieldmage*2",
+      "varanis-courier",
+      "gristlehide-dreugh"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Shadowmere in the Field Lane.",
+    "Attack Elusive Schemer with Shadowmere.",
+    "Use Orb of Vaermina.",
+    "Play Elusive Schemer in the Shadow Lane.",
+    "Play Back-Alley Rogue in the Shadow Lane, and steal Cover from the Gristlehide Dreugh.",
+    "Play Shadowmere in the Shadow Lane.",
+    "Play Mentor's Ring on Shadowmere.",
+    "Attack Varanis Courier with Shadowmere and Back-Alley Rogue.",
+    "Attack Gristlehide Dreugh with Elusive Schemer."
+   ]
+  },
+  {
+   "id": "skeletal-dragon",
+   "name": "Skeletal Dragon",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Use the power of an undead dragon",
+   "flavor": "They say dead men tell no tales, but I've found they can be quite chatty under the right circumstances.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "arcanaeum-librarian",
+   "player": {
+    "health": 1,
+    "magicka": 20,
+    "hand": [
+     "marked-man",
+     "word-wall",
+     "raiding-party",
+     "soul-tear-level-1",
+     "dragon-aspect-level-1",
+     "skeletal-dragon"
+    ],
+    "board": [
+     [
+      "risen-dead"
+     ],
+     [
+      "risen-dead"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 11,
+    "board": [
+     [
+      "riverhold-escort"
+     ],
+     [
+      "theranas-lawman"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Dragon Aspect on Riverhold Escort.",
+    "Attack Divayth directly with the Risen Dead in the Field Lane.",
+    "Play Raiding Party. Play and attack with both Nord Firebrands in the Field Lane.",
+    "Play Word Wall in the Field Lane, and choose to upgrade Soul Tear.",
+    "Play Marked Man in the Field Lane, sacrificing a Nord Firebrand to do so.",
+    "Play Skeletal Dragon in the Field Lane, sacrificing the remaining Nord Firebrand to do so.",
+    "Play Soul Tear, reclaiming a Nord Firebrand.",
+    "Play the Nord Firebrand in the Field Lane, sacrificing Skeletal Dragon to do so.",
+    "Attack with the Nord Firebrand.",
+    "Play the Nord Firebrand from your hand to the Field Lane, sacrificing any creature.",
+    "Attack with the Nord Firebrand."
+   ]
+  },
+  {
+   "id": "falkreath-defiler",
+   "name": "Falkreath Defiler",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Understand the powers of necromancy",
+   "flavor": "Life is not so very far from death, in my experience.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "fighters-guild-hall",
+   "player": {
+    "health": 1,
+    "magicka": 12,
+    "hand": [
+     "archers-gambit",
+     "a-night-to-remember*2",
+     "world-eaters-eyrie",
+     "tazkad-the-packmaster",
+     "supreme-atromancer",
+     "morag-tong-assassin",
+     "cornerclub-gambler"
+    ],
+    "board": [
+     [
+      "falkreath-defiler"
+     ],
+     []
+    ],
+    "support": [
+     "lichs-ring"
+    ]
+   },
+   "opponent": {
+    "health": 16
+   },
+   "solution": [
+    "Play Cornerclub Gambler in the Shadow Lane, and discard Supreme Atromancer.",
+    "Play Morag Tong Assassin in the Field Lane.",
+    "Play Archer's Gambit on Falkreath Defiler, and select the Target.",
+    "Play Supreme Atromancer in the Shadow Lane.",
+    "Play A Night to Remember on Cornerclub Gambler, and discard Tazkad.",
+    "Play A Night to Remember on Morag Tong Assassin.",
+    "Attack Target with Falkreath Defiler.",
+    "Play Tazkad to the Field Lane and attack the opponent."
+   ],
+   "notes": "Transcribed as the post-Patch 2.11 version documented on UESP (Falkreath Defiler Slay draws; Lich's Ring makes the drawn cards free). The 12 magicka is exactly Gambler 3 + Assassin 2 + Archer's Gambit 3 + 2x A Night to Remember 2, so Archer's Gambit keeps its current cost of 3."
+  },
+  {
+   "id": "vivec",
+   "name": "Vivec",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Utilize the power of a Living God",
+   "flavor": "Have you ever wondered what immortality would be like? I think I've decided against it myself, but it would be useful on occasion.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "leafwater-blessing",
+   "player": {
+    "health": 1,
+    "magicka": 25,
+    "hand": [
+     "umbra",
+     "dragon-priest-mask",
+     "grappling-hook",
+     "gardener-of-swords",
+     "enamors-keeper",
+     "afflicted-alit",
+     "dune-stalker"
+    ],
+    "board": [
+     [
+      "vivec"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 15,
+    "board": [
+     [
+      "theranas-lawman*2"
+     ],
+     [
+      "theranas-lawman*2"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Gardener of Swords in the Field Lane.",
+    "Play Grappling Hook on Vivec. Use the grapple on the two Therana's Lawman in the Shadow Lane.",
+    "Play Enamor's Keeper in the Field Lane, and Exalt him.",
+    "Play Afflicted Alit in the Field Lane.",
+    "Play Dune Stalker in the Field Lane, choosing to sacrifice Gardener of Swords. Choose to move Vivec.",
+    "Play Heirloom Greatsword on Vivec.",
+    "Attack with Vivec."
+   ]
+  },
+  {
+   "id": "unite-the-houses",
+   "name": "Unite the Houses",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Unite the Houses of Vvardenfell",
+   "flavor": "They say the Nerevarine will become Hortator of all the houses. Sounds mad. Impossible even. But contemplating impossible things is one of my hobbies.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "stolen-pants",
+   "player": {
+    "health": 1,
+    "magicka": 35,
+    "hand": [
+     "memory-wraith",
+     "unite-the-houses",
+     "cast-out",
+     {
+      "id": "nix-ox",
+      "count": 2,
+      "effects": [
+       {
+        "trigger": "Summon",
+        "type": "magicka",
+        "amount": 6,
+        "target": "player"
+       }
+      ]
+     },
+     {
+      "id": "ulfrics-uprising",
+      "cost": 6
+     },
+     "gentleman-jim-stacey",
+     "mecinars-will"
+    ],
+    "board": [
+     [
+      "redoran-enforcer"
+     ],
+     [
+      "memory-wraith",
+      "vigilant-of-stendarr"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 60,
+    "board": [
+     [
+      "ulfrics-zealot",
+      "doppelganger"
+     ],
+     [
+      "skeletal-dragon",
+      "senche-tiger",
+      "mountain-tyrant"
+     ]
+    ]
+   },
+   "solution": [
+    "Attack Ulfric's Zealot with Redoran Enforcer.",
+    "Play Memory Wraith, both Nix-Ox, and Gentleman Jim Stacey.",
+    "Play Heavy Battleaxe on the Memory Wraith in the Shadow Lane (the one that is able to attack this turn).",
+    "Use the well-equipped Memory Wraith to attack the Senche-Tiger.",
+    "Attack Skeletal Dragon with Vigilant of Stendarr.",
+    "Use Cast Out on the Mountain Tyrant.",
+    "Use Mecinar's Will on Doppelganger.",
+    "Play Ulfric's Uprising. Use the Doppelganger to copy Gentleman Jim Stacey.",
+    "Play Senche-Tiger and Mountain Tyrant.",
+    "Play Unite the Houses."
+   ],
+   "notes": "Designed before Patches 1.71.2 / 1.72.4: Ulfric's Uprising costs 6 and Nix-Ox gives 6 magicka here (the old values); with the current ones the line is 2 magicka short."
+  },
+  {
+   "id": "mushroom-tower",
+   "name": "Mushroom Tower",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Use a Mushroom Tower to great effect.",
+   "flavor": "At times, I wish I could bring myself to be holed up in a Mushroom Tower, for they certainly have their advantages.",
+   "difficulty": "Expert",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "shadowmere",
+   "player": {
+    "health": 1,
+    "magicka": 21,
+    "hand": [
+     "drain-vitality-level-1",
+     "leafwater-blessing",
+     "call-of-valor-level-1",
+     "unrelenting-force-level-1",
+     "dragon-aspect-level-1",
+     "greybeard-mentor"
+    ],
+    "board": [
+     [
+      "therana"
+     ],
+     [
+      "crystal-tower-crafter"
+     ]
+    ],
+    "support": [
+     "mushroom-tower"
+    ]
+   },
+   "opponent": {
+    "health": 21,
+    "board": [
+     [
+      "fortress-watchman*2",
+      "makeshift-defenses"
+     ],
+     [
+      "senche-tiger*2",
+      "makeshift-defenses"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Leafwater Blessing on Crystal Tower Crafter. Ignore the Betray prompt.",
+    "Play Dragon Aspect on Makeshift Defenses. Ignore the Betray prompt.",
+    "Play Greybeard Mentor.",
+    "Play Call of Valor, Betray the Greybeard Mentor, then play it again.",
+    "Play Leafwater Blessing on Crystal Tower Crafter, Betray a Sovngarde Hero, and play it on Crystal Tower Crafter again.",
+    "Play Dragon Aspect on a Fortress Watchman, Betray a Sovngarde Hero, then play it on the other Fortress Watchman.",
+    "Play Drain Vitality on a Senche-Tiger, Betray the last Sovngarde Hero, and play it on Makeshift Defenses.",
+    "Attack with Therana.",
+    "Play Unrelenting Force on the weakened Senche-Tiger, Betray Therana, and play it on the remaining Senche-Tiger.",
+    "Play Leafwater Blessing on Crystal Tower Crafter, ignoring the Betray prompt.",
+    "Attack with Crystal Tower Crafter."
+   ],
+   "notes": "Lane positions of the two Makeshift Defenses are a guess (last in each lane)."
+  },
+  {
+   "id": "sun-in-shadow",
+   "name": "Sun-in-Shadow",
+   "goal": "win",
+   "text": "Sun-In-Shadow has already betrayed most of her allies; Forsworn Guide is the only creature remaining in your deck. Win this turn.",
+   "description": "Solve the most challenging puzzle yet.",
+   "flavor": "Still you linger? Though my time may be unending, it is always in short supply. Not so for you it seems. Very well then, my most devious puzzle yet should keep you from bothering me again for quite some time.",
+   "difficulty": "Insane",
+   "lanes": [
+    "Field",
+    "Shadow"
+   ],
+   "requires": "mushroom-tower",
+   "player": {
+    "health": 1,
+    "magicka": 100,
+    "hand": [
+     "galyn-the-shelterer",
+     "sun-in-shadow"
+    ],
+    "board": [
+     [
+      "young-mammoth"
+     ],
+     [
+      "mudcrab-anklesnapper"
+     ]
+    ],
+    "deck": [
+     "forsworn-guide",
+     "close-call",
+     "vvardvark-experiment",
+     "a-night-to-remember",
+     "weakness",
+     "blood-sacrament",
+     "dark-rebirth",
+     "fleeting-apparition*2",
+     "ulfrics-uprising",
+     "divayths-experiments"
+    ]
+   },
+   "opponent": {
+    "health": 13,
+    "board": [
+     [
+      "dren-bodyguard*2"
+     ],
+     [
+      "dren-bodyguard*2"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Sun-in-Shadow and shackle Mudcrab Anklesnapper. Choose Fleeting Apparition.",
+    "Play Fleeting Apparition. It will summon Forsworn Guide, which you use to unsummon Sun-in-Shadow. Ignore the Betray prompt.",
+    "Play Sun-in-Shadow and shackle Forsworn Guide. Choose Close Call.",
+    "Play Close Call on Forsworn Guide.",
+    "Play Galyn the Shelterer, and choose Forsworn Guide.",
+    "Play Forsworn Guide and unsummon Sun-in-Shadow.",
+    "Play Sun-in-Shadow and shackle Galyn the Shelterer. Choose Fleeting Apparition.",
+    "Play Fleeting Apparition. From the summoned Forsworn Guide, unsummon Sun-in-Shadow.",
+    "Betray Galyn the Shelterer, then use the next Forsworn Guide to unsummon Mudcrab Anklesnapper.",
+    "Play Mudcrab Anklesnapper.",
+    "Play Sun-in-Shadow and shackle Mudcrab Anklesnapper. Choose Divayth's Experiments.",
+    "Play Divayth's Experiments on Sun-in-Shadow. Shackle a Forsworn Guide and choose Ulfric's Uprising.",
+    "Betray the shackled Forsworn Guide and play Divayth's Experiments on Mudcrab Anklesnapper.",
+    "Play Ulfric's Uprising. Execute the following steps as prompted: unsummon the shackled Mudcrab Anklesnapper; unsummon a copy of Sun-in-Shadow; shackle a Forsworn Guide, and choose Dark Rebirth; shackle the other Forsworn Guide, and choose Blood Sacrament.",
+    "Play Mudcrab Anklesnapper.",
+    "Play Sun-in-Shadow, shackle the Mudcrab Anklesnapper, and choose Weakness.",
+    "Play Dark Rebirth on a Mudcrab Anklesnapper.",
+    "Play Blood Sacrament. Betray a Mudcrab Anklesnapper.",
+    "Play Weakness on a Dren Bodyguard in the Field Lane.",
+    "Attack the weakened Dren Bodyguard with Young Mammoth."
+   ],
+   "notes": "Unlocked after solving all five second-row puzzles in the original. 'requires' can only name one puzzle, so it names puzzle 10 (Mushroom Tower)."
+  }
+ ]
+}

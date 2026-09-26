@@ -1,0 +1,6868 @@
+{
+ "id": "clockwork_city",
+ "name": "Return to Clockwork City",
+ "folder": "clockwork_city",
+ "requires": {
+  "group": "morrowind"
+ },
+ "rewardSets": [
+  "Clockwork City"
+ ],
+ "episodes": [
+  {
+   "id": "ep1",
+   "name": "The Lost Treasure",
+   "map": "The Rift",
+   "nodes": [
+    "offer-from-a-friend",
+    "thornwell-farm",
+    "darkened-forest",
+    "ragged-flagon",
+    "streets-of-riften",
+    "mistveil-dungeon",
+    "forelhost-front-gate",
+    "forelhost-lost-tomb",
+    "treasure-denied"
+   ]
+  },
+  {
+   "id": "ep2",
+   "name": "The Frozen Path",
+   "map": "Winterhold",
+   "nodes": [
+    "episode-2-intro",
+    "college-of-winterhold",
+    "jzargo",
+    "winterhold-wilderness",
+    "the-midden",
+    "alfe-fyr",
+    "sightless-pit",
+    "mount-anthor",
+    "bleakcoast-ridge",
+    "return-to-alfe-fyr",
+    "enter-the-city"
+   ]
+  },
+  {
+   "id": "ep3",
+   "name": "The Ruined City",
+   "map": "Clockwork City",
+   "nodes": [
+    "episode-3-intro",
+    "the-halls-of-regulation",
+    "the-ventral-terminus",
+    "brass-fortress-market-square",
+    "mire-mechanica",
+    "the-last-stand",
+    "the-heart-revealed"
+   ]
+  },
+  {
+   "id": "ep4",
+   "name": "Race Against Time",
+   "map": "Clockwork City",
+   "nodes": [
+    "episode-4-intro",
+    "cogitum-centralis",
+    "the-red-mountain",
+    "the-apprentice",
+    "hall-of-conveyance",
+    "the-betrayal",
+    "the-inner-curiosity",
+    "mecinar-triumphant"
+   ]
+  },
+  {
+   "id": "ep5",
+   "name": "The Furnace Depths",
+   "map": "Clockwork City",
+   "nodes": [
+    "collapsing-tunnel",
+    "submerged-aqueduct",
+    "piston-cavum",
+    "the-tools",
+    "the-caminus-pit",
+    "shaft-of-sohleh",
+    "swims-at-nights-last-stand",
+    "laaneths-last-stand"
+   ]
+  },
+  {
+   "id": "ep6",
+   "name": "Heart of the City",
+   "map": "Clockwork City",
+   "nodes": [
+    "the-throne-aligned",
+    "dragonclaw-rock",
+    "sanguine-barrows",
+    "eastmarch-camp",
+    "divine-implements-found",
+    "return-to-the-inner-curiosity",
+    "chamber-of-lorkhan",
+    "the-city-falls",
+    "journeys-end"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "id": "offer-from-a-friend",
+   "name": "Offer From a Friend",
+   "uesp": "Offer From a Friend",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Get ready for a new adventure",
+   "gallery": [
+    {
+     "file": "LG-quest-Offer From a Friend 01.jpg"
+    },
+    {
+     "file": "LG-quest-Offer From a Friend 02.jpg"
+    },
+    {
+     "file": "LG-quest-Offer From a Friend 03.jpg"
+    },
+    {
+     "file": "LG-quest-Offer From a Friend 04.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act1_ep1_intro"
+   },
+   "intro": [
+    {
+     "speaker": "Nagh",
+     "text": "This one is beginning to suspect you don't know where we're going, Kellen."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "In a way you are correct, Nagh. The scrolls tell me we are on the right path. But as to our destination, well, who knows where a journey will lead?"
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Nagh senses one of your stories coming."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "(Chuckles) Why not? This is the story of the time the Forgotten Hero went on a most unexpected journey indeed. It began with a visit from an old friend..."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Well, well, well. The years have been kind to you. When I heard you were in Skyrim I knew you were just the partner I needed for my latest enterprise."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "I was recently approached by a mysterious man who's been hiring adventurers and treasure hunters from across Tamriel."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "He wanted me to find a bauble called Barilzar's Mazed Band."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Legend has it, this ring can transport you to the long lost Clockwork City, workshop of the dead tinkerer god, Sotha Sil. And now he thinks he's tracked it..."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "...right here, to the Rift. I turned him down — didn't trust him. But there must be a fortune in that city."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "What do you say you and I find that ring — and steal it right from under the treasure hunters' noses?"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We could try following the other treasure hunters. Or we could check in with my old friends in the Thieves' Guild — if anyone knows where to find something valuable, it'll be them.",
+     "audio": "cwcepisode1intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "thornwell-farm",
+   "name": "Thornwell Farm",
+   "uesp": "Thornwell Farm",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Track and fight some Treasure Hunters",
+   "optional": true,
+   "requires": [
+    "offer-from-a-friend"
+   ],
+   "image": "LG-location-Thornwell Farm.png",
+   "intro": [
+    {
+     "speaker": "Relic Hunter",
+     "text": "I'm warning you, old man. Give us the magic ring, or this might get ugly.",
+     "audio": "cwcthornwellfarm-text.0.0"
+    },
+    {
+     "speaker": "Old Man",
+     "text": "Please, no! You don't understand, I need it! You there, stranger — please, help me!",
+     "audio": "cwcthornwellfarm-text.0.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Old Man",
+     "text": "The gods bless you. In truth, I don't even have that magic ring anymore — I lost it in the woods over yonder. If you find it, I beg you, please return it. It's precious to me.",
+     "audio": "cwcthornwellfarm-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Relic Hunter",
+    "avatar": "LG-npc-Relic Hunter.png",
+    "attributes": [
+     "R",
+     "B"
+    ],
+    "lanes": [
+     "Surplus",
+     "Shadow"
+    ],
+    "rulesText": "You begin with Harvest in play Surplus Lane: When you play a creature to this lane, reduce the cost of a random card in your hand by 1.",
+    "normal": {
+     "deck": [
+      "daggers-in-the-dark",
+      "improvised-weapon",
+      "makeshift-defenses",
+      "maple-shield",
+      "maple-shield",
+      "corsair",
+      "corsair",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "dominion-seneschal",
+      "dominion-seneschal",
+      "firebolt",
+      "ratway-prospector",
+      "altmer-protector",
+      "dunmer-nightblade",
+      "dunmer-nightblade",
+      "embassy-guard",
+      "iron-sword",
+      "plunder",
+      "relic-hunter",
+      "relic-hunter",
+      "relic-hunter",
+      "skilled-blacksmith",
+      "camlorn-sentinel",
+      "excavate",
+      "keeper-of-whispers",
+      "mace-of-encumbrance",
+      "master-swordsmith",
+      "quicksilver-crossbow",
+      "reverberating-strike",
+      "rihad-battlemage",
+      "treasure-map",
+      "alikr-bandit",
+      "grappling-hook",
+      "battlefield-scrounger"
+     ],
+     "playerSupport": [
+      "harvest"
+     ]
+    },
+    "master": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "lesser-ward",
+      "lesser-ward",
+      "maple-shield",
+      "maple-shield",
+      "nord-firebrand",
+      "nord-firebrand",
+      "covenant-marauder",
+      "covenant-marauder",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "fiery-imp",
+      "fiery-imp",
+      "firebolt",
+      "firebolt",
+      "ratway-prospector",
+      "ratway-prospector",
+      "sharpshooter-scout",
+      "steel-scimitar",
+      "steel-scimitar",
+      "steel-scimitar",
+      "dunmer-nightblade",
+      "embassy-guard",
+      "evermore-steward",
+      "evermore-steward",
+      "forsworn-looter",
+      "relic-hunter",
+      "relic-hunter",
+      "relic-hunter",
+      "rihad-horseman",
+      "rihad-horseman",
+      "skilled-blacksmith",
+      "skilled-blacksmith",
+      "skilled-blacksmith",
+      "arcane-enchanter",
+      "master-swordsmith",
+      "northwind-outpost",
+      "northwind-outpost",
+      "northwind-outpost"
+     ]
+    }
+   }
+  },
+  {
+   "id": "darkened-forest",
+   "name": "Darkened Forest",
+   "uesp": "Darkened Forest",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Fight the Thornwell Beast",
+   "optional": true,
+   "requires": [
+    "thornwell-farm"
+   ],
+   "image": "LG-location-Darkened Forest.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The hero searched the wood for the old man's ring — until running afoul of a vicious werewolf.",
+     "audio": "cwcdarkenedforest-text.0.0"
+    }
+   ],
+   "hints": [
+    "Hircine's power lets the beast heal quickly. Try to take it down in one turn."
+   ],
+   "during": [
+    {
+     "speaker": "Old Man",
+     "text": "Wait, don't kill him! That's my son!",
+     "audio": "cwcdarkened.forest.playmat.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Old Man",
+     "text": "There it is - the ring!",
+     "audio": "cwcdarkenedforest-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "That doesn't look like Barilzar's Mazed Band. But it does look valuable...",
+     "audio": "cwcdarkenedforest-aftermath-text.0.1"
+    },
+    {
+     "speaker": "Old Man",
+     "text": "No! This ring is blessed by Hircine - it helps my son control his curse.",
+     "audio": "cwcdarkenedforest-aftermath-text.0.2"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We could keep it for our trouble...",
+     "audio": "cwcdarkenedforest-aftermath-text.0.3"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Didn't think so. Ah well, another good deed done!",
+     "audio": "cwcdarkenedforest-return-text.0.0",
+     "if": {
+      "choice": {
+       "node": "darkened-forest",
+       "option": "return"
+      }
+     }
+    },
+    {
+     "speaker": "Old Man",
+     "text": "A curse upon you! You hear me? May that ring be cursed!",
+     "audio": "cwcdarkenedforest-keep-text.0.0",
+     "if": {
+      "choice": {
+       "node": "darkened-forest",
+       "option": "keep"
+      }
+     }
+    }
+   ],
+   "choice": {
+    "prompt": "You will either be able to keep or return the ring to the man.",
+    "options": [
+     {
+      "id": "return",
+      "label": "Return the ring"
+     },
+     {
+      "id": "keep",
+      "label": "Keep the ring"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Thornwell Beast",
+    "avatar": "LG-npc-Thornwell Beast.png",
+    "attributes": [
+     "R",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Opponent starts with 15 health and 2 runes, and has the Hircine Healing support in play. Master: Opponent starts with 30 health and 5 runes, and has the Hircine Healing and Gladiator Arena supports in play.",
+    "normal": {
+     "deck": [
+      "healing-hands",
+      "fiery-imp",
+      "fiery-imp",
+      "intimidate",
+      "scuttler",
+      "relentless-raider",
+      "thornwell-terror",
+      "thornwell-terror",
+      "thornwell-terror",
+      "afflicted-alit",
+      "afflicted-alit",
+      "circle-initiate",
+      "circle-initiate",
+      "circle-initiate",
+      "fharun-defender",
+      "jerall-forager",
+      "protector-of-the-innocent",
+      "silvenar-tracker",
+      "blighted-alit",
+      "blighted-alit",
+      "cast-out",
+      "companion-harbinger",
+      "companion-harbinger",
+      "companion-harbinger",
+      "grim-shield-brother",
+      "grim-shield-brother",
+      "hackwing-feather",
+      "aelas-huntmate",
+      "aelas-huntmate",
+      "aelas-huntmate",
+      "corpselight-farmer",
+      "corpselight-farmer",
+      "cursed-spectre",
+      "lurking-mummy",
+      "whiterun-protector",
+      "child-of-hircine",
+      "night-predator",
+      "triumphant-jarl"
+     ],
+     "health": 15,
+     "runes": 2,
+     "support": [
+      "hircine-healing"
+     ]
+    },
+    "master": {
+     "deck": [
+      "fiery-imp",
+      "fiery-imp",
+      "fiery-imp",
+      "relentless-raider",
+      "relentless-raider",
+      "relentless-raider",
+      "sharpshooter-scout",
+      "steel-scimitar",
+      "steel-scimitar",
+      "thornwell-terror",
+      "thornwell-terror",
+      "thornwell-terror",
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "circle-initiate",
+      "circle-initiate",
+      "circle-initiate",
+      "silvenar-tracker",
+      "silvenar-tracker",
+      "blighted-alit",
+      "blighted-alit",
+      "blighted-alit",
+      "cast-out",
+      "cast-out",
+      "companion-harbinger",
+      "companion-harbinger",
+      "companion-harbinger",
+      "grim-shield-brother",
+      "grim-shield-brother",
+      "grim-shield-brother",
+      "morkul-gatekeeper",
+      "morkul-gatekeeper",
+      "stone-throw",
+      "stone-throw",
+      "aelas-huntmate",
+      "aelas-huntmate",
+      "aelas-huntmate",
+      "burn-and-pillage",
+      "lurking-mummy",
+      "lurking-mummy",
+      "whiterun-protector",
+      "whiterun-protector",
+      "child-of-hircine",
+      "child-of-hircine",
+      "night-predator",
+      "night-predator",
+      "triumphant-jarl",
+      "triumphant-jarl",
+      "aela-the-huntress"
+     ],
+     "health": 30,
+     "runes": 5,
+     "support": [
+      "hircine-healing",
+      "gladiator-arena"
+     ]
+    }
+   }
+  },
+  {
+   "id": "ragged-flagon",
+   "name": "Ragged Flagon",
+   "uesp": "Ragged Flagon",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Resolve Swims's and Delvin's dispute",
+   "requires": [
+    "offer-from-a-friend"
+   ],
+   "image": "LG-location-Ragged Flagon.png",
+   "intro": [
+    {
+     "speaker": "Delvin Mallory",
+     "text": "Swims-at-Night. You've got nerve showing your face here. Think we forgot that cargo you 'lost'?",
+     "audio": "cwcraggedflagon-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "You're not really still mad about that.",
+     "audio": "cwcraggedflagon-text.0.1"
+    },
+    {
+     "speaker": "Delvin Mallory",
+     "text": "Mad's got nothing to do with it. This is just business.",
+     "audio": "cwcraggedflagon-text.0.2"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Delvin Mallory",
+     "text": "All right boys, I... I think he's learned his lesson. Won't be... stealing from us again.",
+     "audio": "cwcraggedflagon.playmat.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Delvin Mallory",
+     "text": "There was a thief boasting about a magic ring. Argonian called Sails-Through-Storms. But she got arrested some weeks back.",
+     "audio": "cwcraggedflagon-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Sails-Through-Storms got caught? She's a legend!",
+     "audio": "cwcraggedflagon-aftermath-text.0.1"
+    },
+    {
+     "speaker": "Delvin Mallory",
+     "text": "So I gathered. And the guards know it too. She's not in the usual jail, and no one's saying where she is. We've no notion of how to free her.",
+     "audio": "cwcraggedflagon-aftermath-text.0.2"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Hmm. I have a really bad idea.",
+     "audio": "cwcraggedflagon-aftermath-text.0.3"
+    }
+   ],
+   "battle": {
+    "opponent": "Delvin Mallory",
+    "avatar": "LG-npc-Delvin Mallory.png",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "lanes": [
+     "Heist",
+     "Shadow"
+    ],
+    "rulesText": "Heist Lane: Creatures in this lane have Pilfer: Gain 1 magicka. Master: Delvin Mallory starts with two Skooma Smugglers in the left lane.",
+    "normal": {
+     "deck": [
+      "cheydinhal-sapper",
+      "mournhold-guardian",
+      "palace-prowler",
+      "palace-prowler",
+      "shadow-shift",
+      "cathay-raht-veteran",
+      "finish-off",
+      "helstrom-footpad",
+      "helstrom-footpad",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "blacksap-protector",
+      "riverhold-escort",
+      "riverhold-escort",
+      "thievery",
+      "back-alley-rogue",
+      "torval-crook",
+      "cliff-racer",
+      "snowy-sabre-cat",
+      "bandit-ringleader",
+      "highland-lurcher",
+      "highland-lurcher",
+      "ransack",
+      "ransack",
+      "soulrest-marshal",
+      "chaurus-reaper",
+      "renowned-legate",
+      "sanctuary-raid",
+      "auroran-sentry",
+      "eclipse-baroness"
+     ]
+    },
+    "master": {
+     "deck": [
+      "descendant-of-alkosh",
+      "palace-prowler",
+      "palace-prowler",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "blacksap-protector",
+      "giant-bat",
+      "giant-bat",
+      "thieves-guild-fence",
+      "master-of-thieves",
+      "master-of-thieves",
+      "moonlight-werebat",
+      "torval-crook",
+      "ahnassi",
+      "brynjolf",
+      "cliff-racer",
+      "leaflurker",
+      "piercing-javelin",
+      "protector-of-the-mane",
+      "quinrawl-burglar",
+      "quinrawl-burglar",
+      "sails-through-storms",
+      "chaurus-reaper",
+      "eclipse-baroness",
+      "eclipse-baroness",
+      "tazkad-the-packmaster"
+     ],
+     "board": [
+      [
+       "skooma-smuggler",
+       "skooma-smuggler"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "streets-of-riften",
+   "name": "Streets of Riften",
+   "uesp": "Streets of Riften",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Get arrested",
+   "requires": [
+    "ragged-flagon"
+   ],
+   "image": "LG-location-Streets of Riften.png",
+   "intro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "All right, hear me out. If we commit a brazen enough crime, the guards will take us right to Sails-Through-Storms. And luckily, brazen is my specialty.",
+     "audio": "cwcstreetsofriften-text.0.0"
+    }
+   ],
+   "hints": [
+    "Defeat the Riften Guard or complete a Crime Spree and get arrested."
+   ],
+   "during": [
+    {
+     "speaker": "Riften Lawkeeper",
+     "text": "Stop right there!",
+     "audio": "cwcstreetsofriften.playmat.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Curses. You've caught us. But there's no prison in the world that can hold us!",
+     "audio": "cwcstreetsofriften-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Riften Lawkeeper",
+     "text": "We'll see about that.",
+     "audio": "cwcstreetsofriften-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Riften Lawkeeper",
+    "avatar": "LG-npc-Riften Lawkeeper.png",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Play as Swims-at-Night. Normal: Riften Lawkeeper starts with an Imperial Might on board and a Septim Guardsman and a Prized Chicken in the left lane; player starts with a Crime Spree on board. Master: Riften Lawkeeper starts with a Divine Conviction and an Imperial Might on board and two Septim Guardsman and a Prized Chicken in the left lane; player starts with a Crime Spree on board.",
+    "normal": {
+     "deck": [
+      "improvised-weapon",
+      "makeshift-defenses",
+      "maple-shield",
+      "septim-guardsman",
+      "elixir-of-vitality",
+      "execute",
+      "imperial-grunt",
+      "imperial-grunt",
+      "cathay-raht-veteran",
+      "kvatch-soldier",
+      "legion-shield",
+      "rallying-stormcloak",
+      "rallying-stormcloak",
+      "horned-helm",
+      "imperial-legionnaire",
+      "quicksilver-crossbow",
+      "shield-breaker",
+      "two-moons-contemplation",
+      "candlehearth-brawler",
+      "candlehearth-brawler",
+      "grappling-hook",
+      "imperial-camp",
+      "riften-lawkeeper",
+      "riften-lawkeeper",
+      "whiterun-trooper",
+      "battlefield-scrounger",
+      "graceful-myrmidon",
+      "knight-of-the-hour",
+      "snowhawk-detachment",
+      "arrest"
+     ],
+     "playerDeck": [
+      "curse",
+      "move-in-shadows",
+      "murkwater-goblin",
+      "paralyze",
+      "shadow-shift",
+      "shadow-shift",
+      "barter",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "finish-off",
+      "lockpick",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "arenthia-swindler",
+      "arenthia-swindler",
+      "dune-smuggler",
+      "dune-smuggler",
+      "goblin-skulk",
+      "goblin-skulk",
+      "murkwater-guide",
+      "murkwater-guide",
+      "thieves-guild-shadowfoot",
+      "thieves-guild-shadowfoot",
+      "murkwater-shaman",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "ransack"
+     ],
+     "support": [
+      "imperial-might"
+     ],
+     "board": [
+      [
+       "septim-guardsman",
+       "prized-chicken"
+      ],
+      []
+     ],
+     "playerSupport": [
+      "crime-spree"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "crimeSpreeWins",
+       "text": "Defeat the Riften Guard or complete a Crime Spree and get arrested."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "improvised-weapon",
+      "maple-shield",
+      "maple-shield",
+      "relentless-raider",
+      "solitude-stalwart",
+      "steel-scimitar",
+      "steel-scimitar",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "helgen-squad-leader",
+      "kvatch-soldier",
+      "legion-shield",
+      "priest-of-the-eight",
+      "priest-of-the-eight",
+      "rift-thane",
+      "crusaders-assault",
+      "horned-helm",
+      "shield-breaker",
+      "candlehearth-brawler",
+      "candlehearth-brawler",
+      "dawnbreaker",
+      "orcish-warhammer",
+      "riften-lawkeeper",
+      "riften-lawkeeper",
+      "ulfrics-housecarl",
+      "divine-fervor",
+      "divine-fervor",
+      "arrest",
+      "legion-praefect"
+     ],
+     "support": [
+      "divine-conviction",
+      "imperial-might"
+     ],
+     "board": [
+      [
+       "septim-guardsman",
+       "septim-guardsman",
+       "prized-chicken"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "mistveil-dungeon",
+   "name": "Mistveil Dungeon",
+   "uesp": "Mistveil Dungeon",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Break out of jail",
+   "requires": [
+    "streets-of-riften"
+   ],
+   "image": "LG-location-Mistveil Dungeon.png",
+   "intro": [
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "Well, look at what the guards dragged in. Welcome to paradise.",
+     "audio": "cwcmistveildungeon-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We won't be here long. We've come to free you.",
+     "audio": "cwcmistveildungeon-text.0.1"
+    },
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "Really? Why?",
+     "audio": "cwcmistveildungeon-text.0.2"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We hear you know something about Barilzar's Mazed Band.",
+     "audio": "cwcmistveildungeon-text.0.3"
+    },
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "I might. Get me out of here and we'll talk.",
+     "audio": "cwcmistveildungeon-text.0.4"
+    }
+   ],
+   "hints": [
+    "Use your Lockpicks to free Sails-Through-Storms."
+   ],
+   "outro": [
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "Thanks for the assistance. I don't have the ring, but I do have this journal. It belonged to a great adventurer who claims to have hidden the ring in the most dangerous place they could find. It's sealed inside a Dragon Cult tomb.",
+     "audio": "cwcmistveildungeon-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Mistveil Guard",
+    "avatar": "LG-npc-Mistveil Guard.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with 3 Lockpicks in their hand instead of the normal 3 cards and a Dungeon Cell on board. Master: Mistveil Guard starts with a Mistveil Warden in the left lane.",
+    "normal": {
+     "deck": [
+      "maple-shield",
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "cheydinhal-sapper",
+      "execute",
+      "sunhold-medic",
+      "sunhold-medic",
+      "cathay-raht-veteran",
+      "elixir-of-vigor",
+      "enchanted-plate",
+      "kvatch-soldier",
+      "oldgate-warden",
+      "yew-shield",
+      "bruma-armorer",
+      "imperial-armor",
+      "imperial-legionnaire",
+      "mistveil-warden",
+      "mistveil-warden",
+      "mistveil-warden",
+      "penitus-oculatus-agent",
+      "riverhold-escort",
+      "lion-guard-strategist",
+      "restoration-tutor",
+      "stonetooth-scrapper",
+      "knight-of-the-hour",
+      "snowhawk-detachment",
+      "praetorian-commander",
+      "legion-praefect",
+      "renowned-legate"
+     ],
+     "playerHand": [
+      "lockpick",
+      "lockpick",
+      "lockpick"
+     ],
+     "playerSupport": [
+      "dungeon-cell"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "openingHandReplaced",
+       "text": "Player starts with 3 Lockpicks in their hand instead of the normal 3 cards."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "septim-guardsman",
+      "encumbered-explorer",
+      "execute",
+      "solitude-stalwart",
+      "bruma-profiteer",
+      "enchanted-plate",
+      "kvatch-soldier",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "dawnstar-healer",
+      "mistveil-warden",
+      "mistveil-warden",
+      "mistveil-warden",
+      "tree-minder",
+      "emperor-titus-mede-ii",
+      "emperors-blade",
+      "hive-defender",
+      "midnight-sweep",
+      "riften-lawkeeper",
+      "riften-lawkeeper",
+      "divine-fervor",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "phalanx-exemplar",
+      "general-tullius",
+      "golden-saint",
+      "arrest",
+      "renowned-legate",
+      "auroran-sentry",
+      "mantikora"
+     ],
+     "board": [
+      [
+       "mistveil-warden"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "forelhost-front-gate",
+   "name": "Forelhost Front Gate",
+   "uesp": "Forelhost Front Gate",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Get into Forelhost",
+   "requires": [
+    "mistveil-dungeon"
+   ],
+   "image": "LG-location-Forelhost Front Gate.png",
+   "intro": [
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "This is the chamber the journal points to. But the door is magically sealed.",
+     "audio": "cwcforelhostfrontgate-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "This inscription reads \"Only the dead may walk these halls / Take up the chalice, heed Alduin's call.",
+     "audio": "cwcforelhostfrontgate-text.0.1"
+    },
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "They killed themselves. Drank poison from this chalice. You don't think...",
+     "audio": "cwcforelhostfrontgate-text.0.2"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "That the door only opens for the poisoned? Might be. I can brew a poison that won't kill us. But it won't be pleasant...",
+     "audio": "cwcforelhostfrontgate-text.0.3"
+    },
+    {
+     "speaker": "Sails-Through-Storms",
+     "text": "I'm not drinking poison just to find some ring. I'm out.",
+     "audio": "cwcforelhostfrontgate-text.0.4"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Your loss. Me, I'll do a lot for treasure. And lost cities are always FULL of treasure.",
+     "audio": "cwcforelhostfrontgate-text.0.5"
+    }
+   ]
+  },
+  {
+   "id": "forelhost-lost-tomb",
+   "name": "Forelhost Lost Tomb",
+   "uesp": "Forelhost Lost Tomb",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Find Barilzar's Mazed Band in Forelhost",
+   "requires": [
+    "forelhost-front-gate"
+   ],
+   "image": "LG-location-Forelhost Lost Tomb.png",
+   "intro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "There's the ring!",
+     "audio": "cwcforelhostlosttomb-text.0.0"
+    },
+    {
+     "speaker": "Dragon Priest",
+     "text": "(Roars)",
+     "audio": "cwcforelhostlosttomb-text.0.1"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "I guess the poison isn't the only thing that makes this place dangerous.",
+     "audio": "cwcforelhostlosttomb-text.0.2"
+    }
+   ],
+   "hints": [
+    "You've taken poison! It will damage you every turn."
+   ],
+   "outro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "The... ring ... is ours!",
+     "audio": "cwcforelhost.lost.tomb.playmat.1"
+    },
+    {
+     "speaker": "Mysterious Figure",
+     "text": "I'm afraid not. Thank you for leading us to it though.",
+     "audio": "cwcforelhost.lost.tomb.playmat.2"
+    }
+   ],
+   "battle": {
+    "opponent": "Dragon Priest",
+    "avatar": "LG-npc-Dragon Priest.png",
+    "attributes": [
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with a Forelhost Poison on board. Master: Dragon Priest starts with a Draugr Sentry in each lane.",
+    "normal": {
+     "deck": [
+      "suppress",
+      "deadly-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "barrow-stalker",
+      "daedric-dagger",
+      "fharun-defender",
+      "hist-speaker",
+      "hist-speaker",
+      "weakness",
+      "weakness",
+      "frostbite-spider",
+      "necromancers-amulet",
+      "stalwart-ally",
+      "stalwart-ally",
+      "tree-minder",
+      "archein-venomtongue",
+      "corrupted-shade",
+      "gloom-wraith",
+      "gloom-wraith",
+      "grim-champion",
+      "restless-templar",
+      "hallowed-deathpriest",
+      "hallowed-deathpriest",
+      "black-worm-necromancer",
+      "doomcrag-vampire",
+      "waves-of-the-fallen"
+     ],
+     "playerSupport": [
+      "forelhost-poison"
+     ]
+    },
+    "master": {
+     "deck": [
+      "deadly-draugr",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "barrow-stalker",
+      "barrow-stalker",
+      "daedric-dagger",
+      "fharun-defender",
+      "hist-speaker",
+      "weakness",
+      "dark-guardian",
+      "dark-guardian",
+      "frostbite-spider",
+      "frostbite-spider",
+      "haunting-spirit",
+      "stalwart-ally",
+      "stalwart-ally",
+      "stalwart-ally",
+      "cursed-spectre",
+      "gloom-wraith",
+      "gloom-wraith",
+      "grim-champion",
+      "little-girl",
+      "hallowed-deathpriest",
+      "hallowed-deathpriest",
+      "lurking-mummy",
+      "lurking-mummy",
+      "night-shadow",
+      "night-shadow",
+      "bone-colossus",
+      "bone-colossus"
+     ],
+     "board": [
+      [
+       "draugr-sentry"
+      ],
+      [
+       "draugr-sentry"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "treasure-denied",
+   "name": "Treasure Denied",
+   "uesp": "Treasure Denied",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Be ambushed by treasure hunters",
+   "requires": [
+    "forelhost-lost-tomb"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Treasure Denied 01.jpg"
+    },
+    {
+     "file": "LG-quest-Treasure Denied 02.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act1_ep1_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "In their the weakened state, the Hero and Swims-at-Night could not hold off the treasure hunters. They seized the ring."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But Swims-at-Night would not give up his prize. At the last moment, he reached out and grabbed the hunters."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "No you don't!"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "And was whisked away with them, into the mysterious city."
+    }
+   ]
+  },
+  {
+   "id": "episode-2-intro",
+   "name": "Episode 2 Intro",
+   "uesp": "Episode 2 Intro (Clockwork City)",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Kellen tells about the College of Winterhold",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "With Swims-at-Night in danger, the hero sought the help of an old and learned friend. Laaneth was now a teacher at the College of Winterhold. Perhaps she knew another way into the lost city.",
+     "audio": "cwcepisode2intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "college-of-winterhold",
+   "name": "College of Winterhold",
+   "uesp": "College of Winterhold (quest)",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Find Laaneth",
+   "requires": [
+    "episode-2-intro"
+   ],
+   "image": "LG-location-College of Winterhold.png",
+   "intro": [
+    {
+     "speaker": "Librarian",
+     "text": "Look out, stranger! The books in the library have come alive!",
+     "audio": "cwccollegeofwinterhold-text.0.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Thanks for the help. I think I have an idea of how to get to the Clockwork City, but first I need to find out what happened here. Think you can help?",
+     "audio": "cwccollegeofwinterhold-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Flying Books",
+    "avatar": "LG-npc-Flying Books.png",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Mage Tower",
+     "Shadow"
+    ],
+    "rulesText": "Mage Tower: After you play an action, summon a random creature in this lane with the same cost.",
+    "normal": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "lesser-ward",
+      "execute",
+      "firebolt",
+      "scouting-patrol",
+      "healing-potion",
+      "ice-spike",
+      "ice-spike",
+      "moment-of-clarity",
+      "soul-split",
+      "wisdom-of-ancients",
+      "wisdom-of-ancients",
+      "brilliant-experiment",
+      "brilliant-experiment",
+      "call-of-valor-level-1",
+      "dark-rebirth",
+      "fire-breath-level-1",
+      "mages-trick",
+      "reverberating-strike",
+      "fire-storm",
+      "ice-wraith",
+      "ice-wraith",
+      "knife-to-the-throat",
+      "knife-to-the-throat",
+      "lightning-bolt",
+      "winters-grasp",
+      "immolating-blast",
+      "mages-guild-retreat"
+     ]
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "execute",
+      "firebolt",
+      "firebolt",
+      "healing-potion",
+      "healing-potion",
+      "ice-spike",
+      "ice-spike",
+      "arrow-storm",
+      "crushing-blow",
+      "crushing-blow",
+      "cunning-ally",
+      "devour",
+      "devour",
+      "fire-storm",
+      "lightning-bolt",
+      "lightning-bolt",
+      "ayrenn",
+      "piercing-javelin",
+      "piercing-javelin",
+      "winters-grasp",
+      "winters-grasp",
+      "ice-storm",
+      "ice-storm",
+      "stealer-of-secrets",
+      "stealer-of-secrets",
+      "sanctuary-raid",
+      "ancano",
+      "dawns-wrath",
+      "dawns-wrath"
+     ]
+    }
+   }
+  },
+  {
+   "id": "jzargo",
+   "name": "J'Zargo",
+   "uesp": "J'Zargo (quest)",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Make a deal with J'Zargo",
+   "requires": [
+    "college-of-winterhold"
+   ],
+   "intro": [
+    {
+     "speaker": "J'Zargo",
+     "text": "Hmm. J'Zargo thinks he could discover who is behind the library attack. This one knows many who walk these halls. Perhaps in return you could do a small favor for J'Zargo?",
+     "audio": "cwcjzargo-text.0.0"
+    },
+    {
+     "speaker": "J'Zargo",
+     "text": "I have been perfecting these new spell scrolls, but have no time to test them. Could you try them? They shouldn't be too dangerous.",
+     "audio": "cwcjzargo-text.0.1"
+    }
+   ]
+  },
+  {
+   "id": "winterhold-wilderness",
+   "name": "Winterhold Wilderness",
+   "uesp": "Winterhold Wilderness",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Test J'Zargo's scrolls",
+   "requires": [
+    "jzargo"
+   ],
+   "image": "LG-location-Winterhold Wilderness.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The hero ventured out to test J'Zargo's scrolls. But their light soon attracted curious predators.",
+     "audio": "cwcwinterholdwilderness-text.0.0"
+    }
+   ],
+   "hints": [
+    "You must test all of J'Zargo's scrolls to win."
+   ],
+   "outro": [
+    {
+     "speaker": "J'Zargo",
+     "text": "How did the scrolls perform?! Oh. Ah. Well... you survived, no? And now J'Zargo knows just what to do next time...",
+     "audio": "cwcwinterholdwilderness-aftermath-text.0.0"
+    },
+    {
+     "speaker": "J'Zargo",
+     "text": "As for the library attack, J'Zargo asked around. One of the older students, Nirenil, snuck into the Arcanaeum last night after dark. Then she slipped into the Midden beneath the school. Most suspicious, no? J'Zargo is a natural investigator.",
+     "audio": "cwcwinterholdwilderness-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Shadowgreen Elder",
+    "avatar": "LG-npc-Shadowgreen Elder.png",
+    "attributes": [
+     "G",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with three additional Very Experimental Scrolls in hand. You must play all of J'Zargo's Very Experimental Scrolls to win.",
+    "normal": {
+     "deck": [
+      "close-call",
+      "move-in-shadows",
+      "move-in-shadows",
+      "enraged-mudcrab",
+      "shadow-shift",
+      "voracious-spriggan",
+      "finish-off",
+      "mudcrab-anklesnapper",
+      "raging-horker",
+      "stalking-crocodile",
+      "stalking-crocodile",
+      "barded-guar",
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "feasting-vulture",
+      "feasting-vulture",
+      "frostbite-spider",
+      "giant-bat",
+      "swift-strike",
+      "territorial-viper",
+      "cave-bear",
+      "giant-snake",
+      "green-touched-spriggan",
+      "snowy-sabre-cat",
+      "stonehill-mammoth",
+      "wild-beastcaller",
+      "shadowgreen-elder",
+      "swamp-leviathan",
+      "swamp-leviathan",
+      "nest-of-vipers"
+     ],
+     "playerHand": [
+      "very-experimental-scroll",
+      "very-experimental-scroll",
+      "very-experimental-scroll"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "playAllScrollsToWin",
+       "text": "You must play all of J'Zargo's Very Experimental Scrolls to win.",
+       "card": "very-experimental-scroll"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-midden",
+   "name": "The Midden",
+   "uesp": "The Midden",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Deal with a troublesome student",
+   "requires": [
+    "winterhold-wilderness"
+   ],
+   "image": "LG-location-The Midden.png",
+   "intro": [
+    {
+     "speaker": "Nirenil",
+     "text": "So, you've found me. No matter. These fools have never understood my work - or what I'm capable of. But I'll be happy to give you the first taste of my power!",
+     "audio": "cwcthemidden-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Stand aside. This unruly student is mine.",
+     "audio": "cwcthemidden-text.0.1"
+    }
+   ],
+   "hints": [
+    "the first action each player plays each turn is free"
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Well. That student is officially expelled. Thanks for your help.",
+     "audio": "cwcthemidden-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "I've looked into your Clockwork City problem as well. Its location is shrouded in mystery - but there was one legendary mage who could travel there at will: Divayth Fyr. I don't know if he still lives... but one of his daughters is here in Skyrim. I'll take you to her.",
+     "audio": "cwcthemidden-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Nirenil",
+    "avatar": "LG-npc-Nirenil.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Play as Laaneth You start with Powerful Presence on board.",
+    "normal": {
+     "deck": [
+      "deadly-draugr",
+      "firebolt",
+      "scroll-seeker",
+      "scroll-seeker",
+      "high-rock-summoner",
+      "ice-spike",
+      "ice-spike",
+      "sorcerers-negation",
+      "soul-split",
+      "wisdom-of-ancients",
+      "crushing-blow",
+      "cunning-ally",
+      "dark-guardian",
+      "desperate-conjuring",
+      "haunting-spirit",
+      "keeper-of-whispers",
+      "plea-to-kynareth",
+      "reverberating-strike",
+      "reverberating-strike",
+      "cursed-spectre",
+      "dres-guard",
+      "knife-to-the-throat",
+      "lay-down-arms",
+      "lay-down-arms",
+      "lightning-bolt",
+      "northpoint-captain",
+      "hallowed-deathpriest",
+      "lillandril-hexmage",
+      "winters-touch",
+      "black-worm-necromancer",
+      "stealer-of-secrets",
+      "waves-of-the-fallen"
+     ],
+     "playerDeck": [
+      "firebolt",
+      "firebolt",
+      "scroll-seeker",
+      "scroll-seeker",
+      "abecean-navigator",
+      "arcanaeum-librarian",
+      "arcanaeum-librarian",
+      "crystal-tower-crafter",
+      "crystal-tower-crafter",
+      "ice-spike",
+      "ice-spike",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "mages-trick",
+      "mages-trick",
+      "revealing-the-unseen",
+      "revealing-the-unseen",
+      "reverberating-strike",
+      "reverberating-strike",
+      "elusive-schemer",
+      "elusive-schemer",
+      "fire-storm",
+      "lightning-bolt",
+      "lightning-bolt",
+      "college-of-winterhold",
+      "court-wizard",
+      "lillandril-hexmage",
+      "lillandril-hexmage",
+      "ice-storm",
+      "dawns-wrath"
+     ],
+     "playerSupport": [
+      "powerful-presence"
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "crystal-tower-crafter",
+      "crystal-tower-crafter",
+      "ice-spike",
+      "wardcrafter",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "cunning-ally",
+      "cunning-ally",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "dark-guardian",
+      "dark-guardian",
+      "reverberating-strike",
+      "reverberating-strike",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "lightning-bolt",
+      "lightning-bolt",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "lillandril-hexmage",
+      "lillandril-hexmage",
+      "high-king-emeric",
+      "bone-colossus",
+      "bone-colossus",
+      "ancano"
+     ]
+    }
+   }
+  },
+  {
+   "id": "alfe-fyr",
+   "name": "Alfe Fyr",
+   "uesp": "Alfe Fyr (quest)",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Seek help from Alfe Fyr",
+   "requires": [
+    "the-midden"
+   ],
+   "intro": [
+    {
+     "speaker": "Alfe Fyr",
+     "text": "You live on the most frozen, gods-forsaken mountain on Nirn, and you think people will leave you alone. But still you come knocking.",
+     "audio": "cwcalfefyr-text.0.0"
+    },
+    {
+     "speaker": "Alfe Fyr",
+     "text": "Clockwork City is it? Yes, I know the way. But it's not easy. I'll need the toe of a Frost Troll, a Dwemer puzzle box, and the skull of a living Dragon. Find all that, and I'll help you.",
+     "audio": "cwcalfefyr-text.0.1"
+    }
+   ]
+  },
+  {
+   "id": "sightless-pit",
+   "name": "Sightless Pit",
+   "uesp": "Sightless Pit (quest)",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Find the Dwemer puzzle box",
+   "requires": [
+    "alfe-fyr"
+   ],
+   "image": "LG-location-Sightless Pit.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "This ruin is our best hope of finding that Dwemer puzzle box - but be careful. It's overrun with Falmer.",
+     "audio": "cwcsightlesspit-text.1.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Found the puzzle box! Let's get out of here before more of those creatures show up.",
+     "audio": "cwcsightlesspit-aftermath-text.1.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Pit Falmer",
+    "avatar": "LG-npc-Pit Falmer.png",
+    "attributes": [
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with Sightless Pit on board.",
+    "normal": {
+     "deck": [
+      "move-in-shadows",
+      "move-in-shadows",
+      "deepwood-trapper",
+      "voracious-spriggan",
+      "voracious-spriggan",
+      "gloomlurker",
+      "gloomlurker",
+      "crushing-blow",
+      "goblin-skulk",
+      "goblin-skulk",
+      "nimble-ally",
+      "shadowmaster",
+      "shadowmaster",
+      "shadowscale-partisan",
+      "back-alley-rogue",
+      "back-alley-rogue",
+      "chaurus",
+      "chaurus",
+      "ferocious-dreugh",
+      "green-pact-stalker",
+      "knife-to-the-throat",
+      "sightless-skulk",
+      "sightless-skulk",
+      "highland-lurcher",
+      "nightprowler",
+      "nightprowler",
+      "ransack",
+      "ransack",
+      "chaurus-reaper",
+      "chaurus-reaper"
+     ],
+     "playerSupport": [
+      "sightless-pit"
+     ]
+    },
+    "master": {
+     "deck": [
+      "murkwater-goblin",
+      "murkwater-goblin",
+      "deepwood-trapper",
+      "deepwood-trapper",
+      "shadow-shift",
+      "shadow-shift",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "gloomlurker",
+      "gloomlurker",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "murkwater-witch",
+      "goblin-skulk",
+      "goblin-skulk",
+      "murkwater-savage",
+      "murkwater-savage",
+      "nimble-ally",
+      "nimble-ally",
+      "shadowmaster",
+      "shadowmaster",
+      "back-alley-rogue",
+      "back-alley-rogue",
+      "murkwater-skirmisher",
+      "murkwater-skirmisher",
+      "sightless-skulk",
+      "sightless-skulk",
+      "cliff-racer",
+      "cliff-racer",
+      "tazkad-the-packmaster"
+     ]
+    }
+   },
+   "variants": {
+    "keep": {
+     "intro": [
+      {
+       "speaker": "Laaneth",
+       "text": "Beautiful moon tonight. Shame we have to descend into this dark ruin, but it's our best hope of finding that Dwemer puzzle box.",
+       "audio": "cwcsightlesspit-text.0.0"
+      },
+      {
+       "speaker": "Laaneth",
+       "text": "Wait. Are you okay? That ring on your hand is glowing and... are you growing fur?",
+       "audio": "cwcsightlesspit-text.0.1"
+      }
+     ],
+     "outro": [
+      {
+       "speaker": "Laaneth",
+       "text": "Looks like there's a curse on that ring you're wearing. I think I can clear that up for you. But in the meantime, I found the puzzle box.",
+       "audio": "cwcsightlesspit-aftermath-text.0.0"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "healing-hands",
+        "fiery-imp",
+        "fiery-imp",
+        "intimidate",
+        "relentless-raider",
+        "scuttler",
+        "thornwell-terror",
+        "thornwell-terror",
+        "thornwell-terror",
+        "afflicted-alit",
+        "afflicted-alit",
+        "circle-initiate",
+        "circle-initiate",
+        "circle-initiate",
+        "fharun-defender",
+        "jerall-forager",
+        "protector-of-the-innocent",
+        "silvenar-tracker",
+        "blighted-alit",
+        "blighted-alit",
+        "cast-out",
+        "companion-harbinger",
+        "companion-harbinger",
+        "companion-harbinger",
+        "grim-shield-brother",
+        "grim-shield-brother",
+        "hackwing-feather",
+        "aelas-huntmate",
+        "aelas-huntmate",
+        "aelas-huntmate",
+        "corpselight-farmer",
+        "corpselight-farmer",
+        "cursed-spectre",
+        "burn-and-pillage",
+        "lurking-mummy",
+        "whiterun-protector",
+        "whiterun-protector",
+        "child-of-hircine",
+        "night-predator",
+        "triumphant-jarl"
+       ]
+      },
+      "master": {
+       "playerDeck": [
+        "fiery-imp",
+        "fiery-imp",
+        "fiery-imp",
+        "relentless-raider",
+        "relentless-raider",
+        "relentless-raider",
+        "sharpshooter-scout",
+        "steel-scimitar",
+        "steel-scimitar",
+        "thornwell-terror",
+        "afflicted-alit",
+        "afflicted-alit",
+        "afflicted-alit",
+        "circle-initiate",
+        "circle-initiate",
+        "circle-initiate",
+        "silvenar-tracker",
+        "silvenar-tracker",
+        "blighted-alit",
+        "blighted-alit",
+        "blighted-alit",
+        "cast-out",
+        "cast-out",
+        "companion-harbinger",
+        "companion-harbinger",
+        "companion-harbinger",
+        "grim-shield-brother",
+        "grim-shield-brother",
+        "grim-shield-brother",
+        "morkul-gatekeeper",
+        "morkul-gatekeeper",
+        "stone-throw",
+        "stone-throw",
+        "aelas-huntmate",
+        "aelas-huntmate",
+        "aelas-huntmate",
+        "burn-and-pillage",
+        "lurking-mummy",
+        "lurking-mummy",
+        "whiterun-protector",
+        "whiterun-protector",
+        "child-of-hircine",
+        "child-of-hircine",
+        "night-predator",
+        "night-predator",
+        "triumphant-jarl",
+        "triumphant-jarl",
+        "aela-the-huntress"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "mount-anthor",
+   "name": "Mount Anthor",
+   "uesp": "Mount Anthor",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Collect the head of a dragon",
+   "requires": [
+    "alfe-fyr"
+   ],
+   "image": "LG-location-Mount Anthor.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "The stories are true - Dragons have returned to the world. And that one is heading our way!",
+     "audio": "cwcmountanthor-text.0.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "I never thought I'd live to see one of these - much less kill one. Come on, let's get this skull back to Alfe.",
+     "audio": "cwcmountanthor-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Anthor Dragon",
+    "avatar": "LG-npc-Anthor Dragon.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Opponent begins with Dragon Mound on board. Master: Opponent begins with two Dragon Mounds on board.",
+    "normal": {
+     "deck": [
+      "close-call",
+      "soul-tear-level-1",
+      "soul-tear-level-1",
+      "soul-tear-level-1",
+      "devour",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "revered-guardian",
+      "revered-guardian",
+      "karthspire-scourge",
+      "karthspire-scourge",
+      "karthspire-scourge",
+      "dragon-mound",
+      "spine-of-eldersblood",
+      "spine-of-eldersblood",
+      "spine-of-eldersblood",
+      "undying-dragon",
+      "undying-dragon",
+      "undying-dragon",
+      "ironscale-dragon",
+      "ironscale-dragon",
+      "ironscale-dragon",
+      "nahagliiv",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "odahviing",
+      "paarthurnax",
+      "alduin"
+     ],
+     "support": [
+      "dragon-mound"
+     ]
+    },
+    "master": {
+     "deck": [
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "woodland-lookout",
+      "mystic-dragon",
+      "revered-guardian",
+      "serpentine-stalker",
+      "blood-dragon",
+      "karthspire-scourge",
+      "icewing-dragon",
+      "skyborn-dragon",
+      "skyborn-dragon",
+      "undying-dragon",
+      "undying-dragon",
+      "undying-dragon",
+      "dovah-of-the-voice",
+      "nahagliiv",
+      "wildfire-dragon",
+      "wildfire-dragon",
+      "wildfire-dragon",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "swiftwing-dragon",
+      "swiftwing-dragon",
+      "odahviing",
+      "odahviing",
+      "odahviing"
+     ],
+     "support": [
+      "dragon-mound",
+      "dragon-mound"
+     ]
+    }
+   }
+  },
+  {
+   "id": "bleakcoast-ridge",
+   "name": "Bleakcoast Ridge",
+   "uesp": "Bleakcoast Ridge",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Collect a frost troll's toe",
+   "requires": [
+    "alfe-fyr"
+   ],
+   "image": "LG-location-Bleakcoast Ridge.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "I see a frost troll up ahead. But be careful - I think a storm is coming.",
+     "audio": "cwcbleakcoastridge-text.0.0"
+    }
+   ],
+   "hints": [
+    "Beware! There will be an Ice Storm every 5 turns!"
+   ],
+   "during": [
+    {
+     "speaker": "Laaneth",
+     "text": "The winds are whipping up. Let's be careful out there.",
+     "audio": "cwcbleakcoastridge.playmat.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "That ice storm is almost here. Look out!",
+     "audio": "cwcbleakcoastridge.playmat.2"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Dark clouds coming in fast. Take cover!",
+     "audio": "cwcbleakcoastridge.playmat.3"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "The storm's returning. Brace yourself.",
+     "audio": "cwcbleakcoastridge.playmat.4"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "All right. Got the toe. Now let's get somewhere warm.",
+     "audio": "cwcbleakcoastridge-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Frost Troll",
+    "avatar": "LG-npc-Frost Troll.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with Harsh Conditions on board. Master: Frost Troll starts with High Hrothgar on board. Returned the ring in Darkened Forest: Player starts with a Snow Wolf in each lane.",
+    "normal": {
+     "deck": [
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "ancient-lookout",
+      "wind-keep-spellsword",
+      "frostbite-spider",
+      "frostbite-spider",
+      "hackwing-feather",
+      "hackwing-feather",
+      "haunting-spirit",
+      "young-mammoth",
+      "young-mammoth",
+      "cave-grahl",
+      "cave-grahl",
+      "corrupted-shade",
+      "frost-troll",
+      "frost-troll",
+      "ice-wraith",
+      "ice-wraith",
+      "mystic-dragon",
+      "restless-templar",
+      "restless-templar",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "winters-grasp",
+      "stonehill-mammoth",
+      "stonehill-mammoth",
+      "lowland-troll",
+      "lowland-troll",
+      "frost-giant"
+     ],
+     "playerSupport": [
+      "harsh-conditions"
+     ]
+    },
+    "master": {
+     "deck": [
+      "encumbered-explorer",
+      "encumbered-explorer",
+      "barrow-stalker",
+      "barrow-stalker",
+      "sorcerers-negation",
+      "sorcerers-negation",
+      "camlorn-sentinel",
+      "camlorn-sentinel",
+      "dark-guardian",
+      "dark-guardian",
+      "east-empire-crafter",
+      "east-empire-crafter",
+      "soul-tear-level-1",
+      "stalwart-ally",
+      "stalwart-ally",
+      "emperor-titus-mede-ii",
+      "frost-troll",
+      "frost-troll",
+      "lightning-bolt",
+      "lucien-lachance",
+      "hallowed-deathpriest",
+      "hallowed-deathpriest",
+      "lurking-mummy",
+      "lurking-mummy",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "high-king-emeric",
+      "lowland-troll",
+      "nahagliiv",
+      "ancano"
+     ],
+     "support": [
+      "high-hrothgar"
+     ]
+    }
+   },
+   "variants": {
+    "return": {
+     "intro": [
+      {
+       "speaker": "Kellen",
+       "text": "As Laaneth and the hero searched for a frost troll, a fearsome storm kicked up. Out of the snow, a pack of wolves emerged. Somehow, the hero knew they wished to join in the hunt.",
+       "audio": "cwcbleakcoastridge-text.1.0"
+      }
+     ],
+     "outro": [
+      {
+       "speaker": "Kellen",
+       "text": "With the frost troll defeated, the wolves let out a victorious howl, and faded into the snow.",
+       "audio": "cwcbleakcoastridge-aftermath-text.1.0"
+      },
+      {
+       "speaker": "Nagh",
+       "text": "Nagh does not understand.",
+       "audio": "cwcbleakcoastridge-aftermath-text.1.1"
+      },
+      {
+       "speaker": "Kellen",
+       "text": "Nor did Lanneth. But it seemed to the hero that they were being repaid for a past kindness.",
+       "audio": "cwcbleakcoastridge-aftermath-text.1.2"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerBoard": [
+        [
+         "snow-wolf"
+        ],
+        [
+         "snow-wolf"
+        ]
+       ]
+      },
+      "master": {
+       "playerBoard": [
+        [
+         "snow-wolf"
+        ],
+        [
+         "snow-wolf"
+        ]
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "return-to-alfe-fyr",
+   "name": "Return to Alfe Fyr",
+   "uesp": "Return to Alfe Fyr",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Give Alfe Fyr the requested items",
+   "requires": [
+    "sightless-pit",
+    "mount-anthor",
+    "bleakcoast-ridge"
+   ],
+   "intro": [
+    {
+     "speaker": "Alfe Fyr",
+     "text": "You got all those things? Oblivion take me. Well, leave them out back, I guess.",
+     "audio": "cwcreturntoalfefyr-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "You don't need them to get us into the city?",
+     "audio": "cwcreturntoalfefyr-text.0.1"
+    },
+    {
+     "speaker": "Alfe Fyr",
+     "text": "What? No! I just assumed the troll, the falmer, or the dragon would kill you like they did the last three, and I wouldn't have to bother. But ah well, a deal's a deal...",
+     "audio": "cwcreturntoalfefyr-text.0.2"
+    }
+   ]
+  },
+  {
+   "id": "enter-the-city",
+   "name": "Enter the City",
+   "uesp": "Enter the City",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Travel to the Clockwork City",
+   "requires": [
+    "return-to-alfe-fyr"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Enter the City 01.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act1_ep2_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Alfe Fyr was true to her word. At long last, the hero had found Sotha Sil's hidden city. Now, to find Swims-at-Night..."
+    }
+   ]
+  },
+  {
+   "id": "episode-3-intro",
+   "name": "Episode 3 Intro",
+   "uesp": "Episode 3 Intro (Clockwork City)",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Heed Laaneth's warning",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "It's said Sotha Sil, the god of this place, died centuries ago. But the machines he built may still be active. Stay alert.",
+     "audio": "cwcepisode3intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "the-halls-of-regulation",
+   "name": "The Halls of Regulation",
+   "uesp": "The Halls of Regulation",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Defeat the Automata",
+   "requires": [
+    "episode-3-intro"
+   ],
+   "image": "LG-location-The Halls of Regulation.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Much of the once-great city lay empty and eerily silent. But within the Halls of Regulation, they heard the sinister sound of gears whirring to life.",
+     "audio": "cwcthehallsofregulation-text.0.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Remarkable! Those creatures were putting themselves together. If all the machines can do that, there's no telling what we'll find here.",
+     "audio": "cwcthehallsofregulation-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Assembling Automata",
+    "avatar": "LG-npc-Assembling Automata.png",
+    "attributes": [
+     "N"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Master: Assembling Automata starts with 50 health and a Spider Worker in each lane.",
+    "normal": {
+     "deck": [
+      "dwarven-spider",
+      "maple-shield",
+      "blackreach-rebuilder",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "assembled-sentry",
+      "assembled-sentry",
+      "assembled-sentry",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "crushing-blow",
+      "crushing-blow",
+      "ageless-automaton",
+      "dreugh-shell-armor",
+      "dwarven-dynamo",
+      "sparking-spider",
+      "sparking-spider",
+      "abandoned-imperfect",
+      "assembled-conduit",
+      "assembled-conduit",
+      "assembled-conduit",
+      "clockwork-dragon",
+      "assembled-titan",
+      "brass-arquebus",
+      "dark-harvester",
+      "dwarven-colossus"
+     ]
+    },
+    "master": {
+     "deck": [
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "assembled-sentry",
+      "assembled-sentry",
+      "assembled-sentry",
+      "assembled-sentry",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "mechanical-ally",
+      "mechanical-ally",
+      "mechanical-ally",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "abandoned-imperfect",
+      "assembled-conduit",
+      "assembled-conduit",
+      "assembled-conduit",
+      "assembled-titan"
+     ],
+     "health": 50,
+     "board": [
+      [
+       "spider-worker"
+      ],
+      [
+       "spider-worker"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-ventral-terminus",
+   "name": "The Ventral Terminus",
+   "uesp": "The Ventral Terminus",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Enter the Ventral Terminus",
+   "requires": [
+    "episode-3-intro"
+   ],
+   "image": "LG-location-The Ventral Terminus.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Watch your step. There could be traps in the area.",
+     "audio": "cwctheventralterminus-text.0.0"
+    }
+   ],
+   "hints": [
+    "Watch out for traps!"
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "That was close. Come on. If the rest of this place is this dangerous, there's no telling what danger Swims may be in.",
+     "audio": "cwctheventralterminus-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Ventral Terminus",
+    "attributes": [
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Ventral Terminus starts with 20 health and 3 runes. Master: Ventral Terminus starts with 50 health and with Time is Running Out! in play set to 8 Uses.",
+    "normal": {
+     "deck": [
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "trip-wire",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "pressure-plate",
+      "portcullis",
+      "portcullis",
+      "portcullis",
+      "portcullis",
+      "portcullis",
+      "immolating-blast",
+      "immolating-blast",
+      "immolating-blast",
+      "immolating-blast",
+      "immolating-blast"
+     ],
+     "health": 20,
+     "runes": 3
+    },
+    "master": {
+     "health": 50,
+     "runes": 5,
+     "support": [
+      "time-is-running-out"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "supportUses",
+       "text": "Ventral Terminus starts with Time is Running Out! in play set to 8 Uses.",
+       "card": "time-is-running-out",
+       "uses": 8
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "brass-fortress-market-square",
+   "name": "Brass Fortress Market Square",
+   "uesp": "Brass Fortress Market Square",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Fend off the last of Seht's people",
+   "requires": [
+    "the-halls-of-regulation",
+    "the-ventral-terminus"
+   ],
+   "image": "LG-location-Brass Fortress Market Square.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Is that... by Azura, it is! After all these centuries... there are still people down there! They must be the last of Sotha Sil's worshippers. Careful, I think they see us.",
+     "audio": "cwcbrassfortressmarketsquare-text.0.0"
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Look, there — More outlanders! To arms, friends! Defend the city!",
+     "audio": "cwcbrassfortressmarketsquare-text.0.1"
+    }
+   ],
+   "hints": [
+    "All Neutral cards have Prophecy.",
+    "The cultists' machines are ready to leap to their defense."
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Peace! We mean you no harm.",
+     "audio": "cwcbrassfortressmarketsquare-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "We thought you were with the other outlanders. They raided our settlement, and stole our most precious artifact: A star crystal containing Sotha Sil's last memory.",
+     "audio": "cwcbrassfortressmarketsquare-aftermath-text.0.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Other outlanders... He must mean the treasure hunters you fought with. Maybe they have Swims. Which way did they go?",
+     "audio": "cwcbrassfortressmarketsquare-aftermath-text.0.2"
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "That way, into the Mire Mechanica. Please, return our relic.",
+     "audio": "cwcbrassfortressmarketsquare-aftermath-text.0.3"
+    }
+   ],
+   "battle": {
+    "opponent": "Brass Fortress Cultists",
+    "avatar": "LG-npc-Galyn the Shelterer.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with Brass Fortress on board.",
+    "normal": {
+     "deck": [
+      "dwarven-spider",
+      "dwarven-spider",
+      "healing-hands",
+      "suppress",
+      "enraged-mudcrab",
+      "execute",
+      "healing-potion",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "reachman-shaman",
+      "reachman-shaman",
+      "artaeum-savant",
+      "crushing-blow",
+      "crushing-blow",
+      "dark-guardian",
+      "dark-guardian",
+      "dark-guardian",
+      "dormant-centurion",
+      "dormant-centurion",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "frenzied-witchman",
+      "galyn-the-shelterer",
+      "ageless-automaton",
+      "ageless-automaton",
+      "edict-of-azura",
+      "ferocious-dreugh",
+      "ferocious-dreugh",
+      "glass-helm-of-remedy",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "knife-to-the-throat",
+      "merchants-camel",
+      "slaughterfish-spawning",
+      "hulking-fabricant",
+      "hulking-fabricant",
+      "clockwork-apostle",
+      "clockwork-apostle"
+     ],
+     "playerSupport": [
+      "brass-fortress"
+     ]
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "execute",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "reachman-shaman",
+      "reachman-shaman",
+      "barded-guar",
+      "barded-guar",
+      "crushing-blow",
+      "crushing-blow",
+      "dark-guardian",
+      "dark-guardian",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "galyn-the-shelterer",
+      "mechanical-ally",
+      "mechanical-ally",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "slaughterfish-spawning",
+      "abandoned-imperfect",
+      "barbas",
+      "gristlehide-dreugh",
+      "hulking-fabricant",
+      "hulking-fabricant",
+      "hulking-fabricant",
+      "stronghold-eradicator",
+      "dwarven-ballista",
+      "dwarven-ballista",
+      "clockwork-apostle",
+      "dwarven-centurion",
+      "dwarven-centurion",
+      "journey-to-sovngarde",
+      "dawns-wrath"
+     ]
+    }
+   }
+  },
+  {
+   "id": "mire-mechanica",
+   "name": "Mire Mechanica",
+   "uesp": "Mire Mechanica",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Fight the treasure hunters to get Swims back",
+   "requires": [
+    "brass-fortress-market-square"
+   ],
+   "image": "LG-location-Mire Mechanica.png",
+   "intro": [
+    {
+     "speaker": "Aldora the Daring",
+     "text": "Well, well. If it isn't the fool we got the ring from. Come for your friend?",
+     "audio": "cwcmiremechanica-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Swims!",
+     "audio": "cwcmiremechanica-text.0.1"
+    },
+    {
+     "speaker": "Aldora the Daring",
+     "text": "There's a hefty bounty on this Argonian's head. But tell you what: Throw down your weapons, and promise to leave us to plunder in peace, and you can have him.",
+     "audio": "cwcmiremechanica-text.0.2"
+    }
+   ],
+   "choice": {
+    "prompt": "Throw down your weapons, and promise to leave us to plunder in peace, and you can have him.",
+    "options": [
+     {
+      "id": "disarm",
+      "label": "Disarm",
+      "text": "You start with Swims, but face more opponents"
+     },
+     {
+      "id": "attack",
+      "label": "Attack",
+      "text": "Your opponent starts with Swims captured"
+     }
+    ]
+   },
+   "during": [
+    {
+     "speaker": "Laaneth",
+     "text": "Trust you? Not likely. We'll get him back the hard way.",
+     "audio": "cwcmire.mechanica.attack.playmat.1",
+     "if": {
+      "choice": {
+       "node": "mire-mechanica",
+       "option": "attack"
+      }
+     }
+    },
+    {
+     "speaker": "Aldora the Daring",
+     "text": "Wise choice. Although, it's just occurred to me: Why don't we just kill you now and take our captive back?",
+     "audio": "cwcmire.mechanica.disarm.playmat.1",
+     "if": {
+      "choice": {
+       "node": "mire-mechanica",
+       "option": "disarm"
+      }
+     }
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "They're running. Now if only we knew what they've done with the cultists' memory star.",
+     "audio": "cwcmiremechanica-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "You mean this memory star? I stashed it away when they thought I was unconscious.",
+     "audio": "cwcmiremechanica-aftermath-text.0.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "You're a wonder. Let's take a look at it.",
+     "audio": "cwcmiremechanica-aftermath-text.0.2"
+    }
+   ],
+   "battle": {
+    "opponent": "Treasure Hunters",
+    "avatar": "LG-npc-Aldora the Daring.png",
+    "attributes": [
+     "R",
+     "B"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Disarm: Treasure Hunters start with a Ruthless Freebooter in the left lane and a Ratway Prospector in the right lane (Master: also Aldora the Daring in the left lane); player starts with Swims-at-Night in the right lane. Attack: Treasure Hunters start with Captive Swims-at-Night in the left lane (Master: also Aldora the Daring).",
+    "normal": {
+     "deck": [
+      "curse",
+      "improvised-weapon",
+      "murkwater-goblin",
+      "nord-firebrand",
+      "arrow-in-the-knee",
+      "palace-prowler",
+      "ratway-prospector",
+      "shadow-shift",
+      "voracious-spriggan",
+      "elixir-of-light-feet",
+      "fighters-guild-recruit",
+      "plunder",
+      "relic-hunter",
+      "relic-hunter",
+      "ruthless-freebooter",
+      "ruthless-freebooter",
+      "thieves-guild-recruit",
+      "aldora-the-daring",
+      "assassins-bow",
+      "giant-bat",
+      "murkwater-guide",
+      "murkwater-guide",
+      "nimble-ally",
+      "quicksilver-crossbow",
+      "shadowscale-partisan",
+      "treasure-map",
+      "treasure-map",
+      "grappling-hook",
+      "ransack",
+      "wrothgar-forge"
+     ]
+    },
+    "master": {
+     "deck": [
+      "curse",
+      "improvised-weapon",
+      "improvised-weapon",
+      "palace-prowler",
+      "rapid-shot",
+      "shadow-shift",
+      "steel-scimitar",
+      "voracious-spriggan",
+      "fighters-guild-recruit",
+      "plunder",
+      "plunder",
+      "relic-hunter",
+      "relic-hunter",
+      "ruthless-freebooter",
+      "ruthless-freebooter",
+      "aldora-the-daring",
+      "giant-bat",
+      "goblin-skulk",
+      "goblin-skulk",
+      "murkwater-guide",
+      "murkwater-guide",
+      "treasure-map",
+      "treasure-map",
+      "grappling-hook",
+      "moonlight-werebat",
+      "murkwater-shaman",
+      "murkwater-shaman",
+      "thieves-den",
+      "brynjolf",
+      "triumphant-jarl"
+     ]
+    }
+   },
+   "variants": {
+    "disarm": {
+     "hints": [
+      "Swims is back, but you've been ambushed."
+     ],
+     "battle": {
+      "normal": {
+       "board": [
+        [
+         "ruthless-freebooter"
+        ],
+        [
+         "ratway-prospector"
+        ]
+       ],
+       "playerBoard": [
+        [],
+        [
+         "swims-at-night"
+        ]
+       ]
+      },
+      "master": {
+       "board": [
+        [
+         "aldora-the-daring",
+         "ruthless-freebooter"
+        ],
+        [
+         "ratway-prospector"
+        ]
+       ],
+       "playerBoard": [
+        [],
+        [
+         "swims-at-night"
+        ]
+       ]
+      }
+     }
+    },
+    "attack": {
+     "hints": [
+      "Don't hurt Swims. They're using him as an Argonian shield."
+     ],
+     "battle": {
+      "normal": {
+       "board": [
+        [
+         "captive-swims-at-night"
+        ],
+        []
+       ]
+      },
+      "master": {
+       "board": [
+        [
+         "captive-swims-at-night",
+         "aldora-the-daring"
+        ],
+        []
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "the-last-stand",
+   "name": "The Last Stand",
+   "uesp": "The Last Stand",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Your dear friend Almalexia has come to kill you",
+   "requires": [
+    "mire-mechanica"
+   ],
+   "image": "LG-location-Memory Star.png",
+   "intro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "This day has appeared in all my simulations. The end. My dear friend Almalexia has come to kill me. Now, everything depends on my calculations being correct. My machines need 22 minutes to seal the Chamber of Lorkhan. So that's how long I must live.",
+     "audio": "cwcthelaststand-text.0.0"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Almalexia",
+     "text": "Your time has come, Sotha Sil! All these years you've looked down on me. Have you any last words?",
+     "audio": "cwcthelaststand.playmat.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Almalexia",
+     "text": "Why are you silent? What are you hiding?! Speak, curse you.",
+     "audio": "cwcthelaststand.playmat.2"
+    },
+    {
+     "speaker": "Almalexia",
+     "text": "Fine then. Die, old friend. Fall before the one true god!",
+     "audio": "cwcthelaststand.playmat.3"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "I have done it. I die, but what is death? A natural function. The chamber is sealed, the work begun. It will take approximately 207 years, but what is that? A rounding error.",
+     "audio": "cwcthelaststand-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "The new Heart of Lorkhan will be completed. And it will power my city for all eternity.",
+     "audio": "cwcthelaststand-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Almalexia",
+    "avatar": "LG-npc-Almalexia.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Field"
+    ],
+    "rulesText": "Memory star (Survive for one turn to win.)",
+    "puzzle": {
+     "goal": "survive",
+     "text": "Survive for one turn to win.",
+     "lanes": [
+      "Field",
+      "Field"
+     ],
+     "player": {
+      "health": 1,
+      "magicka": 12,
+      "runes": 0,
+      "hand": [
+       "shocking-wamasu",
+       "arrest",
+       "ash-servant"
+      ],
+      "board": [
+       [
+        "riverhold-escort",
+        "imperial-grunt*2"
+       ],
+       []
+      ],
+      "deck": [
+       "dwarven-spider*3",
+       "lesser-ward*3",
+       "maple-shield*3",
+       "cheydinhal-sapper*3",
+       "firebolt*3",
+       "scouting-patrol*3",
+       "solitude-stalwart*3",
+       "cathay-raht-veteran*3",
+       "lurking-crocodile*3",
+       "ferocious-dreugh*3"
+      ]
+     },
+     "opponent": {
+      "health": 30,
+      "magicka": 7,
+      "runes": 0,
+      "board": [
+       [
+        "doomcrag-vampire",
+        "oldgate-warden",
+        "barrow-stalker"
+       ],
+       [
+        "swamp-leviathan*2"
+       ]
+      ],
+      "deck": [
+       "volkihar-lord*29",
+       "mantikora"
+      ]
+     },
+     "solution": [
+      "Use Arrest to steal Doomcrag Vampire. This will give all your cards in the left lane Lethal.",
+      "Use both of your Imperial Grunts to destroy the opponent's Barrow Stalker and Oldgate Warden.",
+      "Summon Ash Servant in the left lane to destroy one of the Swamp Leviathans.",
+      "Attack Almalexia with Riverhold Escort to move it to the right lane with its Pilfer effect.",
+      "End your turn to win."
+     ]
+    },
+    "masterPuzzle": {
+     "goal": "survive",
+     "text": "Survive for one turn to win.",
+     "lanes": [
+      "Field",
+      "Field"
+     ],
+     "player": {
+      "health": 1,
+      "magicka": 12,
+      "runes": 0,
+      "hand": [
+       "reverberating-strike*3"
+      ],
+      "board": [
+       [
+        "riverhold-escort*2"
+       ],
+       [
+        "dwarven-ballista",
+        "nahagliiv"
+       ]
+      ],
+      "deck": [
+       "dwarven-spider*3",
+       "lesser-ward*3",
+       "maple-shield*3",
+       "cheydinhal-sapper*3",
+       "firebolt*3",
+       "scouting-patrol*3",
+       "solitude-stalwart*3",
+       "cathay-raht-veteran*3",
+       "lurking-crocodile*3",
+       "ash-servant",
+       "ferocious-dreugh*3",
+       "arrest",
+       "shocking-wamasu"
+      ]
+     },
+     "opponent": {
+      "health": 30,
+      "magicka": 7,
+      "runes": 0,
+      "support": [
+       "divine-fervor*2"
+      ],
+      "board": [
+       [
+        "preserver-of-the-root*2"
+       ],
+       [
+        "nahagliiv",
+        "swamp-leviathan*2",
+        "hist-speaker"
+       ]
+      ],
+      "deck": [
+       "volkihar-lord*29",
+       "mantikora"
+      ]
+     },
+     "solution": [
+      "Use one Reverberating Strike on your own Nahagliiv and use Nahagliiv to destroy the now damaged opponent's Nahagliiv.",
+      "Attack and destroy the unprotected Hist Speaker with you Dwarven Ballista. This will drop the opponent's max magicka below 7.",
+      "Now the two Preserver of the Roots can be finished off with your remaining Reverberating Strikes.",
+      "Attack Almalexia with both Riverhold Escorts to move them to the right lane with their Pilfer effect.",
+      "End your turn to win."
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-heart-revealed",
+   "name": "The Heart, Revealed",
+   "uesp": "The Heart, Revealed",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "The Heart, Revealed",
+   "requires": [
+    "the-last-stand"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The Heart, Revealed 01.jpg"
+    },
+    {
+     "file": "LG-quest-The Heart, Revealed 02.jpg"
+    },
+    {
+     "file": "LG-quest-The Heart, Revealed 03.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act2_ep3_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "The Heart of Lorkhan! Azura protect us."
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "What are you talking about?"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "The Heart of Lorkhan is one of the most powerful and dangerous artifacts in history. It's what Sotha Sil and the others used to become gods."
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Dagoth Ur nearly used it to take over Tamriel - before the Nerevarine destroyed it. But if this memory is true..."
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Then somehow, somewhere in this city, the machines have built a new one."
+    }
+   ]
+  },
+  {
+   "id": "episode-4-intro",
+   "name": "Episode 4 Intro",
+   "uesp": "Episode 4 Intro (Clockwork City)",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "A new mission",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "The heart cannot be allowed to fall into the wrong hands. We have to find it before the treasure hunters do.",
+     "audio": "cwcepisode4intro-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "If we can find more of these memory stars, maybe we can puzzle out where it is.",
+     "audio": "cwcepisode4intro-text.0.1"
+    }
+   ]
+  },
+  {
+   "id": "cogitum-centralis",
+   "name": "Cogitum Centralis",
+   "uesp": "Cogitum Centralis",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Defeat the Automata",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "image": "LG-location-Cogitum Centralis.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Amazing. This entire chamber appears to be a machine of breathtaking complexity.",
+     "audio": "cwccogitumcentralis-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "So are those automatons that look ready to kill us.",
+     "audio": "cwccogitumcentralis-text.0.1"
+    }
+   ],
+   "hints": [
+    "You have three levers to help you win the game, but you can use only one each turn.",
+    "Use the levers to harness the power of this strange machine."
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Look, in the gears of the machine — another memory star!",
+     "audio": "cwccogitumcentralis-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Cogwork Constructs",
+    "avatar": "LG-npc-Cogwork Constructs.png",
+    "attributes": [
+     "N"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Cogwork Constructs start with 2 Halls of the Dwemer on board. Player starts with a Call, an Enhance and a Melt on board. You have three levers to help you win the game, but you can use only one each turn. Master: Cogwork Constructs also start with a Spider Worker and a Dormant Centurion in each lane.",
+    "normal": {
+     "deck": [
+      "blackreach-rebuilder",
+      "blackreach-rebuilder",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "spider-worker",
+      "spider-worker",
+      "crushing-blow",
+      "crushing-blow",
+      "dormant-centurion",
+      "dormant-centurion",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "elixir-of-conflict",
+      "elixir-of-conflict",
+      "elixir-of-conflict",
+      "mechanical-ally",
+      "ageless-automaton",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "glass-helm-of-remedy",
+      "knife-to-the-throat",
+      "mundus-stone",
+      "sparking-spider",
+      "stronghold-eradicator",
+      "stronghold-eradicator",
+      "stronghold-incubator",
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer",
+      "dark-harvester",
+      "dwarven-centurion"
+     ],
+     "support": [
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer"
+     ],
+     "playerSupport": [
+      "call",
+      "enhance",
+      "melt"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "oneLeverPerTurn",
+       "text": "You have three levers to help you win the game, but you can use only one each turn.",
+       "cards": [
+        "call",
+        "enhance",
+        "melt"
+       ]
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "blackreach-rebuilder",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "shadowmere",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "dwarven-sphere",
+      "elixir-of-conflict",
+      "mechanical-ally",
+      "mechanical-ally",
+      "mechanical-ally",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "mundus-stone",
+      "stronghold-eradicator",
+      "stronghold-eradicator",
+      "stronghold-incubator",
+      "brass-arquebus",
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer",
+      "dwarven-centurion"
+     ],
+     "board": [
+      [
+       "spider-worker",
+       "dormant-centurion"
+      ],
+      [
+       "spider-worker",
+       "dormant-centurion"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-red-mountain",
+   "name": "The Red Mountain",
+   "uesp": "The Red Mountain",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Retreat your forces from Dagoth Ur",
+   "requires": [
+    "cogitum-centralis"
+   ],
+   "image": "LG-location-Memory Star.png",
+   "intro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "A dark day. Our annual pilgrimage to the Heart of Lorkhan ended in disaster. It was only through a cunning trick that we escaped with our lives.",
+     "audio": "cwctheredmountain-text.0.0"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Dagoth Ur",
+     "text": "Behold, arrogant tribunal! The power of the Heart flows through me and my minions. We are the gods now, growing stronger as you grow weaker. It is time to pay for your betrayal!",
+     "audio": "cwctheredmountain.playmat.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Dagoth Ur",
+     "text": "You think you have won? I still hold the Heart. Escape while you can, Sotha Sil. I am patient. My victory will come.",
+     "audio": "cwctheredmountain.playmat.2"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "I have learned. The Heart is too important. A backup must be created. But where to store such a thing? I shall build a new chamber, beyond the Inner Curiosity.",
+     "audio": "cwctheredmountain-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "That's it. That's where the Heart must be!",
+     "audio": "cwctheredmountain-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Dagoth Ur",
+    "avatar": "LG-npc-Dagoth Ur.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Memory star (Win this turn to allow your forces to retreat.)",
+    "puzzle": {
+     "goal": "win",
+     "text": "Win this turn to allow your forces to retreat.",
+     "player": {
+      "health": 1,
+      "magicka": 7,
+      "runes": 0,
+      "hand": [
+       "barded-guar",
+       "firebolt",
+       "dwarven-dynamo",
+       "grappling-hook"
+      ],
+      "board": [
+       [
+        "ageless-automaton*2"
+       ],
+       [
+        "stronghold-eradicator"
+       ]
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*2"
+      ]
+     },
+     "opponent": {
+      "health": 17,
+      "magicka": 8,
+      "runes": 0,
+      "board": [
+       [
+        "afflicted-alit",
+        "frost-atronach*2"
+       ],
+       [
+        "mournhold-guardian"
+       ]
+      ],
+      "deck": [
+       "redoran-enforcer*3",
+       "ash-servant*3",
+       "flame-atronach*3",
+       "cliff-racer*3",
+       "frost-atronach*3"
+      ]
+     },
+     "solution": [
+      "Equip Grappling Hook onto one of your Ageless Automatons and move the opponent's Mournhold Guardian to the left lane.",
+      "Summon Barded Guar and target the opponent's Afflicted Alit to give it guard.",
+      "Then attack Mournhold Guardian and Afflicted Alit with your Ageless Automatons, which will get +3/+0 and breakthrough.",
+      "Attack the opponent with Stronghold Eradicator to win the match."
+     ]
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Win this turn to allow your forces to retreat.",
+     "player": {
+      "health": 1,
+      "magicka": 12,
+      "runes": 0,
+      "hand": [
+       "maple-shield",
+       "unstoppable-rage",
+       "mournhold-traitor",
+       "a-night-to-remember"
+      ],
+      "board": [
+       [
+        "ageless-automaton*2"
+       ],
+       [
+        "young-mammoth",
+        "stronghold-eradicator"
+       ]
+      ],
+      "deck": [
+       "firebolt",
+       "barded-guar",
+       "shalk-fabricant*3",
+       "ageless-automaton",
+       "dwarven-dynamo",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*2"
+      ]
+     },
+     "opponent": {
+      "health": 13,
+      "magicka": 12,
+      "runes": 0,
+      "board": [
+       [
+        "lumbering-ogrim*2",
+        "afflicted-alit"
+       ],
+       [
+        "senche-tiger*3"
+       ]
+      ],
+      "deck": [
+       "redoran-enforcer*3",
+       "ash-servant*3",
+       "flame-atronach*3",
+       "cliff-racer*3",
+       "frost-atronach*3"
+      ]
+     },
+     "solution": [
+      "Attack one of the Senche-Tigers with Stronghold Eradicator followed by your Young Mammoth. This brings the opponent's health back to 10.",
+      "Use A Night to Remember on your Stronghold Eradicator to move it to the left lane and give all the opponent creatures guard.",
+      "Attack Afflicted Alit with one of the Ageless Automatons, which will get +3/+0 and breakthrough. Summon Mournhold Traitor in the left lane and equip Maple Shield on the second Ageless Automaton.",
+      "Use of Unstoppable Rage on the first Ageless Automaton. The second Ageless Automaton will survive due to Maple Shield, but Mournhold Traitor will die and trigger its last gasp effect to summon a Mournhold Guardian in the opponent's left lane.",
+      "Attack the Mournhold Guardian with the second Ageless Automaton to win the match."
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-apprentice",
+   "name": "The Apprentice",
+   "uesp": "The Apprentice",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Prove your worth to Sotha Sil",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "image": "LG-location-Memory Star.png",
+   "intro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "I have had so many apprentices over the years. But I believe the man I met today has the potential to rival them all.",
+     "audio": "cwctheapprentice-text.0.0"
+    }
+   ],
+   "during": [
+    {
+     "speaker": "Mecinar",
+     "text": "Great Sotha Sil. Have I not shown I have the skills to enter the Halls of Contemplation?",
+     "audio": "cwctheapprentice.playmat.1"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "You show much promise, Mecinar. Solve this last riddle, and I shall admit you.",
+     "audio": "cwctheapprentice.playmat.2"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "The apprentice possesses a dangerous intellect. But to suppress such a mind would be a sin against potential, and a sin against Sotha Sil.",
+     "audio": "cwctheapprentice-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Sotha Sil",
+    "avatar": "LG-npc-Sotha Sil.png",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Memory star (Win this turn to prove your worth.)",
+    "puzzle": {
+     "goal": "win",
+     "text": "Win this turn to prove your worth.",
+     "player": {
+      "health": 1,
+      "magicka": 11,
+      "runes": 0,
+      "hand": [
+       "mecinars-will",
+       "calm",
+       "close-call"
+      ],
+      "board": [
+       [
+        "dunmer-nightblade"
+       ],
+       [
+        "reconstructed-spider"
+       ]
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "opponent": {
+      "health": 6,
+      "magicka": 12,
+      "runes": 0,
+      "board": [
+       [
+        "dwarven-dynamo",
+        "dormant-centurion"
+       ],
+       []
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "solution": [
+      "Steal Dwarven Dynamo with Mecinar's Will.",
+      "Unsummon the newly acquired Dwarven Dynamo with Close Call",
+      "Summon Dwarven Dynamo anywhere on the board and target Reconstructed Spider.",
+      "Attack Dormant Centurion with your Dunmer Nightblade to trigger its last gasp effect which will put an Iron Sword into your hand.",
+      "Equip Reconstructed Spider with the Iron Sword and attack Sotha Sil to win the match."
+     ]
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Win this turn to prove your worth.",
+     "player": {
+      "health": 1,
+      "magicka": 11,
+      "runes": 0,
+      "hand": [
+       "mecinars-will",
+       "calm",
+       "dwarven-dynamo"
+      ],
+      "board": [
+       [
+        "dunmer-nightblade"
+       ],
+       [
+        "kagouti-fabricant",
+        "helgen-squad-leader"
+       ]
+      ],
+      "support": [
+       "reconstruction-engine"
+      ],
+      "deck": [
+       "close-call",
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*2",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "opponent": {
+      "health": 1,
+      "magicka": 12,
+      "runes": 0,
+      "board": [
+       [
+        "sparking-spider*2",
+        "hive-defender"
+       ],
+       [
+        "indoril-archmage",
+        "auroran-sentry",
+        "hive-defender"
+       ]
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "solution": [
+      "Use Calm to reduce the attack of Indoril Archmage to 2 and steal it with Mecinar's Will.",
+      "Activate Reconstruction Engine and target Indoril Archmage to reduce its health to 5. This allows you to destroy it by attacking Auroran Sentry and trigger Indoril Archmage's last gasp effect which will destroy the Auroran Sentry as well as the Hive Defender. The health of Sotha Sil is now increased to 8 due to Auroran Sentry's ability.",
+      "Attack Sotha Sil with Kagouti Fabricant and attack an creature on the left lane with your Dunmer Nightblade to trigger its last gasp effect which will put an Iron Sword into your hand.",
+      "Equip Helgen Squad Leader with the Iron Sword and attack Sotha Sil to win the match."
+     ]
+    }
+   }
+  },
+  {
+   "id": "hall-of-conveyance",
+   "name": "Hall of Conveyance",
+   "uesp": "Hall of Conveyance",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Avoid imminent incineration",
+   "requires": [
+    "the-apprentice"
+   ],
+   "image": "LG-location-Hall of Conveyance.png",
+   "intro": [
+    {
+     "speaker": "Roving Freebooter",
+     "text": "Look, it's those meddlers. Let's see if we can slow them down.",
+     "audio": "cwchallofconveyance-text.0.0"
+    },
+    {
+     "speaker": "Hall of Conveyance",
+     "text": "(Gears grinding)",
+     "audio": "cwchallofconveyance-text.0.1"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Do you feel that? The floor — it's moving!",
+     "audio": "cwchallofconveyance-text.0.2"
+    }
+   ],
+   "hints": [
+    "The Conveyer will send you to the Incinerator, so be careful."
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "This way — I think I see another memory star.",
+     "audio": "cwchallofconveyance-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Roving Freebooter",
+    "avatar": "LG-npc-Roving Freebooter.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Conveyer",
+     "Incinerator"
+    ],
+    "rulesText": "Conveyer Lane: At the end of your turn, creatures here move. Incinerator Lane: Creatures can't be played here. At the end of your turn, creatures here are dealt 1 damage. Master: Roving Freebooter starts with a Gristlehide Dreugh in the left lane.",
+    "normal": {
+     "deck": [
+      "brutal-ashlander",
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "south-road-brigand",
+      "south-road-brigand",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "guild-recruit",
+      "guild-recruit",
+      "redoran-enforcer",
+      "shrieking-harpy",
+      "baandari-bruiser",
+      "giant-bat",
+      "giant-bat",
+      "greenheart-knight",
+      "greenheart-knight",
+      "house-kinsman",
+      "house-kinsman",
+      "varanis-courier",
+      "varanis-courier",
+      "varanis-courier",
+      "lightning-bolt",
+      "sadras-agent",
+      "sightless-skulk",
+      "camoran-scout-leader",
+      "glenumbra-sorceress",
+      "insightful-scholar",
+      "insightful-scholar"
+     ]
+    },
+    "master": {
+     "deck": [
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "giant-bat",
+      "giant-bat",
+      "house-kinsman",
+      "house-kinsman",
+      "house-kinsman",
+      "varanis-courier",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "lightning-bolt",
+      "lightning-bolt",
+      "lightning-bolt",
+      "serpentine-stalker",
+      "serpentine-stalker",
+      "cliff-racer",
+      "cliff-racer",
+      "gristlehide-dreugh",
+      "winters-grasp",
+      "heirloom-greatsword",
+      "icewing-dragon",
+      "tazkad-the-packmaster"
+     ],
+     "board": [
+      [
+       "gristlehide-dreugh"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-betrayal",
+   "name": "The Betrayal",
+   "uesp": "The Betrayal",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Confront the crazed apprentice",
+   "requires": [
+    "hall-of-conveyance"
+   ],
+   "image": "LG-location-Memory Star.png",
+   "intro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "There was always a 47% chance that Mecinar would seek my power. But he has done far worse.",
+     "audio": "cwcthebetrayal-text.0.0"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "Today I found his... test subjects. Acolytes modified against their will, merged with beasts through steel and sorcery. Beautiful in their way. But abominable. There was only one thing to be done.",
+     "audio": "cwcthebetrayal-text.0.1"
+    }
+   ],
+   "hints": [
+    "Mecinar has confronted you in your workshop. Use the tools at hand to defeat him this turn."
+   ],
+   "during": [
+    {
+     "speaker": "Mecinar",
+     "text": "You would condemn me? Hypocrite! Fraud! This is what you strive for — The creation of the perfect life form!",
+     "audio": "cwcthebetrayal.playmat.1"
+    },
+    {
+     "speaker": "Sotha Sil",
+     "text": "You have misunderstood me, Mecinar",
+     "audio": "cwcthebetrayal.playmat.2"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "I cast Mecinar out of the city. Now, I must rework the enchantments that seal the Chamber of Lorkhan — to ones that Mecinar could never break.",
+     "audio": "cwcthebetrayal-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "There! I think I can see enough of the new enchantments in this memory to determine how to unravel them! Now we just need to find the chamber.",
+     "audio": "cwcthebetrayal-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Mecinar",
+    "avatar": "LG-npc-Mecinar 02.png",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Memory star (Win this turn.)",
+    "puzzle": {
+     "goal": "win",
+     "text": "Mecinar has confronted you in your workshop. Use the tools at hand to defeat him this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 11,
+      "runes": 0,
+      "hand": [
+       "excavate",
+       "brilliant-experiment",
+       "stone-throw",
+       "steel-dagger"
+      ],
+      "support": [
+       "abandoned-imperfect"
+      ],
+      "board": [
+       [
+        "gearwork-spider",
+        "dwarven-spider",
+        "blackreach-rebuilder"
+       ],
+       [
+        "murkwater-guide"
+       ]
+      ],
+      "deck": [
+       "redoran-enforcer*3",
+       "ash-servant*3",
+       "flame-atronach*3",
+       "cliff-racer*3",
+       "frost-atronach*3"
+      ]
+     },
+     "opponent": {
+      "health": 4,
+      "magicka": 11,
+      "runes": 0,
+      "board": [
+       [
+        "awakened-imperfect"
+       ],
+       [
+        "awakened-imperfect"
+       ]
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "solution": [
+      "Equip Steel Dagger onto any of your creatures in the left lane and attack Mecinar's Awakened Imperfect with it. This will put the Steel Dagger in your graveyard.",
+      "Play Brilliant Experiment on a Dwarven Spider, and Excavate the Steel Dagger. These trigger your Awakened Imperfect's Treasure Hunt bonus; summon it to either lane.",
+      "Equip your Awakened Imperfect with the excavated Steel Dagger, and destroy Mecinar's Awakened Imperfect in the right lane with Stone Throw.",
+      "Kill Mecinar with the Murkwater Guide."
+     ]
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Mecinar has confronted you in your workshop. Use the tools at hand to defeat him this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 14,
+      "runes": 0,
+      "hand": [
+       "gearwork-spider",
+       "close-call*2",
+       "sparking-spider",
+       "skooma-racketeer",
+       "greenheart-knight",
+       "mentors-ring"
+      ],
+      "support": [
+       "summerset-orrery",
+       "abandoned-imperfect"
+      ],
+      "board": [
+       [
+        "gearwork-spider"
+       ],
+       []
+      ],
+      "deck": []
+     },
+     "opponent": {
+      "health": 12,
+      "magicka": 14,
+      "runes": 0,
+      "board": [
+       [
+        "gearwork-spider",
+        "awakened-imperfect*3"
+       ],
+       []
+      ],
+      "deck": [
+       "shalk-fabricant*3",
+       "ageless-automaton*3",
+       "kagouti-fabricant*3",
+       "abandoned-imperfect*3",
+       "stronghold-eradicator*3"
+      ]
+     },
+     "solution": [
+      "Attack Mecinar's Gearwork Spider with your Gearwork Spider.",
+      "Summon Gearwork Spider to retrieve the other from your discard pile.",
+      "Use both Close Call actions to unsummon your Gearwork Spiders.",
+      "Activate Summerset Orrery to summon Awakened Imperfect.",
+      "Summon Greenheart Knight.",
+      "Summon Skooma Racketeer and give the Greenheart Knight the Lethal keyword.",
+      "Summon both Gearwork Spiders.",
+      "Equip Mentor's Ring on Greenheart Knight. This will give all creatures the Charge and Lethal keywords.",
+      "Attack Mecinar's Awakened Imperfects with your Gearwork Spiders and Skooma Racketeer.",
+      "Kill Mecinar with your Greenheart Knight and Awakened Imperfect."
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-inner-curiosity",
+   "name": "The Inner Curiosity",
+   "uesp": "The Inner Curiosity",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Unseal the Chamber of Lorkhan",
+   "requires": [
+    "the-red-mountain",
+    "the-betrayal"
+   ],
+   "image": "LG-location-The Inner Curiosity.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Yes, this is the place — I can see the contours of the enchantment. But it's going to take tremendous power to break it. Perhaps the machinery here can help.",
+     "audio": "cwctheinnercuriosity-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Whatever you're going to do, do it fast; the defenses are stirring.",
+     "audio": "cwctheinnercuriosity-text.0.1"
+    }
+   ],
+   "hints": [
+    "Gain enough magicka to break the enchantment and win the game.",
+    "Use the Waiting Generators to get Laaneth the magicka she needs to break the enchantment and open the chamber."
+   ],
+   "outro": [
+    {
+     "speaker": "Mysterious Figure",
+     "text": "At last! Once again you have led me to my quarry. My old master ensured I could never break those seals.",
+     "audio": "cwctheinnercuriosity.playmat.1"
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "Thankfully you have done it for me!",
+     "audio": "cwctheinnercuriosity.playmat.2"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "It's Mecinar — the apprentice from Sotha Sil's memories!",
+     "audio": "cwctheinnercuriosity.playmat.3"
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "Yes. And it's about time you witnessed my true power!",
+     "audio": "cwctheinnercuriosity.playmat.4"
+    }
+   ],
+   "battle": {
+    "opponent": "Dwarven Colossus",
+    "avatar": "LG-npc-Dwarven Colossus.png",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Dwarven Colossus starts with 50 health and a Curious Fabricant in each lane. Master: Dwarven Colossus starts with 100 health and a Brass Arquebus in each lane. Player starts with a Waiting Generator in each lane and a Break the Enchantment (cost 15; Master: cost 18) in hand after game start.",
+    "normal": {
+     "deck": [
+      "blackreach-rebuilder",
+      "blackreach-rebuilder",
+      "curious-fabricant",
+      "curious-fabricant",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "spider-worker",
+      "spider-worker",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "mechanical-ally",
+      "mechanical-ally",
+      "mechanical-ally",
+      "reconstruction-engine",
+      "shalk-fabricant",
+      "shalk-fabricant",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "divine-fervor",
+      "divine-fervor",
+      "brass-arquebus",
+      "brass-arquebus",
+      "halls-of-the-dwemer",
+      "halls-of-the-dwemer",
+      "dwarven-centurion",
+      "dwarven-colossus"
+     ],
+     "health": 50,
+     "board": [
+      [
+       "curious-fabricant"
+      ],
+      [
+       "curious-fabricant"
+      ]
+     ],
+     "playerBoard": [
+      [
+       "waiting-generator"
+      ],
+      [
+       "waiting-generator"
+      ]
+     ],
+     "playerHand": [
+      "break-the-enchantment"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "breakTheEnchantment",
+       "text": "Gain enough magicka to break the enchantment and win the game. (Break the Enchantment costs 15.)",
+       "card": "break-the-enchantment",
+       "cost": 15
+      }
+     ]
+    },
+    "master": {
+     "health": 100,
+     "board": [
+      [
+       "brass-arquebus"
+      ],
+      [
+       "brass-arquebus"
+      ]
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "breakTheEnchantment",
+       "text": "Gain enough magicka to break the enchantment and win the game. (Break the Enchantment costs 18.)",
+       "card": "break-the-enchantment",
+       "cost": 18
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "mecinar-triumphant",
+   "name": "Mecinar Triumphant",
+   "uesp": "Mecinar Triumphant",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Mecinar Triumphant",
+   "requires": [
+    "the-inner-curiosity"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Mecinar Triumphant 01.jpg"
+    },
+    {
+     "file": "LG-quest-Mecinar Triumphant 02.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act2_ep4_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Mecinar",
+     "text": "For centuries I have prepared for this moment, crafting myself into a tool that could absorb this power. Now at last, godhood is mine!"
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "And your services are no longer required!"
+    }
+   ]
+  },
+  {
+   "id": "collapsing-tunnel",
+   "name": "Collapsing Tunnel",
+   "uesp": "Collapsing Tunnel (quest)",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Circumvent Crushing Death",
+   "image": "LG-location-Collapsing Tunnel.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The hero tumbled through the darkness. When they awoke, they were alone in the depths of the city — in a chamber that was fast collapsing.",
+     "audio": "cwccollapsingtunnel-text.0.0"
+    }
+   ],
+   "hints": [
+    "When a rune is broken, a boulder falls to deal 3 damage to a random target. Time is running out!",
+    "Make your escape quickly, before the entire chamber collapses. But watch for falling boulders!"
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "The hero had reached stable ground — for now. But from all around they could hear the rumbling of the city being reshaped by Mecinar. And they feared for their friends...",
+     "audio": "cwccollapsingtunnel-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Verminous Fabricant",
+    "avatar": "LG-npc-Verminous Fabricant.png",
+    "attributes": [
+     "R"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "You begin with Collapsing Tunnel on board. Verminous Fabricant begins with Time is Running Out! on board.",
+    "normal": {
+     "deck": [
+      "blackreach-rebuilder",
+      "firepot-spider",
+      "firepot-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "rapid-shot",
+      "rapid-shot",
+      "bone-bow",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "spider-worker",
+      "spider-worker",
+      "verminous-fabricant",
+      "verminous-fabricant",
+      "barded-guar",
+      "cast-out",
+      "crushing-blow",
+      "crushing-blow",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "stone-throw",
+      "stone-throw",
+      "earthbone-spinner",
+      "knife-to-the-throat",
+      "sparking-spider",
+      "sparking-spider",
+      "hunter-killers",
+      "dark-harvester",
+      "swiftwing-dragon",
+      "swiftwing-dragon"
+     ],
+     "playerSupport": [
+      "collapsing-tunnel"
+     ],
+     "support": [
+      "time-is-running-out"
+     ]
+    },
+    "master": {
+     "deck": [
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "rapid-shot",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "verminous-fabricant",
+      "verminous-fabricant",
+      "barded-guar",
+      "barded-guar",
+      "cast-out",
+      "cast-out",
+      "crushing-blow",
+      "crushing-blow",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "fearless-northlander",
+      "fearless-northlander",
+      "stone-throw",
+      "stone-throw",
+      "candlehearth-brawler",
+      "candlehearth-brawler",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "sparking-spider",
+      "sparking-spider",
+      "hunter-killers",
+      "hunter-killers",
+      "dark-harvester",
+      "dark-harvester"
+     ]
+    }
+   }
+  },
+  {
+   "id": "submerged-aqueduct",
+   "name": "Submerged Aqueduct",
+   "uesp": "Submerged Aqueduct",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Help Swims swim",
+   "requires": [
+    "collapsing-tunnel"
+   ],
+   "image": "LG-location-Submerged Aqueduct.png",
+   "intro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Hmm. Trapped in a cavern filling with water. Only one tunnel out. Time to live up to my name.",
+     "audio": "cwcsubmergedaqueduct-text.0.0"
+    }
+   ],
+   "hints": [
+    "Play as Swims-at-Night in this aquatic mission."
+   ],
+   "outro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Fancy meeting you here. No I'm fine. Only a tiny bit drowned. Come on, let's find Laaneth.",
+     "audio": "cwcsubmergedaqueduct-aftermath-text.0.0",
+     "if": {
+      "notDone": "piston-cavum"
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Fancy meeting you two here. Tell me you've found a way out.",
+     "audio": "cwcsubmergedaqueduct-aftermath-text.1.0",
+     "if": {
+      "done": "piston-cavum"
+     }
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Not yet. But I think I saw the pulse of a memory star this way.",
+     "audio": "cwcsubmergedaqueduct-aftermath-text.1.1",
+     "if": {
+      "done": "piston-cavum"
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "Slaughterfish",
+    "avatar": "LG-npc-Slaughterfish.png",
+    "attributes": [
+     "R",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player uses Swims-at-Night's deck. Slaughterfish begins with Rising Waters on board.",
+    "normal": {
+     "deck": [
+      "enraged-mudcrab",
+      "intimidate",
+      "intimidate",
+      "rapid-shot",
+      "rapid-shot",
+      "scuttler",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "raging-horker",
+      "raging-horker",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "barded-guar",
+      "barded-guar",
+      "feasting-vulture",
+      "feasting-vulture",
+      "giant-bat",
+      "giant-bat",
+      "shield-breaker",
+      "shield-breaker",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "slaughterfish",
+      "slaughterfish",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "territorial-viper",
+      "giant-snake"
+     ],
+     "playerDeck": [
+      "curse",
+      "move-in-shadows",
+      "paralyze",
+      "paralyze",
+      "shadow-shift",
+      "barter",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "finish-off",
+      "helstrom-footpad",
+      "lockpick",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "brotherhood-slayer",
+      "dune-smuggler",
+      "dune-smuggler",
+      "goblin-skulk",
+      "goblin-skulk",
+      "skooma-racketeer",
+      "swindlers-market",
+      "swindlers-market",
+      "an-xileel-invader",
+      "murkwater-shaman",
+      "leaflurker",
+      "ransack",
+      "smugglers-haul",
+      "smugglers-haul"
+     ],
+     "support": [
+      "rising-waters"
+     ]
+    },
+    "master": {
+     "deck": [
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "scuttler",
+      "scuttler",
+      "afflicted-alit",
+      "afflicted-alit",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "blighted-alit",
+      "blighted-alit",
+      "eldergleam-matron",
+      "eldergleam-matron",
+      "feasting-vulture",
+      "feasting-vulture",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "cliff-racer",
+      "cliff-racer",
+      "giant-snake",
+      "giant-snake",
+      "wild-beastcaller",
+      "wild-beastcaller",
+      "shadowgreen-elder",
+      "shadowgreen-elder"
+     ]
+    }
+   }
+  },
+  {
+   "id": "piston-cavum",
+   "name": "Piston Cavum",
+   "uesp": "Piston Cavum",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Help Laaneth help herself",
+   "requires": [
+    "collapsing-tunnel"
+   ],
+   "image": "LG-location-Piston Cavum.png",
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "I'm trapped. Only way out is through that hall full of pistons — but they're not moving. Maybe I can pry them open with bursts of magical energy.",
+     "audio": "cwcpistoncavum-text.0.0"
+    }
+   ],
+   "hints": [
+    "Play as Laaneth. You can't attack until you play an action.",
+    "Your creatures can only move through the pistons if you use your actions to pry them open."
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "You're a sight for sore eyes. We should find Swims-at-Night — hopefully he's having an easier time than we did.",
+     "audio": "cwcpistoncavum-aftermath-text.0.0",
+     "if": {
+      "notDone": "submerged-aqueduct"
+     }
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "You two are a sight for sore eyes. Have you found a way out of here?",
+     "audio": "cwcpistoncavum-aftermath-text.1.0",
+     "if": {
+      "done": "submerged-aqueduct"
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "No. But I did spot a memory star over that way.",
+     "audio": "cwcpistoncavum-aftermath-text.1.1",
+     "if": {
+      "done": "submerged-aqueduct"
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "Nix-Hound Fabricant",
+    "avatar": "LG-npc-Nix-Hound Fabricant.png",
+    "attributes": [
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player uses Laaneth's deck. Player begins with Piston Cavum on board.",
+    "normal": {
+     "deck": [
+      "shadow-shift",
+      "shadow-shift",
+      "voracious-spriggan",
+      "voracious-spriggan",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "reflective-automaton",
+      "reflective-automaton",
+      "barded-guar",
+      "barded-guar",
+      "crushing-blow",
+      "crushing-blow",
+      "dormant-centurion",
+      "dormant-centurion",
+      "giant-bat",
+      "giant-bat",
+      "thievery",
+      "dreugh-shell-armor",
+      "ferocious-dreugh",
+      "moonlight-werebat",
+      "nix-hound-fabricant",
+      "nix-hound-fabricant",
+      "sparking-spider",
+      "clockwork-scorpion",
+      "clockwork-scorpion",
+      "ransack",
+      "ransack",
+      "dark-harvester"
+     ],
+     "playerDeck": [
+      "lesser-ward",
+      "firebolt",
+      "scroll-seeker",
+      "scroll-seeker",
+      "studious-greybeard",
+      "abecean-navigator",
+      "abecean-navigator",
+      "arcanaeum-librarian",
+      "arcanaeum-librarian",
+      "crystal-tower-crafter",
+      "crystal-tower-crafter",
+      "moment-of-clarity",
+      "shimmerene-peddler",
+      "shimmerene-peddler",
+      "shrieking-harpy",
+      "cunning-ally",
+      "cunning-ally",
+      "revealing-the-unseen",
+      "revealing-the-unseen",
+      "reverberating-strike",
+      "reverberating-strike",
+      "telvanni-arcanist",
+      "telvanni-arcanist",
+      "fire-storm",
+      "lightning-bolt",
+      "lightning-bolt",
+      "college-of-winterhold",
+      "lillandril-hexmage",
+      "ice-storm",
+      "mages-guild-retreat"
+     ],
+     "playerSupport": [
+      "piston-cavum"
+     ]
+    },
+    "master": {
+     "deck": [
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "mudcrab-anklesnapper",
+      "mudcrab-anklesnapper",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "reflective-automaton",
+      "reflective-automaton",
+      "crushing-blow",
+      "crushing-blow",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "mechanical-ally",
+      "mechanical-ally",
+      "mechanical-ally",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "nix-hound-fabricant",
+      "nix-hound-fabricant",
+      "nix-hound-fabricant",
+      "cliff-racer",
+      "cliff-racer",
+      "clockwork-dragon",
+      "clockwork-dragon",
+      "stronghold-eradicator",
+      "quinrawl-burglar",
+      "goldbrand",
+      "eclipse-baroness",
+      "tazkad-the-packmaster"
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-tools",
+   "name": "The Tools",
+   "uesp": "The Tools",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Contain the Heart",
+   "requires": [
+    "submerged-aqueduct",
+    "piston-cavum"
+   ],
+   "image": "LG-location-Memory Star.png",
+   "intro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "The Heart has become unstable — left unchecked, it threatens to destroy the entire city. No matter the danger, I must venture into the chamber, and devise a way to contain its power.",
+     "audio": "cwcthetools-text.0.0"
+    }
+   ],
+   "hints": [
+    "Use the power of the divine artifacts to win this turn."
+   ],
+   "outro": [
+    {
+     "speaker": "Sotha Sil",
+     "text": "Success! With these tools, modeled after Kagrenac's own, I can control, shape, and even dismantle the Heart if necessary.",
+     "audio": "cwcthetools-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "That's it! If we can find those three tools, we can destroy the Heart and stop Mecinar!",
+     "audio": "cwcthetools-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "The Heart of Lorkhan",
+    "avatar": "LG-npc-The Heart of Lorkhan.png",
+    "attributes": [
+     "N"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Memory star (Win this turn.)",
+    "puzzle": {
+     "goal": "win",
+     "text": "Use the power of the divine artifacts to win this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 8,
+      "runes": 0,
+      "hand": [
+       "orc-clan-captain",
+       "cauldron-keeper",
+       "skaven-pyromancer"
+      ],
+      "support": [
+       "sunder-ii",
+       "wraithguard-ii",
+       "keening-ii"
+      ],
+      "board": [
+       [
+        "blackreach-rebuilder"
+       ],
+       [
+        "blackreach-rebuilder"
+       ]
+      ],
+      "deck": [
+       "nord-firebrand*3",
+       "marked-man*3",
+       "relentless-raider*3",
+       "steel-scimitar*3",
+       "afflicted-alit*3",
+       "graystone-ravager*3",
+       "orc-clan-captain*3",
+       "protector-of-the-innocent*3",
+       "rift-thane*3",
+       "blighted-alit*3",
+       "eastmarch-crusader*3",
+       "mighty-ally*3",
+       "northwind-outpost*3",
+       "penitus-oculatus-agent*2",
+       "raiding-party*3",
+       "skeever-infestation*3",
+       "garnag-dark-adherent",
+       "the-black-dragon",
+       "tyr"
+      ]
+     },
+     "opponent": {
+      "health": 2,
+      "magicka": 8,
+      "runes": 0,
+      "board": [
+       [
+        "awakened-imperfect",
+        "makeshift-defenses"
+       ],
+       [
+        "awakened-imperfect",
+        "makeshift-defenses"
+       ]
+      ],
+      "deck": [
+       "close-call*3",
+       "dwarven-spider*3",
+       "maple-shield*3",
+       "blackreach-rebuilder*3",
+       "enraged-mudcrab*3",
+       "fabricate*3",
+       "gearwork-spider*3",
+       "lute*3",
+       "word-wall*3",
+       "a-night-to-remember*3"
+      ]
+     },
+     "solution": [
+      "Play Cauldron Keeper.",
+      "Give one of the Blackreach Rebuilders Ward with Wraithguard II.",
+      "Use Keening II on the same lane.",
+      "Repeat the previous two steps, still keeping to the one lane.",
+      "Using Sunder II, move the Awakened Imperfect from that lane.",
+      "Still using Sunder II, move the other Blackreach Rebuilder into the lane.",
+      "Play the Orc Clan Captain in the lane with the Blackreach Rebuilders.",
+      "Hit your opponent with both Rebuilders."
+     ]
+    },
+    "masterPuzzle": {
+     "goal": "win",
+     "text": "Use the power of the divine artifacts to win this turn.",
+     "player": {
+      "health": 1,
+      "magicka": 10,
+      "runes": 0,
+      "hand": [
+       "orc-clan-captain*2",
+       "cauldron-keeper",
+       "shield-breaker"
+      ],
+      "support": [
+       "sunder-ii",
+       "wraithguard-ii",
+       "keening-ii"
+      ],
+      "board": [
+       [
+        "dwarven-spider*2"
+       ],
+       [
+        "dwarven-spider*2"
+       ]
+      ],
+      "deck": [
+       "nord-firebrand*3",
+       "marked-man*3",
+       "relentless-raider*3",
+       "steel-scimitar*3",
+       "afflicted-alit*3",
+       "graystone-ravager*3",
+       "orc-clan-captain*2",
+       "protector-of-the-innocent*3",
+       "rift-thane*3",
+       "blighted-alit*3",
+       "eastmarch-crusader*3",
+       "mighty-ally*3",
+       "northwind-outpost*3",
+       "penitus-oculatus-agent*2",
+       "raiding-party*3",
+       "skaven-pyromancer",
+       "skeever-infestation*3",
+       "garnag-dark-adherent",
+       "the-black-dragon",
+       "tyr"
+      ]
+     },
+     "opponent": {
+      "health": 8,
+      "magicka": 10,
+      "runes": 0,
+      "board": [
+       [
+        "blackreach-rebuilder*2",
+        "firepot-spider",
+        "cog-collector"
+       ],
+       [
+        "dwarven-spider*2",
+        "firepot-spider",
+        "cog-collector"
+       ]
+      ],
+      "deck": [
+       "close-call*3",
+       "dwarven-spider*3",
+       "maple-shield*3",
+       "blackreach-rebuilder*3",
+       "enraged-mudcrab*3",
+       "fabricate*3",
+       "gearwork-spider*3",
+       "lute*3",
+       "word-wall*3",
+       "a-night-to-remember*3"
+      ]
+     },
+     "solution": [
+      "Use Wraithguard II to give the left enemy Cog Collector a Ward.",
+      "Use Keening II on the left lane. This will destroy the Firepot Spider and the two Blackreach Rebuilders.",
+      "Summon both Orc Clan Captains in the left lane.",
+      "Attack with the two leftmost Dwarven Spiders.",
+      "Summon the Cauldron Keeper in the right lane.",
+      "Use Wraithguard II again to give the left enemy Cog Collector another Ward.",
+      "Use Keening II again on the left lane. This will destroy your two Dwarven Spiders.",
+      "Use Sunder II twice to move the two remaining Dwarven Spiders from the right lane into the left lane.",
+      "Attack with both Dwarven Spiders."
+     ]
+    }
+   }
+  },
+  {
+   "id": "the-caminus-pit",
+   "name": "The Caminus Pit",
+   "uesp": "The Caminus Pit",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Galyn and the Gang are in Trouble",
+   "requires": [
+    "the-tools"
+   ],
+   "image": "LG-location-The Caminus Pit.png",
+   "intro": [
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "AAAAAAAGH! Mercy!",
+     "audio": "cwcthecaminuspit-text.0.0"
+    },
+    {
+     "speaker": "Kagouti Fabricant",
+     "text": "...",
+     "audio": "cwcthecaminuspit-text.0.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "It's the people of the city. The machines are... remaking them. We have to stop this.",
+     "audio": "cwcthecaminuspit-text.0.2"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Thank you. Mecinar is rebuilding the city in his image. More of our people were taken as well. We must stop him.",
+     "audio": "cwcthecaminuspit-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "You outlanders cannot be allowed to interfere with my experiments. Fabricants, deactivate the intruders.",
+     "audio": "cwcthecaminuspit-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Kagouti Fabricant",
+    "avatar": "LG-npc-Kagouti Fabricant.png",
+    "attributes": [
+     "R",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Smelting"
+    ],
+    "rulesText": "Field lane is 6-cards wide and Smelting lane is 2-cards wide. Smelting Lane: At the start of each player's turn, destroy all their creatures here and they draw a card for each. Master: Kagouti Fabricant starts with Imperial Might in board.",
+    "laneWidths": [
+     6,
+     2
+    ],
+    "normal": {
+     "deck": [
+      "scouting-patrol",
+      "scouting-patrol",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "reachman-shaman",
+      "reachman-shaman",
+      "frenzied-witchman",
+      "frenzied-witchman",
+      "pit-lion",
+      "pit-lion",
+      "raiding-party",
+      "raiding-party",
+      "skeevaton",
+      "skeevaton",
+      "skeever-infestation",
+      "skeever-infestation",
+      "two-moons-contemplation",
+      "two-moons-contemplation",
+      "inspiring-stormcloak",
+      "inspiring-stormcloak",
+      "kagouti-fabricant",
+      "kagouti-fabricant",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "golden-saint",
+      "golden-saint"
+     ]
+    },
+    "master": {
+     "deck": [
+      "scouting-patrol",
+      "scouting-patrol",
+      "scouting-patrol",
+      "scouting-patrol",
+      "solitude-stalwart",
+      "solitude-stalwart",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "orc-clan-captain",
+      "orc-clan-captain",
+      "priest-of-the-eight",
+      "priest-of-the-eight",
+      "pit-lion",
+      "pit-lion",
+      "pit-lion",
+      "resolute-ally",
+      "resolute-ally",
+      "skeevaton",
+      "skeevaton",
+      "skeever-infestation",
+      "skeever-infestation",
+      "skeever-infestation",
+      "hive-defender",
+      "hive-defender",
+      "inspiring-stormcloak",
+      "inspiring-stormcloak",
+      "divine-fervor",
+      "divine-fervor"
+     ],
+     "support": [
+      "imperial-might"
+     ]
+    }
+   }
+  },
+  {
+   "id": "shaft-of-sohleh",
+   "name": "Shaft of Sohleh",
+   "uesp": "Shaft of Sohleh",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Get Galyn and the gang to safety",
+   "requires": [
+    "the-caminus-pit"
+   ],
+   "image": "LG-location-Shaft of Sohleh.png",
+   "intro": [
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We can't outrun that army of fabricants forever.",
+     "audio": "cwcshaftofsohleh-text.0.0"
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Up these stairs you'll find Sotha Sil's most sacred library.",
+     "audio": "cwcshaftofsohleh-text.0.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "You go. I'll hold off the fabricants.",
+     "audio": "cwcshaftofsohleh-text.0.2"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "No, we need you at the library. I'll fight them.",
+     "audio": "cwcshaftofsohleh-text.0.3"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "You'll be killed!",
+     "audio": "cwcshaftofsohleh-text.0.4"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "And you won't?",
+     "audio": "cwcshaftofsohleh-text.0.5"
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "We have no time to argue. Who stays?",
+     "audio": "cwcshaftofsohleh-text.0.6"
+    }
+   ],
+   "choice": {
+    "prompt": "We have no time to argue. Who stays?",
+    "options": [
+     {
+      "id": "swims-stays",
+      "label": "Swims-at-Night",
+      "text": "Swims-at-Night stays behind; you play as Swims-at-Night."
+     },
+     {
+      "id": "laaneth-stays",
+      "label": "Laaneth",
+      "text": "Laaneth stays behind; you play as Laaneth."
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Factotum Titan",
+    "avatar": "LG-npc-Factotum Titan.png",
+    "attributes": [
+     "G",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player uses Laaneth's or Swims's deck. Player begins with Elixir of the Defender and Time is Running Out! on board Factotum Titan begins with a Spider Worker in each lane and starts with 100 health. Master: Factotum Titan starts with two extra Max Magicka.",
+    "normal": {
+     "deck": [
+      "blackreach-rebuilder",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "fabricate",
+      "fabricate",
+      "gearwork-spider",
+      "gearwork-spider",
+      "gearwork-spider",
+      "assembled-sentry",
+      "assembled-sentry",
+      "assembled-sentry",
+      "reflective-automaton",
+      "reflective-automaton",
+      "reflective-automaton",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "crushing-blow",
+      "crushing-blow",
+      "nix-hound-fabricant",
+      "nix-hound-fabricant",
+      "nix-hound-fabricant",
+      "assembled-conduit",
+      "assembled-conduit",
+      "assembled-conduit",
+      "hulking-fabricant",
+      "hulking-fabricant",
+      "assembled-titan",
+      "brass-arquebus",
+      "brass-arquebus"
+     ],
+     "health": 100,
+     "board": [
+      [
+       "spider-worker"
+      ],
+      [
+       "spider-worker"
+      ]
+     ],
+     "playerSupport": [
+      "elixir-of-the-defender",
+      "time-is-running-out"
+     ],
+     "playerDeck": [
+      "curse",
+      "move-in-shadows",
+      "paralyze",
+      "shadow-shift",
+      "shadow-shift",
+      "barter",
+      "caravan-enforcer",
+      "caravan-enforcer",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "finish-off",
+      "helstrom-footpad",
+      "lockpick",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "brotherhood-slayer",
+      "dune-smuggler",
+      "dune-smuggler",
+      "goblin-skulk",
+      "goblin-skulk",
+      "skooma-racketeer",
+      "swindlers-market",
+      "swindlers-market",
+      "an-xileel-invader",
+      "murkwater-shaman",
+      "leaflurker",
+      "ransack",
+      "smugglers-haul",
+      "smugglers-haul"
+     ]
+    },
+    "master": {
+     "maxMagicka": 2
+    }
+   },
+   "variants": {
+    "swims-stays": {
+     "outro": [
+      {
+       "speaker": "Swims-at-Night",
+       "text": "Never expected to die a hero. You lot better make this count!",
+       "audio": "cwcshaftofsohleh.swims.playmat.1"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "curse",
+        "move-in-shadows",
+        "paralyze",
+        "shadow-shift",
+        "shadow-shift",
+        "barter",
+        "caravan-enforcer",
+        "caravan-enforcer",
+        "dune-stalker",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "finish-off",
+        "helstrom-footpad",
+        "lockpick",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "brotherhood-slayer",
+        "dune-smuggler",
+        "dune-smuggler",
+        "goblin-skulk",
+        "goblin-skulk",
+        "skooma-racketeer",
+        "swindlers-market",
+        "swindlers-market",
+        "an-xileel-invader",
+        "murkwater-shaman",
+        "leaflurker",
+        "ransack",
+        "smugglers-haul",
+        "smugglers-haul"
+       ]
+      }
+     }
+    },
+    "laaneth-stays": {
+     "outro": [
+      {
+       "speaker": "Laaneth",
+       "text": "As deaths go, this is a good one. Good luck, my friends.",
+       "audio": "cwcshaftofsohleh.laaneth.playmat.1"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "lesser-ward",
+        "firebolt",
+        "scroll-seeker",
+        "scroll-seeker",
+        "studious-greybeard",
+        "abecean-navigator",
+        "abecean-navigator",
+        "arcanaeum-librarian",
+        "arcanaeum-librarian",
+        "crystal-tower-crafter",
+        "crystal-tower-crafter",
+        "moment-of-clarity",
+        "shimmerene-peddler",
+        "shimmerene-peddler",
+        "shrieking-harpy",
+        "cunning-ally",
+        "cunning-ally",
+        "revealing-the-unseen",
+        "revealing-the-unseen",
+        "reverberating-strike",
+        "reverberating-strike",
+        "telvanni-arcanist",
+        "telvanni-arcanist",
+        "fire-storm",
+        "lightning-bolt",
+        "lightning-bolt",
+        "college-of-winterhold",
+        "lillandril-hexmage",
+        "ice-storm",
+        "mages-guild-retreat"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "swims-at-nights-last-stand",
+   "name": "Swims-at-Night's Last Stand",
+   "uesp": "Swims-at-Night's Last Stand",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Swims-at-Night's Last Stand",
+   "requires": [
+    "shaft-of-sohleh"
+   ],
+   "requiresChoice": {
+    "node": "shaft-of-sohleh",
+    "option": "swims-stays"
+   },
+   "lockedBy": [
+    "laaneths-last-stand"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Swims-at-Night's Last Stand.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act3_ep5_ending_a"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Swims-at-Night had come to the Clockwork City seeking its riches. But in the end he gave his life in the hopes of saving it - or at least, of protecting his friends."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "To avenge him, the Hero would have to find Sotha Sil's tools, and use them to defeat Mecinar."
+    }
+   ]
+  },
+  {
+   "id": "laaneths-last-stand",
+   "name": "Laaneth's Last Stand",
+   "uesp": "Laaneth's Last Stand",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Laaneth's Last Stand",
+   "requires": [
+    "shaft-of-sohleh"
+   ],
+   "requiresChoice": {
+    "node": "shaft-of-sohleh",
+    "option": "laaneth-stays"
+   },
+   "lockedBy": [
+    "swims-at-nights-last-stand"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Laaneth's Last Stand.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act3_ep5_ending_b"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "A lifetime of study had made Laaneth one of the wisest people in Tamriel - wise enough to know that this would be her final battle."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Still she fought with bravery to the last, giving her life so that her friends could find Sotha Sil's lost tools - and use them to defeat Mecinar."
+    }
+   ]
+  },
+  {
+   "id": "the-throne-aligned",
+   "name": "The Throne Aligned",
+   "uesp": "The Throne Aligned",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "A game of chance.",
+   "image": "LG-location-The Throne Aligned.png",
+   "intro": [
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Sotha Sil stored much of his thoughts and notes in this machine. But it is deadly for a mortal to access it.",
+     "audio": "cwcthethronealigned-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "We owe it to Swims-at-Night to try.",
+     "audio": "cwcthethronealigned-text.0.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "We've got to try. Or Laaneth sacrificed herself for nothing.",
+     "audio": "cwcthethronealigned-text.1.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    }
+   ],
+   "hints": [
+    "Your deck is filled with moments of clarity.",
+    "A seeker of knowledge is found here to help as you create a plan."
+   ],
+   "outro": [
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Excellent work! It seems that when he foresaw his coming death, Sotha Sil hid his tools around the world. But using the Doors of Egress, we can transport you to each of them.",
+     "audio": "cwcthethronealigned-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Helctic Ipsograph",
+    "avatar": "LG-npc-Helctic Ipsograph.png",
+    "attributes": [
+     "B"
+    ],
+    "lanes": [
+     "Library",
+     "Shadow"
+    ],
+    "rulesText": "Your deck consists of 50 copies of Moment of Clarity. You start with a Scroll Seeker in the field lane.",
+    "normal": {
+     "deck": [
+      "lesser-ward",
+      "lesser-ward",
+      "firebolt",
+      "firebolt",
+      "scroll-seeker",
+      "scroll-seeker",
+      "arcanaeum-librarian",
+      "arcanaeum-librarian",
+      "balmora-spymaster",
+      "balmora-spymaster",
+      "ice-spike",
+      "ice-spike",
+      "soul-split",
+      "soul-split",
+      "wardcrafter",
+      "wardcrafter",
+      "wisdom-of-ancients",
+      "wisdom-of-ancients",
+      "brilliant-experiment",
+      "brilliant-experiment",
+      "cunning-ally",
+      "cunning-ally",
+      "desperate-conjuring",
+      "desperate-conjuring",
+      "telvanni-arcanist",
+      "telvanni-arcanist",
+      "lightning-bolt",
+      "lightning-bolt",
+      "mistveil-enchanter",
+      "mistveil-enchanter",
+      "tome-of-alteration",
+      "tome-of-alteration",
+      "glenumbra-sorceress",
+      "glenumbra-sorceress",
+      "memory-wraith",
+      "memory-wraith",
+      "memory-wraith",
+      "thief-of-dreams",
+      "thief-of-dreams",
+      "supreme-atromancer"
+     ],
+     "playerDeck": [
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity",
+      "moment-of-clarity"
+     ],
+     "playerBoard": [
+      [
+       "scroll-seeker"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "dragonclaw-rock",
+   "name": "Dragonclaw Rock",
+   "uesp": "Dragonclaw Rock",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Duel a dragon.",
+   "requires": [
+    "the-throne-aligned"
+   ],
+   "image": "LG-location-Dragonclaw Rock.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The hero's next step took them high into the Jerall mountains. But they found the tool had an unwitting guardian: A dragon who had in ages past learned to master the Thu'um from Paarthurnax himself.",
+     "audio": "cwcdragonclawrock-text.0.0"
+    }
+   ],
+   "hints": [
+    "all Shouts have level 3.",
+    "The Way of the Voice is exceptionally strong here."
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "With the dragon slain, the hero found the hiding place of Sotha Sil's replica of Keening, the sword so sharp it could slice through and shape the Heart's power.",
+     "audio": "cwcdragonclawrock-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Stoneclaw Dragon",
+    "avatar": "LG-npc-Anthor Dragon.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "If player completed Eastmarch Camp, player starts with a Sunder II on board. If player completed Sanguine Barrows, player starts with a Wraithguard II on board. Stoneclaw Dragon starts with a Greybeard Mentor in the left lane (Master: in each lane). Player starts with a Thu'um Mastery on board. All Shouts have level 3.",
+    "normal": {
+     "deck": [
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "firebolt",
+      "firebolt",
+      "ice-spike",
+      "ice-spike",
+      "midnight-snack",
+      "midnight-snack",
+      "fire-breath-level-1",
+      "fire-breath-level-1",
+      "fire-breath-level-1",
+      "ghost-sea-lookout",
+      "ghost-sea-lookout",
+      "woodland-lookout",
+      "young-dragonborn",
+      "young-dragonborn",
+      "dragons-fury",
+      "dragons-fury",
+      "dragons-fury",
+      "fire-storm",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "mystic-dragon",
+      "clockwork-dragon",
+      "clockwork-dragon",
+      "winters-touch",
+      "echo-of-akatosh",
+      "icewing-dragon",
+      "icewing-dragon",
+      "shearpoint-dragon",
+      "dovah-of-the-voice",
+      "dovah-of-the-voice",
+      "dovah-of-the-voice",
+      "paarthurnax"
+     ],
+     "board": [
+      [
+       "greybeard-mentor"
+      ],
+      []
+     ],
+     "playerSupport": [
+      "thuum-mastery"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Eastmarch Camp, player starts with a Sunder II on board.",
+       "card": "sunder-ii",
+       "node": "eastmarch-camp"
+      },
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Sanguine Barrows, player starts with a Wraithguard II on board.",
+       "card": "wraithguard-ii",
+       "node": "sanguine-barrows"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "drain-vitality-level-1",
+      "midnight-snack",
+      "midnight-snack",
+      "midnight-snack",
+      "fire-breath-level-1",
+      "fire-breath-level-1",
+      "fire-breath-level-1",
+      "ghost-sea-lookout",
+      "ghost-sea-lookout",
+      "ghost-sea-lookout",
+      "woodland-lookout",
+      "woodland-lookout",
+      "woodland-lookout",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragon-aspect-level-1",
+      "dragons-fury",
+      "dragons-fury",
+      "dragons-fury",
+      "greybeard-mentor",
+      "greybeard-mentor",
+      "clockwork-dragon",
+      "clockwork-dragon",
+      "shearpoint-dragon",
+      "shearpoint-dragon",
+      "dovah-of-the-voice",
+      "dovah-of-the-voice",
+      "paarthurnax"
+     ],
+     "board": [
+      [
+       "greybeard-mentor"
+      ],
+      [
+       "greybeard-mentor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "sanguine-barrows",
+   "name": "Sanguine Barrows",
+   "uesp": "Sanguine Barrows",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Walk with the dead.",
+   "requires": [
+    "the-throne-aligned"
+   ],
+   "image": "LG-location-Sanguine Barrow.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "One of the tools had been hidden deep in a forgotten crypt, where few living creatures dared to walk.",
+     "audio": "cwcsanguinebarrows-text.0.0"
+    }
+   ],
+   "hints": [
+    "Summon a creature from your discard pile and give it Charge. At the end of the turn, put it on the bottom of your deck.",
+    "The evil from these graves cannot be bound by death."
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "Deep in the crypt, the hero found Sotha Sil's version of Wraithguard, a mighty gauntlet designed to wield the other two tools.",
+     "audio": "cwcsanguinebarrows-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Barrows Lord",
+    "avatar": "LG-npc-Barrows Lord.png",
+    "attributes": [
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "If player completed Dragonclaw Rock, player starts with a Keening II on board. If player completed Eastmarch Camp, player starts with a Sunder II on board. Both players start with a Gravesong on board. Barrows Lord starts with a Merchant's Camel in the left lane (Master: in each lane).",
+    "normal": {
+     "deck": [
+      "deadly-draugr",
+      "deadly-draugr",
+      "deadly-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "barrow-stalker",
+      "barrow-stalker",
+      "barrow-stalker",
+      "fharun-defender",
+      "fharun-defender",
+      "fharun-defender",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "mummify",
+      "mummify",
+      "mummify",
+      "corrupted-shade",
+      "corrupted-shade",
+      "corrupted-shade",
+      "gloom-wraith",
+      "gloom-wraith",
+      "gloom-wraith",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "disciple-of-namira",
+      "disciple-of-namira",
+      "disciple-of-namira",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "night-patrol",
+      "night-patrol",
+      "night-patrol",
+      "bone-colossus"
+     ],
+     "support": [
+      "gravesong"
+     ],
+     "board": [
+      [
+       "merchants-camel"
+      ],
+      []
+     ],
+     "playerSupport": [
+      "gravesong"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Dragonclaw Rock, player starts with a Keening II on board.",
+       "card": "keening-ii",
+       "node": "dragonclaw-rock"
+      },
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Eastmarch Camp, player starts with a Sunder II on board.",
+       "card": "sunder-ii",
+       "node": "eastmarch-camp"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "deadly-draugr",
+      "deadly-draugr",
+      "deadly-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "dragon-cult-ghost",
+      "barrow-stalker",
+      "barrow-stalker",
+      "barrow-stalker",
+      "dark-guardian",
+      "dark-guardian",
+      "dark-guardian",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "mummify",
+      "mummify",
+      "mummify",
+      "cursed-spectre",
+      "cursed-spectre",
+      "cursed-spectre",
+      "gloom-wraith",
+      "gloom-wraith",
+      "gloom-wraith",
+      "grim-champion",
+      "grim-champion",
+      "grim-champion",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "disciple-of-namira",
+      "disciple-of-namira",
+      "disciple-of-namira",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "doomcrag-vampire",
+      "doomcrag-vampire",
+      "night-shadow",
+      "night-shadow",
+      "bone-colossus",
+      "bone-colossus",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "blood-magic-lord",
+      "blood-magic-lord",
+      "night-talon-lord",
+      "night-talon-lord"
+     ],
+     "board": [
+      [
+       "merchants-camel"
+      ],
+      [
+       "merchants-camel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "eastmarch-camp",
+   "name": "Eastmarch Camp",
+   "uesp": "Eastmarch Camp",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Caught in the crossfire",
+   "requires": [
+    "the-throne-aligned"
+   ],
+   "image": "LG-location-Eastmarch Camp.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "As the hero crossed through the portal, they found they had walked into the middle of a deadly clash between the Imperial Legion and the Stormcloak rebellion.",
+     "audio": "cwceastmarchcamp-text.0.0"
+    }
+   ],
+   "hints": [
+    "Choose an enemy creature to Battle a random enemy creature in the other lane.",
+    "Stormcloaks and Imperials battle at the location of the artifact you seek."
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "Once the hero had escaped the melee, they found a cleverly hidden cavern. Deep within lay Sotha Sil's rendition of the mighty hammer Sunder.",
+     "audio": "cwceastmarchcamp-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Stony Creek",
+    "attributes": [
+     "R",
+     "Y"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "If player completed Dragonclaw Rock, player starts with a Keening II on board. If player completed Sanguine Barrows, player starts with a Wraithguard II on board. Stony Creek starts with 3 Stormcloak Skirmishers in the left lane, 3 Colovian Troopers in the right lane (Master: 4 of each) and an Imperial Camp and a Stormcloak Camp on board. Player starts with a Skirmish on board.",
+    "normal": {
+     "deck": [
+      "nord-firebrand",
+      "nord-firebrand",
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "relentless-raider",
+      "relentless-raider",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "stormcloak-vanguard",
+      "stormcloak-vanguard",
+      "stormcloak-vanguard",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "penitus-oculatus-agent",
+      "penitus-oculatus-agent",
+      "stormcloak-camp",
+      "unrelenting-force-level-1",
+      "unrelenting-force-level-1",
+      "imperial-camp",
+      "stormcloak-avenger",
+      "stormcloak-avenger",
+      "stormcloak-avenger",
+      "the-black-dragon",
+      "trebuchet",
+      "imperial-siege-engine",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "ulfric-stormcloak"
+     ],
+     "board": [
+      [
+       "stormcloak-skirmisher",
+       "stormcloak-skirmisher",
+       "stormcloak-skirmisher"
+      ],
+      [
+       "colovian-trooper",
+       "colovian-trooper",
+       "colovian-trooper"
+      ]
+     ],
+     "support": [
+      "imperial-camp",
+      "stormcloak-camp"
+     ],
+     "playerSupport": [
+      "skirmish"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Dragonclaw Rock, player starts with a Keening II on board.",
+       "card": "keening-ii",
+       "node": "dragonclaw-rock"
+      },
+      {
+       "type": "custom",
+       "id": "playerSupportIfDone",
+       "text": "If player completed Sanguine Barrows, player starts with a Wraithguard II on board.",
+       "card": "wraithguard-ii",
+       "node": "sanguine-barrows"
+      }
+     ]
+    },
+    "master": {
+     "board": [
+      [
+       "stormcloak-skirmisher",
+       "stormcloak-skirmisher",
+       "stormcloak-skirmisher",
+       "stormcloak-skirmisher"
+      ],
+      [
+       "colovian-trooper",
+       "colovian-trooper",
+       "colovian-trooper",
+       "colovian-trooper"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "divine-implements-found",
+   "name": "Divine Implements Found",
+   "uesp": "Divine Implements Found",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "The tools are now in your hands",
+   "requires": [
+    "dragonclaw-rock",
+    "sanguine-barrows",
+    "eastmarch-camp"
+   ],
+   "intro": [
+    {
+     "speaker": "Laaneth",
+     "text": "That's the last of the tools. Now let's go find Mecinar and destroy the Heart.",
+     "audio": "cwcdivineimplementsfound-text.0.0",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "That's the last of the tools. Now let's go find Mecinar and destroy the Heart.",
+     "audio": "cwcdivineimplementsfound-text.1.0",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "What? You can't destroy it. I believe its power is what has allowed our crops to grow, our machinery to run. There must be another way. Perhaps you can use the Heart instead.",
+     "audio": "cwcdivineimplementsfound-text.0.1"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "I doubt it. But come, Mecinar must be in the Chamber of Lorkhan.",
+     "audio": "cwcdivineimplementsfound-text.0.2",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "I don't like it. Laaneth believed the Heart was dangerous, and I trusted her more than most.",
+     "audio": "cwcdivineimplementsfound-text.1.2",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "return-to-the-inner-curiosity",
+   "name": "Return to The Inner Curiosity",
+   "uesp": "Return to The Inner Curiosity",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Your lost friend returns",
+   "requires": [
+    "divine-implements-found"
+   ],
+   "image": "LG-location-The Inner Curiosity.png",
+   "intro": [
+    {
+     "speaker": "Mecinar",
+     "text": "I thought you might come. I've prepared a surprise for you. For years I have modified the living. But with my newfound power, I've found the dead just as malleable.",
+     "audio": "cwcreturntotheinnercuriosity-text.0.0"
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Mecinar's will must be obeyed. Prepare to be destroyed.",
+     "audio": "cwcreturntotheinnercuriosity-text.0.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Mecinar's will must be obeyed. Prepare to be destroyed.",
+     "audio": "cwcreturntotheinnercuriosity-text.1.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Laaneth",
+     "text": "Mecinar must answer for this... this abomination! It's time to finish this!",
+     "audio": "cwcreturntotheinnercuriosity-aftermath-text.0.0",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "MECINAR! You'll pay for what you've done to her!",
+     "audio": "cwcreturntotheinnercuriosity-aftermath-text.1.0",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "Come then, and meet your doom.",
+     "audio": "cwcreturntotheinnercuriosity-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Swims-at-Night or Laaneth",
+    "attributes": [
+     "G",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Player starts with a Sunder II, a Wraithguard II and a Keening II on board. The opponent is your fallen ally from Shaft of Sohleh. Dead Laaneth: Normal: a Lion Guard Strategist and two Crystal Tower Crafters in the left lane, two Gearwork Spiders in the right lane; Master: a Lion Guard Strategist, a Gearwork Spider, an Iliac Sorcerer and a Crystal Tower Crafter in each lane. Dead Swims-at-Night: Normal: a Blackrose Herbalist, a Stormhold Henchman and a Hist Speaker in the left lane, a Stormhold Henchman and a Hist Speaker in the right lane; Master: a Blackrose Herbalist, an Archein Venomtongue and a Hist Speaker in the left lane, an Archein Venomtongue and a Hist Speaker in the right lane.",
+    "normal": {
+     "playerSupport": [
+      "sunder-ii",
+      "wraithguard-ii",
+      "keening-ii"
+     ]
+    }
+   },
+   "variants": {
+    "laaneth-stays": {
+     "hints": [
+      "Mecinar's foul magickal technology has revived your fallen Dunmer ally to battle you."
+     ],
+     "battle": {
+      "opponent": "Laaneth",
+      "avatar": "LG-npc-Laaneth 03.png",
+      "attributes": [
+       "B",
+       "P"
+      ],
+      "normal": {
+       "deck": [
+        "lesser-ward",
+        "lesser-ward",
+        "firebolt",
+        "firebolt",
+        "gearwork-spider",
+        "gearwork-spider",
+        "scroll-seeker",
+        "scroll-seeker",
+        "sorcerers-negation",
+        "sorcerers-negation",
+        "soul-split",
+        "soul-split",
+        "crushing-blow",
+        "crushing-blow",
+        "haunting-spirit",
+        "haunting-spirit",
+        "mummify",
+        "mummify",
+        "shalk-fabricant",
+        "shalk-fabricant",
+        "fire-storm",
+        "fire-storm",
+        "grim-champion",
+        "grim-champion",
+        "lightning-bolt",
+        "lightning-bolt",
+        "lurking-mummy",
+        "risen-fabricant",
+        "risen-fabricant",
+        "doomcrag-vampire",
+        "ice-storm",
+        "bone-colossus",
+        "bone-colossus",
+        "risen-abomination",
+        "risen-abomination",
+        "indoril-archmage",
+        "waves-of-the-fallen",
+        "night-talon-lord"
+       ],
+       "board": [
+        [
+         "lion-guard-strategist",
+         "crystal-tower-crafter",
+         "crystal-tower-crafter"
+        ],
+        [
+         "gearwork-spider",
+         "gearwork-spider"
+        ]
+       ]
+      },
+      "master": {
+       "deck": [
+        "healing-hands",
+        "lesser-ward",
+        "lesser-ward",
+        "suppress",
+        "suppress",
+        "firebolt",
+        "firebolt",
+        "hist-speaker",
+        "hist-speaker",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "soul-split",
+        "soul-split",
+        "crushing-blow",
+        "crushing-blow",
+        "haunting-spirit",
+        "haunting-spirit",
+        "mummify",
+        "mummify",
+        "fire-storm",
+        "fire-storm",
+        "lightning-bolt",
+        "lightning-bolt",
+        "lightning-bolt",
+        "lillandril-hexmage",
+        "lillandril-hexmage",
+        "lurking-mummy",
+        "lurking-mummy",
+        "risen-fabricant",
+        "risen-fabricant",
+        "ice-storm",
+        "ice-storm",
+        "bone-colossus",
+        "nahagliiv",
+        "risen-abomination",
+        "risen-abomination",
+        "skeletal-dragon",
+        "blood-magic-lord",
+        "night-talon-lord",
+        "supreme-atromancer"
+       ],
+       "board": [
+        [
+         "lion-guard-strategist",
+         "gearwork-spider",
+         "iliac-sorcerer",
+         "crystal-tower-crafter"
+        ],
+        [
+         "lion-guard-strategist",
+         "gearwork-spider",
+         "iliac-sorcerer",
+         "crystal-tower-crafter"
+        ]
+       ]
+      }
+     }
+    },
+    "swims-stays": {
+     "hints": [
+      "Mecinar's foul magickal technology has revived your fallen Argonian ally to battle you."
+     ],
+     "battle": {
+      "opponent": "Swims-at-Night",
+      "avatar": "LG-npc-Swims-at-Night 04.png",
+      "attributes": [
+       "G",
+       "P"
+      ],
+      "normal": {
+       "deck": [
+        "curse",
+        "curse",
+        "healing-hands",
+        "suppress",
+        "assembled-sentry",
+        "assembled-sentry",
+        "lurking-crocodile",
+        "lurking-crocodile",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "assembled-sanitizer",
+        "assembled-sanitizer",
+        "goblin-skulk",
+        "goblin-skulk",
+        "haunting-spirit",
+        "haunting-spirit",
+        "murkwater-guide",
+        "murkwater-guide",
+        "black-marsh-warden",
+        "nix-hound-fabricant",
+        "nix-hound-fabricant",
+        "preserver-of-the-root",
+        "preserver-of-the-root",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "risen-fabricant",
+        "risen-fabricant",
+        "thorn-histmage",
+        "assembled-titan",
+        "clockwork-scorpion",
+        "dwarven-ballista",
+        "dwarven-ballista",
+        "smugglers-haul",
+        "bone-colossus",
+        "dark-harvester",
+        "dark-harvester",
+        "risen-abomination",
+        "risen-abomination",
+        "waves-of-the-fallen",
+        "chaurus-breeding-pit"
+       ],
+       "board": [
+        [
+         "blackrose-herbalist",
+         "stormhold-henchman",
+         "hist-speaker"
+        ],
+        [
+         "stormhold-henchman",
+         "hist-speaker"
+        ]
+       ]
+      },
+      "master": {
+       "deck": [
+        "curse",
+        "curse",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "dark-guardian",
+        "dark-guardian",
+        "goblin-skulk",
+        "goblin-skulk",
+        "haunting-spirit",
+        "haunting-spirit",
+        "mummify",
+        "mummify",
+        "murkwater-guide",
+        "murkwater-guide",
+        "black-marsh-warden",
+        "moonlight-werebat",
+        "murkwater-shaman",
+        "murkwater-shaman",
+        "preserver-of-the-root",
+        "preserver-of-the-root",
+        "risen-fabricant",
+        "risen-fabricant",
+        "thorn-histmage",
+        "thorn-histmage",
+        "bone-colossus",
+        "dark-harvester",
+        "dark-harvester",
+        "risen-abomination",
+        "risen-abomination",
+        "eclipse-baroness",
+        "skeletal-dragon",
+        "waves-of-the-fallen",
+        "red-bramman"
+       ],
+       "board": [
+        [
+         "blackrose-herbalist",
+         "archein-venomtongue",
+         "hist-speaker"
+        ],
+        [
+         "archein-venomtongue",
+         "hist-speaker"
+        ]
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "chamber-of-lorkhan",
+   "name": "Chamber of Lorkhan",
+   "uesp": "Chamber of Lorkhan",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "The end of Mecinar",
+   "requires": [
+    "return-to-the-inner-curiosity"
+   ],
+   "final": true,
+   "image": "LG-location-Chamber of Lorkhan.png",
+   "intro": [
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Now, use the tools to harness the Heart's power! Fight Mecinar as a fellow god!",
+     "audio": "cwcchamberoflorkhan-text.0.0"
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "No — I can feel the Heart's energy. It's too unstable. There's every chance you'll be overwhelmed. And if you fall, Mecinar will still have his power.",
+     "audio": "cwcchamberoflorkhan-text.0.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Look around you! That thing is unstable! If you use it, it might just kill you.",
+     "audio": "cwcchamberoflorkhan-text.1.1",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Those are the risks we have to take. Without the Heart, my people will die!",
+     "audio": "cwcchamberoflorkhan-text.0.2",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "Those are the risks we have to take. Without the Heart, my people will die!",
+     "audio": "cwcchamberoflorkhan-text.1.2",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Laaneth",
+     "text": "Swims-at-Night would have left it up to you. So what's it to be?",
+     "audio": "cwcchamberoflorkhan-text.0.3",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "swims-stays"
+      }
+     }
+    },
+    {
+     "speaker": "Swims-at-Night",
+     "text": "Laaneth wouldn't have wanted this. But it's your call.",
+     "audio": "cwcchamberoflorkhan-text.1.3",
+     "if": {
+      "choice": {
+       "node": "shaft-of-sohleh",
+       "option": "laaneth-stays"
+      }
+     }
+    }
+   ],
+   "choice": {
+    "prompt": "So what's it to be?",
+    "options": [
+     {
+      "id": "destroy",
+      "label": "Destroy the Heart",
+      "text": "All creatures in each player's deck have 1 cost, 1 power, and 1 health"
+     },
+     {
+      "id": "use",
+      "label": "Use the Heart",
+      "text": "Both you and your opponent wield the power of the gods."
+     }
+    ]
+   },
+   "during": [
+    {
+     "speaker": "Mecinar",
+     "text": "You think yourself my equal now? Pathetic. You cannot hope to match my genius!",
+     "audio": "cwcchamberoflorkhan.use.playmat.1",
+     "if": {
+      "choice": {
+       "node": "chamber-of-lorkhan",
+       "option": "use"
+      }
+     }
+    },
+    {
+     "speaker": "Galyn the Shelterer",
+     "text": "You can barely contain the Heart's energy. Be careful, or it will destroy you — and this entire chamber!",
+     "audio": "cwcchamberoflorkhan.use.playmat.2",
+     "if": {
+      "choice": {
+       "node": "chamber-of-lorkhan",
+       "option": "use"
+      }
+     }
+    },
+    {
+     "speaker": "Mecinar",
+     "text": "No! Do you know what you've done?! Centuries of patience and planning — all lost! You will burn for this!",
+     "audio": "cwcchamberoflorkhan.destroy.playmat.1",
+     "if": {
+      "choice": {
+       "node": "chamber-of-lorkhan",
+       "option": "destroy"
+      }
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "Mecinar",
+    "avatar": "LG-npc-Mecinar.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Destroy the Heart: Both players start with 3 Runes. Player starts with a Mere Mortals on board. Use the Heart: Both players start with 101 Max Magicka. Player starts with a Battle of the Gods on board.",
+    "normal": {
+     "deck": [
+      "assembled-sentry",
+      "assembled-sentry",
+      "dragontail-savior",
+      "dragontail-savior",
+      "spider-worker",
+      "spider-worker",
+      "assembled-sanitizer",
+      "assembled-sanitizer",
+      "bruma-armorer",
+      "bruma-armorer",
+      "dwarven-sphere",
+      "dwarven-sphere",
+      "haunting-spirit",
+      "haunting-spirit",
+      "breton-conjurer",
+      "breton-conjurer",
+      "dwarven-dynamo",
+      "dwarven-dynamo",
+      "grim-champion",
+      "lightning-bolt",
+      "lightning-bolt",
+      "clockwork-dragon",
+      "clockwork-dragon",
+      "disciple-of-namira",
+      "disciple-of-namira",
+      "hulking-fabricant",
+      "hulking-fabricant",
+      "stronghold-incubator",
+      "stronghold-incubator",
+      "brass-arquebus",
+      "brass-arquebus",
+      "conjuration-scholar",
+      "conjuration-scholar",
+      "fate-weaver",
+      "fate-weaver",
+      "staff-of-sparks",
+      "wispmother",
+      "indoril-archmage",
+      "shocking-wamasu",
+      "shocking-wamasu"
+     ],
+     "runes": 3,
+     "playerRunes": 3,
+     "playerSupport": [
+      "mere-mortals"
+     ]
+    },
+    "master": {
+     "deck": [
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "spider-worker",
+      "spider-worker",
+      "spider-worker",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "breton-conjurer",
+      "breton-conjurer",
+      "elusive-schemer",
+      "elusive-schemer",
+      "brass-arquebus",
+      "brass-arquebus",
+      "conjuration-scholar",
+      "conjuration-scholar",
+      "conjuration-scholar",
+      "fate-weaver",
+      "fate-weaver",
+      "bone-colossus",
+      "bone-colossus",
+      "bringer-of-nightmares",
+      "dark-harvester",
+      "dark-harvester",
+      "wispmother",
+      "wispmother",
+      "ancano",
+      "indoril-archmage",
+      "indoril-archmage",
+      "shocking-wamasu",
+      "shocking-wamasu",
+      "skeletal-dragon",
+      "skeletal-dragon",
+      "blood-magic-lord",
+      "blood-magic-lord",
+      "nahkriin-dragon-priest",
+      "supreme-atromancer",
+      "supreme-atromancer",
+      "divayth-fyr"
+     ]
+    }
+   },
+   "variants": {
+    "destroy": {
+     "hints": [
+      "All creatures in each player's deck have 1 cost, 1 power, and 1 health"
+     ],
+     "battle": {
+      "normal": {
+       "deck": [
+        "assembled-sentry",
+        "assembled-sentry",
+        "dragontail-savior",
+        "dragontail-savior",
+        "spider-worker",
+        "spider-worker",
+        "assembled-sanitizer",
+        "assembled-sanitizer",
+        "bruma-armorer",
+        "bruma-armorer",
+        "dwarven-sphere",
+        "dwarven-sphere",
+        "haunting-spirit",
+        "haunting-spirit",
+        "breton-conjurer",
+        "breton-conjurer",
+        "dwarven-dynamo",
+        "dwarven-dynamo",
+        "grim-champion",
+        "lightning-bolt",
+        "lightning-bolt",
+        "clockwork-dragon",
+        "clockwork-dragon",
+        "disciple-of-namira",
+        "disciple-of-namira",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "stronghold-incubator",
+        "stronghold-incubator",
+        "brass-arquebus",
+        "brass-arquebus",
+        "conjuration-scholar",
+        "conjuration-scholar",
+        "fate-weaver",
+        "fate-weaver",
+        "staff-of-sparks",
+        "wispmother",
+        "indoril-archmage",
+        "shocking-wamasu",
+        "shocking-wamasu"
+       ],
+       "runes": 3,
+       "playerRunes": 3,
+       "playerSupport": [
+        "mere-mortals"
+       ]
+      },
+      "master": {
+       "deck": [
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "spider-worker",
+        "spider-worker",
+        "spider-worker",
+        "haunting-spirit",
+        "haunting-spirit",
+        "haunting-spirit",
+        "breton-conjurer",
+        "breton-conjurer",
+        "elusive-schemer",
+        "elusive-schemer",
+        "brass-arquebus",
+        "brass-arquebus",
+        "conjuration-scholar",
+        "conjuration-scholar",
+        "conjuration-scholar",
+        "fate-weaver",
+        "fate-weaver",
+        "bone-colossus",
+        "bone-colossus",
+        "bringer-of-nightmares",
+        "dark-harvester",
+        "dark-harvester",
+        "wispmother",
+        "wispmother",
+        "ancano",
+        "indoril-archmage",
+        "indoril-archmage",
+        "shocking-wamasu",
+        "shocking-wamasu",
+        "skeletal-dragon",
+        "skeletal-dragon",
+        "blood-magic-lord",
+        "blood-magic-lord",
+        "nahkriin-dragon-priest",
+        "supreme-atromancer",
+        "supreme-atromancer",
+        "divayth-fyr"
+       ]
+      }
+     }
+    },
+    "use": {
+     "hints": [
+      "Both you and your opponent wield the power of the gods."
+     ],
+     "battle": {
+      "normal": {
+       "deck": [
+        "blood-sorceress",
+        "blood-sorceress",
+        "assembled-sanitizer",
+        "assembled-sanitizer",
+        "assembled-sanitizer",
+        "reverberating-strike",
+        "reverberating-strike",
+        "reverberating-strike",
+        "shalk-fabricant",
+        "shalk-fabricant",
+        "shalk-fabricant",
+        "ferocious-dreugh",
+        "ferocious-dreugh",
+        "ferocious-dreugh",
+        "fire-storm",
+        "fire-storm",
+        "lightning-bolt",
+        "lightning-bolt",
+        "lightning-bolt",
+        "abandoned-imperfect",
+        "abandoned-imperfect",
+        "abandoned-imperfect",
+        "assembled-conduit",
+        "assembled-conduit",
+        "assembled-conduit",
+        "cave-bear",
+        "cave-bear",
+        "clockwork-dragon",
+        "clockwork-dragon",
+        "clockwork-dragon",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "lurking-mummy",
+        "lurking-mummy",
+        "assembled-titan",
+        "conjuration-scholar",
+        "conjuration-scholar",
+        "doomcrag-vampire",
+        "doomcrag-vampire",
+        "ice-storm",
+        "ice-storm",
+        "ice-storm",
+        "night-shadow",
+        "night-shadow",
+        "bone-colossus",
+        "bone-colossus",
+        "dark-harvester",
+        "dark-harvester",
+        "dwarven-centurion",
+        "dwarven-centurion",
+        "ironscale-dragon",
+        "ironscale-dragon",
+        "lowland-troll",
+        "lowland-troll",
+        "awakened-imperfect",
+        "awakened-imperfect",
+        "frost-giant",
+        "frost-giant",
+        "indoril-archmage",
+        "indoril-archmage",
+        "shocking-wamasu",
+        "shocking-wamasu",
+        "skeletal-dragon",
+        "skeletal-dragon",
+        "waves-of-the-fallen",
+        "waves-of-the-fallen",
+        "gravesinger",
+        "supreme-atromancer",
+        "dwarven-colossus"
+       ],
+       "runes": 5,
+       "playerRunes": 5,
+       "maxMagicka": 101,
+       "playerMaxMagicka": 101,
+       "playerSupport": [
+        "battle-of-the-gods"
+       ]
+      },
+      "master": {
+       "deck": [
+        "dragon-cult-ghost",
+        "dragon-cult-ghost",
+        "dragon-cult-ghost",
+        "knife-to-the-throat",
+        "knife-to-the-throat",
+        "knife-to-the-throat",
+        "lay-down-arms",
+        "lay-down-arms",
+        "lay-down-arms",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "hulking-fabricant",
+        "memory-wraith",
+        "memory-wraith",
+        "memory-wraith",
+        "doomcrag-vampire",
+        "doomcrag-vampire",
+        "doomcrag-vampire",
+        "high-king-emeric",
+        "ice-storm",
+        "ice-storm",
+        "ice-storm",
+        "night-shadow",
+        "night-shadow",
+        "night-shadow",
+        "orb-of-vaermina",
+        "bone-colossus",
+        "bone-colossus",
+        "bone-colossus",
+        "dwarven-centurion",
+        "dwarven-centurion",
+        "dwarven-centurion",
+        "ironscale-dragon",
+        "ironscale-dragon",
+        "ironscale-dragon",
+        "journey-to-sovngarde",
+        "nahagliiv",
+        "pure-blood-elder",
+        "pure-blood-elder",
+        "pure-blood-elder",
+        "awakened-imperfect",
+        "awakened-imperfect",
+        "awakened-imperfect",
+        "indoril-archmage",
+        "indoril-archmage",
+        "indoril-archmage",
+        "skeletal-dragon",
+        "skeletal-dragon",
+        "skeletal-dragon",
+        "waves-of-the-fallen",
+        "waves-of-the-fallen",
+        "waves-of-the-fallen",
+        "blood-magic-lord",
+        "blood-magic-lord",
+        "blood-magic-lord",
+        "gravesinger",
+        "gravesinger",
+        "gravesinger",
+        "supreme-atromancer",
+        "supreme-atromancer",
+        "supreme-atromancer",
+        "divayth-fyr",
+        "dwarven-colossus",
+        "dwarven-colossus",
+        "dwarven-colossus",
+        "iron-atronach",
+        "iron-atronach",
+        "iron-atronach",
+        "odahviing",
+        "alduin"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "the-city-falls",
+   "name": "The City Falls",
+   "uesp": "The City Falls",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "The City Falls",
+   "requires": [
+    "chamber-of-lorkhan"
+   ],
+   "requiresChoice": {
+    "node": "chamber-of-lorkhan",
+    "option": "destroy"
+   },
+   "lockedBy": [
+    "journeys-end"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-The City Falls 01.jpg"
+    },
+    {
+     "file": "LG-quest-The City Falls 02.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act3_ep6_ending_a"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Mecinar was defeated, and the Mechanical Heart shattered beyond repair. Neither would again threaten Tamriel."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But Galyn was right. The Heart had been what kept the city's vegetation alive, and its gears turning."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Sotha Sil's last worshipers were forced to leave the city behind, and start a new life elsewhere."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "This is not the sort of unexpected journey Nagh wishes to go on."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Sometimes, our journeys choose us, my friend."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "And we must only hope we are wise and brave enough to meet them."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Nagh thinks Kellen is just lost."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Oh, you weren't listening at all..."
+    }
+   ]
+  },
+  {
+   "id": "journeys-end",
+   "name": "Journey's End",
+   "uesp": "Journey's End",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Journey's End",
+   "requires": [
+    "chamber-of-lorkhan"
+   ],
+   "requiresChoice": {
+    "node": "chamber-of-lorkhan",
+    "option": "use"
+   },
+   "lockedBy": [
+    "the-city-falls"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Journey's End 01.jpg"
+    },
+    {
+     "file": "LG-quest-Journey's End 02.jpg"
+    }
+   ],
+   "video": {
+    "start": "cwc_act3_ep6_ending_b"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Mecinar was defeated. But the hero paid a heavy price. The energy of the heart proved too much to hold within their physical form."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "The hero's body disintegrated."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But the Clockwork City lived on, powered by the heart, and Galyn believed that the hero's consciousness lived on there, a whisper in the still-churning machinery."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "So... you are saying you're lost and we're going to die?"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "I'm saying sometimes our greatest deeds come when we least expect them."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Nagh thinks you are lost and we're going to die."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "(Sigh)"
+    }
+   ]
+  }
+ ]
+}

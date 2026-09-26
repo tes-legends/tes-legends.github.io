@@ -1,0 +1,148 @@
+{
+  "files": [
+    "LG-audio-brellach_commander_attack.ogg",
+    "LG-audio-brellach_commander_enter_play.ogg",
+    "LG-audio-crucible_blacksmith_attack.ogg",
+    "LG-audio-crucible_blacksmith_enter_play.ogg",
+    "LG-audio-cyriel_attack.ogg",
+    "LG-audio-cyriel_enter_play.ogg",
+    "LG-audio-doomfang_ally_attack.ogg",
+    "LG-audio-doomfang_ally_enter_play.ogg",
+    "LG-audio-drive_mad.ogg",
+    "LG-audio-eager_torturer_attack.ogg",
+    "LG-audio-eager_torturer_enter_play.ogg",
+    "LG-audio-fortress_guard_attack.ogg",
+    "LG-audio-fortress_guard_enter_play.ogg",
+    "LG-audio-gates_of_madness.ogg",
+    "LG-audio-golden_initiate_attack.ogg",
+    "LG-audio-golden_initiate_enter_play.ogg",
+    "LG-audio-haskill_attack.ogg",
+    "LG-audio-haskill_enter_play.ogg",
+    "LG-audio-heretic_conjurer_attack.ogg",
+    "LG-audio-heretic_conjurer_enter_play.ogg",
+    "LG-audio-luzrah_gro-shar_attack.ogg",
+    "LG-audio-luzrah_gro-shar_enter_play.ogg",
+    "LG-audio-manic_jack_attack.ogg",
+    "LG-audio-manic_jack_enter_play.ogg",
+    "LG-audio-nervous_giant_attack_01.ogg",
+    "LG-audio-nervous_giant_attack_02.ogg",
+    "LG-audio-nervous_giant_enter_play_01.ogg",
+    "LG-audio-nervous_giant_enter_play_02.ogg",
+    "LG-audio-rayvat_the_mage_attack.ogg",
+    "LG-audio-rayvat_the_mage_enter_play.ogg",
+    "LG-audio-seducer_darkfire_attack.ogg",
+    "LG-audio-seducer_darkfire_enter_play.ogg",
+    "LG-audio-shining_saint_attack.ogg",
+    "LG-audio-shining_saint_enter_play.ogg",
+    "LG-audio-syl,_duchess_of_dementia_attack.ogg",
+    "LG-audio-syl,_duchess_of_dementia_enter_play.ogg",
+    "LG-audio-tavyar_the_knight_attack.ogg",
+    "LG-audio-tavyar_the_knight_enter_play.ogg",
+    "LG-audio-thadon,_duke_of_mania_attack.ogg",
+    "LG-audio-thadon,_duke_of_mania_enter_play.ogg",
+    "LG-audio-trouble_seeker_attack.ogg",
+    "LG-audio-trouble_seeker_enter_play.ogg",
+    "LG-audio-unstable_madman_attack.ogg",
+    "LG-audio-unstable_madman_enter_play.ogg",
+    "LG-audio-unstoppable_berserker_attack.ogg",
+    "LG-audio-unstoppable_berserker_enter_play.ogg"
+  ],
+  "cardToFiles": {
+    "drive-mad": [
+      "LG-audio-drive_mad.ogg"
+    ],
+    "nervous-giant": [
+      "LG-audio-nervous_giant_attack_01.ogg",
+      "LG-audio-nervous_giant_attack_02.ogg",
+      "LG-audio-nervous_giant_enter_play_01.ogg",
+      "LG-audio-nervous_giant_enter_play_02.ogg"
+    ],
+    "syl-duchess-of-dementia": [
+      "LG-audio-syl,_duchess_of_dementia_attack.ogg",
+      "LG-audio-syl,_duchess_of_dementia_enter_play.ogg"
+    ],
+    "trouble-seeker": [
+      "LG-audio-trouble_seeker_attack.ogg",
+      "LG-audio-trouble_seeker_enter_play.ogg"
+    ],
+    "unstable-madman": [
+      "LG-audio-unstable_madman_attack.ogg",
+      "LG-audio-unstable_madman_enter_play.ogg"
+    ],
+    "crucible-blacksmith": [
+      "LG-audio-crucible_blacksmith_attack.ogg",
+      "LG-audio-crucible_blacksmith_enter_play.ogg"
+    ],
+    "luzrah-gro-shar": [
+      "LG-audio-luzrah_gro-shar_attack.ogg",
+      "LG-audio-luzrah_gro-shar_enter_play.ogg"
+    ],
+    "manic-jack": [
+      "LG-audio-manic_jack_attack.ogg",
+      "LG-audio-manic_jack_enter_play.ogg"
+    ],
+    "rayvat-the-mage": [
+      "LG-audio-rayvat_the_mage_attack.ogg",
+      "LG-audio-rayvat_the_mage_enter_play.ogg"
+    ],
+    "brellach-commander": [
+      "LG-audio-brellach_commander_attack.ogg",
+      "LG-audio-brellach_commander_enter_play.ogg"
+    ],
+    "fortress-guard": [
+      "LG-audio-fortress_guard_attack.ogg",
+      "LG-audio-fortress_guard_enter_play.ogg"
+    ],
+    "golden-initiate": [
+      "LG-audio-golden_initiate_attack.ogg",
+      "LG-audio-golden_initiate_enter_play.ogg"
+    ],
+    "heretic-conjurer": [
+      "LG-audio-heretic_conjurer_attack.ogg",
+      "LG-audio-heretic_conjurer_enter_play.ogg"
+    ],
+    "seducer-darkfire": [
+      "LG-audio-seducer_darkfire_attack.ogg",
+      "LG-audio-seducer_darkfire_enter_play.ogg"
+    ],
+    "shining-saint": [
+      "LG-audio-shining_saint_attack.ogg",
+      "LG-audio-shining_saint_enter_play.ogg"
+    ],
+    "thadon-duke-of-mania": [
+      "LG-audio-thadon,_duke_of_mania_attack.ogg",
+      "LG-audio-thadon,_duke_of_mania_enter_play.ogg"
+    ],
+    "cyriel": [
+      "LG-audio-cyriel_attack.ogg",
+      "LG-audio-cyriel_enter_play.ogg"
+    ],
+    "eager-torturer": [
+      "LG-audio-eager_torturer_attack.ogg",
+      "LG-audio-eager_torturer_enter_play.ogg"
+    ],
+    "dark-seducer": [
+      "LG-audio-seducer_darkfire_attack.ogg",
+      "LG-audio-seducer_darkfire_enter_play.ogg"
+    ],
+    "tavyar-the-knight": [
+      "LG-audio-tavyar_the_knight_attack.ogg",
+      "LG-audio-tavyar_the_knight_enter_play.ogg"
+    ],
+    "doomfang-ally": [
+      "LG-audio-doomfang_ally_attack.ogg",
+      "LG-audio-doomfang_ally_enter_play.ogg"
+    ],
+    "gates-of-madness": [
+      "LG-audio-gates_of_madness.ogg"
+    ],
+    "haskill": [
+      "LG-audio-haskill_attack.ogg",
+      "LG-audio-haskill_enter_play.ogg"
+    ],
+    "unstoppable-berserker": [
+      "LG-audio-unstoppable_berserker_attack.ogg",
+      "LG-audio-unstoppable_berserker_enter_play.ogg"
+    ]
+  }
+}

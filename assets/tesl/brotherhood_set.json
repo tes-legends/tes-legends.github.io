@@ -102,7 +102,7 @@
     "effects": [
       {
         "trigger": "Summon",
-        "type": "damage",
+        "type": "wielderDealsDamage",
         "amount": 1,
         "target": "any"
       }
@@ -502,10 +502,12 @@
         "trigger": "PlayCard",
         "type": "summonDeckLastCost",
         "amount": 1,
-        "target": "randomLane",
+        "target": "thisLaneOrOther",
         "condition": {
           "type": "hasSubtype",
-          "subtypes": [ "Action" ]
+          "subtypes": [
+            "Action"
+          ]
         }
       }
     ]
@@ -957,9 +959,12 @@
       {
         "trigger": "Slay",
         "type": "drawDiscard",
-        "subtypes": [ "Creature" ],
+        "subtypes": [
+          "Creature"
+        ],
         "amount": 1,
-        "target": "player"
+        "target": "player",
+        "choose": true
       }
     ]
   },
@@ -987,7 +992,7 @@
         "trigger": "StartOfTurn",
         "type": "summonHighTemp",
         "amount": 1,
-        "target": "randomLane"
+        "target": "thisLaneOrOther"
       }
     ]
   },

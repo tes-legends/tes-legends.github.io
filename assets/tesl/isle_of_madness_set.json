@@ -1,0 +1,1940 @@
+[
+  {
+    "id": "bedeviling-scamp",
+    "name": "Bedeviling Scamp",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "All cards cost a minimum of 3.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "bJ",
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "iomMinCostAll",
+        "amount": 3
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "cloak",
+    "name": "Cloak",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "+0/+2",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "dl",
+    "doubleCard": "Dagger",
+    "tier": "A"
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 1,
+    "attack": 2,
+    "health": 0,
+    "rarity": "1Common",
+    "text": "+2/+0",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "dl",
+    "doubleCard": "Cloak",
+    "doubleSecondary": true
+  },
+  {
+    "id": "drive-mad",
+    "name": "Drive Mad",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "A creature Battles itself.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "fb",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomBattleSelf",
+        "target": "creatureIomSelfBattle"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "grummite-magus",
+    "name": "Grummite Magus",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "rarity": "3Epic",
+    "text": "Guard Summon: Your opponent discards the highest cost action in their hand.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "hI",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomDiscardHighestAction",
+        "target": "opponent"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "nervous-giant",
+    "name": "Nervous Giant",
+    "type": "Creature",
+    "subtypes": [
+      "Giant"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 4,
+    "attack": 6,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "If Nervous Giant takes exactly 1 damage, destroy him.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "lr",
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "iomDestroyIfDamageExactly",
+        "amount": 1,
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "syl-duchess-of-dementia",
+    "name": "Syl, Duchess of Dementia",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 6,
+    "attack": 7,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Summon: This lane becomes Dementia.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "fc",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "setLaneType",
+        "laneType": "Dementia",
+        "target": "thisLane"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "tiny-dragon",
+    "name": "Tiny Dragon",
+    "type": "Creature",
+    "subtypes": [
+      "Dragon"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Deal 1 damage to all enemy creatures in this lane.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "qE",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 1,
+        "target": "creatureEnemyThisLaneAll"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "trouble-seeker",
+    "name": "Trouble Seeker",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Summon: Battle an enemy creature. When Trouble Seeker takes damage, he deals that much damage to you.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "qS",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "battle",
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "DamageTaken",
+        "type": "iomDamageOwnerByDamageTaken",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "unstable-madman",
+    "name": "Unstable Madman",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "At the end of your turn, Unstable Madman gains +1/+1. Then, if he has 5 or more power, change him into Unstoppable Berserker.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "rj",
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      },
+      {
+        "trigger": "EndOfTurn",
+        "type": "change",
+        "cardId": "unstoppable-berserker",
+        "target": "self",
+        "condition": {
+          "type": "iomSelfPowerAtLeast",
+          "min": 5
+        }
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "crucible-blacksmith",
+    "name": "Crucible Blacksmith",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Draw an item of your choice from your deck.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "dJ",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "revealAndChoose",
+        "amount": 40,
+        "target": "player",
+        "subtypes": [
+          "Item"
+        ]
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "gardeners-harvest",
+    "name": "Gardener's Harvest",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "+1/+1 At the end of your turn, if Gardener's Harvest is in your hand, it changes into a random item and keeps this ability.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "gQ",
+    "effects": [
+      {
+        "trigger": "EndOfTurnInHand",
+        "type": "iomTransformItemKeepAbility",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "gnarl-rootbender",
+    "name": "Gnarl Rootbender",
+    "type": "Creature",
+    "subtypes": [
+      "Spriggan"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 5,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "When an action targets Gnarl Rootbender, draw a card.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "hk",
+    "effects": [
+      {
+        "trigger": "TargetedByAction",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "icy-shambles",
+    "name": "Icy Shambles",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Shackle creatures damaged by Icy Shambles. Summon: Deal 2 damage to a creature.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "iB",
+    "effects": [
+      {
+        "trigger": "DamageDealt",
+        "type": "shackle",
+        "target": "creatureDamaged"
+      },
+      {
+        "trigger": "Summon",
+        "type": "damage",
+        "amount": 2,
+        "target": "creature"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "luzrah-gro-shar",
+    "name": "Luzrah gro-Shar",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "When you summon a creature with 6 cost or more, both Luzrah and that creature gain +1/+1.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "jV",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "SummonCreature",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "condition": {
+          "type": "lastSummonCost",
+          "min": 6
+        }
+      },
+      {
+        "trigger": "SummonCreature",
+        "type": "buffTarget",
+        "modAttack": 1,
+        "modHealth": 1,
+        "target": "summon",
+        "condition": {
+          "type": "lastSummonCost",
+          "min": 6
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "manic-jack",
+    "name": "Manic Jack",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "When Manic Jack gains a Keyword, he gains +1/+1.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "kg",
+    "doubleCard": "Manic Mutation",
+    "effects": [
+      {
+        "trigger": "GainKeyword",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "manic-mutation",
+    "name": "Manic Mutation",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 1,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Give a friendly creature a random Keyword.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "kg",
+    "doubleCard": "Manic Jack",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomGrantRandomNewKeyword",
+        "target": "creatureFriendly"
+      }
+    ],
+    "doubleSecondary": true
+  },
+  {
+    "id": "pointy-wall-of-spikes",
+    "name": "Pointy Wall of Spikes",
+    "type": "Creature",
+    "subtypes": [
+      "Defense"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Prophecy, Guard When Pointy Wall of Spikes takes damage from a creature, it deals that much damage to that creature.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "mi",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "DamageTaken",
+        "type": "iomReflectDamageToSource",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "rayvat-the-mage",
+    "name": "Rayvat the Mage",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 2,
+    "rarity": "4Legendary",
+    "text": "Ward Summon: You gain Ward.",
+    "keywords": [
+      "Ward"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "mK",
+    "unique": true,
+    "doubleCard": "Tavyar the Knight",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "grantWard",
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "seething-flesh-golem",
+    "name": "Seething Flesh Golem",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra",
+      "Atronach"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 8,
+    "attack": 3,
+    "health": 8,
+    "rarity": "3Epic",
+    "text": "When Seething Flesh Golem attacks, deal damage equal to its power to all enemy creatures in this lane.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "pd",
+    "effects": [
+      {
+        "trigger": "Attack",
+        "type": "damage",
+        "amount": 1,
+        "amountPer": "iomSelfPower",
+        "target": "creatureEnemyThisLaneAll",
+        "stopIfTargetDies": true
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "transmogrify",
+    "name": "Transmogrify",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "B"
+    ],
+    "cost": 7,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Sacrifice a creature to summon the top creature from your deck.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "qK",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomTransmogrify",
+        "target": "creatureFriendlyIomSacrifice"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "baliwog",
+    "name": "Baliwog",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "oT",
+    "doubleCard": "Spawn Mother",
+    "tier": "C"
+  },
+  {
+    "id": "blessing-of-the-grove",
+    "name": "Blessing of the Grove",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Gain 2 health for each friendly creature.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "bZ",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "damage",
+        "amount": -2,
+        "amountPer": "creatureFriendlyAll",
+        "target": "player"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "brellach-commander",
+    "name": "Brellach Commander",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 8,
+    "attack": 7,
+    "health": 8,
+    "rarity": "3Epic",
+    "text": "Summon and Pilfer: Summon a random Willpower creature with cost 3 or less.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "cq",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomSummonRandomAttrMax",
+        "cost": 3,
+        "attribute": "Y",
+        "target": "thisLane"
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "iomSummonRandomAttrMax",
+        "cost": 3,
+        "attribute": "Y",
+        "target": "thisLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "fortress-guard",
+    "name": "Fortress Guard",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Guard Summon: You may discard a card to summon a 2/2 Colovian Trooper with Guard in the other lane.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "gH",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomDiscardForTrooper",
+        "cardId": "colovian-trooper",
+        "target": "cardPlayerHand"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "golden-initiate",
+    "name": "Golden Initiate",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Prophecy, Drain",
+    "keywords": [
+      "Drain"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "hn",
+    "prophecy": true,
+    "tier": "A"
+  },
+  {
+    "id": "heretic-conjurer",
+    "name": "Heretic Conjurer",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 5,
+    "attack": 2,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Guard Pilfer: Creatures you summon this turn are transformed into random Daedra.",
+    "keywords": [
+      "Guard",
+      "Pilfer"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "ib",
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "iomHereticPilfer",
+        "target": "self"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "seducer-darkfire",
+    "name": "Seducer Darkfire",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 7,
+    "attack": 7,
+    "health": 7,
+    "rarity": "2Rare",
+    "text": "Summon: Choose a cost. Your opponent can't play cards with the chosen cost.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "nE",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomChooseBlockedCost",
+        "target": "self"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "shining-saint",
+    "name": "Shining Saint",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature -2/-0 this turn. It loses Cover.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "oa",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "tempAttack": -2,
+        "removeKeywords": [
+          "Cover"
+        ],
+        "target": "creature"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "spawn-mother",
+    "name": "Spawn Mother",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 4,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: +1/+1 for each other friendly creature.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "oT",
+    "doubleCard": "Baliwog",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 1,
+        "modHealth": 1,
+        "amountPer": "creatureFriendlyOtherAll"
+      }
+    ],
+    "doubleSecondary": true
+  },
+  {
+    "id": "thadon-duke-of-mania",
+    "name": "Thadon, Duke of Mania",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": 6,
+    "health": 7,
+    "rarity": "4Legendary",
+    "text": "Summon: This lane becomes Mania.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "fe",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "setLaneType",
+        "laneType": "Mania",
+        "target": "thisLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "crazed-hunger",
+    "name": "Crazed Hunger",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": 0,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "Charge Crazed Hunger has +2/+0 on your turn.",
+    "keywords": [
+      "Charge"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "dH",
+    "static": {
+      "condition": {
+        "type": "isYourTurn"
+      },
+      "modAttack": 2
+    },
+    "tier": "C"
+  },
+  {
+    "id": "cyriel",
+    "name": "Cyriel",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "Pilfer: Reduce the cost of the top card of your deck by 3.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "dS",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Pilfer",
+        "type": "modCost",
+        "amount": -3,
+        "target": "topDeck"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "eager-torturer",
+    "name": "Eager Torturer",
+    "type": "Creature",
+    "subtypes": [
+      "Imperial"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "When you sacrifice a creature, Eager Torturer gains +2/+2.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "fu",
+    "effects": [
+      {
+        "trigger": "FriendlySacrifice",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "elytra-noble",
+    "name": "Elytra Noble",
+    "type": "Creature",
+    "subtypes": [
+      "Elytra"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Lethal",
+    "keywords": [
+      "Lethal"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "gk",
+    "doubleCard": "Felldew",
+    "tier": "B"
+  },
+  {
+    "id": "felldew",
+    "name": "Felldew",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Give a creature Lethal this turn.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "gk",
+    "doubleCard": "Elytra Noble",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "buffTarget",
+        "tempKeywords": [
+          "Lethal"
+        ],
+        "target": "creature"
+      }
+    ],
+    "doubleSecondary": true
+  },
+  {
+    "id": "greatwood-elder",
+    "name": "Greatwood Elder",
+    "type": "Creature",
+    "subtypes": [
+      "Spriggan"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 4,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Guard If Greatwood Elder is in your hand at the start of your first turn, gain 1 magicka this turn.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "hx",
+    "effects": [
+      {
+        "trigger": "StartOfTurnInHand",
+        "type": "magicka",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "isFirstTurn"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "hulking-scalon",
+    "name": "Hulking Scalon",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 10,
+    "attack": 10,
+    "health": 10,
+    "rarity": "3Epic",
+    "text": "Immune to Lethal. Immune to Shackle. Your opponent can't target Hulking Scalon with actions.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "iv",
+    "immunity": [
+      "LethalDamage",
+      "Shackle",
+      "ActionTarget"
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "lady-syls-cruelty",
+    "name": "Lady Syl's Cruelty",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Sacrifice a creature to gain magicka this turn equal to its power.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "jv",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomSacrificeForMagicka",
+        "target": "creatureFriendlyIomCruelty"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "mad-dash",
+    "name": "Mad Dash",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Move a friendly creature, then give it +1/+1 for each enemy creature in its lane.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "jY",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomMoveThenBuffPerEnemy",
+        "target": "creatureFriendlyIomMovable"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "preying-elytra",
+    "name": "Preying Elytra",
+    "type": "Creature",
+    "subtypes": [
+      "Elytra"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 4,
+    "rarity": "2Rare",
+    "text": "Summon: Choose an enemy creature. When Preying Elytra damages the chosen creature, draw two cards.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "mn",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomMarkPrey",
+        "target": "creatureEnemy"
+      },
+      {
+        "trigger": "DamageDealt",
+        "type": "drawCards",
+        "amount": 2,
+        "target": "player",
+        "condition": {
+          "type": "iomDamagedPrey"
+        }
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "baliwog-tidecrawlers",
+    "name": "Baliwog Tidecrawlers",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 6,
+    "rarity": "1Common",
+    "text": "Guard",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "po",
+    "doubleCard": "Smoked Baliwog Leg",
+    "tier": "B"
+  },
+  {
+    "id": "dark-seducer",
+    "name": "Dark Seducer",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 8,
+    "attack": 7,
+    "health": 7,
+    "rarity": "3Epic",
+    "text": "Drain, Guard Dark Seducer Drains on both turns.",
+    "keywords": [
+      "Drain",
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "eh",
+    "effects": [
+      {
+        "trigger": "DamageDealt",
+        "type": "iomDrainOffTurn",
+        "target": "player"
+      }
+    ],
+    "tier": "S"
+  },
+  {
+    "id": "jyggalags-incursion",
+    "name": "Jyggalag's Incursion",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Prophecy Each player gains +2 max magicka.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "jh",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "maxMagicka",
+        "amount": 2,
+        "target": "players"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "knight-of-order",
+    "name": "Knight of Order",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 4,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Summon: Silence all other creatures in this lane.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "jp",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "silence",
+        "target": "creatureOtherThisLaneAll"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "skinned-hound",
+    "name": "Skinned Hound",
+    "type": "Creature",
+    "subtypes": [
+      "Skeleton",
+      "Beast"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "Summon: Give a creature +0/+2 and Guard.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "ov",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffTarget",
+        "modHealth": 2,
+        "addKeywords": [
+          "Guard"
+        ],
+        "target": "creature"
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "smoked-baliwog-leg",
+    "name": "Smoked Baliwog Leg",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 0,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Heal a creature.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "po",
+    "doubleCard": "Baliwog Tidecrawlers",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "heal",
+        "target": "creatureIomHealable"
+      }
+    ],
+    "doubleSecondary": true
+  },
+  {
+    "id": "squish-the-wimpy",
+    "name": "Squish the Wimpy",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "A friendly creature Battles an enemy creature.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "pe",
+    "targetReq": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomBattleChosenEnemy",
+        "target": "creatureFriendlyIomBattler"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "tavyar-the-knight",
+    "name": "Tavyar the Knight",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "Guard Your opponent can't target other friendly creatures with actions.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "mK",
+    "unique": true,
+    "doubleCard": "Rayvat the Mage",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "grantImmunity",
+        "immunity": "ActionTarget",
+        "target": "creatureFriendlyOtherAll"
+      }
+    ],
+    "doubleSecondary": true
+  },
+  {
+    "id": "the-gatekeeper",
+    "name": "The Gatekeeper",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 6,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Guard Only one creature in this lane can attack each turn.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "qo",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "iomLaneAttackLimit",
+        "amount": 1
+      }
+    ],
+    "tier": "A"
+  },
+  {
+    "id": "wake-the-dead",
+    "name": "Wake the Dead",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "P"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "1Common",
+    "text": "Draw a Spirit or Skeleton creature of your choice from your deck and give it +0/+1.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "lq",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "iomDrawChosenSubtype",
+        "subtypes": [
+          "Spirit",
+          "Skeleton"
+        ],
+        "modHealth": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "E"
+  },
+  {
+    "id": "xavara-atronach",
+    "name": "Xavara Atronach",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra",
+      "Atronach"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "Summon: You may sacrifice another creature to give Xavara Atronach its power and health.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "si",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomAbsorbSacrifice",
+        "target": "creatureFriendlyOther"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "dawnfang",
+    "name": "Dawnfang",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 0,
+    "health": 3,
+    "rarity": "4Legendary",
+    "text": "+0/+3 At the end of your turn, if Dawnfang is in your hand, change it into Duskfang. Slay: You gain 5 health.",
+    "keywords": [
+      "Slay"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "ek",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "EndOfTurnInHand",
+        "type": "iomChangeInHand",
+        "cardId": "duskfang",
+        "target": "self"
+      },
+      {
+        "trigger": "Slay",
+        "type": "damage",
+        "amount": -5,
+        "target": "player",
+        "singleSlay": true
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "demented-grummite",
+    "name": "Demented Grummite",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 2,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "kf",
+    "doubleCard": "Manic Grummite",
+    "tier": "C"
+  },
+  {
+    "id": "doomfang-ally",
+    "name": "Doomfang Ally",
+    "type": "Creature",
+    "subtypes": [
+      "Reachman"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Summon: If the top card of your deck is... Strength: +2/+0 Intelligence: Ward Willpower: Drain Agility: Lethal Endurance: +0/+2",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "eF",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "condition": {
+          "type": "topDeckAttribute",
+          "attribute": "R"
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Ward"
+        ],
+        "condition": {
+          "type": "topDeckAttribute",
+          "attribute": "B"
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Drain"
+        ],
+        "condition": {
+          "type": "topDeckAttribute",
+          "attribute": "Y"
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "addKeywords": [
+          "Lethal"
+        ],
+        "condition": {
+          "type": "topDeckAttribute",
+          "attribute": "G"
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "buffSelf",
+        "modHealth": 2,
+        "condition": {
+          "type": "topDeckAttribute",
+          "attribute": "P"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "fork-of-horripilation",
+    "name": "Fork of Horripilation",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": -2,
+    "health": 0,
+    "rarity": "4Legendary",
+    "text": "-2/+0 Slay: Sacrifice Fork of Horripilation and draw three cards.",
+    "keywords": [
+      "Slay"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "gD",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "iomSacrificeThisItem",
+        "target": "self",
+        "singleSlay": true
+      },
+      {
+        "trigger": "Slay",
+        "type": "drawCards",
+        "amount": 3,
+        "target": "player",
+        "singleSlay": true
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "gates-of-madness",
+    "name": "Gates of Madness",
+    "type": "Support",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Summon: Transform your deck into random cards. When you draw a creature or item, give it +1/+1. When you draw an action or support, reduce its cost by 1.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "gS",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "iomTransformDeckRandom",
+        "target": "player"
+      },
+      {
+        "trigger": "DrawCard",
+        "type": "iomGatesDraw",
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "ghost-fanatic",
+    "name": "Ghost Fanatic",
+    "type": "Creature",
+    "subtypes": [
+      "Spirit"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "rarity": "2Rare",
+    "text": "Ghost Fanatic costs 1 less for each creature that died this turn.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "gY",
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "iomCostPerDeath",
+        "amount": -1
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "giant-chicken",
+    "name": "Giant Chicken",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Last Gasp: Fill this lane with 1/1 Confused Villagers.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": "hc",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "summon",
+        "amount": 4,
+        "target": "thisLane",
+        "cardId": "confused-villager"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "haskill",
+    "name": "Haskill",
+    "type": "Creature",
+    "subtypes": [
+      "Breton"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "rarity": "4Legendary",
+    "text": "At the end of your turn, Haskill chooses a cost. When you play a card with the chosen cost, draw a card. Then Haskill chooses a new cost.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "hR",
+    "unique": true,
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "iomHaskillChooseCost",
+        "target": "self"
+      },
+      {
+        "trigger": "PlayCard",
+        "type": "iomHaskillPlayCard",
+        "target": "self"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "manic-grummite",
+    "name": "Manic Grummite",
+    "type": "Creature",
+    "subtypes": [
+      "Grummite"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 3,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "kf",
+    "doubleCard": "Demented Grummite",
+    "doubleSecondary": true
+  },
+  {
+    "id": "ring-of-lordship",
+    "name": "Ring of Lordship",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 0,
+    "health": 2,
+    "rarity": "3Epic",
+    "text": "+0/+2 Your creatures with the same type as the wielder cost 1 less.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": "qb",
+    "effects": [
+      {
+        "trigger": "Passive",
+        "type": "iomLordshipDiscount",
+        "amount": 1
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "confused-villager",
+    "name": "Confused Villager",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "1Common",
+    "text": "",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": null,
+    "created": true
+  },
+  {
+    "id": "duskfang",
+    "name": "Duskfang",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": 3,
+    "health": 0,
+    "rarity": "4Legendary",
+    "text": "+3/+0 At the end of your turn, if Duskfang is in your hand, change it into Dawnfang. Pilfer: Draw a card.",
+    "keywords": [
+      "Pilfer"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": null,
+    "unique": true,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "EndOfTurnInHand",
+        "type": "iomChangeInHand",
+        "cardId": "dawnfang",
+        "target": "self"
+      },
+      {
+        "trigger": "Pilfer",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player"
+      }
+    ]
+  },
+  {
+    "id": "playing-card",
+    "name": "Playing Card",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Summon a random creature with cost 2.",
+    "keywords": [],
+    "set": "Isle of Madness",
+    "deckCodeId": null,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "summonRandomCost",
+        "cost": 2,
+        "target": "lane"
+      }
+    ]
+  },
+  {
+    "id": "unstoppable-berserker",
+    "name": "Unstoppable Berserker",
+    "type": "Creature",
+    "subtypes": [
+      "Nord"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "rarity": "2Rare",
+    "text": "Breakthrough At the end of your turn, Unstoppable Berserker gains +2/+2.",
+    "keywords": [
+      "Breakthrough"
+    ],
+    "set": "Isle of Madness",
+    "deckCodeId": null,
+    "created": true,
+    "effects": [
+      {
+        "trigger": "EndOfTurn",
+        "type": "buffSelf",
+        "modAttack": 2,
+        "modHealth": 2
+      }
+    ]
+  }
+]

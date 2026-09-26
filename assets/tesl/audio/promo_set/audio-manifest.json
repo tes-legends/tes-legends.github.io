@@ -1,0 +1,90 @@
+{
+  "files": [
+    "LG-audio-agronak_attack.ogg",
+    "LG-audio-agronak_enter_play.ogg",
+    "LG-audio-akkhuz_ri_attack.ogg",
+    "LG-audio-akkhuz_ri_enter_play.ogg",
+    "LG-audio-apprentice_necromancer_enter_play.ogg",
+    "LG-audio-battlefield_scrounger_attack.ogg",
+    "LG-audio-battlefield_scrounger_enter_play.ogg",
+    "LG-audio-cheesemancer_attack.ogg",
+    "LG-audio-cheesemancer_enter_play.ogg",
+    "LG-audio-dragonfire_wizard_attack.ogg",
+    "LG-audio-dragonfire_wizard_enter_play.ogg",
+    "LG-audio-dunmer_merchant_attack.ogg",
+    "LG-audio-dunmer_merchant_enter_play.ogg",
+    "LG-audio-indoril_mage_attack_01.ogg",
+    "LG-audio-indoril_mage_attack_02.ogg",
+    "LG-audio-indoril_mage_attack_03.ogg",
+    "LG-audio-indoril_mage_enter_play_01.ogg",
+    "LG-audio-indoril_mage_enter_play_02.ogg",
+    "LG-audio-indoril_mage_exalt.ogg",
+    "LG-audio-j'skar_attack.ogg",
+    "LG-audio-j'skar_enter_play.ogg",
+    "LG-audio-priestess_of_mara_attack.ogg",
+    "LG-audio-priestess_of_mara_enter_play.ogg",
+    "LG-audio-redguard_nightblade_attack.ogg",
+    "LG-audio-redguard_nightblade_enter_play.ogg",
+    "LG-audio-seasoned_captain_attack.ogg",
+    "LG-audio-seasoned_captain_enter_play.ogg",
+    "LG-audio-telvanni_spellwright_attack.ogg",
+    "LG-audio-telvanni_spellwright_enter_play.ogg"
+  ],
+  "cardToFiles": {
+    "yokudan-nightblade": [
+      "LG-audio-redguard_nightblade_attack.ogg",
+      "LG-audio-redguard_nightblade_enter_play.ogg"
+    ],
+    "dark-mane": [
+      "LG-audio-akkhuz_ri_attack.ogg",
+      "LG-audio-akkhuz_ri_enter_play.ogg"
+    ],
+    "dragonfire-wizard": [
+      "LG-audio-dragonfire_wizard_attack.ogg",
+      "LG-audio-dragonfire_wizard_enter_play.ogg"
+    ],
+    "priest-of-mara": [
+      "LG-audio-priestess_of_mara_attack.ogg",
+      "LG-audio-priestess_of_mara_enter_play.ogg"
+    ],
+    "rimmen-purveyor": [
+      "LG-audio-dunmer_merchant_attack.ogg",
+      "LG-audio-dunmer_merchant_enter_play.ogg"
+    ],
+    "champion-of-the-arena": [
+      "LG-audio-agronak_attack.ogg",
+      "LG-audio-agronak_enter_play.ogg"
+    ],
+    "prankster-mage": [
+      "LG-audio-j'skar_attack.ogg",
+      "LG-audio-j'skar_enter_play.ogg"
+    ],
+    "sentinel-reclaimer": [
+      "LG-audio-battlefield_scrounger_attack.ogg",
+      "LG-audio-battlefield_scrounger_enter_play.ogg"
+    ],
+    "apprentice-necromancer": [
+      "LG-audio-apprentice_necromancer_enter_play.ogg"
+    ],
+    "seasoned-captain": [
+      "LG-audio-seasoned_captain_attack.ogg",
+      "LG-audio-seasoned_captain_enter_play.ogg"
+    ],
+    "renegade-magister": [
+      "LG-audio-telvanni_spellwright_attack.ogg",
+      "LG-audio-telvanni_spellwright_enter_play.ogg"
+    ],
+    "prophet-of-bones": [
+      "LG-audio-indoril_mage_attack_01.ogg",
+      "LG-audio-indoril_mage_attack_02.ogg",
+      "LG-audio-indoril_mage_attack_03.ogg",
+      "LG-audio-indoril_mage_enter_play_01.ogg",
+      "LG-audio-indoril_mage_enter_play_02.ogg",
+      "LG-audio-indoril_mage_exalt.ogg"
+    ],
+    "cheesemancer": [
+      "LG-audio-cheesemancer_attack.ogg",
+      "LG-audio-cheesemancer_enter_play.ogg"
+    ]
+  }
+}

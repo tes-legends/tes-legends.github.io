@@ -1,0 +1,345 @@
+[
+  {
+    "id": "apex-wolf",
+    "name": "Apex Wolf",
+    "type": "Creature",
+    "subtypes": [
+      "Wolf"
+    ],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 6,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Breakthrough, Drain Last Gasp: Draw the top creature of your deck and give it Breakthrough and Drain.",
+    "keywords": [
+      "Breakthrough",
+      "Drain",
+      "LastGasp"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "aF",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "collectionsDrawTopCreature",
+        "addKeywords": [
+          "Breakthrough",
+          "Drain"
+        ],
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "death-hound",
+    "name": "Death Hound",
+    "type": "Creature",
+    "subtypes": [
+      "Beast",
+      "Vampire"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 5,
+    "attack": 6,
+    "health": 6,
+    "rarity": "3Epic",
+    "text": "Guard Death Hound's power is equal to its health.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "en",
+    "effects": [],
+    "tier": "C",
+    "static": {
+      "condition": {
+        "type": "collectionsPowerEqualsHealth"
+      }
+    }
+  },
+  {
+    "id": "destruction-tutor",
+    "name": "Destruction Tutor",
+    "type": "Creature",
+    "subtypes": [
+      "High Elf"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 5,
+    "attack": 3,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Your actions that deal damage cost 2 less.",
+    "keywords": [],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "ev",
+    "effects": [
+      {
+        "trigger": "Aura",
+        "type": "modCost",
+        "amount": -2,
+        "target": "playerHand",
+        "targetCondition": {
+          "type": "collectionsDamageAction"
+        }
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "green-pact-ambusher",
+    "name": "Green Pact Ambusher",
+    "type": "Creature",
+    "subtypes": [
+      "Wood Elf"
+    ],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 4,
+    "health": 1,
+    "rarity": "3Epic",
+    "text": "Prophecy, Guard At the end of your opponent's turn, if they have a full lane and Green Pact Ambusher is in your hand, summon her to that lane.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "hy",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "EndOfOpponentTurnInHand",
+        "type": "collectionsAmbushFullLane"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "harmony",
+    "name": "Harmony",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "Y"
+    ],
+    "cost": 2,
+    "attack": null,
+    "health": null,
+    "rarity": "2Rare",
+    "text": "Prophecy Give all enemy creatures -2/-0 until the start of your turn.",
+    "keywords": [],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "hQ",
+    "prophecy": true,
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsPowerDebuffUntilYourTurn",
+        "amount": 2,
+        "target": "creatureEnemyAll"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "karthspire-scout",
+    "name": "Karthspire Scout",
+    "type": "Creature",
+    "subtypes": [
+      "Orc"
+    ],
+    "attributes": [
+      "P"
+    ],
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "rarity": "2Rare",
+    "text": "Last Gasp: Draw a card and increase its cost by 1.",
+    "keywords": [
+      "LastGasp"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "jk",
+    "effects": [
+      {
+        "trigger": "LastGasp",
+        "type": "drawAndReduceCost",
+        "amount": 1,
+        "modCost": 1,
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "piercing-twilight",
+    "name": "Piercing Twilight",
+    "type": "Creature",
+    "subtypes": [
+      "Daedra"
+    ],
+    "attributes": [
+      "B"
+    ],
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "rarity": "3Epic",
+    "text": "Guard Summon: Choose a card in your opponent's discard pile. Banish all cards from your opponent's discard pile and deck with the same name as the chosen card.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "mc",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsBanishChosenName"
+      }
+    ],
+    "tier": "C"
+  },
+  {
+    "id": "shadowmarking",
+    "name": "Shadowmarking",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "G"
+    ],
+    "cost": 3,
+    "attack": null,
+    "health": null,
+    "rarity": "3Epic",
+    "text": "Look at the top three cards of your deck. Choose one to put into your opponent's hand and draw the other two.",
+    "keywords": [],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "nP",
+    "effects": [
+      {
+        "trigger": "Play",
+        "type": "collectionsShadowmarking",
+        "amount": 3,
+        "target": "player"
+      }
+    ],
+    "tier": "D"
+  },
+  {
+    "id": "sword-of-the-inferno",
+    "name": "Sword of the Inferno",
+    "type": "Item",
+    "subtypes": [],
+    "attributes": [
+      "R"
+    ],
+    "cost": 2,
+    "attack": 2,
+    "health": 0,
+    "rarity": "2Rare",
+    "text": "+2/+0 Summon: The wielder deals 2 damage to itself and another creature.",
+    "keywords": [],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "qa",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "collectionsWielderDamageTarget",
+        "amount": 2,
+        "target": "collectionsOtherCreatureAi"
+      },
+      {
+        "trigger": "Summon",
+        "type": "collectionsWielderDamageSelf",
+        "amount": 2,
+        "condition": {
+          "type": "collectionsNoOtherCreature"
+        }
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "torval-extortionist",
+    "name": "Torval Extortionist",
+    "type": "Creature",
+    "subtypes": [
+      "Khajiit"
+    ],
+    "attributes": [
+      "G"
+    ],
+    "cost": 5,
+    "attack": 7,
+    "health": 5,
+    "rarity": "2Rare",
+    "text": "Slay: Gain magicka this turn equal to the slain creature's cost.",
+    "keywords": [
+      "Slay"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "qH",
+    "effects": [
+      {
+        "trigger": "Slay",
+        "type": "collectionsGainMagickaSlainCost",
+        "target": "player"
+      }
+    ],
+    "tier": "B"
+  },
+  {
+    "id": "wilds-incarnate",
+    "name": "Wilds Incarnate",
+    "type": "Creature",
+    "subtypes": [
+      "Beast"
+    ],
+    "attributes": [
+      "N"
+    ],
+    "cost": 7,
+    "attack": 5,
+    "health": 6,
+    "rarity": "4Legendary",
+    "text": "Guard Summon: Draw a card if you have 4 runes. Draw an additional card if you have 5 runes.",
+    "keywords": [
+      "Guard"
+    ],
+    "set": "FrostSpark Collection",
+    "deckCodeId": "rP",
+    "effects": [
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "collectionsRuneCount",
+          "min": 4
+        }
+      },
+      {
+        "trigger": "Summon",
+        "type": "drawCards",
+        "amount": 1,
+        "target": "player",
+        "condition": {
+          "type": "collectionsRuneCount",
+          "min": 5
+        }
+      }
+    ],
+    "tier": "B"
+  }
+]

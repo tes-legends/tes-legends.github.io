@@ -1,0 +1,30 @@
+{
+  "files": [
+    "LG-audio-destruction_tutor_attack.ogg",
+    "LG-audio-destruction_tutor_enter_play.ogg",
+    "LG-audio-green_pact_ambusher_attack.ogg",
+    "LG-audio-green_pact_ambusher_enter_play.ogg",
+    "LG-audio-karthspire_scout_attack.ogg",
+    "LG-audio-karthspire_scout_enter_play.ogg",
+    "LG-audio-pahmar-raht_renegade_trigger_01.ogg",
+    "LG-audio-pahmar-raht_renegade_trigger_03.ogg"
+  ],
+  "cardToFiles": {
+    "destruction-tutor": [
+      "LG-audio-destruction_tutor_attack.ogg",
+      "LG-audio-destruction_tutor_enter_play.ogg"
+    ],
+    "green-pact-ambusher": [
+      "LG-audio-green_pact_ambusher_attack.ogg",
+      "LG-audio-green_pact_ambusher_enter_play.ogg"
+    ],
+    "karthspire-scout": [
+      "LG-audio-karthspire_scout_attack.ogg",
+      "LG-audio-karthspire_scout_enter_play.ogg"
+    ],
+    "torval-extortionist": [
+      "LG-audio-pahmar-raht_renegade_trigger_01.ogg",
+      "LG-audio-pahmar-raht_renegade_trigger_03.ogg"
+    ]
+  }
+}

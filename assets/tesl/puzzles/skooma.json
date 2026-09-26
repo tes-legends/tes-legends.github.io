@@ -1,0 +1,988 @@
+{
+ "id": "skooma",
+ "name": "Skooma Cat's Playthings",
+ "opponent": "Skooma Cat",
+ "intro": "Presenting the past to keep from repeating the present in the future. Keep up, plaything.",
+ "puzzles": [
+  {
+   "id": "prey",
+   "name": "Prey",
+   "opponentName": "Dyus",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Hunter seeking prey.",
+   "flavor": "This is a story about my favorite topic: the power of knowledge.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 18,
+    "hand": [
+     "preying-elytra",
+     "morkul-gatekeeper",
+     "duel-atop-the-world",
+     "fighters-guild-steward"
+    ],
+    "board": [
+     [
+      "arcanaeum-librarian"
+     ],
+     []
+    ],
+    "deck": [
+     "imperial-grunt*4"
+    ]
+   },
+   "opponent": {
+    "health": 4,
+    "board": [
+     [
+      "deadly-draugr",
+      "portcullis"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Preying Elytra and select Portcullis.",
+    "Play Morkul Gatekeeper and select Portcullis.",
+    "Play Duel Atop the World on Preying Elytra.",
+    "Play Fighters Guild Steward, select Preying Elytra, then select Portcullis.",
+    "Attack your opponent with Arcanaeum Librarian."
+   ],
+   "notes": "UESP does not list the deck; the solution needs four draws (Arcanaeum Librarian 0 -> 4 power), so the deck holds four filler cards."
+  },
+  {
+   "id": "shambles",
+   "name": "Shambles",
+   "opponentName": "Dyus",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Study an abomination.",
+   "flavor": "Sheogorath has brought many abominations to this land. This story involves one of the most misbegotten of all.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 11,
+    "hand": [
+     "shrieking-harpy",
+     "quicksilver-crossbow",
+     "dres-tormentor",
+     "icy-shambles",
+     "lightning-bolt"
+    ],
+    "board": [
+     [
+      "stoutheart-giant"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 6,
+    "board": [
+     [
+      "revered-guardian",
+      "blacksap-protector",
+      "summerset-shieldmage"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Dres Tormentor.",
+    "Play Icy Shambles and select Revered Guardian.",
+    "Play Quicksilver Crossbow on Icy Shambles, selecting Blacksap Protector.",
+    "Attack your opponent with Stoutheart Giant."
+   ]
+  },
+  {
+   "id": "shining",
+   "name": "Shining",
+   "opponentName": "Dyus",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Behold a Saint.",
+   "flavor": "Sheogorath's saints have many talents.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 18,
+    "hand": [
+     "shining-saint",
+     "spiteful-dremora",
+     "close-call",
+     "mecinars-will",
+     "lightning-bolt"
+    ],
+    "board": [
+     [],
+     [
+      "cheydinhal-sapper"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 5,
+    "board": [
+     [],
+     [
+      "revered-guardian",
+      "stampede-sentinel",
+      "fighters-guild-recruit"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Shining Saint and select Stampede Sentinel.",
+    "Play Close Call on Shining Saint.",
+    "Play Shining Saint and select Revered Guardian.",
+    "Play Spiteful Dremora and select Revered Guardian.",
+    "Play Mecinar's Will on Fighters Guild Recruit.",
+    "Attack Stampede Sentinel with Fighters Guild Recruit.",
+    "Attack your opponent with Cheydinhal Sapper.",
+    "Play Lightning Bolt on your opponent."
+   ]
+  },
+  {
+   "id": "driven",
+   "name": "Driven",
+   "opponentName": "Dyus",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Witness the power of madness.",
+   "flavor": "Strange things happen to minds in these isles. Take this as a cautionary tale.",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 26,
+    "hand": [
+     "improvised-weapon",
+     "daedric-dagger",
+     "squish-the-wimpy",
+     "soul-tear-level-1",
+     "drive-mad",
+     "world-eaters-eyrie"
+    ],
+    "board": [
+     [
+      "night-talon-lord"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 22,
+    "board": [
+     [
+      "hive-defender",
+      "candlehearth-brawler",
+      "swiftwing-dragon"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Improvised Weapon on Night Talon Lord.",
+    "Attack Candlehearth Brawler with Night Talon Lord.",
+    "Play Daedric Dagger on Candlehearth Brawler.",
+    "Attack Hive Defender with Candlehearth Brawler.",
+    "Play World-Eater's Eyrie.",
+    "Play Squish the Wimpy on Night Talon Lord, targeting Swiftwing Dragon.",
+    "Attack your opponent with Swiftwing Dragon.",
+    "Play Drive Mad on Swiftwing Dragon.",
+    "Play Soul Tear.",
+    "Play Swiftwing Dragon and attack your opponent with it."
+   ]
+  },
+  {
+   "id": "order",
+   "name": "Order",
+   "opponentName": "Dyus",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Establish order.",
+   "flavor": "Ah. This tale takes me back to the old days, when my master Jyggalag roamed this land.",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 38,
+    "hand": [
+     "redoran-battlespear*2",
+     "grappling-hook",
+     "orcish-warhammer",
+     "dragon-priest-mask*2",
+     "squish-the-wimpy",
+     "master-of-arms",
+     "knight-of-order"
+    ],
+    "board": [
+     [
+      "mudcrab-anklesnapper"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 24,
+    "board": [
+     [
+      "iron-atronach*3"
+     ],
+     [
+      "evermore-steward*2"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Grappling Hook on Mudcrab Anklesnapper, selecting one Evermore Steward.",
+    "Play Knight of Order in the Field Lane.",
+    "Play one Dragon Priest Mask, Orcish Warhammer, and both Redoran Battlespear on Mudcrab Anklesnapper.",
+    "Attack your opponent with Mudcrab Anklesnapper.",
+    "Play Dragon Priest Mask on Knight of Order.",
+    "Play Master of Arms.",
+    "Play Squish the Wimpy on Master of Arms, selecting the silenced Evermore Steward in the Field Lane."
+   ]
+  },
+  {
+   "id": "the-bigger-they-are",
+   "name": "The Bigger They Are",
+   "opponentName": "Haskill",
+   "opponentCard": "haskill",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Facing a horde of giants.",
+   "flavor": "Do be careful, sir. Quite a few people have been squished by falling giants.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 7,
+    "hand": [
+     "sharpshooter-scout",
+     "tiny-dragon",
+     "skaven-pyromancer",
+     "summerset-shieldmage"
+    ],
+    "board": [
+     [
+      "niben-bay-cutthroat*3"
+     ],
+     [
+      "niben-bay-cutthroat*2"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 15,
+    "board": [
+     [
+      "nervous-giant*3"
+     ],
+     [
+      "nervous-giant*2"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Tiny Dragon in the Field Lane.",
+    "Play Summerset Shieldmage in the Shadow Lane.",
+    "Play Skaven Pyromancer in the Shadow Lane.",
+    "Attack your opponent with all five Niben Bay Cutthroats."
+   ]
+  },
+  {
+   "id": "weakness",
+   "name": "Weakness",
+   "opponentName": "Haskill",
+   "opponentCard": "haskill",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "The weak will not survive.",
+   "flavor": "These isles are no place for the weak. Honestly they're barely a place for anyone.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 6,
+    "hand": [
+     "grappling-hook",
+     "weakness"
+    ],
+    "board": [
+     [
+      "alikr-survivalist",
+      "imperial-grunt"
+     ],
+     [
+      "rihad-horseman"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 11,
+    "board": [
+     [
+      "awakened-imperfect"
+     ],
+     [
+      "awakened-imperfect"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Grappling Hook on Rihad Horseman, selecting Awakened Imperfect.",
+    "Play Weakness on an Awakened Imperfect.",
+    "Attack the weakened Awakened Imperfect with Rihad Horseman.",
+    "Attack your opponent with your remaining creatures."
+   ]
+  },
+  {
+   "id": "darkest-hour",
+   "name": "Darkest Hour",
+   "opponentName": "Haskill",
+   "opponentCard": "haskill",
+   "goal": "survive",
+   "text": "Survive for one turn to win.",
+   "description": "Avoid a grisly fate.",
+   "flavor": "Next, you are to die for my master's amusement. Unless you'd rather not.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 10,
+    "hand": [
+     "bone-bow",
+     "dark-seducer",
+     "evermore-steward*2"
+    ],
+    "board": [
+     [
+      "target"
+     ],
+     [
+      "target"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 30,
+    "board": [
+     [
+      "young-mammoth*4"
+     ],
+     [
+      "reclusive-giant"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Dark Seducer in the Field Lane.",
+    "Play Bone Bow on the Target in the Field Lane, selecting Reclusive Giant to Silence.",
+    "Attack a Young Mammoth with the Target.",
+    "End Turn."
+   ]
+  },
+  {
+   "id": "spite",
+   "name": "Spite",
+   "opponentName": "Haskill",
+   "opponentCard": "haskill",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Unleash your hatred.",
+   "flavor": "Your murderous abilities and bottomless spite never fail to amuse me, sir.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 2,
+    "hand": [
+     "squish-the-wimpy"
+    ],
+    "board": [
+     [
+      "naryu-virian",
+      "seething-flesh-golem"
+     ],
+     [
+      "dwarven-ballista"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 11,
+    "board": [
+     [
+      "awakened-imperfect",
+      "blacksap-protector*2",
+      "target"
+     ],
+     [
+      "target"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Squish the Wimpy on Seething Flesh Golem, targeting the Target in the Shadow Lane.",
+    "Attack any of the opponents creatures with Seething Flesh Golem.",
+    "Attack your opponent with your remaining creatures."
+   ]
+  },
+  {
+   "id": "seeking-trouble",
+   "name": "Seeking Trouble",
+   "opponentName": "Haskill",
+   "opponentCard": "haskill",
+   "goal": "win",
+   "text": "Your deck is empty. Win this turn.",
+   "description": "Push through the pain.",
+   "flavor": "Good news, sir! Your next task is going to be extremely painful. Well, it's good news for me, anyway.",
+   "difficulty": "Expert",
+   "rules": {
+    "emptyDeckPenalty": true
+   },
+   "player": {
+    "health": 16,
+    "magicka": 27,
+    "runes": 3,
+    "hand": [
+     "tavyar-the-knight",
+     "rayvat-the-mage",
+     "cast-out",
+     "close-call",
+     "east-empire-crafter",
+     "trouble-seeker",
+     "fire-storm"
+    ],
+    "board": [
+     [
+      "therana"
+     ],
+     [
+      "afflicted-alit",
+      "bog-lurcher"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 17,
+    "board": [
+     [
+      "auroran-sentry"
+     ],
+     [
+      "fortress-watchman*4"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Cast Out on Auroran Sentry.",
+    "Play East Empire Crafter.",
+    "Play Trouble Seeker, targeting a Fortress Watchman.",
+    "Play the Prophecy Cast Out on Trouble Seeker.",
+    "Play Trouble Seeker, targeting a Fortress Watchman.",
+    "Play the Prophecy Cast Out on Trouble Seeker.",
+    "Play Trouble Seeker, targeting a Fortress Watchman.",
+    "Play the Prophecy Cast Out on the last Fortress Watchman.",
+    "Attack your opponent with all creatures.",
+    "Play Rayvat the Mage.",
+    "Play Close Call on Afflicted Alit.",
+    "Play Afflicted Alit."
+   ],
+   "notes": "The player keeps the runes at 15, 10 and 5 health (16 health): the solution draws a Prophecy Cast Out (shuffled in by Therana) from each rune Trouble Seeker breaks."
+  },
+  {
+   "id": "keep-the-gate",
+   "name": "Keep the Gate",
+   "opponentName": "Sheogorath",
+   "goal": "survive",
+   "text": "Survive for one turn to win.",
+   "description": "Close the gate on their attack.",
+   "flavor": "Have ye met me Gatekeeper? He's a lovely fellow. Never met a head he wouldn't smash.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 7,
+    "hand": [
+     "dune-smuggler",
+     "elixir-of-conflict",
+     "fell-the-mighty",
+     "move-in-shadows"
+    ],
+    "board": [
+     [
+      "the-gatekeeper",
+      "deadly-draugr"
+     ],
+     [
+      "deadly-draugr"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 100,
+    "board": [
+     [
+      "vigilant-giant*2",
+      "iron-atronach*2"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Dune Smuggler in the Shadow Lane, targeting the Deadly Draugr.",
+    "Play Move in Shadows on The Gatekeeper.",
+    "Attack the two Iron Atronachs using the two Deadly Draugr.",
+    "There are two options: play Elixir of Conflict, then use it on The Gatekeeper; or play Fell the Mighty on a Vigilant Giant.",
+    "End turn."
+   ]
+  },
+  {
+   "id": "bawk-bawk-bawk",
+   "name": "Bawk Bawk Bawk",
+   "opponentName": "Sheogorath",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Unleash fearsome beasts.",
+   "flavor": "What's the only thing funnier than a chicken? Even bigger chickens!",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 17,
+    "hand": [
+     "ring-of-namira",
+     "blessing-of-the-grove*2",
+     "felldew",
+     "elytra-noble"
+    ],
+    "board": [
+     [
+      "golden-initiate",
+      "giant-chicken"
+     ],
+     [
+      "golden-initiate",
+      "giant-chicken"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 41,
+    "board": [
+     [
+      "hive-defender"
+     ],
+     [
+      "pointy-wall-of-spikes"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Ring of Namira.",
+    "Play Felldew on the Hive Defender.",
+    "Attack Hive Defender with Giant Chicken.",
+    "Attack Pointy Wall of Spikes with Giant Chicken.",
+    "Play both Blessing of the Grove.",
+    "Attack Hive Defender with one Golden Initiate, and your opponent with the other."
+   ]
+  },
+  {
+   "id": "torture-fun",
+   "name": "Torture Fun",
+   "opponentName": "Sheogorath",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Torture for Sheogorath's amusement.",
+   "flavor": "Time for me favorite pastime: torturing people for fun! Don't worry, they like it.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 3,
+    "hand": [
+     "swindlers-market",
+     "curse*3",
+     "blood-sacrament",
+     "soul-split*2",
+     "drain-blood"
+    ],
+    "board": [
+     [
+      "eager-torturer*2",
+      "moon-sugar-smuggler"
+     ],
+     [
+      "moon-sugar-smuggler*3"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 27,
+    "board": [
+     [
+      "colovian-trooper*2",
+      "bedeviling-scamp"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Attack your opponent with all three Moon Sugar Smuggler in the Shadow Lane.",
+    "Attack a Colovian Trooper with the Moon Sugar Smuggler in the Field Lane.",
+    "Play Drain Blood on the Bedeviling Scamp, Betray a Moon Sugar Smuggler, and target the Bedeviling Scamp again.",
+    "Play the two Soul Split on the two Moon Sugar Smuggler.",
+    "Play the three Curse on the two Colovian Trooper.",
+    "Play Blood Sacrament, and Betray a Sundered Shade.",
+    "Attack your opponent with your remaining creatures."
+   ]
+  },
+  {
+   "id": "manic",
+   "name": "Manic",
+   "opponentName": "Sheogorath",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Mania is a legitimate strategy.",
+   "flavor": "All I've ever wanted is to see ye unlock yer true potential. And cheese, obviously. And to bathe in the tears of crying ducks. And a raise, because I've earned it!",
+   "difficulty": "Expert",
+   "player": {
+    "health": 3,
+    "magicka": 17,
+    "hand": [
+     "redoran-forerunner",
+     "mentors-ring",
+     "wisdom-of-ancients",
+     "lady-syls-cruelty",
+     "royal-sage",
+     "daedric-dagger",
+     "manic-jack",
+     "manic-mutation",
+     "mentor-of-the-watch"
+    ],
+    "support": [
+     "elixir-of-conflict*2"
+    ]
+   },
+   "opponent": {
+    "health": 18,
+    "board": [
+     [
+      "fighters-guild-recruit"
+     ],
+     [
+      "fighters-guild-recruit"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Mentor of the Watch, and select Manic Jack.",
+    "Play Manic Jack and Redoran Forerunner in the same lane as Mentor of the Watch.",
+    "Play Daedric Dagger on Redoran Forerunner.",
+    "Play Mentor's Ring on Redoran Forerunner.",
+    "Attack Fighters Guild Recruit with Mentor of the Watch.",
+    "Use both Elixir of Conflict on Redoran Forerunner.",
+    "Attack your opponent with Redoran Forerunner.",
+    "Play Lady Syl's Cruelty on Redoran Forerunner.",
+    "Play Royal Sage and Wisdom of Ancients.",
+    "Play Manic Mutation on Manic Jack.",
+    "Attack with Manic Jack."
+   ]
+  },
+  {
+   "id": "a-bards-tale",
+   "name": "A Bard's Tale",
+   "opponentName": "Sheogorath",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Play for all the greats.",
+   "flavor": "They say all artists have to be a wee bit crazy. But why settle for a wee bit, eh?",
+   "difficulty": "Expert",
+   "player": {
+    "health": 11,
+    "magicka": 13,
+    "hand": [
+     "firebolt",
+     "lady-syls-cruelty*3",
+     "brilliant-experiment",
+     "abnur-tharn",
+     "odirniran-necromancer"
+    ],
+    "board": [
+     [
+      "crazed-hunger*2",
+      "golden-saint",
+      "luzrah-gro-shar"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 20
+   },
+   "solution": [
+    "Attack your opponent with the Golden Saint and both Crazed Hungers.",
+    "Play Odirniran Necromancer in the Field Lane, sacrificing a Crazed Hunger.",
+    "Attack with the Crazed Hunger.",
+    "Play Firebolt on the Crazed Hunger in the Shadow Lane.",
+    "Play Lady Syl's Cruelty on the Golden Saint.",
+    "Play Abnur Tharn in the Shadow Lane. Select Odirniran Necromancer with Abnur Tharn's ability, then select Golden Saint from the Discard pile.",
+    "Play Lady Syl's Cruelty on the Golden Saint in the Field Lane.",
+    "Play Brilliant Experiment on Abnur Tharn.",
+    "Play Lady Syl's Cruelty on Abnur Tharn.",
+    "Play Abnur Tharn in the Shadow Lane. Select Odirniran Necromancer with Abnur Tharn's ability, then select Abnur Tharn from the Discard pile; select Odirniran Necromancer with Abnur Tharn's ability, then select Golden Saint from the Discard pile.",
+    "Attack with Luzrah gro-Shar."
+   ]
+  },
+  {
+   "id": "expert-opinion",
+   "name": "Expert Opinion",
+   "opponentName": "Covenant Rogue",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Demonstrate the expertise of the Guildsworn.",
+   "flavor": "The Daggerfall Covenant wants us to test the mettle of their troops. I'm sure they have a weakness in their formation.",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 11,
+    "hand": [
+     "elixir-of-conflict",
+     "fighters-guild-berserker",
+     "guildsworn-oathman",
+     "mecinars-will"
+    ],
+    "board": [
+     [
+      "guildsworn-bloodluster",
+      "renowned-instructor"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 8,
+    "board": [
+     [
+      "vigilant-giant",
+      "clockwork-city-pilgrim",
+      "pointy-wall-of-spikes",
+      "doomcrag-vampire"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Elixir of Conflict, and use it on Pointy Wall of Spikes.",
+    "Attack Pointy Wall of Spikes with Renowned Instructor.",
+    "Play Guildsworn Oathman and Fighters Guild Berserker.",
+    "Play Improvised Weapon on Guildsworn Bloodluster.",
+    "End turn, then target Pointy Wall of Spikes with Guildsworn Bloodluster's ability."
+   ]
+  },
+  {
+   "id": "mobilized-for-war",
+   "name": "Mobilized for War",
+   "opponentName": "Empire Toady",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Mobilize a defense for the Daggerfall Covenant.",
+   "flavor": "Empire troops on the horizon! We don't have much to work with; can you find a way to take them out?",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 16,
+    "hand": [
+     "improvised-weapon*2",
+     "salvage",
+     "sparksmith",
+     "telekinesis",
+     "staff-of-ice"
+    ],
+    "board": [
+     [
+      "emerics-warlord",
+      "recruit"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 18,
+    "board": [
+     [
+      "colovian-trooper"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Sparksmith in the Field Lane.",
+    "Play both Improvised Weapons on Recruit.",
+    "Attack the Colovian Trooper with Recruit.",
+    "Play Staff of Ice in the Shadow Lane, selecting the Recruit in the Field Lane as the target.",
+    "Play Salvage, selecting Improvised Weapon.",
+    "Play both Improvised Weapons on Recruit.",
+    "Play Telekinesis on Emeric's Warlord.",
+    "Attack your opponent with Emeric's Warlord."
+   ]
+  },
+  {
+   "id": "powering-up",
+   "name": "Powering Up",
+   "opponentName": "Pact Outrider",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Empower the spells of the Aldmeri Dominion.",
+   "flavor": "These Ebonheart Pact fools dare face our destructive magic? Obliterate them!",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 8,
+    "hand": [
+     "forked-bolt",
+     "firebolt",
+     "channeled-storm",
+     "fire-storm",
+     "fingers-of-the-mountain"
+    ],
+    "board": [
+     [
+      "ancano",
+      "dominion-battlereeve"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 26,
+    "board": [
+     [
+      "risen-dead",
+      "colovian-trooper",
+      "blacksap-protector",
+      "trouble-seeker"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Attack Blacksap Protector with Dominion Battlereeve.",
+    "Play Forked Bolt and Firebolt on Trouble Seeker.",
+    "Play Fingers of the Mountain on Trouble Seeker; play the second stage on Risen Dead and the third stage on Colovian Trooper.",
+    "Attack opponent with Ancano.",
+    "Play Channeled Storm on Trouble Seeker."
+   ]
+  },
+  {
+   "id": "empresss-new-recruits",
+   "name": "Empress's New Recruits",
+   "opponentName": "Dominion Lieutenant",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Display the might of the Empire of Cyrodiil.",
+   "flavor": "This town claims allegiance to the Aldmeri Dominion. Convince them of the error of their ways.",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 20,
+    "hand": [
+     "bewildering-speed",
+     "a-night-to-remember",
+     "bruma-profiteer*2",
+     "blades-flanker",
+     "defense-of-bruma",
+     "euraxia-tharn"
+    ],
+    "board": [
+     [
+      "clivia-tharn",
+      "recruit"
+     ],
+     [
+      "recruit"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 29,
+    "board": [
+     [],
+     [
+      {
+       "id": "manic-jack",
+       "addKeywords": [
+        "Charge"
+       ]
+      }
+     ]
+    ],
+    "support": [
+     "ring-of-namira"
+    ]
+   },
+   "solution": [
+    "Play Euraxia Tharn in the Field Lane, selecting Ring of Namira.",
+    "Play both Bruma Profiteers in the Shadow Lane.",
+    "Play A Night to Remember on Euraxia Tharn, then select Manic Jack with her Summon ability.",
+    "Play Bewildering Speed on Manic Jack, then select the Recruit in the Shadow Lane.",
+    "Play Defense of Bruma.",
+    "Attack your opponent with Manic Jack.",
+    "Play Blades Flanker in the Shadow Lane, sacrificing Euraxia Tharn. Select any creature in the Field Lane.",
+    "Attack your opponent with all remaining creatures.",
+    "End turn."
+   ],
+   "notes": "The opponent's Manic Jack \"with Charge\" was given that Charge, so it starts 4/4 (Manic Jack gains +1/+1 per keyword gained); with it the documented line is exactly lethal."
+  },
+  {
+   "id": "battle-hardened",
+   "name": "Battle Hardened",
+   "opponentName": "Guildsworn Flagbearer",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Let the veterans of the Ebonheart Pact lead you to victory.",
+   "flavor": "Come. Help our veteran troops teach the Guildsworn a thing or two about resourcefulness.",
+   "difficulty": "Expert",
+   "player": {
+    "health": 1,
+    "magicka": 17,
+    "hand": [
+     "rapid-shot",
+     "squish-the-wimpy",
+     "berserker-of-the-pale",
+     "forerunner-of-the-pact",
+     "galyn-the-shelterer",
+     "steel-eyed-visionary",
+     "mournhold-taskmaster",
+     "jorunns-vanguard",
+     "black-marsh-centurion",
+     "invoker-of-the-hist"
+    ]
+   },
+   "opponent": {
+    "health": 26,
+    "board": [
+     [
+      "hive-defender",
+      "theranas-lawman",
+      "vigilant-giant"
+     ],
+     [
+      "hive-defender",
+      "theranas-lawman",
+      "vigilant-giant"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Galyn the Shelterer in the Shadow Lane, selecting Black Marsh Centurion.",
+    "Play Mournhold Taskmaster and Berserker of the Pale in the Shadow Lane.",
+    "Play Invoker of the Hist in the Field Lane and attack the Hive Defender.",
+    "Play Jorunn's Vanguard in the Shadow Lane and attack the Hive Defender.",
+    "Play Rapid Shot on the Hive Defender in the Shadow Lane.",
+    "Play the powered up Black Marsh Centurion in the Field Lane.",
+    "Play Steel-Eyed Visionary in the Field Lane and attack the Hive Defender.",
+    "Attack the Hive Defender with Black Marsh Centurion.",
+    "Play Squish the Wimpy on Black Marsh Centurion, selecting the Hive Defender in the Shadow Lane."
+   ]
+  }
+ ],
+ "rewardsAt": [
+  10,
+  20
+ ]
+}

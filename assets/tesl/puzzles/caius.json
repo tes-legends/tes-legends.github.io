@@ -1,0 +1,449 @@
+{
+  "id": "caius",
+  "name": "Caius' Training",
+  "opponent": "Caius Cosades",
+  "opponentCard": "caius-cosades",
+  "intro": "Ah, if it isn't our newest agent. Welcome to Morrowind. I'm Caius Cosades, the Imperial spymaster. I've got a series of lessons that'll get you up to speed on the local political landscape. Let's get started!",
+  "outro": "Great work, recruit. The Empire is lucky to have an agent like you.",
+  "puzzles": [
+    {
+      "id": "redoran-initiation",
+      "name": "Redoran Initiation",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Demonstrate your understanding of the Rally mechanic.",
+      "flavor": "House Redoran is a serious, honorable bunch with an impressive ability to rally their troops. Study their maneuvers for me.",
+      "difficulty": "Novice",
+      "player": {
+        "health": 1,
+        "magicka": 8,
+        "hand": [
+          "sarethi-scion*4",
+          "aldruhn-arms-master"
+        ],
+        "board": [
+          [
+            "warclaw-mercenary*2"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 4,
+        "board": [
+          [
+            "lurking-mummy"
+          ],
+          []
+        ]
+      },
+      "solution": [
+        "Play your 4 Sarethi Scions.",
+        "Attack the Lurking Mummy with both your Warclaw Mercenaries. Their Rally effect will buff the Ald'ruhn Arms Master up to 4/5.",
+        "Play the Ald'ruhn Arms Master in the Shadow Lane.",
+        "Attack face with Ald'ruhn Arms Master."
+      ]
+    },
+    {
+      "id": "dagoth-initiation",
+      "name": "Dagoth Initiation",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Learn how House Dagoth uses strength to its advantage.",
+      "flavor": "We've heard rumors that the lost house, \"Dagoth\" has returned. The may be strange looking monsters, but you have to respect their power.",
+      "difficulty": "Novice",
+      "player": {
+        "health": 1,
+        "magicka": 10,
+        "hand": [
+          "arrow-in-the-knee",
+          "hidden-trail",
+          "hand-of-dagoth",
+          "ash-piercer",
+          "cliff-racer-onslaught"
+        ],
+        "board": [
+          [
+            "orc-clan-captain"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 3,
+        "board": [
+          [
+            "blacksap-protector"
+          ],
+          [
+            "blacksap-protector"
+          ]
+        ]
+      },
+      "solution": [
+        "Play Hidden Trail.",
+        "Play Ash Piercer to the left lane. The buff from Hidden Trail is applied before the summon effect, so this card triggers its own summon effect.",
+        "Use the 3 damage from Ash Piercer to destroy the Blacksap Protector in the left lane.",
+        "Attack face with the Orc Clan Captain."
+      ]
+    },
+    {
+      "id": "hlaalu-initiation",
+      "name": "Hlaalu Initiation",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Demonstrate your understanding of the Plot mechanic.",
+      "flavor": "House Hlaalu is constantly scheming to advance their business interests. I respect that about them. See if you can pick up the finer points of hatching a plot from them.",
+      "difficulty": "Novice",
+      "notes": "UESP header says 10 magicka; the screenshot shows 9/9 with Archer's Gambit at its pre-Patch-2.11 cost of 2. Our Archer's Gambit costs 3, so 10 magicka keeps the same budget.",
+      "player": {
+        "health": 1,
+        "magicka": 10,
+        "hand": [
+          "glass-greaves",
+          "archers-gambit",
+          "twin-lamps-consul",
+          "lower-canton-smith"
+        ],
+        "board": [
+          [
+            "dren-bodyguard"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 8,
+        "board": [
+          [
+            "mountain-tyrant"
+          ],
+          [
+            "mountain-tyrant"
+          ]
+        ]
+      },
+      "solution": [
+        "Play Glass Greaves on Dren Bodyguard.",
+        "Play Twin Lamps Consul to right field.",
+        "Use Archer's Gambit to move Twin Lamps Consul and deal damage to the Mountain Tyrant in the field lane.",
+        "Play Lower Canton Smith, and equip Dren Bodyguard with the Steel Scimitar.",
+        "Attack face with Dren Bodyguard."
+      ]
+    },
+    {
+      "id": "telvanni-initiation",
+      "name": "Telvanni Initiation",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Demonstrate your understanding of the Betray Mechanic.",
+      "flavor": "Watch your back around House Telvanni. They're wizards of great renown -- and even greater ambition. They'll use whatever, and whomever, they have to.",
+      "difficulty": "Novice",
+      "notes": "UESP header says 6 magicka; the screenshot shows 7/7, which the solution needs (Drain Blood 4 + Blood Sacrament 3).",
+      "player": {
+        "health": 1,
+        "magicka": 7,
+        "hand": [
+          "drain-blood",
+          "wild-clumsiness",
+          "blood-sacrament"
+        ],
+        "board": [
+          [
+            "redoran-enforcer",
+            "young-mammoth"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 9,
+        "board": [
+          [
+            "risen-dead",
+            "revered-guardian"
+          ],
+          []
+        ]
+      },
+      "solution": [
+        "Attack Risen Dead with Young Mammoth.",
+        "Play Drain Blood, targeting Revered Guardian, and sacrifice Young Mammoth.",
+        "Attack face with Redoran Enforcer.",
+        "Play Blood Sacrament and sacrifice Redoran Enforcer."
+      ]
+    },
+    {
+      "id": "tribunal-initiation",
+      "name": "Tribunal Initiation",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Demonstrate your understanding of the Exalt Mechanic.",
+      "flavor": "The Tribunal Temple is the local religion. They worship three God-Kings: Almalexia, Vivec, and Sotha Sil. They've been known to exalt those they find worthy with great power. See if you can get on their good side.",
+      "difficulty": "Novice",
+      "player": {
+        "health": 1,
+        "magicka": 8,
+        "hand": [
+          "orvas-bargain",
+          "ghostgate-defender",
+          "grand-inquisitor"
+        ],
+        "board": [
+          [
+            "mournhold-pilgrim"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 5,
+        "board": [
+          [
+            "colovian-trooper",
+            "protector-of-the-innocent"
+          ],
+          []
+        ]
+      },
+      "solution": [
+        "Play Orvas' Bargain. Debuff Colovian Trooper and buff Mournhold Pilgrim.",
+        "Play Ghostgate Defender and Exalt it. Deal 2 damage to Protector of the Innocent.",
+        "Play Grand Inquisitor and destroy Colovian Trooper.",
+        "Attack face with the Mournhold Pilgrim."
+      ]
+    },
+    {
+      "id": "redoran-mastery",
+      "name": "Redoran Mastery",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Master the Rally mechanic",
+      "flavor": "This challenge is based on a historic Redoran victory. See if you can figure out how it's done.",
+      "difficulty": "Adept",
+      "requires": "redoran-initiation",
+      "player": {
+        "health": 1,
+        "magicka": 100,
+        "hand": [
+          "close-call",
+          "silent-pilgrim",
+          "bolvyn-venim",
+          "galyn-the-shelterer",
+          "sentinel-battlemace",
+          "aldruhn-arms-master",
+          "mentors-ring"
+        ]
+      },
+      "opponent": {
+        "health": 44
+      },
+      "solution": [
+        "Play Silent Pilgrim.",
+        "Play Galyn the Shelterer and choose to copy Bolvyn Venim.",
+        "Play Close Call on Galyn the Shelterer.",
+        "Play Galyn the Shelterer and choose to copy Bolvyn Venim.",
+        "Play Bolvyn Venim.",
+        "Play Ald'ruhn Arms Master, equip it with Sentinel Battlemace, and attack with it. Its Rally effect will put 6 Bolvyn Venims into your hand.",
+        "Play every copy of Bolvyn Venim to fill the board. Choose to sacrifice Silent Pilgrim and Galyn the Shelterer to do so.",
+        "Play Mentor's Ring on Ald'ruhn Arms Master.",
+        "Attack with all creatures."
+      ]
+    },
+    {
+      "id": "dagoth-mastery",
+      "name": "Dagoth Mastery",
+      "goal": "survive",
+      "text": "Survive for one turn to win.",
+      "description": "Master Dagoth's strength",
+      "flavor": "All right agent, let's see if you can use those Dagoth techniques you picked up to get out of this one alive.",
+      "difficulty": "Adept",
+      "requires": "dagoth-initiation",
+      "player": {
+        "health": 1,
+        "magicka": 13,
+        "hand": [
+          "stolen-pants",
+          "dune-smuggler",
+          "feasting-hunger",
+          "leaflurker",
+          "servant-of-dagoth"
+        ],
+        "board": [
+          [
+            "hive-defender*2"
+          ],
+          []
+        ]
+      },
+      "opponent": {
+        "health": 100,
+        "board": [
+          [
+            "stampede-sentinel",
+            "awakened-imperfect"
+          ],
+          [
+            "awakened-imperfect"
+          ]
+        ]
+      },
+      "solution": [
+        "Play Feasting Hunger in the Field Lane.",
+        "Play Dune Smuggler in the Field Lane, moving a Hive Defender.",
+        "Play Stolen Pants on the Hive Defender in the Shadow Lane.",
+        "Play Servant of Dagoth in the Field Lane, sacrificing Feasting Hunger.",
+        "Hit the End Turn button."
+      ]
+    },
+    {
+      "id": "hlaalu-mastery",
+      "name": "Hlaalu Mastery",
+      "goal": "win",
+      "text": "Your deck is empty. Win this turn.",
+      "description": "Master the Plot mechanic",
+      "flavor": "Let's see how much you learned from the Hlaalu. This challenge will require your most adroit plotting.",
+      "difficulty": "Expert",
+      "rules": {
+        "emptyDeckPenalty": true
+      },
+      "requires": "hlaalu-initiation",
+      "player": {
+        "health": 1,
+        "magicka": 100,
+        "hand": [
+          "cruel-firebloom",
+          "hlaalu-sharpshooter",
+          "camonna-tong-heavy",
+          "sharp-eyed-ashkhan",
+          "journey-to-sovngarde"
+        ],
+        "board": [
+          [
+            "nord-firebrand"
+          ],
+          [
+            "rampaging-minotaur"
+          ]
+        ]
+      },
+      "opponent": {
+        "health": 18,
+        "board": [
+          [],
+          [
+            "dres-guard"
+          ]
+        ]
+      },
+      "solution": [
+        "Attack with the Nord Firebrand.",
+        "Attack the Dres Guard with Rampaging Minotaur.",
+        "Play Camonna Tong Heavy.",
+        "Play Cruel Firebloom on Camonna Tong Heavy.",
+        "Play Hlaalu Sharpshooter, targeting Nord Firebrand.",
+        "Play Journey to Sovngarde.",
+        "Play Sharp-Eyed Ashkhan.",
+        "Play and attack with Nord Firebrand and Rampaging Minotaur.",
+        "Play Camonna Tong Heavy in the same lane as Rampaging Minotaur (sacrifice one of the other creatures if necessary). Unsummon Rampaging Minotaur.",
+        "Play and attack with Rampaging Minotaur."
+      ]
+    },
+    {
+      "id": "telvanni-mastery",
+      "name": "Telvanni Mastery",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Master the Betray mechanic",
+      "flavor": "Time to see what they taught you in that Mushroom tower.",
+      "difficulty": "Expert",
+      "requires": "telvanni-initiation",
+      "player": {
+        "health": 1,
+        "magicka": 19,
+        "hand": [
+          "improvised-weapon",
+          "cliff-strider",
+          "traitors-flames",
+          "ancano"
+        ],
+        "board": [
+          [],
+          [
+            "ancestral-dead"
+          ]
+        ]
+      },
+      "opponent": {
+        "health": 11,
+        "board": [
+          [
+            "bone-colossus",
+            "skeleton*3"
+          ],
+          [
+            "risen-dead*4"
+          ]
+        ]
+      },
+      "solution": [
+        "Play Ancano and target Bone Colossus.",
+        "Play Cliff Strider.",
+        "Play Improvised Weapon on Cliff Strider.",
+        "Attack an enemy with Cliff Strider.",
+        "Play Traitor's Flames on the Field Lane.",
+        "Betray Cliff Strider, and play Traitor's Flames on the Shadow Lane.",
+        "Attack with Ancestral Dead."
+      ]
+    },
+    {
+      "id": "tribunal-mastery",
+      "name": "Tribunal Mastery",
+      "goal": "win",
+      "text": "Win this turn.",
+      "description": "Master the Exalt mechanic",
+      "flavor": "Seems the gods have taken a shine to you. Show me what they can do.",
+      "difficulty": "Adept",
+      "requires": "tribunal-initiation",
+      "player": {
+        "health": 1,
+        "magicka": 15,
+        "hand": [
+          "almalexia",
+          "temple-patriarch",
+          "light-of-the-three",
+          "ghostgate-defender*2"
+        ],
+        "board": [
+          [
+            "clockwork-city-pilgrim*2",
+            "mournhold-pilgrim*2"
+          ],
+          [
+            "mournhold-pilgrim*2"
+          ]
+        ]
+      },
+      "opponent": {
+        "health": 17,
+        "board": [
+          [
+            "indoril-archmage*2"
+          ],
+          [
+            "lurking-mummy"
+          ]
+        ]
+      },
+      "solution": [
+        "Play Ghostgate Defender in the Shadow Lane, and do not Exalt it.",
+        "Play Temple Patriarch in the Shadow Lane. Target an Indoril Archmage with Ghostgate Defender's attack.",
+        "Play Almalexia in the Shadow Lane, sacrificing Ghostgate Defender.",
+        "Attack Lurking Mummy with Mournhold Pilgrim.",
+        "Attack the weakened Indoril Archmage with Clockwork City Pilgrim.",
+        "Attack the remaining Indoril Archmage with Mournhold Pilgrim.",
+        "Attack with all remaining creatures."
+      ]
+    }
+  ]
+}

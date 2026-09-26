@@ -1,0 +1,430 @@
+{
+ "id": "naryu",
+ "name": "Naryu's Challenges",
+ "opponent": "Naryu Virian",
+ "opponentCard": "naryu-virian",
+ "intro": "So, you're looking to join the Morag Tong, hero? All right, I think I can show you the ropes. I've got ten challenges that'll show you some of my favorite tricks.",
+ "outro": "My, my. You're a quick study, hero. As far as I'm concerned, we should start giving you writs to carry out. Next time, maybe you can show me a thing or two.",
+ "puzzles": [
+  {
+   "id": "orc-clan-shaman",
+   "name": "Orc Clan Shaman",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Show the strength of the clan",
+   "flavor": "This is a technique I picked up from some Orc bandits a while back. In return, I gave them a really merciful death.",
+   "difficulty": "Novice",
+   "player": {
+    "health": 1,
+    "magicka": 12,
+    "hand": [
+     "militant-chieftain",
+     "ulfrics-zealot",
+     "bangkorai-butcher",
+     "stoneshard-orc"
+    ],
+    "board": [
+     [
+      "fortress-watchman*2",
+      "orc-clan-shaman"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 21,
+    "board": [
+     [],
+     [
+      "marked-man"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Bangkorai Butcher and Militant Chieftain in the Shadow Lane.",
+    "Attack with all available creatures.",
+    "Play Stoneshard Orc in the Field Lane and target the Marked Man."
+   ]
+  },
+  {
+   "id": "stendarrs-hammer",
+   "name": "Stendarr's Hammer",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Enforce Stendarr's will",
+   "flavor": "Brawn isn't everything, but it is something. I trust a big, strong hero like you can handle this one.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 20,
+    "hand": [
+     "mentors-ring",
+     "siege-catapult",
+     "nord-firebrand",
+     "imprisoned-deathlord",
+     "morag-tong-assassin",
+     "stendarrs-hammer",
+     "rampaging-minotaur"
+    ]
+   },
+   "opponent": {
+    "health": 23
+   },
+   "solution": [
+    "Play Morag Tong Assassin.",
+    "Play Imprisoned Deathlord in the same lane as the Morag Tong Assassin.",
+    "Play Nord Firebrand and Rampaging Minotaur.",
+    "Play Stendarr's Hammer on the Imprisoned Deathlord.",
+    "Play Mentor's Ring on the Rampaging Minotaur.",
+    "Attack the Target with Imprisoned Deathlord.",
+    "Attack with all remaining creatures."
+   ]
+  },
+  {
+   "id": "unstoppable-rage",
+   "name": "Unstoppable Rage",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Unleash your fury",
+   "flavor": "Are you an angry person? I think everyone is sometimes. The key is to channel that anger.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 14,
+    "hand": [
+     "night-predator",
+     "fire-storm",
+     "deadly-draugr",
+     "gavel-of-the-ordinator",
+     "unstoppable-rage"
+    ],
+    "board": [
+     [
+      "tusked-bristleback*2"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 12,
+    "board": [
+     [
+      "hive-defender*2",
+      "dark-guardian*2"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Gavel of the Ordinator on a Tusked Bristleback.",
+    "Play Unstoppable Rage on the Tusked Bristleback that does not have the Gavel of the Ordinator.",
+    "Play Fire Storm in the Field Lane.",
+    "Attack with both creatures."
+   ]
+  },
+  {
+   "id": "hatchery-meddler",
+   "name": "Hatchery Meddler",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Be meddlesome",
+   "flavor": "To some, the Morag Tong are killers. To others, we're justice itself. Remember, there are two sides to every story.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 13,
+    "hand": [
+     "hatchery-meddler",
+     "dark-rebirth*2",
+     "imperial-armor"
+    ],
+    "board": [
+     [
+      "flame-atronach"
+     ],
+     [
+      "flame-atronach"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 11,
+    "board": [
+     [
+      "portcullis"
+     ],
+     [
+      "senche-tiger"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Hatchery Meddler, targeting the Portcullis.",
+    "Play Dark Rebirth on Hatchery Meddler, then target the Flame Atronach in the Field Lane.",
+    "Play Imperial Armor on the Flame Atronach in the Field Lane.",
+    "Play Dark Rebirth on the Hatchery Meddler, then target the Flame Atronach in the Field Lane.",
+    "Attack with the Flame Atronach in the Field Lane."
+   ]
+  },
+  {
+   "id": "trespassers-bane",
+   "name": "Trespasser's Bane",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Learn how to trespass",
+   "flavor": "As an assassin, you'll need to sneak past guards almost every day. But some are trickier to sneak past than others.",
+   "difficulty": "Adept",
+   "player": {
+    "health": 1,
+    "magicka": 10,
+    "hand": [
+     "trespassers-bane",
+     "mages-guild-recruit",
+     "forsworn-guide",
+     "swindlers-market",
+     "giant-bat"
+    ],
+    "board": [
+     [
+      "grisly-gourmet"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 2,
+    "board": [
+     [
+      "shrine-guardian"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play Swindler's Market.",
+    "Play Mages Guild Recruit and choose Trespasser's Bane.",
+    "Play Giant Bat in the Shadow Lane.",
+    "Play Trespasser's Bane on the Giant Bat.",
+    "Attack with Giant Bat."
+   ]
+  },
+  {
+   "id": "trial-of-flame",
+   "name": "Trial of Flame",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Overcome the trial",
+   "flavor": "This should be quite the trial -- but you live for that sort of thing, right?",
+   "difficulty": "Expert",
+   "requires": "orc-clan-shaman",
+   "player": {
+    "health": 1,
+    "magicka": 100,
+    "hand": [
+     "wood-orc-headhunter*2",
+     "trial-of-flame",
+     "grappling-hook",
+     "battlerage-orc"
+    ],
+    "support": [
+     "skirmishers-elixir*3"
+    ]
+   },
+   "opponent": {
+    "health": 13,
+    "board": [
+     [
+      "shrine-guardian*3"
+     ],
+     [
+      "imperial-legionnaire"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Battlerage Orc in the Field Lane.",
+    "Play Grappling Hook on the Battlerage Orc, and select Imperial Legionnaire.",
+    "Use all 3 Skirmisher's Elixirs on the Imperial Legionnaire.",
+    "Play Trial of Flame in the Field Lane.",
+    "Play both Wood Orc Headhunters.",
+    "Attack with all creatures."
+   ]
+  },
+  {
+   "id": "green-touched-spriggan",
+   "name": "Green-Touched Spriggan",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Unleash the power of nature",
+   "flavor": "You're looking a bit under the weather today, hero. Not to worry; this challenge is guaranteed to reinvigorate you.",
+   "difficulty": "Expert",
+   "requires": "stendarrs-hammer",
+   "player": {
+    "health": 1,
+    "magicka": 17,
+    "hand": [
+     "snake-tooth-necklace",
+     "feasting-hunger",
+     "ebonheart-oracle*2",
+     "ring-of-namira"
+    ],
+    "board": [
+     [
+      "house-kinsman",
+      "green-touched-spriggan"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 48,
+    "board": [
+     [
+      "prized-chicken"
+     ],
+     []
+    ]
+   },
+   "solution": [
+    "Play both Ebonheart Oracles in the Field Lane.",
+    "Play Snake Tooth Necklace on the House Kinsman.",
+    "Attack the Prized Chicken with the House Kinsman.",
+    "Play Feasting Hunger in the Field Lane, sacrificing House Kinsman to do so.",
+    "Attack with Green-Touched Spriggan."
+   ],
+   "notes": "UESP lists Naryu at 60 health, but the documented solution (UESP and the Steam guide agree) deals exactly 48 with two stacking Ebonheart Oracles (x4): Spriggan 1+16+12+16 = 45 power plus House Kinsman's 3. Health set to 48."
+  },
+  {
+   "id": "voice-of-balance",
+   "name": "Voice of Balance",
+   "goal": "survive",
+   "text": "Survive for one turn to win.",
+   "description": "Take a balanced approach",
+   "flavor": "A sense of balance is essential in this line of work.",
+   "difficulty": "Expert",
+   "requires": "unstoppable-rage",
+   "player": {
+    "health": 1,
+    "magicka": 20,
+    "hand": [
+     "close-call",
+     "legion-shield",
+     "cornerclub-gambler",
+     "prison-ship",
+     "mace-of-encumbrance",
+     "voice-of-balance*2",
+     "imperial-camp",
+     "fire-storm"
+    ]
+   },
+   "opponent": {
+    "health": 100,
+    "board": [
+     [
+      "vigilant-of-stendarr*2"
+     ],
+     [
+      "awakened-imperfect*4"
+     ]
+    ]
+   },
+   "solution": [
+    "Play Imperial Camp.",
+    "Play Septim Guardsman.",
+    "Play Close Call on the Septim Guardsman.",
+    "Play Septim Guardsman in the Field Lane.",
+    "Play Legion Shield on Septim Guardsman.",
+    "Play Mace of Encumbrance on Septim Guardsman, shackling an Awakened Imperfect.",
+    "Play Prison Ship, shackling another Awakened Imperfect.",
+    "Play both Voice of Balance in the Shadow Lane.",
+    "Press the button to end your turn."
+   ]
+  },
+  {
+   "id": "ulfrics-uprising",
+   "name": "Ulfric's Uprising",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Start an uprising",
+   "flavor": "When I train a new assassin, all I can ever ask is that they rise up to their true potential.",
+   "difficulty": "Expert",
+   "requires": "hatchery-meddler",
+   "player": {
+    "health": 1,
+    "magicka": 27,
+    "hand": [
+     "hlaalu-oathman",
+     "ayrenn",
+     "doppelganger",
+     "ulfrics-uprising",
+     "shadowgreen-elder"
+    ],
+    "board": [
+     [
+      "enraged-mudcrab*4"
+     ],
+     []
+    ]
+   },
+   "opponent": {
+    "health": 73
+   },
+   "solution": [
+    "Play Shadowgreen Elder, Ayrenn, and Hlaalu Oathman in the Shadow Lane.",
+    "Play Doppelganger in the Shadow Lane, selecting Hlaalu Oathman to copy.",
+    "Play Ulfric's Uprising repeatedly, until each Enraged Mudcrab has 20 power.",
+    "Attack with all creatures."
+   ]
+  },
+  {
+   "id": "morag-tong-aspirant",
+   "name": "Morag Tong Aspirant",
+   "goal": "win",
+   "text": "Win this turn.",
+   "description": "Aim for greatness",
+   "flavor": "I learned this next technique from one of my most eager students. See if you can follow it.",
+   "difficulty": "Expert",
+   "requires": "trespassers-bane",
+   "player": {
+    "health": 1,
+    "magicka": 11,
+    "hand": [
+     "bruma-profiteer*3",
+     {
+      "id": "archers-gambit",
+      "cost": 2
+     },
+     "quicksilver-crossbow"
+    ],
+    "board": [
+     [
+      "protector-of-the-mane",
+      "morag-tong-aspirant"
+     ],
+     [
+      "morag-tong-aspirant"
+     ]
+    ]
+   },
+   "opponent": {
+    "health": 19,
+    "board": [
+     [
+      "mournhold-guardian"
+     ],
+     [
+      "mournhold-guardian"
+     ]
+    ]
+   },
+   "solution": [
+    "Play all 3 Bruma Profiteers.",
+    "Attack each Mournhold Guardian with the Morag Tong Aspirant in the same lane.",
+    "Play Archer's Gambit on a Morag Tong Aspirant (at least one will be a valid target). Target the other Morag Tong Aspirant.",
+    "Play Quicksilver Crossbow on a Morag Tong Aspirant, targeting the other one.",
+    "Attack with Protector of the Mane."
+   ],
+   "notes": "Archer's Gambit uses its original cost of 2 (raised to 3 in Patch 2.11, after this puzzle was made)."
+  }
+ ]
+}

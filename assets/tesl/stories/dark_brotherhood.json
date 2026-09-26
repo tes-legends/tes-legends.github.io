@@ -1,0 +1,5379 @@
+{
+ "id": "dark_brotherhood",
+ "name": "The Fall of the Dark Brotherhood",
+ "folder": "dark_brotherhood",
+ "requires": {
+  "story": "forgotten_hero"
+ },
+ "rewardSets": [
+  "Dark Brotherhood"
+ ],
+ "episodes": [
+  {
+   "id": "ep1",
+   "name": "Enter the Shadows",
+   "map": "Wayrest",
+   "nodes": [
+    "uthers-story",
+    "murder-scene",
+    "dreughside",
+    "arenthil-wethrins-house",
+    "cloudy-dregs-inn",
+    "kastus-thorns-house",
+    "order-of-the-hour-barracks",
+    "temple-of-akatosh",
+    "docks",
+    "welcome-to-the-brotherhood"
+   ]
+  },
+  {
+   "id": "ep2",
+   "name": "The Corsair Conspiracy",
+   "map": "Wayrest",
+   "nodes": [
+    "episode-2-intro",
+    "city-gates",
+    "wayrest-plains",
+    "princess-barynia",
+    "wayrest-sewers",
+    "castle-wayrest-grand-hall",
+    "castle-wayrest-throne-room",
+    "regicide",
+    "mercy"
+   ]
+  },
+  {
+   "id": "ep3",
+   "name": "The High Priest",
+   "map": "Falkreath",
+   "nodes": [
+    "episode-3-intro",
+    "grave-concoctions",
+    "hilltop-shrine",
+    "hall-of-the-dead",
+    "cultists-meeting-place",
+    "ominous-tidings"
+   ]
+  },
+  {
+   "id": "ep4",
+   "name": "A Traitor in our Midst",
+   "map": "Falkreath",
+   "nodes": [
+    "episode-4-intro",
+    "abandoned-mine",
+    "corpselight-farm",
+    "falkreath-jail",
+    "falkreath-sanctuary",
+    "accuse-babette",
+    "accuse-eliras",
+    "accuse-varlyn",
+    "efficient-killer",
+    "the-traitor-found"
+   ]
+  },
+  {
+   "id": "ep5",
+   "name": "The Missing Assassins",
+   "map": "Bravil",
+   "nodes": [
+    "chaos-in-bravil",
+    "episode-5-intro",
+    "skooma-den",
+    "eclipse-hideout",
+    "south-bridge",
+    "bravil-treasury",
+    "silverhome-on-the-water",
+    "silverhome-on-the-water-back-room",
+    "assassins-found"
+   ]
+  },
+  {
+   "id": "ep6",
+   "name": "Revelations",
+   "map": "Bravil",
+   "nodes": [
+    "alisannes-story",
+    "silverhome-on-the-water-uthers-suite",
+    "night-mothers-crypt",
+    "night-mothers-crypt-part-2",
+    "brotherhoods-justice",
+    "brotherhoods-fall"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "id": "uthers-story",
+   "name": "Uther's Story",
+   "uesp": "Uther's Story",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Hear a vengeful father's tale.",
+   "gallery": [
+    {
+     "file": "LG-quest-Uther's Story.jpg",
+     "caption": "It's a dark night."
+    },
+    {
+     "file": "LG-quest-Uther's Story 02.jpg",
+     "caption": "Kellen tells about a dark tale."
+    },
+    {
+     "file": "LG-quest-Uther's Story 03.jpg",
+     "caption": "Uther seeks the Forgotten Hero."
+    },
+    {
+     "file": "LG-quest-Uther's Story 04.jpg",
+     "caption": "The infamous Dark Brotherhood."
+    },
+    {
+     "file": "LG-quest-Uther's Story 05.jpg",
+     "caption": "A death cult worshiping a living corpse."
+    },
+    {
+     "file": "LG-quest-Uther's Story 06.jpg",
+     "caption": "Uther's daughter killed her mother."
+    },
+    {
+     "file": "LG-quest-Uther's Story 07.jpg",
+     "caption": "Find the Night Mother's Listener."
+    }
+   ],
+   "video": {
+    "start": "dbh_prologue"
+   },
+   "intro": [
+    {
+     "speaker": "Nagh",
+     "text": "It is a dark night, Kellen. This one would have another story to fall asleep to."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "What became of your \"Forgotten Hero?\""
+    },
+    {
+     "speaker": "Kellen",
+     "text": "I have only a dark tale for a night such as this. One with no heroes at all."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "It began when a mysterious merchant named Uther Nere sought to make the one you speak of his agent."
+    },
+    {
+     "speaker": "Uther",
+     "text": "Come in, traveler. I'm so glad you got my invitation."
+    },
+    {
+     "speaker": "Uther",
+     "text": "I've been watching you for some time, and I think you're just the person I need."
+    },
+    {
+     "speaker": "Uther",
+     "text": "I warn you, this task will be bloody, but the cause is just. It concerns an infamous band of assassins known as the Dark Brotherhood."
+    },
+    {
+     "speaker": "Uther",
+     "text": "The brotherhood is a foul death cult worshiping a living corpse known as the Night Mother."
+    },
+    {
+     "speaker": "Uther",
+     "text": "Some years ago my daughter, the poor misguided girl, murdered her own mother in order to gain their favor."
+    },
+    {
+     "speaker": "Uther",
+     "text": "She claimed to be recruited by the Night Mother's Listener herself."
+    },
+    {
+     "speaker": "Uther",
+     "text": "Later, I learned that my daughter too had died pursuing this violent life."
+    },
+    {
+     "speaker": "Uther",
+     "text": "For years I have sought this Listener, but she is elusive."
+    },
+    {
+     "speaker": "Uther",
+     "text": "I want you to infiltrate the Brotherhood, find her, and lead me to her."
+    },
+    {
+     "speaker": "Uther",
+     "text": "Together, we will ensure that no other family suffers the same fate as mine!"
+    },
+    {
+     "speaker": "Uther",
+     "text": "I know one sure way to get the Brotherhood's attention. Find someone they were planning to assassinate, and kill them first. I would check the inn to see if anyone's seen anything suspicious. I also know a man was murdered yesterday; try examining his body.",
+     "audio": "episode1intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "murder-scene",
+   "name": "Murder Scene",
+   "uesp": "Murder Scene",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Examine a dead body.",
+   "optional": true,
+   "requires": [
+    "uthers-story"
+   ],
+   "image": "LG-loc-Murder Scene.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Examining the body, the agent found claw marks on its back. This was not the work of any assassin. Had the monsters that infested Dreughside come into the city?",
+     "audio": "murderscene-text.0.0"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "The agent resolved to investigate."
+    }
+   ]
+  },
+  {
+   "id": "dreughside",
+   "name": "Dreughside",
+   "uesp": "Dreughside",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Investigate a monster infestation.",
+   "optional": true,
+   "requires": [
+    "murder-scene"
+   ],
+   "image": "LG-loc-Dreughside.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Surveying the shantytown, the agent heard a muffled cry from within a boarded-up home. But before they could investigate, Dreughside's fearsome residents fell upon them.",
+     "audio": "dreughside-text.0.0"
+    }
+   ],
+   "hints": [
+    "The shantytown is overrun with monsters. Use the environment to defeat them."
+   ],
+   "outro": [
+    {
+     "speaker": "Princess Barynia",
+     "text": "Thank you for rescuing me. I am Princess Barynia. Two noblemen kidnapped me to blackmail my father, the King.",
+     "audio": "dreughside-aftermath-text.0.0"
+    },
+    {
+     "speaker": "Princess Barynia",
+     "text": "One was killed by those monsters, but his partner dragged him into town to make it look like a murder. Bring that traitor to justice, and I'll reward you. I believe he's holding a gala tonight.",
+     "audio": "dreughside-aftermath-text.0.1"
+    }
+   ],
+   "battle": {
+    "opponent": "Dreughside",
+    "avatar": "LG-npc-Dreughside.png",
+    "attributes": [
+     "R"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Both you and your opponent start with Mundus Stone, Shantytown Defenses, and Spawning Pool in play.",
+    "normal": {
+     "deck": [
+      "intimidate",
+      "intimidate",
+      "rapid-shot",
+      "rapid-shot",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "scuttler",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "stalking-crocodile",
+      "skaven-pyromancer",
+      "skaven-pyromancer",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "dreugh-shell-armor",
+      "dreugh-shell-armor",
+      "ferocious-dreugh",
+      "ferocious-dreugh",
+      "snapping-dreugh",
+      "snapping-dreugh",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "dark-harvester",
+      "dark-harvester",
+      "dark-harvester"
+     ],
+     "support": [
+      "mundus-stone",
+      "shantytown-defenses",
+      "spawning-pool"
+     ],
+     "playerSupport": [
+      "mundus-stone",
+      "shantytown-defenses",
+      "spawning-pool"
+     ]
+    },
+    "master": {
+     "deck": [
+      "rapid-shot",
+      "rapid-shot",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "ravenous-crocodile",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "shantytown-defenses",
+      "shantytown-defenses",
+      "spawning-pool",
+      "spawning-pool",
+      "barded-guar",
+      "barded-guar",
+      "skaven-pyromancer",
+      "skaven-pyromancer",
+      "slaughterfish-spawning",
+      "dreugh-shell-armor",
+      "dreugh-shell-armor",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "dark-harvester",
+      "dark-harvester",
+      "dark-harvester"
+     ]
+    }
+   }
+  },
+  {
+   "id": "arenthil-wethrins-house",
+   "name": "Arenthil Wethrin's House",
+   "uesp": "Arenthil Wethrin's House",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Attend the gala and defeat the kidnapper.",
+   "optional": true,
+   "requires": [
+    "dreughside"
+   ],
+   "image": "LG-loc-Arenthil Wethrin's House.png",
+   "intro": [
+    {
+     "speaker": "Arenthil Wethrin",
+     "text": "Welcome to my gala! Let us raise a glass to the downfall of the King!",
+     "audio": "arenthilwethrinshouse-text.0.0"
+    }
+   ],
+   "hints": [
+    "Princess Barynia has given you a disguise. Use her deck to defeat the kidnapper!"
+   ],
+   "outro": [
+    {
+     "speaker": "Arenthil Wethrin",
+     "text": "The princess sent you? Then my plans are undone. Kill me if you wish. But the king is weak. Our day will come, and soon.",
+     "audio": "arenthilwethrinshouseaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Arenthil Wethrin",
+    "avatar": "LG-npc-Arenthil Wethrin.png",
+    "attributes": [
+     "B",
+     "Y"
+    ],
+    "lanes": [
+     "Masquerade Ball",
+     "Shadow"
+    ],
+    "rulesText": "You start with a pre-made Assassin deck.\nMasquerade Ball Lane: When a creature moves into this lane, give it +1/+1.\nMaster: Arenthil Wethrin starts with a Riverhold Escort in the right lane.",
+    "normal": {
+     "deck": [
+      "blackmail",
+      "blackmail",
+      "blackmail",
+      "firebolt",
+      "dance-partner",
+      "dance-partner",
+      "dance-partner",
+      "crystal-tower-crafter",
+      "obnoxious-guest",
+      "obnoxious-guest",
+      "palace-conspirator",
+      "palace-conspirator",
+      "shimmerene-peddler",
+      "shimmerene-peddler",
+      "artaeum-savant",
+      "artaeum-savant",
+      "artaeum-savant",
+      "telvanni-arcanist",
+      "telvanni-arcanist",
+      "fire-storm",
+      "fire-storm",
+      "lightning-bolt",
+      "auridon-paladin",
+      "auridon-paladin",
+      "auridon-paladin",
+      "piercing-javelin",
+      "skywatch-vindicator",
+      "skywatch-vindicator",
+      "stealer-of-secrets",
+      "stealer-of-secrets"
+     ],
+     "playerDeck": [
+      "firebolt",
+      "firebolt",
+      "shadow-shift",
+      "dance-partner",
+      "dance-partner",
+      "dance-partner",
+      "grand-ball",
+      "grand-ball",
+      "grand-ball",
+      "dune-stalker",
+      "dune-stalker",
+      "high-rock-summoner",
+      "evermore-steward",
+      "evermore-steward",
+      "evermore-steward",
+      "wardcrafter",
+      "desperate-conjuring",
+      "daggerfall-mage",
+      "dune-smuggler",
+      "dune-smuggler",
+      "dune-smuggler",
+      "house-kinsman",
+      "house-kinsman",
+      "varanis-courier",
+      "lightning-bolt",
+      "deshaan-avenger",
+      "green-pact-stalker",
+      "moonlight-werebat",
+      "royal-sage",
+      "studium-headmaster"
+     ]
+    },
+    "master": {
+     "deck": [
+      "lesser-ward",
+      "lesser-ward",
+      "blackmail",
+      "blackmail",
+      "blackmail",
+      "firebolt",
+      "firebolt",
+      "dance-partner",
+      "dance-partner",
+      "dance-partner",
+      "ice-spike",
+      "ice-spike",
+      "crystal-tower-crafter",
+      "crystal-tower-crafter",
+      "crystal-tower-crafter",
+      "shimmerene-peddler",
+      "shimmerene-peddler",
+      "cunning-ally",
+      "telvanni-arcanist",
+      "telvanni-arcanist",
+      "fire-storm",
+      "fire-storm",
+      "lightning-bolt",
+      "lightning-bolt",
+      "ice-storm",
+      "ice-storm",
+      "skywatch-vindicator",
+      "skywatch-vindicator",
+      "stealer-of-secrets",
+      "stealer-of-secrets"
+     ],
+     "board": [
+      [],
+      [
+       "riverhold-escort"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "cloudy-dregs-inn",
+   "name": "Cloudy Dregs Inn",
+   "uesp": "Cloudy Dregs Inn",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Check the inn to see if anyone's seen anything suspicious.",
+   "requires": [
+    "uthers-story"
+   ],
+   "image": "LG-loc-Cloudy Dregs Inn.png",
+   "intro": [
+    {
+     "speaker": "Barman",
+     "text": "You ask too many questions. I think it's time we taught you what we do to nosy people.",
+     "audio": "cloudydregsinn-text.0.0"
+    }
+   ],
+   "during": [
+    {
+     "speaker": null,
+     "text": "A barfight has broken out. Watch out for broken bottles!"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Barman",
+     "text": "All right, you win. There's a man who says 'Hail Sithis' when he's in his cups. He scared me more than you do - but not anymore. He lives on the East side of town.",
+     "audio": "cloudydregsinn-aftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Surly Barkeep",
+    "avatar": "LG-npc-Barkeep.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Liquid Courage",
+     "Shadow"
+    ],
+    "rulesText": "Both you and your opponent start with Broken Bottles in play.\nLiquid Courage Lane: When a creature takes damage here, give it +2/+0.",
+    "normal": {
+     "deck": [
+      "daggers-in-the-dark",
+      "maple-shield",
+      "maple-shield",
+      "firebolt",
+      "firebolt",
+      "firebolt",
+      "iliac-sorcerer",
+      "iliac-sorcerer",
+      "iliac-sorcerer",
+      "crystal-tower-crafter",
+      "evermore-steward",
+      "ice-spike",
+      "ice-spike",
+      "northpoint-herald",
+      "northpoint-herald",
+      "northpoint-herald",
+      "oldgate-warden",
+      "oldgate-warden",
+      "oldgate-warden",
+      "argonian-veteran",
+      "camlorn-adventurer",
+      "crushing-blow",
+      "crushing-blow",
+      "hackwing-feather",
+      "hackwing-feather",
+      "hackwing-feather",
+      "keeper-of-whispers",
+      "fire-storm",
+      "northpoint-captain",
+      "winters-grasp",
+      "night-patrol",
+      "night-patrol",
+      "night-patrol"
+     ],
+     "support": [
+      "broken-bottles"
+     ],
+     "playerSupport": [
+      "broken-bottles"
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "firebolt",
+      "firebolt",
+      "oldgate-warden",
+      "oldgate-warden",
+      "oldgate-warden",
+      "wardcrafter",
+      "wardcrafter",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "hackwing-feather",
+      "haunting-spirit",
+      "angry-grahl",
+      "breton-conjurer",
+      "breton-conjurer",
+      "fire-storm",
+      "lightning-bolt",
+      "lightning-bolt",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "shornhelm-champion",
+      "shornhelm-champion",
+      "shornhelm-champion",
+      "winters-grasp",
+      "night-predator",
+      "night-predator"
+     ]
+    }
+   }
+  },
+  {
+   "id": "kastus-thorns-house",
+   "name": "Kastus Thorn's House",
+   "uesp": "Kastus Thorn's House",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Search the house for clues.",
+   "requires": [
+    "cloudy-dregs-inn"
+   ],
+   "image": "LG-loc-Kastus Thorn's House.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "As the hero searched the house, the assassin arrived home. The hero faced a choice: Confide in the assassin, or attempt to kill him, and complete his contract in his stead?",
+     "audio": "kastusthornshouse-text.0.0"
+    }
+   ],
+   "choice": {
+    "prompt": "Confide in the assassin, or kill him?",
+    "options": [
+     {
+      "id": "confide",
+      "label": "Confide"
+     },
+     {
+      "id": "kill",
+      "label": "Kill"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Kastus Thorn",
+    "avatar": "LG-npc-Kastus Thorn.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Confide: Kastus Thorn starts with Sparring in play.\nKill: Kastus Thorn starts with To the Death in play."
+   },
+   "variants": {
+    "confide": {
+     "hints": [
+      "Prove yourself to the assassin. In this sparring match, damage dealt to players is reduced."
+     ],
+     "during": [
+      {
+       "speaker": "Kastus Thorn",
+       "text": "You wish to join our brotherhood? Very well. Show me your skills.",
+       "audio": "kastusthornhousea.startofgame.kastus"
+      }
+     ],
+     "outro": [
+      {
+       "speaker": "Kastus Thorn",
+       "text": "You fight well. Here. Take my contract. The target is Markam Hawksmire, the corrupt head of the Order of the Hour guard. He's likely at their barracks or the Temple of Akatosh.",
+       "audio": "kastusthornshouse-aftermath-text.0.0"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "deck": [
+        "brutal-ashlander",
+        "brutal-ashlander",
+        "daring-cutpurse",
+        "guild-recruit",
+        "guild-recruit",
+        "high-rock-summoner",
+        "soul-split",
+        "soul-split",
+        "thieves-guild-recruit",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "nimble-ally",
+        "nimble-ally",
+        "nimble-ally",
+        "sanctuary-pet",
+        "sanctuary-pet",
+        "sanctuary-pet",
+        "varanis-courier",
+        "varanis-courier",
+        "fire-storm",
+        "fire-storm",
+        "territorial-viper",
+        "territorial-viper",
+        "bandit-ambush",
+        "bandit-ambush",
+        "leaflurker",
+        "spider-lair",
+        "indoril-archmage",
+        "nest-of-vipers"
+       ],
+       "support": [
+        "sparring"
+       ]
+      },
+      "master": {
+       "deck": [
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "high-rock-summoner",
+        "high-rock-summoner",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "soul-split",
+        "soul-split",
+        "wardcrafter",
+        "wardcrafter",
+        "wardcrafter",
+        "daggerfall-mage",
+        "daggerfall-mage",
+        "sanctuary-pet",
+        "sanctuary-pet",
+        "varanis-courier",
+        "varanis-courier",
+        "territorial-viper",
+        "territorial-viper",
+        "territorial-viper",
+        "leaflurker",
+        "chaurus-reaper",
+        "goldbrand",
+        "wispmother",
+        "eclipse-baroness",
+        "indoril-archmage",
+        "nest-of-vipers",
+        "supreme-atromancer"
+       ]
+      }
+     }
+    },
+    "kill": {
+     "hints": [
+      "Only you or the assassin can survive this fight. Damage dealt to each of you is doubled"
+     ],
+     "during": [
+      {
+       "speaker": "Kastus Thorn",
+       "text": "Die, interloper!",
+       "audio": "kastusthornhouseb.startofgame.kastus"
+      }
+     ],
+     "outro": [
+      {
+       "speaker": "Kellen",
+       "text": "Searching the dead assassin's home revealed a contract: The target was Markam Hawksmire, the notoriously corrupt head of the local Order of the Hour guard. He was likely hiding at the order's barracks, or the Temple of Akatosh",
+       "audio": "kastusthornshouse-aftermathb-text.0.0"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "deck": [
+        "daggers-in-the-dark",
+        "daggers-in-the-dark",
+        "firebolt",
+        "firebolt",
+        "firebolt",
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "giant-bat",
+        "giant-bat",
+        "giant-bat",
+        "malefic-wreath",
+        "malefic-wreath",
+        "nimble-ally",
+        "nimble-ally",
+        "sanctuary-pet",
+        "swift-strike",
+        "swift-strike",
+        "thievery",
+        "thievery",
+        "deshaan-avenger",
+        "elusive-schemer",
+        "elusive-schemer",
+        "elusive-schemer",
+        "lightning-bolt",
+        "lightning-bolt"
+       ],
+       "support": [
+        "to-the-death"
+       ]
+      },
+      "master": {
+       "deck": [
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "firebolt",
+        "firebolt",
+        "firebolt",
+        "voracious-spriggan",
+        "voracious-spriggan",
+        "daring-cutpurse",
+        "daring-cutpurse",
+        "daring-cutpurse",
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "camlorn-hero",
+        "camlorn-hero",
+        "giant-bat",
+        "giant-bat",
+        "thievery",
+        "thievery",
+        "lightning-bolt",
+        "lightning-bolt",
+        "lightning-bolt",
+        "moonlight-werebat",
+        "cliff-racer",
+        "cliff-racer",
+        "spear-of-embers",
+        "spear-of-embers"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "order-of-the-hour-barracks",
+   "name": "Order of the Hour Barracks",
+   "uesp": "Order of the Hour Barracks",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Search the barracks for Markam Hawksmire.",
+   "requires": [
+    "kastus-thorns-house"
+   ],
+   "image": "LG-loc-Order of the Hour Barracks.png",
+   "intro": [
+    {
+     "speaker": "Knight of the Order of the Hour",
+     "text": "An intruder! Guards, to arms!",
+     "audio": "orderofthehourbarracks-text.0.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "There was no sign of Markam. The agent would have to look elsewhere.",
+     "audio": "orderofthehourbarracksaftermath-text.0.0",
+     "if": {
+      "notDone": "temple-of-akatosh"
+     }
+    },
+    {
+     "speaker": "Knight of the Hour",
+     "text": "Markam knew someone was coming for him... he said he was leaving town on the next ship.",
+     "audio": "orderofthehourbarracksaftermathb-text.0.0",
+     "if": {
+      "done": "temple-of-akatosh"
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "Order of the Hour",
+    "avatar": "LG-npc-Order of the Hour.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Armor",
+     "Shadow"
+    ],
+    "rulesText": "Armor Lane: When a creature is summoned here, double its health.",
+    "normal": {
+     "deck": [
+      "descendant-of-alkosh",
+      "descendant-of-alkosh",
+      "execute",
+      "execute",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "daedric-dagger",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "helgen-squad-leader",
+      "helgen-squad-leader",
+      "kvatch-soldier",
+      "bruma-armorer",
+      "bruma-armorer",
+      "bruma-armorer",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "wrothgar-artisan",
+      "archein-elite",
+      "archein-elite",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "northpoint-captain",
+      "northpoint-captain",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin"
+     ]
+    },
+    "master": {
+     "deck": [
+      "descendant-of-alkosh",
+      "execute",
+      "execute",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "helgen-squad-leader",
+      "helgen-squad-leader",
+      "bruma-armorer",
+      "bruma-armorer",
+      "bruma-armorer",
+      "morthal-executioner",
+      "morthal-executioner",
+      "penitus-oculatus-agent",
+      "penitus-oculatus-agent",
+      "archein-venomtongue",
+      "archein-venomtongue",
+      "hive-defender",
+      "hive-defender",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "the-black-dragon",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "doomcrag-vampire",
+      "sanctuary-raid",
+      "mantikora"
+     ]
+    }
+   }
+  },
+  {
+   "id": "temple-of-akatosh",
+   "name": "Temple of Akatosh",
+   "uesp": "Temple of Akatosh",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Investigate a temple for information about Markam Hawksmire.",
+   "requires": [
+    "kastus-thorns-house"
+   ],
+   "image": "LG-loc-Temple of Akatosh.png",
+   "intro": [
+    {
+     "speaker": "Grand Chanter",
+     "text": "Brother Markam warned us that someone might come for him. Begone!",
+     "audio": "templeofakatosh-text.0.0"
+    }
+   ],
+   "hints": [
+    "Gain health to earn the temple's blessing."
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "There was no sign of Markam. The agent would have to look elsewhere.",
+     "audio": "templeofakatoshaftermath-text.0.0",
+     "if": {
+      "notDone": "order-of-the-hour-barracks"
+     }
+    },
+    {
+     "speaker": "Grand Chanter",
+     "text": "Markam knew someone was coming for him... he said he was leaving town on the next ship.",
+     "audio": "templeofakatoshaftermathb-text.0.0",
+     "if": {
+      "done": "order-of-the-hour-barracks"
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "Priests of the Hour",
+    "avatar": "LG-npc-Priests of the Hour.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Temple",
+     "Shadow"
+    ],
+    "rulesText": "You and your opponent start with Temple's Blessing in play.\nTemple Lane: When a creature is summoned here, gain 1 health.\nThe temple rewards health gain.",
+    "normal": {
+     "deck": [
+      "septim-guardsman",
+      "septim-guardsman",
+      "suppress",
+      "suppress",
+      "descendant-of-alkosh",
+      "descendant-of-alkosh",
+      "scouting-patrol",
+      "scouting-patrol",
+      "scouting-patrol",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "colovian-trooper",
+      "colovian-trooper",
+      "healing-potion",
+      "healing-potion",
+      "dawnstar-healer",
+      "plea-to-kynareth",
+      "plea-to-kynareth",
+      "resolute-ally",
+      "resolute-ally",
+      "auridon-paladin",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "chanter-of-akatosh",
+      "chanter-of-akatosh",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin"
+     ],
+     "support": [
+      "temples-blessing"
+     ],
+     "playerSupport": [
+      "temples-blessing"
+     ]
+    },
+    "master": {
+     "deck": [
+      "septim-guardsman",
+      "septim-guardsman",
+      "suppress",
+      "suppress",
+      "descendant-of-alkosh",
+      "descendant-of-alkosh",
+      "scouting-patrol",
+      "scouting-patrol",
+      "scouting-patrol",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "bruma-profiteer",
+      "healing-potion",
+      "healing-potion",
+      "healing-potion",
+      "arrow-storm",
+      "resolute-ally",
+      "resolute-ally",
+      "auridon-paladin",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "chanter-of-akatosh",
+      "chanter-of-akatosh",
+      "chanter-of-akatosh",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "pillaging-tribune"
+     ]
+    }
+   }
+  },
+  {
+   "id": "docks",
+   "name": "Docks",
+   "uesp": "Docks",
+   "episode": "ep1",
+   "kind": "battle",
+   "description": "Fight Markam Hawksmire at the docks.",
+   "requires": [
+    "order-of-the-hour-barracks",
+    "temple-of-akatosh"
+   ],
+   "image": "LG-loc-Docks.png",
+   "intro": [
+    {
+     "speaker": "Markam Hawksmire",
+     "text": "The assassin has found me! To arms men!",
+     "audio": "docks-text.0.0"
+    }
+   ],
+   "hints": [
+    "You must defeat Markam quickly before he escapes. Try not to fall in the water!",
+    "Your target is escaping. Assassinate him before his ship leaves."
+   ],
+   "battle": {
+    "opponent": "Markam Hawksmire",
+    "avatar": "LG-npc-Markam Hawksmire.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Water",
+     "Dock"
+    ],
+    "rulesText": "Markam starts with the Time is Running Out! support.\nWater Lane: When a creature enters this lane, Shackle it.\nDock Lane: After a creature is attacked here, it falls into the water.",
+    "normal": {
+     "deck": [
+      "healing-hands",
+      "descendant-of-alkosh",
+      "execute",
+      "marked-man",
+      "marked-man",
+      "sunhold-medic",
+      "cathay-raht-veteran",
+      "cathay-raht-veteran",
+      "cathay-raht-veteran",
+      "enchanted-plate",
+      "fharun-defender",
+      "healing-potion",
+      "healing-potion",
+      "legion-shield",
+      "oldgate-warden",
+      "oldgate-warden",
+      "bruma-armorer",
+      "imperial-armor",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "riverhold-escort",
+      "riverhold-escort",
+      "archein-venomtongue",
+      "northpoint-captain",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "watch-commander",
+      "legion-praefect",
+      "legion-praefect"
+     ],
+     "support": [
+      "time-is-running-out"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "time-is-running-out",
+       "card": "time-is-running-out",
+       "text": "Markam starts with the Time is Running Out! support. (You have to defeat him within ten turns.)"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "execute",
+      "execute",
+      "enchanted-plate",
+      "fharun-defender",
+      "fharun-defender",
+      "healing-potion",
+      "healing-potion",
+      "oldgate-warden",
+      "oldgate-warden",
+      "wind-keep-spellsword",
+      "bruma-armorer",
+      "riverhold-escort",
+      "riverhold-escort",
+      "hive-defender",
+      "hive-defender",
+      "northpoint-captain",
+      "northpoint-captain",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "divine-fervor",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "piercing-javelin",
+      "pillaging-tribune",
+      "pillaging-tribune",
+      "watch-commander",
+      "auroran-sentry"
+     ],
+     "laneWidths": [
+      6,
+      2
+     ]
+    }
+   }
+  },
+  {
+   "id": "welcome-to-the-brotherhood",
+   "name": "Welcome to the Brotherhood",
+   "uesp": "Welcome to the Brotherhood",
+   "episode": "ep1",
+   "kind": "scene",
+   "description": "Get inducted into the Dark Brotherhood.",
+   "requires": [
+    "docks"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Welcome to the Brotherhood.jpg",
+     "caption": "Your first contract."
+    },
+    {
+     "file": "LG-quest-Welcome to the Brotherhood 02.jpg",
+     "caption": "Corsairs on the horizon."
+    }
+   ],
+   "video": {
+    "start": "dbh_ep1_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "With Markam dead, the Dark Brotherhood soon approached the agent and welcomed them into the fold."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Over the coming weeks, the agent earned their trust."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Then the unexpected happened."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "A fleet of corsairs attacked the city of Wayrest, even as the agent received a most fateful contract."
+    }
+   ]
+  },
+  {
+   "id": "episode-2-intro",
+   "name": "Episode 2 Intro",
+   "uesp": "Episode 2 Intro",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Accept a new contract.",
+   "requires": [
+    "welcome-to-the-brotherhood"
+   ],
+   "image": "LG-npc-Balir R'enar.png",
+   "intro": [
+    {
+     "speaker": "Balir R'enar",
+     "text": "Brother, we have a most difficult contract. You are to assassinate the King of Wayrest himself; it seems some powerful nobles in the city want him dead. The castle gates are barred against the corsair assault, but perhaps you can find another way in.",
+     "audio": "episode2intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "city-gates",
+   "name": "City Gates",
+   "uesp": "City Gates (quest)",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Hold off the corsairs at the city gates.",
+   "optional": true,
+   "requires": [
+    "episode-2-intro"
+   ],
+   "image": "LG-loc-City Gates.png",
+   "intro": [
+    {
+     "speaker": "Concerned Citizen",
+     "text": "The guards have left the city gates open! Please, help us close them, before the corsairs overrun us!",
+     "audio": "citygates-text.0.0"
+    }
+   ],
+   "hints": [
+    "Avoid taking damage for a turn to close the gates.",
+    "If you can hold off the Corsairs long enough, the townspeople can close the gates."
+   ],
+   "outro": [
+    {
+     "speaker": "Concerned Citizen",
+     "text": "Thank you, stranger. But my baby was trapped outside the city. Can you save her? She'll be wearing a pink bow.",
+     "audio": "citygatesaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "The Corsairs",
+    "avatar": "LG-npc-The Corsairs.png",
+    "attributes": [
+     "R",
+     "B"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "You begin with Close the Gates! in play.\nNormal: The Corsairs begin with a Camlorn Hero in the Field lane and a Corsair Ship in play.\nMaster: The Corsairs begin with a Camlorn Hero in each lane and a Corsair Ship in play.\n(Health: Normal: 50, Master: 30)",
+    "normal": {
+     "deck": [
+      "nord-firebrand",
+      "nord-firebrand",
+      "niben-bay-cutthroat",
+      "niben-bay-cutthroat",
+      "niben-bay-cutthroat",
+      "steel-scimitar",
+      "steel-scimitar",
+      "abecean-navigator",
+      "ice-spike",
+      "ice-spike",
+      "plunder",
+      "plunder",
+      "plunder",
+      "rihad-horseman",
+      "rihad-horseman",
+      "camlorn-hero",
+      "camlorn-hero",
+      "camlorn-sentinel",
+      "camlorn-sentinel",
+      "raiding-party",
+      "raiding-party",
+      "raiding-party",
+      "alikr-bandit",
+      "alikr-bandit",
+      "corsair-ship",
+      "corsair-ship",
+      "corsair-ship",
+      "rampaging-minotaur",
+      "whirling-duelist",
+      "whirling-duelist"
+     ],
+     "playerHealth": 50,
+     "playerSupport": [
+      "close-the-gates"
+     ],
+     "support": [
+      "corsair-ship"
+     ],
+     "board": [
+      [
+       "camlorn-hero"
+      ],
+      []
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "close-the-gates",
+       "card": "close-the-gates",
+       "text": "At the end of your opponent's turn, if you took no damage, win the game."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "nord-firebrand",
+      "nord-firebrand",
+      "nord-firebrand",
+      "niben-bay-cutthroat",
+      "niben-bay-cutthroat",
+      "niben-bay-cutthroat",
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "plunder",
+      "plunder",
+      "plunder",
+      "rihad-horseman",
+      "rihad-horseman",
+      "rihad-horseman",
+      "camlorn-hero",
+      "camlorn-hero",
+      "camlorn-hero",
+      "battlerage-orc",
+      "battlerage-orc",
+      "battlerage-orc",
+      "raiding-party",
+      "raiding-party",
+      "raiding-party",
+      "corsair-ship",
+      "corsair-ship",
+      "corsair-ship",
+      "underworld-vigilante",
+      "underworld-vigilante",
+      "underworld-vigilante"
+     ],
+     "playerHealth": 30,
+     "board": [
+      [
+       "camlorn-hero"
+      ],
+      [
+       "camlorn-hero"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "wayrest-plains",
+   "name": "Wayrest Plains",
+   "uesp": "Wayrest Plains",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Keep the citizen's 'baby' safe from the monsters!",
+   "optional": true,
+   "requires": [
+    "city-gates"
+   ],
+   "image": "LG-loc-Wayrest Plains.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent looked high and low for the woman's missing 'baby' ... before realizing it was not at all what they had been expecting.",
+     "audio": "wayrestplains-text.0.0"
+    }
+   ],
+   "hints": [
+    "You must protect the pig!"
+   ],
+   "during": [
+    {
+     "speaker": null,
+     "text": "Protect the concerned citizen's pig at all costs!",
+     "if": {
+      "mode": "normal"
+     }
+    },
+    {
+     "speaker": null,
+     "text": "Two pigs wearing ribbons? What are the odds?! No telling which belongs to the Concerned Citizen, so you'll just have to protect both of them.",
+     "if": {
+      "mode": "master"
+     }
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Concerned Citizen",
+     "text": "Baby! You saved her. May the nine bless you stranger!",
+     "audio": "wayrestplainsaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Monsters of Wayrest",
+    "avatar": "LG-npc-Monsters of Wayrest.png",
+    "attributes": [
+     "R",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: You start with Beloved Squealer in the Field lane. If it dies, you lose.\nMaster: You start with a Beloved Squealer in each lane. If either dies, you lose.",
+    "normal": {
+     "deck": [
+      "aggressive-spider",
+      "aggressive-spider",
+      "vile-imp",
+      "vile-imp",
+      "poisonous-spider",
+      "protective-spider",
+      "protective-spider",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "vile-imp",
+      "vile-imp",
+      "durzog",
+      "durzog",
+      "feasting-vulture",
+      "feasting-vulture",
+      "feasting-vulture",
+      "thievery",
+      "bog-lurcher",
+      "bog-lurcher",
+      "dreugh-shell-armor",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "highland-lurcher",
+      "highland-lurcher",
+      "dark-harvester",
+      "dark-harvester",
+      "savage-ogre",
+      "savage-ogre"
+     ],
+     "playerBoard": [
+      [
+       "beloved-squealer"
+      ],
+      []
+     ],
+     "rules": [
+      {
+       "type": "loseIfDies",
+       "card": "beloved-squealer"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "aggressive-spider",
+      "aggressive-spider",
+      "poisonous-spider",
+      "poisonous-spider",
+      "poisonous-spider",
+      "protective-spider",
+      "protective-spider",
+      "ravenous-crocodile",
+      "ravenous-crocodile",
+      "durzog",
+      "durzog",
+      "feasting-vulture",
+      "feasting-vulture",
+      "giant-bat",
+      "giant-bat",
+      "murkwater-savage",
+      "murkwater-savage",
+      "bog-lurcher",
+      "bog-lurcher",
+      "dreugh-shell-armor",
+      "vicious-dreugh",
+      "vicious-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "highland-lurcher",
+      "highland-lurcher",
+      "dark-harvester",
+      "dark-harvester",
+      "savage-ogre",
+      "savage-ogre"
+     ],
+     "playerBoard": [
+      [
+       "beloved-squealer"
+      ],
+      [
+       "beloved-squealer"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "princess-barynia",
+   "name": "Princess Barynia",
+   "uesp": "Princess Barynia",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Meet Princess Barynia and figure out a way into the castle.",
+   "optional": true,
+   "requires": [
+    "episode-2-intro",
+    "arenthil-wethrins-house"
+   ],
+   "image": "LG-npc-Princess Barynia.png",
+   "intro": [
+    {
+     "speaker": "Princess Barynia",
+     "text": "You need to get into the castle? Why? No, don't tell me, I trust you. Here, this disguise should get you through the front gate.",
+     "audio": "princessbarynia-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "wayrest-sewers",
+   "name": "Wayrest Sewers",
+   "uesp": "Wayrest Sewers",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Find a way into the castle through the sewers.",
+   "optional": true,
+   "requires": [
+    "episode-2-intro"
+   ],
+   "image": "LG-loc-Wayrest Sewers.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent found a likely path into the castle... if not a pleasant one.",
+     "audio": "wayrestsewers-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Sewer Monsters",
+    "avatar": "LG-npc-Sewer Monsters.png",
+    "attributes": [
+     "R",
+     "G"
+    ],
+    "lanes": [
+     "Sewer",
+     "Shadow"
+    ],
+    "laneWidths": [
+     6,
+     2
+    ],
+    "rulesText": "Sewer Lane: Creatures with more than 2 health can't be summoned here.\nNormal: The Sewer lane is 6 cards wide and the Shadow card is 2 cards wide.\nMaster: Both Sewer lanes are 4 cards wide.",
+    "normal": {
+     "deck": [
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "enraged-mudcrab",
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "cast-out",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "feasting-vulture",
+      "feasting-vulture",
+      "feasting-vulture",
+      "giant-bat",
+      "giant-bat",
+      "giant-bat",
+      "skeever-infestation",
+      "skeever-infestation",
+      "skeever-infestation",
+      "bog-lurcher",
+      "bog-lurcher",
+      "bog-lurcher",
+      "dreugh-shell-armor",
+      "dreugh-shell-armor",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning"
+     ]
+    },
+    "master": {
+     "deck": [
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "lurking-crocodile",
+      "lurking-crocodile",
+      "murkwater-witch",
+      "murkwater-witch",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "dune-smuggler",
+      "dune-smuggler",
+      "giant-bat",
+      "giant-bat",
+      "giant-bat",
+      "sanctuary-pet",
+      "sanctuary-pet",
+      "skeever-infestation",
+      "skeever-infestation",
+      "skeever-infestation",
+      "bog-lurcher",
+      "bog-lurcher",
+      "bog-lurcher",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "slaughterfish-spawning",
+      "grahtwood-ambusher",
+      "grahtwood-ambusher"
+     ],
+     "lanes": [
+      "Sewer",
+      "Sewer"
+     ],
+     "laneWidths": [
+      4,
+      4
+     ]
+    }
+   }
+  },
+  {
+   "id": "castle-wayrest-grand-hall",
+   "name": "Castle Wayrest, Grand Hall",
+   "uesp": "Castle Wayrest, Grand Hall",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Get through the Grand Hall unscathed.",
+   "requiresAny": [
+    "wayrest-sewers",
+    "princess-barynia"
+   ],
+   "image": "LG-loc-Castle Wayrest, Grand Hall.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent was inside. But now stealth would be required to reach the throne room.",
+     "audio": "castlewayrestgrandhall-text.0.0"
+    }
+   ],
+   "hints": [
+    "You will have to move carefully to reach the Throne Room. If any of your creatures are found and destroyed, you'll lose."
+   ],
+   "choice": {
+    "prompt": "Use the disguise deck, or your own deck?",
+    "options": [
+     {
+      "id": "disguise",
+      "label": "Disguise",
+      "if": {
+       "done": "princess-barynia"
+      }
+     },
+     {
+      "id": "own",
+      "label": "Own deck",
+      "if": {
+       "done": "wayrest-sewers"
+      }
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Castle Defenders",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Shadow",
+     "Shadow"
+    ],
+    "rulesText": "You begin with Elixir of Light Feet and Stealth Mission supports in play. If any of your creatures die, you lose the game.",
+    "normal": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "lesser-ward",
+      "lesser-ward",
+      "evermore-steward",
+      "evermore-steward",
+      "evermore-steward",
+      "fharun-defender",
+      "fharun-defender",
+      "northpoint-herald",
+      "northpoint-herald",
+      "northpoint-herald",
+      "oldgate-warden",
+      "oldgate-warden",
+      "oldgate-warden",
+      "palace-conspirator",
+      "palace-conspirator",
+      "palace-conspirator",
+      "wardcrafter",
+      "wardcrafter",
+      "bruma-armorer",
+      "bruma-armorer",
+      "craglorn-scavenger",
+      "craglorn-scavenger",
+      "imperial-armor",
+      "imperial-armor",
+      "northpoint-captain",
+      "portcullis",
+      "portcullis",
+      "portcullis"
+     ],
+     "playerSupport": [
+      "elixir-of-light-feet",
+      "stealth-mission"
+     ],
+     "rules": [
+      {
+       "type": "loseIfAnyDies"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "evermore-steward",
+      "evermore-steward",
+      "fharun-defender",
+      "fharun-defender",
+      "oldgate-warden",
+      "oldgate-warden",
+      "palace-conspirator",
+      "palace-conspirator",
+      "palace-conspirator",
+      "wardcrafter",
+      "wardcrafter",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "bruma-armorer",
+      "bruma-armorer",
+      "camlorn-hero",
+      "camlorn-hero",
+      "camlorn-sentinel",
+      "camlorn-sentinel",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "lion-guard-strategist",
+      "lion-guard-strategist",
+      "midnight-sweep",
+      "midnight-sweep",
+      "northpoint-captain",
+      "portcullis"
+     ]
+    }
+   },
+   "variants": {
+    "disguise": {
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "close-call",
+        "close-call",
+        "lesser-ward",
+        "lesser-ward",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "firebolt",
+        "firebolt",
+        "shadow-shift",
+        "shadow-shift",
+        "dune-stalker",
+        "dune-stalker",
+        "elixir-of-light-feet",
+        "elixir-of-light-feet",
+        "elixir-of-light-feet",
+        "grand-ball",
+        "grand-ball",
+        "mournhold-traitor",
+        "mournhold-traitor",
+        "palace-conspirator",
+        "palace-conspirator",
+        "wardcrafter",
+        "wardcrafter",
+        "daggerfall-mage",
+        "daggerfall-mage",
+        "dune-smuggler",
+        "dune-smuggler",
+        "dune-smuggler",
+        "lightning-bolt",
+        "lightning-bolt",
+        "elixir-of-deflection"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "castle-wayrest-throne-room",
+   "name": "Castle Wayrest, Throne Room",
+   "uesp": "Castle Wayrest, Throne Room",
+   "episode": "ep2",
+   "kind": "battle",
+   "description": "Confront the king.",
+   "requires": [
+    "castle-wayrest-grand-hall"
+   ],
+   "image": "LG-loc-Castle Wayrest, Throne Room.png",
+   "intro": [
+    {
+     "speaker": "King Barynia",
+     "text": "An assassin! I don't know how you made it in here, but you'll find I'm well prepared, I know all about the conspiracy against me. It's why I left the city gates open for the Corsairs. They will destroy the rest of my enemies... while my guards do the same to you!",
+     "audio": "castlewayrestthroneroom-text.0.0"
+    }
+   ],
+   "hints": [
+    "Be cautious when attacking his majesty."
+   ],
+   "outro": [
+    {
+     "speaker": "King Barynia",
+     "text": "Wait! We can work something out! By now the corsairs will have killed whoever hired you. Spare me, and I will sail with them at dawn, leaving the throne to my daughter. Please, I beg you!",
+     "audio": "throneroomaftermath-text.0.0"
+    }
+   ],
+   "choice": {
+    "prompt": "Kill the king, or spare him?",
+    "when": "after",
+    "options": [
+     {
+      "id": "kill",
+      "label": "Kill"
+     },
+     {
+      "id": "spare",
+      "label": "Spare"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "King Barynia",
+    "avatar": "LG-npc-King Barynia.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "King Barynia starts with the Power of the Throne support in play.",
+    "normal": {
+     "deck": [
+      "lesser-ward",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "palace-conspirator",
+      "palace-conspirator",
+      "palace-conspirator",
+      "evermore-steward",
+      "evermore-steward",
+      "high-rock-summoner",
+      "high-rock-summoner",
+      "oldgate-warden",
+      "oldgate-warden",
+      "steel-sword",
+      "steel-sword",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "camlorn-hero",
+      "dark-rift",
+      "northpoint-captain",
+      "northpoint-captain",
+      "breton-conjurer",
+      "elusive-schemer",
+      "lion-guard-strategist",
+      "preserver-of-the-root",
+      "glenumbra-sorceress",
+      "glenumbra-sorceress",
+      "winters-touch",
+      "winters-touch",
+      "night-patrol",
+      "summerset-orrery"
+     ],
+     "support": [
+      "power-of-the-throne"
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "firebolt",
+      "firebolt",
+      "wardcrafter",
+      "wardcrafter",
+      "wardcrafter",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "crushing-blow",
+      "crushing-blow",
+      "cunning-ally",
+      "cunning-ally",
+      "cunning-ally",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "breton-conjurer",
+      "breton-conjurer",
+      "breton-conjurer",
+      "royal-sage",
+      "royal-sage",
+      "royal-sage",
+      "shornhelm-champion",
+      "shornhelm-champion",
+      "winters-grasp",
+      "winters-grasp",
+      "winters-grasp",
+      "ice-storm",
+      "indoril-archmage"
+     ]
+    }
+   }
+  },
+  {
+   "id": "regicide",
+   "name": "Regicide",
+   "uesp": "Regicide",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "The king is dead.",
+   "requires": [
+    "castle-wayrest-throne-room"
+   ],
+   "requiresChoice": {
+    "node": "castle-wayrest-throne-room",
+    "option": "kill"
+   },
+   "gallery": [
+    {
+     "file": "LG-quest-Regicide.jpg",
+     "caption": "The King's blood-covered crown"
+    },
+    {
+     "file": "LG-quest-Regicide 02.jpg",
+     "caption": "The burning city of Wayrest."
+    },
+    {
+     "file": "LG-quest-Regicide 03.jpg",
+     "caption": "The fall of the Sanctuary."
+    }
+   ],
+   "video": {
+    "start": "dbh_ep2_ending_a"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The king's crimes were grave, and the agent was not feeling merciful. They swiftly ended the king's reign."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But the Corsairs had laid ruin to Wayrest. And while the Agent had carried out the contract..."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "...they had destroyed the Brotherhood Sanctuary, leaving no survivors."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "The agent set out for Falkreath, having learned of another sanctuary there."
+    }
+   ]
+  },
+  {
+   "id": "mercy",
+   "name": "Mercy",
+   "uesp": "Mercy",
+   "episode": "ep2",
+   "kind": "scene",
+   "description": "Long live the king.",
+   "requires": [
+    "castle-wayrest-throne-room"
+   ],
+   "requiresChoice": {
+    "node": "castle-wayrest-throne-room",
+    "option": "spare"
+   },
+   "gallery": [
+    {
+     "file": "LG-quest-Mercy.jpg",
+     "caption": "The King flees the city."
+    },
+    {
+     "file": "LG-quest-Regicide 02.jpg",
+     "caption": "The burning city of Wayrest."
+    },
+    {
+     "file": "LG-quest-Regicide 03.jpg",
+     "caption": "The fall of the Sanctuary."
+    }
+   ],
+   "video": {
+    "start": "dbh_ep2_ending_b"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The king sailed from Wayrest, promising to someday grant the agent lands and titles for sparing him - promises that were never, to my knowledge, fulfilled."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But he and his Corsairs left a devastated city in their wake. And, as the agent soon learned..."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "...they had destroyed the Brotherhood Sanctuary, and killed all within."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But Uther had learned of another Brotherhood sanctuary in Falkreath, where a survivor of Wayrest would be welcomed with open arms."
+    }
+   ]
+  },
+  {
+   "id": "episode-3-intro",
+   "name": "Episode 3 Intro",
+   "uesp": "Episode 3 Intro",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Learn about a new contract in a new city.",
+   "requiresAny": [
+    "regicide",
+    "mercy"
+   ],
+   "image": "LG-npc-Astrid.png",
+   "intro": [
+    {
+     "speaker": "Astrid",
+     "text": "All right newcomer, let's see what you can do. We have a contract on Rathir, the new priest at the Hall of the Dead. There's something odd about that one; be careful. He's been seen around Grave Concoctions potion shop.",
+     "audio": "episode3intro-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "grave-concoctions",
+   "name": "Grave Concoctions",
+   "uesp": "Grave Concoctions",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Investigate Rathir's connections to a potions shop.",
+   "optional": true,
+   "requires": [
+    "episode-3-intro"
+   ],
+   "image": "LG-loc-Grave Concoctions.png",
+   "intro": [
+    {
+     "speaker": "Zaria",
+     "text": "I don't know anything about Rathir! I've already asked you to leave, so I guess we'll have to do this the hard way.",
+     "audio": "graveconcoctions-text.0.0"
+    }
+   ],
+   "hints": [
+    "Zaria has the advantage in her shop, with potions near at hand."
+   ],
+   "outro": [
+    {
+     "speaker": "Zaria",
+     "text": "Stop, stop. I'll tell you everything.",
+     "audio": "graveconcoctions.endofgame.zaria"
+    },
+    {
+     "speaker": "Zaria",
+     "text": "Rathir's a necromancer. I left his cult when I found out. Tell you what. I'll let you borrow my old robes to sneak into his ritual if you do a little something for me. I have this new poison I've been dying to try out. Why don't you test it on the residents of the Hilltop Shrine?",
+     "audio": "graveconcoctionsaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Zaria",
+    "avatar": "LG-npc-Zaria.png",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Zaria starts with Swindler's Market and Elixir of Vitality in play.\nMaster: Zaria starts with Swindler's Market, Elixir of Conflict and Elixir of Deflection in play.",
+    "normal": {
+     "deck": [
+      "curse",
+      "curse",
+      "curse",
+      "septim-guardsman",
+      "septim-guardsman",
+      "elixir-of-vitality",
+      "elixir-of-vitality",
+      "marked-man",
+      "marked-man",
+      "marked-man",
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "goblin-skulk",
+      "goblin-skulk",
+      "goblin-skulk",
+      "healing-potion",
+      "healing-potion",
+      "leafwater-blessing",
+      "snake-tooth-necklace",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "elixir-of-conflict",
+      "elixir-of-conflict",
+      "elixir-of-conflict",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "swindlers-market",
+      "swindlers-market",
+      "tower-alchemist",
+      "tower-alchemist",
+      "tower-alchemist",
+      "varanis-courier",
+      "varanis-courier",
+      "shivering-apothercary",
+      "shivering-apothercary",
+      "territorial-viper",
+      "territorial-viper",
+      "green-touched-spriggan",
+      "smugglers-haul",
+      "smugglers-haul",
+      "nest-of-vipers"
+     ],
+     "support": [
+      "swindlers-market",
+      "elixir-of-vitality"
+     ]
+    },
+    "master": {
+     "deck": [
+      "curse",
+      "curse",
+      "curse",
+      "septim-guardsman",
+      "septim-guardsman",
+      "septim-guardsman",
+      "cheydinhal-sapper",
+      "cheydinhal-sapper",
+      "cheydinhal-sapper",
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "goblin-skulk",
+      "goblin-skulk",
+      "goblin-skulk",
+      "leafwater-blessing",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "elixir-of-conflict",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "swindlers-market",
+      "swindlers-market",
+      "swindlers-market",
+      "tower-alchemist",
+      "tower-alchemist",
+      "tower-alchemist",
+      "shivering-apothercary",
+      "shivering-apothercary",
+      "territorial-viper",
+      "territorial-viper",
+      "territorial-viper",
+      "golden-saint",
+      "golden-saint",
+      "golden-saint",
+      "smugglers-haul",
+      "smugglers-haul",
+      "smugglers-haul",
+      "goldbrand",
+      "nest-of-vipers",
+      "nest-of-vipers"
+     ],
+     "support": [
+      "swindlers-market",
+      "elixir-of-conflict",
+      "elixir-of-deflection"
+     ]
+    }
+   }
+  },
+  {
+   "id": "hilltop-shrine",
+   "name": "Hilltop Shrine",
+   "uesp": "Hilltop Shrine",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Test Zaria's poison at a nearby giant camp.",
+   "optional": true,
+   "requires": [
+    "grave-concoctions"
+   ],
+   "image": "LG-loc-Hilltop Shrine.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent traveled to Hilltop Shrine to test out Zaria's poison. But the 'residents' she spoke of would not be easily dealt with.",
+     "audio": "hilltopshrine-text.0.0"
+    }
+   ],
+   "hints": [
+    "Use Zaria's poison to take down the giants"
+   ],
+   "outro": [
+    {
+     "speaker": "Zaria",
+     "text": "That worked even better than I'd hoped. Here are the robes I promised. They should make it easier to get close to Rathir.",
+     "audio": "hilltopshrineaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Hilltop Giants",
+    "avatar": "LG-npc-Hilltop Giants.png",
+    "attributes": [
+     "R",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "You start with the Test the Poison support in play and Zaria's Poison in your hand.\nHilltop Giants start with 100 health.\nMaster: Hilltop Giants start with three Hist Grove supports in play.",
+    "normal": {
+     "deck": [
+      "improvised-weapon",
+      "improvised-weapon",
+      "improvised-weapon",
+      "intimidate",
+      "intimidate",
+      "intimidate",
+      "bone-bow",
+      "bone-bow",
+      "bone-bow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "stone-throw",
+      "stone-throw",
+      "stone-throw",
+      "stone-throw",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "stampede-sentinel",
+      "stampede-sentinel",
+      "stampede-sentinel",
+      "belligerent-giant",
+      "belligerent-giant",
+      "belligerent-giant",
+      "belligerent-giant",
+      "unstoppable-rage",
+      "unstoppable-rage",
+      "unstoppable-rage",
+      "vigilant-giant",
+      "vigilant-giant",
+      "vigilant-giant"
+     ],
+     "health": 100,
+     "playerSupport": [
+      "test-the-poison"
+     ],
+     "playerHand": [
+      "zarias-poison"
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "test-the-poison",
+       "card": "test-the-poison",
+       "text": "Win the game by killing the Hilltop Giants' creatures with Lethal (Test the Poison: When you have killed 6 creatures with Lethal, win the game)."
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "afflicted-alit",
+      "afflicted-alit",
+      "afflicted-alit",
+      "bone-bow",
+      "bone-bow",
+      "bone-bow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "stone-throw",
+      "stone-throw",
+      "stone-throw",
+      "stone-throw",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "young-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "stampeding-mammoth",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "stampede-sentinel",
+      "stampede-sentinel",
+      "stampede-sentinel",
+      "stampede-sentinel",
+      "triumphant-jarl",
+      "triumphant-jarl",
+      "triumphant-jarl",
+      "triumphant-jarl",
+      "belligerent-giant",
+      "belligerent-giant",
+      "belligerent-giant",
+      "belligerent-giant",
+      "unstoppable-rage",
+      "unstoppable-rage",
+      "unstoppable-rage",
+      "vigilant-giant",
+      "vigilant-giant",
+      "vigilant-giant",
+      "vigilant-giant"
+     ],
+     "support": [
+      "hist-grove",
+      "hist-grove",
+      "hist-grove"
+     ]
+    }
+   }
+  },
+  {
+   "id": "hall-of-the-dead",
+   "name": "Hall of the Dead",
+   "uesp": "Hall of the Dead",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Search the hall for information about your target.",
+   "requires": [
+    "episode-3-intro"
+   ],
+   "image": "LG-loc-Hall of the Dead.png",
+   "intro": [
+    {
+     "speaker": "Acolyte",
+     "text": "You're asking too many questions about my master. I think it's best I silenced you... permanently!",
+     "audio": "hallofthedead-text.0.0"
+    }
+   ],
+   "hints": [
+    "Whenever a player silences a creature, they summon a skeleton guard."
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "Searching the Hall of the Dead, the agent found a map. Perhaps it would lead to the priest.",
+     "audio": "hallofthedeadaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Rathir's Acolyte",
+    "avatar": "LG-npc-Rathir's Acolyte.png",
+    "attributes": [
+     "P"
+    ],
+    "lanes": [
+     "Altar of Silence",
+     "Graveyard"
+    ],
+    "rulesText": "Altar of Silence: When a player silences a creature, that player summons a 1/1 skeleton here and give it Guard.\nGraveyard: When a creature other than a Rotting Draugr in this lane is destroyed, summon a 1/1 Rotting Draugr.",
+    "normal": {
+     "deck": [
+      "suppress",
+      "suppress",
+      "suppress",
+      "deadly-draugr",
+      "deadly-draugr",
+      "deadly-draugr",
+      "shriveled-mummy",
+      "shriveled-mummy",
+      "shriveled-mummy",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "mummify",
+      "mummify",
+      "mummify",
+      "necromancers-amulet",
+      "cursed-spectre",
+      "cursed-spectre",
+      "cursed-spectre",
+      "falkreath-defiler",
+      "falkreath-defiler",
+      "falkreath-defiler",
+      "gloom-wraith",
+      "gloom-wraith",
+      "gloom-wraith",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "shadowfen-priest",
+      "shadowfen-priest",
+      "shadowfen-priest",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "flesh-atronach",
+      "flesh-atronach",
+      "flesh-atronach",
+      "night-shadow",
+      "night-shadow",
+      "bone-colossus"
+     ]
+    },
+    "master": {
+     "deck": [
+      "suppress",
+      "suppress",
+      "suppress",
+      "deadly-draugr",
+      "deadly-draugr",
+      "iliac-sorcerer",
+      "iliac-sorcerer",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "dark-guardian",
+      "dark-guardian",
+      "dark-guardian",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "necromancers-amulet",
+      "necromancers-amulet",
+      "stalwart-ally",
+      "stalwart-ally",
+      "stalwart-ally",
+      "cursed-spectre",
+      "cursed-spectre",
+      "cursed-spectre",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "mundus-stone",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "lurking-mummy",
+      "lurking-mummy",
+      "shadowfen-priest",
+      "shadowfen-priest",
+      "shadowfen-priest",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "flesh-atronach",
+      "flesh-atronach",
+      "night-shadow",
+      "night-shadow",
+      "bone-colossus",
+      "bone-colossus",
+      "bone-colossus",
+      "nahagliiv",
+      "night-talon-lord"
+     ]
+    }
+   }
+  },
+  {
+   "id": "cultists-meeting-place",
+   "name": "Cultists' Meeting Place",
+   "uesp": "Cultists' Meeting Place",
+   "episode": "ep3",
+   "kind": "battle",
+   "description": "Eliminate the High Priest",
+   "requires": [
+    "hall-of-the-dead"
+   ],
+   "image": "LG-loc-Cultists' Meeting Place.png",
+   "choice": {
+    "prompt": "Wear Zaria's cultist robes?",
+    "options": [
+     {
+      "id": "disguise",
+      "label": "Use the disguise",
+      "if": {
+       "done": "hilltop-shrine"
+      }
+     },
+     {
+      "id": "own",
+      "label": "No disguise"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "Rathir",
+    "avatar": "LG-npc-Rathir.png",
+    "attributes": [
+     "B",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Reanimation"
+    ],
+    "rulesText": "Reanimation: When a non-Reanimated creature in this lane dies for the first time, return it to play as a 1/1.\nNormal and no Disguise: Rathir starts with a Grim Champion in each lane.\nMaster and no Disguise: Rathir starts with a Grim Champion and a Deathless Draugr in each lane",
+    "normal": {
+     "deck": [
+      "firebolt",
+      "firebolt",
+      "firebolt",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "soul-split",
+      "soul-split",
+      "soul-split",
+      "frostbite-spider",
+      "frostbite-spider",
+      "frostbite-spider",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "mummify",
+      "mummify",
+      "mummify",
+      "cursed-spectre",
+      "cursed-spectre",
+      "cursed-spectre",
+      "falkreath-defiler",
+      "falkreath-defiler",
+      "fire-storm",
+      "fire-storm",
+      "fire-storm",
+      "grim-champion",
+      "grim-champion",
+      "little-girl",
+      "little-girl",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "night-shadow",
+      "night-shadow",
+      "blood-magic-lord",
+      "gravesinger",
+      "gravesinger"
+     ]
+    },
+    "master": {
+     "deck": [
+      "firebolt",
+      "firebolt",
+      "firebolt",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "shrieking-harpy",
+      "wardcrafter",
+      "wardcrafter",
+      "wardcrafter",
+      "frostbite-spider",
+      "frostbite-spider",
+      "frostbite-spider",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "mummify",
+      "mummify",
+      "mummify",
+      "cursed-spectre",
+      "cursed-spectre",
+      "cursed-spectre",
+      "falkreath-defiler",
+      "falkreath-defiler",
+      "falkreath-defiler",
+      "fire-storm",
+      "fire-storm",
+      "fire-storm",
+      "grim-champion",
+      "grim-champion",
+      "grim-champion",
+      "lightning-bolt",
+      "lightning-bolt",
+      "lightning-bolt",
+      "restless-templar",
+      "restless-templar",
+      "restless-templar",
+      "little-girl",
+      "little-girl",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "black-worm-necromancer",
+      "black-worm-necromancer",
+      "night-shadow",
+      "night-shadow",
+      "blood-magic-lord",
+      "blood-magic-lord",
+      "gravesinger",
+      "gravesinger",
+      "odahviing"
+     ]
+    }
+   },
+   "variants": {
+    "own": {
+     "intro": [
+      {
+       "speaker": "Rathir",
+       "text": "It's the assassin I was warned of! Rise my guardians, and destroy them!",
+       "audio": "cultistsmeetingplace-text.1.0"
+      }
+     ],
+     "during": [
+      {
+       "speaker": null,
+       "text": "Rathir was prepared for your attack. His undead minions are already in position."
+      }
+     ],
+     "battle": {
+      "normal": {
+       "board": [
+        [
+         "grim-champion"
+        ],
+        [
+         "grim-champion"
+        ]
+       ]
+      },
+      "master": {
+       "board": [
+        [
+         "grim-champion",
+         "deathless-draugr"
+        ],
+        [
+         "grim-champion",
+         "deathless-draugr"
+        ]
+       ]
+      }
+     }
+    },
+    "disguise": {
+     "intro": [
+      {
+       "speaker": "Rathir",
+       "text": "Gather around, my children. It is time for the ritual to begin. Tonight, the dead walk!",
+       "audio": "cultistsmeetingplace-text.0.0"
+      }
+     ],
+     "during": [
+      {
+       "speaker": null,
+       "text": "Wearing Zaria's cultist robes, you bypass Rathir's guards."
+      },
+      {
+       "speaker": "Rathir",
+       "text": "What? You're not one of us! It's the assassin I was warned of!",
+       "audio": "cultistsmeetingplace.startofgame.rathir"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "calm",
+        "calm",
+        "calm",
+        "curse",
+        "curse",
+        "curse",
+        "shadow-shift",
+        "shadow-shift",
+        "shadow-shift",
+        "sunhold-medic",
+        "blood-pact-messenger",
+        "blood-pact-messenger",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "goblin-skulk",
+        "goblin-skulk",
+        "goblin-skulk",
+        "snake-tooth-necklace",
+        "snake-tooth-necklace",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "elixir-of-conflict",
+        "elixir-of-conflict",
+        "elixir-of-conflict",
+        "skooma-racketeer",
+        "skooma-racketeer",
+        "skooma-racketeer",
+        "swindlers-market",
+        "swindlers-market",
+        "swindlers-market",
+        "tower-alchemist",
+        "tower-alchemist",
+        "varanis-courier",
+        "varanis-courier",
+        "varanis-courier",
+        "green-pact-stalker",
+        "green-pact-stalker",
+        "territorial-viper",
+        "territorial-viper",
+        "territorial-viper",
+        "loyal-housecarl",
+        "loyal-housecarl",
+        "immolating-blast",
+        "immolating-blast",
+        "smugglers-haul",
+        "smugglers-haul",
+        "smugglers-haul",
+        "nest-of-vipers"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "ominous-tidings",
+   "name": "Ominous Tidings",
+   "uesp": "Ominous Tidings",
+   "episode": "ep3",
+   "kind": "scene",
+   "description": "Something isn't right in the Dark Brotherhood...",
+   "requires": [
+    "cultists-meeting-place"
+   ],
+   "image": "LG-quest-Ominous Tidings.jpg",
+   "video": {
+    "start": "dbh_ep3_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The necromancer's words unnerved many in the sanctuary. Who had warned him?"
+    },
+    {
+     "speaker": "Kellen",
+     "text": "It was no coincidence that not long after the incident, the Listener herself chose to visit Falkreath."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "This was the agent's chance to gain her trust, and learn where she and the Night Mother dwelt."
+    }
+   ]
+  },
+  {
+   "id": "episode-4-intro",
+   "name": "Episode 4 Intro",
+   "uesp": "Episode 4 Intro",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Meet the Listener.",
+   "requires": [
+    "ominous-tidings"
+   ],
+   "image": "LG-npc-Alisanne Dupre.png",
+   "intro": [
+    {
+     "speaker": "Alisanne Dupre",
+     "text": "Greetings. I have come to give you an unpleasant task. We believe there is a traitor in our midst, and as the one who killed Rathir, only you are above suspicion.",
+     "audio": "episode4intro-text.0.0"
+    },
+    {
+     "speaker": "Alisanne Dupre",
+     "text": "In better days, we would have purged this entire sanctuary - but after the destruction of Wayrest, our numbers are too few for that. I've told the others you'll be helping them with their contracts. Discover who the traitor is, and silence them, permanently.",
+     "audio": "episode4intro-text.0.1"
+    }
+   ]
+  },
+  {
+   "id": "abandoned-mine",
+   "name": "Abandoned Mine",
+   "uesp": "Abandoned Mine",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Help Eliras with a contract.",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "image": "LG-loc-Abandoned Mine.png",
+   "intro": [
+    {
+     "speaker": "Eliras",
+     "text": "You want to help in this assassination? Very well. We're after an Orc bandit holed up in this mine. Try to be useful, eh?",
+     "audio": "abandonedmine-text.0.0"
+    }
+   ],
+   "hints": [
+    "Use the mine cart to reach the depths of the mine."
+   ],
+   "outro": [
+    {
+     "speaker": "Eliras",
+     "text": "Watch out around the other brothers; they can't all be trusted. I caught a glimpse of someone sneaking around the Sanctuary last night. It was dark, but I could tell they had red eyes.",
+     "audio": "abandonedmineaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Orc Bandits",
+    "avatar": "LG-npc-Enemy Gladiator.png",
+    "attributes": [
+     "R",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Mine Depths"
+    ],
+    "rulesText": "Mine Depths: Creatures can't be summoned here, except by card abilities. Each turn, a player gains 1 magicka for each creature they have here.\nYou start with Mine Cart in your hand.\nMaster: Orc Bandits start with a Cruel Bandit in each lane.",
+    "normal": {
+     "deck": [
+      "intimidate",
+      "shadow-shift",
+      "shadow-shift",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "graystone-ravager",
+      "graystone-ravager",
+      "helstrom-footpad",
+      "helstrom-footpad",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "blacksap-protector",
+      "blacksap-protector",
+      "blacksap-protector",
+      "mighty-ally",
+      "mighty-ally",
+      "stone-throw",
+      "stone-throw",
+      "alikr-survivalist",
+      "alikr-survivalist",
+      "an-xileel-invader",
+      "an-xileel-invader",
+      "thieves-den",
+      "bandit-ambush",
+      "bandit-ambush",
+      "fortress-watchman",
+      "fortress-watchman",
+      "highland-lurcher",
+      "highland-lurcher",
+      "highland-lurcher",
+      "ransack",
+      "unstoppable-rage"
+     ],
+     "playerHand": [
+      "mine-cart"
+     ]
+    },
+    "master": {
+     "deck": [
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "orc-clan-captain",
+      "orc-clan-captain",
+      "orc-clan-captain",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "battlerage-orc",
+      "battlerage-orc",
+      "battlerage-orc",
+      "dune-smuggler",
+      "dune-smuggler",
+      "dune-smuggler",
+      "morkul-gatekeeper",
+      "morkul-gatekeeper",
+      "morkul-gatekeeper",
+      "stone-throw",
+      "stone-throw",
+      "stone-throw",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "torval-crook",
+      "torval-crook",
+      "torval-crook",
+      "bandit-ambush",
+      "bandit-ambush",
+      "wild-beastcaller",
+      "chaurus-reaper",
+      "spider-lair",
+      "spider-daedra",
+      "nest-of-vipers"
+     ],
+     "board": [
+      [
+       "cruel-bandit"
+      ],
+      [
+       "cruel-bandit"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "corpselight-farm",
+   "name": "Corpselight Farm",
+   "uesp": "Corpselight Farm",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Help Babette with a contract.",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "image": "LG-loc-Corpselight Farm.png",
+   "intro": [
+    {
+     "speaker": "Babette",
+     "text": "New blood eh? I'm Babette. Don't let my innocent face fool you; I'm the oldest member of the Brotherhood. I've got a contract on this farmer... but I think she might be more than she appears to be, too",
+     "audio": "corpselightfarm-text.0.0"
+    }
+   ],
+   "hints": [
+    "Kill the farmers before they can change into werewolves."
+   ],
+   "outro": [
+    {
+     "speaker": "Babette",
+     "text": "You're looking for the traitor, aren't you? I saw someone acting suspicious the other day. They were wearing a hood.",
+     "audio": "corpselightfarmaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Suspicious Farmer",
+    "avatar": "LG-npc-Suspicious Farmer.png",
+    "attributes": [
+     "R",
+     "P"
+    ],
+    "lanes": [
+     "Campfire",
+     "Shadow"
+    ],
+    "rulesText": "Campfire: When you summon a creature here, friendly creatures here gain its keywords.\nNormal: The opponent starts with a Corpselight Farmer in each lane.\nMaster: The opponent starts with two Corpselight Farmers in each lane.",
+    "normal": {
+     "deck": [
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "fearless-northlander",
+      "fearless-northlander",
+      "fearless-northlander",
+      "archein-elite",
+      "archein-elite",
+      "archein-elite",
+      "cave-grahl",
+      "cave-grahl",
+      "corpselight-farmer",
+      "corpselight-farmer",
+      "corpselight-farmer",
+      "rampaging-minotaur",
+      "rampaging-minotaur",
+      "rampaging-minotaur",
+      "fortress-watchman",
+      "fortress-watchman",
+      "fortress-watchman",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "child-of-hircine",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "mountain-tyrant",
+      "night-predator",
+      "night-predator",
+      "night-predator"
+     ],
+     "board": [
+      [
+       "corpselight-farmer"
+      ],
+      [
+       "corpselight-farmer"
+      ]
+     ]
+    },
+    "master": {
+     "deck": [
+      "nord-firebrand",
+      "nord-firebrand",
+      "nord-firebrand",
+      "deathless-draugr",
+      "deathless-draugr",
+      "deathless-draugr",
+      "fharun-defender",
+      "fharun-defender",
+      "fharun-defender",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "protector-of-the-innocent",
+      "reachman-shaman",
+      "reachman-shaman",
+      "reachman-shaman",
+      "crushing-blow",
+      "crushing-blow",
+      "crushing-blow",
+      "angry-grahl",
+      "angry-grahl",
+      "angry-grahl",
+      "corpselight-farmer",
+      "corpselight-farmer",
+      "corpselight-farmer",
+      "gloom-wraith",
+      "gloom-wraith",
+      "gloom-wraith",
+      "lurking-mummy",
+      "lurking-mummy",
+      "lurking-mummy",
+      "child-of-hircine",
+      "child-of-hircine",
+      "child-of-hircine",
+      "night-shadow",
+      "night-shadow",
+      "night-shadow",
+      "belligerent-giant",
+      "vigilant-giant",
+      "blood-magic-lord"
+     ],
+     "board": [
+      [
+       "corpselight-farmer",
+       "corpselight-farmer"
+      ],
+      [
+       "corpselight-farmer",
+       "corpselight-farmer"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "falkreath-jail",
+   "name": "Falkreath Jail",
+   "uesp": "Falkreath Jail",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Help Varlyn with a contract.",
+   "requires": [
+    "episode-4-intro"
+   ],
+   "image": "LG-loc-Falkreath Jail.png",
+   "intro": [
+    {
+     "speaker": "Varlyn",
+     "text": "I suppose you can help me on this task. The target is a criminal being held in this jail. Our job is to ensure he never sees trial - though the guards may not like that much.",
+     "audio": "falkreathjail-text.0.0"
+    }
+   ],
+   "hints": [
+    "You must kill the prisoner/crime boss to win."
+   ],
+   "during": [
+    {
+     "speaker": "Varlyn",
+     "text": "Good work, brother! Now we need merely escape."
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Varlyn",
+     "text": "You're looking for the traitor, aren't you? I found a mysterious note in a dead drop. From the delicate script, I believe the traitor is a woman.",
+     "audio": "falkreathjailaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Jail Guards",
+    "avatar": "LG-npc-Jail Guards.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Jail"
+    ],
+    "laneWidths": [
+     6,
+     2
+    ],
+    "rulesText": "Jail: Creatures can't be summoned here, except by card abilities.\nNormal: Jail Guards start with an Imprisoned Criminal in the jail lane.\nMaster: Jail Guards start with an Imprisoned Crime Boss and a Septim Guardsman in the jail lane.",
+    "normal": {
+     "deck": [
+      "suppress",
+      "suppress",
+      "cheydinhal-sapper",
+      "cheydinhal-sapper",
+      "cheydinhal-sapper",
+      "scouting-patrol",
+      "scouting-patrol",
+      "detain",
+      "detain",
+      "detain",
+      "kvatch-soldier",
+      "kvatch-soldier",
+      "kvatch-soldier",
+      "skingrad-patroller",
+      "skingrad-patroller",
+      "skingrad-patroller",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "morthal-executioner",
+      "morthal-executioner",
+      "morthal-executioner",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "watch-commander",
+      "watch-commander",
+      "watch-commander",
+      "legion-praefect",
+      "legion-praefect",
+      "legion-praefect"
+     ],
+     "board": [
+      [],
+      [
+       "imprisoned-criminal"
+      ]
+     ],
+     "rules": [
+      {
+       "type": "custom",
+       "id": "kill-the-prisoner",
+       "text": "You have to both kill the prisoner and defeat the guards in order to win the match. (Imprisoned Criminal / Imprisoned Crime Boss: Your opponent can't win.)"
+      }
+     ]
+    },
+    "master": {
+     "deck": [
+      "suppress",
+      "suppress",
+      "suppress",
+      "execute",
+      "execute",
+      "execute",
+      "fharun-defender",
+      "fharun-defender",
+      "fharun-defender",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "healing-potion",
+      "healing-potion",
+      "healing-potion",
+      "imprison",
+      "imprison",
+      "imprison",
+      "haunting-spirit",
+      "haunting-spirit",
+      "haunting-spirit",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "edict-of-azura",
+      "edict-of-azura",
+      "edict-of-azura",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "flesh-atronach",
+      "immolating-blast",
+      "legion-praefect",
+      "auroran-sentry",
+      "dawns-wrath",
+      "blood-magic-lord",
+      "mantikora"
+     ],
+     "board": [
+      [],
+      [
+       "imprisoned-crime-boss",
+       "septim-guardsman"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "falkreath-sanctuary",
+   "name": "Falkreath Sanctuary",
+   "uesp": "Falkreath Sanctuary",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Decide who the traitor is.",
+   "requires": [
+    "abandoned-mine",
+    "corpselight-farm",
+    "falkreath-jail"
+   ],
+   "image": "LG-loc-Falkreath Sanctuary.png",
+   "intro": [
+    {
+     "speaker": "Alisanne Dupre",
+     "text": "I've learned something about our traitor. Apparently, Rathir was spotted meeting someone with pointed ears near the Sanctuary. Do you think you know who it is? Remember, the traitor will lie to you.",
+     "audio": "falkreathsanctuary-text.0.0"
+    },
+    {
+     "speaker": null,
+     "text": "The other assassins have told you that the traitor wears a hood, has red eyes, and is a woman."
+    }
+   ]
+  },
+  {
+   "id": "accuse-babette",
+   "name": "Accuse Babette",
+   "uesp": "Accuse Babette",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "Is Babette the traitor?",
+   "optional": true,
+   "requires": [
+    "falkreath-sanctuary"
+   ],
+   "lockedBy": [
+    "accuse-varlyn"
+   ],
+   "image": "LG-npc-Babette.png",
+   "intro": [
+    {
+     "speaker": "Babette",
+     "text": "You think I'm the traitor? Do I wear a hood? Do I have pointed ears? You're lucky I like you, or I'd kill you for suggesting it.",
+     "audio": "accusebabetteaftermath-text.0.0"
+    }
+   ]
+  },
+  {
+   "id": "accuse-eliras",
+   "name": "Accuse Eliras",
+   "uesp": "Accuse Eliras",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Is Eliras the traitor?",
+   "optional": true,
+   "requires": [
+    "falkreath-sanctuary"
+   ],
+   "lockedBy": [
+    "accuse-varlyn"
+   ],
+   "image": "LG-npc-Eliras.png",
+   "intro": [
+    {
+     "speaker": "Eliras",
+     "text": "You think I'm the traitor? I swear by Sithis I'm not. Maybe you are!",
+     "audio": "accuseeliras.startofgame.eliras"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Eliras",
+     "text": "The void... calls to me. But know this. I was a loyal brother. If you are not the traitor... you have more killing to do.",
+     "audio": "elirasaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Eliras",
+    "avatar": "LG-npc-Eliras.png",
+    "attributes": [
+     "R",
+     "G"
+    ],
+    "lanes": [
+     "Venom",
+     "Shadow"
+    ],
+    "rulesText": "Venom: Creatures in this lane have Lethal.",
+    "normal": {
+     "deck": [
+      "curse",
+      "curse",
+      "improvised-weapon",
+      "improvised-weapon",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "shadow-shift",
+      "shadow-shift",
+      "sharpshooter-scout",
+      "sharpshooter-scout",
+      "sharpshooter-scout",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "murkwater-witch",
+      "murkwater-witch",
+      "silvenar-tracker",
+      "silvenar-tracker",
+      "blacksap-protector",
+      "blacksap-protector",
+      "cast-out",
+      "cast-out",
+      "greenheart-knight",
+      "greenheart-knight",
+      "greenheart-knight",
+      "quicksilver-crossbow",
+      "quicksilver-crossbow",
+      "earthbone-spinner",
+      "green-pact-stalker",
+      "green-pact-stalker",
+      "knife-to-the-throat",
+      "camoran-scout-leader"
+     ]
+    },
+    "master": {
+     "deck": [
+      "relentless-raider",
+      "relentless-raider",
+      "relentless-raider",
+      "shadow-shift",
+      "shadow-shift",
+      "shadow-shift",
+      "sharpshooter-scout",
+      "sharpshooter-scout",
+      "sharpshooter-scout",
+      "finish-off",
+      "finish-off",
+      "finish-off",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "quicksilver-crossbow",
+      "quicksilver-crossbow",
+      "quicksilver-crossbow",
+      "skaven-pyromancer",
+      "skaven-pyromancer",
+      "skaven-pyromancer",
+      "stoneshard-orc",
+      "stoneshard-orc",
+      "stoneshard-orc",
+      "valenwood-huntsman",
+      "valenwood-huntsman",
+      "valenwood-huntsman",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "earthbone-spinner",
+      "grahtwood-ambusher",
+      "grahtwood-ambusher",
+      "grahtwood-ambusher",
+      "quinrawl-burglar",
+      "quinrawl-burglar",
+      "soulrest-marshal",
+      "soulrest-marshal",
+      "soulrest-marshal",
+      "goldbrand",
+      "falinesti-reaver"
+     ]
+    }
+   }
+  },
+  {
+   "id": "accuse-varlyn",
+   "name": "Accuse Varlyn",
+   "uesp": "Accuse Varlyn",
+   "episode": "ep4",
+   "kind": "battle",
+   "description": "Is Varlyn the traitor?",
+   "requires": [
+    "falkreath-sanctuary"
+   ],
+   "image": "LG-npc-Varlyn.png",
+   "intro": [
+    {
+     "speaker": "Varlyn",
+     "text": "So. You found me out. Very well. You'll make a fine traitor, once I've killed you!",
+     "audio": "accusevarlyn.startofgame.varlyn"
+    }
+   ],
+   "hints": [
+    "Varlyn nocks an arrow and takes cover. You'll have to shoot it out with him."
+   ],
+   "battle": {
+    "opponent": "Varlyn",
+    "avatar": "LG-npc-Varlyn.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "You start with Archer's Perch in play.\nVarlyn starts with a Makeshift Defenses in each lane.\nNormal: Varlyn starts with Archer's Perch in play.\nMaster: Varlyn starts with two Archer's Perch in play.",
+    "normal": {
+     "deck": [
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "firebolt",
+      "firebolt",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "dunmer-nightblade",
+      "dunmer-nightblade",
+      "fighters-guild-recruit",
+      "helstrom-footpad",
+      "helstrom-footpad",
+      "redoran-enforcer",
+      "redoran-enforcer",
+      "soul-split",
+      "soul-split",
+      "soul-split",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "swift-strike",
+      "swift-strike",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "elusive-schemer",
+      "knife-to-the-throat"
+     ],
+     "playerSupport": [
+      "archers-perch"
+     ],
+     "support": [
+      "archers-perch"
+     ],
+     "board": [
+      [
+       "makeshift-defenses"
+      ],
+      [
+       "makeshift-defenses"
+      ]
+     ]
+    },
+    "master": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "murkwater-goblin",
+      "murkwater-goblin",
+      "murkwater-goblin",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "crown-quartermaster",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "goblin-skulk",
+      "goblin-skulk",
+      "goblin-skulk",
+      "soul-split",
+      "soul-split",
+      "soul-split",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "brotherhood-slayer",
+      "swift-strike",
+      "swift-strike",
+      "swift-strike",
+      "knife-to-the-throat",
+      "knife-to-the-throat",
+      "tenmar-swiftclaw",
+      "tenmar-swiftclaw",
+      "thieves-den",
+      "torval-crook",
+      "torval-crook",
+      "torval-crook",
+      "spear-of-embers",
+      "spear-of-embers",
+      "spear-of-embers",
+      "quinrawl-burglar",
+      "goldbrand",
+      "supreme-atromancer"
+     ],
+     "support": [
+      "archers-perch",
+      "archers-perch"
+     ]
+    }
+   }
+  },
+  {
+   "id": "efficient-killer",
+   "name": "Efficient Killer",
+   "uesp": "Efficient Killer",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "You found the traitor, but at what cost?",
+   "optional": true,
+   "requires": [
+    "accuse-varlyn",
+    "accuse-eliras"
+   ],
+   "image": "LG-quest-Efficient Killer.jpg",
+   "video": {
+    "start": "dbh_ep4_ending_b"
+   },
+   "intro": [
+    {
+     "speaker": "Alisanne",
+     "text": "I had hoped not to lose more brothers than necessary. But so be it. The traitor is dead - and you have proven yourself, if nothing else, an efficient killer."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "I could use someone so ruthless by my side; come, join me in Bravil."
+    }
+   ]
+  },
+  {
+   "id": "the-traitor-found",
+   "name": "The Traitor Found",
+   "uesp": "The Traitor Found",
+   "episode": "ep4",
+   "kind": "scene",
+   "description": "You found the traitor, without killing any innocents",
+   "requires": [
+    "accuse-varlyn"
+   ],
+   "lockedBy": [
+    "accuse-eliras"
+   ],
+   "image": "LG-quest-The Traitor Found.jpg",
+   "video": {
+    "start": "dbh_ep4_ending_a"
+   },
+   "intro": [
+    {
+     "speaker": "Alisanne",
+     "text": "Excellent work. The traitor is dead, and our sanctuary remains strong."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "I could use an assassin like you by my side; come, join me in Bravil."
+    }
+   ]
+  },
+  {
+   "id": "chaos-in-bravil",
+   "name": "Chaos in Bravil",
+   "uesp": "Chaos in Bravil",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Learn why Alisanne needs your help in Bravil.",
+   "requiresAny": [
+    "the-traitor-found",
+    "efficient-killer"
+   ],
+   "image": "LG-quest-Chaos in Bravil.jpg",
+   "video": {
+    "start": "dbh_ep5_intro"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent arrived to a city in turmoil. A war between two rival Skooma gangs gripped the city."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "The Lucky Old Lady, the statue that stood atop the Night Mother's crypt, had been destroyed in the fighting."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Cheydinhal, too, had sent Alisanne help, in the form of two Assassins: Garnag and Andronica."
+    }
+   ]
+  },
+  {
+   "id": "episode-5-intro",
+   "name": "Episode 5 Intro",
+   "uesp": "Episode 5 Intro",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Alisanne and Uther have messages for you",
+   "requires": [
+    "chaos-in-bravil"
+   ],
+   "image": "LG-npc-Alisanne Dupre.png",
+   "intro": [
+    {
+     "speaker": "Alisanne Dupre",
+     "text": "Thank the Night Mother you've arrived. Garnag and Andronica have gone missing. I sent Andronica to assassinate the heads of the city's two Skooma gangs. I sent Garnag to assassinate the head of the Bravil Treasury. Neither has returned. I need you to find them.",
+     "audio": "episode5intro-text.0.0"
+    },
+    {
+     "speaker": "Message from Uther",
+     "text": "Agent. Your last message was unclear. Why are you in Bravil? Have you found the Listener? I have a business manager in town. Meet him at the Silverhome Inn.",
+     "audio": "episode5intro-text.0.1"
+    }
+   ]
+  },
+  {
+   "id": "skooma-den",
+   "name": "Skooma Den",
+   "uesp": "Skooma Den",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Search for Andronica in the Claw's territory",
+   "requires": [
+    "episode-5-intro"
+   ],
+   "image": "LG-loc-Skooma Den.png",
+   "intro": [
+    {
+     "speaker": "Claws Henchman",
+     "text": "This Den is Claws territory. Get lost!",
+     "audio": "skoomaden-text.0.0"
+    }
+   ],
+   "during": [
+    {
+     "speaker": null,
+     "text": "Be careful; that skooma is powerful, but deadly."
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Claws Henchman",
+     "text": "Enough! Let us parley, assassin.",
+     "audio": "skoomaden.endofgame.clawskingpin"
+    },
+    {
+     "speaker": "Claws Kingpin",
+     "text": "You seek the assassin woman? She tried to kill this one. If you want her back, you must do something for the Claws. Assassinate the head of our rivals, the Eclipse. When it is done, meet me at the bridge south of town.",
+     "audio": "skoomadenaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "The Claws",
+    "avatar": "LG-npc-Claws Henchman.png",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "You start with Skooma Frenzy in play.\nNormal: The Claws start with Skooma Frenzy in play.\nMaster: The Claws start with two Skooma Frenzy in play.",
+    "normal": {
+     "deck": [
+      "curse",
+      "curse",
+      "curse",
+      "descendant-of-alkosh",
+      "descendant-of-alkosh",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "dune-stalker",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "goblin-skulk",
+      "goblin-skulk",
+      "murkwater-witch",
+      "murkwater-witch",
+      "murkwater-witch",
+      "riverhold-escort",
+      "riverhold-escort",
+      "skooma-racketeer",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "master-of-thieves",
+      "master-of-thieves",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "thieves-den",
+      "pahmar-raht-renegade",
+      "piercing-javelin",
+      "piercing-javelin",
+      "quinrawl-burglar",
+      "quinrawl-burglar",
+      "ransack"
+     ],
+     "playerSupport": [
+      "skooma-frenzy"
+     ],
+     "support": [
+      "skooma-frenzy"
+     ]
+    },
+    "master": {
+     "deck": [
+      "curse",
+      "curse",
+      "curse",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "dune-stalker",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "fighters-guild-recruit",
+      "goblin-skulk",
+      "goblin-skulk",
+      "murkwater-witch",
+      "murkwater-witch",
+      "murkwater-witch",
+      "riverhold-escort",
+      "riverhold-escort",
+      "skooma-racketeer",
+      "deshaan-avenger",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "moonlight-werebat",
+      "haafingar-marauder",
+      "haafingar-marauder",
+      "haafingar-marauder",
+      "pahmar-raht-renegade",
+      "piercing-javelin",
+      "piercing-javelin",
+      "quinrawl-burglar",
+      "quinrawl-burglar"
+     ],
+     "support": [
+      "skooma-frenzy",
+      "skooma-frenzy"
+     ]
+    }
+   }
+  },
+  {
+   "id": "eclipse-hideout",
+   "name": "Eclipse Hideout",
+   "uesp": "Eclipse Hideout",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Defeat the Eclipse",
+   "requires": [
+    "skooma-den"
+   ],
+   "image": "LG-loc-Eclipse Hideout.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The Agent faced a choice: Should they sneak in and assassinate the leader, or walk in and attempt to parley?",
+     "audio": "eclipsehideout-text.0.0"
+    }
+   ],
+   "choice": {
+    "prompt": "Sneak in and assassinate the leader, or walk in and attempt to parley?",
+    "options": [
+     {
+      "id": "sneak",
+      "label": "Sneak"
+     },
+     {
+      "id": "parley",
+      "label": "Parley"
+     }
+    ]
+   },
+   "battle": {
+    "opponent": "The Eclipse",
+    "avatar": "LG-npc-The Eclipse.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Sneak: You start with Stealth Mission and Elixir of Light Feet in play.\nParley: The Field Lane becomes an Eclipse Lane with \"After a creature is summoned here, trigger its Last Gasp.\"",
+    "normal": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "lesser-ward",
+      "lesser-ward",
+      "maple-shield",
+      "maple-shield",
+      "brutal-ashlander",
+      "brutal-ashlander",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "balmora-spymaster",
+      "balmora-spymaster",
+      "ice-spike",
+      "ice-spike",
+      "ice-spike",
+      "palace-conspirator",
+      "palace-conspirator",
+      "palace-conspirator",
+      "thieves-guild-recruit",
+      "thieves-guild-recruit",
+      "brilliant-experiment",
+      "varanis-courier",
+      "varanis-courier",
+      "varanis-courier",
+      "elusive-schemer",
+      "elusive-schemer",
+      "portcullis",
+      "eclipse-baroness",
+      "eclipse-baroness",
+      "eclipse-baroness"
+     ]
+    },
+    "master": {
+     "deck": [
+      "daggers-in-the-dark",
+      "daggers-in-the-dark",
+      "brutal-ashlander",
+      "brutal-ashlander",
+      "brutal-ashlander",
+      "mournhold-guardian",
+      "mournhold-guardian",
+      "balmora-spymaster",
+      "balmora-spymaster",
+      "balmora-spymaster",
+      "dunmer-nightblade",
+      "dunmer-nightblade",
+      "evermore-steward",
+      "evermore-steward",
+      "guild-recruit",
+      "guild-recruit",
+      "guild-recruit",
+      "varanis-courier",
+      "varanis-courier",
+      "varanis-courier",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "deshaan-avenger",
+      "elusive-schemer",
+      "elusive-schemer",
+      "elusive-schemer",
+      "eclipse-baroness",
+      "eclipse-baroness",
+      "eclipse-baroness"
+     ]
+    }
+   },
+   "variants": {
+    "sneak": {
+     "hints": [
+      "Move carefully. If any of your creatures are found and destroyed, you'll lose."
+     ],
+     "outro": [
+      {
+       "speaker": "Kellen",
+       "text": "The agent had killed the Eclipse's leader, fulfilling half of Andronica's contract. Now to meet with the Claws.",
+       "audio": "eclipseaftermath-text.0.0"
+      }
+     ],
+     "battle": {
+      "lanes": [
+       "Shadow",
+       "Shadow"
+      ],
+      "normal": {
+       "playerSupport": [
+        "stealth-mission",
+        "elixir-of-light-feet"
+       ],
+       "rules": [
+        {
+         "type": "loseIfAnyDies"
+        }
+       ]
+      }
+     }
+    },
+    "parley": {
+     "during": [
+      {
+       "speaker": "The Eclipse",
+       "text": "You want to talk to the boss? You'll need to go through us!",
+       "audio": "eclipsehideout.startofgame.eclipsemuscle"
+      }
+     ],
+     "outro": [
+      {
+       "speaker": "Eclipse Baroness",
+       "text": "What is going on out here? Let us talk like civilized people.",
+       "audio": "eclipsehideout.endofgame.eclipselord"
+      },
+      {
+       "speaker": "Eclipse Baroness",
+       "text": "The Claws have your compatriot? Then we have a common enemy. I will send some of my men to help you assassinate the rogue.",
+       "audio": "eclipseaftermathb-text.0.0"
+      }
+     ],
+     "battle": {
+      "lanes": [
+       "Eclipse",
+       "Shadow"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "south-bridge",
+   "name": "South Bridge",
+   "uesp": "South Bridge",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Assassinate the Claws Kingpin",
+   "requires": [
+    "eclipse-hideout"
+   ],
+   "image": "LG-loc-South Bridge.png",
+   "battle": {
+    "opponent": "Claws Kingpin",
+    "avatar": "LG-npc-Claws Kingpin.png",
+    "attributes": [
+     "Y",
+     "G"
+    ],
+    "lanes": [
+     "Field"
+    ],
+    "laneWidths": [
+     6
+    ],
+    "rulesText": "Sided with the Eclipse: You play the Eclipse's deck. Your opponent will begin with two Makeshift Defenses and a Skooma Underboss in play. In normal mode you will start with two Brutal Ashlanders in play. In master difficulty your opponent will also start with the Skooma Frenzy support in play.\nSided with the Claws: You play your deck. Your opponent will begin with two Makeshift Defenses and a Skooma Underboss in play. You do not get any additional cards. In master difficulty your opponent will also start with the Skooma Frenzy support in play.",
+    "normal": {
+     "deck": [
+      "blackmail",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "elixir-of-light-feet",
+      "fighters-guild-recruit",
+      "skooma-underboss",
+      "skooma-underboss",
+      "skooma-underboss",
+      "arenthia-swindler",
+      "arenthia-swindler",
+      "rajhini-highwayman",
+      "rajhini-highwayman",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "thievery",
+      "dreugh-shell-armor",
+      "dreugh-shell-armor",
+      "master-of-thieves",
+      "master-of-thieves",
+      "tenmar-swiftclaw",
+      "thieves-den",
+      "thieves-den",
+      "torval-crook",
+      "torval-crook",
+      "dagi-raht-mystic",
+      "dagi-raht-mystic",
+      "pahmar-raht-renegade",
+      "quinrawl-burglar",
+      "quinrawl-burglar",
+      "ransack"
+     ],
+     "board": [
+      [
+       "makeshift-defenses",
+       "makeshift-defenses",
+       "skooma-underboss"
+      ]
+     ]
+    },
+    "master": {
+     "deck": [
+      "descendant-of-alkosh",
+      "descendant-of-alkosh",
+      "blood-pact-messenger",
+      "blood-pact-messenger",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "daring-cutpurse",
+      "skooma-underboss",
+      "skooma-underboss",
+      "rajhini-highwayman",
+      "rajhini-highwayman",
+      "riverhold-escort",
+      "riverhold-escort",
+      "riverhold-escort",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "skooma-racketeer",
+      "dawnbreaker",
+      "master-of-thieves",
+      "master-of-thieves",
+      "master-of-thieves",
+      "tenmar-swiftclaw",
+      "thieves-den",
+      "dagi-raht-mystic",
+      "dagi-raht-mystic",
+      "pahmar-raht-renegade",
+      "pahmar-raht-renegade",
+      "piercing-javelin",
+      "quinrawl-burglar",
+      "quinrawl-burglar"
+     ],
+     "support": [
+      "skooma-frenzy"
+     ]
+    }
+   },
+   "variantsBy": "eclipse-hideout",
+   "variants": {
+    "parley": {
+     "intro": [
+      {
+       "speaker": "Claws Kingpin",
+       "text": "It's the Eclipse! We have been betrayed!",
+       "audio": "southbridge-text.1.0"
+      }
+     ],
+     "hints": [
+      "The Claws arrived at the bridge first and set up defenses, but you have backup from the Eclipse."
+     ],
+     "outro": [
+      {
+       "speaker": "Andronica",
+       "text": "My thanks. Now, if you'll excuse me, I need to go finish off the Eclipse Leader. The Night Mother commands it, after all.",
+       "audio": "southbridgeaftermathb-text.0.0"
+      }
+     ],
+     "battle": {
+      "normal": {
+       "playerDeck": [
+        "cruel-firebloom",
+        "cruel-firebloom",
+        "brotherhood-assassin",
+        "firebolt",
+        "firebolt",
+        "balmora-spymaster",
+        "balmora-spymaster",
+        "dunmer-nightblade",
+        "finish-off",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "house-kinsman",
+        "house-kinsman",
+        "telvanni-arcanist",
+        "telvanni-arcanist",
+        "varanis-courier",
+        "varanis-courier",
+        "deshaan-avenger",
+        "elusive-schemer",
+        "elusive-schemer",
+        "lightning-bolt",
+        "lightning-bolt",
+        "necrom-mastermind",
+        "necrom-mastermind",
+        "altar-of-despair",
+        "altar-of-despair",
+        "storm-atronach",
+        "dark-harvester",
+        "eclipse-baroness",
+        "eclipse-baroness"
+       ],
+       "playerBoard": [
+        [
+         "brutal-ashlander",
+         "brutal-ashlander"
+        ]
+       ]
+      },
+      "master": {
+       "playerBoard": [
+        []
+       ]
+      }
+     }
+    },
+    "sneak": {
+     "intro": [
+      {
+       "speaker": "Claws Kingpin",
+       "text": "You've done the job. Excellent. There is only one problem. The assassin tried to kill this one once. It does not pay to take risks, you understand? Kill them both.",
+       "audio": "southbridge-text.0.0"
+      }
+     ],
+     "hints": [
+      "The Claws were prepared to double-cross you, and are already in position."
+     ],
+     "outro": [
+      {
+       "speaker": "Andronica",
+       "text": "My thanks. I got sloppy, let them get the drop on me. It won't happen again.",
+       "audio": "southbridgeaftermath-text.0.0"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "bravil-treasury",
+   "name": "Bravil Treasury",
+   "uesp": "Bravil Treasury",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Look for the assassin Garnag.",
+   "requires": [
+    "episode-5-intro"
+   ],
+   "image": "LG-loc-Bravil Treasury.png",
+   "intro": [
+    {
+     "speaker": "Treasury Guard",
+     "text": "Another assassin? Sound the alarm!",
+     "audio": "braviltreasury-text.0.0"
+    }
+   ],
+   "hints": [
+    "The treasury is brimming with gold - and magicka!"
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent learned that the head of the treasury had already been assassinated. Garnag had succeeded in his mission. So where was he?",
+     "audio": "braviltreasuryaftermath-text.0.0"
+    }
+   ],
+   "battle": {
+    "opponent": "Treasury Guard",
+    "avatar": "LG-npc-Treasury Guard.png",
+    "attributes": [
+     "Y",
+     "P"
+    ],
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Normal: Both players starts with 5 magicka.\nMaster: You start with 5 magicka, the Treasury Guard starts with 7 magicka.",
+    "normal": {
+     "deck": [
+      "fifth-legion-trainer",
+      "fifth-legion-trainer",
+      "imperial-legionnaire",
+      "imperial-legionnaire",
+      "imperial-reinforcements",
+      "imperial-reinforcements",
+      "pillaging-tribune",
+      "pillaging-tribune",
+      "renowned-legate",
+      "renowned-legate",
+      "sanctuary-raid",
+      "sanctuary-raid",
+      "treasury-guard",
+      "treasury-guard",
+      "watch-commander",
+      "watch-commander",
+      "colovian-trooper",
+      "dawns-wrath",
+      "imperial-siege-engine",
+      "midnight-sweep",
+      "piercing-javelin",
+      "preserver-of-the-root",
+      "wind-keep-spellsword"
+     ],
+     "maxMagicka": 5,
+     "playerMaxMagicka": 5
+    },
+    "master": {
+     "deck": [
+      "wind-keep-spellsword",
+      "wind-keep-spellsword",
+      "penitus-oculatus-agent",
+      "penitus-oculatus-agent",
+      "edict-of-azura",
+      "edict-of-azura",
+      "edict-of-azura",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "preserver-of-the-root",
+      "elite-treasury-guard",
+      "elite-treasury-guard",
+      "elite-treasury-guard",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "knight-of-the-hour",
+      "piercing-javelin",
+      "piercing-javelin",
+      "piercing-javelin",
+      "pillaging-tribune",
+      "auroran-sentry",
+      "dawns-wrath",
+      "dawns-wrath",
+      "dawns-wrath",
+      "blood-magic-lord",
+      "blood-magic-lord",
+      "gravesinger",
+      "mantikora",
+      "mantikora",
+      "iron-atronach"
+     ],
+     "maxMagicka": 7
+    }
+   }
+  },
+  {
+   "id": "silverhome-on-the-water",
+   "name": "Silverhome on the Water",
+   "uesp": "Silverhome on the Water",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "Talk with Uther's messenger",
+   "requires": [
+    "episode-5-intro"
+   ],
+   "image": "LG-loc-Silverhome on the Water.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent found Uther's messenger in a room at Silverhome Inn. A strange noise sounded from a nearby room, but it did not immediately concern the agent. The messenger asked again if the agent had found the listener.",
+     "audio": "silverhomeonthewater-text.0.0"
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Did the agent tell him?",
+     "audio": "silverhomeonthewater-text.0.1"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Kellen",
+     "text": "Indeed. The agent urged Uther to make haste for Bravil.",
+     "audio": "silverhomeonthewateraftermatha-text.0.0",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "tell"
+      }
+     }
+    },
+    {
+     "speaker": "Kellen",
+     "text": "No. The agent dodged the question, assuring the messenger that progress was being made.",
+     "audio": "silverhomeonthewateraftermathb-text.0.0",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "withhold"
+      }
+     }
+    }
+   ],
+   "choice": {
+    "prompt": "Did the agent tell him?",
+    "options": [
+     {
+      "id": "tell",
+      "label": "Tell"
+     },
+     {
+      "id": "withhold",
+      "label": "Withold"
+     }
+    ]
+   }
+  },
+  {
+   "id": "silverhome-on-the-water-back-room",
+   "name": "Silverhome on the Water, Back Room",
+   "uesp": "Silverhome on the Water, Back Room",
+   "episode": "ep5",
+   "kind": "battle",
+   "description": "Find Garnag at last.",
+   "requires": [
+    "bravil-treasury",
+    "south-bridge",
+    "silverhome-on-the-water"
+   ],
+   "image": "LG-loc-Silverhome on the Water, Back Room.png",
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The agent investigated the strange noise at the Inn - and found Garnag being tortured.",
+     "audio": "silverhomeonthewaterbackroom-text.0.0"
+    }
+   ],
+   "outro": [
+    {
+     "speaker": "Garnag",
+     "text": "I... I didn't tell them anything. They'd been following me since Cheydinhal. They didn't tell me who they were, but I heard them mention a name... Uther.",
+     "audio": "silverhomebackroomaftermath-text.0.0",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "tell"
+      }
+     }
+    },
+    {
+     "speaker": "Garnag",
+     "text": "They kept asking about the Listener... Sithis forgive me, I told them she was here, in Bravil. They didn't tell me who they were, but I heard them mention a name... Uther.",
+     "audio": "silverhomebackroomaftermathb-text.0.0",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "withhold"
+      }
+     }
+    }
+   ],
+   "battle": {
+    "opponent": "The Torturer",
+    "avatar": "LG-npc-The Torturer.png",
+    "attributes": [
+     "B",
+     "G"
+    ],
+    "lanes": [
+     "Torment",
+     "Torment"
+    ],
+    "rulesText": "Torment: When a creature is summoned here, deal 1 damage to it.\nMaster: The Torturer starts with a Dres Tormentor in the left lane.",
+    "normal": {
+     "deck": [
+      "curse",
+      "lesser-ward",
+      "lesser-ward",
+      "arrow-in-the-knee",
+      "arrow-in-the-knee",
+      "arrow-in-the-knee",
+      "firebolt",
+      "firebolt",
+      "shadow-shift",
+      "shadow-shift",
+      "finish-off",
+      "ice-spike",
+      "palace-conspirator",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "sanctuary-pet",
+      "sanctuary-pet",
+      "thievery",
+      "breton-conjurer",
+      "breton-conjurer",
+      "dres-tormentor",
+      "dres-tormentor",
+      "dres-tormentor",
+      "winters-grasp",
+      "winters-grasp",
+      "stealer-of-secrets",
+      "stealer-of-secrets"
+     ]
+    },
+    "master": {
+     "deck": [
+      "lesser-ward",
+      "arrow-in-the-knee",
+      "arrow-in-the-knee",
+      "arrow-in-the-knee",
+      "shadow-shift",
+      "finish-off",
+      "finish-off",
+      "finish-off",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "mournhold-traitor",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "daggerfall-mage",
+      "mace-of-encumbrance",
+      "mace-of-encumbrance",
+      "sanctuary-pet",
+      "sanctuary-pet",
+      "breton-conjurer",
+      "breton-conjurer",
+      "breton-conjurer",
+      "dres-tormentor",
+      "dres-tormentor",
+      "dres-tormentor",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "gristlehide-dreugh",
+      "winters-grasp",
+      "winters-grasp",
+      "winters-grasp"
+     ],
+     "board": [
+      [
+       "dres-tormentor"
+      ],
+      []
+     ]
+    }
+   }
+  },
+  {
+   "id": "assassins-found",
+   "name": "Assassins Found",
+   "uesp": "Assassins Found",
+   "episode": "ep5",
+   "kind": "scene",
+   "description": "The gang war intensifies",
+   "requires": [
+    "silverhome-on-the-water-back-room"
+   ],
+   "image": "LG-quest-Assassins Found.jpg",
+   "video": {
+    "start": "dbh_ep5_ending"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "With the assassination of their leaders, the gang war intensified. Amidst the violence, Alisanne dare not leave the Night Mother's side."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "But Garnag's tale seemed to enrage the Listener. She soon told the agent why."
+    }
+   ]
+  },
+  {
+   "id": "alisannes-story",
+   "name": "Alisanne's Story",
+   "uesp": "Alisanne's Story",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Hear Alisanne's side of the story",
+   "requires": [
+    "assassins-found"
+   ],
+   "gallery": [
+    {
+     "file": "LG-quest-Alisanne's Story.jpg",
+     "caption": "A different version of the story"
+    },
+    {
+     "file": "LG-quest-Alisanne's Story 02.jpg",
+     "caption": "Alisanne flees her home"
+    },
+    {
+     "file": "LG-quest-Alisanne's Story 03.jpg",
+     "caption": "Uther seeks to spill more blood"
+    }
+   ],
+   "video": {
+    "start": "dbh_ep6_intro"
+   },
+   "intro": [
+    {
+     "speaker": "Alisanne",
+     "text": "When I was a young woman, my father murdered my mother."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "I ran and joined the brotherhood, swearing that someday, I would use the assassin's art to end him."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "His name is Uther Nere, and now, I know he's in Bravil."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "At long last, the Night Mother has given me permission to end his life."
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "I need you to find him. But don't kill him - lure him to me. His life is mine."
+    }
+   ]
+  },
+  {
+   "id": "silverhome-on-the-water-uthers-suite",
+   "name": "Silverhome on the Water, Uther's Suite",
+   "uesp": "Silverhome on the Water, Uther's Suite",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Report back to Uther",
+   "requires": [
+    "alisannes-story"
+   ],
+   "image": "LG-loc-Silverhome on the Water.png",
+   "intro": [
+    {
+     "speaker": "Uther",
+     "text": "Ah, my wayward agent. You might have told me the Listener was in Bravil. My torturer is most suspicious of you. You say you can lead me to the Listener? Good. I will come and ensure you finish the job.",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "withhold"
+      }
+     }
+    },
+    {
+     "speaker": "Uther",
+     "text": "You've found the Listener? And the Nightmother? Excellent! I will raise an army of mercenaries, and together, we will burn the crypt to the ground! You, my agent, will have the honor of putting an end to the wicked woman - as I watch.",
+     "if": {
+      "choice": {
+       "node": "silverhome-on-the-water",
+       "option": "tell"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "night-mothers-crypt",
+   "name": "Night Mother's Crypt",
+   "uesp": "Night Mother's Crypt",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Choose your side.",
+   "requires": [
+    "silverhome-on-the-water-uthers-suite"
+   ],
+   "image": "LG-loc-Night Mother's Crypt.png",
+   "intro": [
+    {
+     "speaker": "Uther",
+     "text": "At last... the Night Mother's Crypt. Men, burn it to the ground! And you, my agent - kill the Listener!",
+     "audio": "nightmotherscrypt-text.0.0"
+    },
+    {
+     "speaker": "Alisanne",
+     "text": "What? But I thought...",
+     "audio": "nightmotherscrypt-text.0.1"
+    },
+    {
+     "speaker": "Uther",
+     "text": "You thought you had a loyal assassin, the most skilled you'd ever seen? No, my dear. Your trusted lieutenant has been my agent from the beginning! Now, my friend, fulfill your contract - Kill the Listener!",
+     "audio": "nightmotherscrypt-text.0.2"
+    }
+   ],
+   "choice": {
+    "prompt": "Kill Alisanne, or defend her?",
+    "options": [
+     {
+      "id": "kill",
+      "label": "Kill Alisanne"
+     },
+     {
+      "id": "defend",
+      "label": "Defend Alisanne"
+     }
+    ]
+   },
+   "battle": {
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Kill: You start with Uther Nere in play.\nDefend: You start with Alisanne Dupre in play."
+   },
+   "variants": {
+    "kill": {
+     "hints": [
+      "Uther will reward you for damaging Garnag."
+     ],
+     "during": [
+      {
+       "speaker": "Garnag",
+       "text": "If you want to kill Alisanne, you'll have to get through me!",
+       "audio": "nightmotherscrypt1antibrotherhood.startofgame.garnag"
+      },
+      {
+       "speaker": "Andronica",
+       "text": "Garnag, you're hurt. Get out of here... I'll finish the traitor."
+      }
+     ],
+     "battle": {
+      "opponent": "Garnag",
+      "avatar": "LG-npc-Garnag.png",
+      "attributes": [
+       "R",
+       "P"
+      ],
+      "rulesText": "You start with Uther Nere in play.\nOnce you reduce Garnag's health to 10, Andronica will intervene. Garnag will be replaced by Andronica, who has a Spellsword deck and full health. On Master difficulty, one Preserver of the Root will spawn in each lane.",
+      "normal": {
+       "deck": [
+        "healing-hands",
+        "improvised-weapon",
+        "covenant-marauder",
+        "covenant-marauder",
+        "deadly-draugr",
+        "intimidate",
+        "daedric-dagger",
+        "dragontail-savior",
+        "fharun-defender",
+        "graystone-ravager",
+        "graystone-ravager",
+        "orc-clansman",
+        "orc-clansman",
+        "battlerage-orc",
+        "battlerage-orc",
+        "frostbite-spider",
+        "frostbite-spider",
+        "morkul-gatekeeper",
+        "quicksilver-crossbow",
+        "stone-throw",
+        "wrothgar-artisan",
+        "archein-guerrilla",
+        "bangkorai-butcher",
+        "bangkorai-butcher",
+        "fell-the-mighty",
+        "fireball",
+        "orcish-warhammer",
+        "fortress-watchman",
+        "fortress-watchman",
+        "unstoppable-rage"
+       ],
+       "playerSupport": [
+        "uther-nere"
+       ],
+       "rules": [
+        {
+         "type": "custom",
+         "id": "andronica-intervenes",
+         "text": "Once you reduce Garnag's health to 10, Andronica will intervene. Garnag will be replaced by Andronica, who has a Spellsword deck and full health.",
+         "atHealth": 10,
+         "opponent": "Andronica",
+         "avatar": "LG-npc-Andronica.png",
+         "attributes": [
+          "Y",
+          "P"
+         ],
+         "deck": [
+          "suppress",
+          "deadly-draugr",
+          "deadly-draugr",
+          "daedric-dagger",
+          "stormhold-henchman",
+          "stormhold-henchman",
+          "stormhold-henchman",
+          "thalmor-agent",
+          "thalmor-agent",
+          "crushing-blow",
+          "crushing-blow",
+          "dark-guardian",
+          "frostbite-spider",
+          "plea-to-kynareth",
+          "stalking-shadowscale",
+          "stalking-shadowscale",
+          "stalking-shadowscale",
+          "archein-elite",
+          "archein-elite",
+          "black-marsh-warden",
+          "little-girl",
+          "preserver-of-the-root",
+          "disciple-of-namira",
+          "disciple-of-namira",
+          "divine-fervor",
+          "piercing-javelin",
+          "flesh-atronach",
+          "flesh-atronach",
+          "sanctuary-raid",
+          "sanctuary-raid"
+         ],
+         "line": {
+          "speaker": "Andronica",
+          "text": "Garnag, you're hurt. Get out of here... I'll finish the traitor."
+         }
+        }
+       ]
+      },
+      "master": {
+       "deck": [
+        "covenant-marauder",
+        "covenant-marauder",
+        "deadly-draugr",
+        "deadly-draugr",
+        "steel-scimitar",
+        "steel-scimitar",
+        "dragontail-savior",
+        "dragontail-savior",
+        "fharun-defender",
+        "fharun-defender",
+        "graystone-ravager",
+        "graystone-ravager",
+        "graystone-ravager",
+        "orc-clan-captain",
+        "orc-clan-captain",
+        "protector-of-the-innocent",
+        "protector-of-the-innocent",
+        "frostbite-spider",
+        "frostbite-spider",
+        "morkul-gatekeeper",
+        "morkul-gatekeeper",
+        "morkul-gatekeeper",
+        "stalking-shadowscale",
+        "stalking-shadowscale",
+        "stalking-shadowscale",
+        "stone-throw",
+        "bangkorai-butcher",
+        "bangkorai-butcher",
+        "wood-orc-headhunter",
+        "wood-orc-headhunter"
+       ],
+       "rules": [
+        {
+         "type": "custom",
+         "id": "andronica-intervenes",
+         "text": "Once you reduce Garnag's health to 10, Andronica will intervene. Garnag will be replaced by Andronica, who has a Spellsword deck and full health. On Master difficulty, one Preserver of the Root will spawn in each lane.",
+         "atHealth": 10,
+         "opponent": "Andronica",
+         "avatar": "LG-npc-Andronica.png",
+         "attributes": [
+          "Y",
+          "P"
+         ],
+         "deck": [
+          "deadly-draugr",
+          "stormhold-henchman",
+          "stormhold-henchman",
+          "stormhold-henchman",
+          "frostbite-spider",
+          "frostbite-spider",
+          "archein-elite",
+          "black-marsh-warden",
+          "black-marsh-warden",
+          "cloudrest-illusionist",
+          "cloudrest-illusionist",
+          "cursed-spectre",
+          "lurking-mummy",
+          "lurking-mummy",
+          "piercing-javelin",
+          "piercing-javelin",
+          "piercing-javelin",
+          "flesh-atronach",
+          "flesh-atronach",
+          "immolating-blast",
+          "immolating-blast",
+          "dark-harvester",
+          "dark-harvester",
+          "auroran-sentry",
+          "dawns-wrath",
+          "dawns-wrath",
+          "blood-magic-lord",
+          "night-talon-lord",
+          "gravesinger",
+          "mantikora"
+         ],
+         "line": {
+          "speaker": "Andronica",
+          "text": "Garnag, you're hurt. Get out of here... I'll finish the traitor."
+         },
+         "board": [
+          [
+           "preserver-of-the-root"
+          ],
+          [
+           "preserver-of-the-root"
+          ]
+         ]
+        }
+       ]
+      }
+     }
+    },
+    "defend": {
+     "hints": [
+      "Uther's forces have you outnumbered, but Alisanne is at your side."
+     ],
+     "during": [
+      {
+       "speaker": "Alisanne",
+       "text": "Garnag, you're hurt! Get the Night Mother to safety! We will hold these mercenaries off!",
+       "audio": "nightmotherscrypt1brotherhood.startofgame.alisanne"
+      },
+      {
+       "speaker": "Garnag",
+       "text": "It will be done!",
+       "audio": "nightmotherscrypt1brotherhood.startofgame.garnag"
+      }
+     ],
+     "battle": {
+      "opponent": "The Torturer",
+      "avatar": "LG-npc-The Torturer.png",
+      "attributes": [
+       "B",
+       "G"
+      ],
+      "rulesText": "You start with Alisanne Dupre in play.\nIn normal difficulty, your opponent starts with two Cruel Bandits in each lane; in Master difficulty your opponent starts with three Dark Adherents in each lane.",
+      "normal": {
+       "deck": [
+        "daggers-in-the-dark",
+        "arrow-in-the-knee",
+        "arrow-in-the-knee",
+        "finish-off",
+        "finish-off",
+        "gust-of-wind",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "steel-sword",
+        "steel-sword",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "thieves-guild-recruit",
+        "dwarven-sphere",
+        "dwarven-sphere",
+        "mace-of-encumbrance",
+        "mace-of-encumbrance",
+        "sanctuary-pet",
+        "sanctuary-pet",
+        "dres-tormentor",
+        "dres-tormentor",
+        "dres-tormentor",
+        "green-pact-stalker",
+        "green-pact-stalker",
+        "camoran-scout-leader",
+        "giant-snake",
+        "leaflurker",
+        "spear-of-embers",
+        "winters-grasp",
+        "staff-of-sparks"
+       ],
+       "playerSupport": [
+        "alisanne-dupre"
+       ],
+       "board": [
+        [
+         "cruel-bandit",
+         "cruel-bandit"
+        ],
+        [
+         "cruel-bandit",
+         "cruel-bandit"
+        ]
+       ]
+      },
+      "master": {
+       "deck": [
+        "daggers-in-the-dark",
+        "daggers-in-the-dark",
+        "arrow-in-the-knee",
+        "finish-off",
+        "finish-off",
+        "shrieking-harpy",
+        "shrieking-harpy",
+        "soul-split",
+        "soul-split",
+        "steel-sword",
+        "steel-sword",
+        "dwarven-sphere",
+        "dwarven-sphere",
+        "mace-of-encumbrance",
+        "mace-of-encumbrance",
+        "mace-of-encumbrance",
+        "sanctuary-pet",
+        "sanctuary-pet",
+        "dres-tormentor",
+        "dres-tormentor",
+        "dres-tormentor",
+        "green-pact-stalker",
+        "green-pact-stalker",
+        "camoran-scout-leader",
+        "giant-snake",
+        "giant-snake",
+        "leaflurker",
+        "spear-of-embers",
+        "winters-grasp",
+        "winters-grasp"
+       ],
+       "board": [
+        [
+         "dark-adherent",
+         "dark-adherent",
+         "dark-adherent"
+        ],
+        [
+         "dark-adherent",
+         "dark-adherent",
+         "dark-adherent"
+        ]
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "night-mothers-crypt-part-2",
+   "name": "Night Mother's Crypt Part 2",
+   "uesp": "Night Mother's Crypt Part 2",
+   "episode": "ep6",
+   "kind": "battle",
+   "description": "Finish the fight.",
+   "requires": [
+    "night-mothers-crypt"
+   ],
+   "final": true,
+   "image": "LG-loc-Night Mother's Crypt Part 2.png",
+   "battle": {
+    "lanes": [
+     "Field",
+     "Shadow"
+    ],
+    "rulesText": "Kill: You start with Uther Nere in play. Your opponent starts with Brotherhood Sanctuary in play.\nDefend: You start with Alisanne Dupre in play. Your opponent starts with 5 magicka."
+   },
+   "variantsBy": "night-mothers-crypt",
+   "variants": {
+    "kill": {
+     "intro": [
+      {
+       "speaker": "Alisanne Dupre",
+       "text": "I trusted you! But here you are - a lap dog for my murderous father. Fine then. Die like the dog you are!",
+       "audio": "nightmotherscryptpart2-text.0.0"
+      }
+     ],
+     "hints": [
+      "Alisanne is eager to kill your creatures."
+     ],
+     "battle": {
+      "opponent": "Alisanne Dupre",
+      "avatar": "LG-npc-Alisanne Dupre.png",
+      "attributes": [
+       "G",
+       "P"
+      ],
+      "rulesText": "You start with Uther Nere in play. Your opponent starts with Brotherhood Sanctuary in play.\nMaster: Alisanne starts with 50 health.",
+      "normal": {
+       "deck": [
+        "curse",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "deadly-draugr",
+        "shadow-shift",
+        "daedric-dagger",
+        "dune-stalker",
+        "dune-stalker",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "murkwater-witch",
+        "snake-tooth-necklace",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "hackwing-feather",
+        "malefic-wreath",
+        "malefic-wreath",
+        "stalking-shadowscale",
+        "stalking-shadowscale",
+        "stalking-shadowscale",
+        "swift-strike",
+        "archein-elite",
+        "archein-venomtongue",
+        "knife-to-the-throat",
+        "murkwater-shaman",
+        "territorial-viper",
+        "pahmar-raht-renegade",
+        "pahmar-raht-renegade",
+        "doomcrag-vampire",
+        "chaurus-reaper",
+        "eclipse-baroness"
+       ],
+       "playerSupport": [
+        "uther-nere"
+       ],
+       "support": [
+        "brotherhood-sanctuary"
+       ]
+      },
+      "master": {
+       "deck": [
+        "curse",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "brotherhood-assassin",
+        "shadow-shift",
+        "shadow-shift",
+        "enchanted-plate",
+        "enchanted-plate",
+        "fighters-guild-recruit",
+        "fighters-guild-recruit",
+        "murkwater-witch",
+        "wind-keep-spellsword",
+        "wind-keep-spellsword",
+        "astrid",
+        "brotherhood-slayer",
+        "brotherhood-slayer",
+        "stalking-shadowscale",
+        "stalking-shadowscale",
+        "archein-venomtongue",
+        "archein-venomtongue",
+        "falkreath-defiler",
+        "falkreath-defiler",
+        "lucien-lachance",
+        "territorial-viper",
+        "territorial-viper",
+        "pahmar-raht-renegade",
+        "pahmar-raht-renegade",
+        "thorn-histmage",
+        "thorn-histmage",
+        "cicero-the-betrayer",
+        "eclipse-baroness",
+        "blood-magic-lord"
+       ],
+       "health": 50
+      }
+     }
+    },
+    "defend": {
+     "intro": [
+      {
+       "speaker": "Alisanne",
+       "text": "Father! For long years I have awaited this!",
+       "audio": "nightmotherscryptpart2-text.1.0"
+      },
+      {
+       "speaker": "Uther",
+       "text": "As have I. I knew while you lived, I would never be safe. Come, let us end this once and for all!",
+       "audio": "nightmotherscryptpart2-text.1.1"
+      }
+     ],
+     "hints": [
+      "Uther starts with a magicka advantage. Use Alisanne to help you catch up."
+     ],
+     "during": [
+      {
+       "speaker": "Uther",
+       "text": "Goodbye, daughter!"
+      },
+      {
+       "speaker": "Uther",
+       "text": "And now, my traitorous agent, it is down to you and me. You will die for betraying me!"
+      }
+     ],
+     "battle": {
+      "opponent": "Uther Nere",
+      "avatar": "LG-npc-Uther Nere.png",
+      "attributes": [
+       "B",
+       "P"
+      ],
+      "rulesText": "You start with Alisanne Dupre in play. Your opponent starts with 5 magicka.\nMaster: Uther starts with 50 health.\nWhen Uther reaches 12 magicka (10 magicka in Master difficulty) or his third rune is broken, he plays Unexpected Demise (Expected Demise in Master mode), which kills Alisanne.",
+      "normal": {
+       "deck": [
+        "healing-hands",
+        "deathless-draugr",
+        "deathless-draugr",
+        "fharun-defender",
+        "high-rock-summoner",
+        "hist-speaker",
+        "ice-spike",
+        "oldgate-warden",
+        "shriveled-mummy",
+        "shriveled-mummy",
+        "camlorn-sentinel",
+        "archein-guerrilla",
+        "cave-grahl",
+        "cave-grahl",
+        "cave-grahl",
+        "cursed-spectre",
+        "midnight-sweep",
+        "midnight-sweep",
+        "restless-templar",
+        "restless-templar",
+        "lurking-mummy",
+        "winters-grasp",
+        "fates-witness",
+        "mountain-tyrant",
+        "bone-colossus",
+        "dark-harvester",
+        "lowland-troll",
+        "swamp-leviathan",
+        "shocking-wamasu",
+        "volkihar-lord",
+        "unexpected-demise"
+       ],
+       "playerSupport": [
+        "alisanne-dupre"
+       ],
+       "maxMagicka": 5,
+       "rules": [
+        {
+         "type": "custom",
+         "id": "uther-kills-alisanne",
+         "card": "unexpected-demise",
+         "atMagicka": 12,
+         "atRunesBroken": 3,
+         "text": "When Uther reaches 12 magicka or his third rune is broken, he will shout \"Goodbye, daughter!\" and play the action Unexpected Demise, which kills Alisanne."
+        }
+       ]
+      },
+      "master": {
+       "deck": [
+        "deathless-draugr",
+        "high-rock-summoner",
+        "hist-speaker",
+        "hist-speaker",
+        "frostbite-spider",
+        "angry-grahl",
+        "cursed-spectre",
+        "ice-wraith",
+        "ice-wraith",
+        "midnight-sweep",
+        "midnight-sweep",
+        "restless-templar",
+        "restless-templar",
+        "disciple-of-namira",
+        "lurking-mummy",
+        "doomcrag-vampire",
+        "fate-weaver",
+        "mountain-tyrant",
+        "night-predator",
+        "night-shadow",
+        "bone-colossus",
+        "bone-colossus",
+        "dark-harvester",
+        "lowland-troll",
+        "nahagliiv",
+        "swamp-leviathan",
+        "shocking-wamasu",
+        "nahkriin-dragon-priest",
+        "volkihar-lord",
+        "expected-demise",
+        "iron-atronach"
+       ],
+       "health": 50,
+       "rules": [
+        {
+         "type": "custom",
+         "id": "uther-kills-alisanne",
+         "card": "expected-demise",
+         "atMagicka": 10,
+         "atRunesBroken": 3,
+         "text": "When Uther reaches 10 magicka or his third rune is broken, he will shout \"Goodbye, daughter!\" and play the action Expected Demise, which kills Alisanne."
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "brotherhoods-justice",
+   "name": "Brotherhood's Justice",
+   "uesp": "Brotherhood's Justice",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Learn what effect your choice had.",
+   "requires": [
+    "night-mothers-crypt-part-2"
+   ],
+   "requiresChoice": {
+    "node": "night-mothers-crypt",
+    "option": "defend"
+   },
+   "image": "LG-quest-Brotherhood's Justice.jpg",
+   "video": {
+    "start": "dbh_ending_b"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "Uther Nere had succeeded in killing his daughter. But the agent had ensured that he paid for his vile crimes with his life."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "Thanks to the agent, Garnag was able to escape with the Night Mother, ensuring that the Brotherhood would live on."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Nagh is not sure if this is a tale of victory or defeat."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "As I said, my friend. Some tales have no heroes. Only people in the darkness searching for a glimmer of light."
+    }
+   ]
+  },
+  {
+   "id": "brotherhoods-fall",
+   "name": "Brotherhood's Fall",
+   "uesp": "Brotherhood's Fall",
+   "episode": "ep6",
+   "kind": "scene",
+   "description": "Learn what effect your choice had.",
+   "requires": [
+    "night-mothers-crypt-part-2"
+   ],
+   "requiresChoice": {
+    "node": "night-mothers-crypt",
+    "option": "kill"
+   },
+   "gallery": [
+    {
+     "file": "LG-quest-Brotherhood's Fall.jpg",
+     "caption": ""
+    },
+    {
+     "file": "LG-quest-Brotherhood's Fall 02.jpg",
+     "caption": "Some tales have no heroes."
+    }
+   ],
+   "video": {
+    "start": "dbh_ending_a"
+   },
+   "intro": [
+    {
+     "speaker": "Kellen",
+     "text": "The Agent had done well. The Brotherhood's listener was dead, and its base in Bravil destroyed."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "The assassin's guild was reduced to a shadow of its former self for decades."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "His bloody work done, Uther Nere returned to his business dealing, leaving the agent to chart their own course once more."
+    },
+    {
+     "speaker": "Nagh",
+     "text": "Nagh is not sure if this is a tale of victory or defeat."
+    },
+    {
+     "speaker": "Kellen",
+     "text": "As I said, my friend. Some tales have no heroes. Only people in the darkness searching for a glimmer of light."
+    }
+   ]
+  }
+ ]
+}
