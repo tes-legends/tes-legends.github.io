@@ -4498,7 +4498,7 @@
   {
     "id": "unite-the-houses",
     "name": "Unite the Houses",
-    "type": "Support",
+    "type": "Action",
     "subtypes": [],
     "attributes": [
       "N"
@@ -4507,30 +4507,14 @@
     "attack": null,
     "health": null,
     "rarity": "4Legendary",
-    "text": "Ongoing If you have at least one card of each attribute, you win the game.",
+    "text": "If you have at least one card of each attribute in play, you win the game.",
     "keywords": [],
     "set": "Houses of Morrowind",
     "tier": "U",
     "deckCodeId": "rh",
     "effects": [
       {
-        "trigger": "StartOfTurn",
-        "type": "winGame",
-        "target": "player",
-        "condition": {
-          "type": "haveAllAttributes"
-        }
-      },
-      {
-        "trigger": "Summon",
-        "type": "winGame",
-        "target": "player",
-        "condition": {
-          "type": "haveAllAttributes"
-        }
-      },
-      {
-        "trigger": "PlayCard",
+        "trigger": "Play",
         "type": "winGame",
         "target": "player",
         "condition": {
