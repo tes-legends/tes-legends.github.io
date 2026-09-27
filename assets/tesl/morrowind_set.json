@@ -1506,6 +1506,7 @@
     "rarity": "4Legendary",
     "text": "Rally 2 Your other Rallies give an extra +1/+1.",
     "keywords": ["Rally"],
+    "rally": 2,
     "set": "Houses of Morrowind",
     "tier": "C",
     "deckCodeId": "bu",
@@ -1515,7 +1516,8 @@
         "type": "buffTarget",
         "modAttack": 1,
         "modHealth": 1,
-        "target": "cardRallied"
+        "target": "cardRallied",
+        "otherRally": true
       }
     ]
   },
@@ -3872,17 +3874,11 @@
     "rarity": "3Epic",
     "text": "Rally 2 Last Gasp : Give a random creature in your hand +2/+2.",
     "keywords": ["Rally", "LastGasp"],
+    "rally": 2,
     "set": "Houses of Morrowind",
     "tier": "A",
     "deckCodeId": "iX",
     "effects": [
-      {
-        "trigger": "Rally",
-        "type": "buffTarget",
-        "modAttack": 1,
-        "modHealth": 1,
-        "target": "cardRallied"
-      },
       {
         "trigger": "LastGasp",
         "type": "buffTarget",
