@@ -2287,7 +2287,8 @@
           "delte-fyr",
           "uupse-fyr"
         ],
-        "target": "thisLaneOrOther"
+        "target": "thisLaneOrOther",
+        "inOrder": true
       }
     ]
   },
@@ -3045,7 +3046,7 @@
     "effects": [
       {
         "trigger": "Play",
-        "type": "revealAndChoose",
+        "type": "revealAndChooseAny",
         "amount": 3,
         "target": "player"
       }

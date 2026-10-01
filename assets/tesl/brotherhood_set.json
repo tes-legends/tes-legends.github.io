@@ -265,7 +265,7 @@
         "type": "summon",
         "cardId": "corsair",
         "amount": 1,
-        "target": "randomLane"
+        "target": "chosenLane"
       }
     ]
   },
@@ -1238,7 +1238,7 @@
         "type": "summonOpponent",
         "cardId": "target",
         "amount": 1,
-        "target": "randomLane"
+        "target": "chosenLane"
       },
       {
         "trigger": "CreatureEnemyDeath",

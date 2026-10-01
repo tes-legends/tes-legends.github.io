@@ -1050,7 +1050,7 @@
         "trigger": "Play",
         "type": "summon",
         "cardId": "targetedCreature",
-        "target": "randomLane"
+        "target": "targetedCreatureLane"
       }
     ]
   },
@@ -2497,7 +2497,7 @@
         "trigger": "Activation",
         "type": "summon",
         "cardId": "uncaged-wolf",
-        "target": "randomLane"
+        "target": "chosenLane"
       }
     ]
   },
@@ -4788,9 +4788,7 @@
     "effects": [
       {
         "trigger": "Summon",
-        "type": "upgrade",
-        "target": "cardPlayerHandRandom",
-        "subtypes": [ "Shout" ]
+        "type": "upgradeShoutInHand"
       }
     ]
   },

@@ -3028,7 +3028,7 @@
      },
      "opponent": {
       "health": 30,
-      "magicka": 7,
+      "magicka": 6,
       "runes": 0,
       "support": [
        "divine-fervor*2"
@@ -3054,7 +3054,8 @@
       "Now the two Preserver of the Roots can be finished off with your remaining Reverberating Strikes.",
       "Attack Almalexia with both Riverhold Escorts to move them to the right lane with their Pilfer effect.",
       "End your turn to win."
-     ]
+     ],
+     "notes": "Opponent max magicka 6 + Hist Speaker = the 7 UESP lists (killing Hist Speaker must drop it below 7)."
     }
    }
   },
@@ -3418,7 +3419,7 @@
       ]
      },
      "opponent": {
-      "health": 13,
+      "health": 11,
       "magicka": 12,
       "runes": 0,
       "board": [
@@ -3444,7 +3445,8 @@
       "Attack Afflicted Alit with one of the Ageless Automatons, which will get +3/+0 and breakthrough. Summon Mournhold Traitor in the left lane and equip Maple Shield on the second Ageless Automaton.",
       "Use of Unstoppable Rage on the first Ageless Automaton. The second Ageless Automaton will survive due to Maple Shield, but Mournhold Traitor will die and trigger its last gasp effect to summon a Mournhold Guardian in the opponent's left lane.",
       "Attack the Mournhold Guardian with the second Ageless Automaton to win the match."
-     ]
+     ],
+     "notes": "UESP's screenshot shows Dagoth Ur on 13, but its documented line (Eradicator + Young Mammoth through a Senche-Tiger: 3, Automaton through the guarded Alit: 4, Automaton through the Mournhold Guardian after Unstoppable Rage: 4) deals 11 with the printed stats, so he starts on 11 here."
     }
    }
   },

@@ -2700,7 +2700,7 @@
             "type": "summon",
             "cardId": "reconstructed-spider",
             "amount": 1,
-            "target": "randomLane"
+            "target": "chosenLane"
           }
         ]
       }
@@ -3857,6 +3857,26 @@
     "rarity": "1Common",
     "text": "",
     "keywords": [],
+    "set": "Story Set",
+    "deckCodeId": null,
+    "storyCampaign": true
+  },
+  {
+    "id": "sheogoraths-wrath",
+    "name": "Sheogorath's Wrath",
+    "type": "Action",
+    "subtypes": [],
+    "attributes": [
+      "N"
+    ],
+    "cost": 4,
+    "attack": null,
+    "health": null,
+    "rarity": "4Legendary",
+    "text": "Prophecy Banish all creatures. Restore Sheogorath to full health.",
+    "keywords": [
+      "Prophecy"
+    ],
     "set": "Story Set",
     "deckCodeId": null,
     "storyCampaign": true

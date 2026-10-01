@@ -5632,13 +5632,6 @@
      "audio": "IOM_Movie_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
     }
    ],
-   "during": [
-    {
-     "speaker": "Sheogorath",
-     "text": "Here, a trip down memory lane!",
-     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
-    }
-   ],
    "battle": {
     "opponent": "Sheogorath",
     "attributes": [
@@ -5688,7 +5681,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "Here, a trip down memory lane!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
+       }
       }
      ]
     },
@@ -5731,7 +5728,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "Here, a trip down memory lane!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_001"
+       }
       }
      ]
     }
@@ -5778,7 +5779,7 @@
      "goal": "win",
      "text": "Win this turn.",
      "player": {
-      "health": 30,
+      "health": 1,
       "magicka": 8,
       "runes": 0,
       "hand": [
@@ -5798,29 +5799,36 @@
       "deck": []
      },
      "opponent": {
-      "health": 8,
+      "health": 12,
       "magicka": 9,
       "runes": 0,
       "board": [
        [
-        "septim-guardsman",
-        "septim-guardsman",
-        "septim-guardsman"
+        {
+         "id": "septim-guardsman",
+         "count": 3,
+         "attack": 2,
+         "health": 4
+        }
        ],
        [
-        "phalanx-exemplar",
+        {
+         "id": "phalanx-exemplar",
+         "attack": 6,
+         "health": 8
+        },
         "watch-commander"
        ]
       ],
       "deck": []
      },
-     "notes": "UESP gives no health totals or goal text; goal \"Win this turn\" and both health values are guesses (8 = Indoril Archmage + Iron Sword + Bushwhack to face)."
+     "notes": "Health from a playthrough video (Normal): Porcia 12, you 1. Watch Commander's Summon has already given her Guards +1/+2 (2/4 Guardsmen, 6/8 Exemplar). Line: Iron Sword + Bushwhack on Indoril Archmage, attack the Exemplar (both die), Last Gasp clears the Guardsmen, then 4+4 in the field and 4 past the Commander."
     },
     "masterPuzzle": {
      "goal": "win",
      "text": "Win this turn.",
      "player": {
-      "health": 30,
+      "health": 1,
       "magicka": 8,
       "runes": 0,
       "hand": [
@@ -5844,7 +5852,7 @@
       "deck": []
      },
      "opponent": {
-      "health": 13,
+      "health": 14,
       "magicka": 8,
       "runes": 0,
       "support": [
@@ -5863,7 +5871,7 @@
       ],
       "deck": []
      },
-     "notes": "UESP gives no health totals or goal text; goal and health values are guesses (13 = best line found: Mad Dash a right Traitor left, Warhammer Traitor breaks through the Blade, Steel Sword Traitor + moved Traitor to face)."
+     "notes": "Health from a playthrough video (Master): Porcia 14, you 1. Line from the video: Steel Sword Traitor trades with a shadow-lane Blade, another Traitor kills the Guardian it leaves, Grappling Hook on a Traitor pulls the field Blade to the shadow lane, Mad Dash that Traitor to the field, three Traitors to face (15)."
     }
    }
   },
@@ -5887,11 +5895,6 @@
      "speaker": "Sheogorath",
      "text": "Oh, I'm sure ya had good reasons! You've always got good reasons!",
      "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_002"
-    },
-    {
-     "speaker": "Sheogorath",
-     "text": "How rude of me -- I forgot! I promised you more memories, didn't I? Well, here you go!",
-     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_003"
     }
    ],
    "battle": {
@@ -5948,7 +5951,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "How rude of me -- I forgot! I promised you more memories, didn't I? Well, here you go!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_003"
+       }
       }
      ]
     },
@@ -5995,7 +6002,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "How rude of me -- I forgot! I promised you more memories, didn't I? Well, here you go!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_003"
+       }
       }
      ]
     }
@@ -6077,7 +6088,7 @@
       "Now that you have more health than your opponent, play Black Worm Necromancer to summon House Kinsman from your discard pile.",
       "Firebolt House Kinsman again for the last 3 damage."
      ],
-     "notes": "UESP gives no health totals, goal text or walkthrough. Opponent health 9 is inferred from the line above (uses all 9 magicka); player health 1 is a guess that makes the order matter."
+     "notes": "Opponent 9 / you 1 confirmed by a Steam discussion. Line: Firebolt the left Worm Thrall, Kinsman to face, Firebolt Kinsman (Last Gasp), Black Worm Necromancer brings it back, Firebolt it again."
     },
     "masterPuzzle": {
      "goal": "win",
@@ -6107,7 +6118,7 @@
       "deck": []
      },
      "opponent": {
-      "health": 12,
+      "health": 20,
       "magicka": 10,
       "runes": 0,
       "board": [
@@ -6118,7 +6129,7 @@
       ],
       "deck": []
      },
-     "notes": "UESP gives no health totals, goal text or walkthrough; both health values are guesses."
+     "notes": "Health from a playthrough video (Master): Worm Cult 20, you 1. Line from the video: Rising of Bones twice, each Betrayed, then both Prophets of Bones into the full lane (sacrificing Horrors): Eager Torturer 10/10, Grim Champions 6/6; a Champion trades with the Archmage, whose Last Gasp clears the lane and grows the other Champion to 10; Torturer + Champion to face."
     }
    }
   },
@@ -6136,13 +6147,6 @@
     {
      "speaker": null,
      "text": "What was and what has been. A haze, a dream... only a memory."
-    }
-   ],
-   "during": [
-    {
-     "speaker": "Sheogorath",
-     "text": "I've one more memory for you -- and it's a doozy!.",
-     "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_004"
     }
    ],
    "battle": {
@@ -6199,7 +6203,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "I've one more memory for you -- and it's a doozy!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_004"
+       }
       }
      ]
     },
@@ -6245,7 +6253,11 @@
       {
        "type": "custom",
        "id": "memoryWandTransition",
-       "text": "Sheogorath's Memory Wand banishes your creatures and sends you into a memory; the match is complete when this happens."
+       "text": "Sheogorath's Memory Wand sends you into a memory and the match is complete: at the start of his turn from round 5 if you have no creatures, or when he drops to half health (Sheogorath's Wrath banishes all creatures and restores him first).",
+       "line": {
+        "text": "I've one more memory for you -- and it's a doozy!",
+        "audio": "IOM_PlaymatDialogue_Episode6_Branch1_NewSheothPalace_DaedricPrinceMALE_SHEOGORATH_004"
+       }
       }
      ]
     }
@@ -6359,16 +6371,16 @@
     ]
    },
    "battle": {
-    "opponent": "Worm Cult",
+    "opponent": "Novos",
     "attributes": [
      "N"
     ],
     "rulesText": "Ai starts with 0 Runes.\nAi starts with 3 Max Magicka.\nPlayer starts with 0 Runes.\nPlayer starts with 3 Max Magicka.\nAi starts with no cards in deck.\nPlayer starts with a Blood Sacrament in hand.\nPlayer starts with a Worm Cultist in each lane.\nPlayer starts with no cards in deck.\n{{Nav Footer\n|Prev=The Final Battle Pt. 3\n|Next=The Final Battle Pt. 4\n|Up=Isle of Madness\n}}\n\nIf you refuse to kill your son by clicking end turn, they will kill him instead.",
     "puzzle": {
-     "goal": "survive",
-     "text": "The trial of ruthlessness.",
+     "goal": "win",
+     "text": "Slay him. Prove you are one of us. (End your turn to refuse.)",
      "player": {
-      "health": 30,
+      "health": 4,
       "magicka": 3,
       "runes": 0,
       "hand": [
@@ -6385,13 +6397,16 @@
       "deck": []
      },
      "opponent": {
-      "health": 30,
+      "health": 2,
       "magicka": 3,
       "runes": 0,
       "deck": []
      },
-     "notes": "Either outcome completes the memory: killing Novos (Blood Sacrament Betray sacrifice) or refusing by clicking end turn (the Worm Cult kills him). UESP does not say where Novos is on the board (not listed in Game Settings) or give health totals; values are placeholders."
-    }
+     "notes": "From playthrough videos: Novos (blindfolded) is the opponent hero on 2 health, you have 4. Killing him = taking him to 0 (a 4/1 Worm Cultist to face); refusing = End Turn (the Worm Cult kills him). Either completes the memory and records the choice.",
+     "winOutcome": "kill",
+     "endTurnOutcome": "refuse"
+    },
+    "avatar": "LG-npc-Novos.webp"
    }
   },
   {

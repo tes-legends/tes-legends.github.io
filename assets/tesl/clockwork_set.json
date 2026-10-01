@@ -268,7 +268,7 @@
         "trigger": "Play",
         "type": "damageName",
         "amount": 3,
-        "target": "creatureEnemy"
+        "target": "creature"
       }
 		]
 	},
@@ -463,7 +463,7 @@
         "trigger": "Activation",
         "type": "summon",
         "cardId": "reconstructed-spider",
-        "target": "randomLane"
+        "target": "chosenLane"
       }
 		]
 	},
@@ -1895,7 +1895,7 @@
         "type": "summon",
         "amount": 1,
         "cardId": "awakened-imperfect",
-        "target": "weakerLane"
+        "target": "chosenLane", "cpuLane": "weakerLane"
       },
       {
         "trigger": "TreasureHunt",
